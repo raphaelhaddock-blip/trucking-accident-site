@@ -2,14 +2,20 @@
 
 import { AccidentContent, ACCIDENT_SLUGS, AccidentSlug, ACCIDENT_NAMES } from './types';
 import { jacknifeAccidents } from './jackknife-accidents';
+import { rolloverAccidents } from './rollover-accidents';
+import { underrideAccidents } from './underride-accidents';
+import { rearEndCollisions } from './rear-end-collisions';
+import { headOnCollisions } from './head-on-collisions';
 
 // Map of all accident content
 const accidentContentMap: Partial<Record<AccidentSlug, AccidentContent>> = {
+  // Tier 1 (5 highest priority)
   'jackknife-accidents': jacknifeAccidents,
-  // Other accident types will be added here as they are created:
-  // 'rollover-accidents': rolloverAccidents,
-  // 'underride-accidents': underrideAccidents,
-  // etc.
+  'rollover-accidents': rolloverAccidents,
+  'underride-accidents': underrideAccidents,
+  'rear-end-collisions': rearEndCollisions,
+  'head-on-collisions': headOnCollisions,
+  // Tier 2-4 will be added as they are created
 };
 
 /**

@@ -111,7 +111,7 @@
       "id": "F006",
       "name": "Tier 1 accident pages (5)",
       "description": "Create 5 highest-priority accident type pages with 3,000+ words each",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F005"],
       "test_criteria": [
         "jackknife-accidents page renders with 3,000+ words",
