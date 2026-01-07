@@ -23,7 +23,7 @@
       "id": "F001",
       "name": "Base layout with header/footer",
       "description": "Responsive layout with navigation header, footer, and CTA components",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F000"],
       "test_criteria": [
         "Header renders with logo and navigation links",
