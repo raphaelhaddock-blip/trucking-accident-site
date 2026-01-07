@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://18wheeleraccidentlawyers.com"),
   title: {
     default: "18-Wheeler Accident Lawyers | Free Consultation",
     template: "%s | 18-Wheeler Accident Lawyers",
@@ -29,14 +30,34 @@ export const metadata: Metadata = {
     "big rig accident attorney",
   ],
   authors: [{ name: "18-Wheeler Lawyers" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "18-Wheeler Accident Lawyers",
   },
+  twitter: {
+    card: "summary_large_image",
+  },
   robots: {
     index: true,
     follow: true,
+  },
+};
+
+// WebSite structured data for search engines
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: '18-Wheeler Accident Lawyers',
+  url: 'https://18wheeleraccidentlawyers.com',
+  description: 'National legal referral service connecting truck accident victims with experienced 18-wheeler accident lawyers.',
+  publisher: {
+    '@type': 'Organization',
+    name: '18-Wheeler Accident Lawyers',
+    url: 'https://18wheeleraccidentlawyers.com',
   },
 };
 
@@ -47,6 +68,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >

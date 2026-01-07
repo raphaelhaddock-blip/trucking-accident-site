@@ -1,13 +1,14 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Metadata } from 'next';
+
+// Hero image from Sanity CDN - Side view truck
+const HERO_IMAGE_URL = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
 
 export const metadata: Metadata = {
   title: '18-Wheeler Accident Lawyers | Free Consultation',
   description:
     'Injured in an 18-wheeler crash? Our truck accident lawyers fight for maximum compensation. Free consultation. No fee unless you win. Call now.',
-  alternates: {
-    canonical: '/',
-  },
 };
 
 const accidentTypes = [
@@ -108,11 +109,20 @@ export default function Home() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-navy-900 py-20 lg:py-32">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-900" />
+      <section className="relative bg-navy-900 py-20 lg:py-32 overflow-hidden">
+        {/* Hero Background Image */}
+        <Image
+          src={HERO_IMAGE_URL}
+          alt="18-wheeler semi-truck on highway at dusk"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+        {/* Minimal Overlay - let the image DOMINATE */}
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900/60 via-navy-900/20 to-transparent" />
         <div className="relative mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
-            <div>
+          <div className="max-w-3xl">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
                 18-Wheeler Accident Lawyers
               </h1>
@@ -165,62 +175,6 @@ export default function Home() {
                   (800) 555-0123
                 </a>
               </div>
-            </div>
-            <div className="hidden lg:block">
-              <div className="relative rounded-2xl bg-navy-800 p-8 shadow-2xl">
-                <h2 className="text-2xl font-bold text-white mb-6">Get Your Free Case Review</h2>
-                <form className="space-y-4">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Your Name"
-                      className="w-full rounded-md border-0 bg-navy-700 px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-amber-500"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="tel"
-                      placeholder="Phone Number"
-                      className="w-full rounded-md border-0 bg-navy-700 px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-amber-500"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Email Address"
-                      className="w-full rounded-md border-0 bg-navy-700 px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-amber-500"
-                    />
-                  </div>
-                  <div>
-                    <select className="w-full rounded-md border-0 bg-navy-700 px-4 py-3 text-gray-400 focus:ring-2 focus:ring-amber-500">
-                      <option value="">Select Your State</option>
-                      <option value="TX">Texas</option>
-                      <option value="CA">California</option>
-                      <option value="FL">Florida</option>
-                      <option value="GA">Georgia</option>
-                      <option value="other">Other State</option>
-                    </select>
-                  </div>
-                  <div>
-                    <textarea
-                      placeholder="Briefly describe your accident..."
-                      rows={3}
-                      className="w-full rounded-md border-0 bg-navy-700 px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-amber-500"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full rounded-md bg-amber-500 px-6 py-4 text-lg font-semibold text-navy-900 hover:bg-amber-400 transition-colors"
-                  >
-                    Get Free Consultation
-                  </button>
-                </form>
-                <p className="mt-4 text-xs text-gray-400 text-center">
-                  By submitting, you agree to our Privacy Policy. No attorney-client relationship is
-                  formed until a retainer agreement is signed.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
