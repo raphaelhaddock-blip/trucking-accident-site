@@ -1,0 +1,13 @@
+# 18-Wheeler Accident Lawyers - robots.txt
+# https://18wheeleraccidentlawyers.com
+
+User-agent: *
+Allow: /
+
+# Disallow internal/API routes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /studio/
+
+# Sitemap location
+Sitemap: https://18wheeleraccidentlawyers.com/sitemap.xml

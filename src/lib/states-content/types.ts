@@ -5,6 +5,13 @@ export interface FAQ {
   answer: string;
 }
 
+export interface StateImages {
+  hero: string;
+  heroAlt: string;
+  corridor?: string;
+  corridorAlt?: string;
+}
+
 export interface StateContent {
   slug: string;
   name: string;
@@ -13,6 +20,7 @@ export interface StateContent {
   metaTitle: string;
   metaDescription: string;
   heroText: string;
+  images?: StateImages;
 
   // State-Specific Trucking Laws
   truckingLaws: {

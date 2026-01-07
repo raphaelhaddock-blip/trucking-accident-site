@@ -5,6 +5,13 @@ export interface FAQ {
   answer: string;
 }
 
+export interface AccidentImages {
+  hero: string;
+  heroAlt: string;
+  diagram?: string;
+  diagramAlt?: string;
+}
+
 export interface AccidentContent {
   slug: string;
   title: string;
@@ -12,6 +19,7 @@ export interface AccidentContent {
   metaTitle: string;
   metaDescription: string;
   heroText: string;
+  images?: AccidentImages;
 
   // What It Is section
   whatItIs: string;

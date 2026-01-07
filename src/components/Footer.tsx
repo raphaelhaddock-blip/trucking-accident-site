@@ -1,12 +1,25 @@
 import Link from 'next/link';
 
-const accidentTypes = [
+// Collision types
+const collisionTypes = [
   { name: 'Jackknife Accidents', href: '/accidents/jackknife-accidents' },
   { name: 'Rollover Accidents', href: '/accidents/rollover-accidents' },
   { name: 'Underride Accidents', href: '/accidents/underride-accidents' },
   { name: 'Rear-End Collisions', href: '/accidents/rear-end-collisions' },
   { name: 'Head-On Collisions', href: '/accidents/head-on-collisions' },
-  { name: 'View All Accident Types', href: '/accidents' },
+  { name: 'T-Bone Accidents', href: '/accidents/t-bone-accidents' },
+  { name: 'Sideswipe Accidents', href: '/accidents/sideswipe-accidents' },
+];
+
+// Equipment & driver failures
+const causeTypes = [
+  { name: 'Brake Failure', href: '/accidents/brake-failure' },
+  { name: 'Tire Blowout', href: '/accidents/tire-blowout' },
+  { name: 'Driver Fatigue', href: '/accidents/driver-fatigue' },
+  { name: 'Distracted Driving', href: '/accidents/distracted-driving' },
+  { name: 'Speeding Accidents', href: '/accidents/speeding-accidents' },
+  { name: 'Drunk Driving', href: '/accidents/drunk-driving' },
+  { name: 'View All Types', href: '/accidents' },
 ];
 
 const topStates = [
@@ -15,12 +28,14 @@ const topStates = [
   { name: 'Florida', href: '/states/florida' },
   { name: 'Georgia', href: '/states/georgia' },
   { name: 'Pennsylvania', href: '/states/pennsylvania' },
+  { name: 'Ohio', href: '/states/ohio' },
+  { name: 'Illinois', href: '/states/illinois' },
+  { name: 'Tennessee', href: '/states/tennessee' },
   { name: 'View All States', href: '/states' },
 ];
 
 const resources = [
   { name: 'FMCSA Regulations', href: '/fmcsa-regulations' },
-  { name: 'Blog', href: '/blog' },
   { name: 'About Us', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ];
@@ -41,7 +56,7 @@ export default function Footer() {
     <footer className="bg-navy-900 text-white">
       {/* Main footer content */}
       <div className="mx-auto max-w-7xl px-4 py-12 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-6">
           {/* Brand column */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block">
@@ -75,13 +90,32 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Accident Types */}
+          {/* Collision Types */}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-amber-500">
-              Accident Types
+              Collision Types
             </h3>
-            <ul className="mt-4 space-y-3">
-              {accidentTypes.map((item) => (
+            <ul className="mt-4 space-y-2">
+              {collisionTypes.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-gray-300 hover:text-white transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Accident Causes */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-amber-500">
+              Accident Causes
+            </h3>
+            <ul className="mt-4 space-y-2">
+              {causeTypes.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
@@ -99,7 +133,7 @@ export default function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-amber-500">
               Top States
             </h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-4 space-y-2">
               {topStates.map((item) => (
                 <li key={item.name}>
                   <Link
@@ -118,7 +152,7 @@ export default function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-amber-500">
               Resources
             </h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-4 space-y-2">
               {resources.map((item) => (
                 <li key={item.name}>
                   <Link

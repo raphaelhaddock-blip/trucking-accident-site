@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'FMCSA Regulations: Trucking Laws That Protect You | 18-Wheeler Lawyers',
+  title: 'FMCSA Trucking Regulations | Federal Safety Laws',
   description: 'Comprehensive guide to FMCSA trucking regulations including Hours of Service, drug testing, maintenance requirements, and how violations prove negligence in truck accident cases.',
   openGraph: {
     title: 'FMCSA Regulations: Trucking Laws That Protect You',

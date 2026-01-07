@@ -9,7 +9,7 @@ import {
 } from '@/lib/states-content';
 
 export const metadata: Metadata = {
-  title: 'Truck Accident Lawyers by State | 18-Wheeler Attorneys Nationwide',
+  title: 'Truck Accident Lawyers by State | Find Local Attorneys',
   description:
     'Find experienced 18-wheeler accident lawyers in your state. We connect truck accident victims with attorneys who understand local laws, courts, and negligence rules.',
   alternates: {

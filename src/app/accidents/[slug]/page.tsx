@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
 import {
   getAccidentContent,
@@ -9,6 +10,7 @@ import {
   isValidAccidentSlug,
   ACCIDENT_SLUGS,
 } from '@/lib/accidents-content';
+import { ACCIDENT_IMAGES } from '@/lib/accidents-content/images';
 
 // Generate static params for all 20 accident types
 export async function generateStaticParams() {
@@ -128,8 +130,26 @@ export default async function AccidentPage({
       />
 
       {/* Hero Section */}
-      <section className="bg-navy-900 text-white py-16">
-        <div className="max-w-6xl mx-auto px-4">
+      <section className="relative min-h-[500px] md:min-h-[600px] flex items-center">
+        {/* Background Image */}
+        {ACCIDENT_IMAGES[slug] && (
+          <>
+            <Image
+              src={ACCIDENT_IMAGES[slug].url}
+              alt={ACCIDENT_IMAGES[slug].alt}
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-navy-900/60 via-navy-900/30 to-transparent" />
+          </>
+        )}
+        {!ACCIDENT_IMAGES[slug] && (
+          <div className="absolute inset-0 bg-navy-900" />
+        )}
+
+        <div className="relative z-10 max-w-6xl mx-auto px-4 py-16 text-white">
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
@@ -137,10 +157,10 @@ export default async function AccidentPage({
               { label: content.title },
             ]}
           />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">{content.h1}</h1>
-          <div className="prose prose-lg prose-invert max-w-none">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">{content.h1}</h1>
+          <div className="prose prose-lg prose-invert max-w-2xl">
             {content.heroText.split('\n\n').map((paragraph, i) => (
-              <p key={i} className="text-gray-300 leading-relaxed">
+              <p key={i} className="text-gray-200 leading-relaxed drop-shadow">
                 {paragraph}
               </p>
             ))}
@@ -148,13 +168,13 @@ export default async function AccidentPage({
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <a
               href={`tel:${PHONE_NUMBER}`}
-              className="bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition text-center"
+              className="bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition text-center shadow-lg"
             >
               Free Case Evaluation: {PHONE_NUMBER}
             </a>
             <Link
               href="/contact"
-              className="bg-white text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-center"
+              className="bg-white text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-center shadow-lg"
             >
               Contact Us Online
             </Link>
