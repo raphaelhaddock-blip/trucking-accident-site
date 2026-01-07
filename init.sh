@@ -6,11 +6,11 @@ echo "Project: 18-Wheeler Accident Site"
 echo "Timestamp: $(date)"
 echo ""
 
-# Kill any existing processes on port 3005
-echo ">> Checking for processes on port 3005..."
-if lsof -ti:3005 > /dev/null 2>&1; then
-    echo "   Killing existing process on port 3005..."
-    lsof -ti:3005 | xargs kill -9 2>/dev/null || true
+# Kill any existing processes on port 3006
+echo ">> Checking for processes on port 3006..."
+if lsof -ti:3006 > /dev/null 2>&1; then
+    echo "   Killing existing process on port 3006..."
+    lsof -ti:3006 | xargs kill -9 2>/dev/null || true
     sleep 2
 fi
 
@@ -53,7 +53,7 @@ echo ">> Waiting for server to be ready..."
 MAX_ATTEMPTS=30
 ATTEMPT=0
 while [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do
-    if curl -s http://localhost:3005 > /dev/null 2>&1; then
+    if curl -s http://localhost:3006 > /dev/null 2>&1; then
         echo "   Server is ready!"
         break
     fi
@@ -69,7 +69,7 @@ fi
 
 # Health check
 echo ">> Running health check..."
-HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:3005)
+HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:3006)
 if [ "$HTTP_CODE" = "200" ]; then
     echo "   Homepage returns 200 OK"
 else
@@ -78,8 +78,8 @@ fi
 
 echo ""
 echo "=== INIT COMPLETE ==="
-echo "Dev server running at: http://localhost:3005"
+echo "Dev server running at: http://localhost:3006"
 echo "Process ID: $DEV_PID"
 echo ""
 echo "To stop server: kill $DEV_PID"
-echo "Or: lsof -ti:3005 | xargs kill -9"
+echo "Or: lsof -ti:3006 | xargs kill -9"

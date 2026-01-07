@@ -39,7 +39,7 @@
       "id": "F002",
       "name": "Homepage with hero and CTAs",
       "description": "Homepage with hero section, trust elements, accident type cards, and case evaluation form",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F001"],
       "test_criteria": [
         "Hero section with H1 '18-Wheeler Accident Lawyers'",
