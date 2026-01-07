@@ -361,3 +361,56 @@ Key specs:
 - F003: Sanity CMS configuration (requires project setup)
 
 ---
+
+## SESSION 4 - 2026-01-08
+### Work Done
+- F012: Contact page with lead form - PASSING
+  - Deployed `lead` schema to Sanity via MCP
+  - Created Zod validation schema (src/lib/validation/contact-schema.ts)
+  - Created Sanity client (src/lib/sanity/client.ts)
+  - Created server action for form submission (src/app/contact/actions.ts)
+  - Created contact page with full form UI (src/app/contact/page.tsx)
+  - Form includes: Name, Phone, Email, State dropdown, Accident Type dropdown, Description
+  - Client-side validation with React 19 useActionState
+  - Server-side validation with Zod
+  - Leads stored in Sanity CMS
+  - FAQPage schema markup with 5 FAQs
+  - Mobile responsive design
+  - Trust elements and contact info sidebar
+  - Verified via test lead creation/deletion
+
+### Files Created
+- src/lib/sanity/client.ts
+- src/lib/validation/contact-schema.ts
+- src/app/contact/actions.ts
+- src/app/contact/page.tsx
+- .env.local.example
+
+### Technical Notes
+- Sanity project: ny-construction-cms (ID: 54bwni5t)
+- Dataset: production
+- Form uses React 19's useActionState for form state management
+- Requires SANITY_API_TOKEN env var for lead creation
+- Lead schema includes: name, phone, email, state, accidentType, description, submittedAt, status, source
+
+### Current State
+- F000: PASSING
+- F001: PASSING
+- F002: PASSING
+- F004: PASSING
+- F005: PASSING
+- F006: PASSING
+- F007: PASSING
+- F008: PASSING
+- F009: PASSING
+- F010: PASSING
+- F011: PASSING
+- F012: PASSING
+- Total: 12 features PASSING
+
+### Next Tasks
+- F013: Case evaluation form component (extract reusable form)
+- F014: Blog page template
+- F003: Sanity CMS configuration (full studio setup)
+
+---
