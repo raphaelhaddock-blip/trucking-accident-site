@@ -16,6 +16,11 @@ import { tireBlowout } from './tire-blowout';
 import { driverFatigue } from './driver-fatigue';
 import { distractedDriving } from './distracted-driving';
 import { speedingAccidents } from './speeding-accidents';
+import { cargoSpillAccidents } from './cargo-spill-accidents';
+import { hazmatAccidents } from './hazmat-accidents';
+import { drunkDriving } from './drunk-driving';
+import { runawayTruck } from './runaway-truck';
+import { improperMaintenance } from './improper-maintenance';
 
 // Map of all accident content
 const accidentContentMap: Partial<Record<AccidentSlug, AccidentContent>> = {
@@ -37,7 +42,12 @@ const accidentContentMap: Partial<Record<AccidentSlug, AccidentContent>> = {
   'driver-fatigue': driverFatigue,
   'distracted-driving': distractedDriving,
   'speeding-accidents': speedingAccidents,
-  // Tier 4 will be added as they are created
+  // Tier 4 (5 additional)
+  'cargo-spill-accidents': cargoSpillAccidents,
+  'hazmat-accidents': hazmatAccidents,
+  'drunk-driving': drunkDriving,
+  'runaway-truck': runawayTruck,
+  'improper-maintenance': improperMaintenance,
 };
 
 /**
