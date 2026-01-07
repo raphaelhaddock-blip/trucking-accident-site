@@ -7,7 +7,7 @@ export const underrideDeaths: BlogPost = {
   metaDescription:
     'Underride crashes kill hundreds yearly. Learn why these accidents are so deadly, current safety regulations, and your legal rights if a loved one was killed.',
   publishedAt: '2026-01-06',
-  author: 'Truck Injury Advocate',
+  author: 'Truck Injury Lawyers',
   category: 'safety',
   funnelStage: 'awareness',
   targetKeyword: 'underride truck accident deaths',

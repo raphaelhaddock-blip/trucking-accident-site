@@ -62,7 +62,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block">
               <span className="text-xl font-bold text-white">
-                Truck Injury<span className="text-amber-500">Advocate</span>
+                Truck Injury<span className="text-amber-500">Lawyers</span>
               </span>
             </Link>
             <p className="mt-4 text-sm text-gray-300 max-w-md">
@@ -174,7 +174,7 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-4 py-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-gray-400">
-              &copy; {currentYear} Truck Injury Advocate. All rights reserved.
+              &copy; {currentYear} Truck Injury Lawyers. All rights reserved.
             </p>
             <div className="flex gap-6">
               {legal.map((item) => (

@@ -4,7 +4,7 @@ export const tennessee: StateContent = {
   slug: 'tennessee',
   name: 'Tennessee',
   abbreviation: 'TN',
-  h1: 'Tennessee Truck Injury Advocate',
+  h1: 'Tennessee Truck Injury Lawyers',
   metaTitle: 'Tennessee Truck Accident Lawyers | 18-Wheeler Attorneys in TN',
   metaDescription: 'Injured in a Tennessee truck accident? Our attorneys understand TN law and fight for maximum compensation. Free consultation. No fee unless you win.',
 

@@ -4,7 +4,7 @@ export const georgia: StateContent = {
   slug: 'georgia',
   name: 'Georgia',
   abbreviation: 'GA',
-  h1: 'Georgia Truck Injury Advocate',
+  h1: 'Georgia Truck Injury Lawyers',
   metaTitle: 'Georgia Truck Accident Lawyers | 18-Wheeler Attorneys in GA',
   metaDescription: 'Injured in a Georgia truck accident? Our attorneys know GA\'s laws and fight for maximum compensation. Free consultation. No fee unless you win.',
 

@@ -77,7 +77,7 @@ export default async function StatePage({
             ]}
           />
           <h1 className="text-4xl font-bold text-navy-900 mb-6">
-            {stateName} Truck Injury Advocate
+            {stateName} Truck Injury Lawyers
           </h1>
           <p className="text-gray-600 mb-8">
             Content for {stateName} is coming soon. In the meantime,
@@ -112,7 +112,7 @@ export default async function StatePage({
   const legalServiceSchema = {
     '@context': 'https://schema.org',
     '@type': 'LegalService',
-    name: `${content.name} Truck Injury Advocate`,
+    name: `${content.name} Truck Injury Lawyers`,
     description: content.metaDescription,
     url: `https://www.18wheeleraccidentlawyers.com/states/${slug}`,
     telephone: PHONE_NUMBER,

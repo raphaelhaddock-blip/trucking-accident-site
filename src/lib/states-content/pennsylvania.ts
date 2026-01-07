@@ -4,7 +4,7 @@ export const pennsylvania: StateContent = {
   slug: 'pennsylvania',
   name: 'Pennsylvania',
   abbreviation: 'PA',
-  h1: 'Pennsylvania Truck Injury Advocate',
+  h1: 'Pennsylvania Truck Injury Lawyers',
   metaTitle: 'Pennsylvania Truck Accident Lawyers | 18-Wheeler Attorneys in PA',
   metaDescription: 'Injured in a Pennsylvania truck accident? Our attorneys understand PA law and fight for maximum compensation. Free consultation. No fee unless you win.',
 

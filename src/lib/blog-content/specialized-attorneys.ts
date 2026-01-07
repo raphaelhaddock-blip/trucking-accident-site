@@ -7,7 +7,7 @@ export const specializedAttorneys: BlogPost = {
   metaDescription:
     'Truck accident cases require specialized legal expertise. Learn why general personal injury lawyers often aren\'t equipped to handle complex trucking litigation.',
   publishedAt: '2026-01-03',
-  author: 'Truck Injury Advocate',
+  author: 'Truck Injury Lawyers',
   category: 'legal',
   funnelStage: 'decision',
   targetKeyword: 'specialized truck accident attorney',

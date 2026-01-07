@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://trucking-accident-site.vercel.app"),
   title: {
-    default: "Truck Injury Advocate | Free Consultation",
-    template: "%s | Truck Injury Advocate",
+    default: "Truck Injury Lawyers | Free Consultation",
+    template: "%s | Truck Injury Lawyers",
   },
   description:
     "Injured in an 18-wheeler crash? Our truck accident lawyers fight for maximum compensation. Free consultation. No fee unless you win. Call now.",
@@ -29,14 +29,14 @@ export const metadata: Metadata = {
     "trucking accident lawyer",
     "big rig accident attorney",
   ],
-  authors: [{ name: "Truck Injury Advocate" }],
+  authors: [{ name: "Truck Injury Lawyers" }],
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Truck Injury Advocate",
+    siteName: "Truck Injury Lawyers",
   },
   twitter: {
     card: "summary_large_image",
@@ -51,12 +51,12 @@ export const metadata: Metadata = {
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Truck Injury Advocate',
+  name: 'Truck Injury Lawyers',
   url: 'https://trucking-accident-site.vercel.app',
   description: 'National legal referral service connecting truck accident victims with experienced 18-wheeler accident lawyers.',
   publisher: {
     '@type': 'Organization',
-    name: 'Truck Injury Advocate',
+    name: 'Truck Injury Lawyers',
     url: 'https://trucking-accident-site.vercel.app',
   },
 };

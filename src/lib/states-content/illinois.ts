@@ -4,7 +4,7 @@ export const illinois: StateContent = {
   slug: 'illinois',
   name: 'Illinois',
   abbreviation: 'IL',
-  h1: 'Illinois Truck Injury Advocate',
+  h1: 'Illinois Truck Injury Lawyers',
   metaTitle: 'Illinois Truck Accident Lawyers | 18-Wheeler Attorneys in IL',
   metaDescription: 'Injured in an Illinois truck accident? Our attorneys understand IL law and fight for maximum compensation. Free consultation. No fee unless you win.',
 

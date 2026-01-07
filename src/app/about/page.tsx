@@ -4,7 +4,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'About Us | Truck Accident Legal Referral Service',
-  description: 'Learn about Truck Injury Advocate, a legal referral service connecting truck accident victims with experienced attorneys nationwide.',
+  description: 'Learn about Truck Injury Lawyers, a legal referral service connecting truck accident victims with experienced attorneys nationwide.',
   alternates: {
     canonical: '/about',
   },
@@ -37,7 +37,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-navy-900 mb-6">Our Mission</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Truck Injury Advocate exists for one purpose: to help victims of
+            Truck Injury Lawyers exists for one purpose: to help victims of
             devastating truck accidents find the legal representation they deserve.
             When an 80,000-pound semi-truck collides with a passenger vehicle, the
             results are often catastrophic. Victims face mounting medical bills,

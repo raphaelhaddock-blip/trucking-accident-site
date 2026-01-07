@@ -3,7 +3,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy policy for Truck Injury Advocate. Learn how we collect, use, and protect your personal information.',
+  description: 'Privacy policy for Truck Injury Lawyers. Learn how we collect, use, and protect your personal information.',
   alternates: {
     canonical: '/privacy',
   },
