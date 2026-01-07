@@ -11,6 +11,11 @@ import { wideTurnAccidents } from './wide-turn-accidents';
 import { blindSpotAccidents } from './blind-spot-accidents';
 import { sideswipeAccidents } from './sideswipe-accidents';
 import { overrideAccidents } from './override-accidents';
+import { brakeFailure } from './brake-failure';
+import { tireBlowout } from './tire-blowout';
+import { driverFatigue } from './driver-fatigue';
+import { distractedDriving } from './distracted-driving';
+import { speedingAccidents } from './speeding-accidents';
 
 // Map of all accident content
 const accidentContentMap: Partial<Record<AccidentSlug, AccidentContent>> = {
@@ -26,7 +31,13 @@ const accidentContentMap: Partial<Record<AccidentSlug, AccidentContent>> = {
   'blind-spot-accidents': blindSpotAccidents,
   'sideswipe-accidents': sideswipeAccidents,
   'override-accidents': overrideAccidents,
-  // Tier 3-4 will be added as they are created
+  // Tier 3 (5 cause-based)
+  'brake-failure': brakeFailure,
+  'tire-blowout': tireBlowout,
+  'driver-fatigue': driverFatigue,
+  'distracted-driving': distractedDriving,
+  'speeding-accidents': speedingAccidents,
+  // Tier 4 will be added as they are created
 };
 
 /**
