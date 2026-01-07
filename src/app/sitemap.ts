@@ -4,7 +4,7 @@ import { getAvailableStateSlugs } from '@/lib/states-content';
 import { BLOG_SLUGS } from '@/lib/blog-content';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://18wheeleraccidentlawyers.com';
+  const baseUrl = 'https://trucking-accident-site.vercel.app';
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [

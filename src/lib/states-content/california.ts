@@ -4,7 +4,7 @@ export const california: StateContent = {
   slug: 'california',
   name: 'California',
   abbreviation: 'CA',
-  h1: 'California 18-Wheeler Accident Lawyers',
+  h1: 'California Truck Injury Advocate',
   metaTitle: 'California Truck Accident Lawyers | 18-Wheeler Attorneys in CA',
   metaDescription: 'Injured in a California truck accident? Our attorneys fight for maximum compensation under CA law. Free consultation. No fee unless you win.',
 

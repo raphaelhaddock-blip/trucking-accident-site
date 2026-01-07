@@ -57,7 +57,7 @@ export default function StatesPage() {
             ]}
           />
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            18-Wheeler Accident Lawyers by State
+            Truck Injury Advocate by State
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl leading-relaxed">
             Trucking laws vary significantly from state to state. Statutes of limitations,

@@ -4,7 +4,7 @@ export const ohio: StateContent = {
   slug: 'ohio',
   name: 'Ohio',
   abbreviation: 'OH',
-  h1: 'Ohio 18-Wheeler Accident Lawyers',
+  h1: 'Ohio Truck Injury Advocate',
   metaTitle: 'Ohio Truck Accident Lawyers | 18-Wheeler Attorneys in OH',
   metaDescription: 'Injured in an Ohio truck accident? Our attorneys understand OH laws and fight for maximum compensation. Free consultation. No fee unless you win.',
 

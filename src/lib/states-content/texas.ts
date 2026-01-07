@@ -4,7 +4,7 @@ export const texas: StateContent = {
   slug: 'texas',
   name: 'Texas',
   abbreviation: 'TX',
-  h1: 'Texas 18-Wheeler Accident Lawyers',
+  h1: 'Texas Truck Injury Advocate',
   metaTitle: 'Texas Truck Accident Lawyers | 18-Wheeler Attorneys in TX',
   metaDescription: 'Injured in a Texas truck accident? Our attorneys fight for victims across the Lone Star State. Free consultation. No fee unless you win.',
 

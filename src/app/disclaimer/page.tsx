@@ -3,7 +3,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Legal Disclaimer',
-  description: 'Legal disclaimer for 18-Wheeler Accident Lawyers. Important information about our referral service and attorney advertising.',
+  description: 'Legal disclaimer for Truck Injury Advocate. Important information about our referral service and attorney advertising.',
   alternates: {
     canonical: '/disclaimer',
   },
@@ -41,7 +41,7 @@ export default function DisclaimerPage() {
 
           <h2 className="text-2xl font-bold text-navy-900 mt-8 mb-4">Referral Service Disclosure</h2>
           <p>
-            18-Wheeler Accident Lawyers is a legal referral service, not a law firm. When you
+            Truck Injury Advocate is a legal referral service, not a law firm. When you
             contact us, we may share your information with one or more attorneys or law firms
             in our network who handle truck accident cases. These attorneys are independent
             practitioners who make their own decisions about whether to accept your case.

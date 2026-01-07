@@ -7,7 +7,7 @@ export const fmcsaViolations: BlogPost = {
   metaDescription:
     'Learn how hours-of-service violations, maintenance failures, and other FMCSA regulation breaches can prove negligence in your truck accident case.',
   publishedAt: '2026-01-04',
-  author: '18-Wheeler Accident Lawyers',
+  author: 'Truck Injury Advocate',
   category: 'legal',
   funnelStage: 'consideration',
   targetKeyword: 'FMCSA violations truck accident',

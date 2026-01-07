@@ -3,7 +3,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'Terms of service for 18-Wheeler Accident Lawyers. Read our terms and conditions for using our legal referral services.',
+  description: 'Terms of service for Truck Injury Advocate. Read our terms and conditions for using our legal referral services.',
   alternates: {
     canonical: '/terms',
   },
@@ -29,14 +29,14 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-navy-900 mt-8 mb-4">Acceptance of Terms</h2>
           <p>
-            By accessing and using the 18-Wheeler Accident Lawyers website, you accept and agree
+            By accessing and using the Truck Injury Advocate website, you accept and agree
             to be bound by these Terms of Service. If you do not agree to these terms, please
             do not use our website or services.
           </p>
 
           <h2 className="text-2xl font-bold text-navy-900 mt-8 mb-4">Nature of Our Service</h2>
           <p>
-            18-Wheeler Accident Lawyers operates as a legal referral service. We connect individuals
+            Truck Injury Advocate operates as a legal referral service. We connect individuals
             who have been injured in truck accidents with attorneys who may be able to help them.
             Important points to understand:
           </p>
@@ -74,7 +74,7 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-navy-900 mt-8 mb-4">Limitation of Liability</h2>
           <p>
-            To the fullest extent permitted by law, 18-Wheeler Accident Lawyers shall not be liable
+            To the fullest extent permitted by law, Truck Injury Advocate shall not be liable
             for any indirect, incidental, special, consequential, or punitive damages resulting from
             your use of or inability to use our website or services. Our total liability shall not
             exceed the amount you paid to use our services (if any).
@@ -83,7 +83,7 @@ export default function TermsPage() {
           <h2 className="text-2xl font-bold text-navy-900 mt-8 mb-4">Intellectual Property</h2>
           <p>
             All content on this website, including text, graphics, logos, and images, is the property
-            of 18-Wheeler Accident Lawyers or our content providers and is protected by copyright
+            of Truck Injury Advocate or our content providers and is protected by copyright
             and other intellectual property laws.
           </p>
 

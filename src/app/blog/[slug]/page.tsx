@@ -64,7 +64,7 @@ export default async function BlogPostPage({
     },
     publisher: {
       '@type': 'Organization',
-      name: '18-Wheeler Accident Lawyers',
+      name: 'Truck Injury Advocate',
       url: 'https://18wheeleraccidentlawyers.com',
     },
     datePublished: post.publishedAt,

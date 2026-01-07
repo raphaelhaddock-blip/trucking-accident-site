@@ -7,7 +7,7 @@ export const settlementAmounts: BlogPost = {
   metaDescription:
     'How much is a truck accident case worth? See real settlement ranges by injury type, factors that affect value, and how to maximize your compensation.',
   publishedAt: '2026-01-05',
-  author: '18-Wheeler Accident Lawyers',
+  author: 'Truck Injury Advocate',
   category: 'legal',
   funnelStage: 'consideration',
   targetKeyword: 'truck accident settlement amounts',

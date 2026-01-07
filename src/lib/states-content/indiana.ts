@@ -4,7 +4,7 @@ export const indiana: StateContent = {
   slug: 'indiana',
   name: 'Indiana',
   abbreviation: 'IN',
-  h1: 'Indiana 18-Wheeler Accident Lawyers',
+  h1: 'Indiana Truck Injury Advocate',
   metaTitle: 'Indiana Truck Accident Lawyers | 18-Wheeler Attorneys in IN',
   metaDescription: 'Injured in an Indiana truck accident? Our attorneys understand IN law and fight for maximum compensation. Free consultation. No fee unless you win.',
 

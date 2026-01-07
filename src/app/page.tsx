@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 const HERO_IMAGE_URL = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
 
 export const metadata: Metadata = {
-  title: '18-Wheeler Accident Lawyers | Free Consultation',
+  title: 'Truck Injury Advocate | Free Consultation',
   description:
     'Injured in an 18-wheeler crash? Our truck accident lawyers fight for maximum compensation. Free consultation. No fee unless you win. Call now.',
 };
@@ -71,10 +71,10 @@ export default function Home() {
               {
                 '@type': 'LegalService',
                 '@id': '#organization',
-                name: '18-Wheeler Accident Lawyers',
+                name: 'Truck Injury Advocate',
                 description:
                   'National legal referral service helping victims of 18-wheeler and semi-truck accidents find experienced attorneys.',
-                url: 'https://18wheeleraccidentlawyers.com',
+                url: 'https://trucking-accident-site.vercel.app',
                 telephone: '1-800-555-0123',
                 areaServed: {
                   '@type': 'Country',
@@ -91,17 +91,17 @@ export default function Home() {
               {
                 '@type': 'WebPage',
                 '@id': '#webpage',
-                name: '18-Wheeler Accident Lawyers | Free Consultation',
+                name: 'Truck Injury Advocate | Free Consultation',
                 description:
                   'Injured in an 18-wheeler crash? Our truck accident lawyers fight for maximum compensation. Free consultation. No fee unless you win.',
-                url: 'https://18wheeleraccidentlawyers.com',
+                url: 'https://trucking-accident-site.vercel.app',
                 isPartOf: { '@id': '#website' },
               },
               {
                 '@type': 'WebSite',
                 '@id': '#website',
-                name: '18-Wheeler Accident Lawyers',
-                url: 'https://18wheeleraccidentlawyers.com',
+                name: 'Truck Injury Advocate',
+                url: 'https://trucking-accident-site.vercel.app',
               },
             ],
           }),
@@ -124,7 +124,7 @@ export default function Home() {
         <div className="relative mx-auto max-w-7xl px-4 lg:px-8">
           <div className="max-w-3xl">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-                18-Wheeler Accident Lawyers
+                Truck Injury Advocate
               </h1>
               <p className="mt-6 text-xl text-gray-300 leading-relaxed">
                 Injured in a semi-truck crash? You may be entitled to significant compensation.

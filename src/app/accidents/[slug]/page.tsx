@@ -109,7 +109,7 @@ export default async function AccidentPage({
   const legalServiceSchema = {
     '@context': 'https://schema.org',
     '@type': 'LegalService',
-    name: '18-Wheeler Accident Lawyers',
+    name: 'Truck Injury Advocate',
     description: content.metaDescription,
     url: `https://www.18wheeleraccidentlawyers.com/accidents/${slug}`,
     telephone: PHONE_NUMBER,

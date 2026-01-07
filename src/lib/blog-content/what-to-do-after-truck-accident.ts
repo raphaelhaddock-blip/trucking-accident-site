@@ -7,7 +7,7 @@ export const whatToDoAfterAccident: BlogPost = {
   metaDescription:
     'Learn the critical steps to take immediately after an 18-wheeler accident. Protect your health, preserve evidence, and protect your legal rights.',
   publishedAt: '2026-01-07',
-  author: '18-Wheeler Accident Lawyers',
+  author: 'Truck Injury Advocate',
   category: 'guide',
   funnelStage: 'awareness',
   targetKeyword: 'what to do after truck accident',

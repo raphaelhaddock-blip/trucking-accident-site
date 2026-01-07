@@ -704,11 +704,11 @@ export default function FMCSARegulationsPage() {
             description: 'Comprehensive guide to federal trucking regulations and how violations establish liability in truck accident cases.',
             author: {
               '@type': 'Organization',
-              name: '18-Wheeler Accident Lawyers',
+              name: 'Truck Injury Advocate',
             },
             publisher: {
               '@type': 'Organization',
-              name: '18-Wheeler Accident Lawyers',
+              name: 'Truck Injury Advocate',
             },
             mainEntityOfPage: {
               '@type': 'WebPage',

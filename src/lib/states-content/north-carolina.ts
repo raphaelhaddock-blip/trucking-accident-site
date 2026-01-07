@@ -4,7 +4,7 @@ export const northCarolina: StateContent = {
   slug: 'north-carolina',
   name: 'North Carolina',
   abbreviation: 'NC',
-  h1: 'North Carolina 18-Wheeler Accident Lawyers',
+  h1: 'North Carolina Truck Injury Advocate',
   metaTitle: 'North Carolina Truck Accident Lawyers | 18-Wheeler Attorneys in NC',
   metaDescription: 'Injured in a North Carolina truck accident? Our attorneys understand NC\'s contributory negligence law. Free consultation. No fee unless you win.',
 

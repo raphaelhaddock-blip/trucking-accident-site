@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Page Not Found | 18-Wheeler Accident Lawyers',
+  title: 'Page Not Found | Truck Injury Advocate',
   description: 'The page you are looking for could not be found. Find truck accident lawyers, accident types, and legal resources.',
 };
 

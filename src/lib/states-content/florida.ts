@@ -4,7 +4,7 @@ export const florida: StateContent = {
   slug: 'florida',
   name: 'Florida',
   abbreviation: 'FL',
-  h1: 'Florida 18-Wheeler Accident Lawyers',
+  h1: 'Florida Truck Injury Advocate',
   metaTitle: 'Florida Truck Accident Lawyers | 18-Wheeler Attorneys in FL',
   metaDescription: 'Injured in a Florida truck accident? Our attorneys understand FL\'s unique laws and fight for maximum compensation. Free consultation. No fee unless you win.',
 

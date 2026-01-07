@@ -24,7 +24,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="text-xl font-bold text-white">
-              18-Wheeler<span className="text-amber-500">Lawyers</span>
+              Truck Injury<span className="text-amber-500">Advocate</span>
             </span>
           </Link>
         </div>
