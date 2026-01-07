@@ -1,0 +1,410 @@
+{
+  "project_name": "18-Wheeler Accident Site",
+  "project_type": "web_app",
+  "created_at": "2026-01-07T12:00:00Z",
+  "last_updated": "2026-01-07T12:00:00Z",
+  "features": [
+    {
+      "id": "F000",
+      "name": "Project runs without errors",
+      "description": "Next.js dev server starts and homepage renders",
+      "status": "PASSING",
+      "dependencies": [],
+      "test_criteria": [
+        "npm run dev starts without errors on port 3005",
+        "Homepage at localhost:3005 returns 200",
+        "No console errors on initial load"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": ""
+    },
+    {
+      "id": "F001",
+      "name": "Base layout with header/footer",
+      "description": "Responsive layout with navigation header, footer, and CTA components",
+      "status": "FAILING",
+      "dependencies": ["F000"],
+      "test_criteria": [
+        "Header renders with logo and navigation links",
+        "Footer renders with links to key pages",
+        "Layout is responsive (mobile/desktop)",
+        "Click-to-call CTA visible on mobile"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "Includes: Logo, Nav (Accidents, States, FMCSA, Blog, Contact), Phone CTA"
+    },
+    {
+      "id": "F002",
+      "name": "Homepage with hero and CTAs",
+      "description": "Homepage with hero section, trust elements, accident type cards, and case evaluation form",
+      "status": "FAILING",
+      "dependencies": ["F001"],
+      "test_criteria": [
+        "Hero section with H1 '18-Wheeler Accident Lawyers'",
+        "Primary CTA 'Free Case Evaluation' above fold",
+        "Accident type cards linking to /accidents/[slug]",
+        "Trust elements (No Fee Unless You Win, 24/7 Available)",
+        "Meta title and description set correctly",
+        "LegalService schema markup present"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "800+ words of content"
+    },
+    {
+      "id": "F003",
+      "name": "Sanity CMS configuration",
+      "description": "Sanity Studio embedded at /studio with all required schemas",
+      "status": "FAILING",
+      "dependencies": ["F000"],
+      "test_criteria": [
+        "Sanity client configured in src/lib/sanity",
+        "accidentPage schema defined",
+        "statePage schema defined",
+        "blogPost schema defined",
+        "faqItem schema defined",
+        "Studio accessible at /studio route"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "Requires Sanity project creation and env vars"
+    },
+    {
+      "id": "F004",
+      "name": "FMCSA pillar page",
+      "description": "Comprehensive FMCSA regulations page (4,000+ words) establishing authority",
+      "status": "FAILING",
+      "dependencies": ["F001"],
+      "test_criteria": [
+        "Page renders at /fmcsa-regulations",
+        "H1: FMCSA Regulations: Trucking Laws That Protect You",
+        "Content covers: HOS rules, ELD requirements, drug testing, maintenance",
+        "5+ FAQs with FAQPage schema markup",
+        "Links to all accident type pages",
+        "4,000+ word count"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "Key regulations: 49 CFR 395, 392.3, 393, 396, 382, 391"
+    },
+    {
+      "id": "F005",
+      "name": "Accident page template",
+      "description": "Dynamic route /accidents/[slug] rendering accident type pages from content files",
+      "status": "FAILING",
+      "dependencies": ["F001"],
+      "test_criteria": [
+        "Dynamic route at /accidents/[slug] works",
+        "Generates static paths for all 20 accident types",
+        "Template includes all required sections (causes, FMCSA, injuries, liability, etc.)",
+        "FAQ section renders with schema markup",
+        "Internal links to related accidents and states",
+        "Breadcrumb navigation present"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "Content from src/lib/accidents-content/"
+    },
+    {
+      "id": "F006",
+      "name": "Tier 1 accident pages (5)",
+      "description": "Create 5 highest-priority accident type pages with 3,000+ words each",
+      "status": "FAILING",
+      "dependencies": ["F005"],
+      "test_criteria": [
+        "jackknife-accidents page renders with 3,000+ words",
+        "rollover-accidents page renders with 3,000+ words",
+        "underride-accidents page renders with 3,000+ words",
+        "rear-end-collisions page renders with 3,000+ words",
+        "head-on-collisions page renders with 3,000+ words",
+        "Each has 5+ unique FAQs",
+        "All have correct meta titles/descriptions"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "Highest search volume accident types"
+    },
+    {
+      "id": "F007",
+      "name": "Tier 2 accident pages (5)",
+      "description": "Create next 5 accident type pages with 3,000+ words each",
+      "status": "FAILING",
+      "dependencies": ["F005"],
+      "test_criteria": [
+        "t-bone-accidents page renders with 3,000+ words",
+        "wide-turn-accidents page renders with 3,000+ words",
+        "blind-spot-accidents page renders with 3,000+ words",
+        "sideswipe-accidents page renders with 3,000+ words",
+        "override-accidents page renders with 3,000+ words",
+        "Each has 5+ unique FAQs"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "High volume accident types"
+    },
+    {
+      "id": "F008",
+      "name": "Tier 3 accident pages (5)",
+      "description": "Create cause-based accident pages with 3,000+ words each",
+      "status": "FAILING",
+      "dependencies": ["F005"],
+      "test_criteria": [
+        "brake-failure page renders with 3,000+ words",
+        "tire-blowout page renders with 3,000+ words",
+        "driver-fatigue page renders with 3,000+ words",
+        "distracted-driving page renders with 3,000+ words",
+        "speeding-accidents page renders with 3,000+ words",
+        "Each has 5+ unique FAQs"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "Cause-based accident types"
+    },
+    {
+      "id": "F009",
+      "name": "Tier 4 accident pages (5)",
+      "description": "Create remaining accident pages with 3,000+ words each",
+      "status": "FAILING",
+      "dependencies": ["F005"],
+      "test_criteria": [
+        "cargo-spill-accidents page renders with 3,000+ words",
+        "hazmat-accidents page renders with 3,000+ words",
+        "drunk-driving page renders with 3,000+ words",
+        "runaway-truck page renders with 3,000+ words",
+        "improper-maintenance page renders with 3,000+ words",
+        "Each has 5+ unique FAQs"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "Additional accident types"
+    },
+    {
+      "id": "F010",
+      "name": "State page template",
+      "description": "Dynamic route /states/[slug] rendering state pages from content files",
+      "status": "FAILING",
+      "dependencies": ["F001"],
+      "test_criteria": [
+        "Dynamic route at /states/[slug] works",
+        "Template includes all required sections (laws, corridors, negligence, SOL)",
+        "Links to all 20 accident type pages",
+        "Links to neighboring states",
+        "Breadcrumb navigation present",
+        "FAQPage schema markup"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "Content from src/lib/states-content/"
+    },
+    {
+      "id": "F011",
+      "name": "Tier 1 state pages (10)",
+      "description": "Create 10 highest-priority state pages with 2,500+ words each",
+      "status": "FAILING",
+      "dependencies": ["F010"],
+      "test_criteria": [
+        "texas page renders with 2,500+ words",
+        "california page renders with 2,500+ words",
+        "florida page renders with 2,500+ words",
+        "georgia page renders with 2,500+ words",
+        "pennsylvania page renders with 2,500+ words",
+        "ohio, illinois, north-carolina, tennessee, indiana pages render",
+        "Each has 5+ unique FAQs",
+        "State-specific SOL and comparative negligence info"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "Highest trucking fatality states"
+    },
+    {
+      "id": "F012",
+      "name": "Contact page with lead form",
+      "description": "Contact page with case evaluation form capturing lead information",
+      "status": "FAILING",
+      "dependencies": ["F001"],
+      "test_criteria": [
+        "Page renders at /contact",
+        "Form fields: Name, Phone, Email, State, Accident Type, Description",
+        "Form validation works (required fields)",
+        "Form submits to API endpoint",
+        "Success message displayed after submission",
+        "Phone number click-to-call works"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "Primary conversion point"
+    },
+    {
+      "id": "F013",
+      "name": "Case evaluation form component",
+      "description": "Reusable CTA form component that appears on multiple pages",
+      "status": "FAILING",
+      "dependencies": ["F012"],
+      "test_criteria": [
+        "Form component renders on homepage",
+        "Form component renders on accident pages",
+        "Form component renders on state pages",
+        "Consistent styling across all placements",
+        "Mobile-responsive design"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "Reusable across site"
+    },
+    {
+      "id": "F014",
+      "name": "Blog page template",
+      "description": "Dynamic route /blog/[slug] for blog posts",
+      "status": "FAILING",
+      "dependencies": ["F001"],
+      "test_criteria": [
+        "Dynamic route at /blog/[slug] works",
+        "Blog index page at /blog lists posts",
+        "Individual posts render with correct structure",
+        "Related accident types linked",
+        "Related states linked",
+        "Breadcrumb navigation present"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": "800+ words per post"
+    },
+    {
+      "id": "F015",
+      "name": "XML Sitemap",
+      "description": "Auto-generated sitemap at /sitemap.xml",
+      "status": "FAILING",
+      "dependencies": ["F005", "F010", "F014"],
+      "test_criteria": [
+        "/sitemap.xml returns valid XML",
+        "All accident pages included",
+        "All state pages included",
+        "All blog posts included",
+        "Correct priority values set",
+        "URLs are absolute"
+      ],
+      "test_type": "e2e_api",
+      "attempted_approaches": [],
+      "notes": "Next.js generateSitemap"
+    },
+    {
+      "id": "F016",
+      "name": "Robots.txt",
+      "description": "Robots.txt file with correct directives",
+      "status": "FAILING",
+      "dependencies": ["F015"],
+      "test_criteria": [
+        "/robots.txt accessible",
+        "Disallows /api/, /studio/, /_next/",
+        "Points to sitemap.xml",
+        "Allows all crawlers on public pages"
+      ],
+      "test_type": "e2e_api",
+      "attempted_approaches": [],
+      "notes": ""
+    },
+    {
+      "id": "F017",
+      "name": "404 page",
+      "description": "Custom 404 page with helpful navigation",
+      "status": "FAILING",
+      "dependencies": ["F001"],
+      "test_criteria": [
+        "Custom 404 page renders for unknown routes",
+        "Links to homepage, accident types, states",
+        "Phone number displayed",
+        "Consistent with site styling"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": ""
+    },
+    {
+      "id": "F018",
+      "name": "Legal pages (Privacy, Terms, Disclaimer)",
+      "description": "Required legal pages for compliance",
+      "status": "FAILING",
+      "dependencies": ["F001"],
+      "test_criteria": [
+        "/privacy page renders",
+        "/terms page renders",
+        "/disclaimer page renders",
+        "All linked from footer",
+        "Noindex meta tag on utility pages if needed"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": ""
+    },
+    {
+      "id": "F019",
+      "name": "About page",
+      "description": "About/trust page explaining the service",
+      "status": "FAILING",
+      "dependencies": ["F001"],
+      "test_criteria": [
+        "/about page renders",
+        "Explains referral model transparently",
+        "Trust elements present",
+        "No false claims about attorney-client relationship"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": ""
+    },
+    {
+      "id": "F020",
+      "name": "Schema markup validation",
+      "description": "All schema markup validates without errors",
+      "status": "FAILING",
+      "dependencies": ["F002", "F006", "F011"],
+      "test_criteria": [
+        "Homepage schema validates",
+        "Accident pages have valid FAQPage schema",
+        "State pages have valid LegalService schema",
+        "BreadcrumbList schema on all pages",
+        "No schema errors in Google Rich Results Test"
+      ],
+      "test_type": "manual",
+      "attempted_approaches": [],
+      "notes": "Test via schema.org validator or Google Rich Results"
+    },
+    {
+      "id": "F021",
+      "name": "Internal linking complete",
+      "description": "Cross-linking between all content pages",
+      "status": "FAILING",
+      "dependencies": ["F006", "F011"],
+      "test_criteria": [
+        "Each accident page links to 3-5 states",
+        "Each accident page links to 2-3 related accidents",
+        "Each state page links to all 20 accident types",
+        "Each state page links to neighboring states",
+        "All pages link to FMCSA pillar",
+        "No orphan pages (all reachable within 3 clicks)"
+      ],
+      "test_type": "e2e_browser",
+      "attempted_approaches": [],
+      "notes": ""
+    },
+    {
+      "id": "F022",
+      "name": "Performance optimization",
+      "description": "Site meets Core Web Vitals targets",
+      "status": "FAILING",
+      "dependencies": ["F002", "F006", "F011"],
+      "test_criteria": [
+        "LCP < 2.5s on key pages",
+        "CLS < 0.1 on all pages",
+        "Lighthouse Performance score 90+",
+        "Images optimized (WebP, lazy loaded)",
+        "No render-blocking resources"
+      ],
+      "test_type": "manual",
+      "attempted_approaches": [],
+      "notes": "Test via Lighthouse"
+    }
+  ]
+}
