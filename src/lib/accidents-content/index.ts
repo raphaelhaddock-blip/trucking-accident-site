@@ -6,6 +6,11 @@ import { rolloverAccidents } from './rollover-accidents';
 import { underrideAccidents } from './underride-accidents';
 import { rearEndCollisions } from './rear-end-collisions';
 import { headOnCollisions } from './head-on-collisions';
+import { tBoneAccidents } from './t-bone-accidents';
+import { wideTurnAccidents } from './wide-turn-accidents';
+import { blindSpotAccidents } from './blind-spot-accidents';
+import { sideswipeAccidents } from './sideswipe-accidents';
+import { overrideAccidents } from './override-accidents';
 
 // Map of all accident content
 const accidentContentMap: Partial<Record<AccidentSlug, AccidentContent>> = {
@@ -15,7 +20,13 @@ const accidentContentMap: Partial<Record<AccidentSlug, AccidentContent>> = {
   'underride-accidents': underrideAccidents,
   'rear-end-collisions': rearEndCollisions,
   'head-on-collisions': headOnCollisions,
-  // Tier 2-4 will be added as they are created
+  // Tier 2 (5 high volume)
+  't-bone-accidents': tBoneAccidents,
+  'wide-turn-accidents': wideTurnAccidents,
+  'blind-spot-accidents': blindSpotAccidents,
+  'sideswipe-accidents': sideswipeAccidents,
+  'override-accidents': overrideAccidents,
+  // Tier 3-4 will be added as they are created
 };
 
 /**

@@ -130,7 +130,7 @@
       "id": "F007",
       "name": "Tier 2 accident pages (5)",
       "description": "Create next 5 accident type pages with 3,000+ words each",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F005"],
       "test_criteria": [
         "t-bone-accidents page renders with 3,000+ words",
