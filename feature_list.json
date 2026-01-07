@@ -93,7 +93,7 @@
       "id": "F005",
       "name": "Accident page template",
       "description": "Dynamic route /accidents/[slug] rendering accident type pages from content files",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F001"],
       "test_criteria": [
         "Dynamic route at /accidents/[slug] works",

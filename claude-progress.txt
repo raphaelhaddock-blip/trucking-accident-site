@@ -5,7 +5,7 @@
 ## PROJECT OVERVIEW
 National lead generation site for 18-wheeler/trucking accident victims.
 Stack: Next.js 14, TypeScript, Tailwind CSS, Sanity CMS
-Port: 3005
+Port: 3006
 
 Key specs:
 - 20 accident type pages (3,000+ words each)
@@ -75,5 +75,33 @@ Key specs:
 ### Next Session Should
 - Begin F002 (Homepage with hero and CTAs) OR
 - Begin F003 (Sanity CMS configuration)
+
+---
+
+## SESSION 2 - 2026-01-07
+### Starting State
+- F000, F001 PASSING
+- Port corrected to 3006 per user request
+
+### Work Done
+- F002: Homepage with hero and CTAs - PASSING
+  - Hero section with H1 "18-Wheeler Accident Lawyers"
+  - Primary CTA "Free Case Evaluation" above fold
+  - Trust elements grid (No Fee Unless You Win, 24/7 Available)
+  - Statistics section with FMCSA facts
+  - Accident type cards linking to /accidents/[slug]
+  - FMCSA regulations preview section
+  - JSON-LD LegalService schema markup
+  - 800+ words of content
+
+### Ending State
+- F000: PASSING
+- F001: PASSING
+- F002: PASSING
+- All other features: FAILING
+
+### Next Task
+- Begin F005 (Accident page template)
+- This unlocks F006-F009 (20 accident type pages)
 
 ---
