@@ -35,6 +35,7 @@ const topStates = [
 ];
 
 const resources = [
+  { name: 'Blog & Guides', href: '/blog' },
   { name: 'FMCSA Regulations', href: '/fmcsa-regulations' },
   { name: 'About Us', href: '/about' },
   { name: 'Contact', href: '/contact' },

@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { ACCIDENT_SLUGS } from '@/lib/accidents-content';
 import { getAvailableStateSlugs } from '@/lib/states-content';
+import { BLOG_SLUGS } from '@/lib/blog-content';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://18wheeleraccidentlawyers.com';
@@ -21,6 +22,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/states`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
@@ -55,5 +62,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...accidentPages, ...statePages];
+  // Blog posts
+  const blogPages: MetadataRoute.Sitemap = BLOG_SLUGS.map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...accidentPages, ...statePages, ...blogPages];
 }

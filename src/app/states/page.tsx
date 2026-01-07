@@ -197,6 +197,49 @@ export default function StatesPage() {
         </div>
       </section>
 
+      {/* Types of Accidents Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-navy-900 mb-4">
+            Common 18-Wheeler Accident Types
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Different accident types present unique legal challenges. Understanding your accident
+            type helps identify liable parties and build a stronger case.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { name: 'Jackknife Accidents', slug: 'jackknife-accidents' },
+              { name: 'Rollover Accidents', slug: 'rollover-accidents' },
+              { name: 'Underride Accidents', slug: 'underride-accidents' },
+              { name: 'Rear-End Collisions', slug: 'rear-end-collisions' },
+              { name: 'Head-On Collisions', slug: 'head-on-collisions' },
+              { name: 'Brake Failure', slug: 'brake-failure' },
+              { name: 'Tire Blowout', slug: 'tire-blowout' },
+              { name: 'Driver Fatigue', slug: 'driver-fatigue' },
+            ].map((accident) => (
+              <Link
+                key={accident.slug}
+                href={`/accidents/${accident.slug}`}
+                className="group rounded-lg bg-gray-50 border border-gray-200 p-4 hover:border-amber-500 hover:bg-amber-50 transition"
+              >
+                <span className="font-semibold text-navy-900 group-hover:text-amber-600 transition">
+                  {accident.name}
+                </span>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/accidents"
+              className="text-amber-600 hover:text-amber-700 font-semibold"
+            >
+              View All 20 Accident Types &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Federal vs State Law Section */}
       <section className="py-16 bg-navy-900 text-white">
         <div className="max-w-4xl mx-auto px-4">

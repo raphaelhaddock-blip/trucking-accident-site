@@ -279,8 +279,69 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FMCSA Section */}
+      {/* Top States Section */}
       <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-navy-900">
+              Top States for Trucking Accidents
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+              These states see the highest number of fatal truck crashes annually. Local laws,
+              trucking corridors, and court systems vary significantly—your state matters.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
+            {[
+              { name: 'Texas', abbr: 'TX', slug: 'texas' },
+              { name: 'California', abbr: 'CA', slug: 'california' },
+              { name: 'Florida', abbr: 'FL', slug: 'florida' },
+              { name: 'Georgia', abbr: 'GA', slug: 'georgia' },
+              { name: 'Pennsylvania', abbr: 'PA', slug: 'pennsylvania' },
+              { name: 'Ohio', abbr: 'OH', slug: 'ohio' },
+              { name: 'Illinois', abbr: 'IL', slug: 'illinois' },
+              { name: 'North Carolina', abbr: 'NC', slug: 'north-carolina' },
+              { name: 'Tennessee', abbr: 'TN', slug: 'tennessee' },
+              { name: 'Indiana', abbr: 'IN', slug: 'indiana' },
+            ].map((state) => (
+              <Link
+                key={state.slug}
+                href={`/states/${state.slug}`}
+                className="group rounded-lg bg-navy-900 p-4 text-center hover:bg-navy-800 transition-colors"
+              >
+                <div className="text-2xl font-bold text-white">{state.abbr}</div>
+                <div className="text-sm text-gray-300 group-hover:text-amber-400 transition-colors">
+                  {state.name}
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href="/states"
+              className="inline-flex items-center text-lg font-semibold text-amber-600 hover:text-amber-700"
+            >
+              View All 50 States
+              <svg
+                className="ml-2 h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FMCSA Section */}
+      <section className="bg-gray-50 py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div>

@@ -171,6 +171,52 @@ export default function AccidentsPage() {
         </div>
       </section>
 
+      {/* Find by State Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-navy-900 mb-4">
+            Find Truck Accident Lawyers by State
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Trucking laws, statutes of limitations, and comparative negligence rules vary by state.
+            Find an attorney who understands your state&apos;s legal landscape.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            {[
+              { name: 'Texas', abbr: 'TX', slug: 'texas' },
+              { name: 'California', abbr: 'CA', slug: 'california' },
+              { name: 'Florida', abbr: 'FL', slug: 'florida' },
+              { name: 'Georgia', abbr: 'GA', slug: 'georgia' },
+              { name: 'Pennsylvania', abbr: 'PA', slug: 'pennsylvania' },
+              { name: 'Ohio', abbr: 'OH', slug: 'ohio' },
+              { name: 'Illinois', abbr: 'IL', slug: 'illinois' },
+              { name: 'Tennessee', abbr: 'TN', slug: 'tennessee' },
+              { name: 'North Carolina', abbr: 'NC', slug: 'north-carolina' },
+              { name: 'Indiana', abbr: 'IN', slug: 'indiana' },
+            ].map((state) => (
+              <Link
+                key={state.slug}
+                href={`/states/${state.slug}`}
+                className="group rounded-lg bg-gray-50 border border-gray-200 p-4 text-center hover:border-amber-500 hover:bg-amber-50 transition"
+              >
+                <div className="text-xl font-bold text-navy-900">{state.abbr}</div>
+                <div className="text-sm text-gray-600 group-hover:text-amber-600 transition">
+                  {state.name}
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/states"
+              className="text-amber-600 hover:text-amber-700 font-semibold"
+            >
+              View All 50 States &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-amber-500">
         <div className="max-w-4xl mx-auto px-4 text-center">
