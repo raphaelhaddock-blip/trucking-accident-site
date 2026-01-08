@@ -13,6 +13,7 @@ import {
 } from '@/lib/states-content';
 import { STANDARD_SETTLEMENT_RANGES, SETTLEMENT_DISCLAIMER } from '@/lib/states-content/types';
 import { ACCIDENT_SLUGS, getAccidentName } from '@/lib/accidents-content';
+import { getCitiesForState } from '@/lib/cities-content';
 
 // Generate static params for all available states
 export async function generateStaticParams() {
@@ -530,6 +531,37 @@ export default async function StatePage({
           </div>
         </div>
       </section>
+
+      {/* City Pages Section */}
+      {getCitiesForState(slug).length > 0 && (
+        <section className="py-16 bg-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-3xl font-bold text-navy-900 mb-4">
+              {content.name} City Truck Accident Lawyers
+            </h2>
+            <p className="text-gray-600 mb-8">
+              Find truck accident attorneys in major {content.name} cities. Each city page includes
+              local accident statistics, dangerous corridors, and information specific to that area.
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+              {getCitiesForState(slug).map((city) => (
+                <Link
+                  key={city.slug}
+                  href={`/states/${slug}/${city.slug}`}
+                  className="bg-gray-50 rounded-lg px-4 py-3 hover:bg-amber-50 hover:border-amber-200 border border-gray-200 transition group"
+                >
+                  <span className="text-navy-900 font-medium text-sm group-hover:text-amber-700">
+                    {city.name}
+                  </span>
+                  <span className="block text-xs text-gray-500 mt-1">
+                    {city.truckFatalities} fatal crashes
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* FAQ Section */}
       <section className="py-16 bg-white">

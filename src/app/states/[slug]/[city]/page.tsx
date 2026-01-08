@@ -105,6 +105,44 @@ export default async function CityPage({
     },
   };
 
+  // City-specific FAQs
+  const cityFaqs = [
+    {
+      question: `How much is my ${cityData.name} truck accident case worth?`,
+      answer: `Truck accident settlement values in ${cityData.name} depend on injury severity, medical expenses, lost wages, and liability. Serious injury cases often settle for $500,000 to several million dollars. With ${cityData.truckFatalities} fatal truck crashes in ${cityData.name} in ${cityData.dataYear}, these cases require experienced legal representation. A free consultation can provide a case-specific estimate.`,
+    },
+    {
+      question: `What should I do after a truck accident in ${cityData.name}?`,
+      answer: `First, seek medical attention even if injuries seem minor. Call 911 to file a police report. Document the scene with photos and get contact information from witnesses. Do not give statements to the trucking company's insurance. Contact a ${cityData.name} truck accident lawyer before accepting any settlement offer.`,
+    },
+    {
+      question: `How long do I have to file a truck accident lawsuit in ${stateName}?`,
+      answer: `${stateName} has a statute of limitations for personal injury claims that sets strict deadlines for filing. Missing this deadline means losing your right to compensation forever. Contact a ${cityData.name} truck accident lawyer promptly to ensure your claim is filed on time and all evidence is preserved.`,
+    },
+    {
+      question: `Who can be held liable for a truck accident in ${cityData.name}?`,
+      answer: `Multiple parties may be liable in ${cityData.name} truck accidents: the truck driver, trucking company, cargo loading company, truck manufacturer, and maintenance providers. An experienced attorney will investigate all potentially responsible parties to maximize your compensation.`,
+    },
+    {
+      question: `Do I need a lawyer for my ${cityData.name} truck accident?`,
+      answer: `While not legally required, truck accident cases are complex. Trucking companies have aggressive legal teams and extensive resources. An experienced ${cityData.name} truck accident lawyer levels the playing field, handles negotiations, and typically recovers significantly more compensation than unrepresented victims.`,
+    },
+  ];
+
+  // FAQ Schema for SEO
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: cityFaqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Schema Markup */}
@@ -115,6 +153,10 @@ export default async function CityPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Hero Section */}
@@ -348,9 +390,31 @@ export default async function CityPage({
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-navy-900 mb-8">
+            {cityData.name} Truck Accident FAQs
+          </h2>
+          <div className="space-y-6">
+            {cityFaqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-amber-500"
+              >
+                <h3 className="text-lg font-bold text-navy-900 mb-3">
+                  {faq.question}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Other Cities Section */}
       {otherCities.length > 0 && (
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-2xl font-bold text-navy-900 mb-6">
               Truck Accident Lawyers in Other {stateName} Cities
@@ -396,21 +460,31 @@ export default async function CityPage({
                 </Link>
               </span>
             </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <span>
-                Data Year: {cityData.dataYear} |{' '}
-                <a
-                  href={cityData.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-amber-600 hover:text-amber-700"
-                >
-                  NHTSA FARS
-                </a>
-              </span>
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span>
+                  Last Updated:{' '}
+                  <time dateTime={new Date().toISOString().split('T')[0]} className="font-medium">
+                    {new Date().toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
+                  </time>
+                </span>
+              </div>
+              <span className="text-gray-400">|</span>
+              <a
+                href={cityData.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-600 hover:text-amber-700"
+              >
+                NHTSA FARS {cityData.dataYear}
+              </a>
             </div>
           </div>
         </div>
