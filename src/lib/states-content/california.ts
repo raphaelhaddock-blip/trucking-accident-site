@@ -94,23 +94,7 @@ California uses a case management system that requires parties to meet and confe
 
 California has no caps on economic or non-economic damages in personal injury cases. Punitive damages are available under Civil Code section 3294 when defendants act with malice, oppression, or fraud—potentially applicable when trucking companies knowingly allow unsafe vehicles or fatigued drivers to operate.`,
 
-  notableVerdicts: [
-    {
-      amount: '$253 Million',
-      description: 'Verdict against major carrier for catastrophic injuries caused by fatigued driver violating HOS regulations',
-      year: '2022'
-    },
-    {
-      amount: '$176 Million',
-      description: 'Settlement for wrongful death of family killed in underride accident with inadequately maintained trailer',
-      year: '2023'
-    },
-    {
-      amount: '$89 Million',
-      description: 'Verdict for brain injury victim struck by speeding truck in work zone',
-      year: '2023'
-    }
-  ],
+  lastUpdated: '2026-01-08',
 
   whyHireLocal: `California truck accident cases require attorneys who understand both federal regulations and the nuances of California law. The state's pure comparative negligence system, extensive discovery rules, and strong consumer protection culture create opportunities for skilled attorneys to maximize recovery—but only if they know how to leverage these advantages.
 

@@ -94,23 +94,7 @@ Georgia allows broad civil discovery including depositions, document requests, a
 
 Georgia does not cap compensatory damages in most personal injury cases, though punitive damages are capped at $250,000 in most situations (with exceptions for cases involving intentional conduct or specific intent to harm). Understanding these rules affects case strategy and settlement negotiations.`,
 
-  notableVerdicts: [
-    {
-      amount: '$280 Million',
-      description: 'Verdict against trucking company for wrongful death caused by driver under influence of drugs who falsified drug test',
-      year: '2023'
-    },
-    {
-      amount: '$150 Million',
-      description: 'Settlement for catastrophic injuries from truck driver texting while driving on I-285',
-      year: '2022'
-    },
-    {
-      amount: '$52 Million',
-      description: 'Verdict for traumatic brain injury victim struck by truck running red light',
-      year: '2023'
-    }
-  ],
+  lastUpdated: '2026-01-08',
 
   whyHireLocal: `Georgia truck accident cases demand attorneys who understand the state's unique transportation landscape. Atlanta's role as the Southeast's logistics hub means local lawyers regularly handle cases involving major carriers, distribution operations, and port-related trucking. This experience translates to understanding industry practices and knowing where to find critical evidence.
 

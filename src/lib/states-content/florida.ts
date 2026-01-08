@@ -94,23 +94,7 @@ Florida allows broad discovery in civil cases, including access to corporate rec
 
 Florida's 2023 tort reform changed several aspects of personal injury litigation, including reducing the statute of limitations and changing the comparative negligence standard. These changes significantly impact truck accident cases and require attorneys current on the latest developments in Florida law.`,
 
-  notableVerdicts: [
-    {
-      amount: '$1 Billion',
-      description: 'Verdict against trucking company for crash killing family, including punitive damages for egregious safety violations',
-      year: '2021'
-    },
-    {
-      amount: '$411 Million',
-      description: 'Verdict for catastrophic injuries from truck rear-ending stopped traffic on I-75',
-      year: '2022'
-    },
-    {
-      amount: '$101 Million',
-      description: 'Settlement for wrongful death caused by fatigued driver violating hours of service regulations',
-      year: '2023'
-    }
-  ],
+  lastUpdated: '2026-01-08',
 
   whyHireLocal: `Florida truck accident cases require attorneys who understand the state's recently reformed tort system. The 2023 changes to comparative negligence and statutes of limitations significantly impact case strategy and potential outcomes. An experienced Florida attorney knows how to navigate these new rules while maximizing your recovery.
 

@@ -94,23 +94,7 @@ Ohio allows comprehensive civil discovery. The state's rules permit depositions,
 
 Ohio does not cap compensatory damages in most personal injury cases. Non-economic damages may be subject to caps in certain circumstances, but these limits typically don't apply to catastrophic injury cases. Understanding these rules affects case strategy and settlement negotiations.`,
 
-  notableVerdicts: [
-    {
-      amount: '$42 Million',
-      description: 'Verdict against carrier for wrongful death caused by fatigued driver on I-70',
-      year: '2023'
-    },
-    {
-      amount: '$28 Million',
-      description: 'Settlement for catastrophic injuries from underride accident on Ohio Turnpike',
-      year: '2022'
-    },
-    {
-      amount: '$21 Million',
-      description: 'Verdict for traumatic brain injury from truck running red light in Columbus',
-      year: '2023'
-    }
-  ],
+  lastUpdated: '2026-01-08',
 
   whyHireLocal: `Ohio truck accident cases require attorneys who understand the state's position as America's transportation crossroads. More freight moves through Ohio than any other state, meaning local lawyers regularly handle cases involving major carriers and complex multi-party accidents. This experience translates to understanding industry practices and evidence sources.
 

@@ -94,23 +94,7 @@ North Carolina allows civil discovery including depositions, document requests, 
 
 Given North Carolina's contributory negligence rule, jury selection and presentation become particularly important. Experienced attorneys know how to present cases that establish the trucker's complete fault while defending against any suggestion of victim contribution.`,
 
-  notableVerdicts: [
-    {
-      amount: '$28 Million',
-      description: 'Verdict against carrier for crash caused by driver using cell phone on I-85',
-      year: '2023'
-    },
-    {
-      amount: '$19 Million',
-      description: 'Settlement for wrongful death from underride accident on I-95',
-      year: '2022'
-    },
-    {
-      amount: '$15 Million',
-      description: 'Verdict for catastrophic injuries from fatigued driver crash in Charlotte',
-      year: '2023'
-    }
-  ],
+  lastUpdated: '2026-01-08',
 
   whyHireLocal: `North Carolina's contributory negligence rule makes local legal representation absolutely essential. Unlike most states where you can still recover even if partially at fault, North Carolina may bar your entire recovery if you bear any responsibility. Experienced North Carolina attorneys know how to build cases that establish the trucking company's complete fault.
 

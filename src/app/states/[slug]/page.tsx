@@ -11,6 +11,7 @@ import {
   STATE_SLUGS,
   getAvailableStateSlugs,
 } from '@/lib/states-content';
+import { STANDARD_SETTLEMENT_RANGES, SETTLEMENT_DISCLAIMER } from '@/lib/states-content/types';
 import { ACCIDENT_SLUGS, getAccidentName } from '@/lib/accidents-content';
 
 // Generate static params for all available states
@@ -391,30 +392,58 @@ export default async function StatePage({
         </div>
       </section>
 
-      {/* Notable Verdicts Section */}
-      {content.notableVerdicts.length > 0 && (
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-navy-900 mb-8">
-              Notable {content.name} Trucking Verdicts &amp; Settlements
-            </h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              {content.notableVerdicts.map((verdict, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                  <div className="text-3xl font-bold text-amber-500 mb-2">
-                    {verdict.amount}
-                  </div>
-                  <p className="text-gray-700 mb-2">{verdict.description}</p>
-                  <span className="text-gray-500 text-sm">{verdict.year}</span>
-                </div>
-              ))}
-            </div>
-            <p className="text-gray-500 text-sm mt-6 italic">
-              * Past results do not guarantee future outcomes. Every case is unique.
-            </p>
+      {/* Settlement Ranges Section - Honest industry data */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-navy-900 mb-4">
+            Typical {content.name} Truck Accident Settlement Ranges
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Settlement values vary significantly based on injury severity, liability, evidence quality,
+            and available insurance coverage. Below are typical ranges based on industry data.
+          </p>
+
+          {/* Settlement Ranges Table */}
+          <div className="bg-white rounded-lg shadow-sm overflow-hidden mb-6">
+            <table className="w-full">
+              <thead className="bg-navy-900 text-white">
+                <tr>
+                  <th className="px-6 py-4 text-left font-bold">Case Type</th>
+                  <th className="px-6 py-4 text-left font-bold">Typical Range</th>
+                  <th className="px-6 py-4 text-left font-bold hidden md:table-cell">Key Factors</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                {(content.settlementRanges || STANDARD_SETTLEMENT_RANGES).map((range, index) => (
+                  <tr key={index} className="hover:bg-gray-50">
+                    <td className="px-6 py-4">
+                      <span className="font-medium text-navy-900">
+                        {range.caseType === 'wrongfulDeath' && 'Wrongful Death'}
+                        {range.caseType === 'catastrophicInjury' && 'Catastrophic Injury'}
+                        {range.caseType === 'seriousInjury' && 'Serious Injury'}
+                        {range.caseType === 'moderateInjury' && 'Moderate Injury'}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4">
+                      <span className="text-amber-600 font-bold">
+                        {range.minAmount} - {range.maxAmount}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 text-gray-600 text-sm hidden md:table-cell">
+                      {range.factors}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-        </section>
-      )}
+
+          {/* Disclaimer */}
+          <p className="text-gray-500 text-sm italic leading-relaxed">
+            {SETTLEMENT_DISCLAIMER}
+          </p>
+        </div>
+      </section>
 
       {/* Court Information */}
       <section className="py-16 bg-white">

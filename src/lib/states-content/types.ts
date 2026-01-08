@@ -12,6 +12,44 @@ export interface StateImages {
   corridorAlt?: string;
 }
 
+// Settlement ranges - honest industry data instead of fake verdicts
+export interface SettlementRange {
+  caseType: 'wrongfulDeath' | 'catastrophicInjury' | 'seriousInjury' | 'moderateInjury';
+  minAmount: string;
+  maxAmount: string;
+  factors: string;
+}
+
+// Standard settlement ranges (applies to all states - based on industry data)
+export const STANDARD_SETTLEMENT_RANGES: SettlementRange[] = [
+  {
+    caseType: 'wrongfulDeath',
+    minAmount: '$2,000,000',
+    maxAmount: '$10,000,000+',
+    factors: 'Victim age, number of dependents, lost earning capacity, carrier insurance limits'
+  },
+  {
+    caseType: 'catastrophicInjury',
+    minAmount: '$1,000,000',
+    maxAmount: '$5,000,000+',
+    factors: 'Permanent disability, future medical costs, loss of quality of life'
+  },
+  {
+    caseType: 'seriousInjury',
+    minAmount: '$250,000',
+    maxAmount: '$1,000,000',
+    factors: 'Surgery required, extended recovery, significant lost wages'
+  },
+  {
+    caseType: 'moderateInjury',
+    minAmount: '$50,000',
+    maxAmount: '$250,000',
+    factors: 'Medical treatment needed, some lost work time, ongoing therapy'
+  }
+];
+
+export const SETTLEMENT_DISCLAIMER = `*Settlement ranges are based on industry data and are provided for informational purposes only. Every case is unique. These figures should not be interpreted as a guarantee or prediction of results. Past outcomes do not guarantee future results. Many factors affect case value including liability, evidence, insurance coverage, and jurisdiction.*`;
+
 export interface StateContent {
   slug: string;
   name: string;
@@ -58,12 +96,12 @@ export interface StateContent {
   // Local Court Information
   courtInfo: string;
 
-  // Notable Verdicts/Settlements
-  notableVerdicts: {
-    amount: string;
-    description: string;
-    year: string;
-  }[];
+  // Settlement Ranges (uses STANDARD_SETTLEMENT_RANGES if not specified)
+  // Replaces fake "notableVerdicts" with honest industry ranges
+  settlementRanges?: SettlementRange[];
+
+  // Content freshness
+  lastUpdated: string; // ISO date string e.g. "2026-01-08"
 
   // Why Hire Local
   whyHireLocal: string;

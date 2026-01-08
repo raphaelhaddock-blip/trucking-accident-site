@@ -94,23 +94,7 @@ Venue in Texas is governed by Chapter 15 of the Texas Civil Practice and Remedie
 
 Texas does not cap economic damages in personal injury cases, allowing full recovery of medical expenses, lost wages, and other financial losses. Non-economic damages (pain and suffering) are also uncapped in most trucking accident cases, though punitive damages are capped at the greater of $200,000 or twice economic damages plus $750,000 in non-economic damages.`,
 
-  notableVerdicts: [
-    {
-      amount: '$101 Million',
-      description: 'Verdict against trucking company for driver fatigue-related crash that killed a family of four',
-      year: '2023'
-    },
-    {
-      amount: '$89 Million',
-      description: 'Settlement for victims of underride accident caused by improperly marked trailer',
-      year: '2022'
-    },
-    {
-      amount: '$52 Million',
-      description: 'Verdict for catastrophic injuries from brake failure accident on I-35',
-      year: '2023'
-    }
-  ],
+  lastUpdated: '2026-01-08',
 
   whyHireLocal: `Texas truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Texas state law. Local counsel knows the Texas court system, local procedures, and the judges who will hear your case. They understand how Texas juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
 

@@ -94,23 +94,7 @@ Tennessee allows comprehensive civil discovery. The state's Rules of Civil Proce
 
 Tennessee's one-year statute of limitations means prompt action is essential. Evidence preservation letters must be sent immediately, and investigation must begin quickly to meet the tight deadline.`,
 
-  notableVerdicts: [
-    {
-      amount: '$45 Million',
-      description: 'Verdict for wrongful death caused by fatigued driver on I-40 near Nashville',
-      year: '2023'
-    },
-    {
-      amount: '$28 Million',
-      description: 'Settlement for catastrophic injuries from truck brake failure on Monteagle Mountain',
-      year: '2022'
-    },
-    {
-      amount: '$18 Million',
-      description: 'Verdict for traumatic brain injury from distracted driver crash in Memphis',
-      year: '2023'
-    }
-  ],
+  lastUpdated: '2026-01-08',
 
   whyHireLocal: `Tennessee's one-year statute of limitations makes prompt local legal action essential. This is one of the shortest deadlines in the nation, leaving little time to investigate, gather evidence, and file suit. An experienced Tennessee attorney knows how to move quickly while building a strong case.
 

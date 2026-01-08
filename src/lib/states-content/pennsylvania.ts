@@ -94,23 +94,7 @@ Pennsylvania allows extensive discovery in civil cases. The state's rules permit
 
 An important consideration in Pennsylvania is the tort option choice. Pennsylvania auto insurance policies offer "limited tort" and "full tort" options. Limited tort restricts your ability to sue for non-economic damages (pain and suffering) unless you suffer "serious injury." However, these limitations typically don't apply when a commercial truck causes your accident.`,
 
-  notableVerdicts: [
-    {
-      amount: '$73 Million',
-      description: 'Verdict for wrongful death caused by truck driver who fell asleep on Pennsylvania Turnpike',
-      year: '2023'
-    },
-    {
-      amount: '$42 Million',
-      description: 'Settlement for catastrophic injuries from jackknife accident in construction zone on I-78',
-      year: '2022'
-    },
-    {
-      amount: '$35 Million',
-      description: 'Verdict for traumatic brain injury victim struck by truck running stop sign',
-      year: '2023'
-    }
-  ],
+  lastUpdated: '2026-01-08',
 
   whyHireLocal: `Pennsylvania truck accident cases require attorneys who understand the Commonwealth's unique legal landscape. From the tort option system to the modified comparative negligence rule, Pennsylvania law has specific features that affect case strategy and outcomes. Experienced Pennsylvania counsel knows how to navigate these complexities.
 

@@ -94,23 +94,7 @@ Illinois allows comprehensive civil discovery. The state's Supreme Court rules p
 
 Illinois does not cap compensatory damages in personal injury cases. The state's courts have a reputation for significant verdicts in trucking cases, reflecting the severity of injuries and sophisticated plaintiff's bar. Understanding Cook County's unique characteristics matters for Chicago-area cases.`,
 
-  notableVerdicts: [
-    {
-      amount: '$148 Million',
-      description: 'Verdict for wrongful death caused by fatigued driver on I-80 in Will County',
-      year: '2023'
-    },
-    {
-      amount: '$95 Million',
-      description: 'Settlement for catastrophic injuries from underride accident on I-55',
-      year: '2022'
-    },
-    {
-      amount: '$52 Million',
-      description: 'Verdict for traumatic brain injury victim struck by speeding truck in Cook County',
-      year: '2023'
-    }
-  ],
+  lastUpdated: '2026-01-08',
 
   whyHireLocal: `Illinois truck accident cases require attorneys who understand the state's position as America's freight capital. Chicago is the nation's busiest intermodal hub, and Illinois lawyers regularly handle cases involving major carriers, complex logistics operations, and multi-party accidents. This experience translates to understanding industry practices and evidence sources.
 

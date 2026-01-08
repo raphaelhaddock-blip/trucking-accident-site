@@ -94,23 +94,7 @@ Indiana allows comprehensive civil discovery under the Indiana Rules of Trial Pr
 
 Indiana caps non-economic damages in most personal injury cases, though exceptions exist. Understanding these caps and exceptions affects case strategy and settlement negotiations.`,
 
-  notableVerdicts: [
-    {
-      amount: '$38 Million',
-      description: 'Verdict for wrongful death caused by fatigued driver on I-65 near Indianapolis',
-      year: '2023'
-    },
-    {
-      amount: '$27 Million',
-      description: 'Settlement for catastrophic injuries from underride accident on I-80/94',
-      year: '2022'
-    },
-    {
-      amount: '$19 Million',
-      description: 'Verdict for traumatic brain injury from distracted driver crash on I-70',
-      year: '2023'
-    }
-  ],
+  lastUpdated: '2026-01-08',
 
   whyHireLocal: `Indiana's position as the Crossroads of America creates unique trucking accident challenges. With more interstate highways converging here than any other state, local attorneys regularly handle complex cases involving multiple jurisdictions and carriers. Understanding Indiana's transportation environment helps build stronger cases.
 
