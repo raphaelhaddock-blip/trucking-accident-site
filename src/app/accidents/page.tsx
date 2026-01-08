@@ -3,12 +3,26 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { ACCIDENT_SLUGS, ACCIDENT_NAMES, getAccidentContent } from '@/lib/accidents-content';
 
+// Default OG image
+const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
+
 export const metadata: Metadata = {
   title: '18-Wheeler Accident Types | Types of Semi-Truck Crashes',
   description:
     'Learn about the different types of 18-wheeler accidents including jackknife, rollover, underride, and more. Free consultation with experienced truck accident lawyers.',
   alternates: {
     canonical: '/accidents',
+  },
+  openGraph: {
+    title: '18-Wheeler Accident Types | Types of Semi-Truck Crashes',
+    description: 'Learn about the different types of 18-wheeler accidents including jackknife, rollover, underride, and more.',
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1376, height: 768, alt: 'Types of 18-Wheeler Truck Accidents' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '18-Wheeler Accident Types',
+    description: 'Learn about different types of 18-wheeler accidents.',
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

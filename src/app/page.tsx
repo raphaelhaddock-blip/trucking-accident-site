@@ -9,6 +9,24 @@ export const metadata: Metadata = {
   title: 'Truck Injury Lawyers | Free Consultation',
   description:
     'Injured in an 18-wheeler crash? Our truck accident lawyers fight for maximum compensation. Free consultation. No fee unless you win. Call now.',
+  openGraph: {
+    title: 'Truck Injury Lawyers | Free Consultation',
+    description: 'Injured in an 18-wheeler crash? Our truck accident lawyers fight for maximum compensation. Free consultation. No fee unless you win.',
+    images: [
+      {
+        url: HERO_IMAGE_URL,
+        width: 1376,
+        height: 768,
+        alt: '18-wheeler semi-truck on highway at dusk',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Truck Injury Lawyers | Free Consultation',
+    description: 'Injured in an 18-wheeler crash? Our truck accident lawyers fight for maximum compensation.',
+    images: [HERO_IMAGE_URL],
+  },
 };
 
 const accidentTypes = [

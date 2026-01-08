@@ -8,6 +8,9 @@ import Footer from "@/components/Footer";
 // Google Analytics Measurement ID - set in Vercel environment variables
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
+// Default OG Image - 18-wheeler truck on highway
+const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -41,9 +44,18 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Truck Injury Lawyers",
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 1376,
+        height: 768,
+        alt: "18-wheeler semi-truck on highway - Truck Injury Lawyers",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    images: [DEFAULT_OG_IMAGE],
   },
   robots: {
     index: false,
@@ -66,6 +78,10 @@ const websiteSchema = {
     '@type': 'Organization',
     name: 'Truck Injury Lawyers',
     url: 'https://trucking-accident-site.vercel.app',
+    logo: {
+      '@type': 'ImageObject',
+      url: DEFAULT_OG_IMAGE,
+    },
   },
 };
 

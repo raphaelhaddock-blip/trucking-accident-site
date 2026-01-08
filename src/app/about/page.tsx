@@ -2,11 +2,32 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
+// Default OG image
+const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
+
 export const metadata: Metadata = {
   title: 'About Us | Truck Accident Legal Referral Service',
   description: 'Learn about Truck Injury Lawyers, a legal referral service connecting truck accident victims with experienced attorneys nationwide.',
   alternates: {
     canonical: '/about',
+  },
+  openGraph: {
+    title: 'About Us | Truck Injury Lawyers',
+    description: 'Learn about Truck Injury Lawyers, a legal referral service connecting truck accident victims with experienced attorneys nationwide.',
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 1376,
+        height: 768,
+        alt: 'Truck Injury Lawyers - About Us',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Us | Truck Injury Lawyers',
+    description: 'Learn about Truck Injury Lawyers, connecting truck accident victims with experienced attorneys nationwide.',
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

@@ -7,6 +7,9 @@ import { getAccidentName } from '@/lib/accidents-content';
 
 const PHONE_NUMBER = '1-800-555-0123';
 
+// Default OG image for blog posts
+const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
+
 export async function generateStaticParams() {
   return BLOG_SLUGS.map((slug) => ({ slug }));
 }
@@ -36,6 +39,20 @@ export async function generateMetadata({
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
       authors: [post.author],
+      images: [
+        {
+          url: DEFAULT_OG_IMAGE,
+          width: 1376,
+          height: 768,
+          alt: post.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.metaTitle,
+      description: post.metaDescription,
+      images: [DEFAULT_OG_IMAGE],
     },
   };
 }

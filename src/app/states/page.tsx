@@ -8,12 +8,26 @@ import {
   getAvailableStateSlugs,
 } from '@/lib/states-content';
 
+// Default OG image
+const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
+
 export const metadata: Metadata = {
   title: 'Truck Accident Lawyers by State | Find Local Attorneys',
   description:
     'Find experienced 18-wheeler accident lawyers in your state. We connect truck accident victims with attorneys who understand local laws, courts, and negligence rules.',
   alternates: {
     canonical: '/states',
+  },
+  openGraph: {
+    title: 'Truck Accident Lawyers by State | Find Local Attorneys',
+    description: 'Find experienced 18-wheeler accident lawyers in your state. We connect truck accident victims with local attorneys.',
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1376, height: 768, alt: 'Truck Accident Lawyers by State' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Truck Accident Lawyers by State',
+    description: 'Find experienced 18-wheeler accident lawyers in your state.',
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

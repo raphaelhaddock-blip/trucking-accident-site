@@ -19,6 +19,9 @@ export async function generateStaticParams() {
   }));
 }
 
+// Default OG image for pages without specific images
+const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
+
 // Generate metadata for each accident page
 export async function generateMetadata({
   params,
@@ -34,11 +37,33 @@ export async function generateMetadata({
     };
   }
 
+  // Get accident-specific image or use default
+  const ogImage = ACCIDENT_IMAGES[slug] || { url: DEFAULT_OG_IMAGE, alt: '18-wheeler truck accident' };
+
   return {
     title: content.metaTitle,
     description: content.metaDescription,
     alternates: {
       canonical: `/accidents/${slug}`,
+    },
+    openGraph: {
+      title: content.metaTitle,
+      description: content.metaDescription,
+      type: 'article',
+      images: [
+        {
+          url: ogImage.url,
+          width: 1408,
+          height: 768,
+          alt: ogImage.alt,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: content.metaTitle,
+      description: content.metaDescription,
+      images: [ogImage.url],
     },
   };
 }

@@ -2,6 +2,9 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 
+// Default OG image
+const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
+
 export const metadata: Metadata = {
   title: 'FMCSA Trucking Regulations | Federal Safety Laws',
   description: 'Comprehensive guide to FMCSA trucking regulations including Hours of Service, drug testing, maintenance requirements, and how violations prove negligence in truck accident cases.',
@@ -9,6 +12,20 @@ export const metadata: Metadata = {
     title: 'FMCSA Regulations: Trucking Laws That Protect You',
     description: 'Learn how federal trucking regulations protect you and establish liability when violated.',
     type: 'article',
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE,
+        width: 1376,
+        height: 768,
+        alt: 'FMCSA Trucking Regulations Guide',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'FMCSA Trucking Regulations | Federal Safety Laws',
+    description: 'Learn how federal trucking regulations protect you and establish liability when violated.',
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 

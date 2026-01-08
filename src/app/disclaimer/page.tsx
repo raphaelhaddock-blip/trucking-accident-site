@@ -1,11 +1,23 @@
 import { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
 
+// Default OG image
+const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
+
 export const metadata: Metadata = {
   title: 'Legal Disclaimer',
   description: 'Legal disclaimer for Truck Injury Lawyers. Important information about our referral service and attorney advertising.',
   alternates: {
     canonical: '/disclaimer',
+  },
+  openGraph: {
+    title: 'Legal Disclaimer | Truck Injury Lawyers',
+    description: 'Legal disclaimer for Truck Injury Lawyers. Important information about our referral service and attorney advertising.',
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1376, height: 768, alt: 'Truck Injury Lawyers - Legal Disclaimer' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 
