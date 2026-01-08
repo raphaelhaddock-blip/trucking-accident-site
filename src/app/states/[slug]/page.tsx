@@ -134,14 +134,18 @@ export default async function StatePage({
     })),
   };
 
-  // LegalService schema
+  // LegalService schema (inherits from LocalBusiness)
   const legalServiceSchema = {
     '@context': 'https://schema.org',
     '@type': 'LegalService',
+    '@id': `https://trucking-accident-site.vercel.app/states/${slug}#legalbusiness`,
     name: `${content.name} Truck Injury Lawyers`,
     description: content.metaDescription,
-    url: `https://www.18wheeleraccidentlawyers.com/states/${slug}`,
+    url: `https://trucking-accident-site.vercel.app/states/${slug}`,
     telephone: PHONE_NUMBER,
+    priceRange: 'Free Consultation - No Fee Unless You Win',
+    currenciesAccepted: 'USD',
+    paymentAccepted: 'Contingency Fee',
     areaServed: {
       '@type': 'State',
       name: content.name,
@@ -150,7 +154,44 @@ export default async function StatePage({
         name: 'United States',
       },
     },
-    serviceType: 'Trucking Accident Legal Representation',
+    serviceType: [
+      'Truck Accident Attorney',
+      '18-Wheeler Accident Lawyer',
+      'Semi-Truck Crash Legal Representation',
+      'Commercial Vehicle Accident Claims',
+    ],
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '00:00',
+      closes: '23:59',
+    },
+    image: STATE_IMAGES[slug]?.url || DEFAULT_OG_IMAGE,
+    sameAs: [
+      'https://trucking-accident-site.vercel.app',
+    ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Legal Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Free Case Evaluation',
+            description: 'Free consultation to review your truck accident case',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Truck Accident Litigation',
+            description: 'Full legal representation for 18-wheeler accident claims',
+          },
+        },
+      ],
+    },
   };
 
   // Negligence rule display text
