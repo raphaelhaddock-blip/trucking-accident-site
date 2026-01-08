@@ -20,6 +20,7 @@ export interface AccidentContent {
   metaDescription: string;
   heroText: string;
   images?: AccidentImages;
+  lastUpdated?: string; // ISO date string for freshness signals
 
   // What It Is section
   whatItIs: string;
