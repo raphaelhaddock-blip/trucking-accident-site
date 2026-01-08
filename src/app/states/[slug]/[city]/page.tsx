@@ -1,0 +1,450 @@
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import Breadcrumb from '@/components/Breadcrumb';
+import {
+  getCityData,
+  getAllCityParams,
+  getStateName,
+  getCitiesForState,
+  isValidCity,
+} from '@/lib/cities-content';
+
+// Generate static params for all cities
+export async function generateStaticParams() {
+  return getAllCityParams();
+}
+
+// Generate metadata for each city page
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string; city: string }>;
+}): Promise<Metadata> {
+  const { slug, city } = await params;
+  const cityData = getCityData(slug, city);
+  const stateName = getStateName(slug);
+
+  if (!cityData) {
+    return {
+      title: 'City Not Found',
+    };
+  }
+
+  const title = `${cityData.name} Truck Accident Lawyers | ${stateName} 18-Wheeler Attorneys`;
+  const description = `Experienced truck accident lawyers in ${cityData.name}, ${stateName}. ${cityData.truckFatalities} fatal truck crashes in ${cityData.dataYear}. Free consultation for 18-wheeler accident victims.`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `/states/${slug}/${city}`,
+    },
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+    },
+  };
+}
+
+// Phone number for CTAs
+const PHONE_NUMBER = '1-800-555-0123';
+
+export default async function CityPage({
+  params,
+}: {
+  params: Promise<{ slug: string; city: string }>;
+}) {
+  const { slug, city } = await params;
+
+  // Validate city exists
+  if (!isValidCity(slug, city)) {
+    notFound();
+  }
+
+  const cityData = getCityData(slug, city);
+  if (!cityData) {
+    notFound();
+  }
+
+  const stateName = getStateName(slug);
+  const otherCities = getCitiesForState(slug)
+    .filter(c => c.slug !== city)
+    .slice(0, 6);
+
+  // Schema markup
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LegalService',
+    name: `${cityData.name} Truck Accident Lawyers`,
+    description: `Truck accident attorneys serving ${cityData.name}, ${stateName}`,
+    url: `https://trucking-accident-site.vercel.app/states/${slug}/${city}`,
+    telephone: PHONE_NUMBER,
+    areaServed: {
+      '@type': 'City',
+      name: cityData.name,
+      containedInPlace: {
+        '@type': 'State',
+        name: stateName,
+      },
+    },
+    priceRange: 'Free Consultation',
+  };
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `${cityData.name} Truck Accident Lawyers - ${stateName}`,
+    description: `Truck accident statistics and legal resources for ${cityData.name}`,
+    datePublished: '2024-01-01',
+    dateModified: new Date().toISOString().split('T')[0],
+    author: {
+      '@type': 'Organization',
+      name: 'National Truck Accident Lawyers Editorial Team',
+    },
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+
+      {/* Hero Section */}
+      <section className="bg-navy-900 text-white py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <Breadcrumb
+            items={[
+              { label: 'Home', href: '/' },
+              { label: 'States', href: '/states' },
+              { label: stateName, href: `/states/${slug}` },
+              { label: cityData.name },
+            ]}
+          />
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            {cityData.name} Truck Accident Lawyers
+          </h1>
+          <p className="text-xl text-gray-300 mb-8 max-w-3xl">
+            Experienced 18-wheeler accident attorneys serving {cityData.name}, {stateName}.
+            With {cityData.truckFatalities.toLocaleString()} fatal truck crashes recorded in {cityData.dataYear},
+            our team fights for maximum compensation for accident victims.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href={`tel:${PHONE_NUMBER}`}
+              className="bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition text-center"
+            >
+              Free Case Evaluation: {PHONE_NUMBER}
+            </a>
+            <Link
+              href="/contact"
+              className="bg-white text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-center"
+            >
+              Contact Us Online
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className="py-12 bg-white border-b">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-amber-500 mb-2">
+                {cityData.truckFatalities}
+              </div>
+              <div className="text-gray-600 text-sm">Fatal Truck Crashes ({cityData.dataYear})</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-amber-500 mb-2">
+                {cityData.population.toLocaleString()}
+              </div>
+              <div className="text-gray-600 text-sm">City Population</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-amber-500 mb-2">
+                24/7
+              </div>
+              <div className="text-gray-600 text-sm">Available for Calls</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold text-amber-500 mb-2">
+                $0
+              </div>
+              <div className="text-gray-600 text-sm">Upfront Cost</div>
+            </div>
+          </div>
+          <p className="text-center text-gray-500 text-sm mt-4">
+            Source:{' '}
+            <a
+              href={cityData.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-600 hover:text-amber-700"
+            >
+              NHTSA FARS Database
+            </a>
+          </p>
+        </div>
+      </section>
+
+      {/* Truck Accidents in City Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-navy-900 mb-6">
+            Truck Accidents in {cityData.name}, {stateName}
+          </h2>
+          <div className="prose prose-lg max-w-none text-gray-700">
+            <p>
+              {cityData.name} is one of {stateName}&apos;s largest cities with a population of{' '}
+              {cityData.population.toLocaleString()} residents. The city&apos;s location along major
+              trucking corridors makes it a high-traffic area for commercial vehicles, including
+              18-wheelers, semi-trucks, and other large trucks.
+            </p>
+            <p>
+              According to the National Highway Traffic Safety Administration (NHTSA) Fatality Analysis
+              Reporting System (FARS), {cityData.name} and its surrounding area recorded{' '}
+              <strong>{cityData.truckFatalities} fatal truck crashes</strong> in {cityData.dataYear}.
+              These accidents resulted in devastating injuries and wrongful deaths that forever changed
+              families throughout the {cityData.name} metropolitan area.
+            </p>
+            <p>
+              If you or a loved one was injured in a truck accident in {cityData.name}, understanding
+              your legal rights is critical. Trucking companies and their insurers have teams of lawyers
+              working to minimize their liability. You deserve experienced legal representation that
+              knows how to investigate these complex cases and fight for maximum compensation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Dangerous Roads Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-navy-900 mb-8">
+            Dangerous Trucking Routes in {cityData.name}
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Major highways and interstates passing through {cityData.name} see heavy commercial truck
+            traffic. These corridors are common sites for serious truck accidents:
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {cityData.dangerousRoads.map((road, index) => (
+              <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
+                <div className="text-2xl font-bold text-navy-900 mb-2">{road}</div>
+                <p className="text-gray-600">
+                  Major trucking corridor passing through {cityData.name}. High volume of
+                  commercial traffic increases accident risk.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Common Causes Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-navy-900 mb-8">
+            Common Causes of Truck Accidents in {cityData.name}
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-navy-900 mb-3">Driver Fatigue</h3>
+              <p className="text-gray-700">
+                Despite federal hours-of-service regulations, many truck drivers exceed legal driving
+                limits to meet delivery deadlines. Fatigued driving is a leading cause of truck
+                accidents in {cityData.name}.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-navy-900 mb-3">Distracted Driving</h3>
+              <p className="text-gray-700">
+                Cell phone use, GPS devices, and other distractions cause truck drivers to lose
+                focus on the road. At 65 mph, looking away for just 5 seconds means traveling
+                the length of a football field blind.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-navy-900 mb-3">Improper Maintenance</h3>
+              <p className="text-gray-700">
+                Trucking companies sometimes cut corners on maintenance to save money. Brake
+                failures, tire blowouts, and other mechanical issues cause catastrophic accidents.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-navy-900 mb-3">Overloaded Cargo</h3>
+              <p className="text-gray-700">
+                Improperly loaded or overweight trucks are harder to control and take longer to
+                stop. Shifted cargo can cause rollovers and jackknife accidents.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Hire Local Section */}
+      <section className="py-16 bg-navy-900 text-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-6">
+            Why Hire a {cityData.name} Truck Accident Lawyer?
+          </h2>
+          <div className="prose prose-lg prose-invert max-w-none">
+            <p className="text-gray-300">
+              Truck accident cases are significantly more complex than typical car accident claims.
+              A {cityData.name} truck accident lawyer brings critical advantages:
+            </p>
+            <ul className="text-gray-300 space-y-3 mt-6">
+              <li>
+                <strong className="text-white">Knowledge of {stateName} trucking laws</strong> -
+                State regulations add layers of liability beyond federal FMCSA rules.
+              </li>
+              <li>
+                <strong className="text-white">Familiarity with local courts</strong> -
+                Understanding how {cityData.name} area judges and juries handle truck accident cases.
+              </li>
+              <li>
+                <strong className="text-white">Quick accident scene investigation</strong> -
+                Preserving evidence before trucking companies can alter or destroy it.
+              </li>
+              <li>
+                <strong className="text-white">Network of local experts</strong> -
+                Access to accident reconstructionists, medical experts, and economists in {stateName}.
+              </li>
+              <li>
+                <strong className="text-white">No fee unless you win</strong> -
+                Contingency fee arrangements mean you pay nothing upfront.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Link to State Page */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-navy-900 mb-6">
+            {stateName} Truck Accident Laws
+          </h2>
+          <p className="text-gray-700 mb-6">
+            Truck accident claims in {cityData.name} are governed by {stateName} state law, including
+            statute of limitations deadlines, comparative negligence rules, and damage caps. Our
+            comprehensive {stateName} truck accident guide covers everything you need to know.
+          </p>
+          <Link
+            href={`/states/${slug}`}
+            className="inline-block bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition"
+          >
+            View {stateName} Truck Accident Laws &rarr;
+          </Link>
+        </div>
+      </section>
+
+      {/* Other Cities Section */}
+      {otherCities.length > 0 && (
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-2xl font-bold text-navy-900 mb-6">
+              Truck Accident Lawyers in Other {stateName} Cities
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {otherCities.map((otherCity) => (
+                <Link
+                  key={otherCity.slug}
+                  href={`/states/${slug}/${otherCity.slug}`}
+                  className="bg-white px-4 py-3 rounded-lg shadow-sm hover:shadow-md transition text-center"
+                >
+                  <span className="text-amber-600 font-medium">{otherCity.name}</span>
+                  <span className="text-gray-500 text-sm block">
+                    {otherCity.truckFatalities} fatal crashes
+                  </span>
+                </Link>
+              ))}
+            </div>
+            <div className="text-center mt-6">
+              <Link
+                href={`/states/${slug}`}
+                className="text-amber-600 font-semibold hover:text-amber-700"
+              >
+                View all {stateName} cities &rarr;
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Content Freshness */}
+      <section className="py-8 bg-white border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-sm text-gray-600">
+            <div className="flex items-center gap-2">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+              <span>
+                Written by{' '}
+                <Link href="/about/team" className="text-amber-600 hover:text-amber-700 font-medium">
+                  Editorial Team
+                </Link>
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>
+                Data Year: {cityData.dataYear} |{' '}
+                <a
+                  href={cityData.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-600 hover:text-amber-700"
+                >
+                  NHTSA FARS
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-navy-900 text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">
+            Injured in a {cityData.name} Truck Accident?
+          </h2>
+          <p className="text-gray-300 mb-8 text-lg">
+            Get experienced legal representation from attorneys who know {cityData.name} and
+            {stateName} trucking laws. We fight to hold trucking companies accountable.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={`tel:${PHONE_NUMBER}`}
+              className="bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition"
+            >
+              Call Now: {PHONE_NUMBER}
+            </a>
+            <Link
+              href="/contact"
+              className="bg-white text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition"
+            >
+              Free Case Evaluation
+            </Link>
+          </div>
+          <p className="text-gray-400 mt-6 text-sm">
+            No Fee Unless You Win | Available 24/7 | Hablamos Espa&ntilde;ol
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+}

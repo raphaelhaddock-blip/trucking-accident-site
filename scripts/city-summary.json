@@ -1,0 +1,922 @@
+[
+  {
+    "stateSlug": "california",
+    "stateName": "California",
+    "cityCount": 111,
+    "totalFatalities": 420,
+    "cities": [
+      "Los Angeles",
+      "San Diego",
+      "San Jose",
+      "San Francisco",
+      "Fresno",
+      "Sacramento",
+      "Long Beach",
+      "Oakland",
+      "Bakersfield",
+      "Anaheim",
+      "Santa Ana",
+      "Riverside",
+      "Stockton",
+      "Irvine",
+      "Chula Vista",
+      "Fremont",
+      "San Bernardino",
+      "Modesto",
+      "Fontana",
+      "Moreno Valley",
+      "Santa Clarita",
+      "Glendale",
+      "Huntington Beach",
+      "Garden Grove",
+      "Oceanside",
+      "Rancho Cucamonga",
+      "Ontario",
+      "Santa Rosa",
+      "Elk Grove",
+      "Corona",
+      "Lancaster",
+      "Palmdale",
+      "Salinas",
+      "Pomona",
+      "Hayward",
+      "Escondido",
+      "Sunnyvale",
+      "Torrance",
+      "Pasadena",
+      "Orange",
+      "Fullerton",
+      "Thousand Oaks",
+      "Roseville",
+      "Concord",
+      "Simi Valley",
+      "Santa Clara",
+      "Victorville",
+      "Vallejo",
+      "Berkeley",
+      "El Monte",
+      "Downey",
+      "Costa Mesa",
+      "Inglewood",
+      "Carlsbad",
+      "San Buenaventura",
+      "Fairfield",
+      "West Covina",
+      "Murrieta",
+      "Richmond",
+      "Norwalk",
+      "Antioch",
+      "Temecula",
+      "Burbank",
+      "Daly City",
+      "El Cajon",
+      "San Mateo",
+      "Rialto",
+      "Clovis",
+      "Compton",
+      "Jurupa Valley",
+      "Vista",
+      "South Gate",
+      "Mission Viejo",
+      "Vacaville",
+      "Carson",
+      "Hesperia",
+      "Santa Maria",
+      "Redding",
+      "Westminster",
+      "Santa Monica",
+      "Chico",
+      "Newport Beach",
+      "San Leandro",
+      "San Marcos",
+      "Whittier",
+      "Hawthorne",
+      "Citrus Heights",
+      "Alhambra",
+      "Tracy",
+      "Livermore",
+      "Buena Park",
+      "Menifee",
+      "Hemet",
+      "Lakewood",
+      "Merced",
+      "Chino",
+      "Indio",
+      "Redwood City",
+      "Lake Forest",
+      "Napa",
+      "Tustin",
+      "Bellflower",
+      "Mountain View",
+      "Chino Hills",
+      "Baldwin Park",
+      "Alameda",
+      "Upland",
+      "San Ramon",
+      "Folsom",
+      "Pleasanton",
+      "Lynwood"
+    ]
+  },
+  {
+    "stateSlug": "texas",
+    "stateName": "Texas",
+    "cityCount": 51,
+    "totalFatalities": 806,
+    "cities": [
+      "Houston",
+      "San Antonio",
+      "Dallas",
+      "Austin",
+      "Fort Worth",
+      "El Paso",
+      "Arlington",
+      "Corpus Christi",
+      "Plano",
+      "Lubbock",
+      "Laredo",
+      "Irving",
+      "Garland",
+      "Frisco",
+      "McKinney",
+      "Amarillo",
+      "Grand Prairie",
+      "Brownsville",
+      "Killeen",
+      "Pasadena",
+      "Mesquite",
+      "McAllen",
+      "Denton",
+      "Waco",
+      "Carrollton",
+      "Midland",
+      "Pearland",
+      "Round Rock",
+      "Odessa",
+      "College Station",
+      "Richardson",
+      "League City",
+      "Beaumont",
+      "Abilene",
+      "The Woodlands",
+      "Lewisville",
+      "Tyler",
+      "Allen",
+      "San Angelo",
+      "Edinburg",
+      "Sugar Land",
+      "Wichita Falls",
+      "Bryan",
+      "Conroe",
+      "New Braunfels",
+      "Pharr",
+      "Flower Mound",
+      "Temple",
+      "Missouri City",
+      "North Richland Hills",
+      "Longview"
+    ]
+  },
+  {
+    "stateSlug": "florida",
+    "stateName": "Florida",
+    "cityCount": 37,
+    "totalFatalities": 368,
+    "cities": [
+      "Jacksonville",
+      "Miami",
+      "Tampa",
+      "Orlando",
+      "St. Petersburg",
+      "Hialeah",
+      "Port St. Lucie",
+      "Cape Coral",
+      "Tallahassee",
+      "Fort Lauderdale",
+      "Pembroke Pines",
+      "Hollywood",
+      "Gainesville",
+      "Miramar",
+      "Coral Springs",
+      "Lehigh Acres",
+      "Palm Bay",
+      "Clearwater",
+      "West Palm Beach",
+      "Brandon",
+      "Lakeland",
+      "Miami Gardens",
+      "Pompano Beach",
+      "Spring Hill",
+      "Davie",
+      "Sunrise",
+      "Boca Raton",
+      "Deltona",
+      "Plantation",
+      "Fort Myers",
+      "Deerfield Beach",
+      "Palm Coast",
+      "Melbourne",
+      "Largo",
+      "Boynton Beach",
+      "Homestead",
+      "Kissimmee"
+    ]
+  },
+  {
+    "stateSlug": "new-york",
+    "stateName": "New York",
+    "cityCount": 6,
+    "totalFatalities": 132,
+    "cities": [
+      "New York City",
+      "Buffalo",
+      "Rochester",
+      "Yonkers",
+      "Syracuse",
+      "Albany"
+    ]
+  },
+  {
+    "stateSlug": "ohio",
+    "stateName": "Ohio",
+    "cityCount": 12,
+    "totalFatalities": 166,
+    "cities": [
+      "Columbus",
+      "Cleveland",
+      "Cincinnati",
+      "Toledo",
+      "Akron",
+      "Dayton",
+      "Parma",
+      "Canton",
+      "Youngstown",
+      "Lorain",
+      "Hamilton",
+      "Springfield"
+    ]
+  },
+  {
+    "stateSlug": "pennsylvania",
+    "stateName": "Pennsylvania",
+    "cityCount": 8,
+    "totalFatalities": 167,
+    "cities": [
+      "Philadelphia",
+      "Pittsburgh",
+      "Allentown",
+      "Reading",
+      "Erie",
+      "Scranton",
+      "Bethlehem",
+      "Lancaster"
+    ]
+  },
+  {
+    "stateSlug": "illinois",
+    "stateName": "Illinois",
+    "cityCount": 12,
+    "totalFatalities": 165,
+    "cities": [
+      "Chicago",
+      "Aurora",
+      "Naperville",
+      "Joliet",
+      "Rockford",
+      "Springfield",
+      "Elgin",
+      "Peoria",
+      "Champaign",
+      "Waukegan",
+      "Cicero",
+      "Bloomington"
+    ]
+  },
+  {
+    "stateSlug": "michigan",
+    "stateName": "Michigan",
+    "cityCount": 12,
+    "totalFatalities": 152,
+    "cities": [
+      "Detroit",
+      "Grand Rapids",
+      "Warren",
+      "Sterling Heights",
+      "Ann Arbor",
+      "Lansing",
+      "Flint",
+      "Dearborn",
+      "Livonia",
+      "Clinton Township",
+      "Troy",
+      "Canton"
+    ]
+  },
+  {
+    "stateSlug": "georgia",
+    "stateName": "Georgia",
+    "cityCount": 12,
+    "totalFatalities": 229,
+    "cities": [
+      "Atlanta",
+      "Augusta",
+      "Columbus",
+      "Macon",
+      "Savannah",
+      "Athens",
+      "Sandy Springs",
+      "Roswell",
+      "Johns Creek",
+      "Albany",
+      "Warner Robins",
+      "Alpharetta"
+    ]
+  },
+  {
+    "stateSlug": "north-carolina",
+    "stateName": "North Carolina",
+    "cityCount": 12,
+    "totalFatalities": 173,
+    "cities": [
+      "Charlotte",
+      "Raleigh",
+      "Greensboro",
+      "Durham",
+      "Winston-Salem",
+      "Fayetteville",
+      "Cary",
+      "Wilmington",
+      "High Point",
+      "Concord",
+      "Asheville",
+      "Gastonia"
+    ]
+  },
+  {
+    "stateSlug": "arizona",
+    "stateName": "Arizona",
+    "cityCount": 15,
+    "totalFatalities": 131,
+    "cities": [
+      "Phoenix",
+      "Tucson",
+      "Mesa",
+      "Chandler",
+      "Gilbert",
+      "Glendale",
+      "Scottsdale",
+      "Peoria",
+      "Tempe",
+      "Surprise",
+      "Yuma",
+      "Avondale",
+      "Goodyear",
+      "Flagstaff",
+      "Buckeye"
+    ]
+  },
+  {
+    "stateSlug": "colorado",
+    "stateName": "Colorado",
+    "cityCount": 13,
+    "totalFatalities": 75,
+    "cities": [
+      "Denver",
+      "Colorado Springs",
+      "Aurora",
+      "Fort Collins",
+      "Lakewood",
+      "Thornton",
+      "Arvada",
+      "Westminster",
+      "Pueblo",
+      "Centennial",
+      "Boulder",
+      "Greeley",
+      "Longmont"
+    ]
+  },
+  {
+    "stateSlug": "virginia",
+    "stateName": "Virginia",
+    "cityCount": 11,
+    "totalFatalities": 96,
+    "cities": [
+      "Virginia Beach",
+      "Chesapeake",
+      "Norfolk",
+      "Richmond",
+      "Newport News",
+      "Alexandria",
+      "Hampton",
+      "Roanoke",
+      "Portsmouth",
+      "Suffolk",
+      "Lynchburg"
+    ]
+  },
+  {
+    "stateSlug": "washington",
+    "stateName": "Washington",
+    "cityCount": 10,
+    "totalFatalities": 71,
+    "cities": [
+      "Seattle",
+      "Spokane",
+      "Tacoma",
+      "Vancouver",
+      "Bellevue",
+      "Kent",
+      "Everett",
+      "Renton",
+      "Spokane Valley",
+      "Federal Way"
+    ]
+  },
+  {
+    "stateSlug": "tennessee",
+    "stateName": "Tennessee",
+    "cityCount": 8,
+    "totalFatalities": 154,
+    "cities": [
+      "Nashville",
+      "Memphis",
+      "Knoxville",
+      "Chattanooga",
+      "Clarksville",
+      "Murfreesboro",
+      "Franklin",
+      "Jackson"
+    ]
+  },
+  {
+    "stateSlug": "indiana",
+    "stateName": "Indiana",
+    "cityCount": 10,
+    "totalFatalities": 141,
+    "cities": [
+      "Indianapolis",
+      "Fort Wayne",
+      "Evansville",
+      "South Bend",
+      "Carmel",
+      "Fishers",
+      "Bloomington",
+      "Hammond",
+      "Gary",
+      "Lafayette"
+    ]
+  },
+  {
+    "stateSlug": "missouri",
+    "stateName": "Missouri",
+    "cityCount": 9,
+    "totalFatalities": 120,
+    "cities": [
+      "Kansas City",
+      "St. Louis",
+      "Springfield",
+      "Columbia",
+      "Independence",
+      "Lee's Summit",
+      "O'Fallon",
+      "St. Joseph",
+      "St. Charles"
+    ]
+  },
+  {
+    "stateSlug": "maryland",
+    "stateName": "Maryland",
+    "cityCount": 8,
+    "totalFatalities": 63,
+    "cities": [
+      "Baltimore",
+      "Columbia",
+      "Germantown",
+      "Silver Spring",
+      "Waldorf",
+      "Frederick",
+      "Ellicott City",
+      "Rockville"
+    ]
+  },
+  {
+    "stateSlug": "new-jersey",
+    "stateName": "New Jersey",
+    "cityCount": 12,
+    "totalFatalities": 87,
+    "cities": [
+      "Newark",
+      "Jersey City",
+      "Paterson",
+      "Elizabeth",
+      "Lakewood",
+      "Edison",
+      "Woodbridge",
+      "Toms River",
+      "Trenton",
+      "Clifton",
+      "Camden",
+      "Passaic"
+    ]
+  },
+  {
+    "stateSlug": "massachusetts",
+    "stateName": "Massachusetts",
+    "cityCount": 10,
+    "totalFatalities": 39,
+    "cities": [
+      "Boston",
+      "Worcester",
+      "Springfield",
+      "Cambridge",
+      "Lowell",
+      "Brockton",
+      "New Bedford",
+      "Quincy",
+      "Lynn",
+      "Fall River"
+    ]
+  },
+  {
+    "stateSlug": "minnesota",
+    "stateName": "Minnesota",
+    "cityCount": 10,
+    "totalFatalities": 68,
+    "cities": [
+      "Minneapolis",
+      "St. Paul",
+      "Rochester",
+      "Duluth",
+      "Bloomington",
+      "Brooklyn Park",
+      "Plymouth",
+      "Woodbury",
+      "Maple Grove",
+      "St. Cloud"
+    ]
+  },
+  {
+    "stateSlug": "wisconsin",
+    "stateName": "Wisconsin",
+    "cityCount": 8,
+    "totalFatalities": 79,
+    "cities": [
+      "Milwaukee",
+      "Madison",
+      "Green Bay",
+      "Kenosha",
+      "Racine",
+      "Appleton",
+      "Waukesha",
+      "Oshkosh"
+    ]
+  },
+  {
+    "stateSlug": "nevada",
+    "stateName": "Nevada",
+    "cityCount": 6,
+    "totalFatalities": 51,
+    "cities": [
+      "Las Vegas",
+      "Henderson",
+      "Reno",
+      "North Las Vegas",
+      "Sparks",
+      "Carson City"
+    ]
+  },
+  {
+    "stateSlug": "oregon",
+    "stateName": "Oregon",
+    "cityCount": 8,
+    "totalFatalities": 53,
+    "cities": [
+      "Portland",
+      "Salem",
+      "Eugene",
+      "Gresham",
+      "Hillsboro",
+      "Beaverton",
+      "Bend",
+      "Medford"
+    ]
+  },
+  {
+    "stateSlug": "oklahoma",
+    "stateName": "Oklahoma",
+    "cityCount": 7,
+    "totalFatalities": 94,
+    "cities": [
+      "Oklahoma City",
+      "Tulsa",
+      "Norman",
+      "Broken Arrow",
+      "Edmond",
+      "Lawton",
+      "Moore"
+    ]
+  },
+  {
+    "stateSlug": "utah",
+    "stateName": "Utah",
+    "cityCount": 9,
+    "totalFatalities": 41,
+    "cities": [
+      "Salt Lake City",
+      "West Valley City",
+      "Provo",
+      "West Jordan",
+      "Orem",
+      "Sandy",
+      "Ogden",
+      "St. George",
+      "Layton"
+    ]
+  },
+  {
+    "stateSlug": "connecticut",
+    "stateName": "Connecticut",
+    "cityCount": 8,
+    "totalFatalities": 32,
+    "cities": [
+      "Bridgeport",
+      "New Haven",
+      "Hartford",
+      "Stamford",
+      "Waterbury",
+      "Norwalk",
+      "Danbury",
+      "New Britain"
+    ]
+  },
+  {
+    "stateSlug": "louisiana",
+    "stateName": "Louisiana",
+    "cityCount": 7,
+    "totalFatalities": 107,
+    "cities": [
+      "New Orleans",
+      "Baton Rouge",
+      "Shreveport",
+      "Lafayette",
+      "Lake Charles",
+      "Kenner",
+      "Bossier City"
+    ]
+  },
+  {
+    "stateSlug": "alabama",
+    "stateName": "Alabama",
+    "cityCount": 8,
+    "totalFatalities": 137,
+    "cities": [
+      "Birmingham",
+      "Montgomery",
+      "Huntsville",
+      "Mobile",
+      "Tuscaloosa",
+      "Hoover",
+      "Auburn",
+      "Dothan"
+    ]
+  },
+  {
+    "stateSlug": "south-carolina",
+    "stateName": "South Carolina",
+    "cityCount": 6,
+    "totalFatalities": 95,
+    "cities": [
+      "Charleston",
+      "Columbia",
+      "North Charleston",
+      "Mount Pleasant",
+      "Rock Hill",
+      "Greenville"
+    ]
+  },
+  {
+    "stateSlug": "kansas",
+    "stateName": "Kansas",
+    "cityCount": 6,
+    "totalFatalities": 60,
+    "cities": [
+      "Wichita",
+      "Overland Park",
+      "Kansas City",
+      "Olathe",
+      "Topeka",
+      "Lawrence"
+    ]
+  },
+  {
+    "stateSlug": "iowa",
+    "stateName": "Iowa",
+    "cityCount": 6,
+    "totalFatalities": 55,
+    "cities": [
+      "Des Moines",
+      "Cedar Rapids",
+      "Davenport",
+      "Sioux City",
+      "Iowa City",
+      "Waterloo"
+    ]
+  },
+  {
+    "stateSlug": "arkansas",
+    "stateName": "Arkansas",
+    "cityCount": 7,
+    "totalFatalities": 85,
+    "cities": [
+      "Little Rock",
+      "Fayetteville",
+      "Fort Smith",
+      "Springdale",
+      "Jonesboro",
+      "Rogers",
+      "Conway"
+    ]
+  },
+  {
+    "stateSlug": "new-mexico",
+    "stateName": "New Mexico",
+    "cityCount": 4,
+    "totalFatalities": 64,
+    "cities": [
+      "Albuquerque",
+      "Las Cruces",
+      "Rio Rancho",
+      "Santa Fe"
+    ]
+  },
+  {
+    "stateSlug": "kentucky",
+    "stateName": "Kentucky",
+    "cityCount": 4,
+    "totalFatalities": 110,
+    "cities": [
+      "Louisville",
+      "Lexington",
+      "Bowling Green",
+      "Owensboro"
+    ]
+  },
+  {
+    "stateSlug": "mississippi",
+    "stateName": "Mississippi",
+    "cityCount": 4,
+    "totalFatalities": 99,
+    "cities": [
+      "Jackson",
+      "Gulfport",
+      "Southaven",
+      "Hattiesburg"
+    ]
+  },
+  {
+    "stateSlug": "nebraska",
+    "stateName": "Nebraska",
+    "cityCount": 4,
+    "totalFatalities": 42,
+    "cities": [
+      "Omaha",
+      "Lincoln",
+      "Bellevue",
+      "Grand Island"
+    ]
+  },
+  {
+    "stateSlug": "idaho",
+    "stateName": "Idaho",
+    "cityCount": 5,
+    "totalFatalities": 35,
+    "cities": [
+      "Boise",
+      "Meridian",
+      "Nampa",
+      "Idaho Falls",
+      "Pocatello"
+    ]
+  },
+  {
+    "stateSlug": "hawaii",
+    "stateName": "Hawaii",
+    "cityCount": 1,
+    "totalFatalities": 9,
+    "cities": [
+      "Honolulu"
+    ]
+  },
+  {
+    "stateSlug": "west-virginia",
+    "stateName": "West Virginia",
+    "cityCount": 2,
+    "totalFatalities": 47,
+    "cities": [
+      "Charleston",
+      "Huntington"
+    ]
+  },
+  {
+    "stateSlug": "new-hampshire",
+    "stateName": "New Hampshire",
+    "cityCount": 3,
+    "totalFatalities": 16,
+    "cities": [
+      "Manchester",
+      "Nashua",
+      "Concord"
+    ]
+  },
+  {
+    "stateSlug": "maine",
+    "stateName": "Maine",
+    "cityCount": 1,
+    "totalFatalities": 22,
+    "cities": [
+      "Portland"
+    ]
+  },
+  {
+    "stateSlug": "rhode-island",
+    "stateName": "Rhode Island",
+    "cityCount": 4,
+    "totalFatalities": 8,
+    "cities": [
+      "Providence",
+      "Warwick",
+      "Cranston",
+      "Pawtucket"
+    ]
+  },
+  {
+    "stateSlug": "montana",
+    "stateName": "Montana",
+    "cityCount": 3,
+    "totalFatalities": 35,
+    "cities": [
+      "Billings",
+      "Missoula",
+      "Great Falls"
+    ]
+  },
+  {
+    "stateSlug": "delaware",
+    "stateName": "Delaware",
+    "cityCount": 1,
+    "totalFatalities": 15,
+    "cities": [
+      "Wilmington"
+    ]
+  },
+  {
+    "stateSlug": "south-dakota",
+    "stateName": "South Dakota",
+    "cityCount": 2,
+    "totalFatalities": 25,
+    "cities": [
+      "Sioux Falls",
+      "Rapid City"
+    ]
+  },
+  {
+    "stateSlug": "north-dakota",
+    "stateName": "North Dakota",
+    "cityCount": 3,
+    "totalFatalities": 26,
+    "cities": [
+      "Fargo",
+      "Bismarck",
+      "Grand Forks"
+    ]
+  },
+  {
+    "stateSlug": "alaska",
+    "stateName": "Alaska",
+    "cityCount": 1,
+    "totalFatalities": 13,
+    "cities": [
+      "Anchorage"
+    ]
+  },
+  {
+    "stateSlug": "wyoming",
+    "stateName": "Wyoming",
+    "cityCount": 2,
+    "totalFatalities": 24,
+    "cities": [
+      "Cheyenne",
+      "Casper"
+    ]
+  },
+  {
+    "stateSlug": "vermont",
+    "stateName": "Vermont",
+    "cityCount": 1,
+    "totalFatalities": 8,
+    "cities": [
+      "Burlington"
+    ]
+  }
+]
