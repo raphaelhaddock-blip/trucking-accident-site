@@ -1,5 +1,6 @@
-# Block all search engines until site is ready for launch
+# Allow all search engines
 User-agent: *
-Disallow: /
+Allow: /
 
-# No sitemap until launch
+# Sitemap location
+Sitemap: https://trucking-accident-site.vercel.app/sitemap.xml
