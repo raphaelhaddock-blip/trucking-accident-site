@@ -41,13 +41,13 @@ const NEGLIGENCE_RULES: Record<string, string> = {
   'wisconsin': 'modified-51', 'wyoming': 'modified-51',
 };
 
-// Problematic legal claim patterns
+// Problematic legal claim patterns - must be precise to avoid false positives
 const PROHIBITED_CLAIMS = [
-  /guaranteed?\s*(settlement|recovery|outcome)/i,
-  /we\s*(will|can)\s*win\s*your\s*case/i,
-  /100%\s*success\s*rate/i,
-  /no\s*win.*no\s*fee.*guarantee/i,
-  /you\s*(will|are\s*entitled\s*to)\s*receive\s*\$[\d,]+/i,
+  /\bguaranteed?\s+(settlement|recovery|outcome)/i,
+  /\bwe\s+(will|can)\s+win\s+your\s+case\b/i,
+  /\b100%\s+success\s+rate\b/i,
+  /\bno\s+win[,\s]+no\s+fee[,\s]+guarante/i,
+  /\byou\s+(will|are\s+entitled\s+to)\s+receive\s+\$[\d,]+/i,
 ];
 
 async function checkLegalAccuracy(url: string, stateSlug?: string): Promise<{
@@ -70,12 +70,34 @@ async function checkLegalAccuracy(url: string, stateSlug?: string): Promise<{
     }
 
     // Extract negligence rule claims
+    // Look for explicit bar percentage statements, not examples or historical references
     let negligenceClaimed: string | null = null;
-    if (text.includes('pure comparative')) negligenceClaimed = 'pure-comparative';
-    else if (text.includes('modified comparative') || text.includes('51%') || text.includes('51 percent'))
+
+    // Check for explicit bar statements (not just any percentage mention)
+    // Must be specific phrases, not loose pattern matching
+    const has50BarExplicit = text.includes('50% bar') || text.includes('50 percent bar') ||
+                             text.includes('(50% bar)') || text.includes('modified-50') ||
+                             /modified comparative.{0,50}50%/.test(text); // 50% within 50 chars of modified
+    const has51BarExplicit = text.includes('51% bar') || text.includes('51 percent bar') ||
+                             text.includes('(51% bar)') || text.includes('modified-51') ||
+                             /modified comparative.{0,50}51%/.test(text); // 51% within 50 chars of modified
+
+    // Check if pure comparative is mentioned as the CURRENT rule (not historical)
+    const hasPureComparativeCurrent = (text.includes('pure comparative fault') || text.includes('pure comparative negligence')) &&
+                                       !text.includes('changed from pure') && !text.includes('changed to modified') &&
+                                       !text.includes('change from pure') && !has51BarExplicit;
+
+    if (text.includes('contributory negligence') && !text.includes('comparative')) {
+      negligenceClaimed = 'contributory';
+    } else if (has51BarExplicit) {
+      // 51% bar takes precedence (most specific)
       negligenceClaimed = 'modified-51';
-    else if (text.includes('50%') || text.includes('50 percent')) negligenceClaimed = 'modified-50';
-    else if (text.includes('contributory negligence')) negligenceClaimed = 'contributory';
+    } else if (has50BarExplicit) {
+      negligenceClaimed = 'modified-50';
+    } else if (hasPureComparativeCurrent) {
+      negligenceClaimed = 'pure-comparative';
+    }
+    // If none found clearly, don't flag (avoid false positives)
 
     // Check for prohibited claims
     const prohibitedClaims: string[] = [];

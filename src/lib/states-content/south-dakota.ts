@@ -14,7 +14,7 @@ The South Dakota trucking industry handles critical east-west freight. Over 30,0
 
 South Dakota's agricultural economy generates substantial truck traffic. Grain shipments, livestock transport, and farm equipment create unique hazards. Severe weather including blizzards and extreme cold add to trucking dangers.
 
-South Dakota follows pure comparative negligence, allowing you to recover damages even if you were mostly at fault. The state has a three-year statute of limitations for personal injury claims.
+South Dakota follows modified comparative negligence with a 51% bar, meaning you can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a three-year statute of limitations for personal injury claims.
 
 If you've been injured in a South Dakota truck accident, our South Dakota truck accident lawyers know how to preserve evidence and hold negligent carriers accountable.`,
 
@@ -65,9 +65,9 @@ If you've been injured in a South Dakota truck accident, our South Dakota truck 
   ],
 
   negligenceRule: {
-    type: 'pure',
-    description: 'South Dakota follows pure comparative negligence. You can recover damages even if you are 99% at fault, though your recovery is reduced by your percentage of fault.',
-    details: `Under South Dakota's pure comparative fault system (SDCL § 20-9-2), your damages are reduced by your percentage of fault, but you can still recover even if mostly at fault.`
+    type: 'modified-51',
+    description: 'South Dakota follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault.',
+    details: `Under South Dakota's modified comparative fault rule (SDCL § 20-9-2), your damages are reduced by your percentage of fault. If you are 51% or more at fault, you recover nothing.`
   },
 
   statuteOfLimitations: {
@@ -97,7 +97,7 @@ If you've been injured in a South Dakota truck accident, our South Dakota truck 
     },
     {
       question: 'Can I still recover damages if I was partially at fault?',
-      answer: 'Yes. South Dakota follows pure comparative negligence, meaning you can recover even if mostly at fault. Your recovery is reduced by your percentage of fault.'
+      answer: 'Yes, but South Dakota follows modified comparative negligence with a 51% bar. You can recover if 50% or less at fault, but not if you are 51% or more at fault. Your recovery is reduced by your percentage of fault.'
     },
     {
       question: 'What damages can I recover?',

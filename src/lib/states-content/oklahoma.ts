@@ -14,7 +14,7 @@ The Oklahoma trucking industry is substantial, with over 75,000 registered comme
 
 Oklahoma's energy industry adds specialized trucking hazards. Oil field equipment, drilling materials, and petroleum products travel Oklahoma highways constantly, creating unique accident scenarios involving oversized loads and hazardous materials.
 
-Oklahoma follows modified comparative negligence with a 50% bar, meaning you can recover damages if you are 50% or less at fault, but recovery is barred if you are more than 50% at fault. The state has a two-year statute of limitations for personal injury claims.
+Oklahoma follows modified comparative negligence with a 51% bar, meaning you can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a two-year statute of limitations for personal injury claims.
 
 If you've been injured in an Oklahoma truck accident, time is critical. Our Oklahoma truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable under both federal FMCSA regulations and Oklahoma state law.`,
 
@@ -65,9 +65,9 @@ If you've been injured in an Oklahoma truck accident, time is critical. Our Okla
   ],
 
   negligenceRule: {
-    type: 'modified-50',
-    description: 'Oklahoma follows modified comparative negligence with a 50% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are more than 50% at fault.',
-    details: `Under Oklahoma's modified comparative negligence rule, your damages are reduced by your percentage of fault. If you are found 50% or less at fault, you can recover damages. However, if you are found more than 50% at fault, you recover nothing. For example, if you suffered $1,000,000 in damages and were 30% at fault, you could recover $700,000. But if you were 51% at fault, you would recover nothing. This makes establishing the trucking company's primary fault critical in contested cases. Insurance adjusters often try to shift blame to victims—an experienced Oklahoma truck accident lawyer knows how to prove the truck driver and carrier were primarily responsible.`
+    type: 'modified-51',
+    description: 'Oklahoma follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault.',
+    details: `Under Oklahoma's modified comparative negligence rule, your damages are reduced by your percentage of fault. If you are found 50% or less at fault, you can recover damages. However, if you are found 51% or more at fault, you recover nothing. For example, if you suffered $1,000,000 in damages and were 30% at fault, you could recover $700,000. But if you were 51% at fault, you would recover nothing. This makes establishing the trucking company's primary fault critical in contested cases. Insurance adjusters often try to shift blame to victims—an experienced Oklahoma truck accident lawyer knows how to prove the truck driver and carrier were primarily responsible.`
   },
 
   statuteOfLimitations: {
@@ -96,7 +96,7 @@ The Northern, Eastern, and Western Districts of Oklahoma federal courts hear tru
 
   whyHireLocal: `Oklahoma truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Oklahoma state law. Local counsel knows the Oklahoma court system, local procedures, and the judges who will hear your case. They understand how Oklahoma juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
 
-Oklahoma's modified comparative negligence rules mean that fault allocation is critical to your recovery. Experienced local attorneys know how to minimize victim fault and maximize trucking company responsibility, keeping your fault percentage below the 50% bar that would eliminate your recovery.
+Oklahoma's modified comparative negligence rules mean that fault allocation is critical to your recovery. Experienced local attorneys know how to minimize victim fault and maximize trucking company responsibility, keeping your fault percentage below the 51% bar that would eliminate your recovery.
 
 An Oklahoma truck accident lawyer also understands the state's trucking infrastructure, including the energy industry traffic, turnpike system, and the major interstate crossroads that concentrate truck traffic in Oklahoma. They know the dangerous corridors and can investigate accidents involving carriers operating on Oklahoma highways.
 
@@ -109,7 +109,7 @@ Oklahoma's oil and gas industry creates specialized trucking hazards that local 
     },
     {
       question: 'Can I still recover damages if I was partially at fault for an Oklahoma truck accident?',
-      answer: 'Yes, but Oklahoma follows modified comparative negligence. You can recover damages if you are 50% or less at fault, but your recovery is reduced by your percentage of fault. If you are more than 50% at fault, you cannot recover any damages.'
+      answer: 'Yes, but Oklahoma follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but your recovery is reduced by your percentage of fault. If you are 51% or more at fault, you cannot recover any damages.'
     },
     {
       question: 'What damages can I recover in an Oklahoma truck accident case?',

@@ -14,7 +14,7 @@ The Maine trucking industry handles substantial freight volumes. Over 30,000 com
 
 Maine's rural character means long distances between services and emergency response. The state's extensive timber industry generates heavy truck traffic on narrow roads. Canadian border crossings bring international freight, and severe winters create hazardous conditions.
 
-Maine follows modified comparative negligence with a 50% bar, meaning you can recover damages if you are 50% or less at fault. The state has a six-year statute of limitations for personal injury claims—one of the longest in the nation.
+Maine follows modified comparative negligence with a 51% bar, meaning you can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a six-year statute of limitations for personal injury claims—one of the longest in the nation.
 
 If you've been injured in a Maine truck accident, our Maine truck accident lawyers know how to preserve evidence and hold negligent carriers accountable.`,
 
@@ -65,9 +65,9 @@ If you've been injured in a Maine truck accident, our Maine truck accident lawye
   ],
 
   negligenceRule: {
-    type: 'modified-50',
-    description: 'Maine follows modified comparative negligence with a 50% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are more than 50% at fault.',
-    details: `Under Maine's modified comparative fault rule (14 M.R.S.A. § 156), your damages are reduced by your percentage of fault. If you are more than 50% at fault, you recover nothing.`
+    type: 'modified-51',
+    description: 'Maine follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault.',
+    details: `Under Maine's modified comparative fault rule (14 M.R.S.A. § 156), your damages are reduced by your percentage of fault. If you are 51% or more at fault, you recover nothing.`
   },
 
   statuteOfLimitations: {
@@ -97,7 +97,7 @@ If you've been injured in a Maine truck accident, our Maine truck accident lawye
     },
     {
       question: 'Can I still recover damages if I was partially at fault?',
-      answer: 'Yes, but Maine follows modified comparative negligence with a 50% bar. You can recover if 50% or less at fault.'
+      answer: 'Yes, but Maine follows modified comparative negligence with a 51% bar. You can recover if 50% or less at fault, but not if you are 51% or more at fault.'
     },
     {
       question: 'What damages can I recover?',

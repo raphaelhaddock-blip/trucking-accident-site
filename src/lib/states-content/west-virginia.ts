@@ -14,7 +14,7 @@ The West Virginia trucking industry navigates difficult terrain. Over 35,000 com
 
 West Virginia's geography means trucks face constant grade challenges. Brake failures on mountain descents, jackknife accidents on curves, and weather-related crashes are common. The state has some of the steepest interstate highway grades in the East.
 
-West Virginia follows modified comparative negligence with a 50% bar, meaning you can recover damages if you are 50% or less at fault. The state has a two-year statute of limitations for personal injury claims.
+West Virginia follows modified comparative negligence with a 51% bar, meaning you can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a two-year statute of limitations for personal injury claims.
 
 If you've been injured in a West Virginia truck accident, our attorneys know how to investigate mountain-terrain accidents and hold negligent carriers accountable.`,
 
@@ -65,9 +65,9 @@ If you've been injured in a West Virginia truck accident, our attorneys know how
   ],
 
   negligenceRule: {
-    type: 'modified-50',
-    description: 'West Virginia follows modified comparative negligence with a 50% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are more than 50% at fault.',
-    details: `Under West Virginia's modified comparative fault rule (W. Va. Code § 55-7-13a), your damages are reduced by your percentage of fault. If you are more than 50% at fault, you recover nothing.`
+    type: 'modified-51',
+    description: 'West Virginia follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault.',
+    details: `Under West Virginia's modified comparative fault rule (W. Va. Code § 55-7-13a), your damages are reduced by your percentage of fault. If you are 51% or more at fault, you recover nothing.`
   },
 
   statuteOfLimitations: {
@@ -97,7 +97,7 @@ If you've been injured in a West Virginia truck accident, our attorneys know how
     },
     {
       question: 'Can I still recover damages if I was partially at fault?',
-      answer: 'Yes, but West Virginia follows modified comparative negligence. You can recover if 50% or less at fault.'
+      answer: 'Yes, but West Virginia follows modified comparative negligence with a 51% bar. You can recover if 50% or less at fault, but not if you are 51% or more at fault.'
     },
     {
       question: 'What damages can I recover?',
