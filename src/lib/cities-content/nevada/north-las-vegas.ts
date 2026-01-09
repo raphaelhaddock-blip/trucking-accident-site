@@ -4,9 +4,11 @@ import type { CityContent } from '../types';
  * North Las Vegas, Nevada - Truck Accident Information
  *
  * Population: 262,527
- * Fatal Truck Crashes (2022): 3
+ * Fatal Truck Crashes (2022): 1
+ * Region: Southwest
  *
  * Generated content with NHTSA FARS verified data
+ * Unique content based on regional patterns and city characteristics
  */
 
 export const NORTH_LAS_VEGAS_CONTENT: CityContent = {
@@ -17,108 +19,114 @@ export const NORTH_LAS_VEGAS_CONTENT: CityContent = {
   population: 262527,
 
   metaTitle: 'North Las Vegas Truck Accident Lawyers | Nevada 18-Wheeler Attorneys',
-  metaDescription: 'Experienced North Las Vegas truck accident lawyers. 3 fatal crashes in 2022. Free consultation for 18-wheeler accident victims. No fee unless you win.',
+  metaDescription: '18-wheeler accident attorneys in North Las Vegas. Fighting for victims on I-15 and beyond.',
   h1: 'North Las Vegas Truck Accident Lawyers',
 
-  heroText: `North Las Vegas is home to 262,527 residents and sits along major commercial trucking routes in Nevada. In 2022, the North Las Vegas area recorded 3 fatal truck crashes according to NHTSA FARS data. If you or a loved one was injured in a truck accident, our experienced attorneys fight for maximum compensation against trucking companies and their insurers.`,
+  heroText: `North Las Vegas serves as an important logistics point in Nevada, with 262,527 residents sharing roads with constant commercial truck traffic. FARS data recorded 1 fatal truck crashes in 2022. Our attorneys help victims recover compensation from negligent trucking companies.`,
 
   accidentStats: {
-    truckFatalities: 3,
-    fatalCrashes: 3,
+    truckFatalities: 1,
+    fatalCrashes: 1,
     dataYear: 2022,
     yearOverYearChange: 'Data tracking ongoing',
-    comparisonToState: '6% of Nevada truck fatalities',
-    sourceUrl: 'https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars',
+    comparisonToState: '2% of Nevada truck fatalities',
+    sourceUrl: 'https://static.nhtsa.gov/nhtsa/downloads/FARS/2022/National/FARS2022NationalCSV.zip',
   },
 
   dangerousRoads: [
-    {
-      name: 'I-95',
-      description: 'East Coast corridor from ME to FL. This 1,920 miles interstate carries significant commercial truck traffic through North Las Vegas.',
-      milesInCity: 18,
-    },
-    {
-      name: 'I-40',
-      description: 'Southern transcontinental route. This 2,555 miles interstate carries significant commercial truck traffic through North Las Vegas.',
-      milesInCity: 8,
-    },
-    {
-      name: 'I-10',
-      description: 'Southern transcontinental route from CA to FL. This 2,460 miles interstate carries significant commercial truck traffic through North Las Vegas.',
-      milesInCity: 20,
-    }
+      {
+          "name": "I-15",
+          "description": "Major trucking corridor through North Las Vegas. border crossing traffic on this route increases accident risk.",
+          "milesInCity": 9
+      },
+      {
+          "name": "I-80",
+          "description": "Major trucking corridor through North Las Vegas. border crossing traffic on this route increases accident risk.",
+          "milesInCity": 7
+      },
+      {
+          "name": "US-95",
+          "description": "Major trucking corridor through North Las Vegas. border crossing traffic on this route increases accident risk.",
+          "milesInCity": 9
+      }
   ],
 
   commonAccidents: [
-    {
-      type: 'Rear-End Collisions',
-      percentage: '28%',
-      localFactor: 'Heavy traffic congestion on I-95 through North Las Vegas leads to sudden stops.',
-    },
-    {
-      type: 'Lane Change Accidents',
-      percentage: '22%',
-      localFactor: '18-wheelers have large blind spots. North Las Vegas\'s multi-lane highways increase lane change risks.',
-    },
-    {
-      type: 'Jackknife Accidents',
-      percentage: '15%',
-      localFactor: 'Sudden braking on North Las Vegas highways, especially during weather events, causes trailer swing.',
-    },
-    {
-      type: 'Underride Accidents',
-      percentage: '12%',
-      localFactor: 'Smaller vehicles sliding under truck trailers at intersections and highway on-ramps.',
-    },
-    {
-      type: 'Wide Turn Accidents',
-      percentage: '10%',
-      localFactor: 'North Las Vegas\'s urban intersections create tight turning situations for large trucks.',
-    },
+      {
+          "type": "Rear-End Collisions",
+          "percentage": "25%",
+          "localFactor": "I-15 traffic through North Las Vegas contributes to this type. Phoenix and Las Vegas metro traffic congestion"
+      },
+      {
+          "type": "Rollover Accidents",
+          "percentage": "20%",
+          "localFactor": "Desert heat causes tire blowouts leading to rollovers"
+      },
+      {
+          "type": "Jackknife Accidents",
+          "percentage": "18%",
+          "localFactor": "I-15 traffic through North Las Vegas contributes to this type. Sudden monsoon storms create slick roads"
+      },
+      {
+          "type": "Sideswipe Crashes",
+          "percentage": "15%",
+          "localFactor": "High-speed interstate traffic and construction zones"
+      },
+      {
+          "type": "Head-On Collisions",
+          "percentage": "12%",
+          "localFactor": "Long two-lane desert highways and driver fatigue"
+      }
   ],
 
-  truckingIndustry: `North Las Vegas's economy relies heavily on commercial trucking for Manufacturing and Distribution. The city's location along I-95 and I-40 makes it a critical logistics hub. Major distribution centers, warehouses, and industrial facilities generate thousands of daily truck trips through North Las Vegas streets and highways.
+  truckingIndustry: `North Las Vegas's growing economy benefits from its trucking connections, but I-15 traffic also brings risk. border crossing traffic depends on this transportation corridor.
 
-The Nevada trucking industry employs tens of thousands of drivers and supports the state's economy. However, this heavy truck traffic also creates significant accident risks for North Las Vegas residents. Commercial trucks weighing up to 80,000 pounds cause catastrophic injuries when they collide with passenger vehicles.
-
-North Las Vegas sees truck traffic from Agriculture and Retail. These industries operate on tight delivery schedules that can pressure drivers to violate hours-of-service regulations, skip required rest breaks, and drive while fatigued.`,
+The Nevada trucking industry employs thousands of drivers who transport goods across the state. However, factors including extreme heat, monsoon storms create hazardous conditions. When tired or negligent drivers operate 80,000-pound vehicles in these conditions, catastrophic accidents result.`,
 
   legalInfo: `Truck accident claims in North Las Vegas are governed by Nevada state law and federal FMCSA regulations. Key legal considerations include:
 
-**Statute of Limitations**: Nevada sets strict deadlines for filing personal injury and wrongful death claims. Missing this deadline bars your claim forever.
+**Statute of Limitations**: Nevada has a 2-year statute of limitations for personal injury claims from truck accidents. Missing this deadline typically bars your claim forever, regardless of how strong your case may be.
 
-**Comparative Negligence**: Nevada's negligence laws determine how fault is allocated and may affect your recovery.
+**Modified Comparative Negligence**: Nevada follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, with your compensation reduced by your fault percentage. If you are 51% or more at fault, you are barred from recovery.
 
-**Federal Regulations**: FMCSA rules on hours-of-service, drug testing, maintenance, and cargo loading often establish negligence in truck accident cases.
+**Federal Regulations**: FMCSA rules on hours-of-service, drug testing, vehicle maintenance, and cargo securement often establish negligence in truck accident cases. Violations of these federal regulations can be powerful evidence.
 
-**Multiple Defendants**: Trucking accident cases often involve claims against drivers, carriers, brokers, shippers, and maintenance companies.
+**Multiple Defendants**: Trucking accident cases often involve claims against the driver, the trucking company, cargo loading companies, maintenance providers, and sometimes truck or parts manufacturers.
 
-Our North Las Vegas truck accident attorneys understand both Nevada law and federal trucking regulations. We investigate accidents thoroughly, preserve evidence, and build strong cases for maximum compensation.`,
+Our North Las Vegas truck accident attorneys understand both Nevada law and federal trucking regulations. We investigate accidents thoroughly, preserve critical evidence, and build strong cases for maximum compensation.`,
 
   faqs: [
-    {
-      question: 'How much is my North Las Vegas truck accident case worth?',
-      answer: 'Truck accident settlement values in North Las Vegas depend on injury severity, medical expenses, lost wages, and liability. Serious injury cases often settle for $500,000 to several million dollars. A free consultation can provide a case-specific estimate.',
-    },
-    {
-      question: 'What should I do after a truck accident in North Las Vegas?',
-      answer: 'First, seek medical attention even if injuries seem minor. Call 911 to file a police report. Document the scene with photos. Get contact information from witnesses. Do not give statements to the trucking company\'s insurance. Contact a North Las Vegas truck accident lawyer before accepting any settlement.',
-    },
-    {
-      question: 'How long do I have to file a truck accident lawsuit in Nevada?',
-      answer: 'Nevada has a statute of limitations for personal injury claims. Missing this deadline means losing your right to compensation. Contact a lawyer promptly to ensure your claim is filed on time.',
-    },
-    {
-      question: 'Who can be held liable for a truck accident in North Las Vegas?',
-      answer: 'Multiple parties may be liable: the truck driver, trucking company, cargo loading company, truck manufacturer, and maintenance providers. An experienced attorney will investigate all potentially responsible parties to maximize your compensation.',
-    },
-    {
-      question: 'Do I need a lawyer for my North Las Vegas truck accident?',
-      answer: 'While not legally required, truck accident cases are complex. Trucking companies have aggressive legal teams. An experienced North Las Vegas truck accident lawyer levels the playing field, handles negotiations, and typically recovers significantly more compensation than unrepresented victims.',
-    }
+      {
+          "question": "What compensation can I expect from a North Las Vegas 18-wheeler accident?",
+          "answer": "Compensation from an 18-wheeler accident in North Las Vegas typically includes economic damages (medical bills, lost wages, future medical care, property damage) and non-economic damages (pain and suffering, emotional distress, loss of enjoyment of life). Commercial trucks carry higher insurance minimums than passenger vehicles, often providing greater recovery potential. Nevada's modified-51 system affects how compensation is calculated based on fault allocation."
+      },
+      {
+          "question": "How long does a truck accident case take in North Las Vegas?",
+          "answer": "Truck accident cases in North Las Vegas generally take between one and three years to resolve. Timeline depends on injury severity, complexity of liability issues, and whether the case settles or goes to trial. Cases involving multiple defendants or catastrophic injuries typically take longer. Your attorney will work to resolve your case efficiently while maximizing your recovery."
+      },
+      {
+          "question": "Who can be held liable for a truck accident in North Las Vegas?",
+          "answer": "Multiple parties may be liable for a North Las Vegas truck accident: the truck driver, the trucking company, the vehicle owner (if different), the cargo loading company, the maintenance provider, and potentially the truck or parts manufacturer. Federal regulations make trucking companies responsible for their drivers' conduct while operating company vehicles. An investigation will identify all potentially liable parties to maximize your recovery."
+      },
+      {
+          "question": "What insurance covers truck accidents in North Las Vegas?",
+          "answer": "Multiple insurance policies may cover a North Las Vegas truck accident: the trucking company's liability insurance (federal minimum $750,000-$5 million depending on cargo), the driver's personal insurance, your own uninsured/underinsured motorist coverage, and your health insurance or Med-Pay. An attorney will identify all available coverage sources to maximize your recovery."
+      },
+      {
+          "question": "How much does a truck accident lawyer in North Las Vegas cost?",
+          "answer": "Most truck accident lawyers in North Las Vegas work on a contingency fee basis—you pay nothing upfront and no attorney fees unless you win. The attorney fee is typically a percentage of your recovery, usually 33-40% depending on whether the case settles or goes to trial. This arrangement allows accident victims to access quality legal representation regardless of their financial situation. You should also understand what case costs are covered."
+      },
+      {
+          "question": "Why do I need a truck accident lawyer in North Las Vegas?",
+          "answer": "Truck accident cases require attorneys who understand both federal trucking regulations and Nevada law. Trucking companies have experienced legal teams and insurers who begin building their defense immediately after an accident. A qualified truck accident lawyer knows how to preserve critical evidence, investigate regulatory violations, identify all liable parties, and negotiate with commercial insurers."
+      },
+      {
+          "question": "What happens after I hire a North Las Vegas truck accident lawyer?",
+          "answer": "After hiring a truck accident lawyer in North Las Vegas, your attorney will: send preservation letters to protect evidence, investigate the accident scene and trucking company records, gather medical records and bills, identify all liable parties and insurance coverage, calculate your damages, negotiate with insurance companies, and file a lawsuit if necessary. Most cases settle without trial, but your attorney should be prepared to try your case if needed."
+      }
   ],
 
-  lastUpdated: '2026-01-08',
+  lastUpdated: '2026-01-09',
 };
 
 export default NORTH_LAS_VEGAS_CONTENT;

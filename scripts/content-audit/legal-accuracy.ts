@@ -9,7 +9,7 @@ import { createAgentResult, createIssue, AgentResult, AuditIssue } from '../lib/
 // Known statute of limitations by state (years)
 const STATUTE_OF_LIMITATIONS: Record<string, number> = {
   'alabama': 2, 'alaska': 2, 'arizona': 2, 'arkansas': 3, 'california': 2,
-  'colorado': 3, 'connecticut': 2, 'delaware': 2, 'florida': 4, 'georgia': 2,
+  'colorado': 3, 'connecticut': 2, 'delaware': 2, 'florida': 2, 'georgia': 2,
   'hawaii': 2, 'idaho': 2, 'illinois': 2, 'indiana': 2, 'iowa': 2,
   'kansas': 2, 'kentucky': 1, 'louisiana': 1, 'maine': 6, 'maryland': 3,
   'massachusetts': 3, 'michigan': 3, 'minnesota': 6, 'mississippi': 3, 'missouri': 5,

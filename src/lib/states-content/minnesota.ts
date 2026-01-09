@@ -14,7 +14,7 @@ The Minnesota trucking industry handles substantial freight volumes. Over 90,000
 
 Minnesota's harsh winter conditions create particularly dangerous trucking conditions. Heavy snow, ice, extreme cold, and limited visibility contribute to serious truck accidents. The I-94 corridor from Wisconsin through the Twin Cities to North Dakota is a critical freight route facing these challenges.
 
-Minnesota follows modified comparative negligence with a 51% bar, meaning you can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a two-year statute of limitations for personal injury claims.
+Minnesota follows modified comparative negligence with a 51% bar, meaning you can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a six-year statute of limitations for personal injury claims.
 
 If you've been injured in a Minnesota truck accident, our Minnesota truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable.`,
 
@@ -71,10 +71,10 @@ If you've been injured in a Minnesota truck accident, our Minnesota truck accide
   },
 
   statuteOfLimitations: {
-    personalInjury: '2 Years',
+    personalInjury: '6 Years',
     wrongfulDeath: '3 Years',
     propertyDamage: '6 Years',
-    details: `Minnesota has a two-year statute of limitations for personal injury claims arising from truck accidents under Minn. Stat. § 541.07. This means you must file your lawsuit within two years of the accident date. Wrongful death claims have a three-year deadline. Missing these deadlines typically bars your claim forever.`
+    details: `Minnesota has a six-year statute of limitations for personal injury claims arising from truck accidents under Minn. Stat. § 541.05. This means you must file your lawsuit within six years of the accident date. Wrongful death claims have a three-year deadline. Missing these deadlines typically bars your claim forever.`
   },
 
   statistics: [
@@ -103,7 +103,7 @@ A Minnesota truck accident lawyer also understands the state's unique challenges
   faqs: [
     {
       question: 'What is the statute of limitations for truck accident cases in Minnesota?',
-      answer: 'Minnesota has a two-year statute of limitations for personal injury claims from truck accidents. Wrongful death claims have a three-year deadline. Missing these deadlines typically bars your claim forever.'
+      answer: 'Minnesota has a six-year statute of limitations for personal injury claims from truck accidents. Wrongful death claims have a three-year deadline. Missing these deadlines typically bars your claim forever.'
     },
     {
       question: 'Can I still recover damages if I was partially at fault for a Minnesota truck accident?',

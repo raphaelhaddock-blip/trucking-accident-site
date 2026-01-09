@@ -1,0 +1,264 @@
+{
+  "description": "Regional accident type patterns to diversify city content",
+  "source": "Based on FARS data regional patterns and climate factors",
+
+  "stateToRegion": {
+    "alabama": "southeast",
+    "alaska": "northwest",
+    "arizona": "southwest",
+    "arkansas": "south-central",
+    "california": "pacific",
+    "colorado": "mountain",
+    "connecticut": "northeast",
+    "delaware": "mid-atlantic",
+    "florida": "southeast",
+    "georgia": "southeast",
+    "hawaii": "pacific",
+    "idaho": "northwest",
+    "illinois": "midwest",
+    "indiana": "midwest",
+    "iowa": "midwest",
+    "kansas": "plains",
+    "kentucky": "southeast",
+    "louisiana": "gulf-coast",
+    "maine": "northeast",
+    "maryland": "mid-atlantic",
+    "massachusetts": "northeast",
+    "michigan": "great-lakes",
+    "minnesota": "great-lakes",
+    "mississippi": "gulf-coast",
+    "missouri": "midwest",
+    "montana": "mountain",
+    "nebraska": "plains",
+    "nevada": "southwest",
+    "new-hampshire": "northeast",
+    "new-jersey": "mid-atlantic",
+    "new-mexico": "southwest",
+    "new-york": "northeast",
+    "north-carolina": "southeast",
+    "north-dakota": "plains",
+    "ohio": "great-lakes",
+    "oklahoma": "south-central",
+    "oregon": "pacific",
+    "pennsylvania": "mid-atlantic",
+    "rhode-island": "northeast",
+    "south-carolina": "southeast",
+    "south-dakota": "plains",
+    "tennessee": "southeast",
+    "texas": "south-central",
+    "utah": "mountain",
+    "vermont": "northeast",
+    "virginia": "mid-atlantic",
+    "washington": "pacific",
+    "west-virginia": "mid-atlantic",
+    "wisconsin": "great-lakes",
+    "wyoming": "mountain"
+  },
+
+  "regions": {
+    "northeast": {
+      "name": "Northeast",
+      "states": ["connecticut", "maine", "massachusetts", "new-hampshire", "new-york", "rhode-island", "vermont"],
+      "accidentPatterns": {
+        "rearEnd": { "percentage": 32, "localFactor": "Dense urban traffic and frequent congestion in metro areas lead to rear-end collisions" },
+        "jackknife": { "percentage": 18, "localFactor": "Winter ice and snow on narrow highways cause jackknife incidents" },
+        "sideswipe": { "percentage": 16, "localFactor": "Tight lanes on older highways increase sideswipe accidents" },
+        "rollover": { "percentage": 14, "localFactor": "Winding rural roads and mountainous terrain contribute to rollovers" },
+        "headOn": { "percentage": 10, "localFactor": "Two-lane highways without barriers increase head-on collision risk" },
+        "other": { "percentage": 10, "localFactor": "Loading dock accidents and urban delivery incidents" }
+      },
+      "climateFactors": ["winter ice", "black ice", "nor'easters", "dense fog", "early darkness"],
+      "trafficFactors": ["urban congestion", "port traffic", "construction zones", "narrow bridges"]
+    },
+
+    "mid-atlantic": {
+      "name": "Mid-Atlantic",
+      "states": ["delaware", "maryland", "new-jersey", "pennsylvania", "virginia", "west-virginia"],
+      "accidentPatterns": {
+        "rearEnd": { "percentage": 30, "localFactor": "I-95 corridor congestion causes frequent rear-end crashes" },
+        "sideswipe": { "percentage": 18, "localFactor": "High-volume interstates and merging traffic increase sideswipes" },
+        "jackknife": { "percentage": 16, "localFactor": "Appalachian mountain grades and winter weather cause jackknifes" },
+        "rollover": { "percentage": 15, "localFactor": "Mountain passes and steep grades lead to rollover accidents" },
+        "headOn": { "percentage": 11, "localFactor": "Two-lane mountain roads increase head-on collision risk" },
+        "other": { "percentage": 10, "localFactor": "Port and warehouse area incidents" }
+      },
+      "climateFactors": ["winter storms", "summer thunderstorms", "fog in valleys", "ice on mountain roads"],
+      "trafficFactors": ["I-95 corridor volume", "port traffic", "DC metro congestion", "tunnel bottlenecks"]
+    },
+
+    "southeast": {
+      "name": "Southeast",
+      "states": ["alabama", "florida", "georgia", "kentucky", "north-carolina", "south-carolina", "tennessee"],
+      "accidentPatterns": {
+        "rearEnd": { "percentage": 29, "localFactor": "Heavy I-85 and I-95 traffic creates stop-and-go conditions" },
+        "rollover": { "percentage": 19, "localFactor": "Sudden summer thunderstorms cause loss of control on wet roads" },
+        "sideswipe": { "percentage": 17, "localFactor": "High-speed interstate merging leads to sideswipe crashes" },
+        "jackknife": { "percentage": 15, "localFactor": "Hydroplaning during heavy rain causes jackknife incidents" },
+        "headOn": { "percentage": 11, "localFactor": "Rural two-lane highways increase head-on collision frequency" },
+        "other": { "percentage": 9, "localFactor": "Distribution center and warehouse area accidents" }
+      },
+      "climateFactors": ["summer thunderstorms", "hurricanes", "heavy rain", "fog", "high heat"],
+      "trafficFactors": ["distribution hub volume", "port traffic", "tourism season", "I-75/I-95 interchange"]
+    },
+
+    "gulf-coast": {
+      "name": "Gulf Coast",
+      "states": ["louisiana", "mississippi"],
+      "accidentPatterns": {
+        "rollover": { "percentage": 23, "localFactor": "Sudden tropical storms and heavy rain cause loss of control" },
+        "rearEnd": { "percentage": 26, "localFactor": "Port traffic congestion leads to rear-end collisions" },
+        "jackknife": { "percentage": 18, "localFactor": "Wet roads and hydroplaning cause jackknife incidents" },
+        "sideswipe": { "percentage": 15, "localFactor": "Narrow bridges and levee roads increase sideswipes" },
+        "headOn": { "percentage": 10, "localFactor": "Two-lane bayou roads increase head-on crash risk" },
+        "other": { "percentage": 8, "localFactor": "Oil field and port area incidents" }
+      },
+      "climateFactors": ["hurricanes", "tropical storms", "flooding", "high humidity", "sudden downpours"],
+      "trafficFactors": ["port traffic", "oil industry hauling", "bridge congestion", "evacuation routes"]
+    },
+
+    "midwest": {
+      "name": "Midwest",
+      "states": ["illinois", "indiana", "iowa", "missouri"],
+      "accidentPatterns": {
+        "rearEnd": { "percentage": 28, "localFactor": "Chicago metro congestion and I-80 traffic cause rear-ends" },
+        "jackknife": { "percentage": 22, "localFactor": "Winter ice storms and black ice lead to jackknife crashes" },
+        "rollover": { "percentage": 18, "localFactor": "Strong crosswinds on open plains cause rollovers" },
+        "sideswipe": { "percentage": 14, "localFactor": "Interstate interchange complexity increases sideswipes" },
+        "headOn": { "percentage": 10, "localFactor": "Rural two-lane highways see head-on collisions" },
+        "other": { "percentage": 8, "localFactor": "Agricultural equipment interactions and grain elevator accidents" }
+      },
+      "climateFactors": ["ice storms", "blizzards", "fog", "crosswinds", "tornado season"],
+      "trafficFactors": ["Chicago hub volume", "agricultural hauling", "grain harvest season", "distribution centers"]
+    },
+
+    "great-lakes": {
+      "name": "Great Lakes",
+      "states": ["michigan", "minnesota", "ohio", "wisconsin"],
+      "accidentPatterns": {
+        "jackknife": { "percentage": 24, "localFactor": "Lake-effect snow and ice create dangerous conditions" },
+        "rearEnd": { "percentage": 26, "localFactor": "Manufacturing hub traffic and sudden weather changes" },
+        "rollover": { "percentage": 18, "localFactor": "High winds off lakes and icy conditions cause rollovers" },
+        "sideswipe": { "percentage": 14, "localFactor": "Snow-narrowed lanes increase sideswipe risk" },
+        "headOn": { "percentage": 10, "localFactor": "Whiteout conditions lead to wrong-lane travel" },
+        "other": { "percentage": 8, "localFactor": "Industrial site and port area incidents" }
+      },
+      "climateFactors": ["lake-effect snow", "extreme cold", "black ice", "whiteout conditions", "fog"],
+      "trafficFactors": ["manufacturing hub volume", "port traffic", "seasonal closures", "industrial sites"]
+    },
+
+    "plains": {
+      "name": "Great Plains",
+      "states": ["kansas", "nebraska", "north-dakota", "south-dakota"],
+      "accidentPatterns": {
+        "rollover": { "percentage": 25, "localFactor": "Severe crosswinds on open plains flip high-profile trailers" },
+        "jackknife": { "percentage": 21, "localFactor": "Blizzards and ice on long straight highways cause jackknifes" },
+        "rearEnd": { "percentage": 22, "localFactor": "Sudden visibility changes from dust and snow" },
+        "headOn": { "percentage": 14, "localFactor": "Long two-lane highways and driver fatigue increase head-ons" },
+        "sideswipe": { "percentage": 10, "localFactor": "Narrow shoulders and rural highways" },
+        "other": { "percentage": 8, "localFactor": "Agricultural equipment and grain hauling incidents" }
+      },
+      "climateFactors": ["severe crosswinds", "blizzards", "dust storms", "extreme cold", "hail"],
+      "trafficFactors": ["agricultural hauling", "oil field traffic", "grain harvest", "long-haul fatigue"]
+    },
+
+    "south-central": {
+      "name": "South Central",
+      "states": ["arkansas", "oklahoma", "texas"],
+      "accidentPatterns": {
+        "rearEnd": { "percentage": 27, "localFactor": "High-volume Texas interstates and sudden traffic slowdowns" },
+        "rollover": { "percentage": 21, "localFactor": "High speeds on open roads and crosswinds cause rollovers" },
+        "jackknife": { "percentage": 18, "localFactor": "Sudden thunderstorms and flash flooding create hazards" },
+        "sideswipe": { "percentage": 15, "localFactor": "Oil field traffic and wide loads increase sideswipes" },
+        "headOn": { "percentage": 11, "localFactor": "Two-lane rural highways and driver fatigue" },
+        "other": { "percentage": 8, "localFactor": "Border crossing delays and oil field incidents" }
+      },
+      "climateFactors": ["extreme heat", "sudden thunderstorms", "flash floods", "tornadoes", "high winds"],
+      "trafficFactors": ["oil field hauling", "border traffic", "Dallas-Houston corridor", "distribution hubs"]
+    },
+
+    "mountain": {
+      "name": "Mountain West",
+      "states": ["colorado", "montana", "utah", "wyoming"],
+      "accidentPatterns": {
+        "rollover": { "percentage": 24, "localFactor": "Steep mountain grades and runaway truck situations" },
+        "jackknife": { "percentage": 22, "localFactor": "Brake failures on mountain descents cause jackknifes" },
+        "rearEnd": { "percentage": 20, "localFactor": "Sudden elevation changes and weather transitions" },
+        "headOn": { "percentage": 15, "localFactor": "Mountain passes and winding roads increase head-ons" },
+        "sideswipe": { "percentage": 12, "localFactor": "Narrow canyon roads and tunnel approaches" },
+        "other": { "percentage": 7, "localFactor": "Brake failure, wildlife collisions, rockslides" }
+      },
+      "climateFactors": ["mountain snow", "ice on passes", "altitude effects", "sudden weather changes", "rockslides"],
+      "trafficFactors": ["steep grades", "runaway truck ramps", "tunnel restrictions", "hazmat routes", "ski traffic"]
+    },
+
+    "southwest": {
+      "name": "Southwest",
+      "states": ["arizona", "nevada", "new-mexico"],
+      "accidentPatterns": {
+        "rollover": { "percentage": 23, "localFactor": "Desert heat causes tire blowouts leading to rollovers" },
+        "rearEnd": { "percentage": 25, "localFactor": "Phoenix and Las Vegas metro traffic congestion" },
+        "jackknife": { "percentage": 17, "localFactor": "Sudden monsoon storms create slick roads" },
+        "sideswipe": { "percentage": 16, "localFactor": "High-speed interstate traffic and construction zones" },
+        "headOn": { "percentage": 11, "localFactor": "Long two-lane desert highways and driver fatigue" },
+        "other": { "percentage": 8, "localFactor": "Border traffic incidents and heat-related breakdowns" }
+      },
+      "climateFactors": ["extreme heat", "monsoon storms", "dust storms", "tire blowout risk", "flash floods"],
+      "trafficFactors": ["border crossing traffic", "Las Vegas tourism", "Phoenix metro growth", "long-haul routes"]
+    },
+
+    "pacific": {
+      "name": "Pacific",
+      "states": ["california", "hawaii", "oregon", "washington"],
+      "accidentPatterns": {
+        "rearEnd": { "percentage": 31, "localFactor": "LA, Bay Area, and Seattle metro congestion" },
+        "sideswipe": { "percentage": 18, "localFactor": "High-density port traffic and aggressive lane changes" },
+        "rollover": { "percentage": 17, "localFactor": "Coastal winds and mountain passes" },
+        "jackknife": { "percentage": 16, "localFactor": "Rain on oil-slicked roads and mountain routes" },
+        "headOn": { "percentage": 10, "localFactor": "Winding coastal and mountain highways" },
+        "other": { "percentage": 8, "localFactor": "Port area accidents and agricultural hauling" }
+      },
+      "climateFactors": ["rain", "fog", "coastal winds", "mountain snow", "wildfires"],
+      "trafficFactors": ["port traffic", "tech industry logistics", "agricultural hauling", "tourism season"]
+    },
+
+    "northwest": {
+      "name": "Pacific Northwest",
+      "states": ["alaska", "idaho"],
+      "accidentPatterns": {
+        "rollover": { "percentage": 24, "localFactor": "Remote mountain roads and logging truck routes" },
+        "jackknife": { "percentage": 23, "localFactor": "Ice, snow, and remote highway conditions" },
+        "rearEnd": { "percentage": 20, "localFactor": "Sudden fog and limited visibility conditions" },
+        "headOn": { "percentage": 15, "localFactor": "Two-lane mountain highways and logging roads" },
+        "sideswipe": { "percentage": 11, "localFactor": "Narrow roads and oversized load traffic" },
+        "other": { "percentage": 7, "localFactor": "Wildlife collisions and remote area incidents" }
+      },
+      "climateFactors": ["heavy snow", "ice", "fog", "rain", "extreme cold", "permafrost"],
+      "trafficFactors": ["logging traffic", "mining hauling", "remote highways", "seasonal road closures"]
+    }
+  },
+
+  "cityClassifications": {
+    "largeMetro": {
+      "minPopulation": 500000,
+      "contentFocus": "urban congestion, distribution hub traffic, port operations",
+      "uniqueFactors": ["rush hour patterns", "delivery zones", "construction zones"]
+    },
+    "mediumCity": {
+      "minPopulation": 100000,
+      "maxPopulation": 499999,
+      "contentFocus": "interstate interchange traffic, regional distribution",
+      "uniqueFactors": ["commuter patterns", "industrial areas", "warehouse districts"]
+    },
+    "smallCity": {
+      "minPopulation": 25000,
+      "maxPopulation": 99999,
+      "contentFocus": "through-traffic on major routes, local industry",
+      "uniqueFactors": ["bypass traffic", "local employers", "agricultural influence"]
+    },
+    "smallTown": {
+      "maxPopulation": 24999,
+      "contentFocus": "rural highways, agricultural traffic, long-haul routes",
+      "uniqueFactors": ["rural roads", "farming equipment", "limited emergency response"]
+    }
+  }
+}

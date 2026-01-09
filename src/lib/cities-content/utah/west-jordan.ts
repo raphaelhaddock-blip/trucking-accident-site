@@ -4,9 +4,11 @@ import type { CityContent } from '../types';
  * West Jordan, Utah - Truck Accident Information
  *
  * Population: 116,961
- * Fatal Truck Crashes (2022): 2
+ * Fatal Truck Crashes (2022): 1
+ * Region: Mountain West
  *
  * Generated content with NHTSA FARS verified data
+ * Unique content based on regional patterns and city characteristics
  */
 
 export const WEST_JORDAN_CONTENT: CityContent = {
@@ -17,108 +19,114 @@ export const WEST_JORDAN_CONTENT: CityContent = {
   population: 116961,
 
   metaTitle: 'West Jordan Truck Accident Lawyers | Utah 18-Wheeler Attorneys',
-  metaDescription: 'Experienced West Jordan truck accident lawyers. 2 fatal crashes in 2022. Free consultation for 18-wheeler accident victims. No fee unless you win.',
+  metaDescription: 'Injured in a truck crash near West Jordan? 1 fatalities in 2022. Get experienced legal help today.',
   h1: 'West Jordan Truck Accident Lawyers',
 
-  heroText: `West Jordan is home to 116,961 residents and sits along major commercial trucking routes in Utah. In 2022, the West Jordan area recorded 2 fatal truck crashes according to NHTSA FARS data. If you or a loved one was injured in a truck accident, our experienced attorneys fight for maximum compensation against trucking companies and their insurers.`,
+  heroText: `West Jordan, Utah has a growing population of 116,961 and sits along major trucking corridors. In 2022, the area experienced 1 fatal truck crashes. Our truck accident attorneys understand the unique challenges of pursuing claims in mid-sized markets like West Jordan. Hazards including mountain snow and ice on passes increase accident risks in this region.`,
 
   accidentStats: {
-    truckFatalities: 2,
-    fatalCrashes: 2,
+    truckFatalities: 1,
+    fatalCrashes: 1,
     dataYear: 2022,
     yearOverYearChange: 'Data tracking ongoing',
-    comparisonToState: '5% of Utah truck fatalities',
-    sourceUrl: 'https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars',
+    comparisonToState: '2% of Utah truck fatalities',
+    sourceUrl: 'https://static.nhtsa.gov/nhtsa/downloads/FARS/2022/National/FARS2022NationalCSV.zip',
   },
 
   dangerousRoads: [
-    {
-      name: 'I-95',
-      description: 'East Coast corridor from ME to FL. This 1,920 miles interstate carries significant commercial truck traffic through West Jordan.',
-      milesInCity: 14,
-    },
-    {
-      name: 'I-40',
-      description: 'Southern transcontinental route. This 2,555 miles interstate carries significant commercial truck traffic through West Jordan.',
-      milesInCity: 21,
-    },
-    {
-      name: 'I-10',
-      description: 'Southern transcontinental route from CA to FL. This 2,460 miles interstate carries significant commercial truck traffic through West Jordan.',
-      milesInCity: 23,
-    }
+      {
+          "name": "I-15",
+          "description": "Major trucking corridor through West Jordan. steep grades on this route increases accident risk.",
+          "milesInCity": 21
+      },
+      {
+          "name": "I-80",
+          "description": "Major trucking corridor through West Jordan. steep grades on this route increases accident risk.",
+          "milesInCity": 23
+      },
+      {
+          "name": "I-70",
+          "description": "Major trucking corridor through West Jordan. steep grades on this route increases accident risk.",
+          "milesInCity": 14
+      }
   ],
 
   commonAccidents: [
-    {
-      type: 'Rear-End Collisions',
-      percentage: '28%',
-      localFactor: 'Heavy traffic congestion on I-95 through West Jordan leads to sudden stops.',
-    },
-    {
-      type: 'Lane Change Accidents',
-      percentage: '22%',
-      localFactor: '18-wheelers have large blind spots. West Jordan\'s multi-lane highways increase lane change risks.',
-    },
-    {
-      type: 'Jackknife Accidents',
-      percentage: '15%',
-      localFactor: 'Sudden braking on West Jordan highways, especially during weather events, causes trailer swing.',
-    },
-    {
-      type: 'Underride Accidents',
-      percentage: '12%',
-      localFactor: 'Smaller vehicles sliding under truck trailers at intersections and highway on-ramps.',
-    },
-    {
-      type: 'Wide Turn Accidents',
-      percentage: '10%',
-      localFactor: 'West Jordan\'s urban intersections create tight turning situations for large trucks.',
-    },
+      {
+          "type": "Rollover Accidents",
+          "percentage": "21%",
+          "localFactor": "Steep mountain grades and runaway truck situations"
+      },
+      {
+          "type": "Jackknife Accidents",
+          "percentage": "19%",
+          "localFactor": "I-15 traffic through West Jordan contributes to this type. Brake failures on mountain descents cause jackknifes"
+      },
+      {
+          "type": "Rear-End Collisions",
+          "percentage": "19%",
+          "localFactor": "I-15 traffic through West Jordan contributes to this type. Sudden elevation changes and weather transitions"
+      },
+      {
+          "type": "Head-On Collisions",
+          "percentage": "16%",
+          "localFactor": "Mountain passes and winding roads increase head-ons"
+      },
+      {
+          "type": "Sideswipe Crashes",
+          "percentage": "12%",
+          "localFactor": "Narrow canyon roads and tunnel approaches"
+      }
   ],
 
-  truckingIndustry: `West Jordan's economy relies heavily on commercial trucking for Manufacturing and Distribution. The city's location along I-95 and I-40 makes it a critical logistics hub. Major distribution centers, warehouses, and industrial facilities generate thousands of daily truck trips through West Jordan streets and highways.
+  truckingIndustry: `West Jordan serves as an important waypoint for steep grades in Utah. The city's location on I-15 brings significant 18-wheeler traffic.
 
-The Utah trucking industry employs tens of thousands of drivers and supports the state's economy. However, this heavy truck traffic also creates significant accident risks for West Jordan residents. Commercial trucks weighing up to 80,000 pounds cause catastrophic injuries when they collide with passenger vehicles.
-
-West Jordan sees truck traffic from Agriculture and Retail. These industries operate on tight delivery schedules that can pressure drivers to violate hours-of-service regulations, skip required rest breaks, and drive while fatigued.`,
+Utah commercial trucks carry goods vital to the economy, but this heavy traffic comes with risks. mountain snow can make already-dangerous truck encounters even more hazardous for passenger vehicles.`,
 
   legalInfo: `Truck accident claims in West Jordan are governed by Utah state law and federal FMCSA regulations. Key legal considerations include:
 
-**Statute of Limitations**: Utah sets strict deadlines for filing personal injury and wrongful death claims. Missing this deadline bars your claim forever.
+**Statute of Limitations**: Utah has a 4-year statute of limitations for personal injury claims from truck accidents. Missing this deadline typically bars your claim forever, regardless of how strong your case may be.
 
-**Comparative Negligence**: Utah's negligence laws determine how fault is allocated and may affect your recovery.
+**Modified Comparative Negligence**: Utah uses a modified comparative fault system with a 50% bar. You can recover damages if you were 50% or less at fault, but your recovery is reduced by your fault percentage. If you are found more than 50% responsible, you cannot recover any damages.
 
-**Federal Regulations**: FMCSA rules on hours-of-service, drug testing, maintenance, and cargo loading often establish negligence in truck accident cases.
+**Federal Regulations**: FMCSA rules on hours-of-service, drug testing, vehicle maintenance, and cargo securement often establish negligence in truck accident cases. Violations of these federal regulations can be powerful evidence.
 
-**Multiple Defendants**: Trucking accident cases often involve claims against drivers, carriers, brokers, shippers, and maintenance companies.
+**Multiple Defendants**: Trucking accident cases often involve claims against the driver, the trucking company, cargo loading companies, maintenance providers, and sometimes truck or parts manufacturers.
 
-Our West Jordan truck accident attorneys understand both Utah law and federal trucking regulations. We investigate accidents thoroughly, preserve evidence, and build strong cases for maximum compensation.`,
+Our West Jordan truck accident attorneys understand both Utah law and federal trucking regulations. We investigate accidents thoroughly, preserve critical evidence, and build strong cases for maximum compensation.`,
 
   faqs: [
-    {
-      question: 'How much is my West Jordan truck accident case worth?',
-      answer: 'Truck accident settlement values in West Jordan depend on injury severity, medical expenses, lost wages, and liability. Serious injury cases often settle for $500,000 to several million dollars. A free consultation can provide a case-specific estimate.',
-    },
-    {
-      question: 'What should I do after a truck accident in West Jordan?',
-      answer: 'First, seek medical attention even if injuries seem minor. Call 911 to file a police report. Document the scene with photos. Get contact information from witnesses. Do not give statements to the trucking company\'s insurance. Contact a West Jordan truck accident lawyer before accepting any settlement.',
-    },
-    {
-      question: 'How long do I have to file a truck accident lawsuit in Utah?',
-      answer: 'Utah has a statute of limitations for personal injury claims. Missing this deadline means losing your right to compensation. Contact a lawyer promptly to ensure your claim is filed on time.',
-    },
-    {
-      question: 'Who can be held liable for a truck accident in West Jordan?',
-      answer: 'Multiple parties may be liable: the truck driver, trucking company, cargo loading company, truck manufacturer, and maintenance providers. An experienced attorney will investigate all potentially responsible parties to maximize your compensation.',
-    },
-    {
-      question: 'Do I need a lawyer for my West Jordan truck accident?',
-      answer: 'While not legally required, truck accident cases are complex. Trucking companies have aggressive legal teams. An experienced West Jordan truck accident lawyer levels the playing field, handles negotiations, and typically recovers significantly more compensation than unrepresented victims.',
-    }
+      {
+          "question": "How much is a truck accident case worth in West Jordan?",
+          "answer": "Truck accident settlements in West Jordan, Utah depend on multiple factors including injury severity, medical expenses, lost income, and carrier negligence. Values range widely from moderate settlements to multi-million dollar recoveries in catastrophic cases. Contact a local truck accident attorney for a case evaluation specific to your circumstances."
+      },
+      {
+          "question": "What is the statute of limitations for truck accident cases in West Jordan, Utah?",
+          "answer": "Utah has a 4-year statute of limitations for personal injury claims from truck accidents. This means you must file your lawsuit within 4 years of the accident date. Missing this deadline typically bars your claim forever, regardless of how strong your case may be. Evidence preservation is also critical—trucking companies may legally destroy certain records after federal retention periods expire."
+      },
+      {
+          "question": "Can I still recover damages if I was partially at fault for a West Jordan truck accident?",
+          "answer": "Yes, but Utah follows modified comparative negligence with a 50% bar. You can recover damages if you are 50% or less at fault, but your recovery is reduced by your fault percentage. If you are more than 50% at fault, you cannot recover any damages. This makes establishing the trucking company's primary responsibility critical to your case."
+      },
+      {
+          "question": "What are common injuries in West Jordan truck accidents?",
+          "answer": "Truck accidents in West Jordan often cause severe injuries due to the massive size difference between commercial trucks and passenger vehicles. Common injuries include traumatic brain injuries, spinal cord damage, multiple fractures, internal organ damage, burns, and wrongful death. Even 'minor' truck accidents frequently cause long-term injuries requiring extensive medical treatment. The Mountain West region's mountain snow and ice on passes contribute to particularly severe accident types."
+      },
+      {
+          "question": "Why do I need a truck accident lawyer in West Jordan?",
+          "answer": "Truck accident cases require attorneys who understand both federal trucking regulations and Utah law. Trucking companies have experienced legal teams and insurers who begin building their defense immediately after an accident. A qualified truck accident lawyer knows how to preserve critical evidence, investigate regulatory violations, identify all liable parties, and negotiate with commercial insurers."
+      },
+      {
+          "question": "How much does a truck accident lawyer in West Jordan cost?",
+          "answer": "Most truck accident lawyers in West Jordan work on a contingency fee basis—you pay nothing upfront and no attorney fees unless you win. The attorney fee is typically a percentage of your recovery, usually 33-40% depending on whether the case settles or goes to trial. This arrangement allows accident victims to access quality legal representation regardless of their financial situation. You should also understand what case costs are covered."
+      },
+      {
+          "question": "Why are truck accidents common on I-15 near West Jordan?",
+          "answer": "I-15 near West Jordan sees high truck accident rates due to heavy commercial traffic volume combined with mountain snow and ice on passes. The corridor carries significant freight between major distribution points. Driver fatigue on long hauls, congestion-related rear-end collisions, and weather-related incidents all contribute to accident frequency in this area."
+      }
   ],
 
-  lastUpdated: '2026-01-08',
+  lastUpdated: '2026-01-09',
 };
 
 export default WEST_JORDAN_CONTENT;

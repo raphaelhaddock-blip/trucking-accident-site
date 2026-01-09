@@ -14,7 +14,7 @@ The Colorado trucking industry faces challenges unlike any other state. Over 85,
 
 Mountain grades create particular hazards. The notorious I-70 corridor through the Rocky Mountains features grades exceeding 6%, where brake failures and runaway trucks cause catastrophic accidents. Winter conditions add ice, snow, and limited visibility to already dangerous mountain passes.
 
-Colorado follows modified comparative negligence with a 50% bar, meaning you can recover damages if you are 50% or less at fault, but recovery is barred if you are more than 50% at fault. The state has a two-year statute of limitations for personal injury claims.
+Colorado follows modified comparative negligence with a 50% bar, meaning you can recover damages if you are 50% or less at fault, but recovery is barred if you are more than 50% at fault. The state has a three-year statute of limitations for personal injury claims.
 
 If you've been injured in a Colorado truck accident, our Colorado truck accident lawyers know how to preserve evidence, investigate mountain-terrain accidents, and hold negligent carriers accountable.`,
 
@@ -71,10 +71,10 @@ If you've been injured in a Colorado truck accident, our Colorado truck accident
   },
 
   statuteOfLimitations: {
-    personalInjury: '2 Years',
+    personalInjury: '3 Years',
     wrongfulDeath: '2 Years',
     propertyDamage: '3 Years',
-    details: `Colorado has a two-year statute of limitations for personal injury claims arising from truck accidents under C.R.S. § 13-80-102. This means you must file your lawsuit within two years of the accident date. Wrongful death claims also have a two-year deadline. Missing these deadlines typically bars your claim forever.`
+    details: `Colorado has a three-year statute of limitations for personal injury claims arising from truck accidents under C.R.S. § 13-80-102. This means you must file your lawsuit within three years of the accident date. Wrongful death claims also have a two-year deadline. Missing these deadlines typically bars your claim forever.`
   },
 
   statistics: [
@@ -103,7 +103,7 @@ A Colorado truck accident lawyer understands the state's treacherous trucking co
   faqs: [
     {
       question: 'What is the statute of limitations for truck accident cases in Colorado?',
-      answer: 'Colorado has a two-year statute of limitations for personal injury claims from truck accidents. Wrongful death claims must also be filed within two years. Missing these deadlines typically bars your claim forever.'
+      answer: 'Colorado has a three-year statute of limitations for personal injury claims from truck accidents. Wrongful death claims must also be filed within two years. Missing these deadlines typically bars your claim forever.'
     },
     {
       question: 'Can I still recover damages if I was partially at fault for a Colorado truck accident?',

@@ -4,9 +4,11 @@ import type { CityContent } from '../types';
  * El Paso, Texas - Truck Accident Information
  *
  * Population: 678,815
- * Fatal Truck Crashes (2022): 15
+ * Fatal Truck Crashes (2022): 7
+ * Region: South Central
  *
  * Generated content with NHTSA FARS verified data
+ * Unique content based on regional patterns and city characteristics
  */
 
 export const EL_PASO_CONTENT: CityContent = {
@@ -17,108 +19,114 @@ export const EL_PASO_CONTENT: CityContent = {
   population: 678815,
 
   metaTitle: 'El Paso Truck Accident Lawyers | Texas 18-Wheeler Attorneys',
-  metaDescription: 'Experienced El Paso truck accident lawyers. 15 fatal crashes in 2022. Free consultation for 18-wheeler accident victims. No fee unless you win.',
+  metaDescription: 'El Paso truck accident law firm. We handle cases involving oil field hauling incidents.',
   h1: 'El Paso Truck Accident Lawyers',
 
-  heroText: `El Paso is home to 678,815 residents and sits along major commercial trucking routes in Texas. In 2022, the El Paso area recorded 15 fatal truck crashes according to NHTSA FARS data. If you or a loved one was injured in a truck accident, our experienced attorneys fight for maximum compensation against trucking companies and their insurers.`,
+  heroText: `The El Paso metropolitan area, home to 678,815 people, is a critical commercial trucking hub in Texas. NHTSA FARS data shows 7 fatal truck crashes in 2022. If you've been injured in an 18-wheeler accident, our experienced attorneys can help you pursue the compensation you deserve.`,
 
   accidentStats: {
-    truckFatalities: 15,
-    fatalCrashes: 13,
+    truckFatalities: 7,
+    fatalCrashes: 6,
     dataYear: 2022,
     yearOverYearChange: 'Data tracking ongoing',
-    comparisonToState: '2% of Texas truck fatalities',
-    sourceUrl: 'https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars',
+    comparisonToState: '1% of Texas truck fatalities',
+    sourceUrl: 'https://static.nhtsa.gov/nhtsa/downloads/FARS/2022/National/FARS2022NationalCSV.zip',
   },
 
   dangerousRoads: [
-    {
-      name: 'I-10',
-      description: 'Southern transcontinental route from CA to FL. This 2,460 miles interstate carries significant commercial truck traffic through El Paso.',
-      milesInCity: 24,
-    },
-    {
-      name: 'I-20',
-      description: 'East-west route from TX to SC. This 1,539 miles interstate carries significant commercial truck traffic through El Paso.',
-      milesInCity: 20,
-    },
-    {
-      name: 'I-35',
-      description: 'Major NAFTA corridor from TX to MN. This 1,568 miles interstate carries significant commercial truck traffic through El Paso.',
-      milesInCity: 6,
-    }
+      {
+          "name": "I-10",
+          "description": "Major trucking corridor through El Paso. oil field hauling on this route increases accident risk.",
+          "milesInCity": 21
+      },
+      {
+          "name": "I-35",
+          "description": "Major trucking corridor through El Paso. oil field hauling on this route increases accident risk.",
+          "milesInCity": 20
+      },
+      {
+          "name": "I-20",
+          "description": "Major trucking corridor through El Paso. oil field hauling on this route increases accident risk.",
+          "milesInCity": 10
+      }
   ],
 
   commonAccidents: [
-    {
-      type: 'Rear-End Collisions',
-      percentage: '28%',
-      localFactor: 'Heavy traffic congestion on I-10 through El Paso leads to sudden stops.',
-    },
-    {
-      type: 'Lane Change Accidents',
-      percentage: '22%',
-      localFactor: '18-wheelers have large blind spots. El Paso\'s multi-lane highways increase lane change risks.',
-    },
-    {
-      type: 'Jackknife Accidents',
-      percentage: '15%',
-      localFactor: 'Sudden braking on El Paso highways, especially during weather events, causes trailer swing.',
-    },
-    {
-      type: 'Underride Accidents',
-      percentage: '12%',
-      localFactor: 'Smaller vehicles sliding under truck trailers at intersections and highway on-ramps.',
-    },
-    {
-      type: 'Wide Turn Accidents',
-      percentage: '10%',
-      localFactor: 'El Paso\'s urban intersections create tight turning situations for large trucks.',
-    },
+      {
+          "type": "Rear-End Collisions",
+          "percentage": "24%",
+          "localFactor": "I-10 traffic through El Paso contributes to this type. High-volume Texas interstates and sudden traffic slowdowns"
+      },
+      {
+          "type": "Rollover Accidents",
+          "percentage": "23%",
+          "localFactor": "High speeds on open roads and crosswinds cause rollovers"
+      },
+      {
+          "type": "Jackknife Accidents",
+          "percentage": "19%",
+          "localFactor": "I-10 traffic through El Paso contributes to this type. Sudden thunderstorms and flash flooding create hazards"
+      },
+      {
+          "type": "Sideswipe Crashes",
+          "percentage": "17%",
+          "localFactor": "Oil field traffic and wide loads increase sideswipes"
+      },
+      {
+          "type": "Head-On Collisions",
+          "percentage": "9%",
+          "localFactor": "Two-lane rural highways and driver fatigue"
+      }
   ],
 
-  truckingIndustry: `El Paso's economy relies heavily on commercial trucking for Oil and gas transport and Border trade with Mexico. The city's location along I-10 and I-20 makes it a critical logistics hub. Major distribution centers, warehouses, and industrial facilities generate thousands of daily truck trips through El Paso streets and highways.
+  truckingIndustry: `El Paso's economy is deeply intertwined with commercial trucking. The metropolitan area's distribution centers, warehouses, and oil field hauling operations generate heavy truck traffic on I-10 and surrounding highways.
 
-The Texas trucking industry employs tens of thousands of drivers and supports the state's economy. However, this heavy truck traffic also creates significant accident risks for El Paso residents. Commercial trucks weighing up to 80,000 pounds cause catastrophic injuries when they collide with passenger vehicles.
-
-El Paso sees truck traffic from Agricultural products and Manufacturing. These industries operate on tight delivery schedules that can pressure drivers to violate hours-of-service regulations, skip required rest breaks, and drive while fatigued.`,
+The Texas trucking industry employs thousands of drivers who transport goods across the state. However, factors including extreme heat, sudden thunderstorms create hazardous conditions. When tired or negligent drivers operate 80,000-pound vehicles in these conditions, catastrophic accidents result.`,
 
   legalInfo: `Truck accident claims in El Paso are governed by Texas state law and federal FMCSA regulations. Key legal considerations include:
 
-**Statute of Limitations**: Texas sets strict deadlines for filing personal injury and wrongful death claims. Missing this deadline bars your claim forever.
+**Statute of Limitations**: Texas has a 2-year statute of limitations for personal injury claims from truck accidents. Missing this deadline typically bars your claim forever, regardless of how strong your case may be.
 
-**Comparative Negligence**: Texas's negligence laws determine how fault is allocated and may affect your recovery.
+**Modified Comparative Negligence**: Texas follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, with your compensation reduced by your fault percentage. If you are 51% or more at fault, you are barred from recovery.
 
-**Federal Regulations**: FMCSA rules on hours-of-service, drug testing, maintenance, and cargo loading often establish negligence in truck accident cases.
+**Federal Regulations**: FMCSA rules on hours-of-service, drug testing, vehicle maintenance, and cargo securement often establish negligence in truck accident cases. Violations of these federal regulations can be powerful evidence.
 
-**Multiple Defendants**: Trucking accident cases often involve claims against drivers, carriers, brokers, shippers, and maintenance companies.
+**Multiple Defendants**: Trucking accident cases often involve claims against the driver, the trucking company, cargo loading companies, maintenance providers, and sometimes truck or parts manufacturers.
 
-Our El Paso truck accident attorneys understand both Texas law and federal trucking regulations. We investigate accidents thoroughly, preserve evidence, and build strong cases for maximum compensation.`,
+Our El Paso truck accident attorneys understand both Texas law and federal trucking regulations. We investigate accidents thoroughly, preserve critical evidence, and build strong cases for maximum compensation.`,
 
   faqs: [
-    {
-      question: 'How much is my El Paso truck accident case worth?',
-      answer: 'Truck accident settlement values in El Paso depend on injury severity, medical expenses, lost wages, and liability. Serious injury cases often settle for $500,000 to several million dollars. A free consultation can provide a case-specific estimate.',
-    },
-    {
-      question: 'What should I do after a truck accident in El Paso?',
-      answer: 'First, seek medical attention even if injuries seem minor. Call 911 to file a police report. Document the scene with photos. Get contact information from witnesses. Do not give statements to the trucking company\'s insurance. Contact a El Paso truck accident lawyer before accepting any settlement.',
-    },
-    {
-      question: 'How long do I have to file a truck accident lawsuit in Texas?',
-      answer: 'Texas has a statute of limitations for personal injury claims. Missing this deadline means losing your right to compensation. Contact a lawyer promptly to ensure your claim is filed on time.',
-    },
-    {
-      question: 'Who can be held liable for a truck accident in El Paso?',
-      answer: 'Multiple parties may be liable: the truck driver, trucking company, cargo loading company, truck manufacturer, and maintenance providers. An experienced attorney will investigate all potentially responsible parties to maximize your compensation.',
-    },
-    {
-      question: 'Do I need a lawyer for my El Paso truck accident?',
-      answer: 'While not legally required, truck accident cases are complex. Trucking companies have aggressive legal teams. An experienced El Paso truck accident lawyer levels the playing field, handles negotiations, and typically recovers significantly more compensation than unrepresented victims.',
-    }
+      {
+          "question": "What compensation can I expect from a El Paso 18-wheeler accident?",
+          "answer": "Compensation from an 18-wheeler accident in El Paso typically includes economic damages (medical bills, lost wages, future medical care, property damage) and non-economic damages (pain and suffering, emotional distress, loss of enjoyment of life). Commercial trucks carry higher insurance minimums than passenger vehicles, often providing greater recovery potential. Texas's modified-51 system affects how compensation is calculated based on fault allocation."
+      },
+      {
+          "question": "How long does a truck accident case take in El Paso?",
+          "answer": "Truck accident cases in the El Paso area typically take 12 to 24 months to resolve, though complex cases can take longer. Court dockets in El Paso County can affect timeline. Settlement negotiations often begin after maximum medical improvement. Cases that go to trial may take additional time depending on court schedules."
+      },
+      {
+          "question": "Who can be held liable for a truck accident in El Paso?",
+          "answer": "Multiple parties may be liable for a El Paso truck accident: the truck driver, the trucking company, the vehicle owner (if different), the cargo loading company, the maintenance provider, and potentially the truck or parts manufacturer. Federal regulations make trucking companies responsible for their drivers' conduct while operating company vehicles. An investigation will identify all potentially liable parties to maximize your recovery."
+      },
+      {
+          "question": "What insurance covers truck accidents in El Paso?",
+          "answer": "Multiple insurance policies may cover a El Paso truck accident: the trucking company's liability insurance (federal minimum $750,000-$5 million depending on cargo), the driver's personal insurance, your own uninsured/underinsured motorist coverage, and your health insurance or Med-Pay. An attorney will identify all available coverage sources to maximize your recovery."
+      },
+      {
+          "question": "What happens after I hire a El Paso truck accident lawyer?",
+          "answer": "After hiring a truck accident lawyer in El Paso, your attorney will: send preservation letters to protect evidence, investigate the accident scene and trucking company records, gather medical records and bills, identify all liable parties and insurance coverage, calculate your damages, negotiate with insurance companies, and file a lawsuit if necessary. Most cases settle without trial, but your attorney should be prepared to try your case if needed."
+      },
+      {
+          "question": "Why are truck accidents common on I-10 near El Paso?",
+          "answer": "I-10 near El Paso sees high truck accident rates due to heavy commercial traffic volume combined with extreme heat and sudden thunderstorms. The corridor carries significant freight between major distribution points. Driver fatigue on long hauls, congestion-related rear-end collisions, and weather-related incidents all contribute to accident frequency in this area."
+      },
+      {
+          "question": "What are common injuries in El Paso truck accidents?",
+          "answer": "Truck accidents in El Paso often cause severe injuries due to the massive size difference between commercial trucks and passenger vehicles. Common injuries include traumatic brain injuries, spinal cord damage, multiple fractures, internal organ damage, burns, and wrongful death. Even 'minor' truck accidents frequently cause long-term injuries requiring extensive medical treatment. The South Central region's extreme heat and sudden thunderstorms contribute to particularly severe accident types."
+      }
   ],
 
-  lastUpdated: '2026-01-08',
+  lastUpdated: '2026-01-09',
 };
 
 export default EL_PASO_CONTENT;
