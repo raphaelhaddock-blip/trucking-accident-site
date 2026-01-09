@@ -1,11 +1,14 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
+import { STATE_IMAGES } from '@/lib/states-content/images';
 import {
   getCityData,
   getAllCityParams,
   getStateName,
+  getStateAbbreviation,
   getCitiesForState,
   isValidCity,
 } from '@/lib/cities-content';
@@ -14,6 +17,9 @@ import {
 export async function generateStaticParams() {
   return getAllCityParams();
 }
+
+// Default OG image for pages without specific images
+const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
 
 // Generate metadata for each city page
 export async function generateMetadata({
@@ -34,6 +40,9 @@ export async function generateMetadata({
   const title = `${cityData.name} Truck Accident Lawyers | ${stateName} 18-Wheeler Attorneys`;
   const description = `Experienced truck accident lawyers in ${cityData.name}, ${stateName}. ${cityData.truckFatalities} fatal truck crashes in ${cityData.dataYear}. Free consultation for 18-wheeler accident victims.`;
 
+  // Get state image as fallback (city-specific images will override later)
+  const ogImage = STATE_IMAGES[slug] || { url: DEFAULT_OG_IMAGE, alt: `${cityData.name} truck accident lawyers` };
+
   return {
     title,
     description,
@@ -44,6 +53,20 @@ export async function generateMetadata({
       title,
       description,
       type: 'article',
+      images: [
+        {
+          url: ogImage.url,
+          width: 1408,
+          height: 768,
+          alt: ogImage.alt,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [ogImage.url],
     },
   };
 }
@@ -69,11 +92,15 @@ export default async function CityPage({
   }
 
   const stateName = getStateName(slug);
+  const stateAbbr = getStateAbbreviation(slug);
   const otherCities = getCitiesForState(slug)
     .filter(c => c.slug !== city)
     .slice(0, 6);
 
-  // Schema markup
+  // Get hero image (state image as fallback)
+  const heroImage = STATE_IMAGES[slug];
+
+  // Schema markup with PostalAddress for Google Maps visibility
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LegalService',
@@ -81,6 +108,12 @@ export default async function CityPage({
     description: `Truck accident attorneys serving ${cityData.name}, ${stateName}`,
     url: `https://trucking-accident-site.vercel.app/states/${slug}/${city}`,
     telephone: PHONE_NUMBER,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: cityData.name,
+      addressRegion: stateAbbr,
+      addressCountry: 'US',
+    },
     areaServed: {
       '@type': 'City',
       name: cityData.name,
@@ -90,6 +123,7 @@ export default async function CityPage({
       },
     },
     priceRange: 'Free Consultation',
+    image: heroImage?.url || DEFAULT_OG_IMAGE,
   };
 
   const articleSchema = {
@@ -97,11 +131,25 @@ export default async function CityPage({
     '@type': 'Article',
     headline: `${cityData.name} Truck Accident Lawyers - ${stateName}`,
     description: `Truck accident statistics and legal resources for ${cityData.name}`,
+    image: heroImage?.url || DEFAULT_OG_IMAGE,
     datePublished: '2024-01-01',
     dateModified: new Date().toISOString().split('T')[0],
     author: {
       '@type': 'Organization',
       name: 'National Truck Accident Lawyers Editorial Team',
+      url: 'https://trucking-accident-site.vercel.app/about',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'National Truck Accident Lawyers',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://trucking-accident-site.vercel.app/logo.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://trucking-accident-site.vercel.app/states/${slug}/${city}`,
     },
   };
 
@@ -159,9 +207,27 @@ export default async function CityPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Hero Section */}
-      <section className="bg-navy-900 text-white py-16">
-        <div className="max-w-6xl mx-auto px-4">
+      {/* Hero Section with Image */}
+      <section className="relative min-h-[400px] md:min-h-[500px] flex items-center">
+        {/* Background Image */}
+        {heroImage && (
+          <>
+            <Image
+              src={heroImage.url}
+              alt={heroImage.alt}
+              fill
+              priority
+              className="object-cover"
+              sizes="100vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-navy-900/70 via-navy-900/40 to-transparent" />
+          </>
+        )}
+        {!heroImage && (
+          <div className="absolute inset-0 bg-navy-900" />
+        )}
+
+        <div className="relative z-10 max-w-6xl mx-auto px-4 py-16 text-white">
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
@@ -170,10 +236,10 @@ export default async function CityPage({
               { label: cityData.name },
             ]}
           />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
             {cityData.name} Truck Accident Lawyers
           </h1>
-          <p className="text-xl text-gray-300 mb-8 max-w-3xl">
+          <p className="text-xl text-gray-200 mb-8 max-w-3xl drop-shadow">
             Experienced 18-wheeler accident attorneys serving {cityData.name}, {stateName}.
             With {cityData.truckFatalities.toLocaleString()} fatal truck crashes recorded in {cityData.dataYear},
             our team fights for maximum compensation for accident victims.
@@ -181,13 +247,13 @@ export default async function CityPage({
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href={`tel:${PHONE_NUMBER}`}
-              className="bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition text-center"
+              className="bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition text-center shadow-lg"
             >
               Free Case Evaluation: {PHONE_NUMBER}
             </a>
             <Link
               href="/contact"
-              className="bg-white text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-center"
+              className="bg-white text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-center shadow-lg"
             >
               Contact Us Online
             </Link>

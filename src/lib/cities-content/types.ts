@@ -31,6 +31,16 @@ export interface CityFAQ {
   answer: string;
 }
 
+export interface CityImages {
+  hero: string;      // Sanity CDN URL
+  heroAlt: string;   // Descriptive alt text
+}
+
+export interface CityGeo {
+  latitude: number;
+  longitude: number;
+}
+
 export interface CityContent {
   // Identifiers
   slug: string;
@@ -67,6 +77,12 @@ export interface CityContent {
 
   // Freshness
   lastUpdated: string;
+
+  // Images (optional - fallback to state image if not set)
+  images?: CityImages;
+
+  // Geo coordinates for Google Maps schema
+  geo?: CityGeo;
 }
 
 /**
