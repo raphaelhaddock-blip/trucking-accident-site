@@ -154,5 +154,20 @@ export function getTotalCityCount(): number {
   return cityAccidentData.totalCities;
 }
 
+/**
+ * Get full city content from individual city files
+ * This loads the unique content (FAQs, meta descriptions, hero text, etc.)
+ */
+export async function getCityContent(stateSlug: string, citySlug: string): Promise<CityContent | null> {
+  try {
+    // Dynamic import from the city content files
+    const module = await import(`./${stateSlug}/${citySlug}`);
+    return module.default as CityContent;
+  } catch {
+    // Fall back to null if city content file doesn't exist
+    return null;
+  }
+}
+
 // Re-export types
 export type { CityContent, CityAccidentData, StateCitySummary } from './types';

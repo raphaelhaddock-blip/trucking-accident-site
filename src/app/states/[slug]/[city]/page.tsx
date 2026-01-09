@@ -6,12 +6,14 @@ import Breadcrumb from '@/components/Breadcrumb';
 import { STATE_IMAGES } from '@/lib/states-content/images';
 import {
   getCityData,
+  getCityContent,
   getAllCityParams,
   getStateName,
   getStateAbbreviation,
   getCitiesForState,
   isValidCity,
 } from '@/lib/cities-content';
+import type { CityContent } from '@/lib/cities-content';
 
 // Generate static params for all cities
 export async function generateStaticParams() {
@@ -29,6 +31,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug, city } = await params;
   const cityData = getCityData(slug, city);
+  const cityContent = await getCityContent(slug, city);
   const stateName = getStateName(slug);
 
   if (!cityData) {
@@ -37,8 +40,9 @@ export async function generateMetadata({
     };
   }
 
-  const title = `${cityData.name} Truck Accident Lawyers | ${stateName} 18-Wheeler Attorneys`;
-  const description = `Experienced truck accident lawyers in ${cityData.name}, ${stateName}. ${cityData.truckFatalities} fatal truck crashes in ${cityData.dataYear}. Free consultation for 18-wheeler accident victims.`;
+  // Use unique meta from city content files if available, otherwise fallback
+  const title = cityContent?.metaTitle || `${cityData.name} Truck Accident Lawyers | ${stateName} 18-Wheeler Attorneys`;
+  const description = cityContent?.metaDescription || `Experienced truck accident lawyers in ${cityData.name}, ${stateName}. ${cityData.truckFatalities} fatal truck crashes in ${cityData.dataYear}. Free consultation for 18-wheeler accident victims.`;
 
   // Get state image as fallback (city-specific images will override later)
   const ogImage = STATE_IMAGES[slug] || { url: DEFAULT_OG_IMAGE, alt: `${cityData.name} truck accident lawyers` };
@@ -87,6 +91,7 @@ export default async function CityPage({
   }
 
   const cityData = getCityData(slug, city);
+  const cityContent = await getCityContent(slug, city);
   if (!cityData) {
     notFound();
   }
@@ -96,6 +101,10 @@ export default async function CityPage({
   const otherCities = getCitiesForState(slug)
     .filter(c => c.slug !== city)
     .slice(0, 6);
+
+  // Use population from city content (which has real data) or fallback
+  const population = cityContent?.population || cityData.population;
+  const truckFatalities = cityContent?.accidentStats?.truckFatalities || cityData.truckFatalities;
 
   // Get hero image (state image as fallback)
   const heroImage = STATE_IMAGES[slug];
@@ -153,11 +162,11 @@ export default async function CityPage({
     },
   };
 
-  // City-specific FAQs
-  const cityFaqs = [
+  // City-specific FAQs - use from city content files if available
+  const defaultFaqs = [
     {
       question: `How much is my ${cityData.name} truck accident case worth?`,
-      answer: `Truck accident settlement values in ${cityData.name} depend on injury severity, medical expenses, lost wages, and liability. Serious injury cases often settle for $500,000 to several million dollars. With ${cityData.truckFatalities} fatal truck crashes in ${cityData.name} in ${cityData.dataYear}, these cases require experienced legal representation. A free consultation can provide a case-specific estimate.`,
+      answer: `Truck accident settlement values in ${cityData.name} depend on injury severity, medical expenses, lost wages, and liability. Serious injury cases often settle for $500,000 to several million dollars. With ${truckFatalities} fatal truck crashes in ${cityData.name} in ${cityData.dataYear}, these cases require experienced legal representation. A free consultation can provide a case-specific estimate.`,
     },
     {
       question: `What should I do after a truck accident in ${cityData.name}?`,
@@ -176,6 +185,11 @@ export default async function CityPage({
       answer: `While not legally required, truck accident cases are complex. Trucking companies have aggressive legal teams and extensive resources. An experienced ${cityData.name} truck accident lawyer levels the playing field, handles negotiations, and typically recovers significantly more compensation than unrepresented victims.`,
     },
   ];
+
+  // Use unique FAQs from city content if available
+  const cityFaqs = cityContent?.faqs && cityContent.faqs.length > 0
+    ? cityContent.faqs
+    : defaultFaqs;
 
   // FAQ Schema for SEO
   const faqSchema = {
@@ -240,9 +254,7 @@ export default async function CityPage({
             {cityData.name} Truck Accident Lawyers
           </h1>
           <p className="text-xl text-gray-200 mb-8 max-w-3xl drop-shadow">
-            Experienced 18-wheeler accident attorneys serving {cityData.name}, {stateName}.
-            With {cityData.truckFatalities.toLocaleString()} fatal truck crashes recorded in {cityData.dataYear},
-            our team fights for maximum compensation for accident victims.
+            {cityContent?.heroText || `Experienced 18-wheeler accident attorneys serving ${cityData.name}, ${stateName}. With ${truckFatalities.toLocaleString()} fatal truck crashes recorded in ${cityData.dataYear}, our team fights for maximum compensation for accident victims.`}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -267,13 +279,13 @@ export default async function CityPage({
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-amber-500 mb-2">
-                {cityData.truckFatalities}
+                {truckFatalities}
               </div>
               <div className="text-gray-600 text-sm">Fatal Truck Crashes ({cityData.dataYear})</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-amber-500 mb-2">
-                {cityData.population.toLocaleString()}
+                {population.toLocaleString()}
               </div>
               <div className="text-gray-600 text-sm">City Population</div>
             </div>
@@ -313,23 +325,28 @@ export default async function CityPage({
           <div className="prose prose-lg max-w-none text-gray-700">
             <p>
               {cityData.name} is one of {stateName}&apos;s largest cities with a population of{' '}
-              {cityData.population.toLocaleString()} residents. The city&apos;s location along major
+              {population.toLocaleString()} residents. The city&apos;s location along major
               trucking corridors makes it a high-traffic area for commercial vehicles, including
               18-wheelers, semi-trucks, and other large trucks.
             </p>
             <p>
               According to the National Highway Traffic Safety Administration (NHTSA) Fatality Analysis
               Reporting System (FARS), {cityData.name} and its surrounding area recorded{' '}
-              <strong>{cityData.truckFatalities} fatal truck crashes</strong> in {cityData.dataYear}.
+              <strong>{truckFatalities} fatal truck crashes</strong> in {cityData.dataYear}.
               These accidents resulted in devastating injuries and wrongful deaths that forever changed
               families throughout the {cityData.name} metropolitan area.
             </p>
-            <p>
-              If you or a loved one was injured in a truck accident in {cityData.name}, understanding
-              your legal rights is critical. Trucking companies and their insurers have teams of lawyers
-              working to minimize their liability. You deserve experienced legal representation that
-              knows how to investigate these complex cases and fight for maximum compensation.
-            </p>
+            {cityContent?.truckingIndustry && (
+              <div dangerouslySetInnerHTML={{ __html: cityContent.truckingIndustry.replace(/\n\n/g, '</p><p>').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>') }} />
+            )}
+            {!cityContent?.truckingIndustry && (
+              <p>
+                If you or a loved one was injured in a truck accident in {cityData.name}, understanding
+                your legal rights is critical. Trucking companies and their insurers have teams of lawyers
+                working to minimize their liability. You deserve experienced legal representation that
+                knows how to investigate these complex cases and fight for maximum compensation.
+              </p>
+            )}
           </div>
         </div>
       </section>
@@ -345,15 +362,29 @@ export default async function CityPage({
             traffic. These corridors are common sites for serious truck accidents:
           </p>
           <div className="grid md:grid-cols-3 gap-6">
-            {cityData.dangerousRoads.map((road, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                <div className="text-2xl font-bold text-navy-900 mb-2">{road}</div>
-                <p className="text-gray-600">
-                  Major trucking corridor passing through {cityData.name}. High volume of
-                  commercial traffic increases accident risk.
-                </p>
-              </div>
-            ))}
+            {cityContent?.dangerousRoads ? (
+              // Use detailed road info from city content
+              cityContent.dangerousRoads.map((road, index) => (
+                <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
+                  <div className="text-2xl font-bold text-navy-900 mb-2">{road.name}</div>
+                  <p className="text-gray-600">
+                    {road.description}
+                    {road.milesInCity && ` Approximately ${road.milesInCity} miles within city limits.`}
+                  </p>
+                </div>
+              ))
+            ) : (
+              // Fallback to basic road names
+              cityData.dangerousRoads.map((road, index) => (
+                <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
+                  <div className="text-2xl font-bold text-navy-900 mb-2">{road}</div>
+                  <p className="text-gray-600">
+                    Major trucking corridor passing through {cityData.name}. High volume of
+                    commercial traffic increases accident risk.
+                  </p>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </section>
@@ -364,38 +395,58 @@ export default async function CityPage({
           <h2 className="text-3xl font-bold text-navy-900 mb-8">
             Common Causes of Truck Accidents in {cityData.name}
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-navy-900 mb-3">Driver Fatigue</h3>
-              <p className="text-gray-700">
-                Despite federal hours-of-service regulations, many truck drivers exceed legal driving
-                limits to meet delivery deadlines. Fatigued driving is a leading cause of truck
-                accidents in {cityData.name}.
-              </p>
+          {cityContent?.commonAccidents && cityContent.commonAccidents.length > 0 ? (
+            // Use regional accident data with unique percentages
+            <div className="grid md:grid-cols-2 gap-6">
+              {cityContent.commonAccidents.map((accident, index) => (
+                <div key={index} className="bg-gray-50 rounded-lg p-6">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-xl font-bold text-navy-900">{accident.type}</h3>
+                    {accident.percentage && (
+                      <span className="bg-amber-100 text-amber-800 text-sm font-medium px-3 py-1 rounded-full">
+                        {accident.percentage}
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-gray-700">{accident.localFactor}</p>
+                </div>
+              ))}
             </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-navy-900 mb-3">Distracted Driving</h3>
-              <p className="text-gray-700">
-                Cell phone use, GPS devices, and other distractions cause truck drivers to lose
-                focus on the road. At 65 mph, looking away for just 5 seconds means traveling
-                the length of a football field blind.
-              </p>
+          ) : (
+            // Fallback to generic content
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-navy-900 mb-3">Driver Fatigue</h3>
+                <p className="text-gray-700">
+                  Despite federal hours-of-service regulations, many truck drivers exceed legal driving
+                  limits to meet delivery deadlines. Fatigued driving is a leading cause of truck
+                  accidents in {cityData.name}.
+                </p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-navy-900 mb-3">Distracted Driving</h3>
+                <p className="text-gray-700">
+                  Cell phone use, GPS devices, and other distractions cause truck drivers to lose
+                  focus on the road. At 65 mph, looking away for just 5 seconds means traveling
+                  the length of a football field blind.
+                </p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-navy-900 mb-3">Improper Maintenance</h3>
+                <p className="text-gray-700">
+                  Trucking companies sometimes cut corners on maintenance to save money. Brake
+                  failures, tire blowouts, and other mechanical issues cause catastrophic accidents.
+                </p>
+              </div>
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-navy-900 mb-3">Overloaded Cargo</h3>
+                <p className="text-gray-700">
+                  Improperly loaded or overweight trucks are harder to control and take longer to
+                  stop. Shifted cargo can cause rollovers and jackknife accidents.
+                </p>
+              </div>
             </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-navy-900 mb-3">Improper Maintenance</h3>
-              <p className="text-gray-700">
-                Trucking companies sometimes cut corners on maintenance to save money. Brake
-                failures, tire blowouts, and other mechanical issues cause catastrophic accidents.
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-navy-900 mb-3">Overloaded Cargo</h3>
-              <p className="text-gray-700">
-                Improperly loaded or overweight trucks are harder to control and take longer to
-                stop. Shifted cargo can cause rollovers and jackknife accidents.
-              </p>
-            </div>
-          </div>
+          )}
         </div>
       </section>
 
