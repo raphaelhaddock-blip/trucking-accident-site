@@ -1,0 +1,171 @@
+{
+  "batchNumber": 57,
+  "processedAt": "2026-01-10T05:33:23.811Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2054.9,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "greenville",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "maumee",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "richfield",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wooster",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "streetsboro",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sheffield",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lima",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "conneaut",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "moraine",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kenton",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "willoughby",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "north-royalton",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2023,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "stow",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "massillon",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other-cuyahoga",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "baltic",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "valley-view",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2023,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sallisaw",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bristow",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

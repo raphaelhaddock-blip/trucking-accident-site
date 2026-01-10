@@ -1,0 +1,171 @@
+{
+  "batchNumber": 5,
+  "processedAt": "2026-01-10T05:17:50.537Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2069.85,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "modesto",
+      "state": "california",
+      "success": true,
+      "wordCount": 2006,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "glendale",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2005,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "huntsville",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2128,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fontana",
+      "state": "california",
+      "success": true,
+      "wordCount": 2140,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "norfolk",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2004,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "richmond",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2127,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fremont",
+      "state": "california",
+      "success": true,
+      "wordCount": 2007,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tacoma",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2130,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hialeah",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2146,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "little-rock",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2050,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "columbus",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2063,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "birmingham",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2113,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "augusta",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2004,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "knoxville",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2113,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tempe",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2114,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mckinney",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2027,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "newport-news",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2172,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tallahassee",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2006,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fort-lauderdale",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2053,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chattanooga",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1989,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "batchNumber": 55,
+  "processedAt": "2026-01-10T05:32:37.972Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2070,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "weedsport",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "schaghticoke",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "manchester",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "parish",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wappinser",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wurtsboro",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-city",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2044,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lenox",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "salamanca",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fredonia",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "great-valley",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2171,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "clermont",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-york-city-richmond",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2221,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "nesconset",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "seneca-falls",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2171,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "alexandria-bay",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2171,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "halfmoon",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rochester",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "suffern",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-berlin",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2044,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

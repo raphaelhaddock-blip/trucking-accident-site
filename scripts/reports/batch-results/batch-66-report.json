@@ -1,0 +1,171 @@
+{
+  "batchNumber": 66,
+  "processedAt": "2026-01-10T05:35:00.732Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2024.55,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "poulsbo",
+      "state": "washington",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "vancouver",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "auburn",
+      "state": "washington",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fairfield",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cosmopolis",
+      "state": "washington",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mathias",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "point-pleasant",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2148,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pliny",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chapmanville",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bradley",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kenova",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "julian",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "buckhannon",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "barboursville",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fairdale",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "whitehall",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "middleway",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "newton",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "waverly",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "matewan",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

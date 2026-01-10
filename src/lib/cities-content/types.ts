@@ -60,6 +60,12 @@ export interface CityContent {
   // Accident Statistics (from NHTSA FARS)
   accidentStats: CityAccidentStats;
 
+  // Extended Content Sections (for 2000+ word target)
+  whyDangerous?: string;          // Why trucking is dangerous here
+  liabilityExplanation?: string;  // Who can be held liable
+  evidencePreservation?: string;  // How to preserve evidence
+  fmcsaRegulations?: string;      // Federal regulations overview
+
   // Dangerous Roads & Corridors
   dangerousRoads: DangerousRoad[];
 

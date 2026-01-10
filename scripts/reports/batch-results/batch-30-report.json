@@ -1,0 +1,171 @@
+{
+  "batchNumber": 30,
+  "processedAt": "2026-01-10T05:25:00.562Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2041.55,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "fort-stockton",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2175,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "uvalde",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "nacogdoches",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wendover",
+      "state": "utah",
+      "success": true,
+      "wordCount": 1965,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "north-salt-lake",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2189,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "moab",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2089,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "elwood",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "williamstown",
+      "state": "vermont",
+      "success": true,
+      "wordCount": 1951,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ashland",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 1962,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "college-place",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2149,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "charleston",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 1973,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other-racine",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pleasant-prairie",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2021,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "st-albans",
+      "state": "vermont",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "daleville",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "leesburg",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "saraland",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "leeds",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rainsville",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "heflin",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

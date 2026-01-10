@@ -1,0 +1,171 @@
+{
+  "batchNumber": 53,
+  "processedAt": "2026-01-10T05:32:26.799Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2087.65,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "west-deptford",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2170,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hamilton-township",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2170,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chesterfield",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "madison",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wantage-township",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2170,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "egg-harbor-township",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2220,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bedminster",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "elmwood-park",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2170,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rutherford",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bordentown",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bellmawr",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ocean-township",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2043,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "deptford",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "runnemede",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "anthony",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "glorieta",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "santa-clara",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "nara-visa",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cuba",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

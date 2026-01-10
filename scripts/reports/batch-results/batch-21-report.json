@@ -1,0 +1,171 @@
+{
+  "batchNumber": 21,
+  "processedAt": "2026-01-10T05:23:01.993Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2033.7,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "williston",
+      "state": "north-dakota",
+      "success": true,
+      "wordCount": 1957,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "harrison",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "henderson",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 1968,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "frankfort",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 2092,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gulf-shores",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2142,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hudson",
+      "state": "new-hampshire",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hazelwood",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 1989,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pelham",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1969,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "deming",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 1980,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lockhart",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2006,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kingston",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "katy",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2131,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kingman",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "joseph-city",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2138,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "union-city",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2010,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "douglasville",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "stockbridge",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "stillmore",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "covington",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "greenfield",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

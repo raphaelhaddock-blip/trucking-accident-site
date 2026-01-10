@@ -1,0 +1,171 @@
+{
+  "batchNumber": 60,
+  "processedAt": "2026-01-10T05:33:41.804Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2053.65,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "goodlettsville",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "millington",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "martin",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "brighton",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "athens",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "loudon",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mosheim",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jonesborough",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "etowah",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cleveland",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2101,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "palestine",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "thompsons",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2136,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "houston-fort-bend",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2011,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "milford",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lake-worth-village",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2096,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lockney",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "monahans",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hillsboro",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wharton",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "east-bernard",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2049,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

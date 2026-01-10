@@ -1,0 +1,171 @@
+{
+  "batchNumber": 40,
+  "processedAt": "2026-01-10T05:29:04.009Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2039.55,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "vienna",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "thomson",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other-bleckley",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "not-reported-glynn",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2138,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "summerville",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "east-dublin",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2011,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other-forsyth",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "vidalia",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "griffin",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "decatur",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jeffersonville",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "canton",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lafayette",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lake-park",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2138,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "metter",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lula",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "adairsville",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gray",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "danville",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tallapoosa",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

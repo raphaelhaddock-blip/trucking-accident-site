@@ -1,0 +1,171 @@
+{
+  "batchNumber": 31,
+  "processedAt": "2026-01-10T05:25:56.743Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2000.35,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "hokes-bluff",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2011,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "geraldine",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "moody",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "guntersville",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hayden",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "talladega",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gadsden",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "alexander-city",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2138,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "courtland",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "calera",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "centre",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hartselle",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "southside",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "piedmont",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "opelika",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "foley",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hamilton",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tonsina",
+      "state": "alaska",
+      "success": true,
+      "wordCount": 1984,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "palmer",
+      "state": "alaska",
+      "success": true,
+      "wordCount": 1860,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "north-pole",
+      "state": "alaska",
+      "success": true,
+      "wordCount": 2048,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

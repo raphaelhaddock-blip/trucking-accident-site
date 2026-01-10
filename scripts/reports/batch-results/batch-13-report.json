@@ -1,0 +1,171 @@
+{
+  "batchNumber": 13,
+  "processedAt": "2026-01-10T05:20:17.111Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2059.5,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "merced",
+      "state": "california",
+      "success": true,
+      "wordCount": 2095,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bethlehem",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2114,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "largo",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2110,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cicero",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chino-hills",
+      "state": "california",
+      "success": true,
+      "wordCount": 2155,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "warwick",
+      "state": "rhode-island",
+      "success": true,
+      "wordCount": 1968,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "temple",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2007,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "framingham",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 1989,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "canton",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 1980,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "perris",
+      "state": "california",
+      "success": true,
+      "wordCount": 2095,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-york-city-kings",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2220,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "upland",
+      "state": "california",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "albany",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1968,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wilson",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 1978,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cedar-park",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2181,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pleasanton",
+      "state": "california",
+      "success": true,
+      "wordCount": 1971,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rapid-city",
+      "state": "south-dakota",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jonesboro",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2092,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "baldwin-park",
+      "state": "california",
+      "success": true,
+      "wordCount": 2027,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "arlington-heights",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2028,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

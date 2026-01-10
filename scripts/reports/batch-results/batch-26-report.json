@@ -1,0 +1,171 @@
+{
+  "batchNumber": 26,
+  "processedAt": "2026-01-10T05:24:24.209Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2082.45,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "northlake",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "batavia",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "grayslake",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bensenville",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "oak-park",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2022,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "romeoville",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "elk-grove-village",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2199,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bridgeview",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "alhambra",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "geneva",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "auburn",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wolcott",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "goshen",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lebanon",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "clarksville",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kansas-city",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 2122,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pikeville",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 2086,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "whitesburg",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 1962,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ruston",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 2086,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "french-settlement",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 2009,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

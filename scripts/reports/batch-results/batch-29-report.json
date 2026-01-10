@@ -1,0 +1,171 @@
+{
+  "batchNumber": 29,
+  "processedAt": "2026-01-10T05:24:47.308Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2080.3,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "cochranton",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "montoursville",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hollywood",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 1973,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-columbia",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 2147,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "calderwood",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gordonsville",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dunlap",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "clinton",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "anna",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dayton",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kerrville",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "powell",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other-ellis",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "richardson-dallas",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rose-city",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2175,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jacksonville",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2192,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "farmersville",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "san-benito",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2048,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "coupland",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lorena",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

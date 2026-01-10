@@ -1,0 +1,171 @@
+{
+  "batchNumber": 19,
+  "processedAt": "2026-01-10T05:22:07.868Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2051.35,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "kingsland",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "charleston",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "clovis",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "spartanburg",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 2103,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "la-marque",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2053,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "alvin",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2006,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "atlantic-city",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2048,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "springville",
+      "state": "utah",
+      "success": true,
+      "wordCount": 1971,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "farmers-branch",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2054,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hot-springs",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2142,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "myrtle-beach",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 2153,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cookeville",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1969,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "nicholasville",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 1968,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "spring-valley",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2176,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chester",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 1991,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "houma",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 2092,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gillette",
+      "state": "wyoming",
+      "success": true,
+      "wordCount": 2095,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "duncan",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2103,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "carlsbad",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sanford",
+      "state": "maine",
+      "success": true,
+      "wordCount": 1956,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

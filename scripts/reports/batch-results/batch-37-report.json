@@ -1,0 +1,171 @@
+{
+  "batchNumber": 37,
+  "processedAt": "2026-01-10T05:28:35.725Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2056.6,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "micanopy",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wilton-manors",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2155,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-smyrna-beach",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2205,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "orange-city",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2028,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "brooksville",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lake-mary",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2028,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "groveland",
+      "state": "florida",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "spring-hill",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2155,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "riverview",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "maitland",
+      "state": "florida",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lutz",
+      "state": "florida",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sharpes",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "starke",
+      "state": "florida",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "coral-gables",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2155,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-melbourne",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2028,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "saint-augustine",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2037,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cocoa",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "riceboro",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "springfield",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jasper",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

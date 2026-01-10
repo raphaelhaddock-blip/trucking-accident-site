@@ -1,0 +1,171 @@
+{
+  "batchNumber": 25,
+  "processedAt": "2026-01-10T05:23:40.321Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2050.35,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "lyons",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "port-wentworth",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2010,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other-dekalb",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sparta",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "eastville",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "clarkston",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cordele",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "forest-park",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2137,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "greensboro",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "richland",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "commerce",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tifton",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mcdonough",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "college-park",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2137,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "villa-rica",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2137,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cumming",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "norcross",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "young-harris",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2137,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rome",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "decatur",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

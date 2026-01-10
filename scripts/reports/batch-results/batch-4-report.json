@@ -1,0 +1,171 @@
+{
+  "batchNumber": 4,
+  "processedAt": "2026-01-10T05:17:33.427Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2097.1,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "henderson",
+      "state": "nevada",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "greensboro",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2014,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "orlando",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2062,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "st-paul",
+      "state": "minnesota",
+      "success": true,
+      "wordCount": 2190,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "laredo",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2042,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "oyster-bay",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2212,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lubbock",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2042,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "durham",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2138,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lincoln",
+      "state": "nebraska",
+      "success": true,
+      "wordCount": 1979,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "plano",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2043,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "montgomery",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2128,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "toledo",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2140,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "winston-salem",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2188,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chesapeake",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2127,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "san-bernardino",
+      "state": "california",
+      "success": true,
+      "wordCount": 2062,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "madison",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2140,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "baton-rouge",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 2068,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "irving",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2166,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "north-las-vegas",
+      "state": "nevada",
+      "success": true,
+      "wordCount": 2059,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "garland",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2042,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

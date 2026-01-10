@@ -1,0 +1,171 @@
+{
+  "batchNumber": 52,
+  "processedAt": "2026-01-10T05:32:20.449Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2080.9,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "fairmont",
+      "state": "nebraska",
+      "success": true,
+      "wordCount": 2065,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "south-sioux-city",
+      "state": "nebraska",
+      "success": true,
+      "wordCount": 2161,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "not-reported",
+      "state": "nevada",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "littleton",
+      "state": "new-hampshire",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "concord",
+      "state": "new-hampshire",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "epsom",
+      "state": "new-hampshire",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "albany",
+      "state": "new-hampshire",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "seabrook",
+      "state": "new-hampshire",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "manchester",
+      "state": "new-hampshire",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dover",
+      "state": "new-hampshire",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cinnaminson",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "red-bank",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2043,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "collingswood",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mahwah",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mt-laurel",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2170,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "saddle-river",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2170,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "east-rutherford",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2170,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "summit",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "parsippany",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "burlington-township",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2043,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "batchNumber": 17,
+  "processedAt": "2026-01-10T05:21:47.858Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2057.4,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "biloxi",
+      "state": "mississippi",
+      "success": true,
+      "wordCount": 2091,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-haven",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2046,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "port-arthur",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2054,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "apple-valley",
+      "state": "minnesota",
+      "success": true,
+      "wordCount": 2027,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "southaven",
+      "state": "mississippi",
+      "success": true,
+      "wordCount": 1977,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rocky-mount",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2153,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hempstead",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "leesburg",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 1968,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "galveston",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2007,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hickory",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2102,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "grand-island",
+      "state": "nebraska",
+      "success": true,
+      "wordCount": 1991,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "clermont",
+      "state": "florida",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "texas-city",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2181,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "enid",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2104,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "howell",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "joplin",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2104,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "burleson",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2131,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "florissant",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 1989,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rockwall",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2131,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "murray",
+      "state": "utah",
+      "success": true,
+      "wordCount": 1980,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

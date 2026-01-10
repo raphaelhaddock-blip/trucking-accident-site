@@ -1,0 +1,171 @@
+{
+  "batchNumber": 7,
+  "processedAt": "2026-01-10T05:18:43.738Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2085.85,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "clarksville",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2114,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hartford",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2010,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "paterson",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2146,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "corona",
+      "state": "california",
+      "success": true,
+      "wordCount": 2116,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "murfreesboro",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1990,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jackson",
+      "state": "mississippi",
+      "success": true,
+      "wordCount": 2113,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "surprise",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1991,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "thornton",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 1991,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gainesville",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2006,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "joliet",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-valley-city",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2225,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "buckeye",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2114,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "savannah",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2114,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dayton",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "topeka",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lakewood",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2145,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "miramar",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2006,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "midland",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2151,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mcallen",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2152,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "orange",
+      "state": "california",
+      "success": true,
+      "wordCount": 1992,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

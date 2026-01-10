@@ -1,0 +1,171 @@
+{
+  "batchNumber": 12,
+  "processedAt": "2026-01-10T05:20:03.194Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2077.35,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "palm-coast",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2033,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "miami-beach",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2032,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bellingham",
+      "state": "washington",
+      "success": true,
+      "wordCount": 1971,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chino",
+      "state": "california",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "trenton",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hemet",
+      "state": "california",
+      "success": true,
+      "wordCount": 2095,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "homestead",
+      "state": "florida",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "middle-village",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2170,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gary",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2104,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kissimmee",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "santa-fe",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 2165,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "newton",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2114,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "waukegan",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lake-havasu-city",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2193,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "champaign",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bossier-city",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 2014,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "deerfield-beach",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2160,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ogden",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2095,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "waterloo",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 2113,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cheektowaga",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

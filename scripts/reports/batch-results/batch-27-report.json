@@ -1,0 +1,171 @@
+{
+  "batchNumber": 27,
+  "processedAt": "2026-01-10T05:24:30.033Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2062.9,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "mansfield",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 2096,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-monroe",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 2009,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "not-reported-east-feliciana",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 2146,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "clayton",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 1962,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chelmsford",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 1984,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "town-of-uxbridge",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2078,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gardner",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2108,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "byhalia",
+      "state": "mississippi",
+      "success": true,
+      "wordCount": 2086,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dexter",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wentzville",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2108,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "la-vista",
+      "state": "nebraska",
+      "success": true,
+      "wordCount": 2112,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "conway",
+      "state": "new-hampshire",
+      "success": true,
+      "wordCount": 1995,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bow",
+      "state": "new-hampshire",
+      "success": true,
+      "wordCount": 2119,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "manchester-township",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2042,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "robbinsville",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 1995,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hope",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 1995,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "teaneck",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2119,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "south-brunswick",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2042,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ridgefield-park",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2169,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "logan",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2119,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

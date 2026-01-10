@@ -1,0 +1,171 @@
+{
+  "batchNumber": 56,
+  "processedAt": "2026-01-10T05:33:18.130Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2030.3,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "port-jervis",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2044,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "brookfield",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "phelps",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "south-glens-falls",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2091,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wallkill",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "goshen",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lloyd-harbor",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2044,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "island-park",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2044,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "commack",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lexington",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lewiston-woodville",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2021,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mcleansville",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "haw-river",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2021,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hillsborough",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mooresboro",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lenoir",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "biscoe",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "forest-city",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2021,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "newport",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "boiling-springs",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2021,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

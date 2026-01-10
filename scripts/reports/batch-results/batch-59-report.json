@@ -1,0 +1,171 @@
+{
+  "batchNumber": 59,
+  "processedAt": "2026-01-10T05:33:35.857Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2026.35,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "beech-creek",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2160,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ridgeland",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "andrews",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "georgetown",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cowpens",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "santee",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hardeeville",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "greenville",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ravenel",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dorchester",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "moncks-corner",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 2148,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "eagle-butte",
+      "state": "south-dakota",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "crossville",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "vonore",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "madison",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jasper",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "oneida",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "huntingdon",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "joelton",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lexington",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

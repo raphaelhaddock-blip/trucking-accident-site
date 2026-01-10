@@ -1,0 +1,171 @@
+{
+  "batchNumber": 18,
+  "processedAt": "2026-01-10T05:22:02.181Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2047.55,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "morristown",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1968,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hobbs",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 2104,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-berlin",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2026,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "harrisburg",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 1991,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kansas-city",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2249,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tishomingo",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mooresville",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 1979,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "niagara-falls",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2049,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "monroe",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 1968,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "balch-springs",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2053,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mansfield",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "midlothian",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2006,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "strongsville",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hilo",
+      "state": "hawaii",
+      "success": true,
+      "wordCount": 1989,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mcminnville",
+      "state": "oregon",
+      "success": true,
+      "wordCount": 2058,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "brentwood",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 1969,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hurst",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2131,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kailua",
+      "state": "hawaii",
+      "success": true,
+      "wordCount": 1865,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "duncanville",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2131,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lake-oswego",
+      "state": "oregon",
+      "success": true,
+      "wordCount": 2107,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

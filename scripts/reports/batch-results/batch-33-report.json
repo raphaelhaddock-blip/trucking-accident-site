@@ -1,0 +1,171 @@
+{
+  "batchNumber": 33,
+  "processedAt": "2026-01-10T05:26:17.689Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2048.5,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "not-reported-mohave",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2139,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "clarksville",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cabot",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bryant",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "searcy",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "turrell",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "benton",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "brookland",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gum-springs",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2137,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mayflower",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "monroe",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "marion",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fordyce",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bono",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bella-vista",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2010,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hazen",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-memphis",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2010,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "goshen",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hercules",
+      "state": "california",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "artesia",
+      "state": "california",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

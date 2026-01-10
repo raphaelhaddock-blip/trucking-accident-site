@@ -1,0 +1,171 @@
+{
+  "batchNumber": 41,
+  "processedAt": "2026-01-10T05:29:47.088Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2023.7,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "calhoun",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "not-reported-mcduffie",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2138,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "not-reported-crisp",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2011,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "leesburg",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "townsend",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lithonia",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "brunswick",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kihei",
+      "state": "hawaii",
+      "success": true,
+      "wordCount": 1860,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "waikoloa-village",
+      "state": "hawaii",
+      "success": true,
+      "wordCount": 1901,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kapolei",
+      "state": "hawaii",
+      "success": true,
+      "wordCount": 1860,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other",
+      "state": "hawaii",
+      "success": true,
+      "wordCount": 1984,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mountain-home",
+      "state": "idaho",
+      "success": true,
+      "wordCount": 2013,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "eagle",
+      "state": "idaho",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lombard",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "markham",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bethalto",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "south-beloit",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "north-chicago",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2023,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "worth",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "oakwood",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

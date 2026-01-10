@@ -1,0 +1,171 @@
+{
+  "batchNumber": 35,
+  "processedAt": "2026-01-10T05:26:38.262Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2056.55,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "rancho-cordova",
+      "state": "california",
+      "success": true,
+      "wordCount": 2013,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "selma",
+      "state": "california",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cerritos",
+      "state": "california",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "montclair",
+      "state": "california",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "santa-barbara",
+      "state": "california",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ontario",
+      "state": "california",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "marysville",
+      "state": "california",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cypress",
+      "state": "california",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "yorba-linda",
+      "state": "california",
+      "success": true,
+      "wordCount": 2013,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "seal-beach",
+      "state": "california",
+      "success": true,
+      "wordCount": 2140,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "san-jacinto",
+      "state": "california",
+      "success": true,
+      "wordCount": 2013,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "vernon",
+      "state": "california",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "idaho-springs",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dacono",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "broomfield",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lafayette",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mead",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "severance",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "federal-heights",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 2013,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pueblo-west",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 2140,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

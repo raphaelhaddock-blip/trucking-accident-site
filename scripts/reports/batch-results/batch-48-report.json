@@ -1,0 +1,171 @@
+{
+  "batchNumber": 48,
+  "processedAt": "2026-01-10T05:31:18.415Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2026.75,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "larose",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "vinton",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "oberlin",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "breaux-bridge",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 2147,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bucksport",
+      "state": "maine",
+      "success": true,
+      "wordCount": 1952,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "portland",
+      "state": "maine",
+      "success": true,
+      "wordCount": 2050,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other",
+      "state": "maine",
+      "success": true,
+      "wordCount": 2076,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other-washington",
+      "state": "maine",
+      "success": true,
+      "wordCount": 1952,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "somerville",
+      "state": "maine",
+      "success": true,
+      "wordCount": 2076,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "turner",
+      "state": "maine",
+      "success": true,
+      "wordCount": 2076,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "portage",
+      "state": "maine",
+      "success": true,
+      "wordCount": 2076,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "naval-facility-ft-meade",
+      "state": "maryland",
+      "success": true,
+      "wordCount": 2113,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "berkley",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "littleton",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wrentham",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ipswich",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hingham",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "deerfield",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "townsend",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "holyoke",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

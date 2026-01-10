@@ -1,0 +1,171 @@
+{
+  "batchNumber": 22,
+  "processedAt": "2026-01-10T05:23:08.040Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2087,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "charlton-city",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2031,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "moorhead",
+      "state": "minnesota",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-plains",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2021,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "greenland-station",
+      "state": "new-hampshire",
+      "success": true,
+      "wordCount": 2169,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "carneys-point",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2169,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "north-brunswick",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2169,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-hyde-park",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2220,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "statesville",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 1973,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "trinity",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 1973,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-siloam-springs",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2198,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "belton",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sealy",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "alvarado",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hutto",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-waverly",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2175,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "brenham",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pecos",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "nettie",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 1973,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "black-river-falls",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2068,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

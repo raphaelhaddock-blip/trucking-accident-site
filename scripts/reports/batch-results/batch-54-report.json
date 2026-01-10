@@ -1,0 +1,171 @@
+{
+  "batchNumber": 54,
+  "processedAt": "2026-01-10T05:32:32.212Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2060.9,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "whitehall",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lodi",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hannibal",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lagrangeville",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "saugerties",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "homer",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bridgewater",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "leicester",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "caneadea",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "copenhagen",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mohawk",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "boston",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2186,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "clinton-corners",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2044,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "york",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "waterville",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "angola",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2121,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "holland",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hyde-park",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2171,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "moira",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "farmington",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1997,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

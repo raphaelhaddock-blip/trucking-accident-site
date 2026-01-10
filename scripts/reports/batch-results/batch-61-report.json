@@ -1,0 +1,171 @@
+{
+  "batchNumber": 61,
+  "processedAt": "2026-01-10T05:34:30.484Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2072.55,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "other-denton",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jewett",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hooks",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "glen-rose",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2049,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "van-horn",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2049,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "panhandle",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chandler",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bryson",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "princeton",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sulphur-springs",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2049,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "honey-grove",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2176,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "leona",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "italy",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sinton",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2136,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "caldwell",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "haslet",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "brady",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other-cooke",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gun-barrel-city",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2096,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "navasota",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

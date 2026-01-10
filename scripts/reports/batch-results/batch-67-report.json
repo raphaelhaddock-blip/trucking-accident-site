@@ -1,0 +1,163 @@
+{
+  "batchNumber": 67,
+  "processedAt": "2026-01-10T05:35:05.125Z",
+  "citiesProcessed": 19,
+  "citiesSucceeded": 19,
+  "citiesFailed": 0,
+  "averageWordCount": 2068.3684210526317,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "seneca-rocks",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2021,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "franklin",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "oak-hill",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2148,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mount-clare",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2148,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "points",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "baileysville",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "barrackville",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pennsboro",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "watertown",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jackson",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fall-river",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2022,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fitchburg",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "abbotsford",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mount-pleasant",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2149,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rochester",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "grafton",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "stevens-point",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2149,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mosinee",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

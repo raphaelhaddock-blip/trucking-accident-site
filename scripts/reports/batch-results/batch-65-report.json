@@ -1,0 +1,171 @@
+{
+  "batchNumber": 65,
+  "processedAt": "2026-01-10T05:34:54.910Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2022.75,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "brattleboro",
+      "state": "vermont",
+      "success": true,
+      "wordCount": 2076,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "strasburg",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rural-retreat",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2010,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "south-hill",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2137,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "springfield",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "weber-city",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2010,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mclean",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "north-garden",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2010,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pearisburg",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "colonial-heights",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2019,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "front-royal",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2137,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pennington-gap",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2010,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "des-moines",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2013,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "napavine",
+      "state": "washington",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "burlington",
+      "state": "washington",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "milton",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mountlake-terrace",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2013,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "yakima",
+      "state": "washington",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tukwila",
+      "state": "washington",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kalama",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

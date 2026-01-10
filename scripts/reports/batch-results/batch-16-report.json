@@ -1,0 +1,171 @@
+{
+  "batchNumber": 16,
+  "processedAt": "2026-01-10T05:21:39.097Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2067.75,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "ocala",
+      "state": "florida",
+      "success": true,
+      "wordCount": 1986,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "plymouth",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2114,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "port-orange",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2160,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "moore",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2104,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "twin-falls",
+      "state": "idaho",
+      "success": true,
+      "wordCount": 2154,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "queen-creek",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2017,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sanford",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2110,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "vineland",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "des-plaines",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2028,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dubuque",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 1980,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "white-plains",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2049,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "medford",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2114,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "terre-haute",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2028,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "roswell",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 2104,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sarasota",
+      "state": "florida",
+      "success": true,
+      "wordCount": 1986,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "middletown",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2113,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sayreville",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2124,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lenexa",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 1946,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bozeman",
+      "state": "montana",
+      "success": true,
+      "wordCount": 2060,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "haltom-city",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2053,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

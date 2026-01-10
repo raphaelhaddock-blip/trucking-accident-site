@@ -1,0 +1,171 @@
+{
+  "batchNumber": 49,
+  "processedAt": "2026-01-10T05:31:24.660Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2070.9,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "hopkinton",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "andover",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-bridgewater",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2159,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tyngsboro",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "westwood",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "woburn",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sharon",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "stoneham",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dracut",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "walker",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wayne",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "inkster",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "roseville",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ida",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "east-lansing",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2155,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sunfield",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "comstock",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "garden-city",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2155,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "oxford",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cascade",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "batchNumber": 44,
+  "processedAt": "2026-01-10T05:30:06.978Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2053.45,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "arcadia",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-salisbury",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2023,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "winchester",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "not-reported",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2023,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "michigan-city",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2032,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "burns-harbor",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2023,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-terre-haute",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2070,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "covington",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "merrillville",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-trenton",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2023,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "valparaiso",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "garrett",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "plainfield",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lake-station",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "center-point",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bryant",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "waveland",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kokomo",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "austin",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1971,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

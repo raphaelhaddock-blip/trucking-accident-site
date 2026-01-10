@@ -1,0 +1,171 @@
+{
+  "batchNumber": 2,
+  "processedAt": "2026-01-10T05:16:58.416Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2141,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "seattle",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2219,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "el-paso",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "portland",
+      "state": "oregon",
+      "success": true,
+      "wordCount": 2094,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "boston",
+      "state": "massachusetts",
+      "success": true,
+      "wordCount": 2118,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "louisville",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 2148,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "detroit",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2142,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "las-vegas",
+      "state": "nevada",
+      "success": true,
+      "wordCount": 2145,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tucson",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2187,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "albuquerque",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 2198,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "milwaukee",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2230,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "atlanta",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2225,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sacramento",
+      "state": "california",
+      "success": true,
+      "wordCount": 2188,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fresno",
+      "state": "california",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "long-beach",
+      "state": "california",
+      "success": true,
+      "wordCount": 2062,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mesa",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2026,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "brookhaven",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2161,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tulsa",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2015,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "colorado-springs",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 2063,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "raleigh",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2138,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "miami",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2215,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

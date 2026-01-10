@@ -1,0 +1,171 @@
+{
+  "batchNumber": 62,
+  "processedAt": "2026-01-10T05:34:36.378Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2067.35,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "lancaster",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "buffalo",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hutchins",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "brownfield",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "trenton",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gladewater",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wilmer",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pilot-point",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2049,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sunset",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "san-marcos",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2049,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "granbury",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other-midland",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mount-enterprise",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2176,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "donna",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gatesville",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "colorado-city",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2049,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "taylor",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fate",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "azle",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "stephenville",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

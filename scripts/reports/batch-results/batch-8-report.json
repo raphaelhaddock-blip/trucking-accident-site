@@ -1,0 +1,171 @@
+{
+  "batchNumber": 8,
+  "processedAt": "2026-01-10T05:18:56.702Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2083.4,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "warren",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2131,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-palm-beach",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "elizabeth",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2022,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hampton",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2113,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kent",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2116,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "stamford",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2011,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "north-charleston",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 2046,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "coral-springs",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2181,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "beaumont",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2151,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-haven",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2195,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-york-city",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2220,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fairfield",
+      "state": "california",
+      "success": true,
+      "wordCount": 1991,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "richardson",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2151,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "concord",
+      "state": "california",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sandy-springs",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2036,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fargo",
+      "state": "north-dakota",
+      "success": true,
+      "wordCount": 2102,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "palm-bay",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2054,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "odessa",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2027,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "waterbury",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2019,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "berkeley",
+      "state": "california",
+      "success": true,
+      "wordCount": 1992,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "batchNumber": 51,
+  "processedAt": "2026-01-10T05:32:13.908Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2052.7,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "picayune",
+      "state": "mississippi",
+      "success": true,
+      "wordCount": 1972,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mendenhall",
+      "state": "mississippi",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other",
+      "state": "mississippi",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "winona",
+      "state": "mississippi",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "marion",
+      "state": "mississippi",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rolla",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "republic",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "columbia",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "shrewsbury",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 1984,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "foristell",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "seymour",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bertrand",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "breckenridge-hills",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2159,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-alton",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2159,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "diggins",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "st-james",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2022,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "parkville",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "perryville",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hardin",
+      "state": "montana",
+      "success": true,
+      "wordCount": 1940,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hastings",
+      "state": "nebraska",
+      "success": true,
+      "wordCount": 2065,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

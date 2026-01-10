@@ -1,0 +1,171 @@
+{
+  "batchNumber": 15,
+  "processedAt": "2026-01-10T05:20:40.990Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2047,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "bayonne",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "taylor",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "weston",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2110,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "north-richland-hills",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2101,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "blaine",
+      "state": "minnesota",
+      "success": true,
+      "wordCount": 2104,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-des-moines",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 2074,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wauwatosa",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 1979,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "delray-beach",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2170,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "decatur",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1968,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "conway",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 1968,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "shawnee",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 1946,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bentonville",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 1967,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "victoria",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2007,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "oshkosh",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2104,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "north-bergen",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2048,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "meridian",
+      "state": "mississippi",
+      "success": true,
+      "wordCount": 1967,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "coon-rapids",
+      "state": "minnesota",
+      "success": true,
+      "wordCount": 2154,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kingsport",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2092,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "burnsville",
+      "state": "minnesota",
+      "success": true,
+      "wordCount": 1980,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "harrisonburg",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2091,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

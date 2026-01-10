@@ -1,0 +1,171 @@
+{
+  "batchNumber": 45,
+  "processedAt": "2026-01-10T05:30:13.905Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2013.4,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "hanover",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "marion",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "alexandria",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kentland",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "knightstown",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chesterton",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "logansport",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "saint-paul",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 2022,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "merrill",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "adel",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "riverside",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "denison",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "durant",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "knoxville",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "exira",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ashton",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ida-grove",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 2022,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "webster-city",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 2022,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "granger",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "osceola",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

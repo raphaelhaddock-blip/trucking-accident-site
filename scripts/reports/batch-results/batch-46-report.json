@@ -1,0 +1,171 @@
+{
+  "batchNumber": 46,
+  "processedAt": "2026-01-10T05:31:06.064Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2001.85,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "altoona",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "elwood",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 2065,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "plains",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 1941,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "park-city",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 1986,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "winfield",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 1941,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "parsons",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 1941,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "edgerton",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 1941,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "johnson",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 1941,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hoxie",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 1941,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "belleville",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 2065,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lexington-fayette",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "guthrie",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "garrison",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "carlisle",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "brandenburg",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "viper",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "danville",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "campbellsville",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "somerset",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "elkhorn-city",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 2137,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

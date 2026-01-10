@@ -1,0 +1,171 @@
+{
+  "batchNumber": 14,
+  "processedAt": "2026-01-10T05:20:24.539Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2079.6,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "layton",
+      "state": "utah",
+      "success": true,
+      "wordCount": 1971,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pasco",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2095,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "scranton",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2115,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "auburn",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 2093,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "apple-valley",
+      "state": "california",
+      "success": true,
+      "wordCount": 2155,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "harlingen",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2130,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "missoula",
+      "state": "montana",
+      "success": true,
+      "wordCount": 1936,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bolingbrook",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "milford",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2123,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "spanish-fork",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2144,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "missouri-city",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2181,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cherry-hill",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2175,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lauderhill",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2110,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dothan",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1969,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "greenwood",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1980,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kalamazoo",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2110,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pflugerville",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2131,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "huntersville",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 1978,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lafayette",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "southfield",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2110,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

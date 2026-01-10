@@ -1,0 +1,171 @@
+{
+  "batchNumber": 23,
+  "processedAt": "2026-01-10T05:23:21.348Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2027.9,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "cohoes",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "beckley",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2103,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "amsterdam",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rutland",
+      "state": "vermont",
+      "success": true,
+      "wordCount": 2081,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "portales",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rogersville",
+      "state": "alabama",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "willow",
+      "state": "alaska",
+      "success": true,
+      "wordCount": 1859,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "benson",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "holbrook",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lupton",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "camp-verde",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2011,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tonopah",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "willcox",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "eloy",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "morristown",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tolleson",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "coolidge",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "heber",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lonsdale",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 1962,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pocahontas",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2086,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "batchNumber": 43,
+  "processedAt": "2026-01-10T05:30:00.041Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2070.1,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "hoffman",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wadsworth",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "south-chicago-heights",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2200,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "caledonia",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "harrisburg",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gurnee",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "beach",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "neoga",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "burbank",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "country-club-hills",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2070,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lake-bluff",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "momence",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fall-creek",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cairo",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "centralia",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "downers-grove",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "harvey",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dolton",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "normal",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 1976,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-albany",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

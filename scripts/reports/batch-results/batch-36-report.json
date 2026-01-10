@@ -1,0 +1,171 @@
+{
+  "batchNumber": 36,
+  "processedAt": "2026-01-10T05:27:32.220Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2041.45,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "plainfield",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "madison",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 1994,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "killingly-center",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2159,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "east-windsor-historical",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2079,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "seymour",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2119,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "groton",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 1994,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "north-haven",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2041,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "manchester",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "thompson",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "south-windsor",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2032,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "newark",
+      "state": "delaware",
+      "success": true,
+      "wordCount": 2027,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "seaford",
+      "state": "delaware",
+      "success": true,
+      "wordCount": 1893,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wilmington",
+      "state": "delaware",
+      "success": true,
+      "wordCount": 1902,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sebastian",
+      "state": "florida",
+      "success": true,
+      "wordCount": 1990,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "port-saint-lucie",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2084,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gibsonton",
+      "state": "florida",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "titusville",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "vero-beach",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2037,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "palm-springs",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2037,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "panama-city",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2028,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "batchNumber": 1,
+  "processedAt": "2026-01-10T05:15:25.495Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2229.6,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "new-york",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2221,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "los-angeles",
+      "state": "california",
+      "success": true,
+      "wordCount": 2315,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chicago",
+      "state": "illinois",
+      "success": true,
+      "wordCount": 2261,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "houston",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2289,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "phoenix",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2198,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "philadelphia",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2243,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "san-antonio",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2187,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dallas",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2289,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "san-diego",
+      "state": "california",
+      "success": true,
+      "wordCount": 2187,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "austin",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2081,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "san-jose",
+      "state": "california",
+      "success": true,
+      "wordCount": 2249,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fort-worth",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2314,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jacksonville",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2238,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "indianapolis",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2137,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "charlotte",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2227,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "san-francisco",
+      "state": "california",
+      "success": true,
+      "wordCount": 2282,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "memphis",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2093,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "denver",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 2219,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "oklahoma-city",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2314,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "nashville",
+      "state": "tennessee",
+      "success": true,
+      "wordCount": 2248,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

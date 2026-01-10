@@ -1,0 +1,171 @@
+{
+  "batchNumber": 64,
+  "processedAt": "2026-01-10T05:34:48.533Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2038,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "hildale",
+      "state": "utah",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other-salt-lake",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2100,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "washington",
+      "state": "utah",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "paragonah",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sunset",
+      "state": "utah",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other-san-juan",
+      "state": "utah",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pleasant-view",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2140,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "south-salt-lake",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2069,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "la-sal",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2022,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ephraim",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "heber-city",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2140,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other-kane",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "soldier-summit",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2013,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mexican-hat",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "collinston",
+      "state": "utah",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "walden",
+      "state": "vermont",
+      "success": true,
+      "wordCount": 1952,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "orwell",
+      "state": "vermont",
+      "success": true,
+      "wordCount": 1952,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "leicester",
+      "state": "vermont",
+      "success": true,
+      "wordCount": 2076,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "benson",
+      "state": "vermont",
+      "success": true,
+      "wordCount": 2076,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "irasburg",
+      "state": "vermont",
+      "success": true,
+      "wordCount": 1952,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

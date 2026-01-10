@@ -1,0 +1,171 @@
+{
+  "batchNumber": 10,
+  "processedAt": "2026-01-10T05:19:16.872Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2084.6,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "el-monte",
+      "state": "california",
+      "success": true,
+      "wordCount": 2048,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "south-bend",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2057,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "spokane-valley",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2165,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pompano-beach",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2181,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "avondale",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1969,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "federal-way",
+      "state": "washington",
+      "success": true,
+      "wordCount": 2165,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "marietta",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1968,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hesperia",
+      "state": "california",
+      "success": true,
+      "wordCount": 1979,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "santa-maria",
+      "state": "california",
+      "success": true,
+      "wordCount": 2048,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "burbank",
+      "state": "california",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "flagstaff",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2093,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "renton",
+      "state": "washington",
+      "success": true,
+      "wordCount": 1992,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "davie",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2007,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "norwalk",
+      "state": "california",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rialto",
+      "state": "california",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rio-rancho",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 2176,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "vacaville",
+      "state": "california",
+      "success": true,
+      "wordCount": 2116,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "farmington-hills",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2159,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "daytona-beach",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2032,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fort-myers",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2159,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

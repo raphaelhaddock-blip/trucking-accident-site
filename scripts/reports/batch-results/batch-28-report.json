@@ -1,0 +1,171 @@
+{
+  "batchNumber": 28,
+  "processedAt": "2026-01-10T05:24:42.071Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2050.25,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "pittsgrove-township",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2042,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "freehold",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 1995,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "westampton-township",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2042,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "grants",
+      "state": "new-mexico",
+      "success": true,
+      "wordCount": 1975,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "theresa",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "centerville",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "henrietta",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "davenport",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "guilderland",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "malta",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "horseheads",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "highland-mills",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2170,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pembroke",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 1996,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "concord",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2097,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "vandalia",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tonkawa",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "muldrow",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "depew",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pawnee",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "rockaway-beach",
+      "state": "oregon",
+      "success": true,
+      "wordCount": 2101,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

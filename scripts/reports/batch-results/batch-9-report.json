@@ -1,0 +1,171 @@
+{
+  "batchNumber": 9,
+  "processedAt": "2026-01-10T05:19:01.870Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2073.85,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "independence",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pueblo",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 1991,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lewisville",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2151,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "edinburg",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2027,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dearborn",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2130,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sparks",
+      "state": "nevada",
+      "success": true,
+      "wordCount": 2080,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "edison",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2145,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "evansville",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jurupa-valley",
+      "state": "california",
+      "success": true,
+      "wordCount": 2039,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "billings",
+      "state": "montana",
+      "success": true,
+      "wordCount": 1957,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-jordan",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2048,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "richmond",
+      "state": "california",
+      "success": true,
+      "wordCount": 2001,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "el-cajon",
+      "state": "california",
+      "success": true,
+      "wordCount": 2175,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-covina",
+      "state": "california",
+      "success": true,
+      "wordCount": 2047,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "allen",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2151,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "yuma",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1969,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wilmington",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2009,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "toms-river",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2174,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "carlsbad",
+      "state": "california",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "baytown",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2006,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

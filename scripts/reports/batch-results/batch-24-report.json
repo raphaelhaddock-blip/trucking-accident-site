@@ -1,0 +1,171 @@
+{
+  "batchNumber": 24,
+  "processedAt": "2026-01-10T05:23:26.656Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2057.3,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "paragould",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2086,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "magnolia",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2086,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "beaumont",
+      "state": "california",
+      "success": true,
+      "wordCount": 1965,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "santa-fe-springs",
+      "state": "california",
+      "success": true,
+      "wordCount": 2199,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "taft",
+      "state": "california",
+      "success": true,
+      "wordCount": 1965,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "westminster",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 2089,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "commerce-city",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 2012,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cromwell",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 1984,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chaplin",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 1984,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "haddam",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2108,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-torrington",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2158,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wallingford",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 2118,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "windsor",
+      "state": "connecticut",
+      "success": true,
+      "wordCount": 1984,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "brandon",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2104,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "belle-glade",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2036,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "middleburg",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2104,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "saint-petersburg",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2027,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jefferson",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "milledgeville",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tucker",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

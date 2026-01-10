@@ -1,0 +1,171 @@
+{
+  "batchNumber": 32,
+  "processedAt": "2026-01-10T05:26:02.434Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2036.8,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "yucca",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1965,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "marana",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2089,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "douglas",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1965,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "payson",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1965,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "prescott-valley",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2012,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "black-canyon-city",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2189,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sacaton",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1965,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dennehotso",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2089,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "florence",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2089,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2089,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "show-low",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2139,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "chambers",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1965,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gila-bend",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2012,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "not-reported",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2139,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "quartzsite",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "skull-valley",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2012,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "inscription-house",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2012,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "shonto",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1965,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bullhead-city",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2012,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "picacho",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2089,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

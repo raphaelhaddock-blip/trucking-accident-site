@@ -1,0 +1,171 @@
+{
+  "batchNumber": 3,
+  "processedAt": "2026-01-10T05:17:14.855Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2130.85,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "virginia-beach",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2188,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "minneapolis",
+      "state": "minnesota",
+      "success": true,
+      "wordCount": 2237,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bakersfield",
+      "state": "california",
+      "success": true,
+      "wordCount": 2130,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "oakland",
+      "state": "california",
+      "success": true,
+      "wordCount": 2131,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wichita",
+      "state": "kansas",
+      "success": true,
+      "wordCount": 2109,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "aurora",
+      "state": "colorado",
+      "success": true,
+      "wordCount": 2006,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "tampa",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2215,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "new-orleans",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 2085,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cleveland",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2238,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "anaheim",
+      "state": "california",
+      "success": true,
+      "wordCount": 2130,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "islip",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2161,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pittsburgh",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "stockton",
+      "state": "california",
+      "success": true,
+      "wordCount": 2140,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "honolulu",
+      "state": "hawaii",
+      "success": true,
+      "wordCount": 1913,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "st-louis",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2301,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "corpus-christi",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2089,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "riverside",
+      "state": "california",
+      "success": true,
+      "wordCount": 2130,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "newark",
+      "state": "new-jersey",
+      "success": true,
+      "wordCount": 2160,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cincinnati",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2238,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "anchorage",
+      "state": "alaska",
+      "success": true,
+      "wordCount": 1891,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

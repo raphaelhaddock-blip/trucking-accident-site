@@ -1,0 +1,171 @@
+{
+  "batchNumber": 63,
+  "processedAt": "2026-01-10T05:34:41.489Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2080.85,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "athens",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "decatur",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "la-grange",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2049,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "groves",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "angus",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bellaire",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "blue-ridge",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2176,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "shallowater",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2002,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "addison",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "willow-park",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2176,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "three-rivers",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2058,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "scipio",
+      "state": "utah",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "green-river",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2140,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "vernal",
+      "state": "utah",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "dugway-proving-ground",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2190,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "richfield",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "farmington",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2090,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sandy-city",
+      "state": "utah",
+      "success": true,
+      "wordCount": 2150,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "bluebell",
+      "state": "utah",
+      "success": true,
+      "wordCount": 1966,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

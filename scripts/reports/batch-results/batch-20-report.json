@@ -1,0 +1,171 @@
+{
+  "batchNumber": 20,
+  "processedAt": "2026-01-10T05:22:21.539Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2044.3,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "aiken",
+      "state": "south-carolina",
+      "success": true,
+      "wordCount": 1979,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "prosper",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2007,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sanford",
+      "state": "north-carolina",
+      "success": true,
+      "wordCount": 2103,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cleburne",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2007,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "morgantown",
+      "state": "west-virginia",
+      "success": true,
+      "wordCount": 2103,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "texarkana",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 1968,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "congress",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 2088,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sedona",
+      "state": "arizona",
+      "success": true,
+      "wordCount": 1964,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "la-grange",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2010,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "jackson",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "cartersville",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gordon",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 1963,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ringgold",
+      "state": "georgia",
+      "success": true,
+      "wordCount": 2087,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "columbia-city",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2149,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "london",
+      "state": "kentucky",
+      "success": true,
+      "wordCount": 1962,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "springfield",
+      "state": "missouri",
+      "success": true,
+      "wordCount": 2098,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "gasport",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2120,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "columbus",
+      "state": "ohio",
+      "success": true,
+      "wordCount": 2038,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "stroud",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 1974,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "fredericksburg",
+      "state": "virginia",
+      "success": true,
+      "wordCount": 2092,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

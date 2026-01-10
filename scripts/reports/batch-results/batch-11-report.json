@@ -1,0 +1,171 @@
+{
+  "batchNumber": 11,
+  "processedAt": "2026-01-10T05:19:58.234Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2050.05,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "redding",
+      "state": "california",
+      "success": true,
+      "wordCount": 1970,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "davenport",
+      "state": "iowa",
+      "success": true,
+      "wordCount": 2125,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "vista",
+      "state": "california",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "san-angelo",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2084,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kenosha",
+      "state": "wisconsin",
+      "success": true,
+      "wordCount": 2104,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "boca-raton",
+      "state": "florida",
+      "success": true,
+      "wordCount": 2170,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "carmel",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 1981,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "albany",
+      "state": "new-york",
+      "success": true,
+      "wordCount": 2126,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "canton-township",
+      "state": "michigan",
+      "success": true,
+      "wordCount": 2033,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hammond",
+      "state": "indiana",
+      "success": true,
+      "wordCount": 2104,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "compton",
+      "state": "california",
+      "success": true,
+      "wordCount": 2105,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "medford",
+      "state": "oregon",
+      "success": true,
+      "wordCount": 1934,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "springdale",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 1967,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "melbourne",
+      "state": "florida",
+      "success": true,
+      "wordCount": 1985,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "north-little-rock",
+      "state": "arkansas",
+      "success": true,
+      "wordCount": 2061,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "carson",
+      "state": "california",
+      "success": true,
+      "wordCount": 1980,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "conroe",
+      "state": "texas",
+      "success": true,
+      "wordCount": 2007,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kennewick",
+      "state": "washington",
+      "success": true,
+      "wordCount": 1970,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "lake-charles",
+      "state": "louisiana",
+      "success": true,
+      "wordCount": 2014,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "santa-monica",
+      "state": "california",
+      "success": true,
+      "wordCount": 2155,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}

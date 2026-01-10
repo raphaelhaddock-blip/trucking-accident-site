@@ -1,0 +1,171 @@
+{
+  "batchNumber": 58,
+  "processedAt": "2026-01-10T05:33:30.015Z",
+  "citiesProcessed": 20,
+  "citiesSucceeded": 20,
+  "citiesFailed": 0,
+  "averageWordCount": 2081.9,
+  "averageUniquenessScore": 85,
+  "results": [
+    {
+      "city": "elk-city",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2149,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "pryor",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "welch",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "marietta",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hugo",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "kiowa",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "madill",
+      "state": "oklahoma",
+      "success": true,
+      "wordCount": 2099,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "florence",
+      "state": "oregon",
+      "success": true,
+      "wordCount": 2054,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "astoria",
+      "state": "oregon",
+      "success": true,
+      "wordCount": 1930,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "west-norriton",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2160,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "washington",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2110,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "other",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2110,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "white-oak",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2033,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "hempfield-township",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2160,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "mount-pocono",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2160,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "wysox",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 1986,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "smithfield",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2110,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "sugarcreek",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 1986,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "berlin",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 1986,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    },
+    {
+      "city": "ephrata",
+      "state": "pennsylvania",
+      "success": true,
+      "wordCount": 2110,
+      "uniquenessScore": 85,
+      "needsHumanReview": false
+    }
+  ]
+}
