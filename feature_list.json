@@ -342,7 +342,7 @@
       "id": "F019",
       "name": "About page",
       "description": "About/trust page explaining the service",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F001"],
       "test_criteria": [
         "/about page renders",
