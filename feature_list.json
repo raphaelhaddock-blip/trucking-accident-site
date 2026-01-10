@@ -309,7 +309,7 @@
       "id": "F017",
       "name": "404 page",
       "description": "Custom 404 page with helpful navigation",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F001"],
       "test_criteria": [
         "Custom 404 page renders for unknown routes",
