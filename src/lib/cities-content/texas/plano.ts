@@ -138,6 +138,12 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/234c3f7b8ab37af1ecb198db549dadb4f9ae6307-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on US-75 highway near Plano, Texas with corporate headquarters and tech campus in background',
+  },
+
   lastUpdated: '2026-01-10',
 };
 

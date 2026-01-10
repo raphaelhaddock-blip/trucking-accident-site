@@ -118,6 +118,12 @@ Our Waco truck accident attorneys understand both Texas law and federal trucking
     }
   ],
 
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/1d60b3d9956c30ca688664f79e9a881ebfaed861-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35 highway near Waco, Texas with Brazos River bridge visible',
+  },
+
   lastUpdated: '2026-01-08',
 };
 
