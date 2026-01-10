@@ -37,9 +37,12 @@ export async function generateMetadata({
   const content = getStateContent(slug);
   const stateName = getStateName(slug);
 
+  // Generate SEO-optimized title (~50 chars per spec)
+  const seoTitle = `${stateName} Truck Accident Lawyer | Free Consult`;
+
   if (!content) {
     return {
-      title: `${stateName} Truck Accident Lawyers | 18-Wheeler Attorneys`,
+      title: seoTitle,
     };
   }
 
@@ -47,13 +50,13 @@ export async function generateMetadata({
   const ogImage = STATE_IMAGES[slug] || { url: DEFAULT_OG_IMAGE, alt: `${stateName} truck accident lawyers` };
 
   return {
-    title: content.metaTitle,
+    title: seoTitle,
     description: content.metaDescription,
     alternates: {
       canonical: `/states/${slug}`,
     },
     openGraph: {
-      title: content.metaTitle,
+      title: seoTitle,
       description: content.metaDescription,
       type: 'article',
       images: [
@@ -67,7 +70,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: content.metaTitle,
+      title: seoTitle,
       description: content.metaDescription,
       images: [ogImage.url],
     },

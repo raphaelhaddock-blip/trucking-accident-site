@@ -24,8 +24,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://trucking-accident-site.vercel.app"),
   title: {
-    default: "Truck Injury Lawyers | Free Consultation",
-    template: "%s | Truck Injury Lawyers",
+    default: "18-Wheeler Accident Lawyers | Free Consultation",
+    template: "%s",
   },
   description:
     "Injured in an 18-wheeler crash? Our truck accident lawyers fight for maximum compensation. Free consultation. No fee unless you win. Call now.",

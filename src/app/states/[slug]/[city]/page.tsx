@@ -41,8 +41,11 @@ export async function generateMetadata({
     };
   }
 
-  // Use unique meta from city content files if available, otherwise fallback
-  const title = cityContent?.metaTitle || `${cityData.name} Truck Accident Lawyers | ${stateName} 18-Wheeler Attorneys`;
+  // Get state abbreviation for shorter title
+  const stateAbbr = getStateAbbreviation(slug);
+
+  // SEO-optimized title (~55 chars per spec): "[City] 18-Wheeler Accident Attorney | [State]"
+  const title = `${cityData.name} 18-Wheeler Accident Attorney | ${stateAbbr}`;
   const description = cityContent?.metaDescription || `Experienced truck accident lawyers in ${cityData.name}, ${stateName}. ${cityData.truckFatalities} fatal truck crashes in ${cityData.dataYear}. Free consultation for 18-wheeler accident victims.`;
 
   // Get state image as fallback (city-specific images will override later)

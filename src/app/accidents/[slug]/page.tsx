@@ -41,14 +41,18 @@ export async function generateMetadata({
   // Get accident-specific image or use default
   const ogImage = ACCIDENT_IMAGES[slug] || { url: DEFAULT_OG_IMAGE, alt: '18-wheeler truck accident' };
 
+  // SEO-optimized title (~55 chars per spec): "[Type] Accident Lawyer | 18-Wheeler Claims"
+  const accidentName = getAccidentName(slug);
+  const seoTitle = `${accidentName} Lawyer | 18-Wheeler Crash Claims`;
+
   return {
-    title: content.metaTitle,
+    title: seoTitle,
     description: content.metaDescription,
     alternates: {
       canonical: `/accidents/${slug}`,
     },
     openGraph: {
-      title: content.metaTitle,
+      title: seoTitle,
       description: content.metaDescription,
       type: 'article',
       images: [
@@ -62,7 +66,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: content.metaTitle,
+      title: seoTitle,
       description: content.metaDescription,
       images: [ogImage.url],
     },
