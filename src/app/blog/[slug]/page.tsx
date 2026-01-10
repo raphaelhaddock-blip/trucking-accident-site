@@ -82,13 +82,13 @@ export default async function BlogPostPage({
     publisher: {
       '@type': 'Organization',
       name: 'Truck Injury Lawyers',
-      url: 'https://18wheeleraccidentlawyers.com',
+      url: 'https://trucking-accident-site.vercel.app',
     },
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://18wheeleraccidentlawyers.com/blog/${slug}`,
+      '@id': `https://trucking-accident-site.vercel.app/blog/${slug}`,
     },
   };
 

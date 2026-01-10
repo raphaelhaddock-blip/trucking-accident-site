@@ -141,7 +141,7 @@ export default async function AccidentPage({
     '@type': 'LegalService',
     name: 'Truck Injury Lawyers',
     description: content.metaDescription,
-    url: `https://www.18wheeleraccidentlawyers.com/accidents/${slug}`,
+    url: `https://trucking-accident-site.vercel.app/accidents/${slug}`,
     telephone: PHONE_NUMBER,
     areaServed: 'United States',
     serviceType: `${content.title} Legal Representation`,

@@ -147,6 +147,12 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/838af1b9fbdbb6ba733865552dd392dcace8c14a-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-10 highway near Houston, Texas with city skyline in background',
+  },
+
   lastUpdated: '2026-01-10',
 };
 

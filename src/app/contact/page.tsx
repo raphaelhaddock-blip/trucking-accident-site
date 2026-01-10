@@ -50,7 +50,7 @@ export default function ContactPage() {
                 '@id': '#contactpage',
                 name: 'Contact Us | Free Truck Accident Case Evaluation',
                 description: 'Get a free case evaluation for your 18-wheeler accident. Our experienced attorneys are ready to help. No fee unless you win.',
-                url: 'https://18wheeleraccidentlawyers.com/contact',
+                url: 'https://trucking-accident-site.vercel.app/contact',
               },
               {
                 '@type': 'FAQPage',

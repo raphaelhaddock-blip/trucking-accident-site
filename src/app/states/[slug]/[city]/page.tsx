@@ -48,8 +48,10 @@ export async function generateMetadata({
   const title = `${cityData.name} 18-Wheeler Accident Attorney | ${stateAbbr}`;
   const description = cityContent?.metaDescription || `Experienced truck accident lawyers in ${cityData.name}, ${stateName}. ${cityData.truckFatalities} fatal truck crashes in ${cityData.dataYear}. Free consultation for 18-wheeler accident victims.`;
 
-  // Get state image as fallback (city-specific images will override later)
-  const ogImage = STATE_IMAGES[slug] || { url: DEFAULT_OG_IMAGE, alt: `${cityData.name} truck accident lawyers` };
+  // Get OG image - prefer city-specific image, fallback to state, then default
+  const ogImage = cityContent?.images
+    ? { url: cityContent.images.hero, alt: cityContent.images.heroAlt }
+    : STATE_IMAGES[slug] || { url: DEFAULT_OG_IMAGE, alt: `${cityData.name} truck accident lawyers` };
 
   return {
     title,
@@ -111,8 +113,10 @@ export default async function CityPage({
   const population = cityContent?.population || cityData.population;
   const truckFatalities = cityContent?.accidentStats?.truckFatalities || cityData.truckFatalities;
 
-  // Get hero image (state image as fallback)
-  const heroImage = STATE_IMAGES[slug];
+  // Get hero image - prefer city-specific image, fallback to state image
+  const heroImage = cityContent?.images
+    ? { url: cityContent.images.hero, alt: cityContent.images.heroAlt }
+    : STATE_IMAGES[slug];
 
   // Schema markup with PostalAddress for Google Maps visibility
   const localBusinessSchema = {

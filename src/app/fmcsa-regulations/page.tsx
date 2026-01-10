@@ -729,7 +729,7 @@ export default function FMCSARegulationsPage() {
             },
             mainEntityOfPage: {
               '@type': 'WebPage',
-              '@id': 'https://18wheeleraccidentlawyers.com/fmcsa-regulations',
+              '@id': 'https://trucking-accident-site.vercel.app/fmcsa-regulations',
             },
           }),
         }}
