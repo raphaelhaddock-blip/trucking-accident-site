@@ -393,7 +393,7 @@
       "id": "F022",
       "name": "Performance optimization",
       "description": "Site meets Core Web Vitals targets",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F002", "F006", "F011"],
       "test_criteria": [
         "LCP < 2.5s on key pages",
