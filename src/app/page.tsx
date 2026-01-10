@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import CaseEvaluationForm from '@/components/CaseEvaluationForm';
 
 // Hero image from Sanity CDN - Side view truck
 const HERO_IMAGE_URL = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
@@ -579,35 +580,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mobile Form (shown on mobile only) */}
-      <section className="bg-navy-900 py-16 lg:hidden">
-        <div className="mx-auto max-w-md px-4">
-          <h2 className="text-2xl font-bold text-white text-center mb-6">
-            Get Your Free Case Review
-          </h2>
-          <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full rounded-md border-0 bg-navy-800 px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-amber-500"
-            />
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              className="w-full rounded-md border-0 bg-navy-800 px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-amber-500"
-            />
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full rounded-md border-0 bg-navy-800 px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-amber-500"
-            />
-            <button
-              type="submit"
-              className="w-full rounded-md bg-amber-500 px-6 py-4 text-lg font-semibold text-navy-900 hover:bg-amber-400 transition-colors"
-            >
-              Get Free Consultation
-            </button>
-          </form>
+      {/* Case Evaluation Form Section */}
+      <section className="bg-navy-900 py-16">
+        <div className="mx-auto max-w-xl px-4">
+          <CaseEvaluationForm
+            source="homepage"
+            compact={true}
+            darkMode={true}
+            title="Get Your Free Case Review"
+            subtitle="Fill out this form and we'll contact you within 24 hours."
+          />
         </div>
       </section>
     </>

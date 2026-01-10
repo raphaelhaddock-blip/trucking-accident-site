@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
+import CaseEvaluationForm from '@/components/CaseEvaluationForm';
 import { STATE_IMAGES } from '@/lib/states-content/images';
 import {
   getStateContent,
@@ -641,33 +642,46 @@ export default async function StatePage({
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section with Form */}
       <section className="py-16 bg-navy-900 text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Injured in a {content.name} Truck Accident?
-          </h2>
-          <p className="text-gray-300 mb-8 text-lg">
-            Get experienced legal representation from attorneys who understand {content.name}&apos;s
-            trucking laws and court systems. We fight to hold trucking companies accountable.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`tel:${PHONE_NUMBER}`}
-              className="bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition"
-            >
-              Call Now: {PHONE_NUMBER}
-            </a>
-            <Link
-              href="/contact"
-              className="bg-white text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition"
-            >
-              Free Case Evaluation
-            </Link>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - CTA text */}
+            <div className="text-center lg:text-left">
+              <h2 className="text-3xl font-bold mb-4">
+                Injured in a {content.name} Truck Accident?
+              </h2>
+              <p className="text-gray-300 mb-6 text-lg">
+                Get experienced legal representation from attorneys who understand {content.name}&apos;s
+                trucking laws and court systems. We fight to hold trucking companies accountable.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6">
+                <a
+                  href={`tel:${PHONE_NUMBER}`}
+                  className="bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition inline-flex items-center justify-center"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
+                  {PHONE_NUMBER}
+                </a>
+              </div>
+              <p className="text-gray-400 text-sm">
+                No Fee Unless You Win | Available 24/7 | Hablamos Espa&ntilde;ol
+              </p>
+            </div>
+
+            {/* Right side - Form */}
+            <div>
+              <CaseEvaluationForm
+                source={`state-${slug}`}
+                compact={true}
+                darkMode={true}
+                title="Free Case Evaluation"
+                subtitle={`Tell us about your ${content.name} truck accident and we'll contact you within 24 hours.`}
+              />
+            </div>
           </div>
-          <p className="text-gray-400 mt-6 text-sm">
-            No Fee Unless You Win | Available 24/7 | Hablamos Espa&ntilde;ol
-          </p>
         </div>
       </section>
     </div>

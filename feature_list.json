@@ -240,7 +240,7 @@
       "id": "F013",
       "name": "Case evaluation form component",
       "description": "Reusable CTA form component that appears on multiple pages",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F012"],
       "test_criteria": [
         "Form component renders on homepage",

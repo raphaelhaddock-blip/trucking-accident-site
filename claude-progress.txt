@@ -455,6 +455,21 @@ Key specs:
     - Trust elements: contingency fees, free consultation, no obligation
   - Tested 3x - stable HTTP 200 responses
 
+- F013: Case evaluation form component - PASSING
+  - Created reusable CaseEvaluationForm component
+  - Props: source, compact, darkMode, title, subtitle
+  - Uses existing submitContactForm server action
+  - Tracks source of submission for analytics
+  - Added to homepage (replaces basic mobile form)
+  - Added to accident pages (CTA section with 2-column layout)
+  - Added to state pages (CTA section with 2-column layout)
+  - Mobile-responsive design
+  - Consistent styling across all placements
+  - Tested 3x - stable HTTP 200 on all pages
+
+### Files Created
+- src/components/CaseEvaluationForm.tsx
+
 ### Files Modified
 - src/app/privacy/page.tsx (added robots noindex)
 - src/app/terms/page.tsx (added robots noindex)
@@ -473,14 +488,16 @@ Key specs:
 - F010: PASSING
 - F011: PASSING
 - F012: PASSING
+- F013: PASSING
 - F017: PASSING
 - F018: PASSING
 - F019: PASSING
-- Total: 15 features PASSING
+- Total: 16 features PASSING
 
 ### Next Tasks
-- F013: Case evaluation form component (reusable across site)
 - F014: Blog page template
 - F003: Sanity CMS configuration
+- F015: XML Sitemap
+- F016: Robots.txt
 
 ---

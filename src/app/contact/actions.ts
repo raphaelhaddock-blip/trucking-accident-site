@@ -55,7 +55,7 @@ export async function submitContactForm(
       description: validationResult.data.description,
       submittedAt: new Date().toISOString(),
       status: 'new',
-      source: 'contact-page',
+      source: (formData.get('source') as string) || 'contact-page',
     });
 
     console.log('Lead created:', lead._id);
