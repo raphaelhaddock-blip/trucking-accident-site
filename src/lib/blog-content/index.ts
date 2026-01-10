@@ -4,6 +4,8 @@ import { underrideDeaths } from './underride-deaths';
 import { settlementAmounts } from './settlement-amounts';
 import { fmcsaViolations } from './fmcsa-violations';
 import { specializedAttorneys } from './specialized-attorneys';
+import { fmcsaViolationsTruckAccidents } from './fmcsa-violations-truck-accidents';
+import { whenToHireTruckAccidentLawyer } from './when-to-hire-truck-accident-lawyer';
 
 export const BLOG_POSTS: BlogPost[] = [
   whatToDoAfterAccident,
@@ -11,6 +13,8 @@ export const BLOG_POSTS: BlogPost[] = [
   settlementAmounts,
   fmcsaViolations,
   specializedAttorneys,
+  fmcsaViolationsTruckAccidents,
+  whenToHireTruckAccidentLawyer,
 ];
 
 export const BLOG_SLUGS = BLOG_POSTS.map((post) => post.slug);
