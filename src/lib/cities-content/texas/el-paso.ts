@@ -138,6 +138,12 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/faffe9f3251a82c938a837503d7adb1283273521-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-10 highway near El Paso, Texas with Franklin Mountains and US-Mexico border crossing visible',
+  },
+
   lastUpdated: '2026-01-10',
 };
 

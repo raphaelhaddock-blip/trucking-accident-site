@@ -147,6 +147,12 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/b9f71380774f7625e7959b81575cafe5f1273213-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35E highway near Dallas, Texas with city skyline in background',
+  },
+
   lastUpdated: '2026-01-10',
 };
 

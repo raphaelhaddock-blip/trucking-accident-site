@@ -143,6 +143,12 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/5d80058f0a419cb0d34820a7fb771c07fe252380-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35 highway near Austin, Texas with state capitol visible in background',
+  },
+
   lastUpdated: '2026-01-10',
 };
 

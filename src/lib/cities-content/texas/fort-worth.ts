@@ -147,6 +147,12 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/43ee66bc2b81d995a127d0a235ff30e29cd04790-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35W highway near Fort Worth, Texas with Stockyards district visible in background',
+  },
+
   lastUpdated: '2026-01-10',
 };
 
