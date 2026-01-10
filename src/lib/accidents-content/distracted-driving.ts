@@ -6,6 +6,7 @@ export const distractedDriving: AccidentContent = {
   h1: 'Distracted Truck Driver Accidents',
   metaTitle: 'Distracted Truck Driver Accident Lawyer | 18-Wheeler Texting Crash Attorney',
   metaDescription: 'Injured by a distracted truck driver? Our attorneys prove cell phone use and other distractions caused your crash. Free consultation. No fee unless you win.',
+  lastUpdated: '2026-01-10',
 
   heroText: `When an 80,000-pound semi-truck is controlled by a driver whose eyes are on a phone screen instead of the road, every other motorist is in danger. Distracted driving accidents involving commercial trucks are particularly devastating because of the massive forces involved and because professional drivers should know better—their job is to drive safely, and looking at phones or other distractions while controlling a deadly weapon is inexcusable negligence.
 
@@ -47,7 +48,63 @@ If you've been injured by a distracted truck driver, our attorneys understand ho
 
 **Hours Behind the Wheel**: Long-haul trucking involves many consecutive hours of driving. The temptation to break monotony with phone use or other distractions is ever-present. Professional drivers must resist these temptations—that's part of the job.
 
-**Commercial Responsibility**: Truck drivers are professionals operating under federal regulations. They're trained, tested, and licensed specifically to operate commercial vehicles safely. Choosing to drive distracted violates their professional obligations and creates liability beyond ordinary negligence.`,
+**Commercial Responsibility**: Truck drivers are professionals operating under federal regulations. They're trained, tested, and licensed specifically to operate commercial vehicles safely. Choosing to drive distracted violates their professional obligations and creates liability beyond ordinary negligence.
+
+**Categories of Distraction:**
+
+Driver distraction encompasses three distinct types, all of which are present and amplified in commercial trucking:
+
+**Visual Distraction:** Taking eyes off the road. At highway speeds, looking away for just 3 seconds means traveling the length of a football field without seeing the road. Visual distractions include:
+- Checking phones or navigation systems
+- Looking at paperwork or load documents
+- Watching events outside the truck
+- Adjusting mirrors or controls while moving
+
+**Manual Distraction:** Taking hands off the wheel. Commercial trucks require constant steering input due to their size and wind sensitivity. Manual distractions include:
+- Holding phones or devices
+- Eating and drinking
+- Reaching for objects in the cab
+- Writing or using paper-based logs
+- Adjusting vehicle controls
+
+**Cognitive Distraction:** Taking mental focus off driving. Even with eyes on the road and hands on the wheel, a distracted mind misses hazards. Cognitive distractions include:
+- Phone conversations (even hands-free)
+- Thinking about personal problems
+- Daydreaming or fatigue-induced inattention
+- Stress about loads, schedules, or work issues
+- Listening to engaging content
+
+**Cell phone use combines all three distraction types**, which is why it's so dangerous and specifically prohibited for commercial drivers.
+
+**The Unique Dangers of Truck Driver Distraction:**
+
+Distraction impacts truck drivers more severely than passenger vehicle drivers:
+
+**Slower Reaction Implementation:** Even when a distracted truck driver perceives danger, the truck's braking distance means more time and distance is needed to stop. Distraction delays perception; truck physics delays stopping. Combined, these create extreme stopping distances.
+
+**Control Difficulty:** Trucks require constant steering attention. Wind gusts, road irregularities, and trailer dynamics demand active control. A distracted driver may not notice lane departure until the truck is already leaving the road.
+
+**Higher Stakes:** When a distracted car driver crashes, they typically damage themselves and one other vehicle. When a distracted truck driver crashes, multiple fatalities often result. The consequences of truck driver distraction are orders of magnitude more severe.
+
+**Longer Hours of Exposure:** Truck drivers spend 11 hours per day operating vehicles. The extended exposure time increases opportunities for distraction and the cumulative effect of multiple minor distractions.
+
+**Distracted Driving Statistics:**
+
+Federal research on truck driver distraction reveals:
+- Distraction is a factor in approximately 8% of large truck crashes
+- Texting while driving increases crash risk 23-fold
+- Reaching for objects increases crash risk 6-fold
+- Dialing cell phones increases crash risk 6-fold
+- Reading or writing while driving increases crash risk 4-fold
+
+The Virginia Tech Transportation Institute found that taking eyes off the road for 2 seconds doubles crash risk. At 65 mph, 2 seconds equals traveling 190 feet—more than half a football field—blind.
+
+Types of distraction in truck crashes:
+- Cell phone use: 25% of distraction crashes
+- Operating vehicle controls: 20%
+- External distraction: 15%
+- Eating/drinking: 10%
+- Drowsiness-related inattention: 10%`,
 
   causes: [
     {
@@ -77,6 +134,18 @@ If you've been injured by a distracted truck driver, our attorneys understand ho
     {
       title: 'Reaching and Adjusting',
       description: `Reaching for dropped objects, adjusting mirrors or seats while moving, or searching for items in the cab creates manual and visual distraction. These tasks should be completed while stopped. Drivers who perform them while moving create unnecessary risk.`
+    },
+    {
+      title: 'Dispatch and ELD Interactions',
+      description: `Modern trucks feature electronic logging devices and dispatch systems requiring driver interaction. While designed to improve safety, these devices can become distractions if drivers operate them while moving. Carriers who require drivers to respond to messages while driving or design workflows requiring device interaction during operation create distraction hazards.`
+    },
+    {
+      title: 'In-Cab Entertainment Systems',
+      description: `Truck cabs increasingly feature entertainment systems, personal devices, and other technology. While these may be intended for use when stopped, the temptation to use them while driving is significant during long hauls. Carriers who don't establish clear policies prohibiting entertainment device use while driving enable distraction.`
+    },
+    {
+      title: 'Paperwork and Documentation',
+      description: `Despite electronic logging mandates, truck drivers still manage significant paperwork—bills of lading, delivery receipts, inspection reports, and other documents. Drivers who read or complete paperwork while driving are visually and cognitively distracted. Carriers should design workflows allowing paperwork completion when parked.`
     }
   ],
 
@@ -127,6 +196,15 @@ If you've been injured by a distracted truck driver, our attorneys understand ho
     {
       type: 'Psychological Trauma',
       description: `Knowing a crash was caused by something as preventable as phone use compounds psychological injury. Survivors and families of victims face PTSD, rage at the senselessness of the crash, and lasting anxiety. The knowledge that looking at a phone was more important to the driver than others' lives creates profound trauma.`
+    }
+  ,
+    {
+      type: 'High-Speed Collision Trauma',
+      description: `Distracted drivers often don't brake before impact, resulting in full-speed collisions. Without any speed reduction, the full kinetic energy of the truck transfers to crash victims. Injuries are typically more severe than in crashes where the driver perceived danger and braked partially.`
+    },
+    {
+      type: 'Secondary Collision Injuries',
+      description: `Distracted driving crashes often involve multiple impacts. The initial collision may push vehicles into others, barriers, or off roads. Victims may suffer injuries from sequential collisions, each adding trauma. Multi-vehicle pileups from distracted driving crashes can injure dozens.`
     }
   ],
 
@@ -225,6 +303,19 @@ If you've been injured by a distracted truck driver, our attorneys understand ho
     {
       question: 'What damages are available in distracted driving truck accident cases?',
       answer: 'Damages include medical expenses, lost income, pain and suffering, disability, and wrongful death. Because distracted driving—especially texting—is deliberately dangerous behavior, punitive damages may be available to punish the conduct and deter others. Courts and juries often award significant damages when drivers chose phones over safety.'
+    }
+  ,
+    {
+      question: 'Is hands-free phone use legal for truck drivers?',
+      answer: 'Federal regulations prohibit truck drivers from using hand-held mobile phones while operating commercial vehicles. Hands-free devices are technically legal but research shows hands-free conversations still create significant cognitive distraction. Some carriers prohibit all phone use while driving, including hands-free. Regardless of legality, hands-free use that contributes to crashes can establish negligence.'
+    },
+    {
+      question: 'Can you prove a truck driver was distracted before a crash?',
+      answer: 'Yes. Evidence includes: cell phone records showing calls, texts, or data use; ELD and dispatch system logs showing interactions; dashcam footage of driver behavior; event data recorder information showing no braking before impact; witness observations of driver not watching the road; and driver admissions. Expert reconstruction can identify distraction patterns from physical evidence.'
+    },
+    {
+      question: 'Are trucking companies responsible for driver distraction?',
+      answer: 'Carriers can be liable for distraction-related crashes when they: fail to establish anti-distraction policies, require driver interactions with devices while moving, pressure drivers to communicate while driving, don\'t monitor or enforce distraction policies, or install distracting technology without proper safeguards. Carrier practices that encourage or tolerate distraction create direct liability.'
     }
   ],
 

@@ -6,6 +6,7 @@ export const runawayTruck: AccidentContent = {
   h1: 'Runaway Truck Accidents',
   metaTitle: 'Runaway Truck Accident Lawyer | Out-of-Control Semi Crash Attorney',
   metaDescription: 'Injured by a runaway truck that lost its brakes? Our attorneys prove brake failure and carrier negligence. Free consultation. No fee unless you win.',
+  lastUpdated: '2026-01-10',
 
   heroText: `A runaway truck is a driver's worst nightmare made reality: an 80,000-pound vehicle hurtling downhill with no brakes, accelerating as it goes, with the driver fighting for any means of control. For other motorists, it's a missile bearing down on them with no way to stop. These accidents are among the most terrifying and devastating events on American roads.
 
@@ -49,7 +50,54 @@ If you've been injured by a runaway truck, our attorneys understand the cascade 
 
 **Truck Destruction**: The runaway truck itself is often destroyed—crashed, rolled, burned. Drivers may be killed by their own out-of-control vehicles.
 
-**Infrastructure Damage**: Runaway trucks may destroy guardrails, bridge structures, buildings, and other infrastructure, compounding harm beyond immediate collision victims.`,
+**Infrastructure Damage**: Runaway trucks may destroy guardrails, bridge structures, buildings, and other infrastructure, compounding harm beyond immediate collision victims.
+
+**The Mechanics of Runaway Trucks:**
+
+Runaway truck incidents occur when braking systems cannot control a truck's descent. Understanding the physics explains why these accidents are so dangerous and often preventable:
+
+**Brake Fade:** Drum brakes generate heat through friction. On long downgrades, continuous braking generates more heat than the system can dissipate. As drums heat up, the coefficient of friction decreases, requiring more pedal pressure for the same braking force. Eventually, brakes may become completely ineffective—a condition called brake fade.
+
+**Air Brake System Failure:** Truck air brake systems can fail in multiple ways:
+- Air leaks depleting system pressure
+- Compressor failure preventing pressure buildup
+- Moisture in lines freezing in cold weather
+- Valve malfunctions preventing brake application
+- Brake adjustment failures reducing braking force
+
+**Loading Effects:** Heavily loaded trucks carry more momentum requiring more braking force and generating more heat during braking. Improperly loaded trucks with excessive weight or weight concentrated on specific axles may overwhelm braking capacity on grades.
+
+**Grade and Distance Interaction:** Long, steep grades are particularly dangerous. Even moderate grades over long distances generate significant heat buildup. The combination of steepness and length determines brake thermal load.
+
+**Mountain Driving Techniques:**
+
+Professional drivers should use specific techniques for mountain descents:
+
+**Engine Braking:** Using lower gears allows the engine to absorb some braking force, reducing reliance on wheel brakes. Proper gear selection before starting descents is critical.
+
+**Speed Control:** Maintaining speeds low enough for the grade prevents brake heat buildup. It's better to start too slow than to discover speed is excessive after brakes begin fading.
+
+**Brake Cooling:** When brakes overheat, drivers should find safe locations to stop and allow brakes to cool. Continuing to drive with overheated brakes risks complete failure.
+
+**Runaway Ramps:** Emergency runaway ramps are positioned on steep grades. Drivers must know ramp locations and use them without hesitation when brakes fail. Pride or denial has caused drivers to pass ramps before complete brake failure.
+
+Carriers operating in mountainous regions must ensure drivers are trained in mountain driving techniques and that vehicles are equipped and maintained for mountain operation.
+
+**Runaway Truck Statistics:**
+
+Data on runaway truck incidents reveals:
+- FMCSA identifies brake-related factors in approximately 30% of truck crash investigations
+- Grades exceeding 6% significantly increase brake fade risk
+- Runaway truck ramp usage averages several hundred incidents annually in mountain states
+- Fatal runaway incidents occur several times monthly in the US
+- Runaway crashes have among the highest fatality rates of any truck crash type
+
+Mountain driving crash factors:
+- Brake fade from overheating: 45% of runaway incidents
+- Improper gear selection: 30%
+- Brake system failure or defect: 20%
+- Driver error in mountain driving technique: 40%
+- Inadequate vehicle equipment: 15%`,
 
   causes: [
     {
@@ -79,6 +127,18 @@ If you've been injured by a runaway truck, our attorneys understand the cascade 
     {
       title: 'Failure to Use Runaway Ramps',
       description: `When brakes do fail, runaway truck ramps provide emergency escape. Drivers who are too panicked to use ramps, who pass ramps hoping to regain control, or who don't recognize ramps as their only option may crash when they could have stopped. Training should emphasize ramp use as a survival technique.`
+    },
+    {
+      title: 'Improper Gear Selection',
+      description: `Drivers who descend mountain grades in gears too high for conditions rely excessively on wheel brakes. By the time they recognize the error, brakes may be overheating and downshifting may be impossible. Proper training emphasizes selecting appropriate gears before beginning descents.`
+    },
+    {
+      title: 'Failure to Use Runaway Ramps',
+      description: `Runaway ramps save lives, but some drivers refuse to use them—either from overconfidence that they can regain control or concern about vehicle damage and delays. When drivers pass available ramps and subsequently crash, their decision not to use safety facilities may establish negligence.`
+    },
+    {
+      title: 'Inadequate Vehicle Equipment',
+      description: `Engine retarders, exhaust brakes, and other auxiliary braking devices reduce reliance on wheel brakes. Carriers operating in mountainous terrain who fail to equip trucks with available auxiliary braking systems increase runaway risk. Cost-cutting on safety equipment creates liability.`
     }
   ],
 
@@ -134,6 +194,15 @@ If you've been injured by a runaway truck, our attorneys understand the cascade 
     {
       type: 'Crush Injuries',
       description: `Vehicles struck by runaway trucks may be crushed between the truck and other objects, or may have structural collapse from impact forces. Occupants suffer crush injuries to limbs, pelvis, and thorax. These injuries often require amputation or cause permanent disability.`
+    }
+  ,
+    {
+      type: 'High-Speed Impact Trauma',
+      description: `Runaway trucks often reach extreme speeds before crashing—80, 90, even 100+ mph on steep grades. Impacts at these speeds generate forces far beyond vehicle safety system designs. Occupants of vehicles struck by runaway trucks face virtually unsurvivable trauma.`
+    },
+    {
+      type: 'Mass Casualty Incidents',
+      description: `Runaway trucks that enter populated areas or crash into stopped traffic can kill or injure dozens of people. The combination of extreme speed and massive weight creates devastation affecting multiple vehicles and bystanders. First responders may be overwhelmed by casualty counts.`
     }
   ],
 
@@ -238,6 +307,19 @@ If you've been injured by a runaway truck, our attorneys understand the cascade 
     {
       question: 'What compensation is available for runaway truck accident victims?',
       answer: 'Given the catastrophic nature of runaway crashes, compensation is often substantial. Damages include medical expenses, lost income, pain and suffering, permanent disability, and wrongful death. When carriers negligently maintained brakes or failed to train drivers, punitive damages may be available.'
+    }
+  ,
+    {
+      question: 'Are runaway truck accidents always caused by brake failure?',
+      answer: 'Not always. While brake failure is the most common cause, runaway incidents can also result from: improper gear selection causing transmission failure, driver incapacitation, accelerator malfunction, and driver inexperience with mountain driving. Investigation determines the specific cause and responsible parties.'
+    },
+    {
+      question: 'Should trucks have better braking systems for mountain driving?',
+      answer: 'Technology exists to prevent most runaway incidents. Disc brakes resist fade better than drum brakes. Engine retarders and exhaust brakes supplement wheel brakes. Automatic transmission trucks can\'t be placed in improper gears. Electronic stability control can limit speeds on grades. When carriers don\'t invest in available safety technology, and runaway crashes occur, cost-cutting becomes evidence of negligence.'
+    },
+    {
+      question: 'Why are there runaway truck ramps on mountain highways?',
+      answer: 'Runaway ramps are last-resort safety devices for trucks with complete brake failure. They use loose gravel, sand, or arrestor beds to bring trucks to controlled stops. Ramps are positioned at locations where runaway trucks would otherwise crash into traffic, communities, or drop-offs. Their presence acknowledges that brake failures will occur; their effective use depends on driver training and willingness to use them.'
     }
   ],
 

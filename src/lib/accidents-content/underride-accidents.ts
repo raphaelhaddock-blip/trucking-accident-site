@@ -6,6 +6,7 @@ export const underrideAccidents: AccidentContent = {
   h1: 'Underride Truck Accidents',
   metaTitle: 'Underride Truck Accident Lawyer | Semi-Truck Underride Crash Attorney',
   metaDescription: 'Injured in an underride truck accident? Our attorneys handle devastating underride crash cases nationwide. Free consultation. No fee unless you win.',
+  lastUpdated: '2026-01-10',
 
   heroText: `Underride accidents are among the most horrific events on American roadways. These crashes occur when a passenger vehicle slides underneath the rear or side of a semi-truck trailer, often shearing off the top of the smaller vehicle at windshield height. The results are almost invariably catastrophic—decapitation, severe head trauma, and death are tragically common outcomes.
 
@@ -29,7 +30,59 @@ When a vehicle enters this gap, the trailer's hard edge typically strikes at win
 
 Effective underride guards work by engaging the crashing vehicle's crash structures—primarily the engine block and frame rails—preventing it from sliding underneath and directing crash energy into systems designed to absorb it. For rear guards, this means a rigid barrier that extends low enough and strong enough to catch the front of impacting vehicles. For side guards, rigid or energy-absorbing panels fill the gap between trailer wheels.
 
-The technology to prevent underride deaths exists and has been proven. The Insurance Institute for Highway Safety (IIHS) has tested underride guards extensively, rating many as "Good" performers that successfully prevent underride in 35 mph crashes. Yet weaker guards—rated "Poor" or "Marginal"—remain legal and common, and side guards are entirely optional. This gap between available safety technology and actual requirements has cost thousands of lives.`,
+The technology to prevent underride deaths exists and has been proven. The Insurance Institute for Highway Safety (IIHS) has tested underride guards extensively, rating many as "Good" performers that successfully prevent underride in 35 mph crashes. Yet weaker guards—rated "Poor" or "Marginal"—remain legal and common, and side guards are entirely optional. This gap between available safety technology and actual requirements has cost thousands of lives.
+
+**Understanding Underride Crash Mechanics:**
+
+Underride crashes occur when a passenger vehicle slides under a truck's trailer or rear end, typically shearing off the roof of the car and killing or seriously injuring occupants. Understanding the mechanics explains why these crashes are so deadly and often preventable.
+
+**Why Underride Occurs:**
+
+The height differential between passenger vehicles and commercial trucks creates the underride hazard. Passenger car bumpers typically sit 16-20 inches above the ground. Trailer floors and rear frames sit 30-50 inches high. When a passenger vehicle strikes a trailer's side or rear, the car's hood and bumper pass under the trailer frame, and the trailer floor impacts the windshield and roof.
+
+**Types of Underride Crashes:**
+
+**Rear Underride:** A passenger vehicle strikes the rear of a trailer or straight truck, sliding underneath. This typically occurs in rear-end collisions when trucks are stopped, slowing, or moving more slowly than traffic.
+
+**Side Underride:** A passenger vehicle slides under the side of a trailer. This occurs when: trucks make wide turns, trucks are struck broadside at intersections, trucks change lanes into vehicles, or passenger vehicles strike the sides of trailers crossing intersections.
+
+**The Lethality Factor:**
+
+Underride crashes have extremely high fatality rates because:
+
+**Passenger Compartment Intrusion:** The trailer floor directly impacts the windshield, dashboard, and roof—the passenger compartment itself. Unlike frontal crashes where the engine compartment absorbs energy, underride crashes bypass the entire front structure.
+
+**Roof Shearing:** Vehicle roofs are not designed to withstand the forces and geometry of underride impacts. The rigid trailer floor acts like a guillotine, shearing through the roof structure.
+
+**Restraint System Bypass:** Airbags and seatbelts are designed for frontal forces. In underride crashes, the threat comes from above and in front simultaneously—a direction these systems cannot address.
+
+**High Relative Speed:** Underride crashes often involve significant speed differential. A car traveling 65 mph striking a stopped or slow-moving trailer creates extremely violent impact dynamics.
+
+**Underride Guard Technology:**
+
+Guards are designed to prevent vehicle underride by providing an impact surface that engages passenger vehicle bumpers:
+
+**Rear Underride Guards:** Federal regulations require rear underride guards on trailers, but current standards are inadequate. Existing standards allow guards that fail in moderate-speed crashes. The Insurance Institute for Highway Safety (IIHS) has developed stronger standards that some manufacturers voluntarily meet.
+
+**Side Underride Guards:** No federal requirement exists for side underride guards on trailers. These guards, common in Europe, prevent the side underride crashes that kill hundreds annually. Legislation has been proposed but not enacted.
+
+**Front Underride Guards:** Tractor front ends lack underride protection requirements. When tractors strike passenger vehicles, override (the opposite of underride) can occur, with similar lethality.
+
+**Underride Crash Statistics:**
+
+Federal research on underride crashes reveals:
+- Approximately 400-500 people die annually in underride crashes with large trucks
+- Side underride accounts for roughly half of underride fatalities
+- Rear underride guard failures are factors in many rear underride deaths
+- Nighttime crashes disproportionately involve underride due to visibility issues
+- Underride fatality rates far exceed overall truck crash fatality rates
+
+Underride crash factors:
+- Inadequate or absent underride guards: 70% of underride deaths
+- Visibility/conspicuity failures: 40% of nighttime underride crashes
+- Speed of passenger vehicle: Higher speeds correlate with guard failure
+- Guard mounting failures: Some guards detach on impact
+- Side underride without guards: Nearly all side underride deaths`,
 
   causes: [
     {
@@ -55,6 +108,18 @@ The technology to prevent underride deaths exists and has been proven. The Insur
     {
       title: 'Absence of Side Underride Guards',
       description: `The single greatest factor enabling side underride deaths is the complete absence of federal requirements for side guards. This regulatory gap exists despite proven technology, documented lives saved in countries where guards are required, and decades of advocacy by safety organizations. Trucking industry lobbying has blocked proposed requirements, leaving most trailers with unprotected sides.`
+    },
+    {
+      title: 'Inadequate Rear Guard Standards',
+      description: `Current federal rear underride guard standards (set in 1998 and updated in 2017) remain inadequate. Guards that meet minimum requirements may still fail in crashes at moderate speeds. Carriers using guards that meet only minimum standards—rather than stronger IIHS-recommended standards—bear responsibility when inadequate guards contribute to fatalities.`
+    },
+    {
+      title: 'Absence of Side Underride Guards',
+      description: `Without federal side guard requirements, most trailers lack any side underride protection. Side underride kills approximately 200 people annually—deaths largely preventable with guards common in other countries. Carriers' decisions not to voluntarily install side guards become evidence of negligence when side underride deaths occur.`
+    },
+    {
+      title: 'Reflective Tape and Visibility Failures',
+      description: `Trucks must display reflective tape to make their sides and rears visible at night. When tape is missing, damaged, or inadequate, other drivers may not see stopped or slow-moving trucks until too late to avoid underride crashes. Visibility failures are common factors in nighttime underride crashes.`
     }
   ],
 
@@ -105,6 +170,15 @@ The technology to prevent underride deaths exists and has been proven. The Insur
     {
       type: 'Psychological Trauma',
       description: `Survivors of underride crashes—and witnesses, including those who lose loved ones—frequently suffer severe psychological trauma. Post-traumatic stress disorder, survivor's guilt, depression, and anxiety are common. Many survivors have witnessed horrific deaths of passengers or experienced their own near-death trauma in ways that create lasting psychological harm.`
+    }
+  ,
+    {
+      type: 'Decapitation',
+      description: `The shearing forces in underride crashes can cause decapitation when the trailer floor impacts at neck level. This occurs in a significant percentage of fatal underride crashes. Even when decapitation doesn't occur, severe neck trauma and cervical spine injuries are common.`
+    },
+    {
+      type: 'Traumatic Brain Injury from Roof Crush',
+      description: `When roofs are crushed by underriding trailers, occupants suffer severe head trauma from direct impact and from intrusion. Survivors often face permanent brain damage, vegetative states, or severe cognitive impairment. The violence of the injury mechanism creates devastating outcomes.`
     }
   ],
 
@@ -203,6 +277,19 @@ The technology to prevent underride deaths exists and has been proven. The Insur
     {
       question: 'How long do I have to file an underride accident lawsuit?',
       answer: 'Statutes of limitations vary by state, typically 2-4 years for personal injury and wrongful death claims. However, evidence crucial to underride cases—including the trailer, underride guard, and electronic data—may be destroyed or lost if not preserved quickly. Contact an attorney immediately to ensure evidence is secured and your rights are protected within applicable deadlines.'
+    }
+  ,
+    {
+      question: 'Why don\'t all trucks have side underride guards?',
+      answer: 'The trucking industry has resisted mandatory side guards, citing cost, weight penalties affecting cargo capacity, and questions about effectiveness. However, side guards are required in Europe and have proven effective at preventing side underride deaths. Currently, carriers can voluntarily install side guards, but most don\'t. When carriers skip available safety equipment and side underride crashes occur, cost-cutting decisions become evidence of negligence.'
+    },
+    {
+      question: 'How effective are rear underride guards?',
+      answer: 'Effectiveness depends on guard strength. Guards meeting only minimum federal standards may fail in crashes at speeds as low as 35 mph. Guards built to IIHS TOUGHGUARD standards prevent underride in 35 mph crashes. When carriers install guards that exceed minimum requirements, underride prevention is significantly improved. Choosing minimum-compliance guards over stronger alternatives is a knowable choice that affects crash outcomes.'
+    },
+    {
+      question: 'Are underride crashes survivable?',
+      answer: 'Underride crashes at significant speed are almost never survivable without effective guards. The crash mechanism bypasses all vehicle safety systems. With proper guards that prevent underride, crashes become conventional impacts where airbags and crumple zones function as designed. The presence or absence of effective guards determines whether occupants have any chance of survival.'
     }
   ],
 

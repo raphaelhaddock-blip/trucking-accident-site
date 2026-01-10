@@ -6,6 +6,7 @@ export const overrideAccidents: AccidentContent = {
   h1: 'Override Truck Accidents',
   metaTitle: 'Truck Override Accident Lawyer | 18-Wheeler Override Collision Attorney',
   metaDescription: 'Injured in a truck override accident? Our attorneys handle catastrophic override collision cases nationwide. Free consultation. No fee unless you win.',
+  lastUpdated: '2026-01-10',
 
   heroText: `Override accidents are the devastating inverse of underride crashes—instead of a smaller vehicle sliding under a truck trailer, the semi-truck's front end climbs over and onto a smaller vehicle, crushing it from above. These accidents occur primarily in high-speed rear-end collisions where a truck strikes the back of a passenger vehicle with such force that it rides up and over the car.
 
@@ -47,7 +48,55 @@ Override accidents almost always result from truck driver failure to stop in tim
 - Following too closely
 - Excessive speed
 - Brake failures
-- Failure to adjust for traffic conditions`,
+- Failure to adjust for traffic conditions
+
+**Understanding Override Crash Mechanics:**
+
+Override accidents occur when a truck rides up and over a smaller vehicle, typically from behind or during a lane change collision. The extreme height difference between commercial trucks and passenger vehicles creates the override hazard—truck bumpers, designed for contact with other trucks, ride above passenger vehicle bumpers and directly impact the passenger compartment.
+
+**Why Override Crashes Are So Deadly:**
+
+In a typical rear-end collision between similar-sized vehicles, the bumpers and crush zones absorb energy before the passenger compartment is affected. In override crashes, this protection is bypassed:
+
+- The truck's front structure directly impacts the rear window and cabin
+- Crush zones in the rear of passenger vehicles provide minimal protection from above
+- Roof structures are not designed to withstand the weight of a truck riding over
+- Occupants in the rear seat are directly in the impact zone
+- There is often no time or space for occupants to react
+
+The force of an 80,000-pound truck riding over a 4,000-pound passenger vehicle is almost always fatal for rear seat occupants and frequently fatal for all occupants.
+
+**Truck Design Contributing Factors:**
+
+Commercial truck design creates inherent override risk:
+
+**High Bumper Height:** Truck bumpers are typically 30-40 inches above the ground, while passenger vehicle bumpers are 16-20 inches. This mismatch means truck bumpers pass above car bumpers during impacts.
+
+**Flat Front Design:** Many trucks have flat front ends that act like walls when impacting passenger vehicles. There is no slope to deflect energy upward; the impact is direct.
+
+**Limited Visibility of Low Objects:** Drivers may not see small vehicles directly in front or slightly below their line of sight. This contributes to crashes but also affects the driver's ability to brake before override.
+
+**Aerodynamic Fairings:** Some trucks have air dams or fairings designed for fuel efficiency that still don't extend low enough to engage passenger vehicle bumpers.
+
+**Underride Guards and Override Prevention:**
+
+While much attention focuses on underride guards (on the rear and sides of trailers), front underride guards on truck tractors could prevent override crashes. Such guards would lower the effective impact point of the truck's front end to engage passenger vehicle bumpers. However, front underride guards are not currently required by federal regulations.
+
+**Override Crash Statistics:**
+
+Research on truck override collisions reveals:
+- Override occurs in approximately 5% of truck-car rear-end collisions
+- Fatality rates in override crashes exceed 70%
+- Rear seat occupants face the highest risk in rear override crashes
+- Average impact speeds in override crashes exceed 40 mph
+- Nearly all override fatalities would be survivable in passenger vehicle-to-vehicle crashes at similar speeds
+
+Factors in override crashes:
+- Following too closely: 50% of override crashes
+- Driver inattention: 35%
+- Impaired reaction time (fatigue, substances): 25%
+- Brake system deficiencies: 10%
+- Visibility conditions: 10%`,
 
   causes: [
     {
@@ -77,6 +126,18 @@ Override accidents almost always result from truck driver failure to stop in tim
     {
       title: 'Adverse Weather Conditions',
       description: `Rain, ice, snow, and fog increase stopping distances and reduce visibility. Drivers who fail to reduce speed and increase following distance in bad weather may find themselves unable to stop for slowed traffic. Weather-related override accidents often involve trucks that were traveling too fast for conditions.`
+    },
+    {
+      title: 'Sudden Traffic Slowdowns',
+      description: `When traffic ahead slows or stops suddenly, heavily loaded trucks may be unable to stop in time even with proper following distance. The truck's momentum carries it into stopped vehicles, and the height differential causes the truck to ride over the vehicle ahead. Drivers who don't anticipate traffic patterns or maintain excessive speed for conditions cause override crashes.`
+    },
+    {
+      title: 'Inadequate Collision Avoidance Systems',
+      description: `Modern collision avoidance systems can detect vehicles ahead and automatically apply brakes. However, many trucks lack these systems or have systems that aren't calibrated for low-profile vehicles. When carriers fail to equip trucks with available collision avoidance technology, they increase override risk.`
+    },
+    {
+      title: 'Sun Glare and Visibility Issues',
+      description: `Low sun angles, particularly at sunrise and sunset, can blind truck drivers to vehicles ahead. Small vehicles may be invisible against glare. Drivers who don't reduce speed and increase following distance during low-visibility conditions cause override accidents when they can't see stopped traffic.`
     }
   ],
 
@@ -132,6 +193,15 @@ Override accidents almost always result from truck driver failure to stop in tim
     {
       type: 'Psychological Trauma',
       description: `Survivors of override accidents—and family members who witness the aftermath—suffer severe psychological trauma. PTSD, survivor's guilt, and depression are common. The horror of being crushed by a truck, or losing loved ones to such violence, creates lasting psychological harm.`
+    }
+  ,
+    {
+      type: 'Decapitation and Severe Head Trauma',
+      description: `When truck front structures enter passenger vehicle cabins from above, they can directly strike occupants' heads. Decapitation and catastrophic head trauma are tragically common in override crashes. The roof provides no protection against forces from this angle.`
+    },
+    {
+      type: 'Asphyxiation and Compression',
+      description: `Occupants may survive initial impact only to be trapped and compressed as the truck continues moving. Asphyxiation from chest compression, positional asphyxia, and progressive crush injury can cause death even when initial trauma might have been survivable.`
     }
   ],
 
@@ -231,6 +301,19 @@ Override accidents almost always result from truck driver failure to stop in tim
     {
       question: 'How much compensation is available for override accident victims?',
       answer: 'Given the catastrophic nature of override accidents, compensation is typically substantial. Wrongful death cases include survivors\' medical and funeral expenses, lost financial support, and grief damages. Survivor cases include massive medical expenses, permanent disability compensation, and pain and suffering. Many cases reach seven figures.'
+    }
+  ,
+    {
+      question: 'Why don\'t trucks have front underride guards?',
+      answer: 'Unlike rear underride guards, front underride guards are not currently required by federal regulations. The trucking industry has resisted requirements due to cost and concerns about weight and fuel efficiency. Advocacy groups and safety organizations continue pushing for mandatory front underride guards. When carriers choose not to install available front protection voluntarily, and override crashes occur, this cost-cutting decision becomes evidence of negligence.'
+    },
+    {
+      question: 'How can override accidents be prevented?',
+      answer: 'Prevention requires multiple approaches: proper following distance eliminates most override scenarios; collision avoidance systems provide backup when drivers fail; front underride guards would reduce severity when crashes occur; proper driver training emphasizes the unique danger of override crashes. Carriers should implement all available protections.'
+    },
+    {
+      question: 'Are override crashes always fatal?',
+      answer: 'While override crashes have very high fatality rates, survival is possible depending on: the speed differential at impact, which part of the vehicle is overridden, occupant positions at impact time, and how far the truck travels over the vehicle. However, survivors typically suffer catastrophic injuries including traumatic brain injury, spinal cord damage, and severe trauma requiring lifetime care.'
     }
   ],
 

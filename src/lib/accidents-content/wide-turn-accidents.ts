@@ -6,6 +6,7 @@ export const wideTurnAccidents: AccidentContent = {
   h1: 'Wide Turn Truck Accidents',
   metaTitle: 'Wide Turn Truck Accident Lawyer | 18-Wheeler Right Turn Squeeze Attorney',
   metaDescription: 'Injured in a wide turn truck accident? Our attorneys handle right-turn squeeze and swinging turn crash cases nationwide. Free consultation. No fee unless you win.',
+  lastUpdated: '2026-01-10',
 
   heroText: `Wide turn accidents—often called "right turn squeeze" accidents—occur when semi-trucks making turns crush, sideswipe, or collide with vehicles, pedestrians, or cyclists caught in the space created by the turning maneuver. These accidents are uniquely dangerous because they often trap victims between the turning truck and curbs, barriers, or other obstacles with no escape route.
 
@@ -41,7 +42,63 @@ Left turns also pose risks, though different ones. Trucks making left turns may:
 
 **Pedestrian and Cyclist Vulnerability:**
 
-Pedestrians in crosswalks and cyclists in bike lanes face extreme danger from wide turns. They may be legally crossing at an intersection when a turning truck sweeps through their space. The driver, focused on completing the turn, may not see them in the mirrors or may misjudge their position. Once the trailer begins its arc, there's often nowhere for victims to escape.`,
+Pedestrians in crosswalks and cyclists in bike lanes face extreme danger from wide turns. They may be legally crossing at an intersection when a turning truck sweeps through their space. The driver, focused on completing the turn, may not see them in the mirrors or may misjudge their position. Once the trailer begins its arc, there's often nowhere for victims to escape.
+
+**The Geometry of Truck Turns:**
+
+Commercial trucks cannot turn like passenger vehicles due to fundamental differences in vehicle geometry. Understanding these differences explains why wide turn accidents occur and why they're so dangerous:
+
+**Wheelbase and Trailer Length:** The distance between the steering axle and rear axles determines the turning path difference between front and rear of the vehicle. Longer combinations create larger differences.
+
+**Off-Tracking:** When a truck turns, the rear wheels follow a tighter path than the front wheels. This is called off-tracking. A 53-foot trailer's rear tracks approximately 6-8 feet inside the tractor's front wheels during a right-angle turn.
+
+**Tail Swing:** While the rear off-tracks to the inside of a turn, the back corner of the trailer swings to the outside. Tail swing can extend 3-4 feet beyond the vehicle's straight-ahead profile.
+
+**Steer Tire Position:** To negotiate tight turns, truck drivers often must swing wide initially, positioning the tractor into adjacent lanes before turning. This creates the dangerous situation where the truck appears to be going straight or changing lanes when actually preparing to turn.
+
+**The Deadly Right Turn Sequence:**
+
+Right turns are particularly dangerous because:
+
+1. The driver must swing the tractor left to position for the turn
+2. Vehicles in the right lane see the truck moving left and assume it's changing lanes
+3. Vehicles may move alongside the truck on the right
+4. The truck then turns right, directly into the path of these vehicles
+5. The trailer sweeps across the right lane, striking vehicles that thought they had clearance
+
+Cyclists and motorcyclists are especially vulnerable because they may position themselves in spaces that appear safe but will be swept by the turning trailer.
+
+**Technology Solutions:**
+
+Various technologies can prevent or reduce wide turn accidents:
+
+**Convex Mirrors and Cameras:** Provide better visibility of adjacent vehicles during turns.
+
+**Side Object Detection:** Sensors detect vehicles alongside the truck and warn the driver.
+
+**Turn Warning Signs:** Signs on trailers warning of wide turns alert adjacent drivers.
+
+**Automatic Turn Signals:** Systems that automatically activate turn signals when turns begin.
+
+**Collision Avoidance Systems:** Advanced systems that prevent turns when vehicles are detected alongside.
+
+When carriers fail to implement available technology and wide turn accidents occur, the decision to forgo safety equipment becomes evidence of negligence.
+
+**Wide Turn Accident Statistics:**
+
+Federal data on truck turning accidents reveals:
+- Turning movements are involved in approximately 9% of fatal truck crashes
+- Right turns account for a disproportionate share of turn-related fatalities
+- Pedestrian and cyclist fatalities are overrepresented in turning crashes
+- Intersection crashes involving turns have high serious injury rates
+- Urban areas see higher rates of wide turn accidents than rural areas
+
+Turn accident contributing factors:
+- Failure to check mirrors: 40% of turn accidents
+- Inadequate signaling: 30%
+- Misjudgment of clearance: 25%
+- Failure to yield to vulnerable road users: 20%
+- Vision obstruction: 15%`,
 
   causes: [
     {
@@ -71,6 +128,18 @@ Pedestrians in crosswalks and cyclists in bike lanes face extreme danger from wi
     {
       title: 'Urban Intersection Challenges',
       description: `City intersections often present particular challenges for truck turns: tight corners, multiple lanes, heavy pedestrian traffic, bike lanes, and parked vehicles. Some intersections may be genuinely difficult for trucks to navigate safely. However, difficulty doesn't excuse negligence—drivers must exercise extreme care in challenging environments or avoid them entirely.`
+    },
+    {
+      title: 'Inadequate Turn Signal Use',
+      description: `Drivers who don't signal turns, signal too late, or don't signal sufficiently before beginning turn maneuvers fail to warn adjacent vehicles. When vehicles reasonably believe the truck isn't turning and position themselves alongside, the failure to properly signal establishes driver negligence.`
+    },
+    {
+      title: 'Rushing Through Intersections',
+      description: `Proper truck turns require patience and multiple checks. Drivers who rush turns—starting before fully checking mirrors, accelerating through turns, or prioritizing traffic flow over safety—create conditions for wide turn accidents. Time pressure from carriers may encourage dangerous rushing.`
+    },
+    {
+      title: 'Inadequate Driver Training',
+      description: `Wide turn execution requires specific techniques taught during CDL training. Drivers who skip training, receive inadequate instruction, or don't practice techniques may not properly execute turns. Carriers who hire undertrained drivers or don't verify training share responsibility.`
     }
   ],
 
@@ -121,6 +190,15 @@ Pedestrians in crosswalks and cyclists in bike lanes face extreme danger from wi
     {
       type: 'Fatal Injuries',
       description: `Wide turn accidents are frequently fatal, especially for pedestrians, cyclists, and motorcyclists who have no protection against the crushing force of a trailer. Victims may be killed instantly by the initial impact or may succumb to injuries sustained while trapped. These wrongful deaths leave families devastated.`
+    }
+  ,
+    {
+      type: 'Crushing Injuries',
+      description: `Vehicles caught between a turning truck and fixed objects—curbs, barriers, buildings—experience crushing forces from multiple directions. Occupants may be trapped in collapsed vehicle structures. Crushing injuries require specialized extrication and often result in amputation or death.`
+    },
+    {
+      type: 'Dragging Injuries',
+      description: `Vehicles struck by turning trucks may be pushed or dragged along the truck's path. Occupants suffer repeated impacts and abrasion injuries. The psychological trauma of being dragged by a truck compounds physical injuries.`
     }
   ],
 
@@ -219,6 +297,19 @@ Pedestrians in crosswalks and cyclists in bike lanes face extreme danger from wi
     {
       question: 'How much compensation can I receive for a wide turn accident injury?',
       answer: 'Compensation depends on injury severity, but wide turn accidents often cause catastrophic injuries—crush injuries, amputations, paralysis—resulting in substantial settlements and verdicts. Medical expenses, lost income, permanent disability, pain and suffering, and wrongful death damages all factor into case value.'
+    }
+  ,
+    {
+      question: 'Why do trucks need to swing wide to turn right?',
+      answer: 'Truck and trailer combinations cannot pivot around tight corners like cars. The rear wheels track inside the front wheels during turns—a 53-foot trailer\'s rear may track 6-8 feet inside the tractor. To prevent the trailer from jumping curbs or striking corner obstacles, drivers must position the tractor\'s front end wider before turning. This geometry is unavoidable with current trailer designs.'
+    },
+    {
+      question: 'Should I pass a truck on the right when it\'s turning?',
+      answer: 'Never. Even if the truck appears to be going left or straight, it may be preparing for a right turn. The area along the right side of a turning truck is called the "death zone" because vehicles there can be swept under the trailer. Always assume a truck may be turning and never position yourself between a truck and a curb at intersections.'
+    },
+    {
+      question: 'Are there truck designs that don\'t require wide turns?',
+      answer: 'Shorter trailers require less wide turning, but cargo capacity decreases. Some specialized urban delivery trucks use rear-steering axles that reduce off-tracking. However, standard long-haul combinations will always require wide turns. The focus should be on technology, training, and driver care rather than expecting geometric constraints to disappear.'
     }
   ],
 
