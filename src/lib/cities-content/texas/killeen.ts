@@ -118,6 +118,12 @@ Our Killeen truck accident attorneys understand both Texas law and federal truck
     }
   ],
 
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/9129707a8a87c4ce48304428811adee00761a47b-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on US-190 highway near Killeen, Texas with Fort Cavazos military base visible',
+  },
+
   lastUpdated: '2026-01-08',
 };
 

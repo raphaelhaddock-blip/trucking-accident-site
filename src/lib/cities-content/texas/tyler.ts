@@ -118,6 +118,12 @@ Our Tyler truck accident attorneys understand both Texas law and federal truckin
     }
   ],
 
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/55a5c6e3709261caae8aba3343be19c894b1b258-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-20 highway near Tyler, Texas with East Texas pine forests and rose gardens visible',
+  },
+
   lastUpdated: '2026-01-08',
 };
 

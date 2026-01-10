@@ -138,6 +138,12 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/fe8becd437711dd6b113e3d5d4bd2f19cb3c1c9b-1584x672.jpg',
+    heroAlt: '18-wheeler semi-truck on I-20 highway near Odessa, Texas with oil fields and pump jacks visible in Permian Basin',
+  },
+
   lastUpdated: '2026-01-10',
 };
 
