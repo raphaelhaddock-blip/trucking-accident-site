@@ -1,127 +1,158 @@
 import { StateContent } from './types';
 
+/**
+ * Arizona - Truck Accident Information
+ *
+ * Annual Truck Accident Deaths: 120+
+ * Registered Commercial Trucks: 95,000+
+ * Major Interstates: I-10, I-17, I-40, I-8, I-19
+ *
+ * Enhanced by State Enhancement Agent v1.0.0
+ * Last Updated: 2026-01-10T08:15:54.704Z
+ */
+
 export const arizona: StateContent = {
   slug: 'arizona',
   name: 'Arizona',
   abbreviation: 'AZ',
   h1: 'Arizona Truck Injury Lawyers',
   metaTitle: 'Arizona Truck Accident Lawyers | 18-Wheeler Attorneys in AZ',
-  metaDescription: 'Injured in an Arizona truck accident? Our attorneys fight for victims across Arizona. Free consultation. No fee unless you win.',
+  metaDescription: 'Injured in a Arizona truck accident? Our attorneys fight for victims across Arizona. Free consultation. No fee unless you win.',
 
-  heroText: `Arizona's position as a major gateway between California ports and the rest of the nation, combined with substantial Mexican border crossings, creates intense commercial truck traffic on state highways. With over 130 people killed annually in collisions involving large trucks, Arizona roadways see devastating accidents regularly.
+  heroText: `Arizona presents unique challenges for commercial trucking operations and significant risks for motorists sharing the roads with 18-wheelers. With 120+ people killed annually in collisions involving large trucks, Arizona sees its share of devastating commercial vehicle accidents. The state's 95,000+ registered commercial trucks operate on highways that face extreme heat and dust storms, creating conditions that contribute to serious and fatal crashes.
 
-The Arizona trucking industry is substantial, with over 95,000 registered commercial trucks operating on corridors connecting Los Angeles and Long Beach ports to Phoenix, Tucson, and points east. I-10 and I-40 carry enormous freight volumes, while I-17 serves as the primary link between these major east-west routes.
+The Arizona trucking industry serves critical economic functions. Technology, Aerospace, Tourism, Mining, Agriculture all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 10, Interstate 40, Interstate 17, Interstate 8 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Arizona motorists.
 
-Arizona's border with Mexico adds unique trucking challenges. Over 5,000 commercial trucks cross Arizona border ports daily, carrying freight from Mexican manufacturing facilities. The Nogales and San Luis crossings funnel significant truck traffic onto Arizona highways, creating additional congestion and accident potential.
+Arizona follows pure comparative negligence for personal injury cases. You can recover damages even if you are 99% at fault, though your recovery is reduced by your percentage of fault. The state has a 2 years statute of limitations for personal injury claims, meaning you must file suit within 2 years of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
 
-Extreme desert heat creates mechanical challenges for trucks, with tire blowouts and brake failures more common in summer months. Remote stretches of highway mean delayed emergency response when accidents occur, increasing the severity of injuries.
+Weather plays a significant role in Arizona truck accidents. During June, July, August, September, extreme heat and dust storms creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
 
-Arizona follows pure comparative negligence, allowing you to recover damages even if you were mostly at fault. However, Arizona has a shorter two-year statute of limitations, making prompt legal action essential after any truck accident.`,
+If you have been injured in a Arizona truck accident, time is critical. Trucking companies dispatch investigation teams immediately after serious crashes to protect their interests. Evidence including electronic logging device data, driver records, and maintenance logs may be overwritten or destroyed if not preserved quickly. Our Arizona truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable under both federal FMCSA regulations and Arizona state law.`,
 
   truckingLaws: [
     {
       title: 'Arizona Commercial Vehicle Regulations',
-      description: `Arizona regulates commercial vehicles under Title 28 of the Arizona Revised Statutes. This includes size and weight limits, registration requirements, and safety standards. The Arizona Department of Public Safety enforces these regulations through dedicated commercial vehicle enforcement officers.`
+      description: `Arizona regulates commercial vehicles under state statutes enforced by the Arizona State Patrol and Department of Transportation. The state maintains strict size and weight limits for commercial vehicles, with maximum gross vehicle weight of 80,000 pounds on interstate highways. Oversize and overweight permits are required for loads exceeding standard limits, with specific routing requirements and escort obligations. Arizona participates in the International Registration Plan (IRP) and International Fuel Tax Agreement (IFTA), requiring proper registration for carriers operating across state lines. Violations of commercial vehicle regulations can establish negligence in truck accident cases.`
     },
     {
       title: 'Arizona Hours of Service Enforcement',
-      description: `Arizona actively enforces federal Hours of Service regulations through the Arizona Department of Public Safety Commercial Vehicle Enforcement Bureau. The state conducts roadside inspections at weigh stations and through mobile enforcement units, documenting violations in the federal CSA database.`
+      description: `Arizona actively enforces federal Hours of Service regulations through the Arizona State Patrol. Officers conduct roadside inspections at weigh stations and portable inspection sites throughout the state. The state participates in FMCSA's Compliance, Safety, Accountability (CSA) program, documenting violations in the federal database. Arizona also conducts targeted enforcement operations during high-traffic periods and along major freight corridors. Carriers with poor safety ratings face increased inspection rates when operating in Arizona.`
     },
     {
-      title: 'Arizona CDL Requirements',
-      description: `The Arizona Motor Vehicle Division issues Commercial Driver's Licenses under federal standards with state-specific testing. Arizona maintains driver records and can disqualify drivers for violations. The state requires endorsements for hazardous materials, tankers, doubles/triples, and passenger vehicles.`
+      title: 'Arizona Commercial Driver License Requirements',
+      description: `The Arizona Department of Motor Vehicles issues Commercial Driver's Licenses under federal standards with state-specific requirements. Drivers must pass written knowledge tests covering general commercial vehicle operation, air brakes, and any endorsements sought. Skills testing includes pre-trip inspection, basic control maneuvers, and on-road driving. Arizona maintains driver records and can disqualify drivers for violations including DUI, leaving the scene of an accident, or using a commercial vehicle in the commission of a felony. Medical certification requirements must be met and maintained.`
     },
     {
       title: 'Arizona Drug and Alcohol Testing',
-      description: `Arizona enforces federal drug and alcohol testing requirements for commercial drivers. Arizona DUI laws apply to commercial drivers with a lower BAC threshold of 0.04%. Arizona has some of the strictest DUI penalties in the nation, including mandatory jail time for first offenses.`
+      description: `Arizona enforces federal drug and alcohol testing requirements for commercial drivers and has additional state laws prohibiting impaired commercial driving. Arizona DUI laws apply to commercial drivers with a lower BAC threshold of 0.04%. Pre-employment, random, post-accident, reasonable suspicion, return-to-duty, and follow-up testing are all required. The state maintains a Drug and Alcohol Clearinghouse participation requirement, and employers must query the clearinghouse before hiring. Refusal to submit to testing results in license disqualification.`
     },
     {
-      title: 'Arizona Border Trucking Regulations',
-      description: `Given Arizona's Mexican border crossings, the state enforces regulations specific to international trucking. This includes coordination with U.S. Customs and Border Protection, FAST card requirements, and specific safety inspections for trucks entering from Mexico.`
+      title: 'Arizona Motor Carrier Insurance Requirements',
+      description: `Motor carriers operating in Arizona must maintain minimum levels of liability insurance as required by federal and state law. For-hire carriers transporting general freight must carry at least $750,000 in liability coverage. Carriers transporting hazardous materials face higher requirements up to $5,000,000 depending on the materials carried. Arizona requires proof of insurance for vehicle registration and operating authority. Carriers must file proof of financial responsibility with the state. Self-insurance is permitted for carriers meeting strict financial requirements.`
     },
     {
-      title: 'Arizona Heat-Related Safety Requirements',
-      description: `Arizona's extreme heat creates specific safety concerns for commercial vehicles. Regulations address tire conditions, brake systems, and cooling requirements. Heat-related mechanical failures are a common factor in Arizona truck accidents during summer months.`
+      title: 'Arizona Vehicle Inspection Requirements',
+      description: `Arizona requires annual safety inspections for commercial vehicles registered in the state. The Arizona State Patrol conducts roadside inspections using federal CVSA criteria. Drivers must perform and document pre-trip and post-trip inspections daily. Driver Vehicle Inspection Reports (DVIRs) must note any defects or deficiencies. Carriers must repair or document repairs for reported defects before the vehicle returns to service. Out-of-service violations result in the vehicle being immediately removed from operation until repairs are completed.`
     }
   ],
 
   corridors: [
     {
-      name: 'Interstate 10 (I-10)',
-      description: `Major east-west corridor crossing southern Arizona from California to New Mexico, carrying massive freight volumes between Los Angeles and the Southwest. The Phoenix metropolitan section sees extremely heavy truck traffic, with significant congestion during peak hours.`
+      name: 'Interstate 10',
+      description: `Interstate 10 serves as a critical trucking corridor in Arizona. Major transcontinental route from California through Phoenix to New Mexico. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Arizona State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and extreme heat and dust storms makes this route particularly hazardous during June, July, August.`
     },
     {
-      name: 'Interstate 40 (I-40)',
-      description: `Northern Arizona east-west route connecting California to New Mexico, parallel to historic Route 66 and heavily used for cross-country freight. This corridor crosses challenging terrain including mountain passes and high desert plateaus.`
+      name: 'Interstate 40',
+      description: `Interstate 40 serves as a critical trucking corridor in Arizona. Northern east-west route through Flagstaff. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Arizona State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and extreme heat and dust storms makes this route particularly hazardous during June, July, August.`
     },
     {
-      name: 'Interstate 17 (I-17)',
-      description: `North-south route connecting Phoenix to Flagstaff, linking I-10 and I-40 and serving as Arizona's primary internal freight corridor. Steep grades through the mountains north of Phoenix create hazardous conditions for heavy trucks, especially in winter weather.`
+      name: 'Interstate 17',
+      description: `Interstate 17 serves as a critical trucking corridor in Arizona. Primary north-south route connecting Phoenix to Flagstaff. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Arizona State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and extreme heat and dust storms makes this route particularly hazardous during June, July, August.`
     },
     {
-      name: 'Interstate 8 (I-8)',
-      description: `Southern route from San Diego to I-10 near Casa Grande, carrying freight from California ports to Arizona distribution centers. This corridor also handles significant agricultural freight from Arizona's farming regions.`
+      name: 'Interstate 8',
+      description: `Interstate 8 serves as a critical trucking corridor in Arizona. Southern route from San Diego to I-10 near Casa Grande. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Arizona State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and extreme heat and dust storms makes this route particularly hazardous during June, July, August.`
     }
   ],
 
   negligenceRule: {
     type: 'pure',
     description: 'Arizona follows pure comparative negligence. You can recover damages even if you are 99% at fault, though your recovery is reduced by your percentage of fault.',
-    details: `Under Arizona's pure comparative negligence system, your damages are reduced by your percentage of fault, but you can still recover even if you were mostly at fault for the accident. For example, if you suffered $1,000,000 in damages but were 70% at fault, you could still recover $300,000. This is one of the most plaintiff-friendly systems in the nation, allowing truck accident victims to pursue claims even in contested fault situations. Insurance adjusters may try to exaggerate your fault to reduce their payout—an experienced Arizona truck accident lawyer knows how to counter these tactics.`
+    details: `Under Arizona law, your damages are reduced by your percentage of fault. For example, if you suffered $1,000,000 in damages but were 30% at fault, you could recover $700,000. Even at high percentages of fault, you maintain the right to recover reduced damages.
+
+This rule makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility. They may claim you were speeding, failed to yield, or were distracted—anything to increase your percentage of fault. An experienced Arizona truck accident lawyer knows how to counter these tactics through thorough investigation and evidence preservation.
+
+Electronic logging device data, driver qualification files, maintenance records, and the carrier's safety history all help establish the trucking company's negligence. Federal Motor Carrier Safety Administration regulations set minimum standards, and violations frequently appear in accident investigations. When carriers cut corners on safety to increase profits, Arizona law holds them accountable.`
   },
 
   statuteOfLimitations: {
     personalInjury: '2 Years',
     wrongfulDeath: '2 Years',
     propertyDamage: '2 Years',
-    details: `Arizona has a two-year statute of limitations for personal injury claims arising from truck accidents under A.R.S. § 12-542. This means you must file your lawsuit within two years of the accident date. Wrongful death claims also have a two-year deadline. Missing these deadlines typically bars your claim forever, so it's important to contact an attorney promptly after any serious truck accident. Evidence preservation is also time-sensitive—trucking companies may legally destroy certain records after required retention periods.`
+    details: `Arizona has a 2 years statute of limitations for personal injury claims and 2 years for wrongful death claims. Property damage claims must be filed within 2 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+
+The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
+
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+
+Contact an attorney promptly after any serious Arizona truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
 
   statistics: [
-    { label: 'Annual Truck Accident Deaths', value: '130+' },
+    { label: 'Annual Truck Accident Deaths', value: '120+' },
     { label: 'Registered Commercial Trucks', value: '95,000+' },
-    { label: 'Miles of Interstate Highway', value: '1,168' },
-    { label: 'Mexican Border Crossings', value: '5,000+ Daily' }
+    { label: 'Major Interstate Highways', value: 'I-10, I-17, I-40, I-8, I-19' },
+    { label: 'Primary Weather Hazard', value: 'Extreme heat and dust storms' }
   ],
 
-  courtInfo: `Truck accident cases in Arizona may be filed in state Superior Court or federal courts depending on the parties involved and amounts in controversy. Cases against trucking companies often involve defendants from multiple states, potentially qualifying for federal court under diversity jurisdiction if the amount in controversy exceeds $75,000.
+  courtInfo: `Truck accident cases in Arizona may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Arizona state courts follow state procedural rules and apply Arizona substantive law. The District of Arizona federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-Arizona state courts follow the Arizona Rules of Civil Procedure, which include specific provisions for discovery that can be crucial in trucking cases. Arizona allows discovery of corporate defendants, including depositions of company representatives, production of safety records, and inspection of vehicles and maintenance facilities.
+Arizona state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
 
-Venue rules in Arizona generally allow cases to be filed where the accident occurred, where the defendant resides or has its principal office, or where the plaintiff resides. Maricopa County (Phoenix area) handles many truck accident cases due to the volume of commercial traffic in the region.
+Both state and federal courts in Arizona allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
-The District of Arizona federal court, with locations in Phoenix and Tucson, hears many trucking cases involving out-of-state defendants. Federal judges in Arizona are experienced with complex commercial transportation litigation.`,
+Arizona does not cap economic damages in personal injury cases, allowing full recovery of medical expenses, lost wages, future medical costs, and other financial losses. Non-economic damages (pain and suffering) may be subject to certain limitations depending on the circumstances. Punitive damages are available in cases involving egregious misconduct, though caps may apply.`,
 
-  lastUpdated: '2026-01-08',
+  lastUpdated: '2026-01-10',
 
   whyHireLocal: `Arizona truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Arizona state law. Local counsel knows the Arizona court system, local procedures, and the judges who will hear your case. They understand how Arizona juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
 
-Arizona's pure comparative negligence rules mean you can recover damages even if partially at fault—but experienced local attorneys know how to maximize trucking company responsibility and minimize victim fault allocation.
+Arizona presents unique challenges for truck accident litigation. The state's extreme heat and dust storms creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 
-An Arizona truck accident lawyer also understands the state's unique trucking infrastructure. They know the dangerous corridors, understand border crossing operations, and can investigate accidents involving Mexican carriers. This local knowledge helps build stronger cases and anticipate defenses specific to Arizona trucking operations.
+Local attorneys also have established relationships with accident reconstruction experts, medical professionals, and investigators familiar with Arizona conditions. They can quickly deploy resources to preserve evidence before it disappears. Time-zone convenience and proximity to accident scenes enable rapid response when needed.
 
-Arizona's extreme heat and desert conditions create unique mechanical challenges for trucks. Local attorneys understand how tire blowouts, brake failures, and other heat-related issues contribute to accidents and can effectively investigate these cases.`,
+The trucking industry has significant resources and experienced defense counsel. Insurance companies defending trucking claims employ aggressive tactics to minimize or deny claims. You need representation that matches their resources and knows how to counter their strategies effectively.
+
+A Arizona-licensed attorney ensures your case proceeds properly through the Arizona legal system. From filing requirements to discovery deadlines to trial procedures, local knowledge prevents costly procedural errors that could jeopardize your claim.`,
 
   faqs: [
     {
       question: 'What is the statute of limitations for truck accident cases in Arizona?',
-      answer: 'Arizona has a two-year statute of limitations for personal injury claims from truck accidents. Wrongful death claims must also be filed within two years. Missing these deadlines typically bars your claim forever, so it\'s important to contact an attorney promptly after any serious truck accident.'
+      answer: 'Arizona has a 2 years statute of limitations for personal injury claims and 2 years for wrongful death claims from truck accidents. This means you must file your lawsuit within 2 years of the accident date for personal injury or 2 years of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 2 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
-      question: 'Can I still recover damages if I was partially at fault for an Arizona truck accident?',
-      answer: 'Yes. Arizona follows pure comparative negligence, meaning you can recover damages even if you were mostly at fault. Your recovery is reduced by your percentage of fault. For example, if you were 60% at fault and had $1 million in damages, you could still recover $400,000.'
+      question: 'Can I still recover damages if I was partially at fault for a Arizona truck accident?',
+      answer: 'Arizona follows pure comparative negligence. You can recover damages even if you are 99% at fault, though your recovery is reduced by your percentage of fault. For example, if you suffered $1,000,000 in damages but were found 20% at fault, your recovery would be reduced to $800,000. This makes establishing the trucking company\'s primary fault critical in contested cases. Insurance adjusters often try to shift blame to accident victims to reduce or eliminate their responsibility. An experienced Arizona truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault through evidence including electronic logging device data, driver qualification files, and maintenance records.'
     },
     {
-      question: 'What damages can I recover in an Arizona truck accident case?',
-      answer: 'Arizona allows recovery of economic damages (medical expenses, lost wages, property damage, future earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life). In cases involving gross negligence or reckless conduct, punitive damages may also be available.'
+      question: 'What damages can I recover in a Arizona truck accident case?',
+      answer: 'Arizona allows recovery of both economic damages (medical expenses, lost wages, property damage, future medical costs, lost earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life, loss of consortium). Economic damages compensate for actual financial losses and are typically proven through medical bills, wage statements, and expert testimony about future costs. Non-economic damages compensate for intangible losses and vary based on injury severity and impact on daily life. Punitive damages may be available in cases involving gross negligence, reckless conduct, or intentional misconduct by the trucking company or driver.'
     },
     {
       question: 'How long do trucking companies have to keep records in Arizona?',
-      answer: 'Federal regulations require trucking companies to retain driver qualification files, hours of service records, vehicle inspection reports, and accident records for specific periods. However, companies often destroy records as soon as legally permitted. An attorney can send preservation letters requiring the company to retain evidence.'
+      answer: 'Federal regulations require trucking companies to retain driver qualification files for three years after employment ends, hours of service records for six months, vehicle maintenance records for one year plus the time the equipment is in use, and accident registers for three years. However, companies often destroy records as soon as legally permitted—sometimes even sooner. This is why prompt legal action after a truck accident is critical. An experienced Arizona truck accident attorney can send preservation letters requiring the trucking company to retain all evidence related to your case, preventing destruction of potentially crucial evidence.'
     },
     {
-      question: 'Can I sue a trucking company based in another state for an Arizona accident?',
-      answer: 'Yes. If a truck accident occurs in Arizona, Arizona courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Arizona highways, subjects itself to Arizona jurisdiction.'
+      question: 'What evidence is important in a Arizona truck accident case?',
+      answer: 'Critical evidence in Arizona truck accident cases includes electronic logging device (ELD) data showing driver hours and rest periods, the truck\'s electronic control module (ECM) or black box data capturing speed, braking, and other operational parameters, driver qualification files showing training and driving history, maintenance records revealing any deferred repairs or safety issues, dispatch records showing pressure to meet delivery deadlines, toxicology results from post-accident drug and alcohol testing, and the carrier\'s safety rating and inspection history from FMCSA databases. Physical evidence from the scene, witness statements, and surveillance or dashcam video are also valuable. Time is critical—much of this evidence can be legally destroyed or overwritten if not preserved quickly.'
+    },
+    {
+      question: 'Can I sue an out-of-state trucking company for a Arizona accident?',
+      answer: 'Yes. If a truck accident occurs in Arizona, Arizona courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Arizona highways, subjects itself to Arizona jurisdiction. Your case may be filed in Arizona state court or in federal court (the District of Arizona). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
+    },
+    {
+      question: 'What if the truck driver who caused my accident was an independent contractor?',
+      answer: 'Trucking companies often try to avoid liability by classifying drivers as independent contractors rather than employees. However, Arizona courts look at the actual relationship—not just what the contract says—to determine whether the trucking company controlled the driver\'s work. Even with true independent contractors, the trucking company may be liable under theories including negligent hiring (failing to properly screen the driver), negligent supervision (failing to ensure compliance with safety regulations), or negligent entrustment (allowing an unqualified driver to operate the truck). The motor carrier may also be directly liable for violations of federal safety regulations that apply regardless of driver classification.'
     }
   ],
 

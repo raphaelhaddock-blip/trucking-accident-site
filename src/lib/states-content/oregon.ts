@@ -1,115 +1,158 @@
 import { StateContent } from './types';
 
+/**
+ * Oregon - Truck Accident Information
+ *
+ * Annual Truck Accident Deaths: 55+
+ * Registered Commercial Trucks: 65,000+
+ * Major Interstates: I-5, I-84, I-205
+ *
+ * Enhanced by State Enhancement Agent v1.0.0
+ * Last Updated: 2026-01-10T08:16:06.169Z
+ */
+
 export const oregon: StateContent = {
   slug: 'oregon',
   name: 'Oregon',
   abbreviation: 'OR',
   h1: 'Oregon Truck Injury Lawyers',
   metaTitle: 'Oregon Truck Accident Lawyers | 18-Wheeler Attorneys in OR',
-  metaDescription: 'Injured in an Oregon truck accident? Our attorneys fight for victims across Oregon. Free consultation. No fee unless you win.',
+  metaDescription: 'Injured in a Oregon truck accident? Our attorneys fight for victims across Oregon. Free consultation. No fee unless you win.',
 
-  heroText: `Oregon's position as a Pacific gateway and corridor between California and Washington creates significant commercial truck traffic on state highways. With over 55 people killed annually in collisions involving large trucks, Oregon roadways see devastating accidents.
+  heroText: `Oregon presents unique challenges for commercial trucking operations and significant risks for motorists sharing the roads with 18-wheelers. With 55+ people killed annually in collisions involving large trucks, Oregon sees its share of devastating commercial vehicle accidents. The state's 65,000+ registered commercial trucks operate on highways that face rain, fog, and mountain passes, creating conditions that contribute to serious and fatal crashes.
 
-The Oregon trucking industry handles substantial freight volumes. Over 75,000 commercial trucks are registered in the state, operating on I-5 (the primary West Coast freight corridor), I-84 through the Columbia River Gorge, and routes serving the Port of Portland.
+The Oregon trucking industry serves critical economic functions. Technology, Agriculture, Forestry, Manufacturing, Tourism all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 5, Interstate 84, US Route 101, US Route 97 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Oregon motorists.
 
-The Columbia River Gorge on I-84 presents unique hazards. Challenging grades, frequent high winds, and weather conditions contribute to serious truck accidents. The Gorge's microclimate creates sudden wind gusts that have overturned trucks and caused multi-vehicle crashes.
+Oregon follows modified comparative negligence with a 51% bar for personal injury cases. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a 2 years statute of limitations for personal injury claims, meaning you must file suit within 2 years of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
 
-Oregon follows modified comparative negligence with a 51% bar, meaning you can recover damages if you are 50% or less at fault. The state has a two-year statute of limitations for personal injury claims.
+Weather plays a significant role in Oregon truck accidents. During October, November, December, January, February, March, rain, fog, and mountain passes creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
 
-If you've been injured in an Oregon truck accident, our Oregon truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable.`,
+If you have been injured in a Oregon truck accident, time is critical. Trucking companies dispatch investigation teams immediately after serious crashes to protect their interests. Evidence including electronic logging device data, driver records, and maintenance logs may be overwritten or destroyed if not preserved quickly. Our Oregon truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable under both federal FMCSA regulations and Oregon state law.`,
 
   truckingLaws: [
     {
       title: 'Oregon Commercial Vehicle Regulations',
-      description: `Oregon regulates commercial vehicles under Oregon Revised Statutes Chapter 825. This includes size and weight limits, registration requirements, and safety standards enforced by the Oregon Department of Transportation Motor Carrier Division.`
+      description: `Oregon regulates commercial vehicles under state statutes enforced by the Oregon State Patrol and Department of Transportation. The state maintains strict size and weight limits for commercial vehicles, with maximum gross vehicle weight of 80,000 pounds on interstate highways. Oversize and overweight permits are required for loads exceeding standard limits, with specific routing requirements and escort obligations. Oregon participates in the International Registration Plan (IRP) and International Fuel Tax Agreement (IFTA), requiring proper registration for carriers operating across state lines. Violations of commercial vehicle regulations can establish negligence in truck accident cases.`
     },
     {
       title: 'Oregon Hours of Service Enforcement',
-      description: `Oregon actively enforces federal Hours of Service regulations through the Oregon State Police and ODOT. The state conducts roadside inspections and operates weigh stations throughout the highway system.`
+      description: `Oregon actively enforces federal Hours of Service regulations through the Oregon State Patrol. Officers conduct roadside inspections at weigh stations and portable inspection sites throughout the state. The state participates in FMCSA's Compliance, Safety, Accountability (CSA) program, documenting violations in the federal database. Oregon also conducts targeted enforcement operations during high-traffic periods and along major freight corridors. Carriers with poor safety ratings face increased inspection rates when operating in Oregon.`
     },
     {
-      title: 'Oregon CDL Requirements',
-      description: `The Oregon DMV issues Commercial Driver's Licenses under federal standards with state-specific testing. Oregon maintains driver records and can disqualify drivers for violations.`
+      title: 'Oregon Commercial Driver License Requirements',
+      description: `The Oregon Department of Motor Vehicles issues Commercial Driver's Licenses under federal standards with state-specific requirements. Drivers must pass written knowledge tests covering general commercial vehicle operation, air brakes, and any endorsements sought. Skills testing includes pre-trip inspection, basic control maneuvers, and on-road driving. Oregon maintains driver records and can disqualify drivers for violations including DUI, leaving the scene of an accident, or using a commercial vehicle in the commission of a felony. Medical certification requirements must be met and maintained.`
     },
     {
       title: 'Oregon Drug and Alcohol Testing',
-      description: `Oregon enforces federal drug and alcohol testing requirements for commercial drivers. Oregon DUII laws apply to commercial drivers with a lower BAC threshold of 0.04%.`
+      description: `Oregon enforces federal drug and alcohol testing requirements for commercial drivers and has additional state laws prohibiting impaired commercial driving. Oregon DUI laws apply to commercial drivers with a lower BAC threshold of 0.04%. Pre-employment, random, post-accident, reasonable suspicion, return-to-duty, and follow-up testing are all required. The state maintains a Drug and Alcohol Clearinghouse participation requirement, and employers must query the clearinghouse before hiring. Refusal to submit to testing results in license disqualification.`
     },
     {
-      title: 'Oregon Gorge Wind Regulations',
-      description: `The Columbia River Gorge has specific regulations for commercial vehicles during high wind events. Wind restrictions can close portions of I-84 to high-profile vehicles.`
+      title: 'Oregon Motor Carrier Insurance Requirements',
+      description: `Motor carriers operating in Oregon must maintain minimum levels of liability insurance as required by federal and state law. For-hire carriers transporting general freight must carry at least $750,000 in liability coverage. Carriers transporting hazardous materials face higher requirements up to $5,000,000 depending on the materials carried. Oregon requires proof of insurance for vehicle registration and operating authority. Carriers must file proof of financial responsibility with the state. Self-insurance is permitted for carriers meeting strict financial requirements.`
     },
     {
-      title: 'Oregon Environmental Trucking Regulations',
-      description: `Oregon has specific environmental regulations for commercial vehicles including emissions standards and idle restrictions. The Port of Portland has additional clean truck requirements.`
+      title: 'Oregon Vehicle Inspection Requirements',
+      description: `Oregon requires annual safety inspections for commercial vehicles registered in the state. The Oregon State Patrol conducts roadside inspections using federal CVSA criteria. Drivers must perform and document pre-trip and post-trip inspections daily. Driver Vehicle Inspection Reports (DVIRs) must note any defects or deficiencies. Carriers must repair or document repairs for reported defects before the vehicle returns to service. Out-of-service violations result in the vehicle being immediately removed from operation until repairs are completed.`
     }
   ],
 
   corridors: [
     {
-      name: 'Interstate 5 (I-5)',
-      description: `Major north-south corridor from California through Portland to Washington, primary West Coast freight route. The Portland metropolitan section sees heavy truck congestion.`
+      name: 'Interstate 5',
+      description: `Interstate 5 serves as a critical trucking corridor in Oregon. Primary north-south route from California through Portland to Washington. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Oregon State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and rain, fog, and mountain passes makes this route particularly hazardous during October, November, December.`
     },
     {
-      name: 'Interstate 84 (I-84)',
-      description: `East-west corridor through the Columbia River Gorge connecting Portland to Idaho. Challenging grades, weather conditions, and high winds create significant trucking hazards.`
+      name: 'Interstate 84',
+      description: `Interstate 84 serves as a critical trucking corridor in Oregon. Major east-west route along Columbia River Gorge. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Oregon State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and rain, fog, and mountain passes makes this route particularly hazardous during October, November, December.`
     },
     {
-      name: 'Interstate 205 (I-205)',
-      description: `Eastern bypass of Portland, heavily used for freight avoiding downtown congestion. This corridor serves distribution centers east of Portland.`
+      name: 'US Route 101',
+      description: `US Route 101 serves as a critical trucking corridor in Oregon. Coastal route with challenging terrain. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Oregon State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and rain, fog, and mountain passes makes this route particularly hazardous during October, November, December.`
     },
     {
-      name: 'US Highway 97',
-      description: `North-south route through central Oregon, important for agricultural and timber freight. This route serves Oregon's interior communities.`
+      name: 'US Route 97',
+      description: `US Route 97 serves as a critical trucking corridor in Oregon. Eastern north-south route through Bend. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Oregon State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and rain, fog, and mountain passes makes this route particularly hazardous during October, November, December.`
     }
   ],
 
   negligenceRule: {
     type: 'modified-51',
     description: 'Oregon follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault.',
-    details: `Under Oregon's modified comparative fault rule (ORS 31.600), your damages are reduced by your percentage of fault. If you are found 50% or less at fault, you can recover damages. However, if you are found 51% or more at fault, you recover nothing.`
+    details: `Under Oregon law, your damages are reduced by your percentage of fault, and recovery is barred if you exceed the threshold. For example, if you suffered $1,000,000 in damages but were 30% at fault, you could recover $700,000. However, if a jury finds you 51% or more responsible for the accident, you recover nothing.
+
+This rule makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility. They may claim you were speeding, failed to yield, or were distracted—anything to increase your percentage of fault. An experienced Oregon truck accident lawyer knows how to counter these tactics through thorough investigation and evidence preservation.
+
+Electronic logging device data, driver qualification files, maintenance records, and the carrier's safety history all help establish the trucking company's negligence. Federal Motor Carrier Safety Administration regulations set minimum standards, and violations frequently appear in accident investigations. When carriers cut corners on safety to increase profits, Oregon law holds them accountable.`
   },
 
   statuteOfLimitations: {
     personalInjury: '2 Years',
     wrongfulDeath: '3 Years',
     propertyDamage: '6 Years',
-    details: `Oregon has a two-year statute of limitations for personal injury claims arising from truck accidents under ORS 12.110. Wrongful death claims have a three-year deadline. Missing these deadlines typically bars your claim forever.`
+    details: `Oregon has a 2 years statute of limitations for personal injury claims and 3 years for wrongful death claims. Property damage claims must be filed within 6 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+
+The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
+
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+
+Contact an attorney promptly after any serious Oregon truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
 
   statistics: [
     { label: 'Annual Truck Accident Deaths', value: '55+' },
-    { label: 'Registered Commercial Trucks', value: '75,000+' },
-    { label: 'Miles of Interstate Highway', value: '728' },
-    { label: 'Columbia River Gorge', value: 'Challenging Wind Conditions' }
+    { label: 'Registered Commercial Trucks', value: '65,000+' },
+    { label: 'Major Interstate Highways', value: 'I-5, I-84, I-205' },
+    { label: 'Primary Weather Hazard', value: 'Rain, fog, and mountain passes' }
   ],
 
-  courtInfo: `Truck accident cases in Oregon may be filed in state circuit courts or federal courts. Oregon follows the Oregon Rules of Civil Procedure. Multnomah County (Portland), Lane County (Eugene), and Jackson County (Medford) handle many truck accident cases. The District of Oregon federal court handles cases involving out-of-state defendants.`,
+  courtInfo: `Truck accident cases in Oregon may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Oregon state courts follow state procedural rules and apply Oregon substantive law. The District of Oregon federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-  lastUpdated: '2026-01-08',
+Oregon state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
 
-  whyHireLocal: `Oregon truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Oregon state law. Local counsel knows the Oregon court system and understands the unique hazards of the Columbia River Gorge and mountain passes. They know how weather and wind conditions contribute to accidents and can effectively investigate these cases.`,
+Both state and federal courts in Oregon allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
+
+Oregon does not cap economic damages in personal injury cases, allowing full recovery of medical expenses, lost wages, future medical costs, and other financial losses. Non-economic damages (pain and suffering) may be subject to certain limitations depending on the circumstances. Punitive damages are available in cases involving egregious misconduct, though caps may apply.`,
+
+  lastUpdated: '2026-01-10',
+
+  whyHireLocal: `Oregon truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Oregon state law. Local counsel knows the Oregon court system, local procedures, and the judges who will hear your case. They understand how Oregon juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
+
+Oregon presents unique challenges for truck accident litigation. The state's rain, fog, and mountain passes creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
+
+Local attorneys also have established relationships with accident reconstruction experts, medical professionals, and investigators familiar with Oregon conditions. They can quickly deploy resources to preserve evidence before it disappears. Time-zone convenience and proximity to accident scenes enable rapid response when needed.
+
+The trucking industry has significant resources and experienced defense counsel. Insurance companies defending trucking claims employ aggressive tactics to minimize or deny claims. You need representation that matches their resources and knows how to counter their strategies effectively.
+
+A Oregon-licensed attorney ensures your case proceeds properly through the Oregon legal system. From filing requirements to discovery deadlines to trial procedures, local knowledge prevents costly procedural errors that could jeopardize your claim.`,
 
   faqs: [
     {
       question: 'What is the statute of limitations for truck accident cases in Oregon?',
-      answer: 'Oregon has a two-year statute of limitations for personal injury claims from truck accidents. Wrongful death claims have a three-year deadline. Missing these deadlines typically bars your claim forever.'
+      answer: 'Oregon has a 2 years statute of limitations for personal injury claims and 3 years for wrongful death claims from truck accidents. This means you must file your lawsuit within 2 years of the accident date for personal injury or 3 years of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 6 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
-      question: 'Can I still recover damages if I was partially at fault for an Oregon truck accident?',
-      answer: 'Yes, but Oregon follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault. If you are 51% or more at fault, you cannot recover any damages.'
+      question: 'Can I still recover damages if I was partially at fault for a Oregon truck accident?',
+      answer: 'Oregon follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. For example, if you suffered $1,000,000 in damages but were found 20% at fault, your recovery would be reduced to $800,000. This makes establishing the trucking company\'s primary fault critical in contested cases. Insurance adjusters often try to shift blame to accident victims to reduce or eliminate their responsibility. An experienced Oregon truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault through evidence including electronic logging device data, driver qualification files, and maintenance records.'
     },
     {
-      question: 'What damages can I recover in an Oregon truck accident case?',
-      answer: 'Oregon allows recovery of economic damages (medical expenses, lost wages, property damage) and non-economic damages (pain and suffering). Oregon has no cap on non-economic damages in most cases. Punitive damages are available in limited circumstances.'
+      question: 'What damages can I recover in a Oregon truck accident case?',
+      answer: 'Oregon allows recovery of both economic damages (medical expenses, lost wages, property damage, future medical costs, lost earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life, loss of consortium). Economic damages compensate for actual financial losses and are typically proven through medical bills, wage statements, and expert testimony about future costs. Non-economic damages compensate for intangible losses and vary based on injury severity and impact on daily life. Punitive damages may be available in cases involving gross negligence, reckless conduct, or intentional misconduct by the trucking company or driver.'
     },
     {
       question: 'How long do trucking companies have to keep records in Oregon?',
-      answer: 'Federal regulations require trucking companies to retain records for specific periods. An attorney can send preservation letters requiring the company to retain evidence.'
+      answer: 'Federal regulations require trucking companies to retain driver qualification files for three years after employment ends, hours of service records for six months, vehicle maintenance records for one year plus the time the equipment is in use, and accident registers for three years. However, companies often destroy records as soon as legally permitted—sometimes even sooner. This is why prompt legal action after a truck accident is critical. An experienced Oregon truck accident attorney can send preservation letters requiring the trucking company to retain all evidence related to your case, preventing destruction of potentially crucial evidence.'
     },
     {
-      question: 'Can I sue a trucking company based in another state for an Oregon accident?',
-      answer: 'Yes. If a truck accident occurs in Oregon, Oregon courts have jurisdiction regardless of where the trucking company is headquartered.'
+      question: 'What evidence is important in a Oregon truck accident case?',
+      answer: 'Critical evidence in Oregon truck accident cases includes electronic logging device (ELD) data showing driver hours and rest periods, the truck\'s electronic control module (ECM) or black box data capturing speed, braking, and other operational parameters, driver qualification files showing training and driving history, maintenance records revealing any deferred repairs or safety issues, dispatch records showing pressure to meet delivery deadlines, toxicology results from post-accident drug and alcohol testing, and the carrier\'s safety rating and inspection history from FMCSA databases. Physical evidence from the scene, witness statements, and surveillance or dashcam video are also valuable. Time is critical—much of this evidence can be legally destroyed or overwritten if not preserved quickly.'
+    },
+    {
+      question: 'Can I sue an out-of-state trucking company for a Oregon accident?',
+      answer: 'Yes. If a truck accident occurs in Oregon, Oregon courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Oregon highways, subjects itself to Oregon jurisdiction. Your case may be filed in Oregon state court or in federal court (the District of Oregon). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
+    },
+    {
+      question: 'What if the truck driver who caused my accident was an independent contractor?',
+      answer: 'Trucking companies often try to avoid liability by classifying drivers as independent contractors rather than employees. However, Oregon courts look at the actual relationship—not just what the contract says—to determine whether the trucking company controlled the driver\'s work. Even with true independent contractors, the trucking company may be liable under theories including negligent hiring (failing to properly screen the driver), negligent supervision (failing to ensure compliance with safety regulations), or negligent entrustment (allowing an unqualified driver to operate the truck). The motor carrier may also be directly liable for violations of federal safety regulations that apply regardless of driver classification.'
     }
   ],
 

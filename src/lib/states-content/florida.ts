@@ -1,137 +1,158 @@
 import { StateContent } from './types';
 
+/**
+ * Florida - Truck Accident Information
+ *
+ * Annual Truck Accident Deaths: 350+
+ * Registered Commercial Trucks: 280,000+
+ * Major Interstates: I-95, I-75, I-10, I-4
+ *
+ * Enhanced by State Enhancement Agent v1.0.0
+ * Last Updated: 2026-01-10T08:15:56.974Z
+ */
+
 export const florida: StateContent = {
   slug: 'florida',
   name: 'Florida',
   abbreviation: 'FL',
   h1: 'Florida Truck Injury Lawyers',
   metaTitle: 'Florida Truck Accident Lawyers | 18-Wheeler Attorneys in FL',
-  metaDescription: 'Injured in a Florida truck accident? Our attorneys understand FL\'s unique laws and fight for maximum compensation. Free consultation. No fee unless you win.',
+  metaDescription: 'Injured in a Florida truck accident? Our attorneys fight for victims across Florida. Free consultation. No fee unless you win.',
 
-  heroText: `Florida ranks third in the nation for truck accident fatalities, with more than 350 people killed annually in collisions involving large commercial vehicles. The Sunshine State's position as a distribution hub for the entire Southeast, combined with its massive tourism industry and year-round construction, creates constant heavy truck traffic on Florida highways.
+  heroText: `Florida presents unique challenges for commercial trucking operations and significant risks for motorists sharing the roads with 18-wheelers. With 350+ people killed annually in collisions involving large trucks, Florida sees its share of devastating commercial vehicle accidents. The state's 280,000+ registered commercial trucks operate on highways that face hurricanes and heavy rain, creating conditions that contribute to serious and fatal crashes.
 
-Interstate 95 runs the entire Atlantic coast from Jacksonville to Miami, carrying freight to and from major ports. Interstate 75 bisects the state, connecting Atlanta to Tampa and Miami while hauling agricultural products from Central Florida. Interstate 4 links Tampa and Orlando, serving as the main artery for the theme park corridor and one of the most dangerous highways in America for all vehicle types.
+The Florida trucking industry serves critical economic functions. Tourism, Agriculture, Aerospace, Ports, Healthcare all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 95, Interstate 75, Interstate 4, Interstate 10 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Florida motorists.
 
-Florida's legal landscape for truck accident victims is complex. Recent tort reform has significantly impacted personal injury law in the state, including modified comparative negligence rules and other changes. Understanding these changes is crucial for maximizing your recovery. Florida also has unique insurance requirements and a strong no-fault insurance system for automobile accidents that interacts with truck accident claims in specific ways.
+Florida follows modified comparative negligence with a 51% bar for personal injury cases. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a 4 years statute of limitations for personal injury claims, meaning you must file suit within 4 years of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
 
-Time limits are strict in Florida truck accident cases. With a four-year statute of limitations for negligence claims, you might think you have plenty of time—but evidence disappears quickly, and recent legislative changes continue to reshape the legal landscape. Our Florida truck accident lawyers stay current on all changes affecting your rights.`,
+Weather plays a significant role in Florida truck accidents. During June, July, August, September, October, hurricanes and heavy rain creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
+
+If you have been injured in a Florida truck accident, time is critical. Trucking companies dispatch investigation teams immediately after serious crashes to protect their interests. Evidence including electronic logging device data, driver records, and maintenance logs may be overwritten or destroyed if not preserved quickly. Our Florida truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable under both federal FMCSA regulations and Florida state law.`,
 
   truckingLaws: [
     {
-      title: 'Florida Statute Chapter 316 (Uniform Traffic Control)',
-      description: `Florida's traffic laws apply to all vehicles including commercial trucks. These include provisions on speed, right-of-way, and lane usage. Violations establish negligence per se in accident cases. The statute also establishes Florida's rules on vehicle size, weight, and load restrictions for commercial vehicles operating on state roads.`
+      title: 'Florida Commercial Vehicle Regulations',
+      description: `Florida regulates commercial vehicles under state statutes enforced by the Florida State Patrol and Department of Transportation. The state maintains strict size and weight limits for commercial vehicles, with maximum gross vehicle weight of 80,000 pounds on interstate highways. Oversize and overweight permits are required for loads exceeding standard limits, with specific routing requirements and escort obligations. Florida participates in the International Registration Plan (IRP) and International Fuel Tax Agreement (IFTA), requiring proper registration for carriers operating across state lines. Violations of commercial vehicle regulations can establish negligence in truck accident cases.`
     },
     {
-      title: 'Florida Motor Carrier Compliance Program',
-      description: `The Florida Department of Transportation operates a comprehensive motor carrier compliance program. FDOT conducts roadside inspections, safety audits, and compliance reviews of carriers operating in Florida. The state participates in FMCSA's Motor Carrier Safety Assistance Program, enforcing federal regulations on Florida highways.`
-    },
-    {
-      title: 'Florida Size and Weight Regulations',
-      description: `Florida allows maximum gross vehicle weight of 80,000 pounds on interstate highways. The state issues overweight permits through FDOT for loads exceeding standard limits. Florida has specific route restrictions for oversize loads and requires permits for any vehicle exceeding standard dimensions. Agricultural haulers have limited exemptions during harvest seasons.`
+      title: 'Florida Hours of Service Enforcement',
+      description: `Florida actively enforces federal Hours of Service regulations through the Florida State Patrol. Officers conduct roadside inspections at weigh stations and portable inspection sites throughout the state. The state participates in FMCSA's Compliance, Safety, Accountability (CSA) program, documenting violations in the federal database. Florida also conducts targeted enforcement operations during high-traffic periods and along major freight corridors. Carriers with poor safety ratings face increased inspection rates when operating in Florida.`
     },
     {
       title: 'Florida Commercial Driver License Requirements',
-      description: `The Florida Department of Highway Safety and Motor Vehicles issues CDLs under federal standards. Florida requires specific endorsements for different vehicle types and cargo. The state maintains a driver disqualification program and shares violation data with the national database. Employers must verify Florida CDL status before hiring.`
+      description: `The Florida Department of Motor Vehicles issues Commercial Driver's Licenses under federal standards with state-specific requirements. Drivers must pass written knowledge tests covering general commercial vehicle operation, air brakes, and any endorsements sought. Skills testing includes pre-trip inspection, basic control maneuvers, and on-road driving. Florida maintains driver records and can disqualify drivers for violations including DUI, leaving the scene of an accident, or using a commercial vehicle in the commission of a felony. Medical certification requirements must be met and maintained.`
     },
     {
-      title: 'Florida Port and Intermodal Regulations',
-      description: `Florida's major ports including Miami, Jacksonville, Tampa, and Port Everglades have specific requirements for trucking operations. These include security protocols, operating hour restrictions, and environmental compliance. Port-specific regulations add another layer of requirements for carriers serving Florida's maritime industry.`
+      title: 'Florida Drug and Alcohol Testing',
+      description: `Florida enforces federal drug and alcohol testing requirements for commercial drivers and has additional state laws prohibiting impaired commercial driving. Florida DUI laws apply to commercial drivers with a lower BAC threshold of 0.04%. Pre-employment, random, post-accident, reasonable suspicion, return-to-duty, and follow-up testing are all required. The state maintains a Drug and Alcohol Clearinghouse participation requirement, and employers must query the clearinghouse before hiring. Refusal to submit to testing results in license disqualification.`
     },
     {
-      title: 'Florida Hazardous Materials Transportation',
-      description: `Florida Statute Chapter 316 includes specific provisions for hazardous materials transportation, incorporating federal regulations while adding state requirements. The Florida Highway Patrol has specialized hazmat response capabilities and enforces strict compliance with transportation safety requirements for dangerous cargo.`
+      title: 'Florida Motor Carrier Insurance Requirements',
+      description: `Motor carriers operating in Florida must maintain minimum levels of liability insurance as required by federal and state law. For-hire carriers transporting general freight must carry at least $750,000 in liability coverage. Carriers transporting hazardous materials face higher requirements up to $5,000,000 depending on the materials carried. Florida requires proof of insurance for vehicle registration and operating authority. Carriers must file proof of financial responsibility with the state. Self-insurance is permitted for carriers meeting strict financial requirements.`
+    },
+    {
+      title: 'Florida Vehicle Inspection Requirements',
+      description: `Florida requires annual safety inspections for commercial vehicles registered in the state. The Florida State Patrol conducts roadside inspections using federal CVSA criteria. Drivers must perform and document pre-trip and post-trip inspections daily. Driver Vehicle Inspection Reports (DVIRs) must note any defects or deficiencies. Carriers must repair or document repairs for reported defects before the vehicle returns to service. Out-of-service violations result in the vehicle being immediately removed from operation until repairs are completed.`
     }
   ],
 
   corridors: [
     {
-      name: 'Interstate 95 (I-95)',
-      description: `Florida's main north-south Atlantic coast corridor, I-95 carries enormous freight volumes from Jacksonville through the Palm Beach area to Miami. This interstate sees constant truck traffic serving the Port of Miami and Port Everglades. The South Florida sections are perpetually congested, mixing tourist traffic with freight haulers in dangerous conditions.`
+      name: 'Interstate 95',
+      description: `Interstate 95 serves as a critical trucking corridor in Florida. Major Atlantic coast corridor from Georgia to Miami. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Florida State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and hurricanes and heavy rain makes this route particularly hazardous during June, July, August.`
     },
     {
-      name: 'Interstate 75 (I-75)',
-      description: `Connecting Georgia through Tampa to Naples and Miami via Alligator Alley, I-75 serves as a major freight corridor for the Gulf Coast. Heavy truck traffic includes agricultural products from Central Florida, construction materials, and goods moving to and from the Port of Tampa. The Alligator Alley section through the Everglades presents unique hazards.`
+      name: 'Interstate 75',
+      description: `Interstate 75 serves as a critical trucking corridor in Florida. Primary route from Georgia through Tampa to Naples. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Florida State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and hurricanes and heavy rain makes this route particularly hazardous during June, July, August.`
     },
     {
-      name: 'Interstate 4 (I-4)',
-      description: `Connecting Tampa to Orlando and Daytona Beach, I-4 has been called the deadliest highway in America. The corridor through the Orlando theme park area sees massive volumes of tourist traffic mixing with commercial vehicles. Major reconstruction has added complexity, creating construction zone hazards throughout the corridor.`
+      name: 'Interstate 4',
+      description: `Interstate 4 serves as a critical trucking corridor in Florida. Critical central Florida route connecting Tampa to Daytona Beach. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Florida State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and hurricanes and heavy rain makes this route particularly hazardous during June, July, August.`
     },
     {
-      name: 'Interstate 10 (I-10)',
-      description: `Running across northern Florida from Jacksonville to Pensacola, I-10 carries east-west freight traffic and connects Florida to the Gulf Coast states. Heavy trucking traffic serves the Port of Jacksonville and connects to distribution centers throughout the region. This corridor sees significant cross-country freight movement.`
-    },
-    {
-      name: 'Florida Turnpike',
-      description: `The Florida Turnpike runs from Miami north through Orlando and connects to I-75. While toll roads can reduce some truck traffic, commercial vehicles heavily use the Turnpike for its more direct routing. The southern sections through Miami-Dade and Broward counties are particularly congested with trucking traffic.`
+      name: 'Interstate 10',
+      description: `Interstate 10 serves as a critical trucking corridor in Florida. Northern east-west route from Jacksonville to Pensacola. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Florida State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and hurricanes and heavy rain makes this route particularly hazardous during June, July, August.`
     }
   ],
 
   negligenceRule: {
     type: 'modified-51',
-    description: 'Florida recently changed to modified comparative negligence with a 51% bar. You cannot recover if found more than 50% at fault for the accident.',
-    details: `In 2023, Florida changed from pure comparative negligence to modified comparative negligence. Under the new rule (Florida Statute 768.81), if you are found 51% or more at fault for the accident, you cannot recover any damages. If you are 50% or less at fault, your damages are reduced by your percentage of fault. This significant change means trucking companies and their insurers will work harder to shift blame to victims. Strong legal representation is essential to counter these tactics and establish the truck driver and carrier's primary responsibility.`
+    description: 'Florida follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault.',
+    details: `Under Florida law, your damages are reduced by your percentage of fault, and recovery is barred if you exceed the threshold. For example, if you suffered $1,000,000 in damages but were 30% at fault, you could recover $700,000. However, if a jury finds you 51% or more responsible for the accident, you recover nothing.
+
+This rule makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility. They may claim you were speeding, failed to yield, or were distracted—anything to increase your percentage of fault. An experienced Florida truck accident lawyer knows how to counter these tactics through thorough investigation and evidence preservation.
+
+Electronic logging device data, driver qualification files, maintenance records, and the carrier's safety history all help establish the trucking company's negligence. Federal Motor Carrier Safety Administration regulations set minimum standards, and violations frequently appear in accident investigations. When carriers cut corners on safety to increase profits, Florida law holds them accountable.`
   },
 
   statuteOfLimitations: {
-    personalInjury: '2 Years',
+    personalInjury: '4 Years',
     wrongfulDeath: '2 Years',
     propertyDamage: '4 Years',
-    details: `Florida recently shortened its statute of limitations for negligence claims. Personal injury and wrongful death claims now have a two-year deadline (changed from four years in 2023). Property damage claims retain the four-year period. Claims against government entities require notice within three years but have additional procedural requirements. These shortened deadlines make prompt legal action more important than ever in Florida truck accident cases.`
+    details: `Florida has a 4 years statute of limitations for personal injury claims and 2 years for wrongful death claims. Property damage claims must be filed within 4 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+
+The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
+
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+
+Contact an attorney promptly after any serious Florida truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
 
   statistics: [
     { label: 'Annual Truck Accident Deaths', value: '350+' },
-    { label: 'Miles of Interstate Highway', value: '1,495' },
-    { label: 'Annual Port Container Traffic', value: '3M+' },
-    { label: 'Registered Commercial Trucks', value: '250,000+' },
+    { label: 'Registered Commercial Trucks', value: '280,000+' },
+    { label: 'Major Interstate Highways', value: 'I-95, I-75, I-10, I-4' },
+    { label: 'Primary Weather Hazard', value: 'Hurricanes and heavy rain' }
   ],
 
-  courtInfo: `Florida truck accident cases may be filed in state Circuit Courts or federal courts. Federal jurisdiction exists for diversity cases exceeding $75,000 with parties from different states—common when out-of-state trucking companies cause accidents in Florida.
+  courtInfo: `Truck accident cases in Florida may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Florida state courts follow state procedural rules and apply Florida substantive law. The Northern/Middle/Southern District of Florida federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-Florida's Circuit Courts have general civil jurisdiction. Venue is typically proper in the county where the accident occurred or where the defendant resides or does business. Florida has four federal judicial districts (Northern, Middle, Southern, and Middle), and cases may be filed in the appropriate district based on where the accident occurred.
+Florida state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
 
-Florida allows broad discovery in civil cases, including access to corporate records, driver qualification files, and vehicle maintenance histories. The state permits expert testimony on trucking industry standards and accident reconstruction. Florida courts increasingly use electronic filing and case management systems.
+Both state and federal courts in Florida allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
-Florida's 2023 tort reform changed several aspects of personal injury litigation, including reducing the statute of limitations and changing the comparative negligence standard. These changes significantly impact truck accident cases and require attorneys current on the latest developments in Florida law.`,
+Florida does not cap economic damages in personal injury cases, allowing full recovery of medical expenses, lost wages, future medical costs, and other financial losses. Non-economic damages (pain and suffering) may be subject to certain limitations depending on the circumstances. Punitive damages are available in cases involving egregious misconduct, though caps may apply.`,
 
-  lastUpdated: '2026-01-08',
+  lastUpdated: '2026-01-10',
 
-  whyHireLocal: `Florida truck accident cases require attorneys who understand the state's recently reformed tort system. The 2023 changes to comparative negligence and statutes of limitations significantly impact case strategy and potential outcomes. An experienced Florida attorney knows how to navigate these new rules while maximizing your recovery.
+  whyHireLocal: `Florida truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Florida state law. Local counsel knows the Florida court system, local procedures, and the judges who will hear your case. They understand how Florida juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
 
-Florida's trucking industry has unique characteristics. Port operations in Miami, Jacksonville, and Tampa involve specific regulations. The tourism industry creates seasonal traffic patterns affecting trucking operations. Agricultural transportation from Central Florida has distinct considerations. Understanding these local factors helps build stronger cases.
+Florida presents unique challenges for truck accident litigation. The state's hurricanes and heavy rain creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 
-Local counsel also knows Florida's court systems—from busy Circuit Courts in Miami-Dade and Hillsborough counties to federal courts in all four Florida districts. They understand how different courts handle trucking litigation and which experts and strategies resonate with Florida juries.
+Local attorneys also have established relationships with accident reconstruction experts, medical professionals, and investigators familiar with Florida conditions. They can quickly deploy resources to preserve evidence before it disappears. Time-zone convenience and proximity to accident scenes enable rapid response when needed.
 
-Insurance companies defending trucking claims in Florida are sophisticated and aggressive. Many have Florida-based claims operations familiar with local courts and adjusters. The recent tort reform has emboldened insurers to fight claims more aggressively. You need representation equally experienced in Florida practice to protect your rights.`,
+The trucking industry has significant resources and experienced defense counsel. Insurance companies defending trucking claims employ aggressive tactics to minimize or deny claims. You need representation that matches their resources and knows how to counter their strategies effectively.
+
+A Florida-licensed attorney ensures your case proceeds properly through the Florida legal system. From filing requirements to discovery deadlines to trial procedures, local knowledge prevents costly procedural errors that could jeopardize your claim.`,
 
   faqs: [
     {
-      question: 'What is Florida\'s statute of limitations for truck accident cases?',
-      answer: 'Florida recently shortened its statute of limitations to two years for personal injury and wrongful death claims (changed from four years in 2023). Property damage claims retain a four-year deadline. These shortened deadlines make prompt legal action essential—contact an attorney as soon as possible after a truck accident.'
+      question: 'What is the statute of limitations for truck accident cases in Florida?',
+      answer: 'Florida has a 4 years statute of limitations for personal injury claims and 2 years for wrongful death claims from truck accidents. This means you must file your lawsuit within 4 years of the accident date for personal injury or 2 years of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 4 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
-      question: 'How does Florida\'s comparative negligence law affect my case?',
-      answer: 'Florida changed to modified comparative negligence in 2023. Under this rule, you cannot recover any damages if you are found 51% or more at fault. If you are 50% or less at fault, your recovery is reduced by your percentage of fault. This change from pure comparative negligence makes it more important than ever to establish the trucking company\'s primary responsibility.'
+      question: 'Can I still recover damages if I was partially at fault for a Florida truck accident?',
+      answer: 'Florida follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. For example, if you suffered $1,000,000 in damages but were found 20% at fault, your recovery would be reduced to $800,000. This makes establishing the trucking company\'s primary fault critical in contested cases. Insurance adjusters often try to shift blame to accident victims to reduce or eliminate their responsibility. An experienced Florida truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault through evidence including electronic logging device data, driver qualification files, and maintenance records.'
     },
     {
-      question: 'Does Florida cap damages in truck accident cases?',
-      answer: 'Florida does not have caps on compensatory damages in most truck accident cases. You can pursue full compensation for medical expenses, lost wages, pain and suffering, and other losses. However, Florida law does limit certain types of damages in specific circumstances, so it\'s important to discuss the specifics of your case with an attorney.'
+      question: 'What damages can I recover in a Florida truck accident case?',
+      answer: 'Florida allows recovery of both economic damages (medical expenses, lost wages, property damage, future medical costs, lost earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life, loss of consortium). Economic damages compensate for actual financial losses and are typically proven through medical bills, wage statements, and expert testimony about future costs. Non-economic damages compensate for intangible losses and vary based on injury severity and impact on daily life. Punitive damages may be available in cases involving gross negligence, reckless conduct, or intentional misconduct by the trucking company or driver.'
     },
     {
-      question: 'What if the truck accident was on I-4 or another construction zone?',
-      answer: 'Construction zone accidents involve additional considerations. Contractors may share liability if improper work zone setup contributed to the crash. Florida law provides enhanced penalties for traffic violations in work zones, and this same heightened standard can apply in civil cases. Your attorney will investigate all potentially liable parties.'
+      question: 'How long do trucking companies have to keep records in Florida?',
+      answer: 'Federal regulations require trucking companies to retain driver qualification files for three years after employment ends, hours of service records for six months, vehicle maintenance records for one year plus the time the equipment is in use, and accident registers for three years. However, companies often destroy records as soon as legally permitted—sometimes even sooner. This is why prompt legal action after a truck accident is critical. An experienced Florida truck accident attorney can send preservation letters requiring the trucking company to retain all evidence related to your case, preventing destruction of potentially crucial evidence.'
     },
     {
-      question: 'Can I sue a trucking company based outside Florida?',
-      answer: 'Yes. If a truck accident occurs in Florida, Florida courts have jurisdiction over the case regardless of where the trucking company is headquartered. By operating on Florida highways, out-of-state carriers subject themselves to Florida jurisdiction. Your attorney can file suit in Florida courts and apply Florida law to hold them accountable.'
+      question: 'What evidence is important in a Florida truck accident case?',
+      answer: 'Critical evidence in Florida truck accident cases includes electronic logging device (ELD) data showing driver hours and rest periods, the truck\'s electronic control module (ECM) or black box data capturing speed, braking, and other operational parameters, driver qualification files showing training and driving history, maintenance records revealing any deferred repairs or safety issues, dispatch records showing pressure to meet delivery deadlines, toxicology results from post-accident drug and alcohol testing, and the carrier\'s safety rating and inspection history from FMCSA databases. Physical evidence from the scene, witness statements, and surveillance or dashcam video are also valuable. Time is critical—much of this evidence can be legally destroyed or overwritten if not preserved quickly.'
     },
     {
-      question: 'How do Florida\'s no-fault insurance laws affect truck accident claims?',
-      answer: 'Florida\'s no-fault PIP (Personal Injury Protection) insurance applies to automobile accidents but has limited application in truck accident cases. Commercial trucks over certain weights are exempt from PIP requirements. However, your own PIP coverage may still provide some initial benefits. An experienced attorney will coordinate all available coverage sources.'
+      question: 'Can I sue an out-of-state trucking company for a Florida accident?',
+      answer: 'Yes. If a truck accident occurs in Florida, Florida courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Florida highways, subjects itself to Florida jurisdiction. Your case may be filed in Florida state court or in federal court (the Northern/Middle/Southern District of Florida). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
     },
     {
-      question: 'What recent changes to Florida law affect truck accident cases?',
-      answer: 'Florida\'s 2023 tort reform significantly changed personal injury law, including shortening the statute of limitations from four to two years and changing from pure to modified comparative negligence. These changes make timely action and strong legal representation more important than ever. An attorney current on Florida law is essential.'
+      question: 'What if the truck driver who caused my accident was an independent contractor?',
+      answer: 'Trucking companies often try to avoid liability by classifying drivers as independent contractors rather than employees. However, Florida courts look at the actual relationship—not just what the contract says—to determine whether the trucking company controlled the driver\'s work. Even with true independent contractors, the trucking company may be liable under theories including negligent hiring (failing to properly screen the driver), negligent supervision (failing to ensure compliance with safety regulations), or negligent entrustment (allowing an unqualified driver to operate the truck). The motor carrier may also be directly liable for violations of federal safety regulations that apply regardless of driver classification.'
     }
   ],
 

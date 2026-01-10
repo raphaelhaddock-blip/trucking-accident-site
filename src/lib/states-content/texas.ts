@@ -1,137 +1,158 @@
 import { StateContent } from './types';
 
+/**
+ * Texas - Truck Accident Information
+ *
+ * Annual Truck Accident Deaths: 700+
+ * Registered Commercial Trucks: 600,000+
+ * Major Interstates: I-10, I-20, I-35, I-45, I-30, I-40
+ *
+ * Enhanced by State Enhancement Agent v1.0.0
+ * Last Updated: 2026-01-10T08:16:08.231Z
+ */
+
 export const texas: StateContent = {
   slug: 'texas',
   name: 'Texas',
   abbreviation: 'TX',
   h1: 'Texas Truck Injury Lawyers',
   metaTitle: 'Texas Truck Accident Lawyers | 18-Wheeler Attorneys in TX',
-  metaDescription: 'Injured in a Texas truck accident? Our attorneys fight for victims across the Lone Star State. Free consultation. No fee unless you win.',
+  metaDescription: 'Injured in a Texas truck accident? Our attorneys fight for victims across Texas. Free consultation. No fee unless you win.',
 
-  heroText: `Texas leads the nation in truck accident fatalities. With over 700 people killed annually in collisions involving large trucks, the Lone Star State accounts for more commercial vehicle deaths than any other state. The sheer volume of freight traffic crossing Texas—including international shipping through the Port of Houston and Mexican border crossings—creates conditions for devastating crashes on Texas highways every day.
+  heroText: `Texas presents unique challenges for commercial trucking operations and significant risks for motorists sharing the roads with 18-wheelers. With 700+ people killed annually in collisions involving large trucks, Texas sees its share of devastating commercial vehicle accidents. The state's 600,000+ registered commercial trucks operate on highways that face extreme distances and diverse weather, creating conditions that contribute to serious and fatal crashes.
 
-The Texas trucking industry is massive. More than 500,000 commercial trucks are registered in the state. Major interstate corridors including I-10, I-20, I-35, and I-45 carry millions of 18-wheelers annually, connecting the nation's manufacturing centers to ports and distribution hubs. Oil field traffic in West Texas and the Permian Basin adds specialized hazards. Where there's this much truck traffic, there are truck accidents.
+The Texas trucking industry serves critical economic functions. Oil and gas, Technology, Agriculture, Aerospace, Manufacturing all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 10, Interstate 35, Interstate 45, Interstate 20 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Texas motorists.
 
-Texas law provides important protections for truck accident victims. The state follows a modified comparative negligence rule, allowing you to recover damages as long as you're not more than 50% at fault. Texas also has no caps on economic damages in most truck accident cases, meaning you can pursue full compensation for medical bills, lost wages, and other financial losses. Punitive damages are available when trucking companies act with gross negligence.
+Texas follows modified comparative negligence with a 51% bar for personal injury cases. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a 2 years statute of limitations for personal injury claims, meaning you must file suit within 2 years of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
 
-If you've been injured in a Texas truck accident, time is critical. Texas has a two-year statute of limitations for personal injury claims, and trucking companies begin protecting their interests immediately after a crash. Our Texas truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable under both federal FMCSA regulations and Texas state law.`,
+Weather plays a significant role in Texas truck accidents. During June, July, August, September, October, December, January, February, extreme distances and diverse weather creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
+
+If you have been injured in a Texas truck accident, time is critical. Trucking companies dispatch investigation teams immediately after serious crashes to protect their interests. Evidence including electronic logging device data, driver records, and maintenance logs may be overwritten or destroyed if not preserved quickly. Our Texas truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable under both federal FMCSA regulations and Texas state law.`,
 
   truckingLaws: [
     {
-      title: 'Texas Transportation Code Chapter 545',
-      description: `Texas state law establishes rules of the road that apply to all vehicles, including commercial trucks. This includes regulations on speed, lane usage, passing, and right-of-way. Violations of the Transportation Code can establish negligence in truck accident cases. Commercial vehicles face additional restrictions under Chapter 621-623 regarding size, weight, and load requirements.`
-    },
-    {
-      title: 'Texas Size and Weight Limits',
-      description: `Texas allows a maximum gross vehicle weight of 80,000 pounds on interstate highways, with specific axle weight limits. The state issues oversize and overweight permits for loads exceeding standard limits, requiring special routing, escorts, and travel restrictions. Operating without proper permits or exceeding stated weight limits violates state law.`
+      title: 'Texas Commercial Vehicle Regulations',
+      description: `Texas regulates commercial vehicles under state statutes enforced by the Texas State Patrol and Department of Transportation. The state maintains strict size and weight limits for commercial vehicles, with maximum gross vehicle weight of 80,000 pounds on interstate highways. Oversize and overweight permits are required for loads exceeding standard limits, with specific routing requirements and escort obligations. Texas participates in the International Registration Plan (IRP) and International Fuel Tax Agreement (IFTA), requiring proper registration for carriers operating across state lines. Violations of commercial vehicle regulations can establish negligence in truck accident cases.`
     },
     {
       title: 'Texas Hours of Service Enforcement',
-      description: `While federal HOS regulations apply to interstate carriers, Texas actively enforces these rules through the Texas Department of Public Safety. Texas also participates in FMCSA's Compliance, Safety, Accountability (CSA) program, with state troopers conducting roadside inspections and documenting violations in the federal database.`
+      description: `Texas actively enforces federal Hours of Service regulations through the Texas State Patrol. Officers conduct roadside inspections at weigh stations and portable inspection sites throughout the state. The state participates in FMCSA's Compliance, Safety, Accountability (CSA) program, documenting violations in the federal database. Texas also conducts targeted enforcement operations during high-traffic periods and along major freight corridors. Carriers with poor safety ratings face increased inspection rates when operating in Texas.`
     },
     {
       title: 'Texas Commercial Driver License Requirements',
-      description: `The Texas Department of Public Safety issues CDLs under federal standards but adds state-specific requirements. Texas drivers must pass state knowledge tests and skills tests. The state maintains driver records and can disqualify drivers for violations. Employers must verify CDL status before hiring drivers to operate in Texas.`
-    },
-    {
-      title: 'Texas Motor Carrier Registration',
-      description: `Motor carriers operating in Texas must register with the Texas Department of Motor Vehicles. Intrastate carriers (operating solely within Texas) must obtain Texas-specific operating authority separate from federal authority. Registration requirements include proof of insurance at state-mandated minimum levels.`
+      description: `The Texas Department of Motor Vehicles issues Commercial Driver's Licenses under federal standards with state-specific requirements. Drivers must pass written knowledge tests covering general commercial vehicle operation, air brakes, and any endorsements sought. Skills testing includes pre-trip inspection, basic control maneuvers, and on-road driving. Texas maintains driver records and can disqualify drivers for violations including DUI, leaving the scene of an accident, or using a commercial vehicle in the commission of a felony. Medical certification requirements must be met and maintained.`
     },
     {
       title: 'Texas Drug and Alcohol Testing',
-      description: `Texas enforces federal drug and alcohol testing requirements and has additional state laws prohibiting impaired commercial driving. Texas DWI laws apply to commercial drivers with a lower BAC threshold of 0.04%. Refusal to submit to testing results in automatic license suspension under Texas implied consent laws.`
+      description: `Texas enforces federal drug and alcohol testing requirements for commercial drivers and has additional state laws prohibiting impaired commercial driving. Texas DUI laws apply to commercial drivers with a lower BAC threshold of 0.04%. Pre-employment, random, post-accident, reasonable suspicion, return-to-duty, and follow-up testing are all required. The state maintains a Drug and Alcohol Clearinghouse participation requirement, and employers must query the clearinghouse before hiring. Refusal to submit to testing results in license disqualification.`
+    },
+    {
+      title: 'Texas Motor Carrier Insurance Requirements',
+      description: `Motor carriers operating in Texas must maintain minimum levels of liability insurance as required by federal and state law. For-hire carriers transporting general freight must carry at least $750,000 in liability coverage. Carriers transporting hazardous materials face higher requirements up to $5,000,000 depending on the materials carried. Texas requires proof of insurance for vehicle registration and operating authority. Carriers must file proof of financial responsibility with the state. Self-insurance is permitted for carriers meeting strict financial requirements.`
+    },
+    {
+      title: 'Texas Vehicle Inspection Requirements',
+      description: `Texas requires annual safety inspections for commercial vehicles registered in the state. The Texas State Patrol conducts roadside inspections using federal CVSA criteria. Drivers must perform and document pre-trip and post-trip inspections daily. Driver Vehicle Inspection Reports (DVIRs) must note any defects or deficiencies. Carriers must repair or document repairs for reported defects before the vehicle returns to service. Out-of-service violations result in the vehicle being immediately removed from operation until repairs are completed.`
     }
   ],
 
   corridors: [
     {
-      name: 'Interstate 10 (I-10)',
-      description: `Stretching from El Paso through San Antonio and Houston to the Louisiana border, I-10 is Texas's primary east-west trucking corridor. This interstate carries massive volumes of freight between California ports, Texas distribution centers, and the eastern United States. The stretch through Houston is one of the most dangerous highways in America for truck accidents, with complex interchanges and heavy local traffic mixing with through freight.`
+      name: 'Interstate 10',
+      description: `Interstate 10 serves as a critical trucking corridor in Texas. Primary east-west route from El Paso through San Antonio and Houston to Louisiana. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Texas State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and extreme distances and diverse weather makes this route particularly hazardous during June, July, August.`
     },
     {
-      name: 'Interstate 35 (I-35)',
-      description: `The NAFTA highway connecting Mexico through Texas to the Midwest, I-35 carries enormous international freight volumes. From the border crossing at Laredo (the busiest land port in the Western Hemisphere) through San Antonio, Austin, and Dallas-Fort Worth to Oklahoma, this corridor sees constant 18-wheeler traffic. The Austin and Dallas-Fort Worth urban segments are particularly congested and dangerous.`
+      name: 'Interstate 35',
+      description: `Interstate 35 serves as a critical trucking corridor in Texas. Major NAFTA corridor from Laredo through Austin and Dallas to Oklahoma. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Texas State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and extreme distances and diverse weather makes this route particularly hazardous during June, July, August.`
     },
     {
-      name: 'Interstate 20 (I-20)',
-      description: `Running east-west across North Texas from the Dallas-Fort Worth Metroplex through Midland-Odessa to the New Mexico border, I-20 serves both cross-country freight and heavy oil field traffic. The Permian Basin section sees specialized oilfield vehicles, tankers carrying petroleum products, and equipment haulers mixing with standard commercial traffic.`
+      name: 'Interstate 45',
+      description: `Interstate 45 serves as a critical trucking corridor in Texas. Route connecting Dallas to Houston and Galveston. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Texas State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and extreme distances and diverse weather makes this route particularly hazardous during June, July, August.`
     },
     {
-      name: 'Interstate 45 (I-45)',
-      description: `Connecting Dallas-Fort Worth to Houston and the Port of Houston, I-45 carries heavy freight volumes between Texas's two largest metropolitan areas and the nation's largest port complex. This corridor sees particularly dense truck traffic, with warehousing and distribution centers clustered along its entire length.`
-    },
-    {
-      name: 'US Highway 59 / Interstate 69 (I-69)',
-      description: `Part of the planned Interstate 69 corridor, this highway connects the Rio Grande Valley through Houston to East Texas and beyond. Heavy agricultural traffic from the Valley, international shipping from border crossings, and port-related freight all use this route. Construction and improvements add complexity for truckers navigating this corridor.`
+      name: 'Interstate 20',
+      description: `Interstate 20 serves as a critical trucking corridor in Texas. Southern east-west route through Midland/Odessa oil country. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Texas State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and extreme distances and diverse weather makes this route particularly hazardous during June, July, August.`
     }
   ],
 
   negligenceRule: {
     type: 'modified-51',
     description: 'Texas follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault.',
-    details: `Under Texas Civil Practice and Remedies Code Section 33.001, your damages are reduced by your percentage of fault. For example, if you suffered $1,000,000 in damages but were 30% at fault, you could recover $700,000. However, if a jury finds you 51% or more responsible for the accident, you recover nothing. This rule makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility. An experienced Texas truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault.`
+    details: `Under Texas law, your damages are reduced by your percentage of fault, and recovery is barred if you exceed the threshold. For example, if you suffered $1,000,000 in damages but were 30% at fault, you could recover $700,000. However, if a jury finds you 51% or more responsible for the accident, you recover nothing.
+
+This rule makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility. They may claim you were speeding, failed to yield, or were distracted—anything to increase your percentage of fault. An experienced Texas truck accident lawyer knows how to counter these tactics through thorough investigation and evidence preservation.
+
+Electronic logging device data, driver qualification files, maintenance records, and the carrier's safety history all help establish the trucking company's negligence. Federal Motor Carrier Safety Administration regulations set minimum standards, and violations frequently appear in accident investigations. When carriers cut corners on safety to increase profits, Texas law holds them accountable.`
   },
 
   statuteOfLimitations: {
     personalInjury: '2 Years',
     wrongfulDeath: '2 Years',
     propertyDamage: '2 Years',
-    details: `Texas has a two-year statute of limitations for most truck accident claims under Texas Civil Practice and Remedies Code Section 16.003. This means you must file your lawsuit within two years of the accident date. The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated. However, waiting to file is always risky—evidence disappears, witnesses forget details, and trucking companies may legally destroy records after required retention periods. Contact an attorney promptly to protect your rights.`
+    details: `Texas has a 2 years statute of limitations for personal injury claims and 2 years for wrongful death claims. Property damage claims must be filed within 2 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+
+The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
+
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+
+Contact an attorney promptly after any serious Texas truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
 
   statistics: [
     { label: 'Annual Truck Accident Deaths', value: '700+' },
-    { label: 'Registered Commercial Trucks', value: '500,000+' },
-    { label: 'Miles of Interstate Highway', value: '3,233' },
-    { label: 'Border Truck Crossings Daily', value: '18,000+' },
+    { label: 'Registered Commercial Trucks', value: '600,000+' },
+    { label: 'Major Interstate Highways', value: 'I-10, I-20, I-35, I-45, I-30, I-40' },
+    { label: 'Primary Weather Hazard', value: 'Extreme distances and diverse weather' }
   ],
 
-  courtInfo: `Truck accident cases in Texas may be filed in state district courts or federal courts depending on the parties involved and amounts in controversy. Most cases against trucking companies involve defendants from multiple states, potentially qualifying for federal court under diversity jurisdiction if the amount in controversy exceeds $75,000.
+  courtInfo: `Truck accident cases in Texas may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Texas state courts follow state procedural rules and apply Texas substantive law. The Northern/Southern/Eastern/Western District of Texas federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-Texas state courts follow the Texas Rules of Civil Procedure, which include specific provisions for discovery that can be crucial in trucking cases. Texas allows broad discovery of corporate defendants, including depositions of company representatives, production of safety records, and inspection of vehicles and maintenance facilities.
+Texas state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
 
-Venue in Texas is governed by Chapter 15 of the Texas Civil Practice and Remedies Code. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can significantly impact case outcomes, as different Texas counties have varying jury pools and judicial tendencies.
+Both state and federal courts in Texas allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
-Texas does not cap economic damages in personal injury cases, allowing full recovery of medical expenses, lost wages, and other financial losses. Non-economic damages (pain and suffering) are also uncapped in most trucking accident cases, though punitive damages are capped at the greater of $200,000 or twice economic damages plus $750,000 in non-economic damages.`,
+Texas does not cap economic damages in personal injury cases, allowing full recovery of medical expenses, lost wages, future medical costs, and other financial losses. Non-economic damages (pain and suffering) may be subject to certain limitations depending on the circumstances. Punitive damages are available in cases involving egregious misconduct, though caps may apply.`,
 
-  lastUpdated: '2026-01-08',
+  lastUpdated: '2026-01-10',
 
   whyHireLocal: `Texas truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Texas state law. Local counsel knows the Texas court system, local procedures, and the judges who will hear your case. They understand how Texas juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
 
-Texas presents unique challenges for truck accident litigation. The state's trucking industry is politically powerful, and insurance companies defending trucking claims often have deep resources and aggressive tactics. Major trucking companies headquartered in Texas—including several of the nation's largest carriers—know the local legal landscape intimately.
+Texas presents unique challenges for truck accident litigation. The state's extreme distances and diverse weather creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 
-A Texas truck accident lawyer also understands the state's massive trucking infrastructure. They know the dangerous corridors, understand oilfield operations, and can investigate accidents involving Mexican carriers crossing at Texas border points. This local knowledge helps build stronger cases and anticipate defenses specific to Texas trucking operations.
+Local attorneys also have established relationships with accident reconstruction experts, medical professionals, and investigators familiar with Texas conditions. They can quickly deploy resources to preserve evidence before it disappears. Time-zone convenience and proximity to accident scenes enable rapid response when needed.
 
-Finally, Texas courts have specific rules and procedures that experienced local attorneys navigate daily. From filing requirements to discovery deadlines to trial procedures, a Texas-licensed attorney ensures your case proceeds properly through the Texas legal system. Many trucking defense firms are based in Texas—you need representation equally familiar with local practice.`,
+The trucking industry has significant resources and experienced defense counsel. Insurance companies defending trucking claims employ aggressive tactics to minimize or deny claims. You need representation that matches their resources and knows how to counter their strategies effectively.
+
+A Texas-licensed attorney ensures your case proceeds properly through the Texas legal system. From filing requirements to discovery deadlines to trial procedures, local knowledge prevents costly procedural errors that could jeopardize your claim.`,
 
   faqs: [
     {
       question: 'What is the statute of limitations for truck accident cases in Texas?',
-      answer: 'Texas has a two-year statute of limitations for personal injury and wrongful death claims from truck accidents. This means you must file your lawsuit within two years of the accident date. Missing this deadline typically bars your claim forever, so it\'s important to contact an attorney promptly after any serious truck accident.'
+      answer: 'Texas has a 2 years statute of limitations for personal injury claims and 2 years for wrongful death claims from truck accidents. This means you must file your lawsuit within 2 years of the accident date for personal injury or 2 years of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 2 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
       question: 'Can I still recover damages if I was partially at fault for a Texas truck accident?',
-      answer: 'Yes, but Texas follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault for the accident. Your damages will be reduced by your percentage of fault. However, if you are found 51% or more at fault, you cannot recover any damages. This makes establishing the trucking company\'s primary fault critical in contested cases.'
+      answer: 'Texas follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. For example, if you suffered $1,000,000 in damages but were found 20% at fault, your recovery would be reduced to $800,000. This makes establishing the trucking company\'s primary fault critical in contested cases. Insurance adjusters often try to shift blame to accident victims to reduce or eliminate their responsibility. An experienced Texas truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault through evidence including electronic logging device data, driver qualification files, and maintenance records.'
     },
     {
       question: 'What damages can I recover in a Texas truck accident case?',
-      answer: 'Texas allows recovery of both economic damages (medical expenses, lost wages, property damage, future earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life). Texas does not cap economic damages, and non-economic damages are uncapped in most trucking cases. Punitive damages may also be available if the trucking company acted with gross negligence.'
+      answer: 'Texas allows recovery of both economic damages (medical expenses, lost wages, property damage, future medical costs, lost earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life, loss of consortium). Economic damages compensate for actual financial losses and are typically proven through medical bills, wage statements, and expert testimony about future costs. Non-economic damages compensate for intangible losses and vary based on injury severity and impact on daily life. Punitive damages may be available in cases involving gross negligence, reckless conduct, or intentional misconduct by the trucking company or driver.'
     },
     {
       question: 'How long do trucking companies have to keep records in Texas?',
-      answer: 'Federal regulations require trucking companies to retain driver qualification files, hours of service records, vehicle inspection reports, and accident records for specific periods ranging from one to three years. However, companies often destroy records as soon as legally permitted. This is why prompt legal action after a truck accident is critical—an attorney can send preservation letters requiring the company to retain all evidence related to your case.'
+      answer: 'Federal regulations require trucking companies to retain driver qualification files for three years after employment ends, hours of service records for six months, vehicle maintenance records for one year plus the time the equipment is in use, and accident registers for three years. However, companies often destroy records as soon as legally permitted—sometimes even sooner. This is why prompt legal action after a truck accident is critical. An experienced Texas truck accident attorney can send preservation letters requiring the trucking company to retain all evidence related to your case, preventing destruction of potentially crucial evidence.'
     },
     {
-      question: 'Can I sue a trucking company based in another state for a Texas accident?',
-      answer: 'Yes. If a truck accident occurs in Texas, Texas courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Texas highways, subjects itself to Texas jurisdiction. Your attorney can file suit in Texas state or federal court, applying Texas law to your claims while potentially holding out-of-state carriers accountable.'
+      question: 'What evidence is important in a Texas truck accident case?',
+      answer: 'Critical evidence in Texas truck accident cases includes electronic logging device (ELD) data showing driver hours and rest periods, the truck\'s electronic control module (ECM) or black box data capturing speed, braking, and other operational parameters, driver qualification files showing training and driving history, maintenance records revealing any deferred repairs or safety issues, dispatch records showing pressure to meet delivery deadlines, toxicology results from post-accident drug and alcohol testing, and the carrier\'s safety rating and inspection history from FMCSA databases. Physical evidence from the scene, witness statements, and surveillance or dashcam video are also valuable. Time is critical—much of this evidence can be legally destroyed or overwritten if not preserved quickly.'
     },
     {
-      question: 'What if the truck driver who hit me was an independent contractor?',
-      answer: 'Trucking companies often try to avoid liability by classifying drivers as independent contractors rather than employees. However, Texas courts look at the actual relationship—not just what the contract says—to determine whether the trucking company controlled the driver\'s work. Even with independent contractors, the trucking company may be liable under theories including negligent hiring, negligent supervision, or negligent entrustment of the vehicle.'
+      question: 'Can I sue an out-of-state trucking company for a Texas accident?',
+      answer: 'Yes. If a truck accident occurs in Texas, Texas courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Texas highways, subjects itself to Texas jurisdiction. Your case may be filed in Texas state court or in federal court (the Northern/Southern/Eastern/Western District of Texas). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
     },
     {
-      question: 'How do Texas oilfield truck accidents differ from other truck accidents?',
-      answer: 'Oilfield trucking involves specialized hazards including tanker trucks carrying flammable materials, oversized equipment haulers, and frequent operation on rural roads. Many oilfield trucks operate intrastate (only within Texas), meaning they\'re regulated by Texas state law rather than federal FMCSA regulations in some aspects. Oilfield operations also involve multiple contractors, complicating liability determinations. Experienced Texas truck accident attorneys understand these unique factors.'
+      question: 'What if the truck driver who caused my accident was an independent contractor?',
+      answer: 'Trucking companies often try to avoid liability by classifying drivers as independent contractors rather than employees. However, Texas courts look at the actual relationship—not just what the contract says—to determine whether the trucking company controlled the driver\'s work. Even with true independent contractors, the trucking company may be liable under theories including negligent hiring (failing to properly screen the driver), negligent supervision (failing to ensure compliance with safety regulations), or negligent entrustment (allowing an unqualified driver to operate the truck). The motor carrier may also be directly liable for violations of federal safety regulations that apply regardless of driver classification.'
     }
   ],
 

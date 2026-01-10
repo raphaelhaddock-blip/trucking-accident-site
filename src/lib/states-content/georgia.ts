@@ -1,139 +1,160 @@
 import { StateContent } from './types';
 
+/**
+ * Georgia - Truck Accident Information
+ *
+ * Annual Truck Accident Deaths: 200+
+ * Registered Commercial Trucks: 180,000+
+ * Major Interstates: I-75, I-85, I-20, I-95, I-16
+ *
+ * Enhanced by State Enhancement Agent v1.0.0
+ * Last Updated: 2026-01-10T08:15:57.485Z
+ */
+
 export const georgia: StateContent = {
   slug: 'georgia',
   name: 'Georgia',
   abbreviation: 'GA',
   h1: 'Georgia Truck Injury Lawyers',
   metaTitle: 'Georgia Truck Accident Lawyers | 18-Wheeler Attorneys in GA',
-  metaDescription: 'Injured in a Georgia truck accident? Our attorneys know GA\'s laws and fight for maximum compensation. Free consultation. No fee unless you win.',
+  metaDescription: 'Injured in a Georgia truck accident? Our attorneys fight for victims across Georgia. Free consultation. No fee unless you win.',
 
-  heroText: `Georgia ranks fourth in the nation for truck accident fatalities, with approximately 250 people killed annually in collisions involving large commercial vehicles. Atlanta's position as the logistics hub of the Southeast—home to the world's busiest airport and a convergence point for major interstates—creates constant heavy truck traffic throughout the state.
+  heroText: `Georgia presents unique challenges for commercial trucking operations and significant risks for motorists sharing the roads with 18-wheelers. With 200+ people killed annually in collisions involving large trucks, Georgia sees its share of devastating commercial vehicle accidents. The state's 180,000+ registered commercial trucks operate on highways that face atlanta congestion and severe storms, creating conditions that contribute to serious and fatal crashes.
 
-The Atlanta metropolitan area sees some of the worst traffic congestion in America, with 18-wheelers mixing with commuter traffic on highways that were never designed for current volumes. Interstate 285, the perimeter highway, and Interstate 75/85 through downtown Atlanta are perpetually clogged with freight and passenger vehicles competing for limited road space.
+The Georgia trucking industry serves critical economic functions. Logistics, Film/Entertainment, Technology, Agriculture, Manufacturing all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 75, Interstate 85, Interstate 20, Interstate 95 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Georgia motorists.
 
-Georgia's ports and distribution infrastructure add to trucking volume. The Port of Savannah is the fastest-growing container port in America and the third-busiest in the nation. Thousands of trucks daily move goods from Savannah to Atlanta and beyond, using I-16, I-95, and I-20. Major distribution centers for Amazon, Home Depot, UPS, and other companies attract constant truck traffic.
+Georgia follows modified comparative negligence with a 50% bar for personal injury cases. You can recover damages if you are 49% or less at fault, but recovery is barred if you are 50% or more at fault. The state has a 2 years statute of limitations for personal injury claims, meaning you must file suit within 2 years of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
 
-Georgia law provides important protections for accident victims, but understanding the state's modified comparative negligence rule is essential. Georgia follows a 50% bar rule—if you're found 50% or more at fault, you recover nothing. Our Georgia truck accident lawyers know how to build cases that establish carrier liability and protect your right to full compensation.`,
+Weather plays a significant role in Georgia truck accidents. During March, April, May, July, August, atlanta congestion and severe storms creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
+
+If you have been injured in a Georgia truck accident, time is critical. Trucking companies dispatch investigation teams immediately after serious crashes to protect their interests. Evidence including electronic logging device data, driver records, and maintenance logs may be overwritten or destroyed if not preserved quickly. Our Georgia truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable under both federal FMCSA regulations and Georgia state law.`,
 
   truckingLaws: [
     {
-      title: 'Georgia Motor Carrier Regulations (OCGA Title 40, Chapter 1)',
-      description: `Georgia's motor carrier regulations establish state requirements for commercial vehicle operations. These include registration, safety standards, and operating authority requirements. The Georgia Department of Public Safety enforces these regulations through the Motor Carrier Compliance Division, which conducts inspections and compliance reviews.`
-    },
-    {
-      title: 'Georgia Size and Weight Limits',
-      description: `Georgia enforces strict weight limits on commercial vehicles. Maximum gross vehicle weight is 80,000 pounds on interstate highways, with specific axle weight limits. The Georgia Department of Transportation issues overweight permits for loads exceeding standard limits. Operating overweight without proper permits violates state law and can establish negligence.`
-    },
-    {
-      title: 'Georgia Commercial Driver License Requirements',
-      description: `The Georgia Department of Driver Services issues CDLs under federal standards. Georgia requires state-specific knowledge and skills tests. The state disqualifies drivers for serious violations and maintains records in the national database. All CDL holders must comply with Georgia's medical certification requirements.`
+      title: 'Georgia Commercial Vehicle Regulations',
+      description: `Georgia regulates commercial vehicles under state statutes enforced by the Georgia State Patrol and Department of Transportation. The state maintains strict size and weight limits for commercial vehicles, with maximum gross vehicle weight of 80,000 pounds on interstate highways. Oversize and overweight permits are required for loads exceeding standard limits, with specific routing requirements and escort obligations. Georgia participates in the International Registration Plan (IRP) and International Fuel Tax Agreement (IFTA), requiring proper registration for carriers operating across state lines. Violations of commercial vehicle regulations can establish negligence in truck accident cases.`
     },
     {
       title: 'Georgia Hours of Service Enforcement',
-      description: `While federal HOS regulations apply to interstate carriers, Georgia State Patrol and the Motor Carrier Compliance Division actively enforce these rules. Georgia participates in FMCSA's Motor Carrier Safety Assistance Program, with officers trained specifically in commercial vehicle inspection and HOS compliance verification.`
+      description: `Georgia actively enforces federal Hours of Service regulations through the Georgia State Patrol. Officers conduct roadside inspections at weigh stations and portable inspection sites throughout the state. The state participates in FMCSA's Compliance, Safety, Accountability (CSA) program, documenting violations in the federal database. Georgia also conducts targeted enforcement operations during high-traffic periods and along major freight corridors. Carriers with poor safety ratings face increased inspection rates when operating in Georgia.`
     },
     {
-      title: 'Georgia Port Trucking Regulations',
-      description: `The Port of Savannah and Port of Brunswick have specific requirements for drayage operations. These include security protocols, environmental standards, and operating procedures. Carriers serving Georgia ports must comply with Georgia Ports Authority regulations in addition to standard federal and state requirements.`
+      title: 'Georgia Commercial Driver License Requirements',
+      description: `The Georgia Department of Motor Vehicles issues Commercial Driver's Licenses under federal standards with state-specific requirements. Drivers must pass written knowledge tests covering general commercial vehicle operation, air brakes, and any endorsements sought. Skills testing includes pre-trip inspection, basic control maneuvers, and on-road driving. Georgia maintains driver records and can disqualify drivers for violations including DUI, leaving the scene of an accident, or using a commercial vehicle in the commission of a felony. Medical certification requirements must be met and maintained.`
     },
     {
-      title: 'Georgia Hazardous Materials Transportation',
-      description: `Georgia regulations adopt federal hazmat transportation standards while adding state routing requirements for certain materials. The Georgia State Patrol has specialized hazmat enforcement capabilities. Carriers transporting dangerous goods must comply with Georgia-specific routing and reporting requirements.`
+      title: 'Georgia Drug and Alcohol Testing',
+      description: `Georgia enforces federal drug and alcohol testing requirements for commercial drivers and has additional state laws prohibiting impaired commercial driving. Georgia DUI laws apply to commercial drivers with a lower BAC threshold of 0.04%. Pre-employment, random, post-accident, reasonable suspicion, return-to-duty, and follow-up testing are all required. The state maintains a Drug and Alcohol Clearinghouse participation requirement, and employers must query the clearinghouse before hiring. Refusal to submit to testing results in license disqualification.`
+    },
+    {
+      title: 'Georgia Motor Carrier Insurance Requirements',
+      description: `Motor carriers operating in Georgia must maintain minimum levels of liability insurance as required by federal and state law. For-hire carriers transporting general freight must carry at least $750,000 in liability coverage. Carriers transporting hazardous materials face higher requirements up to $5,000,000 depending on the materials carried. Georgia requires proof of insurance for vehicle registration and operating authority. Carriers must file proof of financial responsibility with the state. Self-insurance is permitted for carriers meeting strict financial requirements.`
+    },
+    {
+      title: 'Georgia Vehicle Inspection Requirements',
+      description: `Georgia requires annual safety inspections for commercial vehicles registered in the state. The Georgia State Patrol conducts roadside inspections using federal CVSA criteria. Drivers must perform and document pre-trip and post-trip inspections daily. Driver Vehicle Inspection Reports (DVIRs) must note any defects or deficiencies. Carriers must repair or document repairs for reported defects before the vehicle returns to service. Out-of-service violations result in the vehicle being immediately removed from operation until repairs are completed.`
     }
   ],
 
   corridors: [
     {
-      name: 'Interstate 75/85 Through Atlanta',
-      description: `The merged I-75/I-85 corridor through downtown Atlanta is one of the most dangerous stretches of highway in America. Known as the "Downtown Connector," this corridor carries massive truck traffic serving Atlanta's distribution centers while mixing with dense commuter traffic. Congestion, construction, and complex interchanges create constant accident risk.`
+      name: 'Interstate 75',
+      description: `Interstate 75 serves as a critical trucking corridor in Georgia. Major north-south corridor from Tennessee through Atlanta to Florida. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Georgia State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and atlanta congestion and severe storms makes this route particularly hazardous during March, April, May.`
     },
     {
-      name: 'Interstate 285 (The Perimeter)',
-      description: `Encircling Atlanta, I-285 carries heavy truck traffic as carriers avoid the congested downtown connector. Major trucking hubs and distribution centers cluster along I-285, generating constant 18-wheeler traffic. The highway's curves and interchanges with radiating interstates create numerous high-risk areas.`
+      name: 'Interstate 85',
+      description: `Interstate 85 serves as a critical trucking corridor in Georgia. Northeast corridor from Atlanta to South Carolina. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Georgia State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and atlanta congestion and severe storms makes this route particularly hazardous during March, April, May.`
     },
     {
-      name: 'Interstate 20 (I-20)',
-      description: `Running east-west through Atlanta from Alabama to Augusta and South Carolina, I-20 carries significant freight traffic. The corridor connects Atlanta to Augusta and provides access to I-95 and East Coast markets. Heavy truck traffic and commuter congestion create dangerous conditions throughout the metro area.`
+      name: 'Interstate 20',
+      description: `Interstate 20 serves as a critical trucking corridor in Georgia. East-west route through Atlanta connecting Alabama to South Carolina. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Georgia State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and atlanta congestion and severe storms makes this route particularly hazardous during March, April, May.`
     },
     {
-      name: 'Interstate 16 (I-16)',
-      description: `Connecting Savannah to Macon and I-75, I-16 is the primary route for Port of Savannah freight moving inland. Thousands of container trucks use this corridor daily. The highway sees increasing traffic as Savannah port operations expand, with truck accidents becoming more frequent.`
-    },
-    {
-      name: 'Interstate 95 (I-95)',
-      description: `Georgia's section of I-95 runs along the coast from Florida to South Carolina, carrying north-south freight traffic and providing access to the Port of Savannah. The Savannah area interchanges with I-16 see particularly heavy truck traffic. This corridor is part of the main East Coast trucking route.`
+      name: 'Interstate 95',
+      description: `Interstate 95 serves as a critical trucking corridor in Georgia. Coastal route from South Carolina to Florida. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Georgia State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and atlanta congestion and severe storms makes this route particularly hazardous during March, April, May.`
     }
   ],
 
   negligenceRule: {
     type: 'modified-50',
-    description: 'Georgia follows modified comparative negligence with a 50% bar. You cannot recover any damages if found 50% or more at fault for the accident.',
-    details: `Under Georgia's modified comparative negligence rule (OCGA § 51-12-33), you can only recover damages if you were less than 50% at fault for the accident. If a jury finds you 50% or more responsible, you receive nothing. If you are 49% at fault or less, your damages are reduced by your percentage of fault. This strict rule means trucking companies will aggressively try to shift blame to victims. Experienced legal representation is essential to establish the carrier's greater responsibility and protect your right to recovery.`
+    description: 'Georgia follows modified comparative negligence with a 50% bar. You can recover damages if you are 49% or less at fault, but recovery is barred if you are 50% or more at fault.',
+    details: `Under Georgia law, your damages are reduced by your percentage of fault, and recovery is barred if you exceed the threshold. For example, if you suffered $1,000,000 in damages but were 30% at fault, you could recover $700,000. However, if a jury finds you 50% or more responsible for the accident, you recover nothing.
+
+This rule makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility. They may claim you were speeding, failed to yield, or were distracted—anything to increase your percentage of fault. An experienced Georgia truck accident lawyer knows how to counter these tactics through thorough investigation and evidence preservation.
+
+Electronic logging device data, driver qualification files, maintenance records, and the carrier's safety history all help establish the trucking company's negligence. Federal Motor Carrier Safety Administration regulations set minimum standards, and violations frequently appear in accident investigations. When carriers cut corners on safety to increase profits, Georgia law holds them accountable.`
   },
 
   statuteOfLimitations: {
     personalInjury: '2 Years',
     wrongfulDeath: '2 Years',
     propertyDamage: '4 Years',
-    details: `Georgia Code section 9-3-33 establishes a two-year statute of limitations for personal injury and wrongful death claims. Property damage claims have a four-year deadline under OCGA 9-3-30. Claims against Georgia state agencies have a two-year deadline but require an ante litem notice filed within one year. Cities and counties have their own notice requirements. Missing these deadlines bars your claim, so prompt legal action is essential.`
+    details: `Georgia has a 2 years statute of limitations for personal injury claims and 2 years for wrongful death claims. Property damage claims must be filed within 4 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+
+The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
+
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+
+Contact an attorney promptly after any serious Georgia truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
 
   statistics: [
-    { label: 'Annual Truck Accident Deaths', value: '250+' },
-    { label: 'Port of Savannah TEUs/Year', value: '5.8M' },
-    { label: 'Atlanta Metro Area Population', value: '6.2M' },
-    { label: 'Miles of Interstate Highway', value: '1,244' },
+    { label: 'Annual Truck Accident Deaths', value: '200+' },
+    { label: 'Registered Commercial Trucks', value: '180,000+' },
+    { label: 'Major Interstate Highways', value: 'I-75, I-85, I-20, I-95, I-16' },
+    { label: 'Primary Weather Hazard', value: 'Atlanta congestion and severe storms' }
   ],
 
-  courtInfo: `Georgia truck accident cases may be filed in state Superior Courts or federal courts. Federal court jurisdiction exists when parties are from different states and the amount in controversy exceeds $75,000—common in trucking cases involving out-of-state carriers.
+  courtInfo: `Truck accident cases in Georgia may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Georgia state courts follow state procedural rules and apply Georgia substantive law. The Northern/Middle/Southern District of Georgia federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-Georgia Superior Courts have general jurisdiction over civil matters. Venue is typically proper in the county where the defendant resides, where the accident occurred, or where the defendant does business. Georgia's three federal judicial districts (Northern, Middle, and Southern) handle diversity cases based on where the accident occurred.
+Georgia state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
 
-Georgia allows broad civil discovery including depositions, document requests, and interrogatories. The state permits expert testimony on trucking standards and accident reconstruction. Georgia's Civil Practice Act (OCGA Title 9) governs procedural requirements.
+Both state and federal courts in Georgia allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
-Georgia does not cap compensatory damages in most personal injury cases, though punitive damages are capped at $250,000 in most situations (with exceptions for cases involving intentional conduct or specific intent to harm). Understanding these rules affects case strategy and settlement negotiations.`,
+Georgia does not cap economic damages in personal injury cases, allowing full recovery of medical expenses, lost wages, future medical costs, and other financial losses. Non-economic damages (pain and suffering) may be subject to certain limitations depending on the circumstances. Punitive damages are available in cases involving egregious misconduct, though caps may apply.`,
 
-  lastUpdated: '2026-01-08',
+  lastUpdated: '2026-01-10',
 
-  whyHireLocal: `Georgia truck accident cases demand attorneys who understand the state's unique transportation landscape. Atlanta's role as the Southeast's logistics hub means local lawyers regularly handle cases involving major carriers, distribution operations, and port-related trucking. This experience translates to understanding industry practices and knowing where to find critical evidence.
+  whyHireLocal: `Georgia truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Georgia state law. Local counsel knows the Georgia court system, local procedures, and the judges who will hear your case. They understand how Georgia juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
 
-Georgia's modified comparative negligence rule with its 50% bar creates unique strategic challenges. Insurance companies aggressively try to push victim fault to that 50% threshold. Experienced Georgia attorneys know how to counter these tactics, build strong causation cases, and protect clients from blame-shifting.
+Georgia presents unique challenges for truck accident litigation. The state's atlanta congestion and severe storms creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 
-Local counsel also understands Georgia's court system. From Fulton County Superior Court handling Atlanta-area cases to the federal Northern District courthouse downtown, familiarity with local procedures, judges, and juries matters. Georgia attorneys know which experts resonate with local fact-finders and how to present trucking cases effectively.
+Local attorneys also have established relationships with accident reconstruction experts, medical professionals, and investigators familiar with Georgia conditions. They can quickly deploy resources to preserve evidence before it disappears. Time-zone convenience and proximity to accident scenes enable rapid response when needed.
 
-The trucking defense bar in Georgia is well-established and aggressive. Major insurance carriers have Georgia-based claims operations and defense counsel. You need representation equally experienced in Georgia practice to match their resources and knowledge.`,
+The trucking industry has significant resources and experienced defense counsel. Insurance companies defending trucking claims employ aggressive tactics to minimize or deny claims. You need representation that matches their resources and knows how to counter their strategies effectively.
+
+A Georgia-licensed attorney ensures your case proceeds properly through the Georgia legal system. From filing requirements to discovery deadlines to trial procedures, local knowledge prevents costly procedural errors that could jeopardize your claim.`,
 
   faqs: [
     {
-      question: 'What is Georgia\'s statute of limitations for truck accident claims?',
-      answer: 'Georgia has a two-year statute of limitations for personal injury and wrongful death claims from truck accidents. Property damage claims have four years. Claims against government entities require additional notice within specific timeframes. Missing these deadlines typically bars your claim forever, so contacting an attorney promptly is essential.'
+      question: 'What is the statute of limitations for truck accident cases in Georgia?',
+      answer: 'Georgia has a 2 years statute of limitations for personal injury claims and 2 years for wrongful death claims from truck accidents. This means you must file your lawsuit within 2 years of the accident date for personal injury or 2 years of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 4 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
-      question: 'How does Georgia\'s comparative negligence law work?',
-      answer: 'Georgia follows modified comparative negligence with a 50% bar. If you are found 50% or more at fault for the accident, you cannot recover any damages. If you are 49% or less at fault, your damages are reduced by your percentage of fault. This strict rule makes establishing the trucking company\'s greater responsibility critical to your case.'
+      question: 'Can I still recover damages if I was partially at fault for a Georgia truck accident?',
+      answer: 'Georgia follows modified comparative negligence with a 50% bar. You can recover damages if you are 49% or less at fault, but recovery is barred if you are 50% or more at fault. For example, if you suffered $1,000,000 in damages but were found 20% at fault, your recovery would be reduced to $800,000. This makes establishing the trucking company\'s primary fault critical in contested cases. Insurance adjusters often try to shift blame to accident victims to reduce or eliminate their responsibility. An experienced Georgia truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault through evidence including electronic logging device data, driver qualification files, and maintenance records.'
     },
     {
-      question: 'Does Georgia cap damages in truck accident cases?',
-      answer: 'Georgia does not cap compensatory damages (medical expenses, lost wages, pain and suffering) in most personal injury cases. However, punitive damages are generally capped at $250,000 except in cases involving intentional conduct or specific intent to harm. No caps apply to compensatory damages in trucking cases.'
+      question: 'What damages can I recover in a Georgia truck accident case?',
+      answer: 'Georgia allows recovery of both economic damages (medical expenses, lost wages, property damage, future medical costs, lost earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life, loss of consortium). Economic damages compensate for actual financial losses and are typically proven through medical bills, wage statements, and expert testimony about future costs. Non-economic damages compensate for intangible losses and vary based on injury severity and impact on daily life. Punitive damages may be available in cases involving gross negligence, reckless conduct, or intentional misconduct by the trucking company or driver.'
     },
     {
-      question: 'What if my accident involved a truck from the Port of Savannah?',
-      answer: 'Port trucking involves additional regulations and potentially multiple liable parties. The carrier, port operators, cargo owners, and others may share responsibility. Port drayage operations have specific requirements that may create additional grounds for liability. An experienced Georgia truck accident attorney will investigate all potentially responsible parties.'
+      question: 'How long do trucking companies have to keep records in Georgia?',
+      answer: 'Federal regulations require trucking companies to retain driver qualification files for three years after employment ends, hours of service records for six months, vehicle maintenance records for one year plus the time the equipment is in use, and accident registers for three years. However, companies often destroy records as soon as legally permitted—sometimes even sooner. This is why prompt legal action after a truck accident is critical. An experienced Georgia truck accident attorney can send preservation letters requiring the trucking company to retain all evidence related to your case, preventing destruction of potentially crucial evidence.'
     },
     {
-      question: 'Can I sue an out-of-state trucking company in Georgia?',
-      answer: 'Yes. If the accident occurred in Georgia, Georgia courts have jurisdiction over the case regardless of where the trucking company is based. By operating trucks on Georgia highways, carriers subject themselves to Georgia jurisdiction. Your attorney can file suit in Georgia courts and hold out-of-state companies accountable under Georgia law.'
+      question: 'What evidence is important in a Georgia truck accident case?',
+      answer: 'Critical evidence in Georgia truck accident cases includes electronic logging device (ELD) data showing driver hours and rest periods, the truck\'s electronic control module (ECM) or black box data capturing speed, braking, and other operational parameters, driver qualification files showing training and driving history, maintenance records revealing any deferred repairs or safety issues, dispatch records showing pressure to meet delivery deadlines, toxicology results from post-accident drug and alcohol testing, and the carrier\'s safety rating and inspection history from FMCSA databases. Physical evidence from the scene, witness statements, and surveillance or dashcam video are also valuable. Time is critical—much of this evidence can be legally destroyed or overwritten if not preserved quickly.'
     },
     {
-      question: 'What if the truck driver was an independent contractor?',
-      answer: 'Trucking companies often claim drivers are independent contractors to avoid liability. However, Georgia courts look at the actual relationship to determine responsibility. Even with contractors, the trucking company may be liable for negligent hiring, negligent supervision, or negligent entrustment of the vehicle. An experienced attorney will pursue all liable parties.'
+      question: 'Can I sue an out-of-state trucking company for a Georgia accident?',
+      answer: 'Yes. If a truck accident occurs in Georgia, Georgia courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Georgia highways, subjects itself to Georgia jurisdiction. Your case may be filed in Georgia state court or in federal court (the Northern/Middle/Southern District of Georgia). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
     },
     {
-      question: 'How much time do I have to preserve evidence after a Georgia truck accident?',
-      answer: 'Evidence disappears quickly after truck accidents. Electronic logging data may be overwritten, trucks may be repaired or sold, and drivers may move on. While Georgia allows two years to file suit, your attorney should send preservation letters immediately requiring the trucking company to retain all evidence. Contact a lawyer promptly after any serious accident.'
+      question: 'What if the truck driver who caused my accident was an independent contractor?',
+      answer: 'Trucking companies often try to avoid liability by classifying drivers as independent contractors rather than employees. However, Georgia courts look at the actual relationship—not just what the contract says—to determine whether the trucking company controlled the driver\'s work. Even with true independent contractors, the trucking company may be liable under theories including negligent hiring (failing to properly screen the driver), negligent supervision (failing to ensure compliance with safety regulations), or negligent entrustment (allowing an unqualified driver to operate the truck). The motor carrier may also be directly liable for violations of federal safety regulations that apply regardless of driver classification.'
     }
   ],
 
-  neighboringStates: ['florida', 'alabama', 'tennessee', 'north-carolina', 'south-carolina']
+  neighboringStates: ['tennessee', 'north-carolina', 'south-carolina', 'florida', 'alabama']
 };

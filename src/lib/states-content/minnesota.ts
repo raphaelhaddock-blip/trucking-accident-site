@@ -1,5 +1,16 @@
 import { StateContent } from './types';
 
+/**
+ * Minnesota - Truck Accident Information
+ *
+ * Annual Truck Accident Deaths: 70+
+ * Registered Commercial Trucks: 100,000+
+ * Major Interstates: I-35, I-94, I-90, I-494, I-694
+ *
+ * Enhanced by State Enhancement Agent v1.0.0
+ * Last Updated: 2026-01-10T08:16:02.077Z
+ */
+
 export const minnesota: StateContent = {
   slug: 'minnesota',
   name: 'Minnesota',
@@ -8,118 +19,140 @@ export const minnesota: StateContent = {
   metaTitle: 'Minnesota Truck Accident Lawyers | 18-Wheeler Attorneys in MN',
   metaDescription: 'Injured in a Minnesota truck accident? Our attorneys fight for victims across Minnesota. Free consultation. No fee unless you win.',
 
-  heroText: `Minnesota's position as a major distribution hub for the Upper Midwest and gateway to the Pacific Northwest creates significant commercial truck traffic on state highways. With over 70 people killed annually in collisions involving large trucks, Minnesota roadways see devastating accidents.
+  heroText: `Minnesota presents unique challenges for commercial trucking operations and significant risks for motorists sharing the roads with 18-wheelers. With 70+ people killed annually in collisions involving large trucks, Minnesota sees its share of devastating commercial vehicle accidents. The state's 100,000+ registered commercial trucks operate on highways that face extreme cold and winter storms, creating conditions that contribute to serious and fatal crashes.
 
-The Minnesota trucking industry handles substantial freight volumes. Over 90,000 commercial trucks are registered in the state, operating on corridors connecting the Twin Cities to Duluth, Chicago, and the Pacific Northwest. Minneapolis-St. Paul serves as a major distribution center hub for retailers and manufacturers.
+The Minnesota trucking industry serves critical economic functions. Healthcare, Agriculture, Manufacturing, Technology, Retail all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 35, Interstate 94, Interstate 90, US Route 2 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Minnesota motorists.
 
-Minnesota's harsh winter conditions create particularly dangerous trucking conditions. Heavy snow, ice, extreme cold, and limited visibility contribute to serious truck accidents. The I-94 corridor from Wisconsin through the Twin Cities to North Dakota is a critical freight route facing these challenges.
+Minnesota follows modified comparative negligence with a 51% bar for personal injury cases. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a 6 years statute of limitations for personal injury claims, meaning you must file suit within 6 years of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
 
-Minnesota follows modified comparative negligence with a 51% bar, meaning you can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a six-year statute of limitations for personal injury claims.
+Weather plays a significant role in Minnesota truck accidents. During October, November, December, January, February, March, April, extreme cold and winter storms creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
 
-If you've been injured in a Minnesota truck accident, our Minnesota truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable.`,
+If you have been injured in a Minnesota truck accident, time is critical. Trucking companies dispatch investigation teams immediately after serious crashes to protect their interests. Evidence including electronic logging device data, driver records, and maintenance logs may be overwritten or destroyed if not preserved quickly. Our Minnesota truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable under both federal FMCSA regulations and Minnesota state law.`,
 
   truckingLaws: [
     {
       title: 'Minnesota Commercial Vehicle Regulations',
-      description: `Minnesota regulates commercial vehicles under Minnesota Statutes Chapter 169. This includes size and weight limits, registration requirements, and safety standards enforced by the Minnesota State Patrol Commercial Vehicle Section.`
+      description: `Minnesota regulates commercial vehicles under state statutes enforced by the Minnesota State Patrol and Department of Transportation. The state maintains strict size and weight limits for commercial vehicles, with maximum gross vehicle weight of 80,000 pounds on interstate highways. Oversize and overweight permits are required for loads exceeding standard limits, with specific routing requirements and escort obligations. Minnesota participates in the International Registration Plan (IRP) and International Fuel Tax Agreement (IFTA), requiring proper registration for carriers operating across state lines. Violations of commercial vehicle regulations can establish negligence in truck accident cases.`
     },
     {
       title: 'Minnesota Hours of Service Enforcement',
-      description: `Minnesota actively enforces federal Hours of Service regulations through the Minnesota State Patrol. The state conducts roadside inspections and operates weigh stations, documenting violations in the federal CSA database.`
+      description: `Minnesota actively enforces federal Hours of Service regulations through the Minnesota State Patrol. Officers conduct roadside inspections at weigh stations and portable inspection sites throughout the state. The state participates in FMCSA's Compliance, Safety, Accountability (CSA) program, documenting violations in the federal database. Minnesota also conducts targeted enforcement operations during high-traffic periods and along major freight corridors. Carriers with poor safety ratings face increased inspection rates when operating in Minnesota.`
     },
     {
-      title: 'Minnesota CDL Requirements',
-      description: `The Minnesota Department of Public Safety issues Commercial Driver's Licenses under federal standards with state-specific testing. Minnesota maintains driver records and can disqualify drivers for violations.`
+      title: 'Minnesota Commercial Driver License Requirements',
+      description: `The Minnesota Department of Motor Vehicles issues Commercial Driver's Licenses under federal standards with state-specific requirements. Drivers must pass written knowledge tests covering general commercial vehicle operation, air brakes, and any endorsements sought. Skills testing includes pre-trip inspection, basic control maneuvers, and on-road driving. Minnesota maintains driver records and can disqualify drivers for violations including DUI, leaving the scene of an accident, or using a commercial vehicle in the commission of a felony. Medical certification requirements must be met and maintained.`
     },
     {
       title: 'Minnesota Drug and Alcohol Testing',
-      description: `Minnesota enforces federal drug and alcohol testing requirements for commercial drivers. Minnesota DWI laws apply to commercial drivers with a lower BAC threshold of 0.04%.`
+      description: `Minnesota enforces federal drug and alcohol testing requirements for commercial drivers and has additional state laws prohibiting impaired commercial driving. Minnesota DUI laws apply to commercial drivers with a lower BAC threshold of 0.04%. Pre-employment, random, post-accident, reasonable suspicion, return-to-duty, and follow-up testing are all required. The state maintains a Drug and Alcohol Clearinghouse participation requirement, and employers must query the clearinghouse before hiring. Refusal to submit to testing results in license disqualification.`
     },
     {
-      title: 'Minnesota Winter Trucking Regulations',
-      description: `Given Minnesota's severe winters, the state has specific regulations for winter trucking operations including vehicle preparation standards and chain requirements in certain conditions.`
+      title: 'Minnesota Motor Carrier Insurance Requirements',
+      description: `Motor carriers operating in Minnesota must maintain minimum levels of liability insurance as required by federal and state law. For-hire carriers transporting general freight must carry at least $750,000 in liability coverage. Carriers transporting hazardous materials face higher requirements up to $5,000,000 depending on the materials carried. Minnesota requires proof of insurance for vehicle registration and operating authority. Carriers must file proof of financial responsibility with the state. Self-insurance is permitted for carriers meeting strict financial requirements.`
     },
     {
-      title: 'Minnesota No-Fault Insurance Interaction',
-      description: `Minnesota has a no-fault auto insurance system. In truck accident cases involving serious injuries, victims can pursue tort claims against the at-fault trucking company beyond no-fault benefits.`
+      title: 'Minnesota Vehicle Inspection Requirements',
+      description: `Minnesota requires annual safety inspections for commercial vehicles registered in the state. The Minnesota State Patrol conducts roadside inspections using federal CVSA criteria. Drivers must perform and document pre-trip and post-trip inspections daily. Driver Vehicle Inspection Reports (DVIRs) must note any defects or deficiencies. Carriers must repair or document repairs for reported defects before the vehicle returns to service. Out-of-service violations result in the vehicle being immediately removed from operation until repairs are completed.`
     }
   ],
 
   corridors: [
     {
-      name: 'Interstate 94 (I-94)',
-      description: `Major east-west corridor from Wisconsin through Minneapolis-St. Paul to North Dakota, primary freight route to the Pacific Northwest. This corridor handles enormous truck volumes.`
+      name: 'Interstate 35',
+      description: `Interstate 35 serves as a critical trucking corridor in Minnesota. Primary north-south route through Minneapolis-St. Paul to Duluth. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Minnesota State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and extreme cold and winter storms makes this route particularly hazardous during October, November, December.`
     },
     {
-      name: 'Interstate 35 (I-35)',
-      description: `North-south corridor from Iowa through Minneapolis-St. Paul to Duluth, splits into I-35E and I-35W through the Twin Cities. This route connects to ports on Lake Superior.`
+      name: 'Interstate 94',
+      description: `Interstate 94 serves as a critical trucking corridor in Minnesota. Major east-west route from Wisconsin through Twin Cities to North Dakota. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Minnesota State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and extreme cold and winter storms makes this route particularly hazardous during October, November, December.`
     },
     {
-      name: 'Interstate 90 (I-90)',
-      description: `Southern route connecting Wisconsin to South Dakota, carrying agricultural freight. This corridor serves Minnesota's farming regions.`
+      name: 'Interstate 90',
+      description: `Interstate 90 serves as a critical trucking corridor in Minnesota. Southern route across entire state. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Minnesota State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and extreme cold and winter storms makes this route particularly hazardous during October, November, December.`
     },
     {
-      name: 'Interstate 494/694 Beltway',
-      description: `Beltway around Minneapolis-St. Paul, heavily used for freight distribution. The distribution centers clustered along these routes generate significant truck traffic.`
+      name: 'US Route 2',
+      description: `US Route 2 serves as a critical trucking corridor in Minnesota. Northern route to Upper Peninsula region. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Minnesota State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and extreme cold and winter storms makes this route particularly hazardous during October, November, December.`
     }
   ],
 
   negligenceRule: {
     type: 'modified-51',
     description: 'Minnesota follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault.',
-    details: `Under Minnesota's modified comparative fault rule (Minn. Stat. § 604.01), your damages are reduced by your percentage of fault. If you are found 50% or less at fault, you can recover damages. However, if you are found 51% or more at fault, you recover nothing. For example, if you suffered $1,000,000 in damages and were 30% at fault, you could recover $700,000. But if a jury finds you 51% responsible, you recover nothing.`
+    details: `Under Minnesota law, your damages are reduced by your percentage of fault, and recovery is barred if you exceed the threshold. For example, if you suffered $1,000,000 in damages but were 30% at fault, you could recover $700,000. However, if a jury finds you 51% or more responsible for the accident, you recover nothing.
+
+This rule makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility. They may claim you were speeding, failed to yield, or were distracted—anything to increase your percentage of fault. An experienced Minnesota truck accident lawyer knows how to counter these tactics through thorough investigation and evidence preservation.
+
+Electronic logging device data, driver qualification files, maintenance records, and the carrier's safety history all help establish the trucking company's negligence. Federal Motor Carrier Safety Administration regulations set minimum standards, and violations frequently appear in accident investigations. When carriers cut corners on safety to increase profits, Minnesota law holds them accountable.`
   },
 
   statuteOfLimitations: {
     personalInjury: '6 Years',
     wrongfulDeath: '3 Years',
     propertyDamage: '6 Years',
-    details: `Minnesota has a six-year statute of limitations for personal injury claims arising from truck accidents under Minn. Stat. § 541.05. This means you must file your lawsuit within six years of the accident date. Wrongful death claims have a three-year deadline. Missing these deadlines typically bars your claim forever.`
+    details: `Minnesota has a 6 years statute of limitations for personal injury claims and 3 years for wrongful death claims. Property damage claims must be filed within 6 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+
+The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
+
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+
+Contact an attorney promptly after any serious Minnesota truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
 
   statistics: [
     { label: 'Annual Truck Accident Deaths', value: '70+' },
-    { label: 'Registered Commercial Trucks', value: '90,000+' },
-    { label: 'Miles of Interstate Highway', value: '914' },
-    { label: 'Twin Cities Distribution', value: 'Center Hub' }
+    { label: 'Registered Commercial Trucks', value: '100,000+' },
+    { label: 'Major Interstate Highways', value: 'I-35, I-94, I-90, I-494, I-694' },
+    { label: 'Primary Weather Hazard', value: 'Extreme cold and winter storms' }
   ],
 
-  courtInfo: `Truck accident cases in Minnesota may be filed in state district courts or federal courts depending on the parties involved and amounts in controversy. Cases against trucking companies often involve defendants from multiple states, potentially qualifying for federal court under diversity jurisdiction if the amount in controversy exceeds $75,000.
+  courtInfo: `Truck accident cases in Minnesota may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Minnesota state courts follow state procedural rules and apply Minnesota substantive law. The District of Minnesota federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-Minnesota state courts follow the Minnesota Rules of Civil Procedure. Minnesota allows discovery of corporate defendants, including depositions of company representatives, production of safety records, and inspection of vehicles and maintenance facilities.
+Minnesota state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
 
-Venue rules in Minnesota generally allow cases to be filed where the accident occurred, where the defendant resides or has its principal office, or where the plaintiff resides. Hennepin County (Minneapolis), Ramsey County (St. Paul), and Dakota County handle many truck accident cases.
+Both state and federal courts in Minnesota allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
-The District of Minnesota federal court handles trucking cases involving out-of-state defendants.`,
+Minnesota does not cap economic damages in personal injury cases, allowing full recovery of medical expenses, lost wages, future medical costs, and other financial losses. Non-economic damages (pain and suffering) may be subject to certain limitations depending on the circumstances. Punitive damages are available in cases involving egregious misconduct, though caps may apply.`,
 
-  lastUpdated: '2026-01-08',
+  lastUpdated: '2026-01-10',
 
-  whyHireLocal: `Minnesota truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Minnesota state law. Local counsel knows the Minnesota court system, local procedures, and the judges who will hear your case.
+  whyHireLocal: `Minnesota truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Minnesota state law. Local counsel knows the Minnesota court system, local procedures, and the judges who will hear your case. They understand how Minnesota juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
 
-Minnesota's modified comparative negligence rules mean that fault allocation is critical to your recovery. Experienced local attorneys know how to minimize victim fault and maximize trucking company responsibility.
+Minnesota presents unique challenges for truck accident litigation. The state's extreme cold and winter storms creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 
-A Minnesota truck accident lawyer also understands the state's unique challenges—severe winters, the Twin Cities distribution hub operations, and the critical I-94 corridor. They know how weather conditions contribute to accidents and can investigate cases involving these factors effectively.`,
+Local attorneys also have established relationships with accident reconstruction experts, medical professionals, and investigators familiar with Minnesota conditions. They can quickly deploy resources to preserve evidence before it disappears. Time-zone convenience and proximity to accident scenes enable rapid response when needed.
+
+The trucking industry has significant resources and experienced defense counsel. Insurance companies defending trucking claims employ aggressive tactics to minimize or deny claims. You need representation that matches their resources and knows how to counter their strategies effectively.
+
+A Minnesota-licensed attorney ensures your case proceeds properly through the Minnesota legal system. From filing requirements to discovery deadlines to trial procedures, local knowledge prevents costly procedural errors that could jeopardize your claim.`,
 
   faqs: [
     {
       question: 'What is the statute of limitations for truck accident cases in Minnesota?',
-      answer: 'Minnesota has a six-year statute of limitations for personal injury claims from truck accidents. Wrongful death claims have a three-year deadline. Missing these deadlines typically bars your claim forever.'
+      answer: 'Minnesota has a 6 years statute of limitations for personal injury claims and 3 years for wrongful death claims from truck accidents. This means you must file your lawsuit within 6 years of the accident date for personal injury or 3 years of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 6 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
       question: 'Can I still recover damages if I was partially at fault for a Minnesota truck accident?',
-      answer: 'Yes, but Minnesota follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but your recovery is reduced by your percentage of fault. If you are 51% or more at fault, you cannot recover any damages.'
+      answer: 'Minnesota follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. For example, if you suffered $1,000,000 in damages but were found 20% at fault, your recovery would be reduced to $800,000. This makes establishing the trucking company\'s primary fault critical in contested cases. Insurance adjusters often try to shift blame to accident victims to reduce or eliminate their responsibility. An experienced Minnesota truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault through evidence including electronic logging device data, driver qualification files, and maintenance records.'
     },
     {
       question: 'What damages can I recover in a Minnesota truck accident case?',
-      answer: 'Minnesota allows recovery of economic damages (medical expenses, lost wages, property damage, future earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life). Punitive damages may be available in cases involving intentional or reckless conduct.'
+      answer: 'Minnesota allows recovery of both economic damages (medical expenses, lost wages, property damage, future medical costs, lost earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life, loss of consortium). Economic damages compensate for actual financial losses and are typically proven through medical bills, wage statements, and expert testimony about future costs. Non-economic damages compensate for intangible losses and vary based on injury severity and impact on daily life. Punitive damages may be available in cases involving gross negligence, reckless conduct, or intentional misconduct by the trucking company or driver.'
     },
     {
-      question: 'How does Minnesota no-fault insurance affect truck accident claims?',
-      answer: 'Minnesota\'s no-fault system covers initial medical expenses and lost wages through your own insurance. However, serious truck accident injuries typically allow you to pursue a tort claim against the trucking company for additional damages beyond no-fault benefits.'
+      question: 'How long do trucking companies have to keep records in Minnesota?',
+      answer: 'Federal regulations require trucking companies to retain driver qualification files for three years after employment ends, hours of service records for six months, vehicle maintenance records for one year plus the time the equipment is in use, and accident registers for three years. However, companies often destroy records as soon as legally permitted—sometimes even sooner. This is why prompt legal action after a truck accident is critical. An experienced Minnesota truck accident attorney can send preservation letters requiring the trucking company to retain all evidence related to your case, preventing destruction of potentially crucial evidence.'
     },
     {
-      question: 'Can I sue a trucking company based in another state for a Minnesota accident?',
-      answer: 'Yes. If a truck accident occurs in Minnesota, Minnesota courts generally have jurisdiction over the case regardless of where the trucking company is headquartered.'
+      question: 'What evidence is important in a Minnesota truck accident case?',
+      answer: 'Critical evidence in Minnesota truck accident cases includes electronic logging device (ELD) data showing driver hours and rest periods, the truck\'s electronic control module (ECM) or black box data capturing speed, braking, and other operational parameters, driver qualification files showing training and driving history, maintenance records revealing any deferred repairs or safety issues, dispatch records showing pressure to meet delivery deadlines, toxicology results from post-accident drug and alcohol testing, and the carrier\'s safety rating and inspection history from FMCSA databases. Physical evidence from the scene, witness statements, and surveillance or dashcam video are also valuable. Time is critical—much of this evidence can be legally destroyed or overwritten if not preserved quickly.'
+    },
+    {
+      question: 'Can I sue an out-of-state trucking company for a Minnesota accident?',
+      answer: 'Yes. If a truck accident occurs in Minnesota, Minnesota courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Minnesota highways, subjects itself to Minnesota jurisdiction. Your case may be filed in Minnesota state court or in federal court (the District of Minnesota). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
+    },
+    {
+      question: 'What if the truck driver who caused my accident was an independent contractor?',
+      answer: 'Trucking companies often try to avoid liability by classifying drivers as independent contractors rather than employees. However, Minnesota courts look at the actual relationship—not just what the contract says—to determine whether the trucking company controlled the driver\'s work. Even with true independent contractors, the trucking company may be liable under theories including negligent hiring (failing to properly screen the driver), negligent supervision (failing to ensure compliance with safety regulations), or negligent entrustment (allowing an unqualified driver to operate the truck). The motor carrier may also be directly liable for violations of federal safety regulations that apply regardless of driver classification.'
     }
   ],
 

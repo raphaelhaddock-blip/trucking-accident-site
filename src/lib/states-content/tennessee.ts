@@ -1,137 +1,158 @@
 import { StateContent } from './types';
 
+/**
+ * Tennessee - Truck Accident Information
+ *
+ * Annual Truck Accident Deaths: 170+
+ * Registered Commercial Trucks: 150,000+
+ * Major Interstates: I-40, I-65, I-75, I-24, I-81
+ *
+ * Enhanced by State Enhancement Agent v1.0.0
+ * Last Updated: 2026-01-10T08:16:07.711Z
+ */
+
 export const tennessee: StateContent = {
   slug: 'tennessee',
   name: 'Tennessee',
   abbreviation: 'TN',
   h1: 'Tennessee Truck Injury Lawyers',
   metaTitle: 'Tennessee Truck Accident Lawyers | 18-Wheeler Attorneys in TN',
-  metaDescription: 'Injured in a Tennessee truck accident? Our attorneys understand TN law and fight for maximum compensation. Free consultation. No fee unless you win.',
+  metaDescription: 'Injured in a Tennessee truck accident? Our attorneys fight for victims across Tennessee. Free consultation. No fee unless you win.',
 
-  heroText: `Tennessee ranks ninth in the nation for truck accident fatalities, with approximately 150 people killed annually in collisions involving large commercial vehicles. The Volunteer State's position at the crossroads of the Southeast creates massive trucking volumes, with major interstates converging through Memphis and Nashville.
+  heroText: `Tennessee presents unique challenges for commercial trucking operations and significant risks for motorists sharing the roads with 18-wheelers. With 170+ people killed annually in collisions involving large trucks, Tennessee sees its share of devastating commercial vehicle accidents. The state's 150,000+ registered commercial trucks operate on highways that face severe storms and mountain fog, creating conditions that contribute to serious and fatal crashes.
 
-Memphis is one of America's premier logistics hubs. FedEx's global headquarters and main sorting facility process millions of packages daily, generating constant truck traffic. The Port of Memphis on the Mississippi River adds barge-to-truck transfers. Interstate 40 runs coast-to-coast through Nashville and Memphis, carrying transcontinental freight across the state every hour of every day.
+The Tennessee trucking industry serves critical economic functions. Healthcare, Automotive, Music/Entertainment, Logistics, Manufacturing all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 40, Interstate 65, Interstate 75, Interstate 24 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Tennessee motorists.
 
-Nashville has experienced explosive growth, and with that growth comes increased trucking demand. Distribution centers ring the metropolitan area. Amazon, Walmart, and other major shippers have established significant operations in Middle Tennessee. The construction boom requires constant materials transport on already congested highways.
+Tennessee follows modified comparative negligence with a 50% bar for personal injury cases. You can recover damages if you are 49% or less at fault, but recovery is barred if you are 50% or more at fault. The state has a 1 year statute of limitations for personal injury claims, meaning you must file suit within 1 year of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
 
-Tennessee law provides important protections for truck accident victims. The state follows modified comparative negligence with a 50% bar—meaning you can recover damages if you're less than 50% at fault. Understanding Tennessee's one-year statute of limitations and state-specific requirements is essential for protecting your rights.`,
+Weather plays a significant role in Tennessee truck accidents. During March, April, May, November, December, January, February, severe storms and mountain fog creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
+
+If you have been injured in a Tennessee truck accident, time is critical. Trucking companies dispatch investigation teams immediately after serious crashes to protect their interests. Evidence including electronic logging device data, driver records, and maintenance logs may be overwritten or destroyed if not preserved quickly. Our Tennessee truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable under both federal FMCSA regulations and Tennessee state law.`,
 
   truckingLaws: [
     {
-      title: 'Tennessee Code Annotated Title 55',
-      description: `Tennessee's Motor and Other Vehicles title includes comprehensive provisions for commercial vehicles. Chapter 7 covers size, weight, and load restrictions. These state laws supplement federal FMCSA regulations and establish Tennessee-specific requirements affecting liability in accident cases.`
-    },
-    {
-      title: 'Tennessee Motor Carrier Regulations',
-      description: `The Tennessee Department of Safety and Homeland Security regulates motor carrier safety. The state participates in FMCSA's Motor Carrier Safety Assistance Program with trained commercial vehicle officers. Tennessee Highway Patrol enforces both federal and state trucking regulations.`
-    },
-    {
-      title: 'Tennessee Size and Weight Restrictions',
-      description: `Tennessee enforces strict weight limits—80,000 pounds maximum gross vehicle weight on interstate highways. TDOT issues overweight permits with specific routing. The state conducts weigh station and mobile enforcement operations throughout major trucking corridors.`
-    },
-    {
-      title: 'Tennessee Commercial Driver License Requirements',
-      description: `The Tennessee Department of Safety issues CDLs under federal standards with state-specific testing. Tennessee requires endorsements for specialized vehicles and hazmat. The state disqualifies drivers for serious violations and participates in the national CDL database.`
-    },
-    {
-      title: 'Tennessee Port and River Trucking',
-      description: `The Port of Memphis and other Mississippi River facilities generate significant trucking traffic. Barge-to-truck transfers require specific handling and compliance with both maritime and motor carrier regulations. River port trucking has distinct operational considerations.`
+      title: 'Tennessee Commercial Vehicle Regulations',
+      description: `Tennessee regulates commercial vehicles under state statutes enforced by the Tennessee State Patrol and Department of Transportation. The state maintains strict size and weight limits for commercial vehicles, with maximum gross vehicle weight of 80,000 pounds on interstate highways. Oversize and overweight permits are required for loads exceeding standard limits, with specific routing requirements and escort obligations. Tennessee participates in the International Registration Plan (IRP) and International Fuel Tax Agreement (IFTA), requiring proper registration for carriers operating across state lines. Violations of commercial vehicle regulations can establish negligence in truck accident cases.`
     },
     {
       title: 'Tennessee Hours of Service Enforcement',
-      description: `Tennessee Highway Patrol enforces federal HOS regulations on state highways. The state participates in regional enforcement operations. Tennessee's position on I-40 and I-24 means extensive HOS compliance monitoring of through freight.`
+      description: `Tennessee actively enforces federal Hours of Service regulations through the Tennessee State Patrol. Officers conduct roadside inspections at weigh stations and portable inspection sites throughout the state. The state participates in FMCSA's Compliance, Safety, Accountability (CSA) program, documenting violations in the federal database. Tennessee also conducts targeted enforcement operations during high-traffic periods and along major freight corridors. Carriers with poor safety ratings face increased inspection rates when operating in Tennessee.`
+    },
+    {
+      title: 'Tennessee Commercial Driver License Requirements',
+      description: `The Tennessee Department of Motor Vehicles issues Commercial Driver's Licenses under federal standards with state-specific requirements. Drivers must pass written knowledge tests covering general commercial vehicle operation, air brakes, and any endorsements sought. Skills testing includes pre-trip inspection, basic control maneuvers, and on-road driving. Tennessee maintains driver records and can disqualify drivers for violations including DUI, leaving the scene of an accident, or using a commercial vehicle in the commission of a felony. Medical certification requirements must be met and maintained.`
+    },
+    {
+      title: 'Tennessee Drug and Alcohol Testing',
+      description: `Tennessee enforces federal drug and alcohol testing requirements for commercial drivers and has additional state laws prohibiting impaired commercial driving. Tennessee DUI laws apply to commercial drivers with a lower BAC threshold of 0.04%. Pre-employment, random, post-accident, reasonable suspicion, return-to-duty, and follow-up testing are all required. The state maintains a Drug and Alcohol Clearinghouse participation requirement, and employers must query the clearinghouse before hiring. Refusal to submit to testing results in license disqualification.`
+    },
+    {
+      title: 'Tennessee Motor Carrier Insurance Requirements',
+      description: `Motor carriers operating in Tennessee must maintain minimum levels of liability insurance as required by federal and state law. For-hire carriers transporting general freight must carry at least $750,000 in liability coverage. Carriers transporting hazardous materials face higher requirements up to $5,000,000 depending on the materials carried. Tennessee requires proof of insurance for vehicle registration and operating authority. Carriers must file proof of financial responsibility with the state. Self-insurance is permitted for carriers meeting strict financial requirements.`
+    },
+    {
+      title: 'Tennessee Vehicle Inspection Requirements',
+      description: `Tennessee requires annual safety inspections for commercial vehicles registered in the state. The Tennessee State Patrol conducts roadside inspections using federal CVSA criteria. Drivers must perform and document pre-trip and post-trip inspections daily. Driver Vehicle Inspection Reports (DVIRs) must note any defects or deficiencies. Carriers must repair or document repairs for reported defects before the vehicle returns to service. Out-of-service violations result in the vehicle being immediately removed from operation until repairs are completed.`
     }
   ],
 
   corridors: [
     {
-      name: 'Interstate 40 (I-40)',
-      description: `Running coast-to-coast through Tennessee from Memphis through Nashville to Knoxville, I-40 is one of America's busiest freight corridors. The highway carries enormous volumes of cross-country trucking. The Nashville area interchanges and Memphis logistics zone see particularly dense truck traffic.`
+      name: 'Interstate 40',
+      description: `Interstate 40 serves as a critical trucking corridor in Tennessee. Major east-west route from Memphis through Nashville to Knoxville. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Tennessee State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and severe storms and mountain fog makes this route particularly hazardous during March, April, May.`
     },
     {
-      name: 'Interstate 24 (I-24)',
-      description: `Connecting Nashville to Chattanooga and on to Atlanta, I-24 serves as a major north-south freight connector. The corridor traverses Monteagle Mountain with steep grades that challenge heavy trucks. Brake failures and runaway vehicles are concerns in this terrain.`
+      name: 'Interstate 65',
+      description: `Interstate 65 serves as a critical trucking corridor in Tennessee. North-south route through Nashville. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Tennessee State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and severe storms and mountain fog makes this route particularly hazardous during March, April, May.`
     },
     {
-      name: 'Interstate 65 (I-65)',
-      description: `Running north-south through Nashville, I-65 connects Kentucky to Alabama through Tennessee's capital. The corridor carries significant freight traffic serving Nashville's distribution operations. Rapid growth has created increasing congestion and collision risk.`
+      name: 'Interstate 75',
+      description: `Interstate 75 serves as a critical trucking corridor in Tennessee. Eastern route through Knoxville and Chattanooga. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Tennessee State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and severe storms and mountain fog makes this route particularly hazardous during March, April, May.`
     },
     {
-      name: 'Interstate 81 (I-81)',
-      description: `Through northeast Tennessee from Virginia to Knoxville, I-81 carries East Coast freight through Appalachian terrain. The mountainous corridor presents weather and grade challenges for commercial vehicles. The junction with I-40 at Knoxville creates a major freight convergence point.`
-    },
-    {
-      name: 'Interstate 55 (I-55)',
-      description: `Through Memphis connecting Arkansas to Mississippi, I-55 serves the massive Memphis logistics hub. FedEx and other operations generate constant truck traffic. The highway sees particularly heavy overnight freight movements.`
+      name: 'Interstate 24',
+      description: `Interstate 24 serves as a critical trucking corridor in Tennessee. Southeast route from Nashville to Chattanooga. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Tennessee State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and severe storms and mountain fog makes this route particularly hazardous during March, April, May.`
     }
   ],
 
   negligenceRule: {
     type: 'modified-50',
-    description: 'Tennessee follows modified comparative negligence with a 50% bar. You cannot recover any damages if found 50% or more at fault.',
-    details: `Under Tennessee Code Annotated section 29-11-103, you can only recover damages if you were less than 50% at fault for the accident. If you are found 50% or more responsible, you recover nothing. If less than 50% at fault, your damages are reduced by your percentage of fault. This strict rule means trucking companies will aggressively try to shift blame. Experienced legal representation is essential to establish the carrier's greater responsibility.`
+    description: 'Tennessee follows modified comparative negligence with a 50% bar. You can recover damages if you are 49% or less at fault, but recovery is barred if you are 50% or more at fault.',
+    details: `Under Tennessee law, your damages are reduced by your percentage of fault, and recovery is barred if you exceed the threshold. For example, if you suffered $1,000,000 in damages but were 30% at fault, you could recover $700,000. However, if a jury finds you 50% or more responsible for the accident, you recover nothing.
+
+This rule makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility. They may claim you were speeding, failed to yield, or were distracted—anything to increase your percentage of fault. An experienced Tennessee truck accident lawyer knows how to counter these tactics through thorough investigation and evidence preservation.
+
+Electronic logging device data, driver qualification files, maintenance records, and the carrier's safety history all help establish the trucking company's negligence. Federal Motor Carrier Safety Administration regulations set minimum standards, and violations frequently appear in accident investigations. When carriers cut corners on safety to increase profits, Tennessee law holds them accountable.`
   },
 
   statuteOfLimitations: {
     personalInjury: '1 Year',
     wrongfulDeath: '1 Year',
     propertyDamage: '3 Years',
-    details: `Tennessee has one of the shortest statutes of limitations in the nation—just one year for personal injury and wrongful death claims (TCA 28-3-104). Property damage claims have three years. This extremely short deadline means you must act quickly after a truck accident. Claims against Tennessee state agencies have additional requirements under the Tennessee Claims Commission Act. Waiting too long bars your claim forever.`
+    details: `Tennessee has a 1 year statute of limitations for personal injury claims and 1 year for wrongful death claims. Property damage claims must be filed within 3 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+
+The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
+
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+
+Contact an attorney promptly after any serious Tennessee truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
 
   statistics: [
-    { label: 'Annual Truck Accident Deaths', value: '150+' },
-    { label: 'FedEx Packages Sorted Daily (Memphis)', value: '3.5M+' },
-    { label: 'Miles of Interstate Highway', value: '1,105' },
-    { label: 'Registered Commercial Trucks', value: '130,000+' },
+    { label: 'Annual Truck Accident Deaths', value: '170+' },
+    { label: 'Registered Commercial Trucks', value: '150,000+' },
+    { label: 'Major Interstate Highways', value: 'I-40, I-65, I-75, I-24, I-81' },
+    { label: 'Primary Weather Hazard', value: 'Severe storms and mountain fog' }
   ],
 
-  courtInfo: `Tennessee truck accident cases may be filed in state Circuit Courts or federal courts. Federal jurisdiction exists for diversity cases exceeding $75,000 with parties from different states—common when out-of-state trucking companies cause Tennessee accidents.
+  courtInfo: `Truck accident cases in Tennessee may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Tennessee state courts follow state procedural rules and apply Tennessee substantive law. The Eastern/Middle/Western District of Tennessee federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-Tennessee Circuit Courts have general civil jurisdiction. Venue is proper in the county where the accident occurred or where the defendant resides. Tennessee has three federal judicial districts (Eastern, Middle, and Western) handling cases based on geographic location.
+Tennessee state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
 
-Tennessee allows comprehensive civil discovery. The state's Rules of Civil Procedure govern litigation. Expert testimony on trucking standards and accident reconstruction is permitted. Tennessee courts handle significant trucking litigation given the state's role as a freight hub.
+Both state and federal courts in Tennessee allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
-Tennessee's one-year statute of limitations means prompt action is essential. Evidence preservation letters must be sent immediately, and investigation must begin quickly to meet the tight deadline.`,
+Tennessee does not cap economic damages in personal injury cases, allowing full recovery of medical expenses, lost wages, future medical costs, and other financial losses. Non-economic damages (pain and suffering) may be subject to certain limitations depending on the circumstances. Punitive damages are available in cases involving egregious misconduct, though caps may apply.`,
 
-  lastUpdated: '2026-01-08',
+  lastUpdated: '2026-01-10',
 
-  whyHireLocal: `Tennessee's one-year statute of limitations makes prompt local legal action essential. This is one of the shortest deadlines in the nation, leaving little time to investigate, gather evidence, and file suit. An experienced Tennessee attorney knows how to move quickly while building a strong case.
+  whyHireLocal: `Tennessee truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Tennessee state law. Local counsel knows the Tennessee court system, local procedures, and the judges who will hear your case. They understand how Tennessee juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
 
-Tennessee's logistics-driven economy means local attorneys regularly handle cases involving FedEx, Amazon, and other major shippers with operations in the state. Understanding these companies' practices and finding evidence requires familiarity with Tennessee's trucking environment.
+Tennessee presents unique challenges for truck accident litigation. The state's severe storms and mountain fog creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 
-The state's modified comparative negligence rule requires careful case construction. Insurance companies try to push victim fault to the 50% threshold. Local counsel knows how to counter these tactics in Tennessee courts.
+Local attorneys also have established relationships with accident reconstruction experts, medical professionals, and investigators familiar with Tennessee conditions. They can quickly deploy resources to preserve evidence before it disappears. Time-zone convenience and proximity to accident scenes enable rapid response when needed.
 
-Court familiarity matters in Tennessee. From Davidson County Circuit Court in Nashville to Shelby County in Memphis, knowing local procedures and judicial tendencies affects outcomes. Tennessee attorneys understand how to present trucking cases effectively to local juries.`,
+The trucking industry has significant resources and experienced defense counsel. Insurance companies defending trucking claims employ aggressive tactics to minimize or deny claims. You need representation that matches their resources and knows how to counter their strategies effectively.
+
+A Tennessee-licensed attorney ensures your case proceeds properly through the Tennessee legal system. From filing requirements to discovery deadlines to trial procedures, local knowledge prevents costly procedural errors that could jeopardize your claim.`,
 
   faqs: [
     {
-      question: 'What is Tennessee\'s statute of limitations for truck accident claims?',
-      answer: 'Tennessee has one of the shortest statutes of limitations in the nation—just one year for personal injury and wrongful death claims. Property damage claims have three years. This extremely short deadline means you must contact an attorney immediately after a truck accident to protect your rights.'
+      question: 'What is the statute of limitations for truck accident cases in Tennessee?',
+      answer: 'Tennessee has a 1 year statute of limitations for personal injury claims and 1 year for wrongful death claims from truck accidents. This means you must file your lawsuit within 1 year of the accident date for personal injury or 1 year of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 3 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
-      question: 'How does Tennessee\'s comparative negligence law work?',
-      answer: 'Tennessee follows modified comparative negligence with a 50% bar. If you are found 50% or more at fault for the accident, you cannot recover any damages. If you are less than 50% at fault, your damages are reduced by your percentage of fault. This makes establishing the trucking company\'s greater responsibility critical.'
+      question: 'Can I still recover damages if I was partially at fault for a Tennessee truck accident?',
+      answer: 'Tennessee follows modified comparative negligence with a 50% bar. You can recover damages if you are 49% or less at fault, but recovery is barred if you are 50% or more at fault. For example, if you suffered $1,000,000 in damages but were found 20% at fault, your recovery would be reduced to $800,000. This makes establishing the trucking company\'s primary fault critical in contested cases. Insurance adjusters often try to shift blame to accident victims to reduce or eliminate their responsibility. An experienced Tennessee truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault through evidence including electronic logging device data, driver qualification files, and maintenance records.'
     },
     {
-      question: 'Does Tennessee cap damages in truck accident cases?',
-      answer: 'Tennessee caps non-economic damages (pain and suffering) in most personal injury cases at $750,000, or $1,000,000 for catastrophic injuries. Economic damages (medical expenses, lost wages) are not capped. Understanding these limits affects case strategy and settlement negotiations.'
+      question: 'What damages can I recover in a Tennessee truck accident case?',
+      answer: 'Tennessee allows recovery of both economic damages (medical expenses, lost wages, property damage, future medical costs, lost earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life, loss of consortium). Economic damages compensate for actual financial losses and are typically proven through medical bills, wage statements, and expert testimony about future costs. Non-economic damages compensate for intangible losses and vary based on injury severity and impact on daily life. Punitive damages may be available in cases involving gross negligence, reckless conduct, or intentional misconduct by the trucking company or driver.'
     },
     {
-      question: 'What if the truck was from FedEx or another major carrier?',
-      answer: 'Memphis is FedEx\'s global hub, and Tennessee sees constant traffic from major carriers. These companies have sophisticated legal teams that respond quickly to accidents. You need experienced representation to match their resources. Local attorneys understand these companies\' operations and know how to investigate their practices.'
+      question: 'How long do trucking companies have to keep records in Tennessee?',
+      answer: 'Federal regulations require trucking companies to retain driver qualification files for three years after employment ends, hours of service records for six months, vehicle maintenance records for one year plus the time the equipment is in use, and accident registers for three years. However, companies often destroy records as soon as legally permitted—sometimes even sooner. This is why prompt legal action after a truck accident is critical. An experienced Tennessee truck accident attorney can send preservation letters requiring the trucking company to retain all evidence related to your case, preventing destruction of potentially crucial evidence.'
     },
     {
-      question: 'Can I sue an out-of-state trucking company in Tennessee?',
-      answer: 'Yes. If the accident occurred in Tennessee, Tennessee courts have jurisdiction regardless of where the trucking company is based. By operating trucks on Tennessee highways, carriers subject themselves to Tennessee jurisdiction. Your attorney can file suit in Tennessee and hold out-of-state companies accountable.'
+      question: 'What evidence is important in a Tennessee truck accident case?',
+      answer: 'Critical evidence in Tennessee truck accident cases includes electronic logging device (ELD) data showing driver hours and rest periods, the truck\'s electronic control module (ECM) or black box data capturing speed, braking, and other operational parameters, driver qualification files showing training and driving history, maintenance records revealing any deferred repairs or safety issues, dispatch records showing pressure to meet delivery deadlines, toxicology results from post-accident drug and alcohol testing, and the carrier\'s safety rating and inspection history from FMCSA databases. Physical evidence from the scene, witness statements, and surveillance or dashcam video are also valuable. Time is critical—much of this evidence can be legally destroyed or overwritten if not preserved quickly.'
     },
     {
-      question: 'What if my accident was on Monteagle Mountain?',
-      answer: 'The steep grades on I-24 through Monteagle present particular hazards for commercial vehicles. Brake failures, runaway trucks, and loss-of-control accidents are unfortunately common. These accidents often involve maintenance failures or driver errors specific to mountain driving. An experienced attorney will investigate mountain-specific factors.'
+      question: 'Can I sue an out-of-state trucking company for a Tennessee accident?',
+      answer: 'Yes. If a truck accident occurs in Tennessee, Tennessee courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Tennessee highways, subjects itself to Tennessee jurisdiction. Your case may be filed in Tennessee state court or in federal court (the Eastern/Middle/Western District of Tennessee). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
     },
     {
-      question: 'Why is the one-year deadline so important?',
-      answer: 'Tennessee\'s one-year statute of limitations is one of the shortest in the nation. Missing this deadline means losing your right to sue forever. The deadline doesn\'t pause while you recover from injuries. Evidence also disappears over time. Contacting an attorney immediately after a truck accident is essential to protect your claim.'
+      question: 'What if the truck driver who caused my accident was an independent contractor?',
+      answer: 'Trucking companies often try to avoid liability by classifying drivers as independent contractors rather than employees. However, Tennessee courts look at the actual relationship—not just what the contract says—to determine whether the trucking company controlled the driver\'s work. Even with true independent contractors, the trucking company may be liable under theories including negligent hiring (failing to properly screen the driver), negligent supervision (failing to ensure compliance with safety regulations), or negligent entrustment (allowing an unqualified driver to operate the truck). The motor carrier may also be directly liable for violations of federal safety regulations that apply regardless of driver classification.'
     }
   ],
 

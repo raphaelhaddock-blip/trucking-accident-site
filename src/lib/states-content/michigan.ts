@@ -1,5 +1,16 @@
 import { StateContent } from './types';
 
+/**
+ * Michigan - Truck Accident Information
+ *
+ * Annual Truck Accident Deaths: 140+
+ * Registered Commercial Trucks: 150,000+
+ * Major Interstates: I-75, I-94, I-96, I-69, I-196
+ *
+ * Enhanced by State Enhancement Agent v1.0.0
+ * Last Updated: 2026-01-10T08:16:01.568Z
+ */
+
 export const michigan: StateContent = {
   slug: 'michigan',
   name: 'Michigan',
@@ -8,120 +19,140 @@ export const michigan: StateContent = {
   metaTitle: 'Michigan Truck Accident Lawyers | 18-Wheeler Attorneys in MI',
   metaDescription: 'Injured in a Michigan truck accident? Our attorneys fight for victims across Michigan. Free consultation. No fee unless you win.',
 
-  heroText: `Michigan's position as a critical link between the Midwest industrial heartland and international trade with Canada makes it one of the nation's most heavily trafficked trucking corridors. With over 150 people killed annually in collisions involving large trucks, Michigan roadways see devastating commercial vehicle accidents on a regular basis.
+  heroText: `Michigan presents unique challenges for commercial trucking operations and significant risks for motorists sharing the roads with 18-wheelers. With 140+ people killed annually in collisions involving large trucks, Michigan sees its share of devastating commercial vehicle accidents. The state's 150,000+ registered commercial trucks operate on highways that face lake effect snow and winter weather, creating conditions that contribute to serious and fatal crashes.
 
-The Michigan trucking industry is substantial, with over 180,000 registered commercial trucks operating on the state's highways. Major corridors including I-94, I-75, I-96, and I-69 carry massive freight volumes between Detroit's automotive manufacturing centers, the Ambassador Bridge crossings to Canada, and distribution hubs throughout the Midwest.
+The Michigan trucking industry serves critical economic functions. Automotive, Manufacturing, Agriculture, Technology, Tourism all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 75, Interstate 94, Interstate 96, Interstate 69 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Michigan motorists.
 
-The Ambassador Bridge and Detroit-Windsor Tunnel represent some of the busiest commercial border crossings in North America. More than 8,000 trucks cross the Ambassador Bridge daily, creating unique hazards on Michigan highways. International freight traffic, combined with domestic manufacturing shipments, makes Michigan's interstates particularly dangerous for passenger vehicles sharing the road with 18-wheelers.
+Michigan follows modified comparative negligence with a 51% bar for personal injury cases. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a 3 years statute of limitations for personal injury claims, meaning you must file suit within 3 years of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
 
-Michigan law follows a modified comparative negligence rule with a 51% bar, meaning you can recover damages if you're not more than 50% at fault. The state's no-fault insurance system adds complexity to truck accident claims, though federal regulations often override state insurance requirements for interstate carriers.
+Weather plays a significant role in Michigan truck accidents. During November, December, January, February, March, April, lake effect snow and winter weather creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
 
-If you've been injured in a Michigan truck accident, time is critical. Michigan has a three-year statute of limitations for personal injury claims, but trucking companies begin protecting their interests immediately after a crash. Our Michigan truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable.`,
+If you have been injured in a Michigan truck accident, time is critical. Trucking companies dispatch investigation teams immediately after serious crashes to protect their interests. Evidence including electronic logging device data, driver records, and maintenance logs may be overwritten or destroyed if not preserved quickly. Our Michigan truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable under both federal FMCSA regulations and Michigan state law.`,
 
   truckingLaws: [
     {
-      title: 'Michigan Vehicle Code - Commercial Vehicles',
-      description: `Michigan regulates commercial vehicles under the Michigan Vehicle Code and Michigan Compiled Laws. This includes size and weight restrictions, registration requirements, and safety standards specific to commercial trucks operating on Michigan roads. Violations can establish negligence in accident cases.`
+      title: 'Michigan Commercial Vehicle Regulations',
+      description: `Michigan regulates commercial vehicles under state statutes enforced by the Michigan State Patrol and Department of Transportation. The state maintains strict size and weight limits for commercial vehicles, with maximum gross vehicle weight of 80,000 pounds on interstate highways. Oversize and overweight permits are required for loads exceeding standard limits, with specific routing requirements and escort obligations. Michigan participates in the International Registration Plan (IRP) and International Fuel Tax Agreement (IFTA), requiring proper registration for carriers operating across state lines. Violations of commercial vehicle regulations can establish negligence in truck accident cases.`
     },
     {
       title: 'Michigan Hours of Service Enforcement',
-      description: `Michigan enforces federal Hours of Service regulations through the Michigan State Police Commercial Vehicle Enforcement Division. The state conducts thousands of roadside inspections annually, documenting violations in the federal CSA database. HOS violations are commonly cited in fatigue-related truck accidents.`
+      description: `Michigan actively enforces federal Hours of Service regulations through the Michigan State Patrol. Officers conduct roadside inspections at weigh stations and portable inspection sites throughout the state. The state participates in FMCSA's Compliance, Safety, Accountability (CSA) program, documenting violations in the federal database. Michigan also conducts targeted enforcement operations during high-traffic periods and along major freight corridors. Carriers with poor safety ratings face increased inspection rates when operating in Michigan.`
     },
     {
-      title: 'Michigan CDL Requirements',
-      description: `The Michigan Secretary of State issues Commercial Driver's Licenses under federal standards with Michigan-specific testing requirements. Michigan maintains driver records and can disqualify drivers for serious violations. The state requires specific endorsements for hazardous materials, tankers, and doubles/triples.`
-    },
-    {
-      title: 'Michigan No-Fault Insurance Interaction',
-      description: `Michigan's no-fault auto insurance system creates unique considerations in truck accident cases. While no-fault generally applies to Michigan crashes, federal regulations require interstate trucking companies to maintain liability coverage that may supersede state no-fault limitations for serious injury claims.`
+      title: 'Michigan Commercial Driver License Requirements',
+      description: `The Michigan Department of Motor Vehicles issues Commercial Driver's Licenses under federal standards with state-specific requirements. Drivers must pass written knowledge tests covering general commercial vehicle operation, air brakes, and any endorsements sought. Skills testing includes pre-trip inspection, basic control maneuvers, and on-road driving. Michigan maintains driver records and can disqualify drivers for violations including DUI, leaving the scene of an accident, or using a commercial vehicle in the commission of a felony. Medical certification requirements must be met and maintained.`
     },
     {
       title: 'Michigan Drug and Alcohol Testing',
-      description: `Michigan enforces federal drug and alcohol testing requirements for commercial drivers. Michigan's OWI (Operating While Intoxicated) laws apply to commercial drivers with a lower BAC threshold of 0.04%. Commercial drivers face license suspension and criminal penalties for violations.`
+      description: `Michigan enforces federal drug and alcohol testing requirements for commercial drivers and has additional state laws prohibiting impaired commercial driving. Michigan DUI laws apply to commercial drivers with a lower BAC threshold of 0.04%. Pre-employment, random, post-accident, reasonable suspicion, return-to-duty, and follow-up testing are all required. The state maintains a Drug and Alcohol Clearinghouse participation requirement, and employers must query the clearinghouse before hiring. Refusal to submit to testing results in license disqualification.`
     },
     {
-      title: 'Michigan International Trucking Regulations',
-      description: `Given Michigan's extensive Canadian border crossings, the state enforces regulations specific to international trucking operations. This includes customs compliance, FAST card requirements, and coordination with Canadian transportation authorities on safety enforcement.`
+      title: 'Michigan Motor Carrier Insurance Requirements',
+      description: `Motor carriers operating in Michigan must maintain minimum levels of liability insurance as required by federal and state law. For-hire carriers transporting general freight must carry at least $750,000 in liability coverage. Carriers transporting hazardous materials face higher requirements up to $5,000,000 depending on the materials carried. Michigan requires proof of insurance for vehicle registration and operating authority. Carriers must file proof of financial responsibility with the state. Self-insurance is permitted for carriers meeting strict financial requirements.`
+    },
+    {
+      title: 'Michigan Vehicle Inspection Requirements',
+      description: `Michigan requires annual safety inspections for commercial vehicles registered in the state. The Michigan State Patrol conducts roadside inspections using federal CVSA criteria. Drivers must perform and document pre-trip and post-trip inspections daily. Driver Vehicle Inspection Reports (DVIRs) must note any defects or deficiencies. Carriers must repair or document repairs for reported defects before the vehicle returns to service. Out-of-service violations result in the vehicle being immediately removed from operation until repairs are completed.`
     }
   ],
 
   corridors: [
     {
-      name: 'Interstate 94 (I-94)',
-      description: `Major east-west corridor connecting Detroit to Chicago through southwestern Michigan, carrying heavy freight between the industrial Midwest and East Coast markets. I-94 through Detroit and Ann Arbor sees extremely heavy truck traffic serving the automotive industry and connecting to Canadian crossings.`
+      name: 'Interstate 75',
+      description: `Interstate 75 serves as a critical trucking corridor in Michigan. Primary north-south route from Ohio through Detroit to Upper Peninsula. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Michigan State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and lake effect snow and winter weather makes this route particularly hazardous during November, December, January.`
     },
     {
-      name: 'Interstate 75 (I-75)',
-      description: `North-south route from the Ohio border through Detroit and into northern Michigan, serving as a crucial link for Canadian trade through the Ambassador Bridge and Detroit-Windsor Tunnel. The Detroit metropolitan section handles enormous freight volumes daily.`
+      name: 'Interstate 94',
+      description: `Interstate 94 serves as a critical trucking corridor in Michigan. Southern route from Chicago through Detroit. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Michigan State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and lake effect snow and winter weather makes this route particularly hazardous during November, December, January.`
     },
     {
-      name: 'Interstate 96 (I-96)',
-      description: `Connects Grand Rapids to Detroit, carrying significant freight between western Michigan manufacturing centers and the Detroit metro area. This corridor serves furniture manufacturing, automotive suppliers, and general freight distribution.`
+      name: 'Interstate 96',
+      description: `Interstate 96 serves as a critical trucking corridor in Michigan. Route from Detroit to Grand Rapids. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Michigan State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and lake effect snow and winter weather makes this route particularly hazardous during November, December, January.`
     },
     {
-      name: 'Interstate 69 (I-69)',
-      description: `Part of the international trade corridor connecting Canada through Michigan to Indiana and beyond. I-69 carries cross-border freight traffic and serves as an alternative route for trucks avoiding urban congestion on other interstates.`
+      name: 'Interstate 69',
+      description: `Interstate 69 serves as a critical trucking corridor in Michigan. Cross-state route from Indiana to Port Huron. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Michigan State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and lake effect snow and winter weather makes this route particularly hazardous during November, December, January.`
     }
   ],
 
   negligenceRule: {
     type: 'modified-51',
     description: 'Michigan follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault.',
-    details: `Under Michigan's modified comparative negligence rule, your damages are reduced by your percentage of fault. If you are found 50% or less at fault, you can recover damages. However, if you are found 51% or more at fault, you recover nothing. For example, if you suffered $1,000,000 in damages and were 30% at fault, you could recover $700,000. But if a jury finds you 51% responsible, you recover nothing. This makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility—an experienced Michigan truck accident lawyer knows how to counter these tactics.`
+    details: `Under Michigan law, your damages are reduced by your percentage of fault, and recovery is barred if you exceed the threshold. For example, if you suffered $1,000,000 in damages but were 30% at fault, you could recover $700,000. However, if a jury finds you 51% or more responsible for the accident, you recover nothing.
+
+This rule makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility. They may claim you were speeding, failed to yield, or were distracted—anything to increase your percentage of fault. An experienced Michigan truck accident lawyer knows how to counter these tactics through thorough investigation and evidence preservation.
+
+Electronic logging device data, driver qualification files, maintenance records, and the carrier's safety history all help establish the trucking company's negligence. Federal Motor Carrier Safety Administration regulations set minimum standards, and violations frequently appear in accident investigations. When carriers cut corners on safety to increase profits, Michigan law holds them accountable.`
   },
 
   statuteOfLimitations: {
     personalInjury: '3 Years',
     wrongfulDeath: '3 Years',
     propertyDamage: '3 Years',
-    details: `Michigan has a three-year statute of limitations for personal injury claims arising from truck accidents under MCL 600.5805. This means you must file your lawsuit within three years of the accident date. Wrongful death claims also have a three-year deadline. Missing these deadlines typically bars your claim forever, so it's important to contact an attorney promptly after any serious truck accident. Evidence preservation is also time-sensitive—trucking companies may legally destroy certain records after required retention periods.`
+    details: `Michigan has a 3 years statute of limitations for personal injury claims and 3 years for wrongful death claims. Property damage claims must be filed within 3 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+
+The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
+
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+
+Contact an attorney promptly after any serious Michigan truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
 
   statistics: [
-    { label: 'Annual Truck Accident Deaths', value: '150+' },
-    { label: 'Registered Commercial Trucks', value: '180,000+' },
-    { label: 'Miles of Interstate Highway', value: '1,243' },
-    { label: 'Ambassador Bridge Crossings', value: '8,000+ Daily' }
+    { label: 'Annual Truck Accident Deaths', value: '140+' },
+    { label: 'Registered Commercial Trucks', value: '150,000+' },
+    { label: 'Major Interstate Highways', value: 'I-75, I-94, I-96, I-69, I-196' },
+    { label: 'Primary Weather Hazard', value: 'Lake effect snow and winter weather' }
   ],
 
-  courtInfo: `Truck accident cases in Michigan may be filed in state circuit courts or federal courts depending on the parties involved and amounts in controversy. Cases against trucking companies often involve defendants from multiple states, potentially qualifying for federal court under diversity jurisdiction if the amount in controversy exceeds $75,000.
+  courtInfo: `Truck accident cases in Michigan may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Michigan state courts follow state procedural rules and apply Michigan substantive law. The Eastern District of Michigan / Western District of Michigan federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-Michigan state courts follow the Michigan Court Rules, which include specific provisions for discovery that can be crucial in trucking cases. Michigan allows discovery of corporate defendants, including depositions of company representatives, production of safety records, and inspection of vehicles and maintenance facilities.
+Michigan state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
 
-Venue rules in Michigan generally allow cases to be filed where the accident occurred, where the defendant conducts business, or where the plaintiff resides. Wayne County (Detroit area) handles many truck accident cases due to the high volume of commercial traffic in the region. Choosing the right venue can significantly impact case outcomes, as different Michigan counties have varying jury pools and judicial tendencies.
+Both state and federal courts in Michigan allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
-Michigan's no-fault insurance system affects how claims are processed, but serious truck accidents typically qualify for tort claims against the at-fault trucking company outside the no-fault system.`,
+Michigan does not cap economic damages in personal injury cases, allowing full recovery of medical expenses, lost wages, future medical costs, and other financial losses. Non-economic damages (pain and suffering) may be subject to certain limitations depending on the circumstances. Punitive damages are available in cases involving egregious misconduct, though caps may apply.`,
 
-  lastUpdated: '2026-01-08',
+  lastUpdated: '2026-01-10',
 
-  whyHireLocal: `Michigan truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Michigan state law, including the complex no-fault insurance system. Local counsel knows the Michigan court system, local procedures, and the judges who will hear your case. They understand how Michigan juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
+  whyHireLocal: `Michigan truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Michigan state law. Local counsel knows the Michigan court system, local procedures, and the judges who will hear your case. They understand how Michigan juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
 
-Michigan's comparative negligence rules mean that fault allocation is critical to your recovery. Experienced local attorneys know how to minimize victim fault and maximize trucking company responsibility.
+Michigan presents unique challenges for truck accident litigation. The state's lake effect snow and winter weather creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 
-A Michigan truck accident lawyer also understands the state's unique trucking infrastructure, including the critical Canadian border crossings, automotive industry shipping patterns, and seasonal hazards on Michigan roads. They know the dangerous corridors, understand international trucking operations, and can investigate accidents involving carriers operating through Michigan's border crossings.
+Local attorneys also have established relationships with accident reconstruction experts, medical professionals, and investigators familiar with Michigan conditions. They can quickly deploy resources to preserve evidence before it disappears. Time-zone convenience and proximity to accident scenes enable rapid response when needed.
 
-Finally, Michigan's no-fault insurance system adds complexity that out-of-state attorneys may not fully understand. A Michigan-licensed attorney ensures your case properly navigates both the no-fault system and traditional tort claims against negligent trucking companies.`,
+The trucking industry has significant resources and experienced defense counsel. Insurance companies defending trucking claims employ aggressive tactics to minimize or deny claims. You need representation that matches their resources and knows how to counter their strategies effectively.
+
+A Michigan-licensed attorney ensures your case proceeds properly through the Michigan legal system. From filing requirements to discovery deadlines to trial procedures, local knowledge prevents costly procedural errors that could jeopardize your claim.`,
 
   faqs: [
     {
       question: 'What is the statute of limitations for truck accident cases in Michigan?',
-      answer: 'Michigan has a three-year statute of limitations for personal injury claims from truck accidents. Wrongful death claims must also be filed within three years. Missing these deadlines typically bars your claim forever, so it\'s important to contact an attorney promptly after any serious truck accident.'
+      answer: 'Michigan has a 3 years statute of limitations for personal injury claims and 3 years for wrongful death claims from truck accidents. This means you must file your lawsuit within 3 years of the accident date for personal injury or 3 years of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 3 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
       question: 'Can I still recover damages if I was partially at fault for a Michigan truck accident?',
-      answer: 'Yes, but Michigan follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but your recovery is reduced by your percentage of fault. If you are 51% or more at fault, you cannot recover any damages from the other parties.'
-    },
-    {
-      question: 'How does Michigan no-fault insurance affect truck accident claims?',
-      answer: 'Michigan\'s no-fault insurance system covers your initial medical expenses and lost wages through your own insurance policy. However, if you suffer a serious impairment of body function, permanent serious disfigurement, or death, you can pursue a tort claim against the at-fault trucking company for additional damages including pain and suffering.'
+      answer: 'Michigan follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. For example, if you suffered $1,000,000 in damages but were found 20% at fault, your recovery would be reduced to $800,000. This makes establishing the trucking company\'s primary fault critical in contested cases. Insurance adjusters often try to shift blame to accident victims to reduce or eliminate their responsibility. An experienced Michigan truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault through evidence including electronic logging device data, driver qualification files, and maintenance records.'
     },
     {
       question: 'What damages can I recover in a Michigan truck accident case?',
-      answer: 'Michigan allows recovery of economic damages (medical expenses beyond no-fault benefits, lost wages, property damage, future earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life) in qualifying cases. Punitive damages may also be available in cases involving gross negligence.'
+      answer: 'Michigan allows recovery of both economic damages (medical expenses, lost wages, property damage, future medical costs, lost earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life, loss of consortium). Economic damages compensate for actual financial losses and are typically proven through medical bills, wage statements, and expert testimony about future costs. Non-economic damages compensate for intangible losses and vary based on injury severity and impact on daily life. Punitive damages may be available in cases involving gross negligence, reckless conduct, or intentional misconduct by the trucking company or driver.'
     },
     {
-      question: 'Can I sue a Canadian trucking company for a Michigan accident?',
-      answer: 'Yes. If a truck accident occurs in Michigan, Michigan courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. Canadian carriers operating on Michigan highways subject themselves to Michigan jurisdiction and must maintain U.S. insurance coverage.'
+      question: 'How long do trucking companies have to keep records in Michigan?',
+      answer: 'Federal regulations require trucking companies to retain driver qualification files for three years after employment ends, hours of service records for six months, vehicle maintenance records for one year plus the time the equipment is in use, and accident registers for three years. However, companies often destroy records as soon as legally permitted—sometimes even sooner. This is why prompt legal action after a truck accident is critical. An experienced Michigan truck accident attorney can send preservation letters requiring the trucking company to retain all evidence related to your case, preventing destruction of potentially crucial evidence.'
+    },
+    {
+      question: 'What evidence is important in a Michigan truck accident case?',
+      answer: 'Critical evidence in Michigan truck accident cases includes electronic logging device (ELD) data showing driver hours and rest periods, the truck\'s electronic control module (ECM) or black box data capturing speed, braking, and other operational parameters, driver qualification files showing training and driving history, maintenance records revealing any deferred repairs or safety issues, dispatch records showing pressure to meet delivery deadlines, toxicology results from post-accident drug and alcohol testing, and the carrier\'s safety rating and inspection history from FMCSA databases. Physical evidence from the scene, witness statements, and surveillance or dashcam video are also valuable. Time is critical—much of this evidence can be legally destroyed or overwritten if not preserved quickly.'
+    },
+    {
+      question: 'Can I sue an out-of-state trucking company for a Michigan accident?',
+      answer: 'Yes. If a truck accident occurs in Michigan, Michigan courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Michigan highways, subjects itself to Michigan jurisdiction. Your case may be filed in Michigan state court or in federal court (the Eastern District of Michigan / Western District of Michigan). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
+    },
+    {
+      question: 'What if the truck driver who caused my accident was an independent contractor?',
+      answer: 'Trucking companies often try to avoid liability by classifying drivers as independent contractors rather than employees. However, Michigan courts look at the actual relationship—not just what the contract says—to determine whether the trucking company controlled the driver\'s work. Even with true independent contractors, the trucking company may be liable under theories including negligent hiring (failing to properly screen the driver), negligent supervision (failing to ensure compliance with safety regulations), or negligent entrustment (allowing an unqualified driver to operate the truck). The motor carrier may also be directly liable for violations of federal safety regulations that apply regardless of driver classification.'
     }
   ],
 

@@ -1,139 +1,160 @@
 import { StateContent } from './types';
 
+/**
+ * Pennsylvania - Truck Accident Information
+ *
+ * Annual Truck Accident Deaths: 180+
+ * Registered Commercial Trucks: 200,000+
+ * Major Interstates: I-76, I-80, I-81, I-78, I-95
+ *
+ * Enhanced by State Enhancement Agent v1.0.0
+ * Last Updated: 2026-01-10T08:16:06.684Z
+ */
+
 export const pennsylvania: StateContent = {
   slug: 'pennsylvania',
   name: 'Pennsylvania',
   abbreviation: 'PA',
   h1: 'Pennsylvania Truck Injury Lawyers',
   metaTitle: 'Pennsylvania Truck Accident Lawyers | 18-Wheeler Attorneys in PA',
-  metaDescription: 'Injured in a Pennsylvania truck accident? Our attorneys understand PA law and fight for maximum compensation. Free consultation. No fee unless you win.',
+  metaDescription: 'Injured in a Pennsylvania truck accident? Our attorneys fight for victims across Pennsylvania. Free consultation. No fee unless you win.',
 
-  heroText: `Pennsylvania ranks fifth in the nation for truck accident fatalities, with approximately 200 people killed annually in collisions involving large commercial vehicles. The Keystone State's position as a critical link between the Midwest and East Coast markets creates enormous trucking volume on its highways—particularly the Pennsylvania Turnpike and major interstates.
+  heroText: `Pennsylvania presents unique challenges for commercial trucking operations and significant risks for motorists sharing the roads with 18-wheelers. With 180+ people killed annually in collisions involving large trucks, Pennsylvania sees its share of devastating commercial vehicle accidents. The state's 200,000+ registered commercial trucks operate on highways that face mountain terrain and winter weather, creating conditions that contribute to serious and fatal crashes.
 
-Philadelphia and Pittsburgh anchor the state's economy, with massive distribution operations serving both metropolitan areas. The Pennsylvania Turnpike (I-76/I-70) stretches 360 miles across the state, carrying an estimated 500,000 trucks daily through challenging mountain terrain. The turnpike's grades and tunnels create particular hazards for heavy commercial vehicles.
+The Pennsylvania trucking industry serves critical economic functions. Healthcare, Manufacturing, Technology, Energy, Agriculture all depend heavily on reliable freight transportation. Major trucking corridors including Pennsylvania Turnpike (I-76/I-70), Interstate 80, Interstate 81, Interstate 95 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Pennsylvania motorists.
 
-Pennsylvania's industrial heritage means extensive infrastructure for trucking, including major intermodal facilities and distribution centers. Amazon, Walmart, and other major shippers have established operations throughout the state. The fracking boom in western Pennsylvania has added oilfield trucking to the mix, with specialized hazards and additional commercial vehicle traffic.
+Pennsylvania follows modified comparative negligence with a 51% bar for personal injury cases. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a 2 years statute of limitations for personal injury claims, meaning you must file suit within 2 years of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
 
-Pennsylvania law provides important protections for truck accident victims, but the state's modified comparative negligence rule requires careful attention. With a 51% bar, you cannot recover if found more than 50% at fault. Understanding this rule and Pennsylvania's unique insurance requirements—including the choice between limited tort and full tort coverage—is essential for maximizing your recovery.`,
+Weather plays a significant role in Pennsylvania truck accidents. During November, December, January, February, March, mountain terrain and winter weather creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
+
+If you have been injured in a Pennsylvania truck accident, time is critical. Trucking companies dispatch investigation teams immediately after serious crashes to protect their interests. Evidence including electronic logging device data, driver records, and maintenance logs may be overwritten or destroyed if not preserved quickly. Our Pennsylvania truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable under both federal FMCSA regulations and Pennsylvania state law.`,
 
   truckingLaws: [
     {
-      title: 'Pennsylvania Motor Vehicle Code Title 75',
-      description: `Pennsylvania's Vehicle Code includes comprehensive regulations for commercial vehicles. Chapter 47 addresses size, weight, and load restrictions. Chapter 49 covers commercial driver licensing. These state laws supplement federal FMCSA regulations and establish Pennsylvania-specific requirements for carriers operating in the Commonwealth.`
-    },
-    {
-      title: 'Pennsylvania Turnpike Authority Regulations',
-      description: `The Pennsylvania Turnpike has specific regulations for commercial vehicles including weight limits, hazmat restrictions, and speed requirements for trucks. The turnpike's mountain terrain requires additional safety measures. Violations of turnpike regulations can establish negligence in accident cases.`
-    },
-    {
-      title: 'Pennsylvania Size and Weight Restrictions',
-      description: `Pennsylvania enforces strict weight limits—80,000 pounds maximum gross vehicle weight on most highways. The state issues overweight permits through PennDOT with specific routing requirements. Pennsylvania's bridge formula affects weight distribution requirements. Operating overweight without permits violates state law.`
-    },
-    {
-      title: 'Pennsylvania Commercial Driver License Requirements',
-      description: `PennDOT issues CDLs under federal standards with Pennsylvania-specific testing requirements. The state requires hazmat endorsement testing at approved locations. Pennsylvania disqualifies drivers for serious violations and participates in the national CDL database. Medical certification requirements must be met for all CDL holders.`
-    },
-    {
-      title: 'Pennsylvania Winter Operations Requirements',
-      description: `Pennsylvania has specific requirements for winter trucking operations. The state can declare snow emergencies restricting truck travel on certain routes. Ice and snow removal from vehicles before operation is required. Chain requirements may be imposed during severe weather. Violations create liability when they cause accidents.`
+      title: 'Pennsylvania Commercial Vehicle Regulations',
+      description: `Pennsylvania regulates commercial vehicles under state statutes enforced by the Pennsylvania State Patrol and Department of Transportation. The state maintains strict size and weight limits for commercial vehicles, with maximum gross vehicle weight of 80,000 pounds on interstate highways. Oversize and overweight permits are required for loads exceeding standard limits, with specific routing requirements and escort obligations. Pennsylvania participates in the International Registration Plan (IRP) and International Fuel Tax Agreement (IFTA), requiring proper registration for carriers operating across state lines. Violations of commercial vehicle regulations can establish negligence in truck accident cases.`
     },
     {
       title: 'Pennsylvania Hours of Service Enforcement',
-      description: `The Pennsylvania State Police enforce federal HOS regulations throughout the Commonwealth. Pennsylvania participates in FMCSA's Motor Carrier Safety Assistance Program. Weigh stations and mobile enforcement units conduct inspections and verify ELD compliance. The state actively pursues HOS violations that contribute to accidents.`
+      description: `Pennsylvania actively enforces federal Hours of Service regulations through the Pennsylvania State Patrol. Officers conduct roadside inspections at weigh stations and portable inspection sites throughout the state. The state participates in FMCSA's Compliance, Safety, Accountability (CSA) program, documenting violations in the federal database. Pennsylvania also conducts targeted enforcement operations during high-traffic periods and along major freight corridors. Carriers with poor safety ratings face increased inspection rates when operating in Pennsylvania.`
+    },
+    {
+      title: 'Pennsylvania Commercial Driver License Requirements',
+      description: `The Pennsylvania Department of Motor Vehicles issues Commercial Driver's Licenses under federal standards with state-specific requirements. Drivers must pass written knowledge tests covering general commercial vehicle operation, air brakes, and any endorsements sought. Skills testing includes pre-trip inspection, basic control maneuvers, and on-road driving. Pennsylvania maintains driver records and can disqualify drivers for violations including DUI, leaving the scene of an accident, or using a commercial vehicle in the commission of a felony. Medical certification requirements must be met and maintained.`
+    },
+    {
+      title: 'Pennsylvania Drug and Alcohol Testing',
+      description: `Pennsylvania enforces federal drug and alcohol testing requirements for commercial drivers and has additional state laws prohibiting impaired commercial driving. Pennsylvania DUI laws apply to commercial drivers with a lower BAC threshold of 0.04%. Pre-employment, random, post-accident, reasonable suspicion, return-to-duty, and follow-up testing are all required. The state maintains a Drug and Alcohol Clearinghouse participation requirement, and employers must query the clearinghouse before hiring. Refusal to submit to testing results in license disqualification.`
+    },
+    {
+      title: 'Pennsylvania Motor Carrier Insurance Requirements',
+      description: `Motor carriers operating in Pennsylvania must maintain minimum levels of liability insurance as required by federal and state law. For-hire carriers transporting general freight must carry at least $750,000 in liability coverage. Carriers transporting hazardous materials face higher requirements up to $5,000,000 depending on the materials carried. Pennsylvania requires proof of insurance for vehicle registration and operating authority. Carriers must file proof of financial responsibility with the state. Self-insurance is permitted for carriers meeting strict financial requirements.`
+    },
+    {
+      title: 'Pennsylvania Vehicle Inspection Requirements',
+      description: `Pennsylvania requires annual safety inspections for commercial vehicles registered in the state. The Pennsylvania State Patrol conducts roadside inspections using federal CVSA criteria. Drivers must perform and document pre-trip and post-trip inspections daily. Driver Vehicle Inspection Reports (DVIRs) must note any defects or deficiencies. Carriers must repair or document repairs for reported defects before the vehicle returns to service. Out-of-service violations result in the vehicle being immediately removed from operation until repairs are completed.`
     }
   ],
 
   corridors: [
     {
       name: 'Pennsylvania Turnpike (I-76/I-70)',
-      description: `The 360-mile Pennsylvania Turnpike is one of the nation's oldest and busiest toll roads. Carrying over 500,000 commercial vehicles daily, the turnpike crosses the Appalachian Mountains through tunnels and steep grades. The challenging terrain causes brake failures, runaway trucks, and loss-of-control accidents. Weather hazards in mountain sections compound risks.`
+      description: `Pennsylvania Turnpike (I-76/I-70) serves as a critical trucking corridor in Pennsylvania. Major east-west toll route across entire state. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Pennsylvania State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and mountain terrain and winter weather makes this route particularly hazardous during November, December, January.`
     },
     {
-      name: 'Interstate 80 (I-80)',
-      description: `Running east-west across northern Pennsylvania, I-80 connects the New York City area to the Midwest. This major freight corridor sees heavy truck traffic through rural areas with limited services. Mountain terrain and weather hazards create dangerous conditions. The highway's role in cross-country shipping means constant 18-wheeler traffic.`
+      name: 'Interstate 80',
+      description: `Interstate 80 serves as a critical trucking corridor in Pennsylvania. Northern east-west route through mountainous terrain. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Pennsylvania State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and mountain terrain and winter weather makes this route particularly hazardous during November, December, January.`
     },
     {
-      name: 'Interstate 81 (I-81)',
-      description: `North-south through eastern Pennsylvania, I-81 connects the Northeast to the Southeast. The corridor passes through the Lehigh Valley distribution hub, where numerous warehousing operations generate truck traffic. Traffic volumes have increased dramatically as e-commerce fulfillment centers have clustered along this route.`
+      name: 'Interstate 81',
+      description: `Interstate 81 serves as a critical trucking corridor in Pennsylvania. Major trucking corridor through Harrisburg to New York. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Pennsylvania State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and mountain terrain and winter weather makes this route particularly hazardous during November, December, January.`
     },
     {
-      name: 'Interstate 78 (I-78)',
-      description: `Connecting the New York area to Harrisburg, I-78 passes through the Lehigh Valley's warehouse district. Amazon and other major shippers have built massive facilities along this corridor. The highway sees heavy truck traffic serving the Northeast's largest population centers.`
-    },
-    {
-      name: 'Interstate 95 (I-95)',
-      description: `Philadelphia's section of I-95 carries massive freight volumes serving the Port of Philadelphia and regional distribution centers. The urban corridor mixes commercial and commuter traffic in perpetual congestion. Construction projects and complex interchanges create additional hazards for truck operations.`
+      name: 'Interstate 95',
+      description: `Interstate 95 serves as a critical trucking corridor in Pennsylvania. Eastern route through Philadelphia. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Pennsylvania State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and mountain terrain and winter weather makes this route particularly hazardous during November, December, January.`
     }
   ],
 
   negligenceRule: {
     type: 'modified-51',
-    description: 'Pennsylvania follows modified comparative negligence with a 51% bar. You cannot recover if found more than 50% at fault for the accident.',
-    details: `Under Pennsylvania law (42 Pa. C.S. § 7102), you can recover damages if you are 50% or less at fault for the accident. Your damages are reduced by your percentage of fault. However, if you are found 51% or more at fault, you cannot recover any damages. This rule means trucking companies will try to shift as much blame as possible to victims. Strong legal representation is essential to establish the carrier's primary responsibility and protect your right to full compensation.`
+    description: 'Pennsylvania follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault.',
+    details: `Under Pennsylvania law, your damages are reduced by your percentage of fault, and recovery is barred if you exceed the threshold. For example, if you suffered $1,000,000 in damages but were 30% at fault, you could recover $700,000. However, if a jury finds you 51% or more responsible for the accident, you recover nothing.
+
+This rule makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility. They may claim you were speeding, failed to yield, or were distracted—anything to increase your percentage of fault. An experienced Pennsylvania truck accident lawyer knows how to counter these tactics through thorough investigation and evidence preservation.
+
+Electronic logging device data, driver qualification files, maintenance records, and the carrier's safety history all help establish the trucking company's negligence. Federal Motor Carrier Safety Administration regulations set minimum standards, and violations frequently appear in accident investigations. When carriers cut corners on safety to increase profits, Pennsylvania law holds them accountable.`
   },
 
   statuteOfLimitations: {
     personalInjury: '2 Years',
     wrongfulDeath: '2 Years',
     propertyDamage: '2 Years',
-    details: `Pennsylvania has a two-year statute of limitations for personal injury, wrongful death, and property damage claims (42 Pa. C.S. § 5524). Claims against Pennsylvania state agencies have a six-month notice requirement under sovereign immunity law. Claims against municipalities have specific notice requirements. Missing these deadlines bars your claim, making prompt legal action essential.`
+    details: `Pennsylvania has a 2 years statute of limitations for personal injury claims and 2 years for wrongful death claims. Property damage claims must be filed within 2 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+
+The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
+
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+
+Contact an attorney promptly after any serious Pennsylvania truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
 
   statistics: [
-    { label: 'Annual Truck Accident Deaths', value: '200+' },
-    { label: 'Turnpike Trucks Daily', value: '500,000+' },
-    { label: 'Miles of Interstate Highway', value: '1,891' },
+    { label: 'Annual Truck Accident Deaths', value: '180+' },
     { label: 'Registered Commercial Trucks', value: '200,000+' },
+    { label: 'Major Interstate Highways', value: 'I-76, I-80, I-81, I-78, I-95' },
+    { label: 'Primary Weather Hazard', value: 'Mountain terrain and winter weather' }
   ],
 
-  courtInfo: `Pennsylvania truck accident cases may be filed in state Courts of Common Pleas or federal courts. Federal jurisdiction exists for diversity cases exceeding $75,000 with parties from different states—common when out-of-state trucking companies cause accidents in Pennsylvania.
+  courtInfo: `Truck accident cases in Pennsylvania may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Pennsylvania state courts follow state procedural rules and apply Pennsylvania substantive law. The Eastern/Middle/Western District of Pennsylvania federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-Pennsylvania's Courts of Common Pleas have general civil jurisdiction. Venue is typically proper where the accident occurred, where the defendant resides, or where the defendant does business. Pennsylvania has three federal judicial districts (Eastern, Middle, and Western) handling cases based on geographic location.
+Pennsylvania state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
 
-Pennsylvania allows extensive discovery in civil cases. The state's rules permit depositions, document requests, and expert testimony on trucking standards. Pennsylvania courts have experience handling complex commercial vehicle litigation.
+Both state and federal courts in Pennsylvania allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
-An important consideration in Pennsylvania is the tort option choice. Pennsylvania auto insurance policies offer "limited tort" and "full tort" options. Limited tort restricts your ability to sue for non-economic damages (pain and suffering) unless you suffer "serious injury." However, these limitations typically don't apply when a commercial truck causes your accident.`,
+Pennsylvania does not cap economic damages in personal injury cases, allowing full recovery of medical expenses, lost wages, future medical costs, and other financial losses. Non-economic damages (pain and suffering) may be subject to certain limitations depending on the circumstances. Punitive damages are available in cases involving egregious misconduct, though caps may apply.`,
 
-  lastUpdated: '2026-01-08',
+  lastUpdated: '2026-01-10',
 
-  whyHireLocal: `Pennsylvania truck accident cases require attorneys who understand the Commonwealth's unique legal landscape. From the tort option system to the modified comparative negligence rule, Pennsylvania law has specific features that affect case strategy and outcomes. Experienced Pennsylvania counsel knows how to navigate these complexities.
+  whyHireLocal: `Pennsylvania truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Pennsylvania state law. Local counsel knows the Pennsylvania court system, local procedures, and the judges who will hear your case. They understand how Pennsylvania juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
 
-Pennsylvania's trucking environment presents distinct challenges. The Pennsylvania Turnpike's mountain terrain creates specific accident patterns. The Lehigh Valley's warehouse boom has transformed trucking in eastern Pennsylvania. Western Pennsylvania's fracking industry has added oilfield trucking hazards. Local attorneys understand these regional factors.
+Pennsylvania presents unique challenges for truck accident litigation. The state's mountain terrain and winter weather creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 
-Court familiarity matters in Pennsylvania. From Philadelphia's busy Court of Common Pleas to federal courts in the Eastern, Middle, and Western Districts, knowing local procedures and judicial tendencies affects case presentation. Pennsylvania attorneys know which experts and strategies work with local juries.
+Local attorneys also have established relationships with accident reconstruction experts, medical professionals, and investigators familiar with Pennsylvania conditions. They can quickly deploy resources to preserve evidence before it disappears. Time-zone convenience and proximity to accident scenes enable rapid response when needed.
 
-Insurance companies defending trucking claims in Pennsylvania are sophisticated. Many have Pennsylvania-based operations familiar with state courts and practices. You need representation equally experienced in Pennsylvania litigation to match their resources and expertise.`,
+The trucking industry has significant resources and experienced defense counsel. Insurance companies defending trucking claims employ aggressive tactics to minimize or deny claims. You need representation that matches their resources and knows how to counter their strategies effectively.
+
+A Pennsylvania-licensed attorney ensures your case proceeds properly through the Pennsylvania legal system. From filing requirements to discovery deadlines to trial procedures, local knowledge prevents costly procedural errors that could jeopardize your claim.`,
 
   faqs: [
     {
-      question: 'What is Pennsylvania\'s statute of limitations for truck accident claims?',
-      answer: 'Pennsylvania has a two-year statute of limitations for personal injury, wrongful death, and property damage claims from truck accidents. Claims against government entities have additional notice requirements that must be met even sooner. Missing these deadlines bars your claim, so contacting an attorney promptly is essential.'
+      question: 'What is the statute of limitations for truck accident cases in Pennsylvania?',
+      answer: 'Pennsylvania has a 2 years statute of limitations for personal injury claims and 2 years for wrongful death claims from truck accidents. This means you must file your lawsuit within 2 years of the accident date for personal injury or 2 years of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 2 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
-      question: 'How does Pennsylvania\'s comparative negligence law affect my case?',
-      answer: 'Pennsylvania follows modified comparative negligence with a 51% bar. If you are found more than 50% at fault for the accident, you cannot recover any damages. If you are 50% or less at fault, your damages are reduced by your percentage of fault. This rule makes establishing the trucking company\'s greater responsibility critical to your case.'
-    },
-    {
-      question: 'Does my "limited tort" insurance affect a truck accident claim?',
-      answer: 'Pennsylvania\'s limited tort option generally applies to automobile accidents, restricting pain and suffering claims for minor injuries. However, limited tort restrictions typically don\'t apply when you\'re injured by a commercial truck—you maintain full tort rights. An experienced attorney will ensure your rights are properly protected.'
-    },
-    {
-      question: 'What if my accident occurred on the Pennsylvania Turnpike?',
-      answer: 'The Pennsylvania Turnpike has specific regulations for commercial vehicles, and its mountain terrain creates unique hazards. Turnpike accidents often involve brake failures, weather conditions, and grade-related factors. The Pennsylvania Turnpike Commission may have relevant investigation information. Your attorney will pursue all relevant evidence.'
-    },
-    {
-      question: 'Can I sue a trucking company from another state?',
-      answer: 'Yes. If the accident occurred in Pennsylvania, Pennsylvania courts have jurisdiction regardless of where the trucking company is based. By operating on Pennsylvania roads, carriers subject themselves to Pennsylvania jurisdiction. Your attorney can file suit in Pennsylvania and hold out-of-state companies accountable.'
-    },
-    {
-      question: 'How do Pennsylvania\'s winter weather laws affect truck accident claims?',
-      answer: 'Pennsylvania requires trucks to remove ice and snow before operation and can restrict truck travel during snow emergencies. Violations of these requirements can establish negligence. If a truck caused your accident due to inadequate winter preparation or operating when restricted, these violations strengthen your claim.'
+      question: 'Can I still recover damages if I was partially at fault for a Pennsylvania truck accident?',
+      answer: 'Pennsylvania follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. For example, if you suffered $1,000,000 in damages but were found 20% at fault, your recovery would be reduced to $800,000. This makes establishing the trucking company\'s primary fault critical in contested cases. Insurance adjusters often try to shift blame to accident victims to reduce or eliminate their responsibility. An experienced Pennsylvania truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault through evidence including electronic logging device data, driver qualification files, and maintenance records.'
     },
     {
       question: 'What damages can I recover in a Pennsylvania truck accident case?',
-      answer: 'Pennsylvania allows recovery of both economic damages (medical expenses, lost wages, future earning capacity) and non-economic damages (pain and suffering, emotional distress). Punitive damages may be available if the trucking company acted with reckless disregard for safety. An experienced attorney will pursue all available compensation.'
+      answer: 'Pennsylvania allows recovery of both economic damages (medical expenses, lost wages, property damage, future medical costs, lost earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life, loss of consortium). Economic damages compensate for actual financial losses and are typically proven through medical bills, wage statements, and expert testimony about future costs. Non-economic damages compensate for intangible losses and vary based on injury severity and impact on daily life. Punitive damages may be available in cases involving gross negligence, reckless conduct, or intentional misconduct by the trucking company or driver.'
+    },
+    {
+      question: 'How long do trucking companies have to keep records in Pennsylvania?',
+      answer: 'Federal regulations require trucking companies to retain driver qualification files for three years after employment ends, hours of service records for six months, vehicle maintenance records for one year plus the time the equipment is in use, and accident registers for three years. However, companies often destroy records as soon as legally permitted—sometimes even sooner. This is why prompt legal action after a truck accident is critical. An experienced Pennsylvania truck accident attorney can send preservation letters requiring the trucking company to retain all evidence related to your case, preventing destruction of potentially crucial evidence.'
+    },
+    {
+      question: 'What evidence is important in a Pennsylvania truck accident case?',
+      answer: 'Critical evidence in Pennsylvania truck accident cases includes electronic logging device (ELD) data showing driver hours and rest periods, the truck\'s electronic control module (ECM) or black box data capturing speed, braking, and other operational parameters, driver qualification files showing training and driving history, maintenance records revealing any deferred repairs or safety issues, dispatch records showing pressure to meet delivery deadlines, toxicology results from post-accident drug and alcohol testing, and the carrier\'s safety rating and inspection history from FMCSA databases. Physical evidence from the scene, witness statements, and surveillance or dashcam video are also valuable. Time is critical—much of this evidence can be legally destroyed or overwritten if not preserved quickly.'
+    },
+    {
+      question: 'Can I sue an out-of-state trucking company for a Pennsylvania accident?',
+      answer: 'Yes. If a truck accident occurs in Pennsylvania, Pennsylvania courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Pennsylvania highways, subjects itself to Pennsylvania jurisdiction. Your case may be filed in Pennsylvania state court or in federal court (the Eastern/Middle/Western District of Pennsylvania). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
+    },
+    {
+      question: 'What if the truck driver who caused my accident was an independent contractor?',
+      answer: 'Trucking companies often try to avoid liability by classifying drivers as independent contractors rather than employees. However, Pennsylvania courts look at the actual relationship—not just what the contract says—to determine whether the trucking company controlled the driver\'s work. Even with true independent contractors, the trucking company may be liable under theories including negligent hiring (failing to properly screen the driver), negligent supervision (failing to ensure compliance with safety regulations), or negligent entrustment (allowing an unqualified driver to operate the truck). The motor carrier may also be directly liable for violations of federal safety regulations that apply regardless of driver classification.'
     }
   ],
 
-  neighboringStates: ['new-york', 'new-jersey', 'ohio', 'west-virginia', 'maryland', 'delaware']
+  neighboringStates: ['new-york', 'new-jersey', 'delaware', 'maryland', 'west-virginia', 'ohio']
 };

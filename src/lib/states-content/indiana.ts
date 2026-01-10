@@ -1,137 +1,158 @@
 import { StateContent } from './types';
 
+/**
+ * Indiana - Truck Accident Information
+ *
+ * Annual Truck Accident Deaths: 140+
+ * Registered Commercial Trucks: 150,000+
+ * Major Interstates: I-65, I-70, I-69, I-74, I-80/90
+ *
+ * Enhanced by State Enhancement Agent v1.0.0
+ * Last Updated: 2026-01-10T08:15:58.484Z
+ */
+
 export const indiana: StateContent = {
   slug: 'indiana',
   name: 'Indiana',
   abbreviation: 'IN',
   h1: 'Indiana Truck Injury Lawyers',
   metaTitle: 'Indiana Truck Accident Lawyers | 18-Wheeler Attorneys in IN',
-  metaDescription: 'Injured in an Indiana truck accident? Our attorneys understand IN law and fight for maximum compensation. Free consultation. No fee unless you win.',
+  metaDescription: 'Injured in a Indiana truck accident? Our attorneys fight for victims across Indiana. Free consultation. No fee unless you win.',
 
-  heroText: `Indiana ranks tenth in the nation for truck accident fatalities, with approximately 140 people killed annually in collisions involving large commercial vehicles. The Crossroads of America lives up to its nickname—more interstate highways intersect in Indiana than any other state, creating massive trucking volumes across Hoosier highways.
+  heroText: `Indiana presents unique challenges for commercial trucking operations and significant risks for motorists sharing the roads with 18-wheelers. With 140+ people killed annually in collisions involving large trucks, Indiana sees its share of devastating commercial vehicle accidents. The state's 150,000+ registered commercial trucks operate on highways that face winter weather and lake effect snow, creating conditions that contribute to serious and fatal crashes.
 
-Indianapolis sits at the convergence of Interstates 65, 69, 70, and 74. The Indianapolis Motor Speedway may be the city's most famous landmark, but the city's trucking infrastructure is equally impressive. Distribution centers ring the metropolitan area, and the Indianapolis International Airport serves as the second-largest FedEx hub in the world.
+The Indiana trucking industry serves critical economic functions. Manufacturing, Pharmaceuticals, Agriculture, Logistics, Steel all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 65, Interstate 70, Interstate 80/90 (Indiana Toll Road), Interstate 69 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Indiana motorists.
 
-Northwest Indiana forms part of the Chicago-Gary industrial corridor, one of the nation's busiest trucking zones. The I-80/94 corridor through Gary and Hammond sees some of the densest truck traffic anywhere. Steel mills, manufacturing plants, and logistics operations generate constant commercial vehicle movements through this region.
+Indiana follows modified comparative negligence with a 51% bar for personal injury cases. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a 2 years statute of limitations for personal injury claims, meaning you must file suit within 2 years of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
 
-Indiana law provides important protections for truck accident victims. The state follows modified comparative negligence with a 51% bar—you can recover if you're 50% or less at fault. Indiana's two-year statute of limitations gives reasonable time to build a case, but evidence disappears quickly after any truck accident.`,
+Weather plays a significant role in Indiana truck accidents. During November, December, January, February, March, winter weather and lake effect snow creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
+
+If you have been injured in a Indiana truck accident, time is critical. Trucking companies dispatch investigation teams immediately after serious crashes to protect their interests. Evidence including electronic logging device data, driver records, and maintenance logs may be overwritten or destroyed if not preserved quickly. Our Indiana truck accident lawyers know how to preserve evidence, investigate thoroughly, and hold negligent carriers accountable under both federal FMCSA regulations and Indiana state law.`,
 
   truckingLaws: [
     {
-      title: 'Indiana Code Title 9 (Motor Vehicles)',
-      description: `Indiana's motor vehicle code includes comprehensive provisions for commercial vehicles. Article 20 covers size, weight, and load restrictions. These state laws supplement federal FMCSA regulations and establish Indiana-specific requirements that affect liability in accident cases.`
-    },
-    {
-      title: 'Indiana Motor Carrier Safety Regulations',
-      description: `The Indiana State Police enforce motor carrier safety regulations. The state participates in FMCSA's Motor Carrier Safety Assistance Program. Indiana maintains an active commercial vehicle enforcement division that conducts inspections and compliance reviews.`
-    },
-    {
-      title: 'Indiana Size and Weight Restrictions',
-      description: `Indiana enforces strict weight limits—80,000 pounds maximum gross vehicle weight on interstate highways. INDOT issues overweight permits with routing requirements. The state operates weigh stations and mobile enforcement units on major trucking corridors.`
-    },
-    {
-      title: 'Indiana Commercial Driver License Requirements',
-      description: `The Indiana BMV issues CDLs under federal standards with state-specific testing. Indiana requires endorsements for specialized vehicles and hazmat transport. The state disqualifies drivers for violations and participates in the national CDL database.`
-    },
-    {
-      title: 'Indiana Toll Road Regulations',
-      description: `The Indiana Toll Road (I-80/90) has specific regulations for commercial vehicles, including weight restrictions and transponder requirements. This major east-west corridor carries significant freight traffic through northern Indiana.`
+      title: 'Indiana Commercial Vehicle Regulations',
+      description: `Indiana regulates commercial vehicles under state statutes enforced by the Indiana State Patrol and Department of Transportation. The state maintains strict size and weight limits for commercial vehicles, with maximum gross vehicle weight of 80,000 pounds on interstate highways. Oversize and overweight permits are required for loads exceeding standard limits, with specific routing requirements and escort obligations. Indiana participates in the International Registration Plan (IRP) and International Fuel Tax Agreement (IFTA), requiring proper registration for carriers operating across state lines. Violations of commercial vehicle regulations can establish negligence in truck accident cases.`
     },
     {
       title: 'Indiana Hours of Service Enforcement',
-      description: `Indiana State Police enforce federal HOS regulations throughout the state. The state participates in targeted enforcement operations on major trucking corridors. Indiana's central location means extensive oversight of through freight.`
+      description: `Indiana actively enforces federal Hours of Service regulations through the Indiana State Patrol. Officers conduct roadside inspections at weigh stations and portable inspection sites throughout the state. The state participates in FMCSA's Compliance, Safety, Accountability (CSA) program, documenting violations in the federal database. Indiana also conducts targeted enforcement operations during high-traffic periods and along major freight corridors. Carriers with poor safety ratings face increased inspection rates when operating in Indiana.`
+    },
+    {
+      title: 'Indiana Commercial Driver License Requirements',
+      description: `The Indiana Department of Motor Vehicles issues Commercial Driver's Licenses under federal standards with state-specific requirements. Drivers must pass written knowledge tests covering general commercial vehicle operation, air brakes, and any endorsements sought. Skills testing includes pre-trip inspection, basic control maneuvers, and on-road driving. Indiana maintains driver records and can disqualify drivers for violations including DUI, leaving the scene of an accident, or using a commercial vehicle in the commission of a felony. Medical certification requirements must be met and maintained.`
+    },
+    {
+      title: 'Indiana Drug and Alcohol Testing',
+      description: `Indiana enforces federal drug and alcohol testing requirements for commercial drivers and has additional state laws prohibiting impaired commercial driving. Indiana DUI laws apply to commercial drivers with a lower BAC threshold of 0.04%. Pre-employment, random, post-accident, reasonable suspicion, return-to-duty, and follow-up testing are all required. The state maintains a Drug and Alcohol Clearinghouse participation requirement, and employers must query the clearinghouse before hiring. Refusal to submit to testing results in license disqualification.`
+    },
+    {
+      title: 'Indiana Motor Carrier Insurance Requirements',
+      description: `Motor carriers operating in Indiana must maintain minimum levels of liability insurance as required by federal and state law. For-hire carriers transporting general freight must carry at least $750,000 in liability coverage. Carriers transporting hazardous materials face higher requirements up to $5,000,000 depending on the materials carried. Indiana requires proof of insurance for vehicle registration and operating authority. Carriers must file proof of financial responsibility with the state. Self-insurance is permitted for carriers meeting strict financial requirements.`
+    },
+    {
+      title: 'Indiana Vehicle Inspection Requirements',
+      description: `Indiana requires annual safety inspections for commercial vehicles registered in the state. The Indiana State Patrol conducts roadside inspections using federal CVSA criteria. Drivers must perform and document pre-trip and post-trip inspections daily. Driver Vehicle Inspection Reports (DVIRs) must note any defects or deficiencies. Carriers must repair or document repairs for reported defects before the vehicle returns to service. Out-of-service violations result in the vehicle being immediately removed from operation until repairs are completed.`
     }
   ],
 
   corridors: [
     {
-      name: 'Interstate 80/94 (Borman Expressway)',
-      description: `Through northwest Indiana's Gary-Hammond area, the I-80/94 corridor is one of America's busiest and most dangerous trucking corridors. This highway connects Chicago to the east, carrying massive volumes of intermodal and through freight. Congestion, industrial traffic, and weather hazards create extreme accident risk.`
+      name: 'Interstate 65',
+      description: `Interstate 65 serves as a critical trucking corridor in Indiana. Major north-south route from Chicago through Indianapolis to Louisville. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Indiana State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and winter weather and lake effect snow makes this route particularly hazardous during November, December, January.`
     },
     {
-      name: 'Interstate 65 (I-65)',
-      description: `Running north-south through Indianapolis from Chicago to Louisville, I-65 is a primary freight corridor. The highway serves distribution centers throughout central Indiana. Heavy truck traffic mixes with commuter traffic through Indianapolis.`
+      name: 'Interstate 70',
+      description: `Interstate 70 serves as a critical trucking corridor in Indiana. Primary east-west route through Indianapolis. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Indiana State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and winter weather and lake effect snow makes this route particularly hazardous during November, December, January.`
     },
     {
-      name: 'Interstate 70 (I-70)',
-      description: `Running east-west through Indianapolis, I-70 connects St. Louis to Columbus, Ohio. This major freight corridor carries cross-country trucking through Indiana's capital. The Indianapolis interchanges with other interstates see dense truck traffic.`
+      name: 'Interstate 80/90 (Indiana Toll Road)',
+      description: `Interstate 80/90 (Indiana Toll Road) serves as a critical trucking corridor in Indiana. Northern corridor connecting Ohio to Illinois. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Indiana State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and winter weather and lake effect snow makes this route particularly hazardous during November, December, January.`
     },
     {
-      name: 'Indiana Toll Road (I-80/90)',
-      description: `Crossing northern Indiana from Ohio to Illinois, the toll road carries enormous east-west freight volumes. This corridor connects the Northeast to Chicago and beyond. Weather hazards from Lake Michigan affect winter trucking operations.`
-    },
-    {
-      name: 'Interstate 69 (I-69)',
-      description: `Newly completed through Indiana, I-69 connects Indianapolis to Evansville and provides a route to the Gulf Coast. The corridor is seeing increased trucking traffic as it becomes established. Construction impacts continue in some sections.`
+      name: 'Interstate 69',
+      description: `Interstate 69 serves as a critical trucking corridor in Indiana. Northeast corridor from Indianapolis to Michigan. Commercial trucks traveling this route face unique challenges including variable weather conditions, terrain changes, and mixing with local traffic. Indiana State Patrol conducts regular enforcement operations along this corridor, and truck accidents here often involve complex liability determinations due to the mix of interstate and local carriers. The combination of heavy truck volumes and winter weather and lake effect snow makes this route particularly hazardous during November, December, January.`
     }
   ],
 
   negligenceRule: {
     type: 'modified-51',
-    description: 'Indiana follows modified comparative negligence with a 51% bar. You cannot recover if found more than 50% at fault.',
-    details: `Under Indiana Code section 34-51-2-6, you can recover damages if you are 50% or less at fault for the accident. Your damages are reduced by your percentage of fault. However, if a jury finds you 51% or more responsible, you cannot recover anything. This rule means trucking companies aggressively try to shift blame. Experienced legal representation is essential to establish the carrier's greater fault and protect your right to compensation.`
+    description: 'Indiana follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault.',
+    details: `Under Indiana law, your damages are reduced by your percentage of fault, and recovery is barred if you exceed the threshold. For example, if you suffered $1,000,000 in damages but were 30% at fault, you could recover $700,000. However, if a jury finds you 51% or more responsible for the accident, you recover nothing.
+
+This rule makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility. They may claim you were speeding, failed to yield, or were distracted—anything to increase your percentage of fault. An experienced Indiana truck accident lawyer knows how to counter these tactics through thorough investigation and evidence preservation.
+
+Electronic logging device data, driver qualification files, maintenance records, and the carrier's safety history all help establish the trucking company's negligence. Federal Motor Carrier Safety Administration regulations set minimum standards, and violations frequently appear in accident investigations. When carriers cut corners on safety to increase profits, Indiana law holds them accountable.`
   },
 
   statuteOfLimitations: {
     personalInjury: '2 Years',
     wrongfulDeath: '2 Years',
     propertyDamage: '2 Years',
-    details: `Indiana Code section 34-11-2-4 establishes a two-year statute of limitations for personal injury, wrongful death, and property damage claims. Claims against Indiana state agencies have additional requirements under the Indiana Tort Claims Act, including a 270-day notice provision. Missing these deadlines bars your claim, making prompt legal action essential.`
+    details: `Indiana has a 2 years statute of limitations for personal injury claims and 2 years for wrongful death claims. Property damage claims must be filed within 2 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+
+The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
+
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+
+Contact an attorney promptly after any serious Indiana truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
 
   statistics: [
     { label: 'Annual Truck Accident Deaths', value: '140+' },
-    { label: 'Interstate Highways Converging', value: '5' },
-    { label: 'Miles of Interstate Highway', value: '1,282' },
-    { label: 'Registered Commercial Trucks', value: '125,000+' },
+    { label: 'Registered Commercial Trucks', value: '150,000+' },
+    { label: 'Major Interstate Highways', value: 'I-65, I-70, I-69, I-74, I-80/90' },
+    { label: 'Primary Weather Hazard', value: 'Winter weather and lake effect snow' }
   ],
 
-  courtInfo: `Indiana truck accident cases may be filed in state Circuit or Superior Courts, or in federal courts. Federal jurisdiction exists for diversity cases exceeding $75,000 with parties from different states—common when out-of-state trucking companies cause Indiana accidents.
+  courtInfo: `Truck accident cases in Indiana may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Indiana state courts follow state procedural rules and apply Indiana substantive law. The Northern District of Indiana / Southern District of Indiana federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-Indiana's trial courts (Circuit and Superior Courts) have general civil jurisdiction. Venue is proper in the county where the accident occurred, where the defendant resides, or where the defendant has a principal office. Indiana has two federal judicial districts (Northern and Southern) handling cases based on geographic location.
+Indiana state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
 
-Indiana allows comprehensive civil discovery under the Indiana Rules of Trial Procedure. Expert testimony on trucking standards and accident reconstruction is permitted. Indiana courts handle significant trucking litigation given the state's role as a transportation crossroads.
+Both state and federal courts in Indiana allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
-Indiana caps non-economic damages in most personal injury cases, though exceptions exist. Understanding these caps and exceptions affects case strategy and settlement negotiations.`,
+Indiana does not cap economic damages in personal injury cases, allowing full recovery of medical expenses, lost wages, future medical costs, and other financial losses. Non-economic damages (pain and suffering) may be subject to certain limitations depending on the circumstances. Punitive damages are available in cases involving egregious misconduct, though caps may apply.`,
 
-  lastUpdated: '2026-01-08',
+  lastUpdated: '2026-01-10',
 
-  whyHireLocal: `Indiana's position as the Crossroads of America creates unique trucking accident challenges. With more interstate highways converging here than any other state, local attorneys regularly handle complex cases involving multiple jurisdictions and carriers. Understanding Indiana's transportation environment helps build stronger cases.
+  whyHireLocal: `Indiana truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Indiana state law. Local counsel knows the Indiana court system, local procedures, and the judges who will hear your case. They understand how Indiana juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
 
-Northwest Indiana's relationship to Chicago creates specific considerations. The Gary-Hammond industrial corridor sees some of the nation's heaviest truck traffic. Local attorneys understand the interplay between Indiana and Illinois operations and how to pursue claims in this complex environment.
+Indiana presents unique challenges for truck accident litigation. The state's winter weather and lake effect snow creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 
-Indiana's modified comparative negligence rule requires careful case construction. Insurance companies try to push victim fault above the 50% threshold. Local counsel knows how to counter these tactics in Indiana courts.
+Local attorneys also have established relationships with accident reconstruction experts, medical professionals, and investigators familiar with Indiana conditions. They can quickly deploy resources to preserve evidence before it disappears. Time-zone convenience and proximity to accident scenes enable rapid response when needed.
 
-Court familiarity matters in Indiana. From Marion County's busy courts in Indianapolis to the federal courts in both districts, knowing local procedures affects outcomes. Indiana attorneys understand how to present trucking cases effectively to local juries.`,
+The trucking industry has significant resources and experienced defense counsel. Insurance companies defending trucking claims employ aggressive tactics to minimize or deny claims. You need representation that matches their resources and knows how to counter their strategies effectively.
+
+A Indiana-licensed attorney ensures your case proceeds properly through the Indiana legal system. From filing requirements to discovery deadlines to trial procedures, local knowledge prevents costly procedural errors that could jeopardize your claim.`,
 
   faqs: [
     {
-      question: 'What is Indiana\'s statute of limitations for truck accident claims?',
-      answer: 'Indiana has a two-year statute of limitations for personal injury, wrongful death, and property damage claims from truck accidents. Claims against government entities require a 270-day notice. Missing these deadlines bars your claim, so contacting an attorney promptly is essential.'
+      question: 'What is the statute of limitations for truck accident cases in Indiana?',
+      answer: 'Indiana has a 2 years statute of limitations for personal injury claims and 2 years for wrongful death claims from truck accidents. This means you must file your lawsuit within 2 years of the accident date for personal injury or 2 years of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 2 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
-      question: 'How does Indiana\'s comparative negligence law work?',
-      answer: 'Indiana follows modified comparative negligence with a 51% bar. If you are found more than 50% at fault for the accident, you cannot recover any damages. If you are 50% or less at fault, your damages are reduced by your percentage of fault. This makes establishing the trucking company\'s greater responsibility critical.'
+      question: 'Can I still recover damages if I was partially at fault for a Indiana truck accident?',
+      answer: 'Indiana follows modified comparative negligence with a 51% bar. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. For example, if you suffered $1,000,000 in damages but were found 20% at fault, your recovery would be reduced to $800,000. This makes establishing the trucking company\'s primary fault critical in contested cases. Insurance adjusters often try to shift blame to accident victims to reduce or eliminate their responsibility. An experienced Indiana truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault through evidence including electronic logging device data, driver qualification files, and maintenance records.'
     },
     {
-      question: 'Does Indiana cap damages in truck accident cases?',
-      answer: 'Indiana caps non-economic damages (pain and suffering) in most personal injury cases. Economic damages (medical expenses, lost wages) are not capped. Exceptions to the caps may apply in cases of catastrophic injury. An experienced attorney will evaluate applicable limits to your case.'
+      question: 'What damages can I recover in a Indiana truck accident case?',
+      answer: 'Indiana allows recovery of both economic damages (medical expenses, lost wages, property damage, future medical costs, lost earning capacity) and non-economic damages (pain and suffering, mental anguish, loss of enjoyment of life, loss of consortium). Economic damages compensate for actual financial losses and are typically proven through medical bills, wage statements, and expert testimony about future costs. Non-economic damages compensate for intangible losses and vary based on injury severity and impact on daily life. Punitive damages may be available in cases involving gross negligence, reckless conduct, or intentional misconduct by the trucking company or driver.'
     },
     {
-      question: 'Why is Indiana called the Crossroads of America?',
-      answer: 'More interstate highways converge in Indiana than any other state. Interstates 65, 69, 70, 74, and the 80/90 Toll Road all pass through Indiana. This creates tremendous economic opportunity but also means extremely high truck traffic volumes and corresponding accident risk.'
+      question: 'How long do trucking companies have to keep records in Indiana?',
+      answer: 'Federal regulations require trucking companies to retain driver qualification files for three years after employment ends, hours of service records for six months, vehicle maintenance records for one year plus the time the equipment is in use, and accident registers for three years. However, companies often destroy records as soon as legally permitted—sometimes even sooner. This is why prompt legal action after a truck accident is critical. An experienced Indiana truck accident attorney can send preservation letters requiring the trucking company to retain all evidence related to your case, preventing destruction of potentially crucial evidence.'
     },
     {
-      question: 'Can I sue an out-of-state trucking company in Indiana?',
-      answer: 'Yes. If the accident occurred in Indiana, Indiana courts have jurisdiction regardless of where the trucking company is based. By operating trucks on Indiana highways, carriers subject themselves to Indiana jurisdiction. Your attorney can file suit in Indiana and hold out-of-state companies accountable.'
+      question: 'What evidence is important in a Indiana truck accident case?',
+      answer: 'Critical evidence in Indiana truck accident cases includes electronic logging device (ELD) data showing driver hours and rest periods, the truck\'s electronic control module (ECM) or black box data capturing speed, braking, and other operational parameters, driver qualification files showing training and driving history, maintenance records revealing any deferred repairs or safety issues, dispatch records showing pressure to meet delivery deadlines, toxicology results from post-accident drug and alcohol testing, and the carrier\'s safety rating and inspection history from FMCSA databases. Physical evidence from the scene, witness statements, and surveillance or dashcam video are also valuable. Time is critical—much of this evidence can be legally destroyed or overwritten if not preserved quickly.'
     },
     {
-      question: 'What if my accident was on the Borman Expressway?',
-      answer: 'The I-80/94 Borman Expressway through Gary and Hammond is one of the nation\'s most dangerous trucking corridors. The heavy industrial traffic, congestion, and weather hazards create serious accident risk. Local attorneys understand the unique challenges of this corridor and how to investigate accidents there.'
+      question: 'Can I sue an out-of-state trucking company for a Indiana accident?',
+      answer: 'Yes. If a truck accident occurs in Indiana, Indiana courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Indiana highways, subjects itself to Indiana jurisdiction. Your case may be filed in Indiana state court or in federal court (the Northern District of Indiana / Southern District of Indiana). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
     },
     {
-      question: 'What evidence is important in Indiana truck accident cases?',
-      answer: 'Critical evidence includes the truck\'s electronic logging device data, driver qualification file, vehicle maintenance records, and cargo documentation. Indiana State Police reports and weigh station inspection records are also important. Quick action is essential because some evidence can be destroyed or overwritten within days.'
+      question: 'What if the truck driver who caused my accident was an independent contractor?',
+      answer: 'Trucking companies often try to avoid liability by classifying drivers as independent contractors rather than employees. However, Indiana courts look at the actual relationship—not just what the contract says—to determine whether the trucking company controlled the driver\'s work. Even with true independent contractors, the trucking company may be liable under theories including negligent hiring (failing to properly screen the driver), negligent supervision (failing to ensure compliance with safety regulations), or negligent entrustment (allowing an unqualified driver to operate the truck). The motor carrier may also be directly liable for violations of federal safety regulations that apply regardless of driver classification.'
     }
   ],
 
