@@ -156,5 +156,5 @@ A Hawaii-licensed attorney ensures your case proceeds properly through the Hawai
     }
   ],
 
-  neighboringStates: []
+  neighboringStates: ['california', 'washington', 'oregon']
 };

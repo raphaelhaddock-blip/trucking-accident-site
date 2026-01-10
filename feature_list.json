@@ -375,7 +375,7 @@
       "id": "F021",
       "name": "Internal linking complete",
       "description": "Cross-linking between all content pages",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F006", "F011"],
       "test_criteria": [
         "Each accident page links to 3-5 states",

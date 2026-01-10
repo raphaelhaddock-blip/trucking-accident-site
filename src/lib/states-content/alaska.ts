@@ -160,5 +160,5 @@ A Alaska-licensed attorney ensures your case proceeds properly through the Alask
     }
   ],
 
-  neighboringStates: []
+  neighboringStates: ['washington', 'oregon', 'california']
 };
