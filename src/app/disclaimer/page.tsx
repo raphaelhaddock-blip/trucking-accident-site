@@ -7,6 +7,10 @@ const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/83915
 export const metadata: Metadata = {
   title: 'Legal Disclaimer',
   description: 'Legal disclaimer for Truck Injury Lawyers. Important information about our referral service and attorney advertising.',
+  robots: {
+    index: false,
+    follow: true,
+  },
   alternates: {
     canonical: '/disclaimer',
   },

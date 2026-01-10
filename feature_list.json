@@ -2,7 +2,7 @@
   "project_name": "18-Wheeler Accident Site",
   "project_type": "web_app",
   "created_at": "2026-01-07T12:00:00Z",
-  "last_updated": "2026-01-08T02:30:00Z",
+  "last_updated": "2026-01-10T15:30:00Z",
   "features": [
     {
       "id": "F000",
@@ -325,7 +325,7 @@
       "id": "F018",
       "name": "Legal pages (Privacy, Terms, Disclaimer)",
       "description": "Required legal pages for compliance",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F001"],
       "test_criteria": [
         "/privacy page renders",

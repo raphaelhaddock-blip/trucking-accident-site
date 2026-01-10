@@ -7,6 +7,10 @@ const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/83915
 export const metadata: Metadata = {
   title: 'Terms of Service',
   description: 'Terms of service for Truck Injury Lawyers. Read our terms and conditions for using our legal referral services.',
+  robots: {
+    index: false,
+    follow: true,
+  },
   alternates: {
     canonical: '/terms',
   },

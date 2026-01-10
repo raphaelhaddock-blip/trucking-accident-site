@@ -414,3 +414,46 @@ Key specs:
 - F003: Sanity CMS configuration (full studio setup)
 
 ---
+
+## SESSION 5 - 2026-01-10
+### Starting State
+- 12 features PASSING (F000-F002, F004-F012)
+- Server running on port 3006
+
+### Work Done
+- F018: Legal pages (Privacy, Terms, Disclaimer) - PASSING
+  - Verified existing /privacy page (comprehensive privacy policy)
+  - Verified existing /terms page (terms of service)
+  - Verified existing /disclaimer page (legal disclaimer with important notices)
+  - Added noindex robots meta tag to all 3 pages (utility pages shouldn't rank)
+  - All pages linked from footer (already configured)
+  - All pages tested 3x - stable HTTP 200 responses
+
+### Files Modified
+- src/app/privacy/page.tsx (added robots noindex)
+- src/app/terms/page.tsx (added robots noindex)
+- src/app/disclaimer/page.tsx (added robots noindex)
+
+### Current State
+- F000: PASSING
+- F001: PASSING
+- F002: PASSING
+- F004: PASSING
+- F005: PASSING
+- F006: PASSING
+- F007: PASSING
+- F008: PASSING
+- F009: PASSING
+- F010: PASSING
+- F011: PASSING
+- F012: PASSING
+- F018: PASSING
+- Total: 13 features PASSING
+
+### Next Tasks
+- F013: Case evaluation form component (reusable across site)
+- F014: Blog page template
+- F017: 404 page
+- F019: About page
+
+---

@@ -7,6 +7,10 @@ const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/83915
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'Privacy policy for Truck Injury Lawyers. Learn how we collect, use, and protect your personal information.',
+  robots: {
+    index: false,
+    follow: true,
+  },
   alternates: {
     canonical: '/privacy',
   },
