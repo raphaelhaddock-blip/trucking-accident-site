@@ -1,6 +1,11 @@
-# Allow all search engines
+# Allow all search engines on public pages
 User-agent: *
 Allow: /
+
+# Disallow private/system directories
+Disallow: /api/
+Disallow: /studio/
+Disallow: /_next/
 
 # Sitemap location
 Sitemap: https://trucking-accident-site.vercel.app/sitemap.xml

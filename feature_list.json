@@ -257,7 +257,7 @@
       "id": "F014",
       "name": "Blog page template",
       "description": "Dynamic route /blog/[slug] for blog posts",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F001"],
       "test_criteria": [
         "Dynamic route at /blog/[slug] works",
@@ -275,7 +275,7 @@
       "id": "F015",
       "name": "XML Sitemap",
       "description": "Auto-generated sitemap at /sitemap.xml",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F005", "F010", "F014"],
       "test_criteria": [
         "/sitemap.xml returns valid XML",
@@ -293,7 +293,7 @@
       "id": "F016",
       "name": "Robots.txt",
       "description": "Robots.txt file with correct directives",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F015"],
       "test_criteria": [
         "/robots.txt accessible",
@@ -358,7 +358,7 @@
       "id": "F020",
       "name": "Schema markup validation",
       "description": "All schema markup validates without errors",
-      "status": "FAILING",
+      "status": "PASSING",
       "dependencies": ["F002", "F006", "F011"],
       "test_criteria": [
         "Homepage schema validates",
