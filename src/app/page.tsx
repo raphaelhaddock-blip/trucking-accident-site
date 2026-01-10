@@ -499,6 +499,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* What Makes Truck Accidents Different Section */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-navy-900">
+              Why Truck Accident Cases Require Specialized Legal Help
+            </h2>
+          </div>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-navy-900 mb-3">Catastrophic Injuries</h3>
+              <p className="text-gray-600">
+                An 80,000-pound commercial truck creates devastating impact forces. Victims often suffer traumatic brain injuries, spinal cord damage, multiple fractures, and internal organ injuries that require extensive medical treatment and rehabilitation. Many survivors face permanent disabilities.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-navy-900 mb-3">Complex Liability</h3>
+              <p className="text-gray-600">
+                Unlike car accidents with one at-fault driver, truck crashes often involve multiple liable parties: the truck driver, trucking company, freight broker, cargo shipper, maintenance provider, and equipment manufacturer. Each may carry separate insurance policies.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-navy-900 mb-3">Federal Regulations</h3>
+              <p className="text-gray-600">
+                The Federal Motor Carrier Safety Administration enforces detailed regulations on hours of service, driver qualifications, vehicle maintenance, cargo securement, and drug testing. Violations of these rules can prove negligence and strengthen your case.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-navy-900 mb-3">Critical Evidence</h3>
+              <p className="text-gray-600">
+                Electronic logging devices, black box data, driver qualification files, inspection reports, and maintenance records contain crucial evidence. Trucking companies know this—they often send rapid response teams to protect their interests within hours of a crash.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-navy-900 mb-3">Higher Insurance Limits</h3>
+              <p className="text-gray-600">
+                Federal law requires commercial trucks to carry minimum liability coverage of $750,000 to $5 million depending on cargo type. This means greater potential compensation—but also more aggressive defense tactics from insurers protecting larger policies.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-xl font-semibold text-navy-900 mb-3">Expert Analysis Required</h3>
+              <p className="text-gray-600">
+                Successful truck accident claims often require accident reconstruction specialists, medical experts, trucking industry consultants, and economic damages analysts. Building a strong case demands resources most individuals cannot access alone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-amber-500 py-16">
         <div className="mx-auto max-w-7xl px-4 lg:px-8 text-center">
@@ -509,6 +558,9 @@ export default function Home() {
             Trucking companies send investigation teams within hours of a crash. ELD data can be
             overwritten, black boxes can be &quot;lost,&quot; and witnesses forget details. The sooner you act,
             the stronger your case.
+          </p>
+          <p className="mt-4 text-lg text-navy-700 max-w-3xl mx-auto">
+            Every day you wait is a day the trucking company uses to build their defense. They are already working to minimize their liability. You deserve someone fighting just as hard for you. Our network of experienced truck accident attorneys has recovered millions for victims of negligent trucking companies. They understand FMCSA regulations, know how to preserve critical evidence, and have the resources to take on major carriers and their insurance companies.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link

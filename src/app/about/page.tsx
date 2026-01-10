@@ -176,12 +176,97 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Types of Cases We Handle */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-navy-900 mb-6">Types of Truck Accident Cases We Handle</h2>
+          <p className="text-lg text-gray-700 mb-6">
+            Our attorney network handles the full spectrum of commercial vehicle accident cases, including cases involving:
+          </p>
+          <div className="grid md:grid-cols-2 gap-4 mb-8">
+            <ul className="space-y-2">
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-amber-500">•</span> 18-wheelers and semi-trucks
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-amber-500">•</span> Delivery trucks and box trucks
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-amber-500">•</span> Tanker trucks and fuel haulers
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-amber-500">•</span> Flatbed trucks and oversized loads
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-amber-500">•</span> Garbage and dump trucks
+              </li>
+            </ul>
+            <ul className="space-y-2">
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-amber-500">•</span> Hazardous materials carriers
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-amber-500">•</span> Construction vehicles
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-amber-500">•</span> Logging trucks
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-amber-500">•</span> Auto transport carriers
+              </li>
+              <li className="flex items-center gap-2 text-gray-700">
+                <span className="text-amber-500">•</span> Refrigerated trucks
+              </li>
+            </ul>
+          </div>
+          <p className="text-lg text-gray-700">
+            We also connect victims with attorneys who handle all types of truck accident scenarios, including jackknife accidents, rollovers, underride collisions, rear-end crashes, head-on collisions, brake failures, tire blowouts, and accidents caused by driver fatigue, distraction, or impairment. Whatever the circumstances of your accident, we work to find an attorney with relevant experience.
+          </p>
+        </div>
+      </section>
+
+      {/* Our Attorney Network */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-navy-900 mb-6">Our Attorney Network</h2>
+          <p className="text-lg text-gray-700 mb-6">
+            We have built relationships with truck accident attorneys across the United States who share our commitment to helping injury victims. The attorneys in our network typically offer:
+          </p>
+          <ul className="space-y-4 mb-6">
+            <li className="flex items-start gap-3">
+              <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0" />
+              <span className="text-gray-700">
+                <strong>Contingency fee representation.</strong> You pay no attorney fees unless you recover compensation. This aligns the attorney&apos;s interests with yours and ensures access to quality representation regardless of your financial situation.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0" />
+              <span className="text-gray-700">
+                <strong>Experience with trucking regulations.</strong> Understanding FMCSA rules, hours of service requirements, and industry practices is essential for building strong truck accident cases. Our network attorneys have this specialized knowledge.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0" />
+              <span className="text-gray-700">
+                <strong>Resources for thorough investigation.</strong> Truck accident cases often require accident reconstruction, expert witnesses, and detailed analysis of electronic data. Network attorneys have access to the resources needed for comprehensive case development.
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0" />
+              <span className="text-gray-700">
+                <strong>Trial experience.</strong> While most cases settle, insurance companies know which attorneys will take cases to trial if necessary. This affects settlement negotiations. Our network includes attorneys with substantial trial experience.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       {/* Transparency */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-navy-900 mb-6">Our Commitment to Transparency</h2>
           <p className="text-lg text-gray-700 mb-6">
-            We believe you should understand exactly how our service works:
+            We believe you should understand exactly how our service works. Trust requires transparency, and we want you to make informed decisions about your legal representation:
           </p>
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
@@ -189,6 +274,7 @@ export default function AboutPage() {
               <span className="text-gray-700">
                 <strong>We are a referral service, not a law firm.</strong> We connect you
                 with independent attorneys who make their own decisions about accepting cases.
+                We do not provide legal advice or represent clients in legal matters.
               </span>
             </li>
             <li className="flex items-start gap-3">
@@ -196,6 +282,7 @@ export default function AboutPage() {
               <span className="text-gray-700">
                 <strong>Our service is free to you.</strong> We may receive compensation
                 from attorneys in our network, but this does not increase your legal costs.
+                The attorneys work on contingency, meaning you pay nothing unless you win.
               </span>
             </li>
             <li className="flex items-start gap-3">
@@ -203,6 +290,7 @@ export default function AboutPage() {
               <span className="text-gray-700">
                 <strong>No guarantees.</strong> Every case is different. We cannot promise
                 any particular outcome. Past results do not guarantee future success.
+                Outcomes depend on the specific facts and circumstances of each case.
               </span>
             </li>
             <li className="flex items-start gap-3">
@@ -210,6 +298,7 @@ export default function AboutPage() {
               <span className="text-gray-700">
                 <strong>Your choice matters.</strong> You are never obligated to hire any
                 attorney we refer. The consultation is free with no strings attached.
+                You maintain complete control over your legal representation decisions.
               </span>
             </li>
           </ul>
