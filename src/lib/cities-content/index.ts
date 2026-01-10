@@ -24,6 +24,59 @@ interface CityAccidentDataFile {
 
 const cityAccidentData = cityAccidentDataRaw as CityAccidentDataFile;
 
+// List of all cities that have content files (including those without FARS data)
+// This is generated from the content directory structure
+const CONTENT_FILE_CITIES: Record<string, string[]> = {
+  'alabama': ['auburn-al', 'birmingham', 'decatur', 'gulf-shores', 'hoover', 'huntsville', 'montgomery', 'tuscaloosa'],
+  'arizona': ['chandler', 'gilbert', 'glendale-az', 'goodyear', 'mesa', 'peoria-az', 'phoenix', 'scottsdale', 'tempe', 'tucson'],
+  'arkansas': ['fayetteville-ar', 'fort-smith', 'little-rock', 'rogers'],
+  'california': ['alameda', 'alhambra', 'anaheim', 'antioch', 'apple-valley', 'arcadia', 'artesia', 'bakersfield', 'baldwin-park', 'barstow', 'beaumont', 'bellflower', 'berkeley', 'blythe', 'brea', 'buena-park', 'burbank', 'carlsbad', 'carson', 'ceres', 'cerritos', 'chico', 'chino', 'chino-hills', 'chula-vista', 'citrus-heights', 'clovis', 'compton', 'concord', 'corona', 'costa-mesa', 'cypress', 'daly-city', 'downey', 'el-cajon', 'el-monte', 'elk-grove', 'escondido', 'eureka', 'fairfield', 'folsom', 'fontana', 'fountain-valley', 'fremont', 'fresno', 'fullerton', 'garden-grove', 'garnet', 'gilroy', 'glendale', 'glendora', 'hawthorne', 'hayward', 'hemet', 'hercules', 'hesperia', 'huntington-beach', 'indio', 'inglewood', 'irvine', 'irwindale', 'jurupa-valley', 'laguna-hills', 'lake-forest', 'lakewood-ca', 'lancaster', 'livermore', 'long-beach', 'los-angeles', 'los-gatos', 'lynwood', 'manteca', 'marysville', 'menifee', 'merced', 'mission-viejo', 'modesto', 'montclair', 'moreno-valley', 'mountain-view', 'murrieta', 'napa', 'newport-beach', 'norwalk', 'norwalk-ca', 'oakland', 'oceanside', 'ontario', 'orange', 'palmdale', 'paramount', 'pasadena', 'perris', 'pleasanton', 'pomona', 'porterville', 'rancho-cordova', 'rancho-cucamonga', 'redding', 'redwood-city', 'rialto', 'richmond', 'riverside', 'roseville', 'sacramento', 'salinas', 'san-bernardino', 'san-diego', 'san-francisco', 'san-jacinto', 'san-jose', 'san-leandro', 'san-marcos', 'san-mateo', 'san-ramon', 'santa-ana', 'santa-barbara', 'santa-clara', 'santa-clarita', 'santa-fe-springs', 'santa-maria', 'santa-monica', 'santa-rosa', 'seal-beach', 'selma', 'simi-valley', 'south-gate', 'stockton', 'sunnyvale', 'taft', 'tehachapi', 'temecula', 'thousand-oaks', 'torrance', 'tracy', 'tustin', 'upland', 'vacaville', 'vallejo', 'ventura', 'vernon', 'victorville', 'vista', 'west-covina', 'west-sacramento', 'westminster', 'whittier', 'yorba-linda'],
+  'colorado': ['arvada', 'aurora-co', 'boulder', 'centennial', 'colorado-springs', 'denver', 'fort-collins', 'greeley', 'lakewood-co', 'longmont', 'pueblo', 'westminster-co'],
+  'connecticut': ['bridgeport', 'danbury', 'hartford', 'new-britain', 'new-haven', 'norwalk-ct', 'stamford', 'waterbury'],
+  'delaware': ['dover', 'newark-de', 'wilmington-de'],
+  'florida': ['boynton-beach', 'cape-coral', 'clearwater', 'daytona-beach', 'deltona', 'fort-lauderdale', 'hollywood-fl', 'jacksonville', 'lakeland', 'lehigh-acres', 'miami', 'miami-gardens', 'orlando', 'palm-bay', 'pembroke-pines', 'plantation', 'port-st-lucie', 'st-petersburg', 'sunrise', 'tallahassee', 'tampa'],
+  'georgia': ['albany-ga', 'alpharetta', 'athens', 'atlanta', 'augusta', 'columbus-ga', 'johns-creek', 'macon', 'roswell', 'savannah', 'warner-robins'],
+  'idaho': ['boise', 'idaho-falls', 'meridian', 'nampa', 'pocatello'],
+  'illinois': ['aurora-il', 'bloomington-il', 'chicago', 'elgin', 'joliet', 'naperville', 'peoria', 'rockford', 'springfield-il'],
+  'indiana': ['bloomington-in', 'carmel', 'evansville', 'fishers', 'fort-wayne', 'indianapolis', 'south-bend'],
+  'iowa': ['cedar-rapids', 'davenport', 'des-moines', 'iowa-city', 'sioux-city'],
+  'kansas': ['kansas-city-ks', 'lawrence', 'olathe', 'overland-park', 'topeka', 'wichita'],
+  'kentucky': ['bowling-green', 'lexington', 'louisville', 'owensboro'],
+  'louisiana': ['baton-rouge', 'kenner', 'lafayette-la', 'new-orleans', 'shreveport'],
+  'maine': ['portland-me'],
+  'maryland': ['baltimore', 'columbia-md', 'ellicott-city', 'frederick', 'germantown', 'rockville', 'silver-spring', 'waldorf'],
+  'massachusetts': ['boston', 'brockton', 'cambridge', 'fall-river', 'lowell', 'lynn', 'new-bedford', 'quincy', 'springfield-ma', 'worcester'],
+  'michigan': ['ann-arbor', 'canton-mi', 'clinton-township', 'detroit', 'flint', 'grand-rapids', 'lansing', 'livonia', 'sterling-heights', 'troy-mi', 'warren'],
+  'minnesota': ['bloomington-mn', 'brooklyn-park', 'duluth', 'maple-grove', 'minneapolis', 'plymouth-mn', 'rochester-mn', 'st-cloud', 'st-paul', 'woodbury'],
+  'mississippi': ['gulfport', 'hattiesburg', 'jackson-ms'],
+  'missouri': ['columbia-mo', 'independence', 'kansas-city-mo', 'lees-summit', 'ofallon', 'springfield-mo', 'st-charles', 'st-joseph', 'st-louis'],
+  'montana': ['billings', 'great-falls', 'missoula'],
+  'nebraska': ['bellevue-ne', 'lincoln', 'omaha'],
+  'nevada': ['carson-city', 'henderson', 'las-vegas', 'north-las-vegas', 'reno', 'sparks'],
+  'new-hampshire': ['concord-nh', 'manchester-nh', 'nashua'],
+  'new-jersey': ['camden', 'clifton', 'elizabeth', 'jersey-city', 'lakewood-nj', 'newark', 'passaic', 'paterson', 'trenton', 'woodbridge'],
+  'new-mexico': ['albuquerque', 'las-cruces', 'rio-rancho', 'santa-fe'],
+  'new-york': ['albany', 'buffalo', 'new-york-city', 'rochester', 'syracuse', 'yonkers'],
+  'north-carolina': ['asheville', 'cary', 'charlotte', 'concord-nc', 'durham', 'fayetteville-nc', 'gastonia', 'greensboro', 'high-point', 'raleigh', 'wilmington', 'winston-salem'],
+  'north-dakota': ['bismarck', 'fargo', 'grand-forks'],
+  'ohio': ['akron', 'cincinnati', 'cleveland', 'columbus', 'dayton', 'hamilton-oh', 'lorain', 'parma', 'springfield-oh', 'toledo', 'youngstown'],
+  'oklahoma': ['broken-arrow', 'edmond', 'lawton', 'norman', 'oklahoma-city', 'tulsa'],
+  'oregon': ['beaverton', 'bend', 'eugene', 'gresham', 'hillsboro', 'portland', 'salem'],
+  'pennsylvania': ['allentown', 'erie', 'lancaster-pa', 'philadelphia', 'pittsburgh', 'reading'],
+  'rhode-island': ['cranston', 'pawtucket', 'providence', 'warwick'],
+  'south-carolina': ['charleston', 'columbia-sc', 'greenville', 'mount-pleasant', 'north-charleston', 'rock-hill'],
+  'south-dakota': ['rapid-city', 'sioux-falls'],
+  'tennessee': ['chattanooga', 'clarksville', 'franklin-tn', 'jackson-tn', 'knoxville', 'memphis', 'murfreesboro', 'nashville'],
+  'texas': ['abilene', 'amarillo', 'arlington-tx', 'austin', 'beaumont', 'brownsville', 'bryan', 'carrollton', 'college-station', 'corpus-christi', 'dallas', 'denton', 'el-paso', 'flower-mound', 'fort-worth', 'frisco', 'garland', 'grand-prairie', 'houston', 'irving', 'killeen', 'laredo', 'league-city', 'longview', 'lubbock', 'mcallen', 'mckinney', 'mesquite', 'midland', 'new-braunfels', 'odessa', 'pasadena-tx', 'pearland', 'pharr', 'plano', 'richardson', 'round-rock', 'san-antonio', 'sugar-land', 'the-woodlands', 'tyler', 'waco', 'wichita-falls'],
+  'utah': ['ogden', 'orem', 'provo', 'salt-lake-city', 'sandy', 'st-george', 'west-jordan', 'west-valley-city'],
+  'vermont': ['burlington'],
+  'virginia': ['alexandria', 'arlington', 'chesapeake', 'hampton', 'lynchburg', 'newport-news', 'norfolk', 'portsmouth', 'richmond-va', 'roanoke', 'suffolk', 'virginia-beach'],
+  'washington': ['bellevue', 'everett', 'seattle', 'spokane', 'tacoma', 'vancouver-wa'],
+  'west-virginia': ['charleston-wv', 'huntington'],
+  'wisconsin': ['appleton', 'green-bay', 'madison', 'milwaukee', 'racine', 'waukesha'],
+  'wyoming': ['casper', 'cheyenne'],
+};
+
 // State name lookup
 const STATE_NAMES: Record<string, string> = {
   alabama: 'Alabama', alaska: 'Alaska', arizona: 'Arizona', arkansas: 'Arkansas',
@@ -54,11 +107,38 @@ export function getCitiesForState(stateSlug: string): CityAccidentData[] {
 }
 
 /**
- * Get city accident data by state and city slug
+ * Get city accident data by state and city slug (FARS data only)
  */
 export function getCityData(stateSlug: string, citySlug: string): CityAccidentData | null {
   const cities = getCitiesForState(stateSlug);
   return cities.find(c => c.slug === citySlug) || null;
+}
+
+/**
+ * Get city accident data, falling back to content file data if FARS isn't available
+ */
+export async function getCityDataWithFallback(stateSlug: string, citySlug: string): Promise<CityAccidentData | null> {
+  // First try FARS data
+  const farsData = getCityData(stateSlug, citySlug);
+  if (farsData) return farsData;
+
+  // Fall back to content file data
+  const content = await getCityContent(stateSlug, citySlug);
+  if (!content) return null;
+
+  // Create minimal CityAccidentData from content
+  return {
+    slug: content.slug,
+    name: content.name,
+    stateSlug: content.stateSlug,
+    stateName: content.stateName,
+    population: content.population,
+    truckFatalities: content.accidentStats?.truckFatalities || 0,
+    fatalCrashes: content.accidentStats?.fatalCrashes || 0,
+    dataYear: content.accidentStats?.dataYear || 2022,
+    dangerousRoads: content.dangerousRoads?.map(r => r.name) || [],
+    sourceUrl: content.accidentStats?.sourceUrl || 'https://static.nhtsa.gov/nhtsa/downloads/FARS/2022/National/FARS2022NationalCSV.zip',
+  };
 }
 
 /**
@@ -69,10 +149,19 @@ export function getCitySlugsForState(stateSlug: string): string[] {
 }
 
 /**
- * Check if a city exists for a state
+ * Check if a city has a content file (regardless of FARS data)
+ */
+export function hasContentFile(stateSlug: string, citySlug: string): boolean {
+  const stateCities = CONTENT_FILE_CITIES[stateSlug];
+  return stateCities ? stateCities.includes(citySlug) : false;
+}
+
+/**
+ * Check if a city exists for a state (from FARS data OR content files)
  */
 export function isValidCity(stateSlug: string, citySlug: string): boolean {
-  return getCityData(stateSlug, citySlug) !== null;
+  // Valid if has FARS data OR has content file
+  return getCityData(stateSlug, citySlug) !== null || hasContentFile(stateSlug, citySlug);
 }
 
 /**
@@ -131,16 +220,37 @@ export function getAllStateSummaries(): StateCitySummary[] {
 
 /**
  * Generate static params for all cities (for generateStaticParams in page.tsx)
+ * Includes cities from both FARS data AND content files
  */
 export function getAllCityParams(): Array<{ slug: string; city: string }> {
   const params: Array<{ slug: string; city: string }> = [];
+  const seen = new Set<string>();
 
+  // First, add all cities from FARS data
   for (const [stateSlug, state] of Object.entries(cityAccidentData.states)) {
     for (const city of state.cities) {
-      params.push({
-        slug: stateSlug,
-        city: city.slug,
-      });
+      const key = `${stateSlug}/${city.slug}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        params.push({
+          slug: stateSlug,
+          city: city.slug,
+        });
+      }
+    }
+  }
+
+  // Then add cities from content files that aren't in FARS
+  for (const [stateSlug, cities] of Object.entries(CONTENT_FILE_CITIES)) {
+    for (const citySlug of cities) {
+      const key = `${stateSlug}/${citySlug}`;
+      if (!seen.has(key)) {
+        seen.add(key);
+        params.push({
+          slug: stateSlug,
+          city: citySlug,
+        });
+      }
     }
   }
 

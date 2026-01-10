@@ -6,6 +6,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import { STATE_IMAGES } from '@/lib/states-content/images';
 import {
   getCityData,
+  getCityDataWithFallback,
   getCityContent,
   getAllCityParams,
   getStateName,
@@ -30,7 +31,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string; city: string }>;
 }): Promise<Metadata> {
   const { slug, city } = await params;
-  const cityData = getCityData(slug, city);
+  const cityData = await getCityDataWithFallback(slug, city);
   const cityContent = await getCityContent(slug, city);
   const stateName = getStateName(slug);
 
@@ -85,12 +86,13 @@ export default async function CityPage({
 }) {
   const { slug, city } = await params;
 
-  // Validate city exists
+  // Validate city exists (checks both FARS data and content files)
   if (!isValidCity(slug, city)) {
     notFound();
   }
 
-  const cityData = getCityData(slug, city);
+  // Get city data from FARS or fallback to content file data
+  const cityData = await getCityDataWithFallback(slug, city);
   const cityContent = await getCityContent(slug, city);
   if (!cityData) {
     notFound();
