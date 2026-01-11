@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/1c92383899dfd43f0888ee29692f9c70286b9e80-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-30 highway near Mesquite, Texas with rodeo arena and East Dallas suburbs visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default MESQUITE_CONTENT;

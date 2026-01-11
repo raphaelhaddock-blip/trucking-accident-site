@@ -118,7 +118,13 @@ Our College Station truck accident attorneys understand both Texas law and feder
     }
   ],
 
-  lastUpdated: '2026-01-08',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/cace9fdbdcbacd7c35d2f9c83119cdbe93292878-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on TX-6 highway near College Station, Texas with Texas A&M University campus visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default COLLEGE_STATION_CONTENT;

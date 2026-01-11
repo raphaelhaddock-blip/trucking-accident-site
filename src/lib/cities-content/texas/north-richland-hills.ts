@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/55e4d26a36c29f4018d36bbebf796fc09e97f275-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-820 highway near North Richland Hills, Texas with Tarrant County and Fort Worth suburbs visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default NORTH_RICHLAND_HILLS_CONTENT;

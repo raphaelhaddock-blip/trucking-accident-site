@@ -118,7 +118,13 @@ Our Pearland truck accident attorneys understand both Texas law and federal truc
     }
   ],
 
-  lastUpdated: '2026-01-08',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/3c780feaec8c21ce012b7fe5b35921eea67df7c1-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on TX-288 highway near Pearland, Texas with Brazoria County and Houston suburbs visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default PEARLAND_CONTENT;

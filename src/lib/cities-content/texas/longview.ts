@@ -118,7 +118,13 @@ Our Longview truck accident attorneys understand both Texas law and federal truc
     }
   ],
 
-  lastUpdated: '2026-01-08',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/a040c8cfa091f13c8e140bc68556db53858ce196-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-20 highway near Longview, Texas with East Texas piney woods and oil fields visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default LONGVIEW_CONTENT;

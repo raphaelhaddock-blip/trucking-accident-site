@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/e58911ed75165138d46a76c3ba02bac757e98eac-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-635 highway near Farmers Branch, Texas with Dallas County and LBJ Freeway visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default FARMERS_BRANCH_CONTENT;

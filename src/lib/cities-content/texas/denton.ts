@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/788467af3473068df36a0eb9b4647e3ff821b245-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35E highway near Denton, Texas with UNT and TWU university campuses visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default DENTON_CONTENT;

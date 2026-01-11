@@ -118,7 +118,13 @@ Our Carrollton truck accident attorneys understand both Texas law and federal tr
     }
   ],
 
-  lastUpdated: '2026-01-08',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/a15a5d3d1cfc13be486f0fcb14bc91e563ddebc4-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35E highway near Carrollton, Texas with DFW metroplex and Trinity Mills visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default CARROLLTON_CONTENT;

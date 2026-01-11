@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/373c8057d0844ee7ce4646a84f4be91acc940abf-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on US-77 highway near Brownsville, Texas with Mexico border and Port of Brownsville visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default BROWNSVILLE_CONTENT;

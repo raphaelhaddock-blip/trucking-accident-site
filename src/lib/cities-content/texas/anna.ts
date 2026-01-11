@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/be4f4ca8c8e646bf4d4c48345b533897e6d7efd7-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on US-75 highway near Anna, Texas with North Texas farmland and rural landscape visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default ANNA_CONTENT;

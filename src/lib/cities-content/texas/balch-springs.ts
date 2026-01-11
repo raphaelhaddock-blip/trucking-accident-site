@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/d76fd40c1a398264e254f65c9f96545520fa657c-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-20 highway near Balch Springs, Texas with Dallas County and East Dallas suburbs visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default BALCH_SPRINGS_CONTENT;

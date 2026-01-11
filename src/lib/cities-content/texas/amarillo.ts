@@ -118,7 +118,13 @@ Our Amarillo truck accident attorneys understand both Texas law and federal truc
     }
   ],
 
-  lastUpdated: '2026-01-08',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/154ce3c14cca978b9daca19c101209590cabc548-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-40 highway near Amarillo, Texas with Texas Panhandle cattle ranches and open plains',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default AMARILLO_CONTENT;

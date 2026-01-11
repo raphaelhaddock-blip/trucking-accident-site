@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/7a72a05d2f0b9f0cc75dcc74406b3de43466f56b-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-10 highway near Baytown, Texas with ExxonMobil refinery and Houston Ship Channel visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default BAYTOWN_CONTENT;

@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/a9e1a8ea4cbb0570b15ef9d6c8c8670c89e635a4-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on US-75 highway near McKinney, Texas with Collin County suburbs and historic downtown visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default MCKINNEY_CONTENT;

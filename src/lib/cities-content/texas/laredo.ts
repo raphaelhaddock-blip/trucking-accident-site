@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/88e4cfcb2eb7d9d3b9a6ec43257163982b2b78e5-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35 highway near Laredo, Texas with Mexico border crossing and World Trade Bridge visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default LAREDO_CONTENT;

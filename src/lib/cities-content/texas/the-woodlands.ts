@@ -118,7 +118,13 @@ Our The Woodlands truck accident attorneys understand both Texas law and federal
     }
   ],
 
-  lastUpdated: '2026-01-08',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/47af509995f7068c7b733d2fa4e37e88243b5ea9-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-45 highway near The Woodlands, Texas with Montgomery County and piney woods visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default THE_WOODLANDS_CONTENT;

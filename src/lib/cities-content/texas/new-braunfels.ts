@@ -118,7 +118,13 @@ Our New Braunfels truck accident attorneys understand both Texas law and federal
     }
   ],
 
-  lastUpdated: '2026-01-08',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/bb6b4a93fb9302b8cc75ed7cdbb145660289b441-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35 highway near New Braunfels, Texas with Comal County and German heritage downtown visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default NEW_BRAUNFELS_CONTENT;

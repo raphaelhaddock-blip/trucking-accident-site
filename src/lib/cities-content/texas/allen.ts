@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/09652c74a7171012687d1990a9547b35e68feaae-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on US-75 highway near Allen, Texas with Collin County suburbs and Allen Premium Outlets visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default ALLEN_CONTENT;

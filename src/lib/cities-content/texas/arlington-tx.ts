@@ -118,7 +118,13 @@ Our Arlington truck accident attorneys understand both Texas law and federal tru
     }
   ],
 
-  lastUpdated: '2026-01-08',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/d4a39a7b0366f2fb0657a4bf7cbc62d139d7acf7-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-30 highway near Arlington, Texas with AT&T Stadium and Globe Life Field visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default ARLINGTON_TX_CONTENT;

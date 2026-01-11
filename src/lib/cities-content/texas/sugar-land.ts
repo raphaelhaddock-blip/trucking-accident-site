@@ -118,7 +118,13 @@ Our Sugar Land truck accident attorneys understand both Texas law and federal tr
     }
   ],
 
-  lastUpdated: '2026-01-08',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/6ead10ae5b860690eb75bbd22f727b45746ed86d-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on US-59 highway near Sugar Land, Texas with Fort Bend County and Houston suburbs visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default SUGAR_LAND_CONTENT;

@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/d941e9ec0a6ad19f3d497477cabbb496f1f83533-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35W highway near Burleson, Texas with Johnson County and Fort Worth suburbs visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default BURLESON_CONTENT;

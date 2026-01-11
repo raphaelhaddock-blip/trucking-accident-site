@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/453143da9d47a6670281110fda08da044b42f5c7-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on US-90A highway near Missouri City, Texas with Fort Bend County and Houston suburbs visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default MISSOURI_CITY_CONTENT;

@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/71533c65f766a7a6cdc171d58ef7da0909b06c0e-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35E highway near Lewisville, Texas with Lake Lewisville and Denton County visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default LEWISVILLE_CONTENT;

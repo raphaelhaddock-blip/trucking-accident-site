@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/15e9aafa100bffe7945dd5db6c0d8556da5e1a71-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on TX-31 highway near Angus, Texas with Navarro County farmland visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default ANGUS_CONTENT;

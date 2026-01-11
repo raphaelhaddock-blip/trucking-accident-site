@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/81a4debdb399e68db421fc9e524ac8c709e23c3f-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35 highway near San Marcos, Texas with Texas State University and Hays County Hill Country visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default SAN_MARCOS_CONTENT;

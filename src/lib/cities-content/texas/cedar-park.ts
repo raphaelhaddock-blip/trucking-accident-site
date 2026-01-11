@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/20f330aeb0a9ca6b943d26cf324dcf2d002c34ab-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on US-183 highway near Cedar Park, Texas with Austin suburbs and Texas Hill Country visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default CEDAR_PARK_CONTENT;

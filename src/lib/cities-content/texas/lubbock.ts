@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/d60ecd9f6a8b159b7a6535088cbba85136e8fd96-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-27 highway near Lubbock, Texas with West Texas cotton fields and plains landscape',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default LUBBOCK_CONTENT;

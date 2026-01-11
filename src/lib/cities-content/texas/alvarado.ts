@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/825cd19baebd72416fa2befe1dd0b33f2082a842-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35W highway near Alvarado, Texas with Johnson County farmland visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default ALVARADO_CONTENT;

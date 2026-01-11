@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/3aa4b3af0440a15247683fb04fe242f9861b68f7-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on US-83 highway near McAllen, Texas with Rio Grande Valley and Mexico border trade visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default MCALLEN_CONTENT;

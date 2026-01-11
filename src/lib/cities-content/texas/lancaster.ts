@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/0773eb2f57d70fa5ceeaac2a6deb86d308ab7e12-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35E highway near Lancaster, Texas with Dallas County and South Dallas suburbs visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default LANCASTER_CONTENT;

@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/f9a6a563011c464c397280e14c41fdb3b2643299-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on TX-199 highway near Azle, Texas with Eagle Mountain Lake and Parker County visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default AZLE_CONTENT;

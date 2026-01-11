@@ -118,7 +118,13 @@ Our League City truck accident attorneys understand both Texas law and federal t
     }
   ],
 
-  lastUpdated: '2026-01-08',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/acc941060076094e6d3fbc43d9f4ccd5bd6b1c9e-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-45 highway near League City, Texas with NASA Johnson Space Center and Clear Lake visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default LEAGUE_CITY_CONTENT;

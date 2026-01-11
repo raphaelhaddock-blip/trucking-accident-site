@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/f6d9ace6c92494ae137e69ff66bf4dce0677db30-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on Belt Line Road near Addison, Texas with DFW entertainment district and Galleria visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default ADDISON_CONTENT;

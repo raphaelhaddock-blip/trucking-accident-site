@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/d0ba2cf88af23d607f395852923e1756643e4f48-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-35 highway near Pflugerville, Texas with Travis County and Austin suburbs visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default PFLUGERVILLE_CONTENT;

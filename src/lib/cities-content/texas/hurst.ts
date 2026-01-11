@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/72cc53dbe68cad19b23043dd735f0e519fb27e5e-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on TX-121 highway near Hurst, Texas with Tarrant County and HEB area visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default HURST_CONTENT;

@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/cf64bd00d96931e1058c1c3bb0f9f2fa33b7798c-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-30 highway near Grand Prairie, Texas with DFW metroplex warehouses visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default GRAND_PRAIRIE_CONTENT;

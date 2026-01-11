@@ -138,7 +138,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/b0a1a57c83ea8a2c15e2b3bc165604e71ff363c6-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on I-45 highway near Conroe, Texas with Sam Houston National Forest and Montgomery County visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default CONROE_CONTENT;

@@ -118,7 +118,13 @@ Our Flower Mound truck accident attorneys understand both Texas law and federal 
     }
   ],
 
-  lastUpdated: '2026-01-08',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/74379d6af6d73c9b17f1b1edc51bb144898af4e8-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on FM-2499 highway near Flower Mound, Texas with Denton County and Grapevine Lake visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default FLOWER_MOUND_CONTENT;

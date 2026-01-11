@@ -142,7 +142,13 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       }
   ],
 
-  lastUpdated: '2026-01-10',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/21e1f66d5e2a67c225b8f46b1e58ccbcbc6ccad5-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on US-75 highway near Richardson, Texas with Collin County and Dallas suburbs visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default RICHARDSON_CONTENT;

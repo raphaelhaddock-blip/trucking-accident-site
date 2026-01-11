@@ -118,7 +118,13 @@ Our Frisco truck accident attorneys understand both Texas law and federal trucki
     }
   ],
 
-  lastUpdated: '2026-01-08',
+  // City-specific hero image
+  images: {
+    hero: 'https://cdn.sanity.io/images/54bwni5t/production/abf0a4196946a513052ce3809bfe9e86d8e67188-1408x768.jpg',
+    heroAlt: '18-wheeler semi-truck on Dallas North Tollway near Frisco, Texas with The Star Dallas Cowboys headquarters visible',
+  },
+
+  lastUpdated: '2026-01-11',
 };
 
 export default FRISCO_CONTENT;
