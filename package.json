@@ -12,6 +12,7 @@
     "audit:technical": "npx tsx scripts/run-audit.ts --technical"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
     "@next/third-parties": "^16.1.1",
     "@sanity/client": "^7.14.0",
     "next": "16.1.1",

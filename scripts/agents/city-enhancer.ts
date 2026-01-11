@@ -1,26 +1,39 @@
 /**
- * City Enhancement Agent
+ * City Enhancement Agent v2.0
  *
- * Uses Claude subagents to research and generate unique content for each city.
- * This is the core agent that produces genuinely valuable, Google-friendly content.
+ * ACTUALLY uses Claude API to generate unique content for each city.
+ * This is not template-based - it generates genuinely unique content.
  *
  * Each city gets:
- * - City history and trucking relevance
- * - Major industries and economic context
- * - Weather hazards specific to the location
- * - Deep research on dangerous roads
- * - Recent truck accident news
- * - Local court information
- * - Unique FAQs
+ * - Unique whyDangerous content based on local factors
+ * - Unique road descriptions based on actual highway characteristics
+ * - Unique FAQs referencing local statistics and conditions
+ * - Unique industry/economic context
  *
  * Usage:
  *   npx tsx scripts/agents/city-enhancer.ts houston texas
  *   npx tsx scripts/agents/city-enhancer.ts --batch=1
+ *
+ * Environment:
+ *   ANTHROPIC_API_KEY - Required for Claude API calls
  */
 
+import Anthropic from '@anthropic-ai/sdk';
 import * as fs from 'fs';
 import * as path from 'path';
 import { CityInput, EnhancedCityContent } from './types';
+
+// Load environment variables from .env.local if it exists
+const envPath = path.join(__dirname, '..', '..', '.env.local');
+if (fs.existsSync(envPath)) {
+  const envContent = fs.readFileSync(envPath, 'utf-8');
+  envContent.split('\n').forEach(line => {
+    const match = line.match(/^([^=]+)=(.*)$/);
+    if (match && !process.env[match[1]]) {
+      process.env[match[1]] = match[2];
+    }
+  });
+}
 
 // =============================================================================
 // CONFIGURATION
@@ -28,66 +41,17 @@ import { CityInput, EnhancedCityContent } from './types';
 
 const CITY_DATA_PATH = path.join(__dirname, '..', 'city-accident-data.json');
 const POPULATION_PATH = path.join(__dirname, '..', 'data', 'city-populations.json');
+const REGIONAL_PATTERNS_PATH = path.join(__dirname, '..', 'data', 'regional-accident-patterns.json');
 const OUTPUT_DIR = path.join(__dirname, '..', '..', 'src', 'lib', 'cities-content');
 
-// Regional climate data for weather hazards
-const REGIONAL_WEATHER: Record<string, {
-  primaryHazard: string;
-  secondaryHazards: string[];
-  dangerousMonths: string[];
-  description: string;
-}> = {
-  northeast: {
-    primaryHazard: 'Winter ice and snow',
-    secondaryHazards: ['Black ice', 'Nor\'easters', 'Fog'],
-    dangerousMonths: ['December', 'January', 'February', 'March'],
-    description: 'Severe winter weather creates hazardous driving conditions with ice, snow, and reduced visibility. Black ice is particularly dangerous for trucks due to their longer stopping distances.',
-  },
-  southeast: {
-    primaryHazard: 'Severe thunderstorms',
-    secondaryHazards: ['Flash flooding', 'Hurricanes', 'High humidity'],
-    dangerousMonths: ['June', 'July', 'August', 'September'],
-    description: 'Sudden severe thunderstorms can create flash flooding and reduced visibility. Hurricane season brings additional risks from high winds and flooding.',
-  },
-  midwest: {
-    primaryHazard: 'Severe winter weather',
-    secondaryHazards: ['Tornadoes', 'Ice storms', 'Fog'],
-    dangerousMonths: ['November', 'December', 'January', 'February', 'March', 'April'],
-    description: 'Long, harsh winters create extended periods of hazardous driving. Flat terrain allows high winds, and sudden ice storms can make roads impassable.',
-  },
-  southwest: {
-    primaryHazard: 'Extreme heat',
-    secondaryHazards: ['Dust storms', 'Flash floods', 'High winds'],
-    dangerousMonths: ['June', 'July', 'August'],
-    description: 'Extreme heat causes tire blowouts and brake failures. Monsoon season brings sudden flash floods, and dust storms can reduce visibility to zero.',
-  },
-  west: {
-    primaryHazard: 'Mountain terrain',
-    secondaryHazards: ['Fog', 'Wildfires', 'Snow'],
-    dangerousMonths: ['November', 'December', 'January', 'February', 'July', 'August'],
-    description: 'Mountain passes with steep grades challenge truck brakes. Winter brings snow and ice at elevation, while summer brings wildfire smoke reducing visibility.',
-  },
-  pacific: {
-    primaryHazard: 'Dense fog',
-    secondaryHazards: ['Rain', 'Mudslides', 'Earthquakes'],
-    dangerousMonths: ['November', 'December', 'January', 'February'],
-    description: 'Tule fog in valleys can reduce visibility to near zero. Heavy rains cause mudslides on mountain roads, and seismic activity can damage infrastructure.',
-  },
-  texas: {
-    primaryHazard: 'Extreme heat and severe weather',
-    secondaryHazards: ['Tornadoes', 'Flash floods', 'Ice storms'],
-    dangerousMonths: ['June', 'July', 'August', 'March', 'April', 'May'],
-    description: 'Texas experiences extreme heat in summer, severe thunderstorms and tornadoes in spring, and occasional ice storms in winter that paralyze the state.',
-  },
-  florida: {
-    primaryHazard: 'Hurricanes and severe thunderstorms',
-    secondaryHazards: ['Flash flooding', 'High humidity', 'Sun glare'],
-    dangerousMonths: ['June', 'July', 'August', 'September', 'October'],
-    description: 'Daily afternoon thunderstorms in summer create sudden hazards. Hurricane season brings catastrophic conditions, and frequent rain makes hydroplaning common.',
-  },
-};
+// Initialize Anthropic client
+const anthropic = new Anthropic();
 
-// State to region mapping
+// =============================================================================
+// REGIONAL DATA (for context, not templates)
+// =============================================================================
+
+// State to region mapping for climate context
 const STATE_REGIONS: Record<string, string> = {
   maine: 'northeast', 'new-hampshire': 'northeast', vermont: 'northeast',
   massachusetts: 'northeast', 'rhode-island': 'northeast', connecticut: 'northeast',
@@ -108,61 +72,17 @@ const STATE_REGIONS: Record<string, string> = {
   alaska: 'pacific', hawaii: 'pacific',
 };
 
-// Court district mappings
-const FEDERAL_DISTRICTS: Record<string, string[]> = {
-  'new-york': ['Southern District of New York', 'Eastern District of New York', 'Northern District of New York', 'Western District of New York'],
-  california: ['Central District of California', 'Eastern District of California', 'Northern District of California', 'Southern District of California'],
-  texas: ['Southern District of Texas', 'Eastern District of Texas', 'Northern District of Texas', 'Western District of Texas'],
-  florida: ['Southern District of Florida', 'Middle District of Florida', 'Northern District of Florida'],
-  illinois: ['Northern District of Illinois', 'Central District of Illinois', 'Southern District of Illinois'],
-  pennsylvania: ['Eastern District of Pennsylvania', 'Middle District of Pennsylvania', 'Western District of Pennsylvania'],
-  ohio: ['Northern District of Ohio', 'Southern District of Ohio'],
-  georgia: ['Northern District of Georgia', 'Middle District of Georgia', 'Southern District of Georgia'],
-  michigan: ['Eastern District of Michigan', 'Western District of Michigan'],
-  // Add more as needed - single district states
-  alabama: ['Northern District of Alabama', 'Middle District of Alabama', 'Southern District of Alabama'],
-  arizona: ['District of Arizona'],
-  colorado: ['District of Colorado'],
-  indiana: ['Northern District of Indiana', 'Southern District of Indiana'],
-  tennessee: ['Eastern District of Tennessee', 'Middle District of Tennessee', 'Western District of Tennessee'],
-  washington: ['Eastern District of Washington', 'Western District of Washington'],
-  // Default for unlisted states
-};
-
-// Major industries by state
-const STATE_INDUSTRIES: Record<string, string[]> = {
-  texas: ['Oil and gas', 'Agriculture', 'Manufacturing', 'Technology', 'Healthcare', 'Border trade'],
-  california: ['Technology', 'Entertainment', 'Agriculture', 'Port logistics', 'Manufacturing', 'Tourism'],
-  florida: ['Tourism', 'Agriculture', 'Healthcare', 'Port logistics', 'Aerospace', 'Finance'],
-  'new-york': ['Finance', 'Media', 'Healthcare', 'Technology', 'Port logistics', 'Manufacturing'],
-  illinois: ['Agriculture', 'Manufacturing', 'Finance', 'Transportation', 'Healthcare', 'Food processing'],
-  pennsylvania: ['Healthcare', 'Manufacturing', 'Energy', 'Agriculture', 'Finance', 'Technology'],
-  ohio: ['Manufacturing', 'Healthcare', 'Agriculture', 'Logistics', 'Energy', 'Automotive'],
-  georgia: ['Agriculture', 'Logistics', 'Manufacturing', 'Film production', 'Port operations', 'Healthcare'],
-  michigan: ['Automotive manufacturing', 'Agriculture', 'Healthcare', 'Technology', 'Tourism', 'Manufacturing'],
-  arizona: ['Technology', 'Tourism', 'Healthcare', 'Manufacturing', 'Aerospace', 'Copper mining'],
-  tennessee: ['Healthcare', 'Automotive', 'Music/Entertainment', 'Manufacturing', 'Logistics', 'Agriculture'],
-  indiana: ['Manufacturing', 'Automotive', 'Agriculture', 'Healthcare', 'Pharmaceuticals', 'Logistics'],
-  colorado: ['Technology', 'Tourism', 'Aerospace', 'Energy', 'Healthcare', 'Agriculture'],
-  'north-carolina': ['Banking', 'Technology', 'Manufacturing', 'Agriculture', 'Healthcare', 'Tourism'],
-  oklahoma: ['Oil and gas', 'Agriculture', 'Aerospace', 'Manufacturing', 'Healthcare', 'Energy'],
-  // Add more as needed
-};
-
 // ACCURATE city highway mappings - corrected from actual DOT data
 const CITY_HIGHWAYS: Record<string, string[]> = {
-  // Texas cities (I-35 only goes through Dallas, Austin, San Antonio - NOT Houston)
   'houston': ['I-10', 'I-45', 'I-69/US-59', 'I-610'],
   'dallas': ['I-35E', 'I-30', 'I-45', 'I-635'],
   'san-antonio': ['I-10', 'I-35', 'I-410', 'US-281'],
   'austin': ['I-35', 'US-183', 'US-290', 'SH-130'],
   'fort-worth': ['I-35W', 'I-30', 'I-20', 'SH-121'],
-  // California cities
   'los-angeles': ['I-5', 'I-10', 'I-405', 'I-110'],
   'san-diego': ['I-5', 'I-8', 'I-15', 'I-805'],
   'san-jose': ['I-280', 'I-880', 'US-101', 'SR-87'],
   'san-francisco': ['I-80', 'I-280', 'US-101', 'I-580'],
-  // Major metro areas
   'new-york': ['I-95', 'I-278', 'I-495', 'I-87'],
   'chicago': ['I-90', 'I-94', 'I-290', 'I-55'],
   'phoenix': ['I-10', 'I-17', 'Loop 101', 'Loop 202'],
@@ -199,6 +119,18 @@ const CITY_HIGHWAYS: Record<string, string[]> = {
   'orlando': ['I-4', 'I-95', 'SR-408', 'SR-417'],
 };
 
+// Federal court districts
+const FEDERAL_DISTRICTS: Record<string, string[]> = {
+  'new-york': ['Southern District of New York', 'Eastern District of New York', 'Northern District of New York', 'Western District of New York'],
+  california: ['Central District of California', 'Eastern District of California', 'Northern District of California', 'Southern District of California'],
+  texas: ['Southern District of Texas', 'Eastern District of Texas', 'Northern District of Texas', 'Western District of Texas'],
+  florida: ['Southern District of Florida', 'Middle District of Florida', 'Northern District of Florida'],
+  illinois: ['Northern District of Illinois', 'Central District of Illinois', 'Southern District of Illinois'],
+  pennsylvania: ['Eastern District of Pennsylvania', 'Middle District of Pennsylvania', 'Western District of Pennsylvania'],
+  ohio: ['Northern District of Ohio', 'Southern District of Ohio'],
+  georgia: ['Northern District of Georgia', 'Middle District of Georgia', 'Southern District of Georgia'],
+};
+
 // =============================================================================
 // HELPER FUNCTIONS
 // =============================================================================
@@ -207,32 +139,11 @@ function getRegion(stateSlug: string): string {
   return STATE_REGIONS[stateSlug] || 'midwest';
 }
 
-function getWeatherHazards(stateSlug: string): typeof REGIONAL_WEATHER[string] {
-  const region = getRegion(stateSlug);
-  return REGIONAL_WEATHER[region] || REGIONAL_WEATHER.midwest;
-}
-
-function getFederalDistrict(stateSlug: string, countyName: string): string {
-  const districts = FEDERAL_DISTRICTS[stateSlug];
-  if (!districts) {
-    return `District of ${stateSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}`;
-  }
-  // For multi-district states, make a reasonable guess based on county
-  // This would need more sophisticated logic for accuracy
-  return districts[0];
-}
-
-function getStateIndustries(stateSlug: string): string[] {
-  return STATE_INDUSTRIES[stateSlug] || ['Manufacturing', 'Agriculture', 'Healthcare', 'Logistics', 'Retail'];
-}
-
 function getAccurateHighways(citySlug: string, fallbackRoads: string[]): string[] {
-  // Use accurate highway data if available, otherwise fall back to source data
   const accurateRoads = CITY_HIGHWAYS[citySlug];
   if (accurateRoads) {
-    return accurateRoads.slice(0, 4); // Return top 4 highways
+    return accurateRoads.slice(0, 4);
   }
-  // Filter out obviously wrong data from fallback (e.g., I-35 for Houston)
   return fallbackRoads.slice(0, 3);
 }
 
@@ -240,223 +151,202 @@ function formatStateName(stateSlug: string): string {
   return stateSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 }
 
+function getFederalDistrict(stateSlug: string): string {
+  const districts = FEDERAL_DISTRICTS[stateSlug];
+  if (!districts) {
+    return `District of ${formatStateName(stateSlug)}`;
+  }
+  return districts[0];
+}
+
 // =============================================================================
-// CONTENT GENERATION
+// CLAUDE API CONTENT GENERATION
 // =============================================================================
 
-function generateCityHistory(city: CityInput): string {
+interface GeneratedContent {
+  whyDangerous: string;
+  liabilityExplanation: string;
+  evidencePreservation: string;
+  fmcsaRegulations: string;
+  cityHistory: string;
+  economicContext: string;
+  truckingRelevance: string;
+  heroText: string;
+  truckingIndustry: string;
+  legalInfo: string;
+  dangerousRoads: Array<{
+    name: string;
+    description: string;
+    annualTruckTraffic: string;
+    knownHazards: string[];
+    recentIncidents: string;
+    milesInCity: number;
+  }>;
+  commonAccidents: Array<{
+    type: string;
+    percentage: string;
+    localFactor: string;
+  }>;
+  faqs: Array<{
+    question: string;
+    answer: string;
+  }>;
+}
+
+async function generateUniqueContent(city: CityInput, highways: string[], regionalPatterns: any): Promise<GeneratedContent> {
+  console.log(`  🤖 Calling Claude API for ${city.name}...`);
+
   const stateName = formatStateName(city.stateSlug);
   const region = getRegion(city.stateSlug);
-  const industries = getStateIndustries(city.stateSlug);
+  const regionData = regionalPatterns.regions[region] || regionalPatterns.regions.midwest;
 
-  // Generate a detailed, researched-style paragraph about the city
-  // This creates unique content based on city characteristics
-  const templates = [
-    // Large city template (pop > 500k)
-    `${city.name} has been a major ${stateName} metropolitan center since its founding. As the ${city.countyName} County seat, ${city.name} grew alongside the development of key transportation corridors including ${city.dangerousRoads.join(' and ')}. The city's strategic location made it a natural hub for commercial trucking, with freight routes connecting to major markets across the region. Today, ${city.name}'s economy depends heavily on industries including ${industries.slice(0, 3).join(', ')}, all of which require extensive commercial truck transportation. The metropolitan area's ${city.population > 0 ? city.population.toLocaleString() + ' residents' : 'population'} and commercial activity generate substantial freight demand, making truck safety a critical local concern.`,
+  // Build rich context for Claude
+  const cityContext = `
+CITY DATA (from NHTSA FARS 2022):
+- City: ${city.name}, ${stateName}
+- County: ${city.countyName}
+- Population: ${city.population > 0 ? city.population.toLocaleString() : 'Unknown'}
+- Truck Fatalities (2022): ${city.truckFatalities}
+- Fatal Truck Crashes (2022): ${city.fatalCrashes}
+- Major Highways: ${highways.join(', ')}
+- Coordinates: ${city.lat}, ${city.lng}
 
-    // Medium city template (pop 100k-500k)
-    `${city.name}, located in ${city.countyName} County, ${stateName}, developed as a regional center for commerce and industry. The city's position along ${city.dangerousRoads[0]} established it as an important stop on major freight routes. Local industries including ${industries.slice(0, 2).join(' and ')} depend on regular truck deliveries. As the area grew, so did commercial truck traffic, bringing both economic benefits and increased accident risks. The ${city.dangerousRoads.slice(0, 2).join(' and ')} corridors through ${city.name} carry substantial commercial vehicle traffic daily, connecting the city to broader regional and national supply chains.`,
+REGIONAL CONTEXT (${regionData?.name || region}):
+- Climate Factors: ${regionData?.climateFactors?.join(', ') || 'Various'}
+- Traffic Factors: ${regionData?.trafficFactors?.join(', ') || 'Various'}
+- Accident Patterns:
+${Object.entries(regionData?.accidentPatterns || {}).map(([type, data]: [string, any]) =>
+  `  - ${type}: ${data.percentage}% - ${data.localFactor}`
+).join('\n')}
+`;
 
-    // Smaller city template (pop < 100k)
-    `${city.name} serves as an important waypoint on ${city.dangerousRoads[0]} in ${stateName}. Despite its smaller size, the city sees significant through truck traffic due to its location on major freight corridors. Local businesses in ${industries[0]} and ${industries[1]} depend on commercial trucking for supplies and distribution. The ${city.dangerousRoads.join(' and ')} routes through ${city.countyName} County handle considerable commercial vehicle traffic, connecting ${city.name} to larger metropolitan areas and national shipping networks.`,
-  ];
+  const systemPrompt = `You are a legal content writer specializing in trucking accident attorney websites. Generate UNIQUE, SPECIFIC content for each city - NOT templated content with city names swapped.
 
-  if (city.population > 500000) return templates[0];
-  if (city.population > 100000) return templates[1];
-  return templates[2];
+CRITICAL REQUIREMENTS:
+1. Every section must be UNIQUE to this specific city - reference local landmarks, specific highway characteristics, local industries, local weather patterns
+2. Do NOT use generic phrases that could apply to any city
+3. Include SPECIFIC details: highway interchange names, local company names, specific weather events
+4. Reference the actual FARS statistics provided
+5. Write in a professional legal tone suitable for a law firm website
+6. Each road description must be genuinely different - mention specific interchanges, mile markers, or local landmarks
+7. FAQs must reference LOCAL specifics - actual highway names, actual county name, actual statistics
+
+OUTPUT FORMAT: Return a JSON object with these exact keys (no markdown, just raw JSON):
+{
+  "whyDangerous": "3 paragraphs explaining why trucking is dangerous IN THIS SPECIFIC CITY",
+  "liabilityExplanation": "4 paragraphs on liability - reference Texas/state-specific law",
+  "evidencePreservation": "4 paragraphs on evidence - reference local county procedures",
+  "fmcsaRegulations": "4 paragraphs on FMCSA - reference specific violations common in this region",
+  "cityHistory": "150-200 words on this city's trucking history and relevance",
+  "economicContext": "100 words on local economy and trucking dependence",
+  "truckingRelevance": "50 words on why trucks matter to THIS city specifically",
+  "heroText": "150 words for homepage hero - include fatality stats",
+  "truckingIndustry": "150 words on local trucking industry",
+  "legalInfo": "100 words on local court jurisdiction",
+  "dangerousRoads": [
+    {
+      "name": "highway name",
+      "description": "100+ words UNIQUE to this specific highway section - mention specific interchanges, landmarks, trouble spots",
+      "annualTruckTraffic": "estimated daily truck count",
+      "knownHazards": ["specific hazard 1", "specific hazard 2"],
+      "recentIncidents": "description of common incident types",
+      "milesInCity": number
+    }
+  ],
+  "commonAccidents": [
+    {
+      "type": "Accident Type",
+      "percentage": "XX%",
+      "localFactor": "100 words explaining why this type is common HERE specifically"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Question mentioning specific local details?",
+      "answer": "200+ words with local specifics - highway names, county name, local statistics"
+    }
+  ]
 }
 
-function generateEconomicContext(city: CityInput): string {
-  const industries = getStateIndustries(city.stateSlug);
-  const primaryIndustries = industries.slice(0, 3).join(', ');
+Generate 4 dangerous roads, 5 common accident types, and 6-7 FAQs.`;
 
-  if (city.population > 500000) {
-    return `${city.name}'s diverse economy centers on ${primaryIndustries}. Major employers and distribution centers throughout the metropolitan area generate constant demand for commercial trucking services. The city's interstates and highways serve as critical arteries for both local delivery operations and long-haul freight passing through the region.`;
-  } else if (city.population > 100000) {
-    return `The ${city.name} economy relies on ${primaryIndustries.toLowerCase()}. Regional distribution centers and manufacturing facilities depend on reliable truck transportation. Commercial vehicles use the city's highway corridors for both local deliveries and interstate freight transport.`;
-  } else {
-    return `${city.name}'s economy includes ${industries[0].toLowerCase()} and ${industries[1].toLowerCase()}. While smaller than major metro areas, the city sees substantial truck traffic on its highway corridors connecting larger markets.`;
+  try {
+    const response = await anthropic.messages.create({
+      model: 'claude-sonnet-4-20250514',
+      max_tokens: 8000,
+      messages: [
+        {
+          role: 'user',
+          content: `Generate unique trucking accident attorney content for:\n\n${cityContext}`
+        }
+      ],
+      system: systemPrompt,
+    });
+
+    const textContent = response.content.find(c => c.type === 'text');
+    if (!textContent || textContent.type !== 'text') {
+      throw new Error('No text response from Claude');
+    }
+
+    // Parse the JSON response
+    const jsonStr = textContent.text.trim();
+    // Remove any markdown code fences if present
+    const cleanJson = jsonStr.replace(/^```json?\n?/, '').replace(/\n?```$/, '');
+
+    const content = JSON.parse(cleanJson) as GeneratedContent;
+
+    console.log(`  ✅ Generated ${content.faqs?.length || 0} FAQs, ${content.dangerousRoads?.length || 0} roads`);
+
+    return content;
+  } catch (error) {
+    console.error(`  ❌ Claude API error:`, error);
+    throw error;
   }
 }
 
-function generateDangerousRoadDescription(
-  roadName: string,
-  city: CityInput,
-  roadIndex: number
-): {
-  name: string;
-  description: string;
-  annualTruckTraffic: string;
-  knownHazards: string[];
-  recentIncidents: string;
-  milesInCity: number;
-} {
-  const region = getRegion(city.stateSlug);
-  const weather = getWeatherHazards(city.stateSlug);
+// =============================================================================
+// FALLBACK CONTENT (only used if API fails)
+// =============================================================================
 
-  // Generate hazards based on road type and region
-  const isInterstate = roadName.startsWith('I-');
-  const hazards: string[] = [];
+function generateFallbackContent(city: CityInput, highways: string[]): GeneratedContent {
+  console.log(`  ⚠️ Using fallback content for ${city.name} (API unavailable)`);
 
-  if (isInterstate) {
-    hazards.push('High-speed traffic mixing with local vehicles');
-    hazards.push('Merging conflicts at on/off ramps');
-  }
-
-  // Add weather-related hazards
-  hazards.push(weather.primaryHazard.toLowerCase() + ' during ' + weather.dangerousMonths.slice(0, 2).join('/'));
-
-  // Add traffic-based hazards
-  if (city.population > 300000) {
-    hazards.push('Rush hour congestion causing sudden stops');
-    hazards.push('High volume of lane changes');
-  }
-
-  // Estimate truck traffic based on city size and road importance
-  let truckTraffic = 'Moderate commercial truck traffic';
-  if (city.population > 500000 && roadIndex === 0) {
-    truckTraffic = 'Heavy commercial truck traffic (estimated 15,000+ trucks daily)';
-  } else if (city.population > 200000) {
-    truckTraffic = 'Significant commercial truck traffic (estimated 5,000-15,000 trucks daily)';
-  } else if (city.population > 50000) {
-    truckTraffic = 'Moderate commercial truck traffic (estimated 2,000-5,000 trucks daily)';
-  }
-
-  // Generate description
-  const description = isInterstate
-    ? `${roadName} through ${city.name} carries significant commercial truck traffic as part of the national Interstate Highway System. This corridor connects ${city.name} to major metropolitan areas and serves as a primary route for freight transportation. The combination of ${city.population > 200000 ? 'heavy local traffic, ' : ''}commercial trucks, and ${weather.primaryHazard.toLowerCase()} creates challenging driving conditions. Truck accidents on ${roadName} near ${city.name} often involve ${hazards[0].toLowerCase()} and ${hazards[1].toLowerCase()}.`
-    : `${roadName} near ${city.name} serves as an important regional route for commercial trucking. The road handles a mix of local traffic and through freight, with truck accidents often occurring during ${weather.dangerousMonths[0]} and ${weather.dangerousMonths[1]} when ${weather.primaryHazard.toLowerCase()} affects driving conditions.`;
-
-  // Estimated miles (would be looked up in production)
-  const milesEstimate = isInterstate
-    ? Math.floor(8 + Math.random() * 20)
-    : Math.floor(3 + Math.random() * 10);
+  const stateName = formatStateName(city.stateSlug);
 
   return {
-    name: roadName,
-    description,
-    annualTruckTraffic: truckTraffic,
-    knownHazards: hazards,
-    recentIncidents: `Multiple truck accidents have occurred on ${roadName} in the ${city.name} area. Common factors include ${hazards.slice(0, 2).join(' and ').toLowerCase()}.`,
-    milesInCity: milesEstimate,
+    whyDangerous: `[NEEDS ENHANCEMENT] ${city.name} requires unique content about local trucking dangers. FARS data shows ${city.truckFatalities} fatalities in 2022 on ${highways.join(', ')}.`,
+    liabilityExplanation: `[NEEDS ENHANCEMENT] Liability content for ${city.name}, ${stateName} needs to be generated with unique local details.`,
+    evidencePreservation: `[NEEDS ENHANCEMENT] Evidence preservation content for ${city.countyName} County needs unique local procedures.`,
+    fmcsaRegulations: `[NEEDS ENHANCEMENT] FMCSA regulations content for ${city.name} needs unique local context.`,
+    cityHistory: `[NEEDS ENHANCEMENT] ${city.name} history content needs research.`,
+    economicContext: `[NEEDS ENHANCEMENT] ${city.name} economic context needs unique content.`,
+    truckingRelevance: `[NEEDS ENHANCEMENT] Why trucks matter to ${city.name}.`,
+    heroText: `[NEEDS ENHANCEMENT] ${city.name} hero text - ${city.truckFatalities} fatalities in 2022.`,
+    truckingIndustry: `[NEEDS ENHANCEMENT] ${city.name} trucking industry content.`,
+    legalInfo: `[NEEDS ENHANCEMENT] ${city.countyName} County legal info.`,
+    dangerousRoads: highways.map((hw, i) => ({
+      name: hw,
+      description: `[NEEDS ENHANCEMENT] ${hw} through ${city.name} needs unique description.`,
+      annualTruckTraffic: 'Data needed',
+      knownHazards: ['Needs research'],
+      recentIncidents: 'Needs research',
+      milesInCity: 10 + i * 5,
+    })),
+    commonAccidents: [
+      { type: 'Rear-End Collisions', percentage: '30%', localFactor: `[NEEDS ENHANCEMENT] for ${city.name}` },
+      { type: 'Jackknife Accidents', percentage: '18%', localFactor: `[NEEDS ENHANCEMENT] for ${city.name}` },
+      { type: 'Rollover Crashes', percentage: '15%', localFactor: `[NEEDS ENHANCEMENT] for ${city.name}` },
+      { type: 'Sideswipe Collisions', percentage: '12%', localFactor: `[NEEDS ENHANCEMENT] for ${city.name}` },
+      { type: 'Head-On Collisions', percentage: '10%', localFactor: `[NEEDS ENHANCEMENT] for ${city.name}` },
+    ],
+    faqs: [
+      { question: `Why are truck accidents common on ${highways[0]} near ${city.name}?`, answer: `[NEEDS ENHANCEMENT] for ${city.name}` },
+      { question: `What industries in ${city.name} contribute to truck traffic?`, answer: `[NEEDS ENHANCEMENT] for ${city.name}` },
+      { question: `How does weather affect truck accidents in ${city.name}, ${stateName}?`, answer: `[NEEDS ENHANCEMENT] for ${city.name}` },
+      { question: `What should I do immediately after a truck accident in ${city.name}?`, answer: `[NEEDS ENHANCEMENT] for ${city.name}` },
+      { question: `How long do I have to file a truck accident lawsuit in ${stateName}?`, answer: `[NEEDS ENHANCEMENT] for ${city.name}` },
+    ],
   };
-}
-
-function generateUniqueFAQs(city: CityInput): Array<{ question: string; answer: string }> {
-  const weather = getWeatherHazards(city.stateSlug);
-  const industries = getStateIndustries(city.stateSlug);
-  const stateName = formatStateName(city.stateSlug);
-
-  const faqs = [
-    {
-      question: `Why are truck accidents common on ${city.dangerousRoads[0]} near ${city.name}?`,
-      answer: `${city.dangerousRoads[0]} near ${city.name} sees frequent truck accidents due to a combination of factors. The corridor carries heavy commercial truck traffic ${city.population > 200000 ? 'mixed with significant local vehicle traffic' : 'through the area'}. ${weather.primaryHazard} during ${weather.dangerousMonths.slice(0, 2).join(' and ')} creates additional hazards. Driver fatigue on long-haul routes, combined with ${city.population > 100000 ? 'urban congestion' : 'limited service areas'}, increases accident risk. Common accident types include rear-end collisions, jackknife incidents, and lane departure crashes. Trucking companies operating on ${city.dangerousRoads[0]} must comply with federal Hours of Service regulations, but violations are frequently cited in accident investigations.`,
-    },
-    {
-      question: `What industries in ${city.name} contribute to truck traffic?`,
-      answer: `${city.name}'s economy depends heavily on industries that require commercial trucking. ${industries[0]} operations require regular deliveries of materials and equipment. ${industries[1]} facilities depend on reliable freight transportation for both incoming supplies and outgoing products. ${industries.length > 2 ? industries[2] + ' businesses also generate significant truck traffic.' : ''} The presence of ${city.population > 200000 ? 'major distribution centers and logistics hubs' : 'regional commercial facilities'} in ${city.countyName} County means constant commercial vehicle activity. This economic activity, while vital to the local economy, also increases truck accident risk for ${city.name} residents traveling local roads and highways.`,
-    },
-    {
-      question: `How does weather affect truck accidents in ${city.name}, ${stateName}?`,
-      answer: `${city.name} experiences ${weather.primaryHazard.toLowerCase()} that significantly impacts truck safety. During ${weather.dangerousMonths.join(', ')}, ${weather.description} ${weather.secondaryHazards.length > 0 ? `Additional hazards include ${weather.secondaryHazards.slice(0, 2).join(' and ').toLowerCase()}.` : ''} Commercial trucks require longer stopping distances than passenger vehicles, making them particularly vulnerable to sudden weather changes. Truck drivers must exercise increased caution on ${city.dangerousRoads.join(' and ')} during adverse weather conditions. Despite these known hazards, some trucking companies pressure drivers to maintain schedules regardless of conditions, leading to preventable accidents.`,
-    },
-    {
-      question: `What should I do immediately after a truck accident in ${city.name}?`,
-      answer: `If you're involved in a truck accident in ${city.name}, ${stateName}, take these immediate steps: First, ensure your safety and call 911 for medical attention if needed. Document the scene by photographing the truck's license plate, DOT number, and company name. Get contact information from witnesses. Request a copy of the police report from ${city.countyName} County authorities. Do not give recorded statements to the trucking company's insurance adjuster without legal counsel. Contact a ${city.name} truck accident lawyer as soon as possible—trucking companies begin investigating immediately to protect their interests. Time is critical because electronic logging device (ELD) data and other evidence may be overwritten or destroyed if not preserved through legal action.`,
-    },
-    {
-      question: `How long do I have to file a truck accident lawsuit in ${stateName}?`,
-      answer: `${stateName}'s statute of limitations determines how long you have to file a truck accident lawsuit. Missing this deadline typically bars your claim forever, regardless of how severe your injuries are. However, you should not wait to consult an attorney. Critical evidence from truck accidents—including ELD data, driver qualification files, and maintenance records—may be legally destroyed after federal retention periods expire. In ${city.name}, local attorneys understand both state deadlines and federal trucking regulations. They can send immediate preservation letters to trucking companies requiring them to retain evidence. The sooner you act after a ${city.name} truck accident, the stronger your case will be.`,
-    },
-    {
-      question: `Who can be held liable for a truck accident in ${city.name}?`,
-      answer: `Multiple parties may be liable for a truck accident in ${city.name}. The truck driver may be liable for negligence such as speeding, fatigue, or distracted driving. The trucking company often bears responsibility for hiring, training, and supervision practices. If the truck was improperly maintained, the maintenance company may be liable. Cargo loading companies may be responsible if shifting or improperly secured cargo caused the accident. The truck or parts manufacturer may be liable for defects. In some ${city.name} accidents, multiple defendants share liability. An experienced ${city.countyName} County truck accident attorney investigates all potential defendants to maximize your recovery. Federal Motor Carrier Safety Regulations (FMCSA) provide standards that often establish negligence in these cases.`,
-    },
-    {
-      question: `Why do I need a local ${city.name} truck accident lawyer?`,
-      answer: `Truck accident cases require specialized legal knowledge that goes beyond typical car accident claims. A ${city.name} truck accident lawyer understands federal FMCSA regulations governing trucking companies. They know how to investigate ${city.dangerousRoads.join(' and ')} accidents specifically, including how to obtain evidence from state and local authorities. Local attorneys have experience in ${city.countyName} County courts and understand local jury tendencies. They know the ${industries[0].toLowerCase()} and ${industries[1].toLowerCase()} trucking operations common in ${city.name}. Most importantly, local counsel can respond quickly to preserve evidence before trucking companies destroy it. Unlike out-of-state firms that advertise heavily, local attorneys are invested in their community's safety and reputation.`,
-    },
-  ];
-
-  // Return 5-7 FAQs
-  return faqs.slice(0, 5 + Math.floor(Math.random() * 2));
-}
-
-function generateHeroText(city: CityInput): string {
-  const weather = getWeatherHazards(city.stateSlug);
-  const industries = getStateIndustries(city.stateSlug);
-  const stateName = formatStateName(city.stateSlug);
-
-  const popText = city.population > 0
-    ? `home to ${city.population.toLocaleString()} residents and `
-    : '';
-
-  const fatalityText = city.truckFatalities > 1
-    ? `${city.truckFatalities} people were killed in truck-related crashes`
-    : `${city.truckFatalities} person was killed in a truck-related crash`;
-
-  const industryText = industries.slice(0, 2).join(' and ').toLowerCase();
-
-  return `${city.name}, ${stateName} is ${popText}a significant commercial trucking corridor. In 2022, ${fatalityText} in the ${city.name} area according to NHTSA FARS data. The city's ${industryText} industries generate substantial truck traffic on ${city.dangerousRoads.slice(0, 2).join(' and ')}. ${weather.primaryHazard} creates additional hazards during ${weather.dangerousMonths.slice(0, 2).join(' and ')}. Our experienced truck accident attorneys serve ${city.countyName} County and help victims navigate complex claims against trucking companies.`;
-}
-
-function generateTruckingIndustry(city: CityInput): string {
-  const industries = getStateIndustries(city.stateSlug);
-  const stateName = formatStateName(city.stateSlug);
-
-  return `${city.name}'s trucking industry serves the area's diverse economic needs. Commercial vehicles operating through ${city.countyName} County transport goods for ${industries.slice(0, 3).join(', ').toLowerCase()} businesses. Major shipping routes including ${city.dangerousRoads.join(', ')} connect ${city.name} to regional and national markets. Both local delivery operations and long-haul trucking companies operate in the area. The Federal Motor Carrier Safety Administration (FMCSA) regulates these carriers, but violations of Hours of Service rules, maintenance requirements, and driver qualification standards remain common. When trucking companies cut corners to save money, ${city.name} residents pay the price in preventable accidents.`;
-}
-
-// =============================================================================
-// ADDITIONAL CONTENT GENERATORS (for 2000+ word target)
-// =============================================================================
-
-function generateWhyTruckingIsDangerous(city: CityInput, highways: string[]): string {
-  const weather = getWeatherHazards(city.stateSlug);
-  const stateName = formatStateName(city.stateSlug);
-
-  return `Commercial truck accidents in ${city.name} result from a complex combination of factors unique to this area. The convergence of major highways—${highways.slice(0, 3).join(', ')}—creates heavy truck traffic through densely populated areas. ${city.name} serves as a regional hub where long-haul truckers transition between routes, often after driving the maximum hours permitted under federal regulations. This fatigue factor, combined with ${weather.primaryHazard.toLowerCase()} common to ${stateName}, significantly increases accident risk.
-
-The size and weight disparity between commercial trucks and passenger vehicles makes these accidents particularly devastating. An 80,000-pound fully loaded semi-truck cannot stop as quickly as a passenger car, and the physics of these collisions often result in catastrophic injuries or fatalities. In ${city.name}, where ${highways[0]} carries thousands of trucks daily, this risk is ever-present for local drivers.
-
-Furthermore, the trucking industry's economic pressures often compromise safety. Trucking companies operating through ${city.countyName} County face intense delivery deadlines and competitive pressures. Some carriers cut corners on vehicle maintenance, driver training, and rest requirements. Federal investigators frequently cite Hours of Service violations, inadequate driver screening, and deferred maintenance when investigating serious truck accidents in the ${city.name} area.`;
-}
-
-function generateLiabilityExplanation(city: CityInput): string {
-  const stateName = formatStateName(city.stateSlug);
-
-  return `Determining liability in a ${city.name} truck accident case requires thorough investigation of multiple potential defendants. Unlike typical car accidents, commercial truck crashes often involve a complex web of corporate relationships and federal regulations.
-
-The truck driver may be directly liable for negligent operation—speeding, distracted driving, fatigue, or impairment. However, the trucking company (motor carrier) frequently bears responsibility through the legal doctrine of respondeat superior, which holds employers liable for employee actions within the scope of employment. Additionally, trucking companies may be independently negligent in their hiring, training, supervision, or retention practices.
-
-Third parties also may share liability. The party that loaded the truck's cargo may be responsible if shifting or improperly secured freight caused the accident. Maintenance companies may be liable for mechanical failures. Truck and component manufacturers may face product liability claims for defective parts—brake systems, tires, coupling devices, and other safety-critical equipment.
-
-In ${stateName}, understanding how comparative negligence laws affect recovery is essential. Even if you were partially at fault, you may still recover damages, though your recovery may be reduced proportionally. An experienced ${city.name} truck accident attorney knows how to identify all liable parties and maximize your potential recovery under ${stateName} law.`;
-}
-
-function generateEvidencePreservation(city: CityInput): string {
-  const stateName = formatStateName(city.stateSlug);
-
-  return `Preserving evidence after a truck accident in ${city.name} is time-critical. Unlike typical car accidents, commercial trucks generate extensive electronic data that can prove—or disprove—liability claims. This evidence begins disappearing within hours of an accident.
-
-Electronic Logging Devices (ELDs) record the driver's hours of service, showing whether they violated federal rest requirements. This data can be overwritten after a period specified by the carrier. Engine Control Module (ECM) data captures speed, braking, acceleration, and other operational parameters in the moments before impact. Some systems only retain this information for a limited time.
-
-The truck's maintenance records, driver qualification files, dispatch communications, and cargo documentation provide crucial evidence about the trucking company's practices. Federal regulations specify retention periods, but carriers sometimes "lose" or destroy unfavorable records once litigation seems likely.
-
-In ${city.name}, an experienced truck accident attorney immediately sends a spoliation letter demanding the trucking company preserve all evidence. This creates legal obligations that, if violated, can result in sanctions against the carrier. Time is essential—contact a ${city.countyName} County truck accident lawyer as soon as possible after your accident to ensure critical evidence is preserved.`;
-}
-
-function generateFMCSARegulations(city: CityInput): string {
-  const stateName = formatStateName(city.stateSlug);
-
-  return `Commercial trucking companies operating through ${city.name} must comply with Federal Motor Carrier Safety Administration (FMCSA) regulations. These comprehensive rules establish minimum safety standards, and violations frequently appear in truck accident investigations.
-
-Hours of Service (HOS) regulations limit driving time to prevent fatigue-related accidents. Property-carrying drivers may drive a maximum of 11 hours after 10 consecutive hours off duty, and may not drive beyond the 14th consecutive hour after coming on duty. Drivers must take a 30-minute break after 8 cumulative hours of driving. ELDs now electronically enforce these limits, though some drivers still find ways to cheat the system.
-
-Driver qualification standards require CDL holders to meet age, health, and licensing requirements. Trucking companies must maintain Driver Qualification Files documenting each driver's credentials, road test results, annual reviews, and any violations. Hiring unqualified drivers or failing to properly screen for safety risks exposes carriers to significant liability.
-
-Vehicle maintenance requirements mandate regular inspections and documented repairs. Pre-trip and post-trip inspection requirements ensure drivers identify and report mechanical issues. When trucking companies defer maintenance to save money, dangerous conditions develop—brake fade, tire failures, coupling device defects—that cause preventable accidents on ${city.name} highways.`;
 }
 
 // =============================================================================
@@ -464,65 +354,30 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
 // =============================================================================
 
 export async function enhanceCity(city: CityInput): Promise<EnhancedCityContent> {
-  console.log(`\n  Enhancing: ${city.name}, ${city.stateName}...`);
+  console.log(`\n🏙️ Enhancing: ${city.name}, ${city.stateName}...`);
 
   const stateName = formatStateName(city.stateSlug);
-  const weather = getWeatherHazards(city.stateSlug);
-  const industries = getStateIndustries(city.stateSlug);
-  const federalDistrict = getFederalDistrict(city.stateSlug, city.countyName);
+  const federalDistrict = getFederalDistrict(city.stateSlug);
 
-  // GET ACCURATE HIGHWAYS - corrected from actual DOT data
+  // Get accurate highways
   const accurateHighways = getAccurateHighways(city.slug, city.dangerousRoads);
 
-  // Create a modified city object with accurate highways for content generation
-  const cityWithAccurateRoads = { ...city, dangerousRoads: accurateHighways };
+  // Load regional patterns for context
+  let regionalPatterns: any = {};
+  try {
+    regionalPatterns = JSON.parse(fs.readFileSync(REGIONAL_PATTERNS_PATH, 'utf-8'));
+  } catch (e) {
+    console.log('  ⚠️ Could not load regional patterns, using defaults');
+  }
 
-  // Generate all content sections using accurate highway data
-  const cityHistory = generateCityHistory(cityWithAccurateRoads);
-  const economicContext = generateEconomicContext(cityWithAccurateRoads);
-  const heroText = generateHeroText(cityWithAccurateRoads);
-  const truckingIndustry = generateTruckingIndustry(cityWithAccurateRoads);
-  const faqs = generateUniqueFAQs(cityWithAccurateRoads);
-
-  // NEW: Additional content sections to reach 2000+ words
-  const whyDangerous = generateWhyTruckingIsDangerous(cityWithAccurateRoads, accurateHighways);
-  const liabilityExplanation = generateLiabilityExplanation(cityWithAccurateRoads);
-  const evidencePreservation = generateEvidencePreservation(cityWithAccurateRoads);
-  const fmcsaRegulations = generateFMCSARegulations(cityWithAccurateRoads);
-
-  // Generate road descriptions with accurate highways
-  const dangerousRoads = accurateHighways.map((road, idx) =>
-    generateDangerousRoadDescription(road, cityWithAccurateRoads, idx)
-  );
-
-  // Generate common accidents based on region - using accurate highways
-  const commonAccidents = [
-    {
-      type: 'Rear-End Collisions',
-      percentage: `${25 + Math.floor(Math.random() * 10)}%`,
-      localFactor: `${city.population > 200000 ? 'Heavy traffic congestion on ' + accurateHighways[0] : 'Sudden stops on rural sections'} contributes to rear-end truck crashes in ${city.name}. The combination of high truck volumes and urban traffic patterns makes following distance violations particularly dangerous.`,
-    },
-    {
-      type: 'Jackknife Accidents',
-      percentage: `${15 + Math.floor(Math.random() * 10)}%`,
-      localFactor: `${weather.primaryHazard} during ${weather.dangerousMonths[0]} and ${weather.dangerousMonths[1]} increases jackknife risk on ${city.name} highways. When truck trailers lose traction, the resulting jackknife can block multiple lanes and cause chain-reaction collisions.`,
-    },
-    {
-      type: 'Rollover Crashes',
-      percentage: `${12 + Math.floor(Math.random() * 8)}%`,
-      localFactor: `High-speed travel on ${accurateHighways[0]} through ${city.name} contributes to rollover incidents, especially with improperly loaded cargo. Unbalanced loads shift during turns and lane changes, destabilizing the trailer.`,
-    },
-    {
-      type: 'Sideswipe Collisions',
-      percentage: `${10 + Math.floor(Math.random() * 8)}%`,
-      localFactor: `Lane changes and merging on ${city.name}'s busy corridors lead to sideswipe accidents, particularly in truck blind spots. Commercial trucks have extensive no-zones where passenger vehicles disappear from view.`,
-    },
-    {
-      type: 'Head-On Collisions',
-      percentage: `${8 + Math.floor(Math.random() * 6)}%`,
-      localFactor: `Driver fatigue on long-haul routes through ${city.countyName} County increases the risk of cross-centerline crashes. Even momentary drowsiness at highway speeds can result in catastrophic head-on collisions.`,
-    },
-  ];
+  // Generate unique content via Claude API
+  let generatedContent: GeneratedContent;
+  try {
+    generatedContent = await generateUniqueContent(city, accurateHighways, regionalPatterns);
+  } catch (error) {
+    // Fall back to placeholder content if API fails
+    generatedContent = generateFallbackContent(city, accurateHighways);
+  }
 
   const content: EnhancedCityContent = {
     slug: city.slug,
@@ -536,18 +391,18 @@ export async function enhanceCity(city: CityInput): Promise<EnhancedCityContent>
     metaDescription: `Injured in a truck crash in ${city.name}? ${city.truckFatalities} fatal truck accidents in 2022. Experienced attorneys serving ${city.countyName} County, ${stateName}. Free consultation.`,
     h1: `${city.name} Truck Accident Lawyers`,
 
-    cityHistory,
-    majorIndustries: industries.slice(0, 5),
-    economicContext,
-    truckingRelevance: `${city.name}'s position on ${accurateHighways[0]} makes it a critical link in ${stateName}'s freight transportation network.`,
+    // All content from Claude
+    cityHistory: generatedContent.cityHistory,
+    majorIndustries: [], // Could be parsed from economicContext
+    economicContext: generatedContent.economicContext,
+    truckingRelevance: generatedContent.truckingRelevance,
 
-    // NEW: Additional content sections for 2000+ word target
-    whyDangerous,
-    liabilityExplanation,
-    evidencePreservation,
-    fmcsaRegulations,
+    whyDangerous: generatedContent.whyDangerous,
+    liabilityExplanation: generatedContent.liabilityExplanation,
+    evidencePreservation: generatedContent.evidencePreservation,
+    fmcsaRegulations: generatedContent.fmcsaRegulations,
 
-    heroText,
+    heroText: generatedContent.heroText,
 
     accidentStats: {
       truckFatalities: city.truckFatalities,
@@ -564,51 +419,50 @@ export async function enhanceCity(city: CityInput): Promise<EnhancedCityContent>
       year2022: { fatalities: city.truckFatalities, crashes: city.fatalCrashes },
       trend: 'insufficient_data',
       percentChange: null,
-      trendDescription: 'Multi-year trend data being compiled. Check back for updates.',
+      trendDescription: 'Multi-year trend data being compiled.',
     },
 
-    recentAccidents: [],  // Would be populated by news search agent
+    recentAccidents: [], // Would need news API
 
     weatherHazards: {
-      primaryHazard: weather.primaryHazard,
-      secondaryHazards: weather.secondaryHazards,
-      description: weather.description,
-      dangerousMonths: weather.dangerousMonths,
+      primaryHazard: 'Regional weather patterns',
+      secondaryHazards: [],
+      description: 'Weather hazards vary by season.',
+      dangerousMonths: [],
     },
 
-    dangerousRoads,
-    commonAccidents,
-    truckingIndustry,
+    dangerousRoads: generatedContent.dangerousRoads,
+    commonAccidents: generatedContent.commonAccidents,
+    truckingIndustry: generatedContent.truckingIndustry,
 
-    legalInfo: `Truck accident claims in ${city.name} are governed by ${stateName} state law and federal FMCSA regulations. Cases may be filed in ${city.countyName} County state courts or the ${federalDistrict} federal court. Our attorneys understand both jurisdictions and can advise on the best venue for your case.`,
+    legalInfo: generatedContent.legalInfo,
 
     localCourts: {
-      stateCourt: `${city.countyName} County ${stateName.includes('New York') ? 'Supreme' : 'Superior/Circuit'} Court`,
+      stateCourt: `${city.countyName} County ${stateName.includes('New York') ? 'Supreme' : 'District'} Court`,
       federalCourt: federalDistrict,
-      venueNotes: `Truck accident cases involving out-of-state defendants may qualify for federal court jurisdiction if damages exceed $75,000.`,
+      venueNotes: `Truck accident cases involving out-of-state defendants may qualify for federal court.`,
     },
 
-    faqs,
+    faqs: generatedContent.faqs,
 
-    wordCount: 0,  // Calculated below
-    uniquenessScore: 85,  // Placeholder - would be calculated by similarity check
+    wordCount: 0,
+    uniquenessScore: 85,
     sources: [
       'NHTSA FARS 2022',
       `${stateName} Department of Transportation`,
       'Federal Motor Carrier Safety Administration',
     ],
     lastEnhanced: new Date().toISOString(),
-    agentVersion: '1.0.0',
+    agentVersion: '2.0.0',
   };
 
-  // Calculate word count - including all new sections
+  // Calculate word count
   const allText = [
     content.cityHistory,
     content.economicContext,
     content.heroText,
     content.truckingIndustry,
     content.legalInfo,
-    // NEW: Additional content sections
     content.whyDangerous,
     content.liabilityExplanation,
     content.evidencePreservation,
@@ -620,7 +474,7 @@ export async function enhanceCity(city: CityInput): Promise<EnhancedCityContent>
 
   content.wordCount = allText.split(/\s+/).filter(w => w.length > 0).length;
 
-  console.log(`  ✓ ${city.name}: ${content.wordCount} words generated`);
+  console.log(`  ✅ ${city.name}: ${content.wordCount} words generated`);
 
   return content;
 }
@@ -674,7 +528,6 @@ export const ${varName}: CityContent = {
     sourceUrl: '${content.accidentStats.sourceUrl}',
   },
 
-  // Extended content sections
   whyDangerous: \`${content.whyDangerous.replace(/`/g, '\\`')}\`,
 
   liabilityExplanation: \`${content.liabilityExplanation.replace(/`/g, '\\`')}\`,
@@ -715,18 +568,26 @@ async function main() {
 
   if (args.length === 0 || args.includes('--help')) {
     console.log(`
-City Enhancement Agent
+City Enhancement Agent v2.0 (Claude-Powered)
 
 Usage:
   npx tsx scripts/agents/city-enhancer.ts <city-slug> <state-slug>
-  npx tsx scripts/agents/city-enhancer.ts houston texas
-  npx tsx scripts/agents/city-enhancer.ts new-york new-york
 
 Examples:
+  npx tsx scripts/agents/city-enhancer.ts houston texas
   npx tsx scripts/agents/city-enhancer.ts los-angeles california
-  npx tsx scripts/agents/city-enhancer.ts chicago illinois
+
+Environment:
+  ANTHROPIC_API_KEY must be set for Claude API calls
 `);
     return;
+  }
+
+  // Check for API key
+  if (!process.env.ANTHROPIC_API_KEY) {
+    console.error('❌ Error: ANTHROPIC_API_KEY environment variable not set');
+    console.log('Set it with: export ANTHROPIC_API_KEY=your-key-here');
+    process.exit(1);
   }
 
   const citySlug = args[0];
@@ -757,14 +618,18 @@ Examples:
   const statePopulations = popData.populations[stateSlug] || {};
   city.population = statePopulations[citySlug] || 0;
 
+  console.log('🚀 City Enhancement Agent v2.0 (Claude-Powered)');
+  console.log('================================================');
+
   // Enhance the city
   const enhanced = await enhanceCity(city);
 
   // Write the file
   await writeCityFile(enhanced);
 
-  console.log(`\nEnhanced content written to: src/lib/cities-content/${stateSlug}/${citySlug}.ts`);
-  console.log(`Word count: ${enhanced.wordCount}`);
+  console.log(`\n✅ Enhanced content written to: src/lib/cities-content/${stateSlug}/${citySlug}.ts`);
+  console.log(`📊 Word count: ${enhanced.wordCount}`);
+  console.log(`🎯 Uniqueness target: 85%+`);
 }
 
 // Only run CLI when executed directly
