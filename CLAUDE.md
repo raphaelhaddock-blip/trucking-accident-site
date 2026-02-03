@@ -113,3 +113,16 @@ Ask the user:
 - "This looks like a significant change. Want me to plan it first?"
 - "I see multiple approaches here. Should I outline options?"
 - "This will affect [X] files. Confirm before I proceed?"
+
+---
+
+## STANDARD WEBSITE RULES
+
+**See `~/.claude/SITE_RULES.md` for standard operations rules including:**
+- Deployment (Vercel workflow, pre-deploy checklist)
+- Security (XSS prevention, headers, secrets)
+- SEO (technical requirements, Core Web Vitals)
+- Content quality (word counts, required elements)
+- Legal compliance (disclaimers, forbidden claims)
+- Accessibility (WCAG 2.1 AA)
+- Performance budget
