@@ -98,6 +98,25 @@ Before any content change, verify:
 
 ---
 
+### Cognitive Checkpoint — Domain Triggers
+
+**Before content generation:**
+- Word count met? Accident types 3,000+, states 2,500+, cities 2,000+, blog 800+, 5+ unique FAQs.
+- No doorway pages: 80%+ unique content required. No state/city name-swap templates.
+
+**Before legal content:**
+- FMCSA regulations cited correctly? Verify CFR numbers.
+- State-specific SOL verified? Don't guess — confirm from source.
+- Multiple liable parties covered? (driver, carrier, broker, shipper, manufacturer)
+- No guaranteed outcomes or specific settlement promises. No implied attorney-client relationship.
+- Comparative negligence rules correct for target state?
+
+**Before publishing:**
+- SEO checklist: H1 unique, meta title < 60 chars, meta desc 120-160 chars, schema markup (LegalService, FAQPage, BreadcrumbList).
+- Deploy via Vercel only. Never run local dev server.
+
+---
+
 ## Git Rules
 
 - Commit after each logical unit of work
