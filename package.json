@@ -9,7 +9,10 @@
     "lint": "eslint",
     "audit": "npx tsx scripts/run-audit.ts --all",
     "audit:content": "npx tsx scripts/run-audit.ts --content",
-    "audit:technical": "npx tsx scripts/run-audit.ts --technical"
+    "audit:technical": "npx tsx scripts/run-audit.ts --technical",
+    "audit:quality": "npx tsx scripts/quality/duplicate-audit.ts",
+    "audit:damage": "npx tsx scripts/quality/damage-scan.ts",
+    "audit:top20": "npx tsx scripts/quality/build-top20.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",

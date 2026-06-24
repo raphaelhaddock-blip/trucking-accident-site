@@ -1,0 +1,746 @@
+{
+  "config": {
+    "CITY_WORD_FLOOR": 2000,
+    "SIM_THRESHOLD": 0.3,
+    "SHINGLE_K": 5,
+    "NUM_HASHES": 64,
+    "LSH_BANDS": 16,
+    "LSH_ROWS": 4,
+    "note": "similarity is name/number-normalized, FMCSA federal text excluded"
+  },
+  "totals": {
+    "routesScanned": 1616,
+    "withContentFile": 1613,
+    "noContentFile": 3,
+    "candidatePairs": 891508
+  },
+  "gate": {
+    "placeholders": 0,
+    "belowWordFloor": 1390,
+    "duplicateH1Groups": 122,
+    "duplicateTitleGroups": 35,
+    "duplicateDescGroups": 6,
+    "lowLocalSignal": 0,
+    "pairsOver30pct": 891508,
+    "docsWithADupPartnerOver30pct": 1581,
+    "PASS": false
+  },
+  "fmcsaIdenticalGroups": {
+    "groups": 86,
+    "largest": 30
+  },
+  "worstPairs": [
+    {
+      "a": "arkansas/bryant",
+      "b": "arkansas/benton",
+      "sim": 1
+    },
+    {
+      "a": "connecticut/haddam",
+      "b": "new-jersey/north-brunswick",
+      "sim": 1
+    },
+    {
+      "a": "connecticut/middletown",
+      "b": "new-jersey/sayreville",
+      "sim": 1
+    },
+    {
+      "a": "connecticut/plainfield",
+      "b": "connecticut/killingly-center",
+      "sim": 1
+    },
+    {
+      "a": "connecticut/plainfield",
+      "b": "connecticut/thompson",
+      "sim": 1
+    },
+    {
+      "a": "connecticut/killingly-center",
+      "b": "connecticut/thompson",
+      "sim": 1
+    },
+    {
+      "a": "florida/titusville",
+      "b": "florida/sharpes",
+      "sim": 1
+    },
+    {
+      "a": "florida/titusville",
+      "b": "florida/cocoa",
+      "sim": 1
+    },
+    {
+      "a": "florida/boca-raton",
+      "b": "florida/delray-beach",
+      "sim": 1
+    },
+    {
+      "a": "florida/weston",
+      "b": "florida/lauderhill",
+      "sim": 1
+    },
+    {
+      "a": "florida/weston",
+      "b": "florida/deerfield-beach",
+      "sim": 1
+    },
+    {
+      "a": "florida/lauderhill",
+      "b": "florida/deerfield-beach",
+      "sim": 1
+    },
+    {
+      "a": "florida/brooksville",
+      "b": "florida/spring-hill",
+      "sim": 1
+    },
+    {
+      "a": "florida/coral-springs",
+      "b": "florida/pompano-beach",
+      "sim": 1
+    },
+    {
+      "a": "florida/sharpes",
+      "b": "florida/cocoa",
+      "sim": 1
+    },
+    {
+      "a": "kentucky/lexington-fayette",
+      "b": "west-virginia/oak-hill",
+      "sim": 1
+    },
+    {
+      "a": "louisiana/not-reported-livingston",
+      "b": "louisiana/port-vincent",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/newton",
+      "b": "massachusetts/medford",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/wrentham",
+      "b": "massachusetts/westwood",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/hopkinton",
+      "b": "massachusetts/tyngsboro",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/hopkinton",
+      "b": "massachusetts/woburn",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/hopkinton",
+      "b": "massachusetts/dracut",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/tyngsboro",
+      "b": "massachusetts/woburn",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/tyngsboro",
+      "b": "massachusetts/dracut",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/woburn",
+      "b": "massachusetts/dracut",
+      "sim": 1
+    },
+    {
+      "a": "michigan/oxford",
+      "b": "michigan/lathrup-village",
+      "sim": 1
+    },
+    {
+      "a": "minnesota/blaine",
+      "b": "minnesota/coon-rapids",
+      "sim": 1
+    },
+    {
+      "a": "missouri/seymour",
+      "b": "missouri/diggins",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/teaneck",
+      "b": "new-jersey/ridgefield-park",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/cinnaminson",
+      "b": "new-jersey/mt-laurel",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/cinnaminson",
+      "b": "new-jersey/bordentown",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/mahwah",
+      "b": "new-jersey/saddle-river",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/mahwah",
+      "b": "new-jersey/east-rutherford",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/mahwah",
+      "b": "new-jersey/elmwood-park",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/mahwah",
+      "b": "new-jersey/rutherford",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/mt-laurel",
+      "b": "new-jersey/bordentown",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/saddle-river",
+      "b": "new-jersey/east-rutherford",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/saddle-river",
+      "b": "new-jersey/elmwood-park",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/saddle-river",
+      "b": "new-jersey/rutherford",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/east-rutherford",
+      "b": "new-jersey/elmwood-park",
+      "sim": 1
+    }
+  ],
+  "duplicateH1": [
+    {
+      "value": "other truck accident lawyers",
+      "count": 30,
+      "sample": [
+        "arizona/other",
+        "california/other",
+        "georgia/other-dekalb",
+        "georgia/other",
+        "georgia/other-chatham",
+        "georgia/other-effingham"
+      ]
+    },
+    {
+      "value": "not reported truck accident lawyers",
+      "count": 14,
+      "sample": [
+        "arizona/not-reported",
+        "arizona/not-reported-mohave",
+        "georgia/not-reported",
+        "georgia/not-reported-monroe",
+        "georgia/not-reported-glynn",
+        "georgia/not-reported-mcduffie"
+      ]
+    },
+    {
+      "value": "springfield truck accident lawyers",
+      "count": 7,
+      "sample": [
+        "georgia/springfield",
+        "missouri/springfield",
+        "virginia/springfield",
+        "illinois/springfield-il",
+        "massachusetts/springfield-ma",
+        "missouri/springfield-mo"
+      ]
+    },
+    {
+      "value": "concord truck accident lawyers",
+      "count": 5,
+      "sample": [
+        "california/concord",
+        "new-hampshire/concord",
+        "north-carolina/concord",
+        "new-hampshire/concord-nh",
+        "north-carolina/concord-nc"
+      ]
+    },
+    {
+      "value": "jackson truck accident lawyers",
+      "count": 5,
+      "sample": [
+        "georgia/jackson",
+        "mississippi/jackson",
+        "wisconsin/jackson",
+        "mississippi/jackson-ms",
+        "tennessee/jackson-tn"
+      ]
+    },
+    {
+      "value": "decatur truck accident lawyers",
+      "count": 4,
+      "sample": [
+        "alabama/decatur",
+        "georgia/decatur",
+        "illinois/decatur",
+        "texas/decatur"
+      ]
+    },
+    {
+      "value": "auburn truck accident lawyers",
+      "count": 4,
+      "sample": [
+        "alabama/auburn",
+        "illinois/auburn",
+        "washington/auburn",
+        "alabama/auburn-al"
+      ]
+    },
+    {
+      "value": "marion truck accident lawyers",
+      "count": 4,
+      "sample": [
+        "arkansas/marion",
+        "illinois/marion",
+        "indiana/marion",
+        "mississippi/marion"
+      ]
+    },
+    {
+      "value": "aurora truck accident lawyers",
+      "count": 4,
+      "sample": [
+        "colorado/aurora",
+        "illinois/aurora",
+        "colorado/aurora-co",
+        "illinois/aurora-il"
+      ]
+    },
+    {
+      "value": "lafayette truck accident lawyers",
+      "count": 4,
+      "sample": [
+        "colorado/lafayette",
+        "georgia/lafayette",
+        "indiana/lafayette",
+        "louisiana/lafayette-la"
+      ]
+    },
+    {
+      "value": "madison truck accident lawyers",
+      "count": 4,
+      "sample": [
+        "connecticut/madison",
+        "new-jersey/madison",
+        "tennessee/madison",
+        "wisconsin/madison"
+      ]
+    },
+    {
+      "value": "manchester truck accident lawyers",
+      "count": 4,
+      "sample": [
+        "connecticut/manchester",
+        "new-hampshire/manchester",
+        "new-york/manchester",
+        "new-hampshire/manchester-nh"
+      ]
+    },
+    {
+      "value": "albany truck accident lawyers",
+      "count": 4,
+      "sample": [
+        "georgia/albany",
+        "new-hampshire/albany",
+        "new-york/albany",
+        "georgia/albany-ga"
+      ]
+    },
+    {
+      "value": "kansas city truck accident lawyers",
+      "count": 4,
+      "sample": [
+        "kansas/kansas-city",
+        "missouri/kansas-city",
+        "kansas/kansas-city-ks",
+        "missouri/kansas-city-mo"
+      ]
+    },
+    {
+      "value": "charleston truck accident lawyers",
+      "count": 4,
+      "sample": [
+        "missouri/charleston",
+        "west-virginia/charleston",
+        "south-carolina/charleston",
+        "west-virginia/charleston-wv"
+      ]
+    }
+  ],
+  "duplicateTitle": [
+    {
+      "value": "other truck accident lawyers | georgia 18-wheeler attorneys",
+      "count": 8,
+      "sample": [
+        "georgia/other-dekalb",
+        "georgia/other",
+        "georgia/other-chatham",
+        "georgia/other-effingham",
+        "georgia/other-coweta",
+        "georgia/other-newton"
+      ]
+    },
+    {
+      "value": "not reported truck accident lawyers | georgia 18-wheeler attorneys",
+      "count": 5,
+      "sample": [
+        "georgia/not-reported",
+        "georgia/not-reported-monroe",
+        "georgia/not-reported-glynn",
+        "georgia/not-reported-mcduffie",
+        "georgia/not-reported-crisp"
+      ]
+    },
+    {
+      "value": "not reported truck accident lawyers | louisiana 18-wheeler attorneys",
+      "count": 5,
+      "sample": [
+        "louisiana/not-reported-east-feliciana",
+        "louisiana/not-reported",
+        "louisiana/not-reported-lafourche",
+        "louisiana/not-reported-tangipahoa",
+        "louisiana/not-reported-livingston"
+      ]
+    },
+    {
+      "value": "other truck accident lawyers | texas 18-wheeler attorneys",
+      "count": 5,
+      "sample": [
+        "texas/other",
+        "texas/other-ellis",
+        "texas/other-denton",
+        "texas/other-cooke",
+        "texas/other-midland"
+      ]
+    },
+    {
+      "value": "new york city truck accident lawyers | new york 18-wheeler attorneys",
+      "count": 4,
+      "sample": [
+        "new-york/new-york-city",
+        "new-york/new-york-city-kings",
+        "new-york/new-york",
+        "new-york/new-york-city-richmond"
+      ]
+    },
+    {
+      "value": "other truck accident lawyers | utah 18-wheeler attorneys",
+      "count": 4,
+      "sample": [
+        "utah/other",
+        "utah/other-salt-lake",
+        "utah/other-san-juan",
+        "utah/other-kane"
+      ]
+    },
+    {
+      "value": "auburn truck accident lawyers | alabama 18-wheeler attorneys",
+      "count": 2,
+      "sample": [
+        "alabama/auburn",
+        "alabama/auburn-al"
+      ]
+    },
+    {
+      "value": "peoria truck accident lawyers | arizona 18-wheeler attorneys",
+      "count": 2,
+      "sample": [
+        "arizona/peoria",
+        "arizona/peoria-az"
+      ]
+    },
+    {
+      "value": "glendale truck accident lawyers | arizona 18-wheeler attorneys",
+      "count": 2,
+      "sample": [
+        "arizona/glendale",
+        "arizona/glendale-az"
+      ]
+    },
+    {
+      "value": "not reported truck accident lawyers | arizona 18-wheeler attorneys",
+      "count": 2,
+      "sample": [
+        "arizona/not-reported",
+        "arizona/not-reported-mohave"
+      ]
+    },
+    {
+      "value": "norwalk truck accident lawyers | california 18-wheeler attorneys",
+      "count": 2,
+      "sample": [
+        "california/norwalk",
+        "california/norwalk-ca"
+      ]
+    },
+    {
+      "value": "aurora truck accident lawyers | colorado 18-wheeler attorneys",
+      "count": 2,
+      "sample": [
+        "colorado/aurora",
+        "colorado/aurora-co"
+      ]
+    },
+    {
+      "value": "westminster truck accident lawyers | colorado 18-wheeler attorneys",
+      "count": 2,
+      "sample": [
+        "colorado/westminster",
+        "colorado/westminster-co"
+      ]
+    },
+    {
+      "value": "wilmington truck accident lawyers | delaware 18-wheeler attorneys",
+      "count": 2,
+      "sample": [
+        "delaware/wilmington",
+        "delaware/wilmington-de"
+      ]
+    },
+    {
+      "value": "albany truck accident lawyers | georgia 18-wheeler attorneys",
+      "count": 2,
+      "sample": [
+        "georgia/albany",
+        "georgia/albany-ga"
+      ]
+    }
+  ],
+  "duplicateDesc": [
+    {
+      "value": "experienced peoria truck accident lawyers. 2 fatal crashes in 2022. free consult",
+      "count": 2,
+      "sample": [
+        "arizona/peoria-az",
+        "illinois/peoria"
+      ]
+    },
+    {
+      "value": "experienced fayetteville truck accident lawyers. 5 fatal crashes in 2022. free c",
+      "count": 2,
+      "sample": [
+        "arkansas/fayetteville-ar",
+        "north-carolina/fayetteville-nc"
+      ]
+    },
+    {
+      "value": "experienced norwalk truck accident lawyers. 1 fatal crashes in 2022. free consul",
+      "count": 2,
+      "sample": [
+        "california/norwalk-ca",
+        "connecticut/norwalk-ct"
+      ]
+    },
+    {
+      "value": "experienced westminster truck accident lawyers. 1 fatal crashes in 2022. free co",
+      "count": 2,
+      "sample": [
+        "california/westminster",
+        "colorado/westminster-co"
+      ]
+    },
+    {
+      "value": "experienced springfield truck accident lawyers. 2 fatal crashes in 2022. free co",
+      "count": 2,
+      "sample": [
+        "illinois/springfield-il",
+        "ohio/springfield-oh"
+      ]
+    },
+    {
+      "value": "experienced bloomington truck accident lawyers. 2 fatal crashes in 2022. free co",
+      "count": 2,
+      "sample": [
+        "indiana/bloomington-in",
+        "minnesota/bloomington-mn"
+      ]
+    }
+  ],
+  "placeholdersSample": [],
+  "belowFloorSample": [
+    {
+      "key": "pennsylvania/allentown",
+      "words": 660
+    },
+    {
+      "key": "pennsylvania/erie",
+      "words": 660
+    },
+    {
+      "key": "pennsylvania/lancaster-pa",
+      "words": 660
+    },
+    {
+      "key": "pennsylvania/reading",
+      "words": 660
+    },
+    {
+      "key": "tennessee/franklin-tn",
+      "words": 663
+    },
+    {
+      "key": "tennessee/jackson-tn",
+      "words": 663
+    },
+    {
+      "key": "indiana/bloomington-in",
+      "words": 664
+    },
+    {
+      "key": "indiana/fishers",
+      "words": 664
+    },
+    {
+      "key": "virginia/alexandria",
+      "words": 664
+    },
+    {
+      "key": "virginia/lynchburg",
+      "words": 664
+    },
+    {
+      "key": "virginia/portsmouth",
+      "words": 664
+    },
+    {
+      "key": "virginia/richmond-va",
+      "words": 664
+    },
+    {
+      "key": "virginia/roanoke",
+      "words": 664
+    },
+    {
+      "key": "virginia/suffolk",
+      "words": 664
+    },
+    {
+      "key": "missouri/columbia-mo",
+      "words": 666
+    },
+    {
+      "key": "missouri/ofallon",
+      "words": 666
+    },
+    {
+      "key": "missouri/springfield-mo",
+      "words": 666
+    },
+    {
+      "key": "illinois/aurora-il",
+      "words": 668
+    },
+    {
+      "key": "illinois/bloomington-il",
+      "words": 668
+    },
+    {
+      "key": "illinois/elgin",
+      "words": 668
+    },
+    {
+      "key": "illinois/naperville",
+      "words": 668
+    },
+    {
+      "key": "illinois/peoria",
+      "words": 668
+    },
+    {
+      "key": "illinois/rockford",
+      "words": 668
+    },
+    {
+      "key": "illinois/springfield-il",
+      "words": 668
+    },
+    {
+      "key": "colorado/arvada",
+      "words": 671
+    },
+    {
+      "key": "colorado/aurora-co",
+      "words": 671
+    },
+    {
+      "key": "colorado/boulder",
+      "words": 671
+    },
+    {
+      "key": "colorado/centennial",
+      "words": 671
+    },
+    {
+      "key": "colorado/greeley",
+      "words": 671
+    },
+    {
+      "key": "colorado/lakewood-co",
+      "words": 671
+    },
+    {
+      "key": "colorado/longmont",
+      "words": 671
+    },
+    {
+      "key": "colorado/westminster-co",
+      "words": 671
+    },
+    {
+      "key": "ohio/akron",
+      "words": 671
+    },
+    {
+      "key": "ohio/hamilton-oh",
+      "words": 671
+    },
+    {
+      "key": "ohio/lorain",
+      "words": 671
+    },
+    {
+      "key": "ohio/parma",
+      "words": 671
+    },
+    {
+      "key": "ohio/springfield-oh",
+      "words": 671
+    },
+    {
+      "key": "ohio/youngstown",
+      "words": 671
+    },
+    {
+      "key": "alabama/auburn-al",
+      "words": 674
+    },
+    {
+      "key": "alabama/hoover",
+      "words": 674
+    }
+  ]
+}

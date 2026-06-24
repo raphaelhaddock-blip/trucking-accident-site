@@ -1,0 +1,218 @@
+{
+  "source": "US Census Bureau 2022 Population Estimates",
+  "topN": 20,
+  "states": 50,
+  "idealRequiredCities_50x20": 1000,
+  "sourcedRequiredCities": 744,
+  "sourcedRequiredExistingAsRoute": 453,
+  "sourcedRequiredMissingRoute": 291,
+  "extraRoutesOutsideTop20": 1163,
+  "statesComplete_ge20": 22,
+  "statesNeedingSourcing_lt20": 28,
+  "needsSourcingDetail": [
+    {
+      "state": "alabama",
+      "have": 14,
+      "need": 6
+    },
+    {
+      "state": "alaska",
+      "have": 5,
+      "need": 15
+    },
+    {
+      "state": "arkansas",
+      "have": 12,
+      "need": 8
+    },
+    {
+      "state": "colorado",
+      "have": 15,
+      "need": 5
+    },
+    {
+      "state": "connecticut",
+      "have": 16,
+      "need": 4
+    },
+    {
+      "state": "delaware",
+      "have": 3,
+      "need": 17
+    },
+    {
+      "state": "hawaii",
+      "have": 7,
+      "need": 13
+    },
+    {
+      "state": "idaho",
+      "have": 8,
+      "need": 12
+    },
+    {
+      "state": "iowa",
+      "have": 15,
+      "need": 5
+    },
+    {
+      "state": "kansas",
+      "have": 14,
+      "need": 6
+    },
+    {
+      "state": "kentucky",
+      "have": 15,
+      "need": 5
+    },
+    {
+      "state": "louisiana",
+      "have": 15,
+      "need": 5
+    },
+    {
+      "state": "maine",
+      "have": 8,
+      "need": 12
+    },
+    {
+      "state": "maryland",
+      "have": 15,
+      "need": 5
+    },
+    {
+      "state": "minnesota",
+      "have": 19,
+      "need": 1
+    },
+    {
+      "state": "mississippi",
+      "have": 12,
+      "need": 8
+    },
+    {
+      "state": "montana",
+      "have": 4,
+      "need": 16
+    },
+    {
+      "state": "nebraska",
+      "have": 6,
+      "need": 14
+    },
+    {
+      "state": "nevada",
+      "have": 5,
+      "need": 15
+    },
+    {
+      "state": "new-hampshire",
+      "have": 11,
+      "need": 9
+    },
+    {
+      "state": "new-mexico",
+      "have": 16,
+      "need": 4
+    },
+    {
+      "state": "north-dakota",
+      "have": 8,
+      "need": 12
+    },
+    {
+      "state": "rhode-island",
+      "have": 8,
+      "need": 12
+    },
+    {
+      "state": "south-carolina",
+      "have": 16,
+      "need": 4
+    },
+    {
+      "state": "south-dakota",
+      "have": 8,
+      "need": 12
+    },
+    {
+      "state": "vermont",
+      "have": 9,
+      "need": 11
+    },
+    {
+      "state": "west-virginia",
+      "have": 10,
+      "need": 10
+    },
+    {
+      "state": "wyoming",
+      "have": 10,
+      "need": 10
+    }
+  ],
+  "missingRouteSample": [
+    "alabama/madison",
+    "alabama/florence",
+    "alabama/vestavia-hills",
+    "alaska/fairbanks",
+    "alaska/juneau",
+    "alaska/wasilla",
+    "alaska/sitka",
+    "arizona/maricopa",
+    "arizona/casa-grande",
+    "arizona/san-luis",
+    "arkansas/fayetteville",
+    "arkansas/pine-bluff",
+    "colorado/lakewood",
+    "colorado/loveland",
+    "colorado/grand-junction",
+    "connecticut/norwalk",
+    "connecticut/meriden",
+    "connecticut/bristol",
+    "connecticut/shelton",
+    "connecticut/norwich",
+    "connecticut/torrington",
+    "florida/hollywood",
+    "georgia/south-fulton",
+    "georgia/smyrna",
+    "georgia/valdosta",
+    "georgia/brookhaven",
+    "georgia/dunwoody",
+    "georgia/gainesville-ga",
+    "georgia/peachtree-corners",
+    "hawaii/east-honolulu",
+    "hawaii/pearl-city",
+    "hawaii/waipahu",
+    "hawaii/kaneohe",
+    "idaho/caldwell",
+    "idaho/coeur-dalene",
+    "illinois/schaumburg",
+    "illinois/evanston",
+    "illinois/decatur-il",
+    "illinois/palatine",
+    "illinois/skokie"
+  ],
+  "extraRouteSample": [
+    "alabama/rogersville",
+    "alabama/daleville",
+    "alabama/leesburg",
+    "alabama/saraland",
+    "alabama/leeds",
+    "alabama/rainsville",
+    "alabama/heflin",
+    "alabama/hokes-bluff",
+    "alabama/geraldine",
+    "alabama/moody",
+    "alabama/guntersville",
+    "alabama/hayden",
+    "alabama/talladega",
+    "alabama/gadsden",
+    "alabama/alexander-city",
+    "alabama/courtland",
+    "alabama/calera",
+    "alabama/centre",
+    "alabama/hartselle",
+    "alabama/southside"
+  ]
+}
