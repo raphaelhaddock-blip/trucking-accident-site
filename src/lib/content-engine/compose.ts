@@ -69,3 +69,27 @@ export function composeCityContent(p: CityProfile, lastUpdated: string): CityCon
     ...(p.lat && p.lng ? { geo: { latitude: p.lat, longitude: p.lng } } : {}),
   };
 }
+
+/**
+ * Hub variant — populates ONLY the fields the city route actually renders
+ * (hero, accidentStats, commonAccidents, truckingIndustry, faqs). The heavy
+ * federal-substance fields (whyDangerous/liability/evidence/FMCSA/legalInfo) are
+ * omitted because the city route does not render them — they are dead data on
+ * city pages and live on the /accidents/[slug] pages instead. Omitting them
+ * removes the duplication those identical-everywhere fields cause, with zero
+ * rendering or SEO impact.
+ */
+export function composeCityContentHub(p: CityProfile, lastUpdated: string): CityContent {
+  const full = composeCityContent(p, lastUpdated);
+  const hub = { ...full };
+  delete hub.whyDangerous;
+  delete hub.liabilityExplanation;
+  delete hub.evidencePreservation;
+  delete hub.fmcsaRegulations;
+  // legalInfo is also unrendered on the city route; drop it from the hub page.
+  hub.legalInfo = '';
+  // Trim to 5 FAQs: fewer general answers => lower cross-page overlap on the
+  // genuinely-shared parts, while keeping the page useful.
+  hub.faqs = full.faqs.slice(0, 5);
+  return hub;
+}

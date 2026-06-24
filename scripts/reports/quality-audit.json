@@ -12,34 +12,24 @@
     "routesScanned": 1616,
     "withContentFile": 1613,
     "noContentFile": 3,
-    "candidatePairs": 891508
+    "candidatePairs": 884762
   },
   "gate": {
     "placeholders": 0,
     "belowWordFloor": 1390,
-    "duplicateH1Groups": 122,
+    "duplicateH1Groups": 121,
     "duplicateTitleGroups": 35,
     "duplicateDescGroups": 6,
     "lowLocalSignal": 0,
-    "pairsOver30pct": 891508,
-    "docsWithADupPartnerOver30pct": 1581,
+    "pairsOver30pct": 884762,
+    "docsWithADupPartnerOver30pct": 1575,
     "PASS": false
   },
   "fmcsaIdenticalGroups": {
-    "groups": 86,
+    "groups": 85,
     "largest": 30
   },
   "worstPairs": [
-    {
-      "a": "arkansas/bryant",
-      "b": "arkansas/benton",
-      "sim": 1
-    },
-    {
-      "a": "connecticut/haddam",
-      "b": "new-jersey/north-brunswick",
-      "sim": 1
-    },
     {
       "a": "connecticut/middletown",
       "b": "new-jersey/sayreville",
@@ -228,6 +218,16 @@
     {
       "a": "new-jersey/east-rutherford",
       "b": "new-jersey/elmwood-park",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/east-rutherford",
+      "b": "new-jersey/rutherford",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/west-deptford",
+      "b": "new-jersey/deptford",
       "sim": 1
     }
   ],
@@ -438,16 +438,6 @@
       ]
     },
     {
-      "value": "new york city truck accident lawyers | new york 18-wheeler attorneys",
-      "count": 4,
-      "sample": [
-        "new-york/new-york-city",
-        "new-york/new-york-city-kings",
-        "new-york/new-york",
-        "new-york/new-york-city-richmond"
-      ]
-    },
-    {
       "value": "other truck accident lawyers | utah 18-wheeler attorneys",
       "count": 4,
       "sample": [
@@ -455,6 +445,15 @@
         "utah/other-salt-lake",
         "utah/other-san-juan",
         "utah/other-kane"
+      ]
+    },
+    {
+      "value": "new york city truck accident lawyers | new york 18-wheeler attorneys",
+      "count": 3,
+      "sample": [
+        "new-york/new-york-city",
+        "new-york/new-york-city-kings",
+        "new-york/new-york-city-richmond"
       ]
     },
     {
@@ -582,6 +581,30 @@
   ],
   "placeholdersSample": [],
   "belowFloorSample": [
+    {
+      "key": "california/fresno",
+      "words": 526
+    },
+    {
+      "key": "arizona/mesa",
+      "words": 528
+    },
+    {
+      "key": "arkansas/benton",
+      "words": 539
+    },
+    {
+      "key": "arkansas/bryant",
+      "words": 541
+    },
+    {
+      "key": "vermont/burlington",
+      "words": 547
+    },
+    {
+      "key": "connecticut/haddam",
+      "words": 559
+    },
     {
       "key": "pennsylvania/allentown",
       "words": 660
@@ -717,30 +740,6 @@
     {
       "key": "ohio/hamilton-oh",
       "words": 671
-    },
-    {
-      "key": "ohio/lorain",
-      "words": 671
-    },
-    {
-      "key": "ohio/parma",
-      "words": 671
-    },
-    {
-      "key": "ohio/springfield-oh",
-      "words": 671
-    },
-    {
-      "key": "ohio/youngstown",
-      "words": 671
-    },
-    {
-      "key": "alabama/auburn-al",
-      "words": 674
-    },
-    {
-      "key": "alabama/hoover",
-      "words": 674
     }
   ]
 }

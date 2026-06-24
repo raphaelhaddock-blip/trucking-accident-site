@@ -17,7 +17,11 @@ import { selectIndex } from './hash';
 import { nearbyCities } from './nearby';
 
 type Slot = (p: CityProfile, ctx: Ctx) => string;
-interface Ctx { n1: string | null; n2: string | null }
+interface Ctx { n1: string | null; n2: string | null; n3: string | null }
+
+// Real nearby-city phrase (verified coords). High-entropy, survives normalization.
+const nearList = (c: Ctx): string =>
+  [c.n1, c.n2, c.n3].filter(Boolean).join(', ');
 
 function compose(p: CityProfile, ctx: Ctx, seed: string, slots: { salt: string; pool: Slot[] }[]): string {
   return slots.map(({ salt, pool }) => pool[selectIndex(seed, salt, pool.length)](p, ctx)).filter(Boolean).join(' ');
@@ -220,6 +224,11 @@ const truckingIndustrySlots: { salt: string; pool: Slot[] }[] = [
     () => `Rather than guess at the names of nearby depots or fleets, this page leaves that detail out until it can be sourced and checked.`,
     () => `Naming the local hubs and carriers would take verified records we do not yet have, so the page stays honest about that gap instead of inventing specifics.`,
   ]},
+  { salt: 't-local', pool: [
+    (p, c) => nearList(c) ? `The same freight routes tie ${p.name} to nearby ${nearList(c)}, so a crash here can involve a truck that was loading or unloading a county or two away.` : `Freight here connects to the wider regional network, so a local crash can involve a truck based well outside town.`,
+    (p, c) => nearList(c) ? `A truck-injury claim in ${p.name} often reaches into ${nearList(c)} and the rest of the corridor, because the carriers and witnesses are rarely all in one town.` : `Truck claims here often reach across the corridor, because the carriers and witnesses are rarely all local.`,
+    (p, c) => nearList(c) ? `Drivers running through ${p.name} are usually moving between it and places like ${nearList(c)}, which is why these cases tend to pull in records from more than one location.` : `Drivers here are usually moving through, which is why these cases pull records from more than one place.`,
+  ]},
 ];
 
 // ================= LEGAL INFO (venue name only; SOL deliberately not asserted) =================
@@ -247,8 +256,8 @@ const legalInfoSlots: { salt: string; pool: Slot[] }[] = [
 
 export const buildModules = (p: CityProfile) => {
   const seed = `${p.stateSlug}/${p.slug}`;
-  const near = nearbyCities(p.stateSlug, p.slug, 2);
-  const ctx: Ctx = { n1: near[0]?.name ?? null, n2: near[1]?.name ?? null };
+  const near = nearbyCities(p.stateSlug, p.slug, 3);
+  const ctx: Ctx = { n1: near[0]?.name ?? null, n2: near[1]?.name ?? null, n3: near[2]?.name ?? null };
   return {
     heroText: compose(p, ctx, seed, heroSlots),
     whyDangerous: compose(p, ctx, seed, whyDangerousSlots),

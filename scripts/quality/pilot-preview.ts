@@ -5,7 +5,7 @@
  * against a corpus sample. No files written.
  */
 import { buildCityProfile } from '../../src/lib/content-engine/profile';
-import { composeCityContent } from '../../src/lib/content-engine/compose';
+import { composeCityContentHub } from '../../src/lib/content-engine/compose';
 import { getAllCityParams, getCityContent, getStateName } from '../../src/lib/cities-content/index';
 import type { CityContent } from '../../src/lib/cities-content/types';
 
@@ -52,9 +52,9 @@ function jaccard(a: Set<string>, b: Set<string>): number {
 const words = (c: CityContent) =>
   (differentiable(c) + ' ' + (c.fmcsaRegulations ?? '')).match(/\S+/g)?.length ?? 0;
 
+// The 6 REWRITE pilots that get written to disk (hub model). houston/dallas/denver/
+// memphis are preserved enhanced controls — measured separately, not hub-composed here.
 const PILOTS: [string, string][] = [
-  ['texas', 'houston'],        // metro, South Central
-  ['texas', 'dallas'],         // metro, South Central  <- same-region METRO stress vs houston
   ['california', 'fresno'],    // mid, Pacific
   ['arizona', 'mesa'],         // mid, Southwest
   ['arkansas', 'bryant'],      // small, South Central
@@ -67,7 +67,7 @@ async function main() {
   // compose pilots
   const composed = PILOTS.map(([s, c]) => {
     const p = buildCityProfile(s, c)!;
-    const cc = composeCityContent(p, '2026-06-24');
+    const cc = composeCityContentHub(p, '2026-06-24');
     return { meta: { name: cc.name, slug: cc.slug, stateSlug: cc.stateSlug, stateName: cc.stateName }, cc, sh: shingles(normalize(differentiable(cc), { name: cc.name, slug: cc.slug, stateSlug: cc.stateSlug, stateName: cc.stateName })) };
   });
 
