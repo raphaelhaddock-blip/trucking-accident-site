@@ -7,7 +7,7 @@ import type { CityProfile } from './profile';
 import type { CityContent, CommonAccidentType } from '../cities-content/types';
 import { buildModules } from './modules';
 import { buildMeta } from './meta';
-import { buildFaqs } from './faq';
+import { buildFaqs, buildHubFaqs } from './faq';
 
 function humanize(type: string): string {
   return type
@@ -88,8 +88,9 @@ export function composeCityContentHub(p: CityProfile, lastUpdated: string): City
   delete hub.fmcsaRegulations;
   // legalInfo is also unrendered on the city route; drop it from the hub page.
   hub.legalInfo = '';
-  // Trim to 5 FAQs: fewer general answers => lower cross-page overlap on the
-  // genuinely-shared parts, while keeping the page useful.
-  hub.faqs = full.faqs.slice(0, 5);
+  // Hub-specific FAQ selection: force the two highest-signal local FAQs (real FARS
+  // count + regional mechanism/region) and fill from answer-differentiated entries,
+  // avoiding pure-evergreen answers that normalize to identical strings across cities.
+  hub.faqs = buildHubFaqs(p, 6);
   return hub;
 }

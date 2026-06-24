@@ -219,10 +219,10 @@ const truckingIndustrySlots: { salt: string; pool: Slot[] }[] = [
     () => `The mix ranges from owner-operators to national fleets, and the responsible company is not always the name painted on the trailer.`,
   ]},
   { salt: 't-note', pool: [
-    () => `Specific local terminals, distribution centers, and carrier names are not listed here because reliable, current local sourcing was not available — a gap worth filling before relying on it.`,
-    () => `We do not name particular local facilities or companies without a verified source; doing so accurately requires data this page does not yet have.`,
-    () => `Rather than guess at the names of nearby depots or fleets, this page leaves that detail out until it can be sourced and checked.`,
-    () => `Naming the local hubs and carriers would take verified records we do not yet have, so the page stays honest about that gap instead of inventing specifics.`,
+    (p) => `Specific ${countyPhrase(p)} terminals, distribution centers, and carrier names are not listed here because reliable, current local sourcing was not available — a gap worth filling before relying on it.`,
+    (p) => `We do not name particular ${countyPhrase(p)} facilities or companies without a verified source; doing so accurately requires data this page does not yet have.`,
+    (p) => `Rather than guess at the names of depots or fleets operating across ${countyPhrase(p)}, this page leaves that detail out until it can be sourced and checked.`,
+    (p) => `Naming the ${countyPhrase(p)} hubs and carriers would take verified records we do not yet have, so the page stays honest about that gap instead of inventing specifics.`,
   ]},
   { salt: 't-local', pool: [
     (p, c) => nearList(c) ? `The same freight routes tie ${p.name} to nearby ${nearList(c)}, so a crash here can involve a truck that was loading or unloading a county or two away.` : `Freight here connects to the wider regional network, so a local crash can involve a truck based well outside town.`,

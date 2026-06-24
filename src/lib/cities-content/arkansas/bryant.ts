@@ -49,28 +49,32 @@ export const BRYANT_CONTENT: CityContent = {
       "localFactor": "Oil field traffic and wide loads increase sideswipes"
     }
   ],
-  "truckingIndustry": "Commercial trucking in and around Bryant is part of the regional freight network rather than a single local hub. Smaller communities still sit on freight routes, so the trucks involved in local wrecks often answer to companies headquartered elsewhere. We do not name particular local facilities or companies without a verified source; doing so accurately requires data this page does not yet have. Drivers running through Bryant are usually moving between it and places like Little Rock, Benton, North Little Rock, which is why these cases tend to pull in records from more than one location.",
+  "truckingIndustry": "Commercial trucking in and around Bryant is part of the regional freight network rather than a single local hub. Smaller communities still sit on freight routes, so the trucks involved in local wrecks often answer to companies headquartered elsewhere. We do not name particular Saline County facilities or companies without a verified source; doing so accurately requires data this page does not yet have. Drivers running through Bryant are usually moving between it and places like Little Rock, Benton, North Little Rock, which is why these cases tend to pull in records from more than one location.",
   "legalInfo": "",
   "faqs": [
     {
-      "question": "Do I really need a lawyer, or can I handle a Bryant truck claim myself?",
-      "answer": "Minor cases can sometimes be handled alone, but truck claims are the hard end of the spectrum: multiple defendants, federal records that must be preserved fast, and insurers that litigate. The evidence work usually has to happen before a person even feels ready, which is the main argument for getting help early."
+      "question": "Will my Bryant truck accident case go to trial?",
+      "answer": "Probably not, but it should be built as if it will. The large majority of these claims settle, yet the cases that settle well are the ones prepared for trial — full investigation, preserved evidence, named defendants. A claim the insurer thinks you cannot try is a claim it can underpay."
     },
     {
-      "question": "What evidence matters most in a Bryant truck case?",
-      "answer": "The truck's engine control module (its black box), the electronic logging device showing hours of service, maintenance and inspection records, the driver qualification file, dispatch communications, and the cargo paperwork. Much of it can be overwritten on the carrier's schedule, so securing it early is the difference-maker."
+      "question": "Do federal trucking rules apply to my Bryant case?",
+      "answer": "If the truck was operating in interstate commerce, the Federal Motor Carrier Safety Regulations almost certainly apply, covering hours of service, driver qualification, maintenance, and cargo securement. A violation of those rules is often the clearest proof of negligence, which is why they matter even in a local crash."
     },
     {
-      "question": "What should I do right after a truck accident in Bryant?",
-      "answer": "Get medical care first, then call police so there is an official report. If you can, photograph the trucks, the scene, and any company names or DOT numbers. The most important legal step is fast: a lawyer can send the carrier a preservation demand so the truck's electronic data and the driver's logs are not erased while you recover."
+      "question": "What if the truck that hit me in Bryant was from out of state?",
+      "answer": "That is common and usually helps rather than hurts. Interstate carriers are squarely under the federal safety rules and must carry higher liability minimums. Where the company is based mainly affects logistics; a case arising in Bryant can still be pursued under Arkansas law and federal regulation."
     },
     {
-      "question": "Should I talk to the trucking company's insurance adjuster?",
-      "answer": "Be careful. The carrier's adjuster works for the carrier, and early recorded statements or quick settlement offers tend to favor the company while injuries are still developing. It is reasonable to report the basics, decline a recorded statement, and get advice before signing or saying anything that locks you in."
+      "question": "Why is a truck case different from a normal car accident in Bryant?",
+      "answer": "Three reasons: the injuries are usually worse because of the weight difference, the defendants multiply beyond the driver to the carrier and others, and the evidence is largely electronic and time-limited. A Arkansas truck claim is really a fight over records — logs, the engine module, maintenance files — that a routine car case never involves."
     },
     {
-      "question": "How much is a Bryant truck accident claim worth?",
-      "answer": "There is no honest flat answer — it depends on the severity of the injuries, the lost income, the future care needed, and how many insured defendants are involved. Be wary of any site that promises a number. What raises real value is identifying every liable party and proving the carrier broke a federal rule."
+      "question": "The crash report shows fatalities — what does the local data say?",
+      "answer": "Federal FARS data recorded 1 truck-involved fatality across 1 crash here in 2022. That figure counts deaths only; it does not capture the larger number of serious-injury truck crashes in the same area."
+    },
+    {
+      "question": "How fast do I need to act after a Bryant truck wreck?",
+      "answer": "Faster than most people expect. Electronic logs and black-box data can cycle out within weeks, the truck can be repaired or sold, and the filing deadline is running. The single most valuable early step is getting a preservation demand to the carrier before the records are gone."
     }
   ],
   "lastUpdated": "2026-06-24",

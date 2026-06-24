@@ -1,18 +1,27 @@
 {
   "summary": {
     "scannedAt_note": "timestamp omitted (deterministic output)",
-    "totalFilesScanned": 22,
+    "totalFilesScanned": 25,
     "wtStubbed": 0,
-    "headBroken": 2,
-    "belowWordFloor_wt": 0,
+    "headBroken": 0,
+    "belowWordFloor_wt": 6,
     "verdictCounts": {
-      "KEEP_WT": 19,
-      "KEEP_WT_FIX": 2,
-      "REVIEW": 1
+      "KEEP_WT": 25
     },
     "wordFloor": 2000
   },
   "rows": [
+    {
+      "file": "src/lib/cities-content/arizona/mesa.ts",
+      "wtExists": true,
+      "wtWords": 771,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 691,
+      "headMarker": false,
+      "verdict": "KEEP_WT",
+      "note": "WT (771w) >= HEAD (691w), no stub. Genuine enhancement — do not restore."
+    },
     {
       "file": "src/lib/cities-content/arizona/tucson.ts",
       "wtExists": true,
@@ -23,6 +32,39 @@
       "headMarker": false,
       "verdict": "KEEP_WT",
       "note": "WT (3943w) >= HEAD (2183w), no stub. Genuine enhancement — do not restore."
+    },
+    {
+      "file": "src/lib/cities-content/arkansas/benton.ts",
+      "wtExists": true,
+      "wtWords": 794,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 702,
+      "headMarker": false,
+      "verdict": "KEEP_WT",
+      "note": "WT (794w) >= HEAD (702w), no stub. Genuine enhancement — do not restore."
+    },
+    {
+      "file": "src/lib/cities-content/arkansas/bryant.ts",
+      "wtExists": true,
+      "wtWords": 745,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 704,
+      "headMarker": false,
+      "verdict": "KEEP_WT",
+      "note": "WT (745w) >= HEAD (704w), no stub. Genuine enhancement — do not restore."
+    },
+    {
+      "file": "src/lib/cities-content/california/fresno.ts",
+      "wtExists": true,
+      "wtWords": 760,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 689,
+      "headMarker": false,
+      "verdict": "KEEP_WT",
+      "note": "WT (760w) >= HEAD (689w), no stub. Genuine enhancement — do not restore."
     },
     {
       "file": "src/lib/cities-content/california/san-francisco.ts",
@@ -36,17 +78,6 @@
       "note": "WT (3888w) >= HEAD (2275w), no stub. Genuine enhancement — do not restore."
     },
     {
-      "file": "src/lib/cities-content/california/san-jose.ts",
-      "wtExists": true,
-      "wtWords": 4359,
-      "wtMarker": false,
-      "headExists": true,
-      "headWords": 464,
-      "headMarker": true,
-      "verdict": "KEEP_WT_FIX",
-      "note": "WT (4359w) repairs a committed-broken HEAD (464w stub). Commit WT to fix main."
-    },
-    {
       "file": "src/lib/cities-content/colorado/denver.ts",
       "wtExists": true,
       "wtWords": 4492,
@@ -56,6 +87,17 @@
       "headMarker": false,
       "verdict": "KEEP_WT",
       "note": "WT (4492w) >= HEAD (2214w), no stub. Genuine enhancement — do not restore."
+    },
+    {
+      "file": "src/lib/cities-content/connecticut/haddam.ts",
+      "wtExists": true,
+      "wtWords": 779,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 722,
+      "headMarker": false,
+      "verdict": "KEEP_WT",
+      "note": "WT (779w) >= HEAD (722w), no stub. Genuine enhancement — do not restore."
     },
     {
       "file": "src/lib/cities-content/indiana/indianapolis.ts",
@@ -157,17 +199,6 @@
       "note": "WT (4897w) >= HEAD (2201w), no stub. Genuine enhancement — do not restore."
     },
     {
-      "file": "src/lib/cities-content/new-york/new-york.ts",
-      "wtExists": true,
-      "wtWords": 3756,
-      "wtMarker": false,
-      "headExists": true,
-      "headWords": 4360,
-      "headMarker": false,
-      "verdict": "REVIEW",
-      "note": "WT (3756w) shorter than HEAD (4360w) but no stub. Inspect manually."
-    },
-    {
       "file": "src/lib/cities-content/new-york/oyster-bay.ts",
       "wtExists": true,
       "wtWords": 4097,
@@ -234,15 +265,15 @@
       "note": "WT (3930w) >= HEAD (2153w), no stub. Genuine enhancement — do not restore."
     },
     {
-      "file": "src/lib/cities-content/texas/san-antonio.ts",
+      "file": "src/lib/cities-content/vermont/burlington.ts",
       "wtExists": true,
-      "wtWords": 5018,
+      "wtWords": 762,
       "wtMarker": false,
       "headExists": true,
-      "headWords": 460,
-      "headMarker": true,
-      "verdict": "KEEP_WT_FIX",
-      "note": "WT (5018w) repairs a committed-broken HEAD (460w stub). Commit WT to fix main."
+      "headWords": 703,
+      "headMarker": false,
+      "verdict": "KEEP_WT",
+      "note": "WT (762w) >= HEAD (703w), no stub. Genuine enhancement — do not restore."
     },
     {
       "file": "src/lib/cities-content/washington/seattle.ts",

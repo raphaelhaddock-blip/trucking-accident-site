@@ -49,28 +49,32 @@ export const BENTON_CONTENT: CityContent = {
       "localFactor": "Oil field traffic and wide loads increase sideswipes"
     }
   ],
-  "truckingIndustry": "Trucking around Benton is less a local industry than a slice of a national supply chain rolling through Saline County. Even outside the big metros, interstate carriers and regional haulers pass through, which is why local crashes can involve out-of-state companies. Naming the local hubs and carriers would take verified records we do not yet have, so the page stays honest about that gap instead of inventing specifics. A truck-injury claim in Benton often reaches into Lonsdale, Bryant, Little Rock and the rest of the corridor, because the carriers and witnesses are rarely all in one town.",
+  "truckingIndustry": "Trucking around Benton is less a local industry than a slice of a national supply chain rolling through Saline County. Even outside the big metros, interstate carriers and regional haulers pass through, which is why local crashes can involve out-of-state companies. Naming the Saline County hubs and carriers would take verified records we do not yet have, so the page stays honest about that gap instead of inventing specifics. A truck-injury claim in Benton often reaches into Lonsdale, Bryant, Little Rock and the rest of the corridor, because the carriers and witnesses are rarely all in one town.",
   "legalInfo": "",
   "faqs": [
     {
+      "question": "What does it cost to hire a truck accident lawyer in Benton?",
+      "answer": "These cases are typically handled on a contingency fee, meaning the lawyer is paid a percentage only if there is a recovery, with no upfront charge. The exact terms should be in a written agreement you review before signing. The initial case review is generally free."
+    },
+    {
+      "question": "What should I do right after a truck accident in Benton?",
+      "answer": "Get medical care first, then call police so there is an official report. If you can, photograph the trucks, the scene, and any company names or DOT numbers. The most important legal step is fast: a lawyer can send the carrier a preservation demand so the truck's electronic data and the driver's logs are not erased while you recover."
+    },
+    {
       "question": "Do I really need a lawyer, or can I handle a Benton truck claim myself?",
       "answer": "Minor cases can sometimes be handled alone, but truck claims are the hard end of the spectrum: multiple defendants, federal records that must be preserved fast, and insurers that litigate. The evidence work usually has to happen before a person even feels ready, which is the main argument for getting help early."
-    },
-    {
-      "question": "Should I talk to the trucking company's insurance adjuster?",
-      "answer": "Be careful. The carrier's adjuster works for the carrier, and early recorded statements or quick settlement offers tend to favor the company while injuries are still developing. It is reasonable to report the basics, decline a recorded statement, and get advice before signing or saying anything that locks you in."
-    },
-    {
-      "question": "Why do truck cases take longer to resolve than car cases?",
-      "answer": "Because there is more to prove and more parties to prove it against. Preserving and analyzing electronic data, untangling which companies are responsible, and waiting until the injuries reach a stable point all take time. Rushing usually means settling before the full picture — and full value — is known."
     },
     {
       "question": "How long do I have to file a truck accident claim in Arkansas?",
       "answer": "There is a firm deadline, and it varies by the type of claim and the parties involved. Because the rule is specific to Arkansas and getting it wrong can end a case, treat any figure you read online as a reason to speak with a licensed Arkansas attorney quickly rather than as legal advice."
     },
     {
-      "question": "What kinds of truck crashes are most common around here?",
-      "answer": "Regionally, the rear End is the most frequent serious truck collision, around 27% of the pattern for South Central. Each crash type — rear-end, jackknife, rollover, underride — leaves a different evidence trail, which shapes how the case is built and which records to demand first."
+      "question": "Will my Benton truck accident case go to trial?",
+      "answer": "Probably not, but it should be built as if it will. The large majority of these claims settle, yet the cases that settle well are the ones prepared for trial — full investigation, preserved evidence, named defendants. A claim the insurer thinks you cannot try is a claim it can underpay."
+    },
+    {
+      "question": "I lost a family member in a Benton truck crash — what can we do?",
+      "answer": "A wrongful-death claim shifts the focus to the family's losses: financial support, services, and companionship the person provided. Arkansas law decides who may bring the claim and within what deadline, so a licensed attorney should map that out. The evidence work — preserving the truck's data and the carrier's records — is just as urgent as in an injury case."
     }
   ],
   "lastUpdated": "2026-06-24",

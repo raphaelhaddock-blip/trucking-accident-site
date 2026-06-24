@@ -49,28 +49,32 @@ export const BURLINGTON_CONTENT: CityContent = {
       "localFactor": "Winding rural roads and mountainous terrain contribute to rollovers"
     }
   ],
-  "truckingIndustry": "Freight reaches Burlington the way it reaches most of the surrounding county: by truck, day and night. The mix ranges from owner-operators to national fleets, and the responsible company is not always the name painted on the trailer. Specific local terminals, distribution centers, and carrier names are not listed here because reliable, current local sourcing was not available — a gap worth filling before relying on it. Truck claims here often reach across the corridor, because the carriers and witnesses are rarely all local.",
+  "truckingIndustry": "Freight reaches Burlington the way it reaches most of the surrounding county: by truck, day and night. The mix ranges from owner-operators to national fleets, and the responsible company is not always the name painted on the trailer. Specific the surrounding county terminals, distribution centers, and carrier names are not listed here because reliable, current local sourcing was not available — a gap worth filling before relying on it. Truck claims here often reach across the corridor, because the carriers and witnesses are rarely all local.",
   "legalInfo": "",
   "faqs": [
     {
-      "question": "Will my Burlington truck accident case go to trial?",
-      "answer": "Probably not, but it should be built as if it will. The large majority of these claims settle, yet the cases that settle well are the ones prepared for trial — full investigation, preserved evidence, named defendants. A claim the insurer thinks you cannot try is a claim it can underpay."
+      "question": "What kinds of truck crashes are most common around here?",
+      "answer": "Regionally, the rear End is the most frequent serious truck collision, around 32% of the pattern for Northeast. Each crash type — rear-end, jackknife, rollover, underride — leaves a different evidence trail, which shapes how the case is built and which records to demand first."
     },
     {
-      "question": "Why do truck cases take longer to resolve than car cases?",
-      "answer": "Because there is more to prove and more parties to prove it against. Preserving and analyzing electronic data, untangling which companies are responsible, and waiting until the injuries reach a stable point all take time. Rushing usually means settling before the full picture — and full value — is known."
+      "question": "What does it cost to hire a truck accident lawyer in Burlington?",
+      "answer": "These cases are typically handled on a contingency fee, meaning the lawyer is paid a percentage only if there is a recovery, with no upfront charge. The exact terms should be in a written agreement you review before signing. The initial case review is generally free."
     },
     {
-      "question": "What evidence matters most in a Burlington truck case?",
-      "answer": "The truck's engine control module (its black box), the electronic logging device showing hours of service, maintenance and inspection records, the driver qualification file, dispatch communications, and the cargo paperwork. Much of it can be overwritten on the carrier's schedule, so securing it early is the difference-maker."
+      "question": "Can I still recover if I was partly at fault in Vermont?",
+      "answer": "Possibly. Many states reduce, rather than bar, recovery when the injured person shares some blame, but the precise rule is set by Vermont law and affects the outcome significantly. This is exactly the kind of state-specific question a licensed Vermont attorney should answer for your facts."
     },
     {
-      "question": "I lost a family member in a Burlington truck crash — what can we do?",
-      "answer": "A wrongful-death claim shifts the focus to the family's losses: financial support, services, and companionship the person provided. Vermont law decides who may bring the claim and within what deadline, so a licensed attorney should map that out. The evidence work — preserving the truck's data and the carrier's records — is just as urgent as in an injury case."
+      "question": "What should I do right after a truck accident in Burlington?",
+      "answer": "Get medical care first, then call police so there is an official report. If you can, photograph the trucks, the scene, and any company names or DOT numbers. The most important legal step is fast: a lawyer can send the carrier a preservation demand so the truck's electronic data and the driver's logs are not erased while you recover."
     },
     {
-      "question": "Who can be held responsible for a Burlington truck crash?",
-      "answer": "Often more than the driver. The motor carrier can answer for the driver and for its own hiring, training, and maintenance decisions. Depending on the facts, a broker, shipper, leasing company, or parts manufacturer may share fault. Naming every responsible company is what reaches enough insurance to cover a serious injury."
+      "question": "Do federal trucking rules apply to my Burlington case?",
+      "answer": "If the truck was operating in interstate commerce, the Federal Motor Carrier Safety Regulations almost certainly apply, covering hours of service, driver qualification, maintenance, and cargo securement. A violation of those rules is often the clearest proof of negligence, which is why they matter even in a local crash."
+    },
+    {
+      "question": "How long do I have to file a truck accident claim in Vermont?",
+      "answer": "There is a firm deadline, and it varies by the type of claim and the parties involved. Because the rule is specific to Vermont and getting it wrong can end a case, treat any figure you read online as a reason to speak with a licensed Vermont attorney quickly rather than as legal advice."
     }
   ],
   "lastUpdated": "2026-06-24"

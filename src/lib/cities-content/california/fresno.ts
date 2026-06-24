@@ -49,28 +49,32 @@ export const FRESNO_CONTENT: CityContent = {
       "localFactor": "Rain on oil-slicked roads and mountain routes"
     }
   ],
-  "truckingIndustry": "Freight reaches Fresno the way it reaches most of Fresno County: by truck, day and night. In a market this size, long-haul carriers, regional fleets, and a growing wave of delivery vans all crowd the same corridors. Specific local terminals, distribution centers, and carrier names are not listed here because reliable, current local sourcing was not available — a gap worth filling before relying on it. A truck-injury claim in Fresno often reaches into Selma, Merced, Porterville and the rest of the corridor, because the carriers and witnesses are rarely all in one town.",
+  "truckingIndustry": "Freight reaches Fresno the way it reaches most of Fresno County: by truck, day and night. In a market this size, long-haul carriers, regional fleets, and a growing wave of delivery vans all crowd the same corridors. Specific Fresno County terminals, distribution centers, and carrier names are not listed here because reliable, current local sourcing was not available — a gap worth filling before relying on it. A truck-injury claim in Fresno often reaches into Selma, Merced, Porterville and the rest of the corridor, because the carriers and witnesses are rarely all in one town.",
   "legalInfo": "",
   "faqs": [
     {
-      "question": "Do federal trucking rules apply to my Fresno case?",
-      "answer": "If the truck was operating in interstate commerce, the Federal Motor Carrier Safety Regulations almost certainly apply, covering hours of service, driver qualification, maintenance, and cargo securement. A violation of those rules is often the clearest proof of negligence, which is why they matter even in a local crash."
-    },
-    {
-      "question": "What injuries are common in serious truck collisions?",
-      "answer": "Because of the weight involved, truck crashes tend to produce the severe end of the injury spectrum: traumatic brain injury, spinal cord damage, multiple fractures, internal injuries, and crush trauma. These often mean long recoveries and future care, which is one reason valuing a truck case too early tends to shortchange it."
-    },
-    {
-      "question": "What compensation can a Fresno truck accident claim cover?",
-      "answer": "Generally medical bills already incurred and reasonably expected, lost wages and lost earning capacity, and the human costs — pain, disability, and the effect on daily life. In a wrongful-death case the categories shift to the family's losses. The mix and limits depend on the injuries and the law that applies."
-    },
-    {
-      "question": "Can I still recover if I was partly at fault in California?",
-      "answer": "Possibly. Many states reduce, rather than bar, recovery when the injured person shares some blame, but the precise rule is set by California law and affects the outcome significantly. This is exactly the kind of state-specific question a licensed California attorney should answer for your facts."
-    },
-    {
       "question": "Who can be held responsible for a Fresno truck crash?",
       "answer": "Often more than the driver. The motor carrier can answer for the driver and for its own hiring, training, and maintenance decisions. Depending on the facts, a broker, shipper, leasing company, or parts manufacturer may share fault. Naming every responsible company is what reaches enough insurance to cover a serious injury."
+    },
+    {
+      "question": "How fast do I need to act after a Fresno truck wreck?",
+      "answer": "Faster than most people expect. Electronic logs and black-box data can cycle out within weeks, the truck can be repaired or sold, and the filing deadline is running. The single most valuable early step is getting a preservation demand to the carrier before the records are gone."
+    },
+    {
+      "question": "How long do I have to file a truck accident claim in California?",
+      "answer": "There is a firm deadline, and it varies by the type of claim and the parties involved. Because the rule is specific to California and getting it wrong can end a case, treat any figure you read online as a reason to speak with a licensed California attorney quickly rather than as legal advice."
+    },
+    {
+      "question": "What kinds of truck crashes are most common around here?",
+      "answer": "Regionally, the rear End is the most frequent serious truck collision, around 31% of the pattern for Pacific. Each crash type — rear-end, jackknife, rollover, underride — leaves a different evidence trail, which shapes how the case is built and which records to demand first."
+    },
+    {
+      "question": "Will my Fresno truck accident case go to trial?",
+      "answer": "Probably not, but it should be built as if it will. The large majority of these claims settle, yet the cases that settle well are the ones prepared for trial — full investigation, preserved evidence, named defendants. A claim the insurer thinks you cannot try is a claim it can underpay."
+    },
+    {
+      "question": "What if the truck that hit me in Fresno was from out of state?",
+      "answer": "That is common and usually helps rather than hurts. Interstate carriers are squarely under the federal safety rules and must carry higher liability minimums. Where the company is based mainly affects logistics; a case arising in Fresno can still be pursued under California law and federal regulation."
     }
   ],
   "lastUpdated": "2026-06-24",

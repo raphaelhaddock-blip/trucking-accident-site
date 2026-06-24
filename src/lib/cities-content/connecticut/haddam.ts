@@ -49,24 +49,28 @@ export const HADDAM_CONTENT: CityContent = {
       "localFactor": "Winding rural roads and mountainous terrain contribute to rollovers"
     }
   ],
-  "truckingIndustry": "Trucking around Haddam is less a local industry than a slice of a national supply chain rolling through Middlesex County. Even outside the big metros, interstate carriers and regional haulers pass through, which is why local crashes can involve out-of-state companies. Naming the local hubs and carriers would take verified records we do not yet have, so the page stays honest about that gap instead of inventing specifics. A truck-injury claim in Haddam often reaches into Madison, Middletown, Cromwell and the rest of the corridor, because the carriers and witnesses are rarely all in one town.",
+  "truckingIndustry": "Trucking around Haddam is less a local industry than a slice of a national supply chain rolling through Middlesex County. Even outside the big metros, interstate carriers and regional haulers pass through, which is why local crashes can involve out-of-state companies. Naming the Middlesex County hubs and carriers would take verified records we do not yet have, so the page stays honest about that gap instead of inventing specifics. A truck-injury claim in Haddam often reaches into Madison, Middletown, Cromwell and the rest of the corridor, because the carriers and witnesses are rarely all in one town.",
   "legalInfo": "",
   "faqs": [
-    {
-      "question": "What should I do right after a truck accident in Haddam?",
-      "answer": "Get medical care first, then call police so there is an official report. If you can, photograph the trucks, the scene, and any company names or DOT numbers. The most important legal step is fast: a lawyer can send the carrier a preservation demand so the truck's electronic data and the driver's logs are not erased while you recover."
-    },
     {
       "question": "Do I really need a lawyer, or can I handle a Haddam truck claim myself?",
       "answer": "Minor cases can sometimes be handled alone, but truck claims are the hard end of the spectrum: multiple defendants, federal records that must be preserved fast, and insurers that litigate. The evidence work usually has to happen before a person even feels ready, which is the main argument for getting help early."
     },
     {
-      "question": "What if the driver was an owner-operator or independent contractor?",
-      "answer": "That label does not automatically let the company off the hook. Courts look at how much control the carrier actually exercised, and federal leasing rules can keep a motor carrier responsible for trucks operating under its authority. Untangling that relationship is part of identifying every party the case can reach."
+      "question": "What does it cost to hire a truck accident lawyer in Haddam?",
+      "answer": "These cases are typically handled on a contingency fee, meaning the lawyer is paid a percentage only if there is a recovery, with no upfront charge. The exact terms should be in a written agreement you review before signing. The initial case review is generally free."
     },
     {
-      "question": "Who can be held responsible for a Haddam truck crash?",
-      "answer": "Often more than the driver. The motor carrier can answer for the driver and for its own hiring, training, and maintenance decisions. Depending on the facts, a broker, shipper, leasing company, or parts manufacturer may share fault. Naming every responsible company is what reaches enough insurance to cover a serious injury."
+      "question": "Can I still recover if I was partly at fault in Connecticut?",
+      "answer": "Possibly. Many states reduce, rather than bar, recovery when the injured person shares some blame, but the precise rule is set by Connecticut law and affects the outcome significantly. This is exactly the kind of state-specific question a licensed Connecticut attorney should answer for your facts."
+    },
+    {
+      "question": "Do federal trucking rules apply to my Haddam case?",
+      "answer": "If the truck was operating in interstate commerce, the Federal Motor Carrier Safety Regulations almost certainly apply, covering hours of service, driver qualification, maintenance, and cargo securement. A violation of those rules is often the clearest proof of negligence, which is why they matter even in a local crash."
+    },
+    {
+      "question": "Why is a truck case different from a normal car accident in Haddam?",
+      "answer": "Three reasons: the injuries are usually worse because of the weight difference, the defendants multiply beyond the driver to the carrier and others, and the evidence is largely electronic and time-limited. A Connecticut truck claim is really a fight over records — logs, the engine module, maintenance files — that a routine car case never involves."
     },
     {
       "question": "How fast do I need to act after a Haddam truck wreck?",

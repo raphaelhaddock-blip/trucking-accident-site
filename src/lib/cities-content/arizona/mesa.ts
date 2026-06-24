@@ -49,28 +49,32 @@ export const MESA_CONTENT: CityContent = {
       "localFactor": "High-speed interstate traffic and construction zones"
     }
   ],
-  "truckingIndustry": "Commercial trucking in and around Mesa is part of the regional freight network rather than a single local hub. A metro this large pulls constant freight — national fleets, last-mile delivery, and everything between — onto roads that were not built for the volume. We do not name particular local facilities or companies without a verified source; doing so accurately requires data this page does not yet have. Drivers running through Mesa are usually moving between it and places like Tempe, Phoenix, Queen Creek, which is why these cases tend to pull in records from more than one location.",
+  "truckingIndustry": "Commercial trucking in and around Mesa is part of the regional freight network rather than a single local hub. A metro this large pulls constant freight — national fleets, last-mile delivery, and everything between — onto roads that were not built for the volume. We do not name particular Maricopa County facilities or companies without a verified source; doing so accurately requires data this page does not yet have. Drivers running through Mesa are usually moving between it and places like Tempe, Phoenix, Queen Creek, which is why these cases tend to pull in records from more than one location.",
   "legalInfo": "",
   "faqs": [
     {
-      "question": "How much is a Mesa truck accident claim worth?",
-      "answer": "There is no honest flat answer — it depends on the severity of the injuries, the lost income, the future care needed, and how many insured defendants are involved. Be wary of any site that promises a number. What raises real value is identifying every liable party and proving the carrier broke a federal rule."
+      "question": "How fast do I need to act after a Mesa truck wreck?",
+      "answer": "Faster than most people expect. Electronic logs and black-box data can cycle out within weeks, the truck can be repaired or sold, and the filing deadline is running. The single most valuable early step is getting a preservation demand to the carrier before the records are gone."
     },
     {
-      "question": "What injuries are common in serious truck collisions?",
-      "answer": "Because of the weight involved, truck crashes tend to produce the severe end of the injury spectrum: traumatic brain injury, spinal cord damage, multiple fractures, internal injuries, and crush trauma. These often mean long recoveries and future care, which is one reason valuing a truck case too early tends to shortchange it."
+      "question": "Do I really need a lawyer, or can I handle a Mesa truck claim myself?",
+      "answer": "Minor cases can sometimes be handled alone, but truck claims are the hard end of the spectrum: multiple defendants, federal records that must be preserved fast, and insurers that litigate. The evidence work usually has to happen before a person even feels ready, which is the main argument for getting help early."
+    },
+    {
+      "question": "Will my Mesa truck accident case go to trial?",
+      "answer": "Probably not, but it should be built as if it will. The large majority of these claims settle, yet the cases that settle well are the ones prepared for trial — full investigation, preserved evidence, named defendants. A claim the insurer thinks you cannot try is a claim it can underpay."
     },
     {
       "question": "What evidence matters most in a Mesa truck case?",
-      "answer": "The truck's engine control module (its black box), the electronic logging device showing hours of service, maintenance and inspection records, the driver qualification file, dispatch communications, and the cargo paperwork. Much of it can be overwritten on the carrier's schedule, so securing it early is the difference-maker."
-    },
-    {
-      "question": "Should I talk to the trucking company's insurance adjuster?",
-      "answer": "Be careful. The carrier's adjuster works for the carrier, and early recorded statements or quick settlement offers tend to favor the company while injuries are still developing. It is reasonable to report the basics, decline a recorded statement, and get advice before signing or saying anything that locks you in."
+      "answer": "The truck's engine control module (its black box), the electronic logging device showing hours of service, maintenance and inspection records, the driver qualification file, dispatch communications, and the cargo paperwork. Much of it can be overwritten on the carrier's schedule, so securing it early — often before the truck and its data leave Maricopa County is the difference-maker."
     },
     {
       "question": "Can I still recover if I was partly at fault in Arizona?",
       "answer": "Possibly. Many states reduce, rather than bar, recovery when the injured person shares some blame, but the precise rule is set by Arizona law and affects the outcome significantly. This is exactly the kind of state-specific question a licensed Arizona attorney should answer for your facts."
+    },
+    {
+      "question": "Who can be held responsible for a Mesa truck crash?",
+      "answer": "Often more than the driver. The motor carrier can answer for the driver and for its own hiring, training, and maintenance decisions. Depending on the facts, a broker, shipper, leasing company, or parts manufacturer may share fault. Naming every responsible company is what reaches enough insurance to cover a serious injury."
     }
   ],
   "lastUpdated": "2026-06-24",

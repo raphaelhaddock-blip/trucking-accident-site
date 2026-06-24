@@ -31,7 +31,7 @@ const POOL: QA[] = [
   },
   {
     q: (p) => `What evidence matters most in a ${p.name} truck case?`,
-    a: (p) => `The truck's engine control module (its black box), the electronic logging device showing hours of service, maintenance and inspection records, the driver qualification file, dispatch communications, and the cargo paperwork. Much of it can be overwritten on the carrier's schedule, so securing it early is the difference-maker.`,
+    a: (p) => `The truck's engine control module (its black box), the electronic logging device showing hours of service, maintenance and inspection records, the driver qualification file, dispatch communications, and the cargo paperwork. Much of it can be overwritten on the carrier's schedule, so securing it early${p.county ? ` — often before the truck and its data leave ${p.county} County` : ''} is the difference-maker.`,
   },
   {
     q: (p) => `The crash report shows ${p.truckFatalities > 0 ? 'fatalities' : 'no deaths'} — what does the local data say?`,
@@ -111,4 +111,26 @@ export function buildFaqs(p: CityProfile, count = 6): CityFAQ[] {
   const seed = `${p.stateSlug}/${p.slug}`;
   const idx = selectDistinct(seed, 'faq', POOL.length, count);
   return idx.map((i) => ({ question: POOL[i].q(p), answer: POOL[i].a(p) }));
+}
+
+// Pure-evergreen POOL indices whose ANSWER carries no local token at all, so it
+// normalizes to a byte-identical string across any two cities that surface it
+// (adjuster #13, compensation #15, why-longer #16, injuries #18, owner-operator #20,
+// ticket #21). The hub draws from everything EXCEPT these, so two hubs are far less
+// likely to collide on an identical answer. No forcing — each city still gets a
+// dispersed, per-seed selection, preserving variety. Selection diversity, not spin.
+const HUB_EVERGREEN = new Set([13, 15, 16, 18, 20, 21]);
+const HUB_CANDIDATES = POOL.map((_, i) => i).filter((i) => !HUB_EVERGREEN.has(i));
+
+/**
+ * buildHubFaqs — FAQ selection tuned for the thin local hub. Draws `count` distinct
+ * FAQs per city from the answer-differentiated subset (every POOL entry except the
+ * pure-evergreen answers that mask to identical strings). Deterministic per city
+ * seed, so each hub still surfaces a different, varied mix — it just avoids the
+ * answers that drive cross-hub duplicate-content collisions on the published page.
+ */
+export function buildHubFaqs(p: CityProfile, count = 5): CityFAQ[] {
+  const seed = `${p.stateSlug}/${p.slug}`;
+  const pick = selectDistinct(seed, 'hubfaq', HUB_CANDIDATES.length, count).map((k) => HUB_CANDIDATES[k]);
+  return pick.map((i) => ({ question: POOL[i].q(p), answer: POOL[i].a(p) }));
 }
