@@ -179,6 +179,7 @@ Either way: `npm run images:generate` writes the 6 priority images → `npm run 
 After-pr4 screenshots: `docs/redesign-assets/after-pr4/` (home/states-index/accidents-index/Texas/Houston/jackknife/contact desktop + home/jackknife mobile).
 
 ## Standards + next plans (docs)
+- **Handoff / deploy + Vercel mapping** (read this first when resuming): [TRUCKING-HANDOFF.md](TRUCKING-HANDOFF.md) — live vs local-only, the safe deploy target (`trucking-accident-site`), the `-814t` name trap (it's NY Construction), next work, and the human approval gates.
 - **Growth OS taxonomy + ontology requirement** (new required standard, not yet implemented): [GROWTH-OS-TAXONOMY-ONTOLOGY.md](GROWTH-OS-TAXONOMY-ONTOLOGY.md). Content scaling is gated on it; images are UI infrastructure and may proceed.
 - **PR5 image expansion plan** (plan only, no spend): [PR5-IMAGE-EXPANSION-PLAN.md](PR5-IMAGE-EXPANSION-PLAN.md) — ~78 bounded images (~$4) by tier, run P2→build→review→P3/P4. Awaiting go.
 
