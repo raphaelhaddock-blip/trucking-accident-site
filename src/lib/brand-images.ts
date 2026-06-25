@@ -5,21 +5,30 @@ import { AVAILABLE_PHOTOS } from './brand-images.generated';
  * Visible heroes NEVER fall back to Sanity — they fall back to the command
  * treatment (null) so the page still looks premium with the local brand layer.
  *
- * Expected files under public/brand/photo/ (see docs/PR3-PRO-IMAGE-GENERATION-PACK.md):
- *   hero-interstate.webp            global hero
- *   network-corridor.webp           states index
- *   evidence-records.webp           accidents index
- *   accident-header-{slug}.webp     per accident type
- *   state-{stateSlug}.webp          per state
- *   city-{stateSlug}-{citySlug}.webp per city hub
+ * Resolution is EXTENSION-AGNOSTIC: a candidate is a basename (no extension) and
+ * we match any available file with that basename (.webp/.avif/.jpg/.png). So a
+ * fal.ai `.jpg` and a hand-made `.webp` both wire the same way.
+ *
+ * Expected basenames under public/brand/photo/ (see docs/PR3-PRO-IMAGE-GENERATION-PACK.md):
+ *   hero-interstate            global hero
+ *   network-corridor           states index
+ *   evidence-records           accidents index
+ *   accident-header-{slug}     per accident type
+ *   state-{stateSlug}          per state
+ *   city-{stateSlug}-{citySlug} per city hub
  */
 
 const PHOTO_BASE = '/brand/photo';
 const SITE = 'https://trucking-accident-site.vercel.app';
 const OG_DEFAULT = `${SITE}/brand/og-default.png`;
+const EXT_RE = /\.(webp|avif|jpe?g|png)$/i;
 
-const available = new Set(AVAILABLE_PHOTOS);
-const has = (file: string) => available.has(file);
+const basenameOf = (file: string) => file.replace(EXT_RE, '');
+
+/** Filename (with real extension) for a basename, or null if not present. */
+function fileFor(basename: string): string | null {
+  return AVAILABLE_PHOTOS.find((f) => basenameOf(f) === basename) ?? null;
+}
 
 export interface PhotoQuery {
   accidentSlug?: string;
@@ -28,15 +37,15 @@ export interface PhotoQuery {
   kind?: 'home' | 'states' | 'accidents' | 'contact' | 'blog';
 }
 
-/** Candidate filenames, most specific first, ending at the global hero. */
+/** Candidate basenames, most specific first, ending at the global hero. */
 function candidates(q: PhotoQuery): string[] {
   const c: string[] = [];
-  if (q.stateSlug && q.citySlug) c.push(`city-${q.stateSlug}-${q.citySlug}.webp`);
-  if (q.stateSlug) c.push(`state-${q.stateSlug}.webp`);
-  if (q.accidentSlug) c.push(`accident-header-${q.accidentSlug}.webp`);
-  if (q.kind === 'states') c.push('network-corridor.webp');
-  if (q.kind === 'accidents') c.push('evidence-records.webp');
-  c.push('hero-interstate.webp');
+  if (q.stateSlug && q.citySlug) c.push(`city-${q.stateSlug}-${q.citySlug}`);
+  if (q.stateSlug) c.push(`state-${q.stateSlug}`);
+  if (q.accidentSlug) c.push(`accident-header-${q.accidentSlug}`);
+  if (q.kind === 'states') c.push('network-corridor');
+  if (q.kind === 'accidents') c.push('evidence-records');
+  c.push('hero-interstate');
   return c;
 }
 
@@ -45,8 +54,9 @@ function candidates(q: PhotoQuery): string[] {
  * treatment (ink + freight-network motif). Never returns a Sanity URL.
  */
 export function heroPhoto(q: PhotoQuery = {}): string | null {
-  for (const f of candidates(q)) {
-    if (has(f)) return `${PHOTO_BASE}/${f}`;
+  for (const base of candidates(q)) {
+    const file = fileFor(base);
+    if (file) return `${PHOTO_BASE}/${file}`;
   }
   return null;
 }
@@ -56,9 +66,10 @@ export function heroPhoto(q: PhotoQuery = {}): string | null {
  * the purpose-built local og-default card. Never returns a Sanity URL.
  */
 export function ogImage(q: PhotoQuery = {}): string {
-  for (const f of candidates(q)) {
-    if (f === 'hero-interstate.webp') break; // prefer the designed og-default over the generic hero for social
-    if (has(f)) return `${SITE}${PHOTO_BASE}/${f}`;
+  for (const base of candidates(q)) {
+    if (base === 'hero-interstate') break; // prefer the designed og-default over the generic hero for social
+    const file = fileFor(base);
+    if (file) return `${SITE}${PHOTO_BASE}/${file}`;
   }
   return OG_DEFAULT;
 }
