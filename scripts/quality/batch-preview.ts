@@ -111,26 +111,52 @@ async function main() {
       }
   }
 
-  // 3) Candidate targets: clones, not protected, engine can build a non-thin hub (region present, >=floor words).
-  const perRegion = new Map<string, number>();
+  // 3) CONFLICT-AWARE GREEDY selection: a gated batch must never write BOTH members of
+  //    a >30% pair. We add a clone only if its hub stays < THRESHOLD vs every already-
+  //    selected hub AND vs the full corpus (pages we are NOT rewriting). This guarantees
+  //    the written batch is mutually unique by construction. --greedy=0 disables it
+  //    (raw density-capped selection, for diagnosing the underlying conflict rate).
+  const GREEDY = !process.argv.includes('--greedy=0');
+  // Select with a safety margin BELOW the 0.30 gate so the written batch has headroom
+  // (a pair admitted at 0.299 is a gate near-miss). Default margin 0.03 => admit < 0.27.
+  const MARGIN = (() => { const a = process.argv.find((x) => x.startsWith('--margin=')); return a ? Number(a.split('=')[1]) : 0.03; })();
+  const ADMIT = THRESHOLD - MARGIN;
   const perState = new Map<string, number>();
-  const chosen: Array<{ stateSlug: string; city: string; hub: CityContent; region: string }> = [];
+  const chosen: Array<{ stateSlug: string; city: string; hub: CityContent; region: string; sh: Set<string> }> = [];
+  let considered = 0, rejectedConflict = 0;
   for (const key of cloneKeys) {
     if (chosen.length >= SIZE) break;
     if (PROTECTED.has(key)) continue;
     const [stateSlug, city] = key.split('/');
+    if ((perState.get(stateSlug) ?? 0) >= PERCAP) continue; // density cap on attempts
     const prof = buildCityProfile(stateSlug, city);
     if (!prof || !prof.region) continue;             // no region => thin mechanism mix, skip
     const hub = composeCityContentHub(prof, '2026-06-24');
     if (wordsOf(hub) < WORD_FLOOR) continue;          // engine can't clear the hub floor here
     if ((hub.dangerousRoads?.length ?? 0) !== 0) continue; // never assert roads
-    // density caps
-    if ((perRegion.get(prof.region) ?? 0) >= PERCAP * 6) continue;
-    if ((perState.get(stateSlug) ?? 0) >= PERCAP) continue;
-    perRegion.set(prof.region, (perRegion.get(prof.region) ?? 0) + 1);
+    considered++;
+    const hsh = shOf(hub);
+    if (GREEDY) {
+      // reject if it would create a >=THRESHOLD pair with any already-chosen hub
+      let conflict = chosen.some((c) => jaccard(hsh, c.sh) >= ADMIT);
+      // ...or with any corpus page we are NOT rewriting (current content stays put)
+      if (!conflict) {
+        for (const d of corpus) {
+          if (d.key === key) continue;               // its own old entry is being replaced
+          if (cloneKeys.has(d.key) && d.key !== key) {
+            // another clone candidate: only a hazard if it ends up NOT rewritten; its OLD
+            // templated prose differs from a new hub, so skip the check (conservative-safe).
+            continue;
+          }
+          if (jaccard(hsh, d.sh) >= ADMIT) { conflict = true; break; }
+        }
+      }
+      if (conflict) { rejectedConflict++; continue; }
+    }
     perState.set(stateSlug, (perState.get(stateSlug) ?? 0) + 1);
-    chosen.push({ stateSlug, city, hub, region: prof.region });
+    chosen.push({ stateSlug, city, hub, region: prof.region, sh: hsh });
   }
+  console.log(`selection: considered ${considered} clone hubs, rejected ${rejectedConflict} for >=${(ADMIT * 100).toFixed(0)}% conflict, kept ${chosen.length}`);
 
   // 4) Score: batch vs batch (rendered), and batch vs corpus (excluding each member's own current entry).
   const batch = chosen.map((x) => ({ key: `${x.stateSlug}/${x.city}`, region: x.region, hub: x.hub, sh: shOf(x.hub), words: wordsOf(x.hub) }));

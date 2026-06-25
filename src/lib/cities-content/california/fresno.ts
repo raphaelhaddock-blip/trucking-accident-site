@@ -19,7 +19,7 @@ export const FRESNO_CONTENT: CityContent = {
   "metaTitle": "Fresno 18-Wheeler Accident Lawyers",
   "metaDescription": "A Fresno truck accident can involve the driver, the carrier, and more. Find out who may owe you and what proof to secure right away.",
   "h1": "Fresno Truck Accident Lawyers",
-  "heroText": "When an 18-wheeler causes injuries in Fresno, California, the carrier's insurer is already working the file; an injured person should not be the last to start. The most recent federal count shows 2 people were killed in 2 truck-involved crashes here in 2022. This page explains what to do, why these cases differ, what proof matters, and who can be held responsible — grounded in Fresno County and federal trucking law.",
+  "heroText": "When an 18-wheeler causes injuries in Fresno, California, the carrier's insurer is already working the file, from Selma to the courthouse; an injured person should not be the last to start. The most recent federal count shows 2 people were killed in 2 truck-involved crashes here in 2022 in the Fresno County area. This page explains what to do, why these cases differ, what proof matters, and who can be held responsible — grounded in Fresno County and federal trucking law.",
   "accidentStats": {
     "truckFatalities": 2,
     "fatalCrashes": 2,
@@ -49,32 +49,32 @@ export const FRESNO_CONTENT: CityContent = {
       "localFactor": "Rain on oil-slicked roads and mountain routes"
     }
   ],
-  "truckingIndustry": "Freight reaches Fresno the way it reaches most of Fresno County: by truck, day and night. In a market this size, long-haul carriers, regional fleets, and a growing wave of delivery vans all crowd the same corridors. Specific Fresno County terminals, distribution centers, and carrier names are not listed here because reliable, current local sourcing was not available — a gap worth filling before relying on it. A truck-injury claim in Fresno often reaches into Selma, Merced, Porterville and the rest of the corridor, because the carriers and witnesses are rarely all in one town.",
+  "truckingIndustry": "Freight reaches Fresno the way it reaches most of Fresno County: by truck, day and night. In a market the size of Fresno County, long-haul carriers, regional fleets, and a growing wave of delivery vans all crowd the same corridors. Specific Fresno County terminals, distribution centers, and carrier names are not listed here because reliable, current local sourcing was not available — a gap worth filling before relying on it. A truck-injury claim in Fresno often reaches into Selma, Merced, Porterville and the rest of the corridor, because the carriers and witnesses are rarely all in one town.",
   "legalInfo": "",
   "faqs": [
     {
-      "question": "Who can be held responsible for a Fresno truck crash?",
-      "answer": "Often more than the driver. The motor carrier can answer for the driver and for its own hiring, training, and maintenance decisions. Depending on the facts, a broker, shipper, leasing company, or parts manufacturer may share fault. Naming every responsible company is what reaches enough insurance to cover a serious injury."
+      "question": "Which kinds of truck crashes happen most around Fresno?",
+      "answer": "The data for Pacific put the rear End at the top, near 31% of serious truck crashes, and Fresno sits inside that pattern. An investigator uses the crash type to know whether to chase brake data, logs, or load records first."
     },
     {
-      "question": "How fast do I need to act after a Fresno truck wreck?",
-      "answer": "Faster than most people expect. Electronic logs and black-box data can cycle out within weeks, the truck can be repaired or sold, and the filing deadline is running. The single most valuable early step is getting a preservation demand to the carrier before the records are gone."
+      "question": "What do Fresno's truck-crash numbers actually tell me?",
+      "answer": "Those numbers come from NHTSA's fatality file: a handful of truck-involved deaths on record in Fresno County for 2022. Because the database tracks only deaths, the figure says nothing about the injury wrecks that send people to the hospital but not the morgue, which are far more common."
     },
     {
-      "question": "How long do I have to file a truck accident claim in California?",
-      "answer": "There is a firm deadline, and it varies by the type of claim and the parties involved. Because the rule is specific to California and getting it wrong can end a case, treat any figure you read online as a reason to speak with a licensed California attorney quickly rather than as legal advice."
+      "question": "Why are truck crashes around Fresno so much worse than car wrecks?",
+      "answer": "Physics and traffic. Fresno, a major metro, channels freight between itself and Selma, Merced, and an 80,000-pound truck does not stop, swerve, or forgive the way a car does. The same crash that dents a sedan can be fatal, which is why a truck case is built differently from the start."
     },
     {
-      "question": "What kinds of truck crashes are most common around here?",
-      "answer": "Regionally, the rear End is the most frequent serious truck collision, around 31% of the pattern for Pacific. Each crash type — rear-end, jackknife, rollover, underride — leaves a different evidence trail, which shapes how the case is built and which records to demand first."
+      "question": "How fast does the evidence disappear after a Fresno truck crash?",
+      "answer": "Quickly, which is the whole problem. A carrier can cycle its hours-of-service data and move the tractor past Selma, Merced within days. A written preservation demand on file early — before the truck leaves Fresno County and the records refresh — is usually the single most valuable step after a crash here."
     },
     {
-      "question": "Will my Fresno truck accident case go to trial?",
-      "answer": "Probably not, but it should be built as if it will. The large majority of these claims settle, yet the cases that settle well are the ones prepared for trial — full investigation, preserved evidence, named defendants. A claim the insurer thinks you cannot try is a claim it can underpay."
+      "question": "Who can be held responsible for a Fresno truck crash besides the driver?",
+      "answer": "Usually several parties. The motor carrier answers for the driver and for its own hiring, training, and maintenance choices; depending on the facts, a broker, shipper, leasing company, or parts manufacturer can share fault. Naming every responsible company is what reaches enough insurance to cover a serious injury."
     },
     {
-      "question": "What if the truck that hit me in Fresno was from out of state?",
-      "answer": "That is common and usually helps rather than hurts. Interstate carriers are squarely under the federal safety rules and must carry higher liability minimums. Where the company is based mainly affects logistics; a case arising in Fresno can still be pursued under California law and federal regulation."
+      "question": "What does it cost to hire a truck accident lawyer in Fresno?",
+      "answer": "Almost always nothing out of pocket to start. Truck cases run on a contingency fee — the firm collects a set share only if it wins or settles, and fronts the expenses in the meantime. Read the written fee agreement before you sign, and expect the initial consultation to cost nothing."
     }
   ],
   "lastUpdated": "2026-06-24",

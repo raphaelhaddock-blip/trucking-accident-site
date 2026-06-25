@@ -19,7 +19,7 @@ export const BURLINGTON_CONTENT: CityContent = {
   "metaTitle": "Burlington Semi-Truck Injury Attorneys",
   "metaDescription": "Injured by an 18-wheeler near Burlington? 2022 federal crash data. Understand liability, evidence preservation, and your options before deadlines pass.",
   "h1": "Burlington Truck Accident Lawyers",
-  "heroText": "A wreck with a commercial truck in Burlington, Vermont can change a life in seconds and then turn into a months-long contest over proof. The most recent federal count shows no truck-involved fatalities were recorded here in 2022, though serious injury crashes are not captured in that figure. This page explains what to do, why these cases differ, what proof matters, and who can be held responsible — grounded in the surrounding county and federal trucking law.",
+  "heroText": "A wreck with a commercial truck on the routes through Burlington, Vermont can change a life in seconds, then turn into a months-long contest over proof. The most recent federal count shows no truck-involved fatalities were recorded here in 2022, though serious injury crashes are not captured in that figure in the the surrounding county area. This page explains what to do, why these cases differ, what proof matters, and who can be held responsible — grounded in the surrounding county and federal trucking law.",
   "accidentStats": {
     "truckFatalities": 0,
     "fatalCrashes": 0,
@@ -49,32 +49,32 @@ export const BURLINGTON_CONTENT: CityContent = {
       "localFactor": "Winding rural roads and mountainous terrain contribute to rollovers"
     }
   ],
-  "truckingIndustry": "Freight reaches Burlington the way it reaches most of the surrounding county: by truck, day and night. The mix ranges from owner-operators to national fleets, and the responsible company is not always the name painted on the trailer. Specific the surrounding county terminals, distribution centers, and carrier names are not listed here because reliable, current local sourcing was not available — a gap worth filling before relying on it. Truck claims here often reach across the corridor, because the carriers and witnesses are rarely all local.",
+  "truckingIndustry": "Freight reaches Burlington the way it reaches most of the surrounding county: by truck, day and night. The mix runs from owner-operators to national fleets moving between the surrounding county, and the responsible company is not always the name painted on the trailer. Specific the surrounding county terminals, distribution centers, and carrier names are not listed here because reliable, current local sourcing was not available — a gap worth filling before relying on it. Truck claims here often reach across the corridor, because the carriers and witnesses are rarely all local.",
   "legalInfo": "",
   "faqs": [
     {
-      "question": "What kinds of truck crashes are most common around here?",
-      "answer": "Regionally, the rear End is the most frequent serious truck collision, around 32% of the pattern for Northeast. Each crash type — rear-end, jackknife, rollover, underride — leaves a different evidence trail, which shapes how the case is built and which records to demand first."
+      "question": "Where do I learn how a Burlington truck case is actually built?",
+      "answer": "The mechanics are federal and the same everywhere: how a rear End is reconstructed, which FMCSA rules the carrier may have broken, who beyond the driver can be liable, and how value is built. The national crash-type and FMCSA pages linked here cover that — the local pieces are the the surrounding county crash data above and the deadline a licensed Vermont attorney confirms."
     },
     {
-      "question": "What does it cost to hire a truck accident lawyer in Burlington?",
-      "answer": "These cases are typically handled on a contingency fee, meaning the lawyer is paid a percentage only if there is a recovery, with no upfront charge. The exact terms should be in a written agreement you review before signing. The initial case review is generally free."
+      "question": "The truck that hit me near Burlington was from out of town — does that matter?",
+      "answer": "That is the norm for truck cases, not the exception. The rigs moving between Burlington and nearby towns belong to fleets that can be headquartered anywhere, but an interstate carrier is squarely within FMCSA's reach and its higher coverage — so a distant company is usually well within a local case's grasp."
     },
     {
-      "question": "Can I still recover if I was partly at fault in Vermont?",
-      "answer": "Possibly. Many states reduce, rather than bar, recovery when the injured person shares some blame, but the precise rule is set by Vermont law and affects the outcome significantly. This is exactly the kind of state-specific question a licensed Vermont attorney should answer for your facts."
+      "question": "Why are truck crashes around Burlington so much worse than car wrecks?",
+      "answer": "It is a mismatch of mass. Being a smaller community on routes tied to the region, Burlington mixes fully loaded rigs with everyday drivers, and the truck's weight and stopping distance turn survivable car wrecks into life-altering ones. That severity is what drives the medical bills and the case value."
     },
     {
-      "question": "What should I do right after a truck accident in Burlington?",
-      "answer": "Get medical care first, then call police so there is an official report. If you can, photograph the trucks, the scene, and any company names or DOT numbers. The most important legal step is fast: a lawyer can send the carrier a preservation demand so the truck's electronic data and the driver's logs are not erased while you recover."
+      "question": "Which kinds of truck crashes happen most around Burlington?",
+      "answer": "Regionally in Northeast, the rear End leads the serious-crash list at about 32%, and the surrounding county's corridors see that same pattern. Because every mechanism — rear-end, rollover, jackknife, underride — points to different records, identifying it early decides what to chase first."
     },
     {
-      "question": "Do federal trucking rules apply to my Burlington case?",
-      "answer": "If the truck was operating in interstate commerce, the Federal Motor Carrier Safety Regulations almost certainly apply, covering hours of service, driver qualification, maintenance, and cargo securement. A violation of those rules is often the clearest proof of negligence, which is why they matter even in a local crash."
+      "question": "How quickly do I need to act on a Burlington truck accident claim?",
+      "answer": "Treat it as urgent on two clocks. One is the Vermont statute of limitations, a hard cutoff that depends on the type of claim; the other is the evidence, which a carrier can lawfully overwrite within weeks. A licensed Vermont attorney can confirm the legal deadline; the practical one starts immediately."
     },
     {
-      "question": "How long do I have to file a truck accident claim in Vermont?",
-      "answer": "There is a firm deadline, and it varies by the type of claim and the parties involved. Because the rule is specific to Vermont and getting it wrong can end a case, treat any figure you read online as a reason to speak with a licensed Vermont attorney quickly rather than as legal advice."
+      "question": "Do federal trucking rules apply to my Burlington crash?",
+      "answer": "If the truck was running in interstate commerce, the Federal Motor Carrier Safety Regulations almost certainly apply — hours of service, driver qualification, maintenance, cargo securement. A violation of those rules is often the clearest proof of negligence, which is why they matter even in a crash that happened entirely within Vermont."
     }
   ],
   "lastUpdated": "2026-06-24"

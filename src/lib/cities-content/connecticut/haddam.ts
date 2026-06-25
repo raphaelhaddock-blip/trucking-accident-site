@@ -19,7 +19,7 @@ export const HADDAM_CONTENT: CityContent = {
   "metaTitle": "Hurt by a Truck in Haddam? Lawyers Who Help",
   "metaDescription": "Injured by an 18-wheeler near Haddam? 2 truck deaths in 2022. Understand liability, evidence preservation, and your options before deadlines pass.",
   "h1": "Injured by a Commercial Truck in Haddam?",
-  "heroText": "A truck crash in Haddam, Connecticut is not a bigger car crash — it is a different kind of case with different rules and different defendants. Per NHTSA's crash records, 2 people were killed in 1 truck-involved crash here in 2022. Below: the first steps, the evidence that decides these claims, the parties who may owe you, and the federal rules that often apply.",
+  "heroText": "A truck crash in Haddam, Connecticut is not a bigger car crash — it is a different kind of case, with different rules and different defendants spread across Middlesex County. Per NHTSA's crash records, 2 people were killed in 1 truck-involved crash here in 2022 across Middlesex County. Below: the first steps, the evidence that decides these claims, and the parties who may owe you, from local fleets to carriers based near Madison.",
   "accidentStats": {
     "truckFatalities": 2,
     "fatalCrashes": 1,
@@ -49,32 +49,32 @@ export const HADDAM_CONTENT: CityContent = {
       "localFactor": "Winding rural roads and mountainous terrain contribute to rollovers"
     }
   ],
-  "truckingIndustry": "Trucking around Haddam is less a local industry than a slice of a national supply chain rolling through Middlesex County. Even outside the big metros, interstate carriers and regional haulers pass through, which is why local crashes can involve out-of-state companies. Naming the Middlesex County hubs and carriers would take verified records we do not yet have, so the page stays honest about that gap instead of inventing specifics. A truck-injury claim in Haddam often reaches into Madison, Middletown, Cromwell and the rest of the corridor, because the carriers and witnesses are rarely all in one town.",
+  "truckingIndustry": "Trucking around Haddam is less a local industry than a slice of a national supply chain rolling through Middlesex County. Even outside the big metros, interstate carriers and regional haulers pass through Middlesex County, which is why local crashes can involve out-of-state companies. Naming the Middlesex County hubs and carriers would take verified records we do not yet have, so the page stays honest about that gap instead of inventing specifics. A truck-injury claim in Haddam often reaches into Madison, Middletown, Cromwell and the rest of the corridor, because the carriers and witnesses are rarely all in one town.",
   "legalInfo": "",
   "faqs": [
     {
-      "question": "Do I really need a lawyer, or can I handle a Haddam truck claim myself?",
-      "answer": "Minor cases can sometimes be handled alone, but truck claims are the hard end of the spectrum: multiple defendants, federal records that must be preserved fast, and insurers that litigate. The evidence work usually has to happen before a person even feels ready, which is the main argument for getting help early."
+      "question": "Why are truck crashes around Haddam so much worse than car wrecks?",
+      "answer": "It is a mismatch of mass. Being a smaller community on routes tied to Madison, Middletown, Haddam mixes fully loaded rigs with everyday drivers, and the truck's weight and stopping distance turn survivable car wrecks into life-altering ones. That severity is what drives the medical bills and the case value."
+    },
+    {
+      "question": "How fast does the evidence disappear after a Haddam truck crash?",
+      "answer": "On the carrier's schedule, not yours. The engine module, the driver's logs, and the inspection records can all be gone in weeks, and the truck itself can leave Middlesex County for its next load. That is why getting a lawyer's preservation letter to the company fast — while the rig is still near Madison, Middletown — changes the case."
+    },
+    {
+      "question": "The truck that hit me near Haddam was from out of town — does that matter?",
+      "answer": "That is the norm for truck cases, not the exception. The rigs moving between Haddam and Madison, Middletown belong to fleets that can be headquartered anywhere, but an interstate carrier is squarely within FMCSA's reach and its higher coverage — so a distant company is usually well within a local case's grasp."
+    },
+    {
+      "question": "What do Haddam's truck-crash numbers actually tell me?",
+      "answer": "Federal FARS data show a handful of truck-involved deaths on record for the Middlesex County area in 2022. That figure counts deaths only — it leaves out the much larger number of truck crashes that cause serious, lasting injuries without a fatality, so the real burden in Middlesex County runs well above the headline number."
+    },
+    {
+      "question": "Do federal trucking rules apply to my Haddam crash?",
+      "answer": "Usually they do. A carrier operating across state lines is bound by the federal safety regulations, and those standards — not just Connecticut traffic law — often define what the company did wrong. Pulling the records that show a rule was broken is a core part of building the claim."
     },
     {
       "question": "What does it cost to hire a truck accident lawyer in Haddam?",
-      "answer": "These cases are typically handled on a contingency fee, meaning the lawyer is paid a percentage only if there is a recovery, with no upfront charge. The exact terms should be in a written agreement you review before signing. The initial case review is generally free."
-    },
-    {
-      "question": "Can I still recover if I was partly at fault in Connecticut?",
-      "answer": "Possibly. Many states reduce, rather than bar, recovery when the injured person shares some blame, but the precise rule is set by Connecticut law and affects the outcome significantly. This is exactly the kind of state-specific question a licensed Connecticut attorney should answer for your facts."
-    },
-    {
-      "question": "Do federal trucking rules apply to my Haddam case?",
-      "answer": "If the truck was operating in interstate commerce, the Federal Motor Carrier Safety Regulations almost certainly apply, covering hours of service, driver qualification, maintenance, and cargo securement. A violation of those rules is often the clearest proof of negligence, which is why they matter even in a local crash."
-    },
-    {
-      "question": "Why is a truck case different from a normal car accident in Haddam?",
-      "answer": "Three reasons: the injuries are usually worse because of the weight difference, the defendants multiply beyond the driver to the carrier and others, and the evidence is largely electronic and time-limited. A Connecticut truck claim is really a fight over records — logs, the engine module, maintenance files — that a routine car case never involves."
-    },
-    {
-      "question": "How fast do I need to act after a Haddam truck wreck?",
-      "answer": "Faster than most people expect. Electronic logs and black-box data can cycle out within weeks, the truck can be repaired or sold, and the filing deadline is running. The single most valuable early step is getting a preservation demand to the carrier before the records are gone."
+      "answer": "You generally do not pay by the hour. The standard arrangement is contingency: no fee unless the case recovers money, with litigation costs advanced by the firm and a percentage spelled out in a contract you review first. The initial evaluation is usually free."
     }
   ],
   "lastUpdated": "2026-06-24",

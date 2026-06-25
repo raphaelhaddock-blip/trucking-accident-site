@@ -19,7 +19,7 @@ export const BENTON_CONTENT: CityContent = {
   "metaTitle": "Benton Truck Accident Lawyers",
   "metaDescription": "Hurt in a truck crash in Benton? 1 truck death in 2022. Learn what evidence matters, who may be liable, and the first steps to take. Free consultation.",
   "h1": "Injured by a Commercial Truck in Benton?",
-  "heroText": "If a tractor-trailer hurt you in Benton, Arkansas, the clock on the evidence starts the moment the wreck ends. Per NHTSA's crash records, 1 person was killed in 1 truck-involved crash here in 2022. Below: the first steps, the evidence that decides these claims, the parties who may owe you, and the federal rules that often apply.",
+  "heroText": "If a tractor-trailer hurt you in Benton, Arkansas, the clock on the evidence starts the moment the wreck ends, whether the truck was bound for Lonsdale or just passing through. Per NHTSA's crash records, 1 person was killed in 1 truck-involved crash here in 2022 across Saline County. Below: the first steps, the evidence that decides these claims, and the parties who may owe you, from local fleets to carriers based near Lonsdale.",
   "accidentStats": {
     "truckFatalities": 1,
     "fatalCrashes": 1,
@@ -49,32 +49,32 @@ export const BENTON_CONTENT: CityContent = {
       "localFactor": "Oil field traffic and wide loads increase sideswipes"
     }
   ],
-  "truckingIndustry": "Trucking around Benton is less a local industry than a slice of a national supply chain rolling through Saline County. Even outside the big metros, interstate carriers and regional haulers pass through, which is why local crashes can involve out-of-state companies. Naming the Saline County hubs and carriers would take verified records we do not yet have, so the page stays honest about that gap instead of inventing specifics. A truck-injury claim in Benton often reaches into Lonsdale, Bryant, Little Rock and the rest of the corridor, because the carriers and witnesses are rarely all in one town.",
+  "truckingIndustry": "Trucking around Benton is less a local industry than a slice of a national supply chain rolling through Saline County. Even outside the big metros, interstate carriers and regional haulers pass through Saline County, which is why local crashes can involve out-of-state companies. Naming the Saline County hubs and carriers would take verified records we do not yet have, so the page stays honest about that gap instead of inventing specifics. A truck-injury claim in Benton often reaches into Lonsdale, Bryant, Little Rock and the rest of the corridor, because the carriers and witnesses are rarely all in one town.",
   "legalInfo": "",
   "faqs": [
     {
+      "question": "Why are truck crashes around Benton so much worse than car wrecks?",
+      "answer": "It is a mismatch of mass. Being a smaller community on routes tied to Lonsdale, Bryant, Benton mixes fully loaded rigs with everyday drivers, and the truck's weight and stopping distance turn survivable car wrecks into life-altering ones. That severity is what drives the medical bills and the case value."
+    },
+    {
+      "question": "The truck that hit me near Benton was from out of town — does that matter?",
+      "answer": "It is common, and it usually helps. Freight through Benton runs between it and nearby Lonsdale, Bryant, Little Rock, so the carrier may sit a county away or across the country. Interstate carriers fall under the federal safety rules and must carry higher insurance, which often makes an out-of-area company easier to hold accountable, not harder."
+    },
+    {
+      "question": "How fast does the evidence disappear after a Benton truck crash?",
+      "answer": "Faster than most people expect. Electronic logs and black-box data can be overwritten within weeks, and the truck can be repaired or hauled out of Saline County before anyone inspects it. The first real move is a preservation demand to the carrier — ideally before the rig leaves the Lonsdale, Bryant corridor — so the logs and maintenance file survive."
+    },
+    {
+      "question": "Which kinds of truck crashes happen most around Benton?",
+      "answer": "The data for South Central put the rear End at the top, near 27% of serious truck crashes, and Benton sits inside that pattern. An investigator uses the crash type to know whether to chase brake data, logs, or load records first."
+    },
+    {
+      "question": "Do federal trucking rules apply to my Benton crash?",
+      "answer": "Usually they do. A carrier operating across state lines is bound by the federal safety regulations, and those standards — not just Arkansas traffic law — often define what the company did wrong. Pulling the records that show a rule was broken is a core part of building the claim."
+    },
+    {
       "question": "What does it cost to hire a truck accident lawyer in Benton?",
-      "answer": "These cases are typically handled on a contingency fee, meaning the lawyer is paid a percentage only if there is a recovery, with no upfront charge. The exact terms should be in a written agreement you review before signing. The initial case review is generally free."
-    },
-    {
-      "question": "What should I do right after a truck accident in Benton?",
-      "answer": "Get medical care first, then call police so there is an official report. If you can, photograph the trucks, the scene, and any company names or DOT numbers. The most important legal step is fast: a lawyer can send the carrier a preservation demand so the truck's electronic data and the driver's logs are not erased while you recover."
-    },
-    {
-      "question": "Do I really need a lawyer, or can I handle a Benton truck claim myself?",
-      "answer": "Minor cases can sometimes be handled alone, but truck claims are the hard end of the spectrum: multiple defendants, federal records that must be preserved fast, and insurers that litigate. The evidence work usually has to happen before a person even feels ready, which is the main argument for getting help early."
-    },
-    {
-      "question": "How long do I have to file a truck accident claim in Arkansas?",
-      "answer": "There is a firm deadline, and it varies by the type of claim and the parties involved. Because the rule is specific to Arkansas and getting it wrong can end a case, treat any figure you read online as a reason to speak with a licensed Arkansas attorney quickly rather than as legal advice."
-    },
-    {
-      "question": "Will my Benton truck accident case go to trial?",
-      "answer": "Probably not, but it should be built as if it will. The large majority of these claims settle, yet the cases that settle well are the ones prepared for trial — full investigation, preserved evidence, named defendants. A claim the insurer thinks you cannot try is a claim it can underpay."
-    },
-    {
-      "question": "I lost a family member in a Benton truck crash — what can we do?",
-      "answer": "A wrongful-death claim shifts the focus to the family's losses: financial support, services, and companionship the person provided. Arkansas law decides who may bring the claim and within what deadline, so a licensed attorney should map that out. The evidence work — preserving the truck's data and the carrier's records — is just as urgent as in an injury case."
+      "answer": "These cases are typically handled on contingency: the lawyer is paid a percentage only if there is a recovery, with nothing upfront and the case costs advanced. The exact terms go in a written agreement you review before signing, and the first case review is generally free."
     }
   ],
   "lastUpdated": "2026-06-24",

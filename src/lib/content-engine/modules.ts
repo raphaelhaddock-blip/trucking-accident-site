@@ -43,23 +43,23 @@ const farsClause = (p: CityProfile) =>
 // ================= HERO =================
 const heroSlots: { salt: string; pool: Slot[] }[] = [
   { salt: 'h-open', pool: [
-    (p) => `If a tractor-trailer hurt you in ${placePhrase(p)}, the clock on the evidence starts the moment the wreck ends.`,
-    (p) => `A truck crash in ${placePhrase(p)} is not a bigger car crash — it is a different kind of case with different rules and different defendants.`,
-    (p) => `When an 18-wheeler causes injuries in ${placePhrase(p)}, the carrier's insurer is already working the file; an injured person should not be the last to start.`,
-    (p) => `Surviving a collision with a loaded truck in ${placePhrase(p)} is the beginning of a fight over records most people never knew existed.`,
-    (p) => `A wreck with a commercial truck in ${placePhrase(p)} can change a life in seconds and then turn into a months-long contest over proof.`,
+    (p, c) => `If a tractor-trailer hurt you in ${placePhrase(p)}, the clock on the evidence starts the moment the wreck ends${c.n1 ? `, whether the truck was bound for ${c.n1} or just passing through` : ''}.`,
+    (p) => `A truck crash in ${placePhrase(p)} is not a bigger car crash — it is a different kind of case, with different rules and different defendants spread across ${countyPhrase(p)}.`,
+    (p, c) => `When an 18-wheeler causes injuries in ${placePhrase(p)}, the carrier's insurer is already working the file${c.n1 ? `, from ${c.n1} to the courthouse` : ''}; an injured person should not be the last to start.`,
+    (p) => `Surviving a collision with a loaded truck in ${placePhrase(p)} is the beginning of a fight over records most people in ${countyPhrase(p)} never knew existed.`,
+    (p, c) => `A wreck with a commercial truck on the routes through ${placePhrase(p)}${c.n1 ? ` and ${c.n1}` : ''} can change a life in seconds, then turn into a months-long contest over proof.`,
   ]},
   { salt: 'h-fact', pool: [
-    (p) => `Federal data show ${farsClause(p)}, according to NHTSA's FARS file.`,
-    (p) => `Per NHTSA's crash records, ${farsClause(p)}.`,
-    (p) => `The most recent federal count shows ${farsClause(p)}.`,
-    (p) => `NHTSA's fatality records note that ${farsClause(p)}.`,
+    (p) => `Federal data show ${farsClause(p)} in ${countyPhrase(p)}, according to NHTSA's FARS file.`,
+    (p) => `Per NHTSA's crash records, ${farsClause(p)} across ${countyPhrase(p)}.`,
+    (p) => `The most recent federal count shows ${farsClause(p)} in the ${countyPhrase(p)} area.`,
+    (p) => `NHTSA's fatality records note that ${farsClause(p)} in ${countyPhrase(p)}.`,
   ]},
   { salt: 'h-close', pool: [
     (p) => `This page explains what to do, why these cases differ, what proof matters, and who can be held responsible — grounded in ${countyPhrase(p)} and federal trucking law.`,
-    (p) => `Below: the first steps, the evidence that decides these claims, the parties who may owe you, and the federal rules that often apply.`,
-    (p) => `Read on for the practical answers — immediate steps, the records that win or lose these cases, and the chain of companies behind the driver.`,
-    (p) => `What follows is the honest version: the urgent moves, the electronic proof, the defendants beyond the driver, and where ${p.stateName} law takes over.`,
+    (p, c) => `Below: the first steps, the evidence that decides these claims, and the parties who may owe you${c.n1 ? `, from local fleets to carriers based near ${c.n1}` : ''}.`,
+    (p) => `Read on for the practical answers — immediate steps, the records that win or lose these cases, and how ${p.regionName ?? 'the regional'} crash pattern shapes the investigation in ${countyPhrase(p)}.`,
+    (p) => `What follows is the honest version: the urgent moves, the electronic proof, the defendants beyond the driver, and where ${p.stateName} law takes over across ${countyPhrase(p)}.`,
   ]},
 ];
 
@@ -211,12 +211,12 @@ const truckingIndustrySlots: { salt: string; pool: Slot[] }[] = [
   ]},
   { salt: 't-mix', pool: [
     (p) => p.sizeTier === 'metro'
-      ? `In a market this size, long-haul carriers, regional fleets, and a growing wave of delivery vans all crowd the same corridors.`
-      : `Even outside the big metros, interstate carriers and regional haulers pass through, which is why local crashes can involve out-of-state companies.`,
-    (p) => p.sizeTier === 'metro'
-      ? `A metro this large pulls constant freight — national fleets, last-mile delivery, and everything between — onto roads that were not built for the volume.`
-      : `Smaller communities still sit on freight routes, so the trucks involved in local wrecks often answer to companies headquartered elsewhere.`,
-    () => `The mix ranges from owner-operators to national fleets, and the responsible company is not always the name painted on the trailer.`,
+      ? `In a market the size of ${countyPhrase(p)}, long-haul carriers, regional fleets, and a growing wave of delivery vans all crowd the same corridors.`
+      : `Even outside the big metros, interstate carriers and regional haulers pass through ${countyPhrase(p)}, which is why local crashes can involve out-of-state companies.`,
+    (p, c) => p.sizeTier === 'metro'
+      ? `A metro this large pulls constant freight through ${countyPhrase(p)} — national fleets, last-mile delivery, everything between — onto roads not built for the volume.`
+      : `Smaller communities like ${p.name} still sit on freight routes${c.n1 ? ` linking ${c.n1} and beyond` : ''}, so the trucks in local wrecks often answer to companies headquartered elsewhere.`,
+    (p, c) => `The mix runs from owner-operators to national fleets moving between ${nearList(c) || countyPhrase(p)}, and the responsible company is not always the name painted on the trailer.`,
   ]},
   { salt: 't-note', pool: [
     (p) => `Specific ${countyPhrase(p)} terminals, distribution centers, and carrier names are not listed here because reliable, current local sourcing was not available — a gap worth filling before relying on it.`,

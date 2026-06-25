@@ -19,7 +19,7 @@ export const MESA_CONTENT: CityContent = {
   "metaTitle": "Truck Accident Attorneys in Mesa",
   "metaDescription": "Truck wrecks in Mesa are not ordinary car cases. See why they differ, the federal records that decide them, and how to protect your claim.",
   "h1": "Truck Accident Attorneys Serving Mesa",
-  "heroText": "A truck crash in Mesa, Arizona is not a bigger car crash — it is a different kind of case with different rules and different defendants. NHTSA's fatality records note that 3 people were killed in 3 truck-involved crashes here in 2022. What follows is the honest version: the urgent moves, the electronic proof, the defendants beyond the driver, and where Arizona law takes over.",
+  "heroText": "A truck crash in Mesa, Arizona is not a bigger car crash — it is a different kind of case, with different rules and different defendants spread across Maricopa County. NHTSA's fatality records note that 3 people were killed in 3 truck-involved crashes here in 2022 in Maricopa County. What follows is the honest version: the urgent moves, the electronic proof, the defendants beyond the driver, and where Arizona law takes over across Maricopa County.",
   "accidentStats": {
     "truckFatalities": 3,
     "fatalCrashes": 3,
@@ -49,32 +49,32 @@ export const MESA_CONTENT: CityContent = {
       "localFactor": "High-speed interstate traffic and construction zones"
     }
   ],
-  "truckingIndustry": "Commercial trucking in and around Mesa is part of the regional freight network rather than a single local hub. A metro this large pulls constant freight — national fleets, last-mile delivery, and everything between — onto roads that were not built for the volume. We do not name particular Maricopa County facilities or companies without a verified source; doing so accurately requires data this page does not yet have. Drivers running through Mesa are usually moving between it and places like Tempe, Phoenix, Queen Creek, which is why these cases tend to pull in records from more than one location.",
+  "truckingIndustry": "Commercial trucking in and around Mesa is part of the regional freight network rather than a single local hub. A metro this large pulls constant freight through Maricopa County — national fleets, last-mile delivery, everything between — onto roads not built for the volume. We do not name particular Maricopa County facilities or companies without a verified source; doing so accurately requires data this page does not yet have. Drivers running through Mesa are usually moving between it and places like Tempe, Phoenix, Queen Creek, which is why these cases tend to pull in records from more than one location.",
   "legalInfo": "",
   "faqs": [
     {
-      "question": "How fast do I need to act after a Mesa truck wreck?",
-      "answer": "Faster than most people expect. Electronic logs and black-box data can cycle out within weeks, the truck can be repaired or sold, and the filing deadline is running. The single most valuable early step is getting a preservation demand to the carrier before the records are gone."
+      "question": "Why are truck crashes around Mesa so much worse than car wrecks?",
+      "answer": "Weight. A loaded tractor-trailer can outweigh a car sixteen to one, so a routine impact turns catastrophic. As a major metro, Mesa sits on freight routes shared with Tempe, Phoenix, putting 80,000-pound rigs in the same lanes as local traffic — which is why these crashes send people to trauma care far more often than ordinary collisions."
+    },
+    {
+      "question": "How fast does the evidence disappear after a Mesa truck crash?",
+      "answer": "Faster than most people expect. Electronic logs and black-box data can be overwritten within weeks, and the truck can be repaired or hauled out of Maricopa County before anyone inspects it. The first real move is a preservation demand to the carrier — ideally before the rig leaves the Tempe, Phoenix corridor — so the logs and maintenance file survive."
+    },
+    {
+      "question": "The truck that hit me near Mesa was from out of town — does that matter?",
+      "answer": "Not a problem — often an advantage. Trucks on these routes are frequently based toward Tempe, Phoenix, Queen Creek or beyond, and a carrier in interstate commerce answers to the federal regulations and the larger liability limits that come with them. Where it parks its trucks matters less than the records it must keep."
+    },
+    {
+      "question": "Where do I learn how a Mesa truck case is actually built?",
+      "answer": "Two layers: the federal one is shared — rear End reconstruction, FMCSA duties, liable parties, damages — and lives on the national pages linked here. The local layer is what is specific to you: the Maricopa County data above and the Arizona deadline to confirm with a licensed attorney."
+    },
+    {
+      "question": "Do federal trucking rules apply to my Mesa crash?",
+      "answer": "Very likely yes. Most commercial trucks fall under FMCSA's rules on driving hours, inspections, driver files, and load securement, and breaking one is frequently the backbone of the case. Those federal duties apply regardless of where in Arizona the wreck occurred."
     },
     {
       "question": "Do I really need a lawyer, or can I handle a Mesa truck claim myself?",
-      "answer": "Minor cases can sometimes be handled alone, but truck claims are the hard end of the spectrum: multiple defendants, federal records that must be preserved fast, and insurers that litigate. The evidence work usually has to happen before a person even feels ready, which is the main argument for getting help early."
-    },
-    {
-      "question": "Will my Mesa truck accident case go to trial?",
-      "answer": "Probably not, but it should be built as if it will. The large majority of these claims settle, yet the cases that settle well are the ones prepared for trial — full investigation, preserved evidence, named defendants. A claim the insurer thinks you cannot try is a claim it can underpay."
-    },
-    {
-      "question": "What evidence matters most in a Mesa truck case?",
-      "answer": "The truck's engine control module (its black box), the electronic logging device showing hours of service, maintenance and inspection records, the driver qualification file, dispatch communications, and the cargo paperwork. Much of it can be overwritten on the carrier's schedule, so securing it early — often before the truck and its data leave Maricopa County is the difference-maker."
-    },
-    {
-      "question": "Can I still recover if I was partly at fault in Arizona?",
-      "answer": "Possibly. Many states reduce, rather than bar, recovery when the injured person shares some blame, but the precise rule is set by Arizona law and affects the outcome significantly. This is exactly the kind of state-specific question a licensed Arizona attorney should answer for your facts."
-    },
-    {
-      "question": "Who can be held responsible for a Mesa truck crash?",
-      "answer": "Often more than the driver. The motor carrier can answer for the driver and for its own hiring, training, and maintenance decisions. Depending on the facts, a broker, shipper, leasing company, or parts manufacturer may share fault. Naming every responsible company is what reaches enough insurance to cover a serious injury."
+      "answer": "A minor case can sometimes be handled alone, but truck claims are the hard end: multiple defendants, federal records that must be preserved fast, and insurers that litigate. The evidence work usually has to happen before a person even feels ready, which is the main argument for getting help early."
     }
   ],
   "lastUpdated": "2026-06-24",

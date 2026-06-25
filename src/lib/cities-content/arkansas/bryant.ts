@@ -19,7 +19,7 @@ export const BRYANT_CONTENT: CityContent = {
   "metaTitle": "Hurt by a Truck in Bryant? Lawyers Who Help",
   "metaDescription": "Injured by an 18-wheeler near Bryant? 1 truck death in 2022. Understand liability, evidence preservation, and your options before deadlines pass.",
   "h1": "Truck Accident Attorneys Serving Bryant",
-  "heroText": "If a tractor-trailer hurt you in Bryant, Arkansas, the clock on the evidence starts the moment the wreck ends. NHTSA's fatality records note that 1 person was killed in 1 truck-involved crash here in 2022. What follows is the honest version: the urgent moves, the electronic proof, the defendants beyond the driver, and where Arkansas law takes over.",
+  "heroText": "If a tractor-trailer hurt you in Bryant, Arkansas, the clock on the evidence starts the moment the wreck ends, whether the truck was bound for Little Rock or just passing through. NHTSA's fatality records note that 1 person was killed in 1 truck-involved crash here in 2022 in Saline County. What follows is the honest version: the urgent moves, the electronic proof, the defendants beyond the driver, and where Arkansas law takes over across Saline County.",
   "accidentStats": {
     "truckFatalities": 1,
     "fatalCrashes": 1,
@@ -49,32 +49,32 @@ export const BRYANT_CONTENT: CityContent = {
       "localFactor": "Oil field traffic and wide loads increase sideswipes"
     }
   ],
-  "truckingIndustry": "Commercial trucking in and around Bryant is part of the regional freight network rather than a single local hub. Smaller communities still sit on freight routes, so the trucks involved in local wrecks often answer to companies headquartered elsewhere. We do not name particular Saline County facilities or companies without a verified source; doing so accurately requires data this page does not yet have. Drivers running through Bryant are usually moving between it and places like Little Rock, Benton, North Little Rock, which is why these cases tend to pull in records from more than one location.",
+  "truckingIndustry": "Commercial trucking in and around Bryant is part of the regional freight network rather than a single local hub. Smaller communities like Bryant still sit on freight routes linking Little Rock and beyond, so the trucks in local wrecks often answer to companies headquartered elsewhere. We do not name particular Saline County facilities or companies without a verified source; doing so accurately requires data this page does not yet have. Drivers running through Bryant are usually moving between it and places like Little Rock, Benton, North Little Rock, which is why these cases tend to pull in records from more than one location.",
   "legalInfo": "",
   "faqs": [
     {
-      "question": "Will my Bryant truck accident case go to trial?",
-      "answer": "Probably not, but it should be built as if it will. The large majority of these claims settle, yet the cases that settle well are the ones prepared for trial — full investigation, preserved evidence, named defendants. A claim the insurer thinks you cannot try is a claim it can underpay."
+      "question": "How fast does the evidence disappear after a Bryant truck crash?",
+      "answer": "Faster than most people expect. Electronic logs and black-box data can be overwritten within weeks, and the truck can be repaired or hauled out of Saline County before anyone inspects it. The first real move is a preservation demand to the carrier — ideally before the rig leaves the Little Rock, Benton corridor — so the logs and maintenance file survive."
     },
     {
-      "question": "Do federal trucking rules apply to my Bryant case?",
-      "answer": "If the truck was operating in interstate commerce, the Federal Motor Carrier Safety Regulations almost certainly apply, covering hours of service, driver qualification, maintenance, and cargo securement. A violation of those rules is often the clearest proof of negligence, which is why they matter even in a local crash."
+      "question": "Why are truck crashes around Bryant so much worse than car wrecks?",
+      "answer": "Physics and traffic. Bryant, a smaller community, channels freight between itself and Little Rock, Benton, and an 80,000-pound truck does not stop, swerve, or forgive the way a car does. The same crash that dents a sedan can be fatal, which is why a truck case is built differently from the start."
     },
     {
-      "question": "What if the truck that hit me in Bryant was from out of state?",
-      "answer": "That is common and usually helps rather than hurts. Interstate carriers are squarely under the federal safety rules and must carry higher liability minimums. Where the company is based mainly affects logistics; a case arising in Bryant can still be pursued under Arkansas law and federal regulation."
+      "question": "What do Bryant's truck-crash numbers actually tell me?",
+      "answer": "Those numbers come from NHTSA's fatality file: a single truck-involved death on record in Saline County for 2022. Because the database tracks only deaths, the figure says nothing about the injury wrecks that send people to the hospital but not the morgue, which are far more common."
     },
     {
-      "question": "Why is a truck case different from a normal car accident in Bryant?",
-      "answer": "Three reasons: the injuries are usually worse because of the weight difference, the defendants multiply beyond the driver to the carrier and others, and the evidence is largely electronic and time-limited. A Arkansas truck claim is really a fight over records — logs, the engine module, maintenance files — that a routine car case never involves."
+      "question": "The truck that hit me near Bryant was from out of town — does that matter?",
+      "answer": "Not a problem — often an advantage. Trucks on these routes are frequently based toward Little Rock, Benton, North Little Rock or beyond, and a carrier in interstate commerce answers to the federal regulations and the larger liability limits that come with them. Where it parks its trucks matters less than the records it must keep."
     },
     {
-      "question": "The crash report shows fatalities — what does the local data say?",
-      "answer": "Federal FARS data recorded 1 truck-involved fatality across 1 crash here in 2022. That figure counts deaths only; it does not capture the larger number of serious-injury truck crashes in the same area."
+      "question": "Do I really need a lawyer, or can I handle a Bryant truck claim myself?",
+      "answer": "A minor case can sometimes be handled alone, but truck claims are the hard end: multiple defendants, federal records that must be preserved fast, and insurers that litigate. The evidence work usually has to happen before a person even feels ready, which is the main argument for getting help early."
     },
     {
-      "question": "How fast do I need to act after a Bryant truck wreck?",
-      "answer": "Faster than most people expect. Electronic logs and black-box data can cycle out within weeks, the truck can be repaired or sold, and the filing deadline is running. The single most valuable early step is getting a preservation demand to the carrier before the records are gone."
+      "question": "Who can be held responsible for a Bryant truck crash besides the driver?",
+      "answer": "The driver is rarely the whole story. A carrier can be on the hook for putting an unfit driver or unsafe truck on the road, and third parties — brokers, shippers, maintenance contractors, component makers — turn up as the facts develop. Identifying all of them is how a catastrophic claim gets fully paid."
     }
   ],
   "lastUpdated": "2026-06-24",
