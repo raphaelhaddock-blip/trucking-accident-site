@@ -76,7 +76,7 @@ export default function CommandHero({
             {title}
           </h1>
           {subtitle && (
-            <div className="mt-4 max-w-2xl text-base leading-relaxed text-steel-200 md:mt-6 md:text-xl">
+            <div className="mt-4 max-w-2xl text-base leading-relaxed text-steel-200 md:mt-6 md:text-xl [&>p:nth-child(n+2)]:hidden sm:[&>p:nth-child(n+2)]:block">
               {subtitle}
             </div>
           )}

@@ -6,7 +6,7 @@ import CaseEvaluationForm from '@/components/CaseEvaluationForm';
 import CommandHero from '@/components/CommandHero';
 import Section from '@/components/ui/Section';
 import { ArrowRight, Phone, CheckCircle, Document, Users } from '@/components/ui/Icon';
-import { STATE_IMAGES } from '@/lib/states-content/images';
+import { heroPhoto, ogImage as brandOgImage } from '@/lib/brand-images';
 import {
   getStateContent,
   getStateName,
@@ -26,7 +26,6 @@ export async function generateStaticParams() {
 }
 
 // Default OG image for pages without specific images
-const DEFAULT_OG_IMAGE = 'https://trucking-accident-site.vercel.app/brand/og-default.png';
 
 // Generate metadata for each state page
 export async function generateMetadata({
@@ -47,8 +46,9 @@ export async function generateMetadata({
     };
   }
 
-  // Get state-specific image or use default
-  const ogImage = STATE_IMAGES[slug] || { url: DEFAULT_OG_IMAGE, alt: `${stateName} truck accident lawyers` };
+  // Local OG: state-specific photo if generated, else the brand og-default card (never Sanity)
+  const ogImageUrl = brandOgImage({ stateSlug: slug });
+  const ogImageAlt = `${stateName} truck accident lawyers`;
 
   return {
     title: seoTitle,
@@ -62,10 +62,10 @@ export async function generateMetadata({
       type: 'article',
       images: [
         {
-          url: ogImage.url,
+          url: ogImageUrl,
           width: 1408,
           height: 768,
-          alt: ogImage.alt,
+          alt: ogImageAlt,
         },
       ],
     },
@@ -73,7 +73,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: seoTitle,
       description: content.metaDescription,
-      images: [ogImage.url],
+      images: [ogImageUrl],
     },
   };
 }
@@ -174,7 +174,7 @@ export default async function StatePage({
       opens: '00:00',
       closes: '23:59',
     },
-    image: STATE_IMAGES[slug]?.url || DEFAULT_OG_IMAGE,
+    image: brandOgImage({ stateSlug: slug }),
     sameAs: [
       'https://trucking-accident-site.vercel.app',
     ],
@@ -208,7 +208,7 @@ export default async function StatePage({
     '@type': 'Article',
     headline: content.h1,
     description: content.metaDescription,
-    image: STATE_IMAGES[slug]?.url || DEFAULT_OG_IMAGE,
+    image: brandOgImage({ stateSlug: slug }),
     datePublished: '2024-01-01',
     dateModified: content.lastUpdated,
     author: {
@@ -257,6 +257,8 @@ export default async function StatePage({
       {/* Hero — cinematic command treatment */}
       <CommandHero
         size="lg"
+        imageSrc={heroPhoto({ stateSlug: slug }) ?? undefined}
+        imageAlt={`${content.name} interstate freight corridor at dusk`}
         eyebrow={`${content.name} Truck Accident Response`}
         title={content.h1}
         breadcrumb={

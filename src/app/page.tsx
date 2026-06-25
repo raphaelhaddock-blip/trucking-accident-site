@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import CaseEvaluationForm from '@/components/CaseEvaluationForm';
 import CommandHero from '@/components/CommandHero';
 import Section from '@/components/ui/Section';
+import { heroPhoto } from '@/lib/brand-images';
 import {
   ArrowRight,
   Phone,
@@ -156,6 +157,8 @@ export default function Home() {
       {/* Hero — cinematic command treatment */}
       <CommandHero
         size="lg"
+        imageSrc={heroPhoto({ kind: 'home' }) ?? undefined}
+        imageAlt="National interstate freight corridor at dusk"
         eyebrow="National Truck Accident Response"
         title="Truck Injury Lawyers"
         subtitle={

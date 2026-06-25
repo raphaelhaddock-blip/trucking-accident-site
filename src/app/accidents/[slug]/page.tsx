@@ -22,7 +22,7 @@ import {
   isValidAccidentSlug,
   ACCIDENT_SLUGS,
 } from '@/lib/accidents-content';
-import { ACCIDENT_IMAGES } from '@/lib/accidents-content/images';
+import { heroPhoto, ogImage as brandOgImage } from '@/lib/brand-images';
 
 // Generate static params for all 20 accident types
 export async function generateStaticParams() {
@@ -32,7 +32,6 @@ export async function generateStaticParams() {
 }
 
 // Default OG image for pages without specific images
-const DEFAULT_OG_IMAGE = 'https://trucking-accident-site.vercel.app/brand/og-default.png';
 
 // Generate metadata for each accident page
 export async function generateMetadata({
@@ -49,12 +48,13 @@ export async function generateMetadata({
     };
   }
 
-  // Get accident-specific image or use default
-  const ogImage = ACCIDENT_IMAGES[slug] || { url: DEFAULT_OG_IMAGE, alt: '18-wheeler truck accident' };
-
   // SEO-optimized title (~55 chars per spec): "[Type] Accident Lawyer | 18-Wheeler Claims"
   const accidentName = getAccidentName(slug);
   const seoTitle = `${accidentName} Lawyer | 18-Wheeler Crash Claims`;
+
+  // Local OG: accident-specific photo if generated, else brand og-default card (never Sanity)
+  const ogImageUrl = brandOgImage({ accidentSlug: slug });
+  const ogImageAlt = `${accidentName} — 18-wheeler truck accident`;
 
   return {
     title: seoTitle,
@@ -68,10 +68,10 @@ export async function generateMetadata({
       type: 'article',
       images: [
         {
-          url: ogImage.url,
+          url: ogImageUrl,
           width: 1408,
           height: 768,
-          alt: ogImage.alt,
+          alt: ogImageAlt,
         },
       ],
     },
@@ -79,7 +79,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: seoTitle,
       description: content.metaDescription,
-      images: [ogImage.url],
+      images: [ogImageUrl],
     },
   };
 }
@@ -172,6 +172,8 @@ export default async function AccidentPage({
 
       {/* Hero — cinematic command treatment (no Sanity stock photo) */}
       <CommandHero
+        imageSrc={heroPhoto({ accidentSlug: slug }) ?? undefined}
+        imageAlt={`${content.title} — truck accident scene illustration`}
         eyebrow="National Truck Accident Response"
         title={content.h1}
         breadcrumb={

@@ -113,9 +113,36 @@ Restyled onto the same system (the three were done by parallel agents on distinc
 4. **`next.config.ts` still allows `cdn.sanity.io`** — keep until per-page images are localized, then tighten.
 5. Brand name "Truck Injury Lawyers" retained (tagline only) — confirm before launch.
 
+## PR3 — Pro image system on every page + index hubs (third commit)
+
+**The blunt truth:** this session has **no pro image generator**. So PR3 built the *system* that makes pro images trivial to land, not the images themselves. Per the brief, I did not stop and did not fake-wire missing files.
+
+**Image system (auto-wiring):**
+- `scripts/gen-image-manifest.ts` runs as an npm `prebuild` step: scans `public/brand/photo/` and regenerates `src/lib/brand-images.generated.ts`. **Drop a correctly-named `.webp` → the next build wires it by slug. Zero code change.**
+- `src/lib/brand-images.ts` resolver: `heroPhoto()` (visible) falls back city → state → index-motif → global hero → **null = command treatment (never Sanity)**; `ogImage()` (social) falls back specific-photo → **`og-default.png` (never Sanity)**.
+- Wired `imageSrc` into `CommandHero` on home, contact, and the state/city/accident templates. Swapped per-page **OG + JSON-LD images** in all three templates off Sanity (`STATE_IMAGES`/`ACCIDENT_IMAGES`) onto the local resolver; deleted the dead `DEFAULT_OG_IMAGE` consts and the dead `cdn.sanity.io` preconnect.
+
+**Index hubs redesigned** (they were still on the OLD navy/gray template — a real gap):
+- `states/page.tsx` and `accidents/page.tsx` rebuilt onto `CommandHero` + `Section` + the icon set. Canonicals `/states` and `/accidents`, all data arrays, and links preserved. Now consistent with the rest of the site.
+
+**Mobile hero excerpt:** `CommandHero` shows only the first subtitle paragraph on mobile (`sm:` shows all) — shorter above-fold, full content present in DOM.
+
+**The generation pack:** [docs/PR3-PRO-IMAGE-GENERATION-PACK.md](docs/PR3-PRO-IMAGE-GENERATION-PACK.md) — exact filenames (matched to the resolver), one size spec (2400×1260 webp), the base prompt + per-asset modifiers, and a P0→P4 priority order (P0 `hero-interstate.webp` alone lights up every page's hero). Hand to Codex.
+
+**PR3 verification (live):**
+- `npm run build` ✅ exit 0 (prebuild reported "0 photo asset(s)" → all heroes use the command treatment, **no broken image paths**); `tsc --noEmit` ✅ exit 0; ESLint ✅ 0 new errors.
+- `npm run audit:legaltone` ✅ **PASS** (committed + built output clean). The 19 "preserved-dirty" city files it lists are the **pre-existing repair-branch legal-tone blockers** — not touched by this UI work.
+- **Remaining Sanity refs (honest):** visible-hero + OG path = **0**. Leftovers are non-rendered data only: the unused `states-content/images.ts` / `accidents-content/images.ts` maps, the `images.hero` fields inside `cities-content/*.ts`, and `next.config.ts` `remotePatterns` (keep until P4 city photos exist).
+- After-pr3 screenshots confirm the two index hubs are on-system; other pages are visually identical to PR2 (image layer dormant until photos are dropped).
+
+### What's still blocking "elite"
+1. **Generate the photos** (P0 → P4 in the pack). This is the one thing this session couldn't do. Drop them in `public/brand/photo/`, rebuild — done.
+2. Real tracked phone #. 3. Preserved-dirty legal-tone blockers (production-path). 4. Confirm brand name. 5. Lower-traffic static pages (blog/fmcsa/about/legal) still on legacy body layout (they inherit the new global type/header/footer/sticky-CTA but aren't fully restyled) — a small PR4.
+
 ## 8. Before / after screenshots
 - **Before** (old live site): `docs/redesign-assets/before/` — `before-home-desktop.png`, `before-state-texas-desktop.png`, `before-city-houston-desktop.png`, `before-accident-jackknife-desktop.png`, `before-contact-desktop.png`, `before-home-mobile.png`, `before-city-houston-mobile.png`.
 - **After (PR1)**: `docs/redesign-assets/after/` — same 7 filenames (`after-*`).
 - **After (PR2)**: `docs/redesign-assets/after-pr2/` — home/state/city/accident/contact desktop + home/accident/city mobile (`after-pr2-*`).
+- **After (PR3)**: `docs/redesign-assets/after-pr3/` — the two newly-redesigned hubs (states-index, accidents-index) desktop+mobile + home/city spot-check.
 - OG card: `public/brand/og-default.png`.
 - Working notes / full verification log: `docs/redesign-assets/AUDIT-NOTES.md`.

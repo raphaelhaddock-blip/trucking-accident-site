@@ -15,7 +15,7 @@ import {
   MapPin,
   Users,
 } from '@/components/ui/Icon';
-import { STATE_IMAGES } from '@/lib/states-content/images';
+import { heroPhoto, ogImage as brandOgImage } from '@/lib/brand-images';
 import {
   getCityData,
   getCityDataWithFallback,
@@ -35,7 +35,6 @@ export async function generateStaticParams() {
 }
 
 // Default OG image for pages without specific images
-const DEFAULT_OG_IMAGE = 'https://trucking-accident-site.vercel.app/brand/og-default.png';
 
 // Generate metadata for each city page
 export async function generateMetadata({
@@ -61,10 +60,9 @@ export async function generateMetadata({
   const title = `${cityData.name} 18-Wheeler Accident Attorney | ${stateAbbr}`;
   const description = cityContent?.metaDescription || `Experienced truck accident lawyers in ${cityData.name}, ${stateName}. ${cityData.truckFatalities} fatal truck crashes in ${cityData.dataYear}. Free consultation for 18-wheeler accident victims.`;
 
-  // Get OG image - prefer city-specific image, fallback to state, then default
-  const ogImage = cityContent?.images
-    ? { url: cityContent.images.hero, alt: cityContent.images.heroAlt }
-    : STATE_IMAGES[slug] || { url: DEFAULT_OG_IMAGE, alt: `${cityData.name} truck accident lawyers` };
+  // Local OG: city photo → state photo → brand og-default card (never Sanity)
+  const ogImageUrl = brandOgImage({ stateSlug: slug, citySlug: city });
+  const ogImageAlt = `${cityData.name} truck accident lawyers`;
 
   return {
     title,
@@ -78,10 +76,10 @@ export async function generateMetadata({
       type: 'article',
       images: [
         {
-          url: ogImage.url,
+          url: ogImageUrl,
           width: 1408,
           height: 768,
-          alt: ogImage.alt,
+          alt: ogImageAlt,
         },
       ],
     },
@@ -89,7 +87,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: [ogImage.url],
+      images: [ogImageUrl],
     },
   };
 }
@@ -165,11 +163,6 @@ export default async function CityPage({
   const population = cityContent?.population || cityData.population;
   const truckFatalities = cityContent?.accidentStats?.truckFatalities || cityData.truckFatalities;
 
-  // Get hero image - prefer city-specific image, fallback to state image
-  const heroImage = cityContent?.images
-    ? { url: cityContent.images.hero, alt: cityContent.images.heroAlt }
-    : STATE_IMAGES[slug];
-
   // Schema markup with PostalAddress for Google Maps visibility
   const localBusinessSchema = {
     '@context': 'https://schema.org',
@@ -193,7 +186,7 @@ export default async function CityPage({
       },
     },
     priceRange: 'Free Consultation',
-    image: heroImage?.url || DEFAULT_OG_IMAGE,
+    image: brandOgImage({ stateSlug: slug, citySlug: city }),
   };
 
   const articleSchema = {
@@ -201,7 +194,7 @@ export default async function CityPage({
     '@type': 'Article',
     headline: `${cityData.name} Truck Accident Lawyers - ${stateName}`,
     description: `Truck accident statistics and legal resources for ${cityData.name}`,
-    image: heroImage?.url || DEFAULT_OG_IMAGE,
+    image: brandOgImage({ stateSlug: slug, citySlug: city }),
     datePublished: '2024-01-01',
     dateModified: new Date().toISOString().split('T')[0],
     author: {
@@ -285,6 +278,8 @@ export default async function CityPage({
       {/* Hero — cinematic command treatment (Sanity stock hero dropped) */}
       <CommandHero
         size="lg"
+        imageSrc={heroPhoto({ stateSlug: slug, citySlug: city }) ?? undefined}
+        imageAlt={`${cityData.name}, ${stateName} freight corridor at dusk`}
         eyebrow={`${stateName} Truck Accident Response`}
         title={`${cityData.name} Truck Accident Lawyers`}
         breadcrumb={

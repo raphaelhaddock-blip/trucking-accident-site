@@ -5,6 +5,7 @@ import { submitContactForm, type FormState } from './actions';
 import Breadcrumb from '@/components/Breadcrumb';
 import CommandHero from '@/components/CommandHero';
 import Section from '@/components/ui/Section';
+import { heroPhoto } from '@/lib/brand-images';
 import { stateOptions, accidentTypeOptions } from '@/lib/validation/contact-schema';
 import { Phone, ArrowRight, CheckCircle, Clock, ShieldCheck, Scale, Users } from '@/components/ui/Icon';
 
@@ -88,6 +89,8 @@ export default function ContactPage() {
 
       {/* Hero */}
       <CommandHero
+        imageSrc={heroPhoto({ kind: 'contact' }) ?? undefined}
+        imageAlt="National interstate freight corridor at dusk"
         eyebrow="Free Case Review"
         title="Free Truck Accident Case Evaluation"
         subtitle={
