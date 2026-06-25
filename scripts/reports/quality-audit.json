@@ -13,28 +13,28 @@
     "routesScanned": 1616,
     "withContentFile": 1613,
     "noContentFile": 3,
-    "renderedCandidatePairs": 770284
+    "renderedCandidatePairs": 753876
   },
   "gate": {
     "placeholders": 0,
     "renderedBelowFloor": 0,
-    "renderedPairsOver30pct": 770240,
-    "renderedDocsWithDupPartner": 1483,
+    "renderedPairsOver30pct": 753827,
+    "renderedDocsWithDupPartner": 1467,
     "PASS": false
   },
   "advisory": {
-    "renderedInHubBand_500_900": 356,
-    "renderedAbove900": 1257,
-    "duplicateRenderedMetaDescGroups": 5
+    "renderedInHubBand_500_900": 369,
+    "renderedAbove900": 1244,
+    "duplicateRenderedMetaDescGroups": 4
   },
   "dead_nonGating": {
     "note": "these fields are NOT rendered on city pages; sharing them is not a duplicate-content problem",
-    "storedDeadPairsOver30pct": 782853,
-    "storedDeadDocsWithDupPartner": 1483,
+    "storedDeadPairsOver30pct": 766251,
+    "storedDeadDocsWithDupPartner": 1467,
     "duplicateStoredH1Groups": 114,
-    "duplicateStoredTitleGroups": 33,
+    "duplicateStoredTitleGroups": 32,
     "fmcsaIdenticalGroups": {
-      "groups": 81,
+      "groups": 80,
       "largest": 29
     }
   },
@@ -160,11 +160,6 @@
       "sim": 1
     },
     {
-      "a": "new-jersey/teaneck",
-      "b": "new-jersey/ridgefield-park",
-      "sim": 1
-    },
-    {
       "a": "new-jersey/cinnaminson",
       "b": "new-jersey/mt-laurel",
       "sim": 1
@@ -235,8 +230,13 @@
       "sim": 1
     },
     {
-      "a": "texas/honey-grove",
-      "b": "texas/trenton",
+      "a": "texas/lancaster",
+      "b": "texas/wilmer",
+      "sim": 1
+    },
+    {
+      "a": "texas/lancaster",
+      "b": "texas/addison",
       "sim": 1
     }
   ],
@@ -293,14 +293,6 @@
     }
   ],
   "duplicateRenderedMetaDesc": [
-    {
-      "value": "experienced peoria truck accident lawyers. 2 fatal crashes in 2022. free consult",
-      "count": 2,
-      "sample": [
-        "arizona/peoria-az",
-        "illinois/peoria"
-      ]
-    },
     {
       "value": "experienced fayetteville truck accident lawyers. 5 fatal crashes in 2022. free c",
       "count": 2,
