@@ -178,6 +178,10 @@ Either way: `npm run images:generate` writes the 6 priority images → `npm run 
 
 After-pr4 screenshots: `docs/redesign-assets/after-pr4/` (home/states-index/accidents-index/Texas/Houston/jackknife/contact desktop + home/jackknife mobile).
 
+## Standards + next plans (docs)
+- **Growth OS taxonomy + ontology requirement** (new required standard, not yet implemented): [GROWTH-OS-TAXONOMY-ONTOLOGY.md](GROWTH-OS-TAXONOMY-ONTOLOGY.md). Content scaling is gated on it; images are UI infrastructure and may proceed.
+- **PR5 image expansion plan** (plan only, no spend): [PR5-IMAGE-EXPANSION-PLAN.md](PR5-IMAGE-EXPANSION-PLAN.md) — ~78 bounded images (~$4) by tier, run P2→build→review→P3/P4. Awaiting go.
+
 ## 8. Before / after screenshots
 - **Before** (old live site): `docs/redesign-assets/before/` — `before-home-desktop.png`, `before-state-texas-desktop.png`, `before-city-houston-desktop.png`, `before-accident-jackknife-desktop.png`, `before-contact-desktop.png`, `before-home-mobile.png`, `before-city-houston-mobile.png`.
 - **After (PR1)**: `docs/redesign-assets/after/` — same 7 filenames (`after-*`).
