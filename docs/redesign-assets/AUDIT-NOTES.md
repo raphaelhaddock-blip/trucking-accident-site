@@ -108,4 +108,11 @@ OG-image + phone localization = Raphy-gated follow-ups.
 - Pre-flight: tree clean @6ea1e09, FAL_KEY present (len 69), only jackknife existed. Ground-truthed 20 accident slugs from src/lib/accidents-content.
 - `npm run images:generate --only <19 accident-header>` → 19/19 OK (.jpg 137-216KB), no key in log, no loop. 20 accident-header files total now.
 - COMPLIANCE: built a contact sheet (public/__contact.html via python http) of all 20 → ONE screenshot reviewed. ALL compliant: dusk highway infrastructure, no people/faces/wreckage/readable-text/plates/logos. A few visually similar (acceptable, distinct pages). 0 rejected, 0 regenerated.
-- TODO: rm __contact.html + kill python; build (wire 20); audit:legaltone after build; screenshot 2-3 accident pages desk+mobile; verify no Sanity hero/OG; commit (no .env.local staged). Cost ~$0.95.
+- TODO: rm __contact.html + kill python; build (wire 20); audit:legaltone after build; screenshot 2-3 accident pages desk+mobile; verify no Sanity hero/OG; commit (no .env.local staged). Cost ~$0.95. [DONE → commit a1c2557]
+
+## PR5B LOG (P3a — 9 priority states; P3b NOT run)
+- Approved P3a only (Raphy took my rec). Pre-flight clean @a1c2557, key present, 9 slugs verified real.
+- 9/9 generated (state-california/florida/georgia/pennsylvania/ohio/illinois/north-carolina/tennessee/indiana .jpg 145-173KB), no key leak. 10 state images total.
+- Contact sheet (all 10) reviewed: COMPLIANT (dusk freight corridors; no people/wreckage/text/plates/logos). VARIETY VERDICT = premium but thematically SIMILAR (low per-state distinctiveness — generic-by-design prompt, no landmarks/text). Matches my pre-stated caveat. 0 rejected/regenerated.
+- P3b (40 states) + P4 (cities) = NOT generated, awaiting Raphy decision given the similarity finding.
+- TODO: build (wire), audit:legaltone, screenshot CA state page, commit, report.

@@ -24,5 +24,14 @@ export const AVAILABLE_PHOTOS: string[] = [
   "evidence-records.jpg",
   "hero-interstate.jpg",
   "network-corridor.jpg",
+  "state-california.jpg",
+  "state-florida.jpg",
+  "state-georgia.jpg",
+  "state-illinois.jpg",
+  "state-indiana.jpg",
+  "state-north-carolina.jpg",
+  "state-ohio.jpg",
+  "state-pennsylvania.jpg",
+  "state-tennessee.jpg",
   "state-texas.jpg"
 ];
