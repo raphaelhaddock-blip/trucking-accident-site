@@ -19,7 +19,8 @@
     "audit:legaltone": "npx tsx scripts/quality/audit-legaltone.ts",
     "growth:recommend": "npx tsx scripts/growth/recommend.ts",
     "growth:audit": "npx tsx scripts/growth/audit.ts",
-    "growth:daily": "npx tsx scripts/growth/daily-report.ts"
+    "growth:daily": "npx tsx scripts/growth/daily-report.ts",
+    "growth:test": "npx tsx scripts/growth/selftest.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",

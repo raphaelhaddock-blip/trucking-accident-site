@@ -24,9 +24,11 @@ Status: **foundation built, recommendation-only.** Verified on the real site (16
 | Interlink rules | `src/lib/growth/interlink.ts` | ontology-driven per-page link plan |
 | Site adapter (data) | `src/lib/growth/adapters/trucking.ts` | real repo metadata → ContentItems |
 | Taxonomy adapter (classify) | `src/lib/growth/adapters/trucking-taxonomy.ts` | classify + ontology neighbors |
+| Source/evidence registry | `src/lib/growth/sources.ts` | declares which connectors are available vs FUTURE + what they gate |
 | Daily report | `scripts/growth/daily-report.ts` (`npm run growth:daily`) | composes all → dry-run report + ledger plan |
+| Invariant tests | `scripts/growth/selftest.ts` (`npm run growth:test`) | 10 checks: coverage, ontology caps, net-new refusal, ledger honesty, interlink, source rules |
 
-A second site reuses everything except the two adapters: implement `SiteAdapter` (data) + `TaxonomyAdapter` (classification/ontology) for the new niche and the engine, rankability, ledger, interlink, and daily report work unchanged.
+A second site reuses everything except the two adapters: implement `SiteAdapter` (data) + `TaxonomyAdapter` (classification/ontology) for the new niche and the engine, rankability, ledger, interlink, and daily report work unchanged. Step-by-step: [GROWTH-OS-ADD-A-SITE.md](GROWTH-OS-ADD-A-SITE.md).
 
 ## Taxonomy (how a page is classified)
 Four orthogonal dimensions, all **derived** from route/id (never guessed):
