@@ -51,6 +51,8 @@ The generic city-prompt builder was not fit to run as-is:
 
 ### Tier B — only if Tier A passes the gate (skyline-led, foreground must carry it)
 
+> ✅ **GENERATED + PASSED 2026-06-25** (Tier A gate cleared first). All 5 produced, ~$0.20–0.25, 0 rejected / 0 re-rolls, all compliance-clean. Built + wired (manifest + hero + OG verified in built HTML for NYC & Chicago); `audit:legaltone` PASS. Artifacts: `docs/redesign-assets/after-p4-tierB/`. **Caveat:** Dallas & Atlanta are the closest pair (both aerial-interchange + skyline) — kept, but the skyline composition is now doubled, so **no further skyline cities**. **City image system is COMPLETE** (11 heroes: Houston + 5A + 5B).
+
 | # | City slug | File basename | Why (commercial + freight) | Visual direction (foreground signature) |
 |---|---|---|---|---|
 | 6 | `texas/dallas` | `city-texas-dallas` | Sun Belt mega-market; DFW freight; TX #1 truck-fatality market | **Five-level stack interchange** in front; skyline distant |
