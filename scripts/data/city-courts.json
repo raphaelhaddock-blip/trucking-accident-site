@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "description": "Verified trial court / venue per city. Keyed courts[stateSlug][citySlug]. Sourced from each state's official judicial-branch directory. A court name renders only when confidence==VERIFIED AND its county matches the FARS countyName for the city. Empty until verified. See docs/PR7-SOURCE-PLAN.md.",
+  "courts": {}
+}

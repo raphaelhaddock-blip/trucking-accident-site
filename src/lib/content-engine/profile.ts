@@ -8,6 +8,10 @@ import popRaw from '../../../scripts/data/city-populations.json';
 import topRaw from '../../../scripts/data/top-20-cities.json';
 import regionRaw from '../../../scripts/data/regional-accident-patterns.json';
 import type { FarsCity } from './fars-types';
+import {
+  getVerifiedCorridors, getVerifiedCourt, getVerifiedTraumaCenters, getVerifiedLegalFacts,
+  localDataProvenance, type Corridor, type VenueCourt, type TraumaCenter, type LegalFacts,
+} from './local-data';
 
 type Provenance = 'VERIFIED' | 'GENERAL' | 'NEEDS_SOURCE';
 
@@ -43,6 +47,13 @@ export interface CityProfile {
   // derived tiers
   sizeTier: 'metro' | 'mid' | 'small' | 'farsExtra';
   severityTier: 'none' | 'low' | 'elevated' | 'high';
+  // verified local data (PR7) — empty until an official source is verified per record.
+  // The engine does NOT render these yet; they are wired and provenance-gated so a later
+  // PR can consume them. With the empty PR7 data files these are all [] / null.
+  corridors: Corridor[];
+  venueCourt: VenueCourt | null;
+  traumaCenters: TraumaCenter[];
+  legalFacts: LegalFacts | null;
   // provenance ledger
   provenance: Record<string, Provenance>;
   needsSource: string[];            // human-readable list of gaps
@@ -92,6 +103,16 @@ export function buildCityProfile(stateSlug: string, citySlug: string): CityProfi
         .sort((a, b) => b.percentage - a.percentage)
     : [];
 
+  // Verified-local-data lookups (PR7). Empty data files => all [] / null today.
+  const county = farsCity?.countyName ?? null;
+  const corridors = getVerifiedCorridors(stateSlug, citySlug);
+  const venueCourt = getVerifiedCourt(stateSlug, citySlug, county);
+  const traumaCenters = getVerifiedTraumaCenters(stateSlug, citySlug);
+  const legalFacts = getVerifiedLegalFacts(stateSlug);
+  // roads/hospitals/courthouse/SOL provenance now comes from the verified-data layer.
+  // With empty files these resolve to NEEDS_SOURCE — identical to the prior hardcoded
+  // values — so the ledger and rendered output are unchanged until real data is added.
+  const localProv = localDataProvenance(stateSlug, citySlug, county);
   const provenance: Record<string, Provenance> = {
     identity: 'VERIFIED',
     county: farsCity?.countyName ? 'VERIFIED' : 'NEEDS_SOURCE',
@@ -99,10 +120,10 @@ export function buildCityProfile(stateSlug: string, citySlug: string): CityProfi
     population: population ? 'VERIFIED' : 'NEEDS_SOURCE',
     fars: 'VERIFIED',
     region: region ? 'VERIFIED' : 'NEEDS_SOURCE',
-    roads: 'NEEDS_SOURCE',         // current road data is demonstrably wrong
-    hospitals: 'NEEDS_SOURCE',
-    courthouse: 'NEEDS_SOURCE',
-    statuteOfLimitations: 'NEEDS_SOURCE', // repo legal file is unverified (FL/ME/WV flagged)
+    roads: localProv.roads,
+    hospitals: localProv.hospitals,
+    courthouse: localProv.courthouse,
+    statuteOfLimitations: localProv.statuteOfLimitations,
   };
   const needsSource = Object.entries(provenance)
     .filter(([, v]) => v === 'NEEDS_SOURCE')
@@ -113,7 +134,7 @@ export function buildCityProfile(stateSlug: string, citySlug: string): CityProfi
     name,
     stateSlug,
     stateName,
-    county: farsCity?.countyName ?? null,
+    county,
     lat: farsCity?.lat ?? null,
     lng: farsCity?.lng ?? null,
     population,
@@ -129,6 +150,10 @@ export function buildCityProfile(stateSlug: string, citySlug: string): CityProfi
     dominantMechanism: mechanismMix[0] ?? null,
     sizeTier: sizeTier(population),
     severityTier: severityTier(farsCity?.truckFatalities ?? 0),
+    corridors,
+    venueCourt,
+    traumaCenters,
+    legalFacts,
     provenance,
     needsSource,
   };
