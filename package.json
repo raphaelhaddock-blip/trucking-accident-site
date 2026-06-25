@@ -13,7 +13,8 @@
     "audit:quality": "npx tsx scripts/quality/duplicate-audit.ts",
     "audit:damage": "npx tsx scripts/quality/damage-scan.ts",
     "audit:top20": "npx tsx scripts/quality/build-top20.ts",
-    "audit:localdata": "npx tsx scripts/quality/local-data-validate.ts"
+    "audit:localdata": "npx tsx scripts/quality/local-data-validate.ts",
+    "audit:legaltone": "npx tsx scripts/quality/audit-legaltone.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
