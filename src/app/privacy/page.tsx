@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
 
 // Default OG image
-const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
+const DEFAULT_OG_IMAGE = 'https://trucking-accident-site.vercel.app/brand/og-default.png';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',

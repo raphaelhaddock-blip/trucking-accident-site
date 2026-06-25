@@ -90,7 +90,32 @@ Restyled onto the same system (the three were done by parallel agents on distinc
 - **Photographic assets**: optional; prompts are ready for Codex/a generator.
 - Nothing pushed/deployed. This is a local first pass for your review.
 
+## PR2 — Asset pass + conversion polish (second commit)
+
+**What changed in PR2:**
+- **Breadcrumb contrast fixed** — was `text-gray-600/900` (dark) on the dark hero = near-invisible. Now dark-tone aware (`text-steel-300` links / `text-white` current / amber hover) with real tap padding. JSON-LD `BreadcrumbList` unchanged.
+- **Mobile hero density** — `CommandHero` tightened on mobile: smaller vertical padding, smaller subtitle, breadcrumb spacing, and **full-width CTAs on mobile** (`[&>*]:w-full sm:[&>*]:w-auto`) so the action is reachable fast; stat readout sits below the CTA.
+- **Scanability** — `.prose-legal` now caps line length at ~68ch, bumps body size/rhythm, and styles the first paragraph as a lead. Presentation only — **no legal facts or content meaning changed.**
+- **Real `og-default.png`** (1200×630) — rasterized from the brand kit (ink command bg + freight-network motif + lockup + serif headline + stat readouts) via a headless browser. **Not a stock photo.** At `public/brand/og-default.png`.
+- **Default Sanity OG retired** — the shared default OG URL (1 asset referenced in **15 files**: layout, home, contact, all 5 static pages, blog, and the 4 dynamic templates' fallback) replaced with the local `og-default.png`. Per-page state/city/accident OG still use their Sanity hero images (need per-image rasters — prompts in `public/brand/README.md`).
+- **Brand favicon** wired (`src/app/icon.svg`).
+
+**PR2 verification (live, this session):**
+- `npm run build` ✅ exit 0 (full 1,708-page render incl. sitemap); `tsc --noEmit` ✅ exit 0; ESLint ✅ 0 new errors.
+- Breadcrumb contrast fix confirmed on accident mobile (legible light breadcrumb + chevrons on the dark hero); sticky mobile CTA present on all pages.
+- `og-default.png` is a real 1200×630 brand raster (verified visually); 0 references to the old Sanity default OG remain (`grep`), 15 files now point to the local asset.
+- Nothing pushed/deployed; original checkout untouched.
+
+### Launch blockers (explicit — what stands between this and production)
+1. **Photoreal per-page imagery not generated** — no image generator available this session. Visible heroes use the command treatment (fine); per-page state/city/accident **OG/social** images still point to Sanity. Generate from the prompts in `public/brand/README.md`, drop under `public/brand/photo/`, then wire (pass `imageSrc` to `CommandHero` + swap the per-page OG URLs).
+2. **Placeholder phone `1-800-555-0123`** sitewide — needs a real tracked number before any launch.
+3. **Preserved legal-tone "dirty" blockers** from the repair branch (the uncommitted legal-tone edits in the original checkout) still gate any production path — out of UI-redesign scope, but real.
+4. **`next.config.ts` still allows `cdn.sanity.io`** — keep until per-page images are localized, then tighten.
+5. Brand name "Truck Injury Lawyers" retained (tagline only) — confirm before launch.
+
 ## 8. Before / after screenshots
 - **Before** (old live site): `docs/redesign-assets/before/` — `before-home-desktop.png`, `before-state-texas-desktop.png`, `before-city-houston-desktop.png`, `before-accident-jackknife-desktop.png`, `before-contact-desktop.png`, `before-home-mobile.png`, `before-city-houston-mobile.png`.
-- **After** (this redesign): `docs/redesign-assets/after/` — same 7 filenames (`after-*`).
+- **After (PR1)**: `docs/redesign-assets/after/` — same 7 filenames (`after-*`).
+- **After (PR2)**: `docs/redesign-assets/after-pr2/` — home/state/city/accident/contact desktop + home/accident/city mobile (`after-pr2-*`).
+- OG card: `public/brand/og-default.png`.
 - Working notes / full verification log: `docs/redesign-assets/AUDIT-NOTES.md`.

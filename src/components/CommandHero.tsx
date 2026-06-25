@@ -68,23 +68,27 @@ export default function CommandHero({
       />
       <div className="lane-lines absolute inset-0 -z-10 opacity-40" />
 
-      <div className={`container-page ${size === 'lg' ? 'py-20 md:py-32' : 'py-16 md:py-24'}`}>
+      <div className={`container-page ${size === 'lg' ? 'py-14 md:py-32' : 'py-12 md:py-24'}`}>
         <div className="max-w-3xl">
-          {breadcrumb}
-          {eyebrow && <p className="eyebrow eyebrow-on-ink mt-2">{eyebrow}</p>}
-          <h1 className={`mt-5 font-display font-semibold tracking-tight text-white ${titleSize}`}>
+          {breadcrumb && <div className="mb-4 md:mb-6">{breadcrumb}</div>}
+          {eyebrow && <p className="eyebrow eyebrow-on-ink">{eyebrow}</p>}
+          <h1 className={`mt-3 font-display font-semibold tracking-tight text-white md:mt-5 ${titleSize}`}>
             {title}
           </h1>
           {subtitle && (
-            <div className="mt-6 max-w-2xl text-lg leading-relaxed text-steel-200 md:text-xl">
+            <div className="mt-4 max-w-2xl text-base leading-relaxed text-steel-200 md:mt-6 md:text-xl">
               {subtitle}
             </div>
           )}
-          {children && <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">{children}</div>}
+          {children && (
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap md:mt-8 [&>*]:w-full sm:[&>*]:w-auto">
+              {children}
+            </div>
+          )}
         </div>
 
         {stats && stats.length > 0 && (
-          <div className="mt-14 grid max-w-4xl grid-cols-2 gap-x-8 gap-y-8 md:grid-cols-4">
+          <div className="mt-10 grid max-w-4xl grid-cols-2 gap-x-6 gap-y-6 md:mt-14 md:grid-cols-4 md:gap-x-8 md:gap-y-8">
             {stats.map((s) => (
               <Stat key={s.label} value={s.value} label={s.label} note={s.note} onInk />
             ))}

@@ -373,11 +373,15 @@
   body.has-sticky-cta { padding-bottom: 4.5rem; }
 }
 
-/* Long-form legal prose defaults (state/city/accident body copy) */
-.prose-legal { color: var(--text); line-height: 1.75; }
-.prose-legal p { margin-bottom: 1.1rem; }
+/* Long-form legal prose defaults (state/city/accident body copy).
+   Measure capped at ~68ch for scanability — no-op inside narrow grid cells. */
+.prose-legal { color: var(--text); line-height: 1.75; font-size: 1.0625rem; max-width: 68ch; }
+.prose-legal p { margin-bottom: 1.15rem; }
+.prose-legal p:last-child { margin-bottom: 0; }
 .prose-legal strong { color: var(--text-strong); font-weight: 600; }
 .prose-legal a { color: var(--accent-600); text-decoration: underline; text-underline-offset: 2px; }
+/* Lead paragraph — first paragraph of a long section reads as a summary */
+.prose-legal > p:first-of-type { font-size: 1.15rem; color: var(--text-strong); line-height: 1.65; }
 
 /* Reduced motion respect */
 @media (prefers-reduced-motion: reduce) {

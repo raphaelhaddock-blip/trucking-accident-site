@@ -78,3 +78,11 @@ OG-image + phone localization = Raphy-gated follow-ups.
 - after-screenshots: docs/redesign-assets/after/ (home/state/city/accident/contact desktop + home/city mobile). Captured via transient `next start` on :3006, server killed after.
 - ROOT CAUSE (was 2 bugs, 1 cause): `@theme inline` does NOT emit --font-sans/display/mono as real :root vars → every `var(--font-*)` in base/.eyebrow/.stat fell back to sans; AND unlayered base `h1{color}` beat `.text-white`. FIX: define --font-* on `body` (next/font vars live there); remove color from base h1/h2/h3-h6 (inherit instead); `.bg-command{color:--text-on-ink}` defensive light default; Section light title `text-ink-strong`.
 - Build #3 exit 0. COMPUTED-STYLE VERIFIED (ground truth via browser_evaluate): hero H1 = rgb(255,255,255) white + Newsreader serif; light h2 = rgb(12,22,38) strong; eyebrow = IBM Plex Mono. Home desktop+mobile visually confirmed: cinematic command hero, dark sections legible, sticky mobile CTA, no emoji, no Sanity photos. tsc still clean, no new lint errors.
+
+## PR2 LOG (asset pass + conversion polish)
+- Breadcrumb contrast bug (text-gray-600/900 dark on dark hero → invisible) FIXED: dark-tone aware (steel-300/white/amber) + tap padding; JSON-LD unchanged. Visually confirmed legible on accident mobile.
+- CommandHero mobile density tightened (smaller padding/subtitle, breadcrumb spacing, full-width CTAs on mobile). Sticky CTA still always-present = action always reachable regardless of hero length.
+- .prose-legal: 68ch measure cap + lead first-paragraph (presentation only, no content change).
+- og-default.png (1200x630) rasterized from brand kit via headless browser (real, on-brand, NOT stock) → public/brand/og-default.png. Default Sanity OG URL replaced in 15 files with https://trucking-accident-site.vercel.app/brand/og-default.png (0 old remaining). Per-page state/accident OG still Sanity (need per-image rasters = prompts).
+- Favicon wired: src/app/icon.svg.
+- Build #4 exit 0; tsc clean; eslint clean on changed files. after-pr2 shots: docs/redesign-assets/after-pr2/ (5 desktop + 3 mobile). REMAINING BLOCKER: photoreal per-page hero/header images (no generator in-session) + legal-tone preserved-dirty blockers (production-path, out of UI scope).

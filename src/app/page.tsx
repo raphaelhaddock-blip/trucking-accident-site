@@ -16,7 +16,7 @@ import {
 } from '@/components/ui/Icon';
 
 // Hero image from Sanity CDN - Side view truck (kept for OG/social cards only)
-const HERO_IMAGE_URL = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
+const HERO_IMAGE_URL = 'https://trucking-accident-site.vercel.app/brand/og-default.png';
 
 const PHONE_NUMBER = '1-800-555-0123';
 const PHONE_DISPLAY = '(800) 555-0123';
