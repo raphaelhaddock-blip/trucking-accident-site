@@ -245,9 +245,9 @@ const HUB_FAQS: HubFaq[] = [
   { // 10 how fast must I act / deadline — general (no specific SOL number)
     q: (p) => `How quickly do I need to act on a ${p.name} truck accident claim?`,
     a: (p) => [
-      `Sooner than feels natural. ${p.stateName} sets a filing deadline that varies by claim type, and missing it ends the case no matter how strong it is — but the evidence clock is even tighter, since logs and black-box data can vanish in weeks. Confirm the deadline with a licensed ${p.stateName} attorney rather than a web page.`,
-      `Treat it as urgent on two clocks. One is the ${p.stateName} statute of limitations, a hard cutoff that depends on the type of claim; the other is the evidence, which a carrier can lawfully overwrite within weeks. A licensed ${p.stateName} attorney can confirm the legal deadline; the practical one starts immediately.`,
-      `Fast — and do not rely on a number you read online. The deadline to file in ${p.stateName} is strict and fact-dependent, and the truck's records can be gone long before it runs. The safe move is to have a licensed ${p.stateName} attorney pin down the date while the evidence is still preservable.`,
+      `The practical answer is quickly, because of the evidence: logs and black-box data can be overwritten within weeks, so the steps that preserve them matter right away. Any legal time limit in ${p.stateName} varies by claim type — a licensed ${p.stateName} attorney can confirm that for your situation. This page is general information, not legal advice.`,
+      `There are two clocks. The practical one is the evidence — a carrier can overwrite hours-of-service and black-box data within weeks, so preservation should start early. The legal filing time limit is a separate, state-specific question best confirmed with a licensed ${p.stateName} attorney rather than taken from a web page.`,
+      `Sooner rather than later, mainly because the records disappear: the truck's electronic data and driver logs can be gone within weeks. Any filing time limit in ${p.stateName} depends on the facts and the type of claim, so confirm it with a licensed ${p.stateName} attorney instead of relying on a number online.`,
     ],
   },
   { // 11 federal rules / out-of-state — MECHANISM-agnostic general

@@ -74,7 +74,7 @@ export const SANDY_SPRINGS_CONTENT: CityContent = {
     },
     {
       "question": "How quickly do I need to act on a Sandy Springs truck accident claim?",
-      "answer": "Treat it as urgent on two clocks. One is the Georgia statute of limitations, a hard cutoff that depends on the type of claim; the other is the evidence, which a carrier can lawfully overwrite within weeks. A licensed Georgia attorney can confirm the legal deadline; the practical one starts immediately."
+      "answer": "There are two clocks. The practical one is the evidence — a carrier can overwrite hours-of-service and black-box data within weeks, so preservation should start early. The legal filing time limit is a separate, state-specific question best confirmed with a licensed Georgia attorney rather than taken from a web page."
     }
   ],
   "lastUpdated": "2026-06-24",

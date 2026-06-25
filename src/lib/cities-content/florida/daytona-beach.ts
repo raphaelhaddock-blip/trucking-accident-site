@@ -70,7 +70,7 @@ export const DAYTONA_BEACH_CONTENT: CityContent = {
     },
     {
       "question": "How quickly do I need to act on a Daytona Beach truck accident claim?",
-      "answer": "Treat it as urgent on two clocks. One is the Florida statute of limitations, a hard cutoff that depends on the type of claim; the other is the evidence, which a carrier can lawfully overwrite within weeks. A licensed Florida attorney can confirm the legal deadline; the practical one starts immediately."
+      "answer": "There are two clocks. The practical one is the evidence — a carrier can overwrite hours-of-service and black-box data within weeks, so preservation should start early. The legal filing time limit is a separate, state-specific question best confirmed with a licensed Florida attorney rather than taken from a web page."
     },
     {
       "question": "What should I do right after a truck accident in Daytona Beach?",

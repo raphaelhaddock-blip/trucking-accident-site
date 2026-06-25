@@ -223,7 +223,7 @@ export default async function CityPage({
     },
     {
       question: `How long do I have to file a truck accident lawsuit in ${stateName}?`,
-      answer: `${stateName} has a statute of limitations for personal injury claims that sets strict deadlines for filing. Missing this deadline means losing your right to compensation forever. Contact a ${cityData.name} truck accident lawyer promptly to ensure your claim is filed on time and all evidence is preserved.`,
+      answer: `${stateName} sets legal time limits for personal injury claims, and they vary by the type of claim and the facts. Because getting that wrong can affect a case, it is worth confirming with a licensed ${stateName} attorney rather than relying on a web page. Separately, the physical evidence — the truck's logs and electronic data — can disappear within weeks, so preserving it early matters regardless of the legal deadline. This is general information, not legal advice.`,
     },
     {
       question: `Who can be held liable for a truck accident in ${cityData.name}?`,

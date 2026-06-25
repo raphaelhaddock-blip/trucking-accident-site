@@ -70,7 +70,7 @@ export const BURLINGTON_CONTENT: CityContent = {
     },
     {
       "question": "How quickly do I need to act on a Burlington truck accident claim?",
-      "answer": "Treat it as urgent on two clocks. One is the Vermont statute of limitations, a hard cutoff that depends on the type of claim; the other is the evidence, which a carrier can lawfully overwrite within weeks. A licensed Vermont attorney can confirm the legal deadline; the practical one starts immediately."
+      "answer": "There are two clocks. The practical one is the evidence — a carrier can overwrite hours-of-service and black-box data within weeks, so preservation should start early. The legal filing time limit is a separate, state-specific question best confirmed with a licensed Vermont attorney rather than taken from a web page."
     },
     {
       "question": "Do federal trucking rules apply to my Burlington crash?",

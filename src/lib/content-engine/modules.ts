@@ -234,15 +234,15 @@ const truckingIndustrySlots: { salt: string; pool: Slot[] }[] = [
 // ================= LEGAL INFO (venue name only; SOL deliberately not asserted) =================
 const legalInfoSlots: { salt: string; pool: Slot[] }[] = [
   { salt: 'g-venue', pool: [
-    (p) => p.county ? `A truck-injury claim arising in ${p.name} would generally be handled in the ${p.stateName} courts that cover ${p.county} County.` : `A truck-injury claim arising in ${p.name} would generally be handled in the ${p.stateName} courts covering that area.`,
-    (p) => p.county ? `Venue for a ${p.name} crash typically falls to the ${p.stateName} trial court for ${p.county} County.` : `Venue for a ${p.name} crash typically falls to the local ${p.stateName} trial court.`,
-    (p) => p.county ? `A case from ${p.name} would ordinarily be filed in the ${p.stateName} court serving ${p.county} County.` : `A case from ${p.name} would ordinarily be filed in the local ${p.stateName} court.`,
+    (p) => p.county ? `${p.name} sits within ${p.county} County, part of the ${p.stateName} court system; which specific court handles any given matter depends on the facts.` : `${p.name} is served by the ${p.stateName} court system; the specific court for a given matter depends on the facts.`,
+    (p) => p.county ? `For public-record purposes, ${p.name} is in ${p.county} County, ${p.stateName}. A licensed attorney can confirm where a particular claim belongs.` : `For public-record purposes, ${p.name} is in ${p.stateName}. A licensed attorney can confirm where a particular claim belongs.`,
+    (p) => p.county ? `${p.name} falls in ${p.county} County within the ${p.stateName} courts; the right forum for any specific case is a question for a licensed attorney.` : `${p.name} falls within the ${p.stateName} courts; the right forum for any specific case is a question for a licensed attorney.`,
   ]},
   { salt: 'g-sol', pool: [
     (p) => `${p.stateName} sets the deadline to file and the rule for shared fault, and both are specific enough that they should be confirmed with a licensed attorney rather than taken from a web page.`,
-    (p) => `The filing deadline in ${p.stateName} is a hard cutoff that varies by claim type; treat any number you read online as a prompt to call a lawyer, not as legal advice.`,
+    (p) => `Filing time limits in ${p.stateName} vary by claim type and facts; treat any number you read online as a prompt to call a licensed attorney, not as legal advice.`,
     (p) => `Time limits and fault rules in ${p.stateName} are strict and fact-dependent, which is exactly why a licensed attorney should confirm them for your situation.`,
-    (p) => `Miss the ${p.stateName} deadline and the strongest case in the world is over, so the date — which depends on the facts — is something to nail down with a lawyer early.`,
+    (p) => `${p.stateName} sets time limits and shared-fault rules that turn on the specific facts, which is why they are worth confirming early with a licensed attorney rather than a web page.`,
     (p) => `How ${p.stateName} treats partial fault and how long you have to file are not details to guess at; they decide whether and how much you recover.`,
   ]},
   { salt: 'g-process', pool: [

@@ -70,7 +70,7 @@ export const SADDLE_RIVER_CONTENT: CityContent = {
     },
     {
       "question": "How quickly do I need to act on a Saddle River truck accident claim?",
-      "answer": "Fast — and do not rely on a number you read online. The deadline to file in New Jersey is strict and fact-dependent, and the truck's records can be gone long before it runs. The safe move is to have a licensed New Jersey attorney pin down the date while the evidence is still preservable."
+      "answer": "Sooner rather than later, mainly because the records disappear: the truck's electronic data and driver logs can be gone within weeks. Any filing time limit in New Jersey depends on the facts and the type of claim, so confirm it with a licensed New Jersey attorney instead of relying on a number online."
     },
     {
       "question": "What does it cost to hire a truck accident lawyer in Saddle River?",

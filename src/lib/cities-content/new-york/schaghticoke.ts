@@ -70,7 +70,7 @@ export const SCHAGHTICOKE_CONTENT: CityContent = {
     },
     {
       "question": "How quickly do I need to act on a Schaghticoke truck accident claim?",
-      "answer": "Fast — and do not rely on a number you read online. The deadline to file in New York is strict and fact-dependent, and the truck's records can be gone long before it runs. The safe move is to have a licensed New York attorney pin down the date while the evidence is still preservable."
+      "answer": "Sooner rather than later, mainly because the records disappear: the truck's electronic data and driver logs can be gone within weeks. Any filing time limit in New York depends on the facts and the type of claim, so confirm it with a licensed New York attorney instead of relying on a number online."
     },
     {
       "question": "Do federal trucking rules apply to my Schaghticoke crash?",

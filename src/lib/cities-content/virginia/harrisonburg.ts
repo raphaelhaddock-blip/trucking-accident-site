@@ -70,7 +70,7 @@ export const HARRISONBURG_CONTENT: CityContent = {
     },
     {
       "question": "How quickly do I need to act on a Harrisonburg truck accident claim?",
-      "answer": "Sooner than feels natural. Virginia sets a filing deadline that varies by claim type, and missing it ends the case no matter how strong it is — but the evidence clock is even tighter, since logs and black-box data can vanish in weeks. Confirm the deadline with a licensed Virginia attorney rather than a web page."
+      "answer": "The practical answer is quickly, because of the evidence: logs and black-box data can be overwritten within weeks, so the steps that preserve them matter right away. Any legal time limit in Virginia varies by claim type — a licensed Virginia attorney can confirm that for your situation. This page is general information, not legal advice."
     },
     {
       "question": "Do federal trucking rules apply to my Harrisonburg crash?",

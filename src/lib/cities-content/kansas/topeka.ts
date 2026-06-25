@@ -70,7 +70,7 @@ export const TOPEKA_CONTENT: CityContent = {
     },
     {
       "question": "How quickly do I need to act on a Topeka truck accident claim?",
-      "answer": "Sooner than feels natural. Kansas sets a filing deadline that varies by claim type, and missing it ends the case no matter how strong it is — but the evidence clock is even tighter, since logs and black-box data can vanish in weeks. Confirm the deadline with a licensed Kansas attorney rather than a web page."
+      "answer": "The practical answer is quickly, because of the evidence: logs and black-box data can be overwritten within weeks, so the steps that preserve them matter right away. Any legal time limit in Kansas varies by claim type — a licensed Kansas attorney can confirm that for your situation. This page is general information, not legal advice."
     },
     {
       "question": "What should I do right after a truck accident in Topeka?",

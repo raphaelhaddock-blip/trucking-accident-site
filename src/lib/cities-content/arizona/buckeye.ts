@@ -74,7 +74,7 @@ export const BUCKEYE_CONTENT: CityContent = {
     },
     {
       "question": "How quickly do I need to act on a Buckeye truck accident claim?",
-      "answer": "Fast — and do not rely on a number you read online. The deadline to file in Arizona is strict and fact-dependent, and the truck's records can be gone long before it runs. The safe move is to have a licensed Arizona attorney pin down the date while the evidence is still preservable."
+      "answer": "Sooner rather than later, mainly because the records disappear: the truck's electronic data and driver logs can be gone within weeks. Any filing time limit in Arizona depends on the facts and the type of claim, so confirm it with a licensed Arizona attorney instead of relying on a number online."
     }
   ],
   "lastUpdated": "2026-06-24",
