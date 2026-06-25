@@ -52,9 +52,12 @@ export default function CommandHero({
             fill
             priority
             sizes="100vw"
-            className="-z-10 object-cover opacity-30"
+            className="-z-10 object-cover opacity-[0.55]"
           />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-950/90 via-ink-900/80 to-ink-900/40" />
+          {/* Text-column scrim (protects the headline at left) */}
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink-950/92 via-ink-950/70 to-ink-900/25" />
+          {/* Bottom scrim (keeps CTAs + stat readout legible) */}
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-ink-950/85 via-ink-950/20 to-transparent" />
         </>
       )}
       {/* Freight-network motif */}

@@ -160,6 +160,24 @@ Either way: `npm run images:generate` writes the 6 priority images → `npm run 
 
 **PR4 verification:** `npm run build` ✅ exit 0 (prebuild still "0 photos" until generation runs); `tsc` ✅ exit 0; generator `--list` ✅ correct prompts. No after-pr4 screenshots — nothing changed visually until images exist (site renders the PR3 command treatment).
 
+## PR4B — Flux Pro images generated + wired (executed)
+
+**Generated** (`npm run images:generate`, `fal-ai/flux-pro/v1.1`, key from `./.env.local`, never printed): **6/6** `.jpg` (150–198 KB) in `public/brand/photo/` — `hero-interstate`, `network-corridor`, `evidence-records`, `state-texas`, `city-texas-houston`, `accident-header-jackknife-accidents`.
+
+**Compliance (viewed before wiring):** hero-interstate (dusk interchange, light trails, trucks at distance), evidence-records (blank notepad/clipboard/tape on dark steel), accident-jackknife (semi on a wet dusk curve — no crash). **No people, no faces, no wreckage, no readable text/signage.** Premium documentary grade.
+
+**Wired:** build prebuild detected all 6; resolver matches by basename. Because `hero-interstate` exists as the global fallback, **every hero is now photo-backed** — the 6 have tailored photos, all other pages share the interchange hero; **no page is on the bare command treatment, and no visible hero uses Sanity.** OG uses the specific photo for the 6, else the local `og-default.png`.
+
+**Overlay tuned:** first wiring was too dark (photo barely visible, esp. mobile). Lightened `CommandHero` (image `opacity-0.55` + text-column scrim + bottom scrim) — photo now reads on desktop **and** mobile while the white serif headline, stats, and CTAs stay fully legible. Re-verified home (mobile) + Texas.
+
+**Verification (live):** `npm run build` ✅ exit 0 (prebuild "6 photo assets"); `npm run audit:legaltone` ✅ PASS; sticky mobile CTA works; no layout overlap; hero text legible over photos; **page/component-layer `cdn.sanity.io` refs = 0.**
+
+**Remaining Sanity (honest):** zero in the rendered/hero/OG path. Leftovers are non-rendered data only — the unused `states-content/images.ts` & `accidents-content/images.ts` maps, the `images.hero` fields in `cities-content/*.ts`, and `next.config.ts` `remotePatterns`.
+
+**To scale beyond the proof set:** `npm run images:generate -- --only state-california,accident-header-rollover-accidents,…` (or extend `DEFAULT_SET`), then `npm run build`. Same pipeline; ~$0.05/image.
+
+After-pr4 screenshots: `docs/redesign-assets/after-pr4/` (home/states-index/accidents-index/Texas/Houston/jackknife/contact desktop + home/jackknife mobile).
+
 ## 8. Before / after screenshots
 - **Before** (old live site): `docs/redesign-assets/before/` — `before-home-desktop.png`, `before-state-texas-desktop.png`, `before-city-houston-desktop.png`, `before-accident-jackknife-desktop.png`, `before-contact-desktop.png`, `before-home-mobile.png`, `before-city-houston-mobile.png`.
 - **After (PR1)**: `docs/redesign-assets/after/` — same 7 filenames (`after-*`).

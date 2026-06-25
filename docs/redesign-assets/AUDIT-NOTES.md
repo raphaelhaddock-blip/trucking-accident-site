@@ -96,3 +96,10 @@ OG-image + phone localization = Raphy-gated follow-ups.
 - Build #5 exit 0 (prebuild: 0 photos found → empty manifest → command treatment, no broken paths). tsc clean. audit:legaltone PASS (committed+built clean; 19 preserved-dirty city files = pre-existing repair-branch blockers, NOT mine, UI-only change can't regress legal tone).
 - Remaining Sanity (honest): visible/OG path = 0. Leftover = unused data maps (states-content/images.ts, accidents-content/images.ts) + per-city image.hero fields in cities-content/*.ts (data, not rendered) + next.config remotePatterns (keep until P4 city photos localized). Doc: docs/PR3-PRO-IMAGE-GENERATION-PACK.md.
 - after-pr3 shots: docs/redesign-assets/after-pr3/ (states-index + accidents-index desktop+mobile, home + city desktop). Other pages visually identical to PR2 (image wiring dormant until photos dropped).
+
+## PR4B LOG (bounded Flux Pro generation — 6 assets)
+- FAL_KEY confirmed in ./.env.local (Raphy provisioned; gitignored; never printed). `npm run images:generate` → 6/6 OK as .jpg (150-198KB): hero-interstate, network-corridor, evidence-records, state-texas, city-texas-houston, accident-header-jackknife-accidents. No loop, no other repo touched.
+- COMPLIANCE CHECK (view before wiring): hero-interstate ✓ premium dusk interchange, light trails, trucks-at-distance, NO people/text/wreckage. [check evidence-records + accident-jackknife next]
+- Build #7 exit 0, prebuild detected 6, manifest populated. All 6 served 200. Images COMPLIANT (hero-interstate/evidence-records/accident-jackknife viewed: no people/text/wreckage; premium).
+- LEGIBILITY FINDING: text fully legible BUT overlay too dark — desktop photo only reads on right edge, mobile photo nearly hidden. Tuning CommandHero photo layer (opacity 30→~42, gradient lighter on right) to show more photo while keeping text legible. Rebuild + re-shoot home/texas to confirm. If legibility regresses → revert (current is the safe baseline).
+- after-pr4 shots (9): docs/redesign-assets/after-pr4/. Pending overlay tune + audit:legaltone + commit.
