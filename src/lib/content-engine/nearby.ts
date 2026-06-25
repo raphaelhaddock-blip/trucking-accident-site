@@ -27,9 +27,12 @@ export function nearbyCities(stateSlug: string, citySlug: string, count = 6): Ne
   const cities = FARS.states[stateSlug]?.cities ?? [];
   const self = cities.find((c) => c.slug === citySlug);
   if (!self?.lat || !self?.lng) return [];
+  const selfLat = self.lat;
+  const selfLng = self.lng;
   return cities
-    .filter((c) => c.slug !== citySlug && c.lat && c.lng)
-    .map((c) => ({ slug: c.slug, name: c.name, miles: Math.round(haversineMi(self.lat, self.lng, c.lat, c.lng)) }))
+    .filter((c): c is FarsCity & { lat: number; lng: number } =>
+      c.slug !== citySlug && c.lat != null && c.lng != null)
+    .map((c) => ({ slug: c.slug, name: c.name, miles: Math.round(haversineMi(selfLat, selfLng, c.lat, c.lng)) }))
     .sort((a, b) => a.miles - b.miles)
     .slice(0, count);
 }

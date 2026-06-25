@@ -84,6 +84,27 @@ export async function generateMetadata({
 // Phone number for CTAs
 const PHONE_NUMBER = '1-800-555-0123';
 
+// Maps a regional accident-mechanism label (from commonAccidents.type) to its
+// national deep-dive page. Lets a thin local hub link out to the substance — how
+// each crash type is investigated, who is liable, what evidence matters — instead
+// of repeating that federal content on every city page.
+const MECHANISM_TO_SLUG: Record<string, string> = {
+  'rear end': 'rear-end-collisions',
+  'rollover': 'rollover-accidents',
+  'jackknife': 'jackknife-accidents',
+  'sideswipe': 'sideswipe-accidents',
+  'head on': 'head-on-collisions',
+  't bone': 't-bone-accidents',
+  'underride': 'underride-accidents',
+  'override': 'override-accidents',
+  'blind spot': 'blind-spot-accidents',
+  'wide turn': 'wide-turn-accidents',
+};
+function mechanismSlug(type: string): string | null {
+  const k = type.toLowerCase().replace(/[^a-z ]/g, ' ').replace(/\s+/g, ' ').trim();
+  return MECHANISM_TO_SLUG[k] ?? null;
+}
+
 export default async function CityPage({
   params,
 }: {
@@ -108,6 +129,19 @@ export default async function CityPage({
   const otherCities = getCitiesForState(slug)
     .filter(c => c.slug !== city)
     .slice(0, 6);
+
+  // Engine-hub detection: a thin local hub has trucking-industry prose but no
+  // sourced roads. Enhanced/metro pages (sourced roads) and templated fallbacks
+  // are unaffected. Used to show a provenance note and the national-resources block.
+  const isHub = Boolean(cityContent?.truckingIndustry) && (cityContent?.dangerousRoads?.length ?? 0) === 0;
+  // Deduped, mapped regional mechanisms -> national deep-dive pages.
+  const mechanismLinks = Array.from(
+    new Map(
+      (cityContent?.commonAccidents ?? [])
+        .map((a) => [mechanismSlug(a.type), a.type] as const)
+        .filter((pair): pair is [string, string] => pair[0] !== null)
+    ).entries()
+  ).slice(0, 6);
 
   // Use population from city content (which has real data) or fallback
   const population = cityContent?.population || cityData.population;
@@ -407,19 +441,38 @@ export default async function CityPage({
           {cityContent?.commonAccidents && cityContent.commonAccidents.length > 0 ? (
             // Use regional accident data with unique percentages
             <div className="grid md:grid-cols-2 gap-6">
-              {cityContent.commonAccidents.map((accident, index) => (
-                <div key={index} className="bg-gray-50 rounded-lg p-6">
-                  <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-xl font-bold text-navy-900">{accident.type}</h3>
-                    {accident.percentage && (
-                      <span className="bg-amber-100 text-amber-800 text-sm font-medium px-3 py-1 rounded-full">
-                        {accident.percentage}
-                      </span>
+              {cityContent.commonAccidents.map((accident, index) => {
+                const slug = mechanismSlug(accident.type);
+                return (
+                  <div key={index} className="bg-gray-50 rounded-lg p-6">
+                    <div className="flex justify-between items-start mb-3">
+                      <h3 className="text-xl font-bold text-navy-900">
+                        {slug ? (
+                          <Link href={`/accidents/${slug}`} className="hover:text-amber-600 transition">
+                            {accident.type}
+                          </Link>
+                        ) : (
+                          accident.type
+                        )}
+                      </h3>
+                      {accident.percentage && (
+                        <span className="bg-amber-100 text-amber-800 text-sm font-medium px-3 py-1 rounded-full">
+                          {accident.percentage}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-gray-700">{accident.localFactor}</p>
+                    {slug && (
+                      <Link
+                        href={`/accidents/${slug}`}
+                        className="inline-block mt-3 text-sm font-semibold text-amber-600 hover:text-amber-700"
+                      >
+                        How these cases are built &rarr;
+                      </Link>
                     )}
                   </div>
-                  <p className="text-gray-700">{accident.localFactor}</p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           ) : (
             // Fallback to generic content
@@ -455,6 +508,60 @@ export default async function CityPage({
                 </p>
               </div>
             </div>
+          )}
+        </div>
+      </section>
+
+      {/* National Resources Section — deep-link the local hub to the federal substance */}
+      <section className="py-16 bg-gray-50 border-t">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-navy-900 mb-4">
+            How a {cityData.name} Truck Accident Case Works
+          </h2>
+          <p className="text-gray-700 mb-8">
+            Truck claims turn on federal rules and physical evidence that are the same whether the
+            crash happened in {cityData.name} or anywhere else. These national guides go deep on the
+            parts that decide a case — what to preserve, who can be held liable, and how value is built.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {mechanismLinks.length > 0 && mechanismLinks.map(([mSlug, mType]) => (
+              <Link
+                key={mSlug}
+                href={`/accidents/${mSlug}`}
+                className="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition border-l-4 border-amber-500"
+              >
+                <span className="font-bold text-navy-900">{mType} crashes</span>
+                <span className="block text-sm text-gray-600 mt-1">
+                  How they happen, the evidence trail, and who is liable.
+                </span>
+              </Link>
+            ))}
+            <Link
+              href="/fmcsa-regulations"
+              className="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition border-l-4 border-navy-900"
+            >
+              <span className="font-bold text-navy-900">FMCSA Trucking Regulations</span>
+              <span className="block text-sm text-gray-600 mt-1">
+                The federal rules — hours of service, maintenance, driver files — that often decide fault.
+              </span>
+            </Link>
+            <Link
+              href="/accidents"
+              className="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition border-l-4 border-navy-900"
+            >
+              <span className="font-bold text-navy-900">All Truck Accident Types</span>
+              <span className="block text-sm text-gray-600 mt-1">
+                Evidence preservation, liable parties, and compensation factors, by crash type.
+              </span>
+            </Link>
+          </div>
+          {isHub && (
+            <p className="text-sm text-gray-500 mt-8 border-t pt-4">
+              <strong>About this page:</strong> the local figures above come from NHTSA&apos;s FARS
+              fatality records. We do not list specific {cityData.name} roads, courts, or carriers
+              unless we can source them, so state-law deadlines and local specifics should be confirmed
+              with a licensed {stateName} attorney.
+            </p>
           )}
         </div>
       </section>
