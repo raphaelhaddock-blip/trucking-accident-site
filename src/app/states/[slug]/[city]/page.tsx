@@ -579,12 +579,14 @@ export default async function CityPage({
             </p>
             <ul className="text-gray-300 space-y-3 mt-6">
               <li>
-                <strong className="text-white">Knowledge of {stateName} trucking laws</strong> -
-                State regulations add layers of liability beyond federal FMCSA rules.
+                <strong className="text-white">Preserving the evidence</strong> -
+                Organizing the trucking company&apos;s records, the driver&apos;s logs, and the
+                federal compliance trail that a routine car case never involves.
               </li>
               <li>
-                <strong className="text-white">Familiarity with local courts</strong> -
-                Understanding how {cityData.name} area judges and juries handle truck accident cases.
+                <strong className="text-white">Tracking the deadlines</strong> -
+                Keeping the filing deadline and the evidence-preservation steps on schedule,
+                so nothing critical lapses while you recover.
               </li>
               <li>
                 <strong className="text-white">Quick accident scene investigation</strong> -
@@ -730,8 +732,9 @@ export default async function CityPage({
             Injured in a {cityData.name} Truck Accident?
           </h2>
           <p className="text-gray-300 mb-8 text-lg">
-            Get experienced legal representation from attorneys who know {cityData.name} and
-            {stateName} trucking laws. We fight to hold trucking companies accountable.
+            Get experienced legal representation that knows how to preserve the trucking
+            company&apos;s records, meet the deadlines, and hold carriers accountable under the
+            federal safety rules. We fight to hold trucking companies accountable.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
