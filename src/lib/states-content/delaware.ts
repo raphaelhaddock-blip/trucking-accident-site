@@ -107,7 +107,7 @@ Contact an attorney promptly after any serious Delaware truck accident to protec
 
   courtInfo: `Truck accident cases in Delaware may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Delaware state courts follow state procedural rules and apply Delaware substantive law. The District of Delaware federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-Delaware state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
+Delaware state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Venue is governed by state statute and court procedure based on where the crash occurred and where the parties are located.
 
 Both state and federal courts in Delaware allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
@@ -115,7 +115,7 @@ Delaware does not cap economic damages in personal injury cases, allowing full r
 
   lastUpdated: '2026-01-10',
 
-  whyHireLocal: `Delaware truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Delaware state law. Local counsel knows the Delaware court system, local procedures, and the judges who will hear your case. They understand how Delaware juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
+  whyHireLocal: `Delaware truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Delaware state law. Local counsel knows the Delaware court system, local procedures, and the procedural rules that govern each case. They understand how state law applies to trucking-company negligence and how to preserve and present evidence — driver logs, ELD data, and maintenance records — through proper court procedure.
 
 Delaware presents unique challenges for truck accident litigation. The state's i-95 congestion and weather creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 

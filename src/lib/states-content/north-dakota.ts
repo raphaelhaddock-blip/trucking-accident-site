@@ -107,7 +107,7 @@ Contact an attorney promptly after any serious North Dakota truck accident to pr
 
   courtInfo: `Truck accident cases in North Dakota may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. North Dakota state courts follow state procedural rules and apply North Dakota substantive law. The District of North Dakota federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-North Dakota state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
+North Dakota state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Venue is governed by state statute and court procedure based on where the crash occurred and where the parties are located.
 
 Both state and federal courts in North Dakota allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
@@ -115,7 +115,7 @@ North Dakota does not cap economic damages in personal injury cases, allowing fu
 
   lastUpdated: '2026-01-10',
 
-  whyHireLocal: `North Dakota truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of North Dakota state law. Local counsel knows the North Dakota court system, local procedures, and the judges who will hear your case. They understand how North Dakota juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
+  whyHireLocal: `North Dakota truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of North Dakota state law. Local counsel knows the North Dakota court system, local procedures, and the procedural rules that govern each case. They understand how state law applies to trucking-company negligence and how to preserve and present evidence — driver logs, ELD data, and maintenance records — through proper court procedure.
 
 North Dakota presents unique challenges for truck accident litigation. The state's extreme cold and oil field traffic creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 
