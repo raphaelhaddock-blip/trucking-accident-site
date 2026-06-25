@@ -60,13 +60,16 @@ function main() {
   const targets: string[] = JSON.parse(readFileSync(listArg, 'utf8'));
   const manifest: string[] = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : [];
   const alreadyWritten = new Set(manifest);
+  // --force re-emits pages already in the manifest (deterministic regeneration to pick up
+  // engine wording changes). It still never touches PROTECTED pages.
+  const force = process.argv.includes('--force');
 
   const written: string[] = [];
   const skipped: string[] = [];
   for (const key of targets) {
     if (written.length >= limit) break;
     if (PROTECTED.has(key)) { skipped.push(`${key} (PROTECTED)`); continue; }
-    if (alreadyWritten.has(key)) { skipped.push(`${key} (already written)`); continue; }
+    if (alreadyWritten.has(key) && !force) { skipped.push(`${key} (already written)`); continue; }
     const [state, city] = key.split('/');
     const path = join('src', 'lib', 'cities-content', state, `${city}.ts`);
     if (!existsSync(path)) { skipped.push(`${key} (no existing file)`); continue; } // never create routes

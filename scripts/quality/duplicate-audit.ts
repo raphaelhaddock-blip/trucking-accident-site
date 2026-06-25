@@ -43,6 +43,8 @@ import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { getAllCityParams, getCityContent, getStateName } from '../../src/lib/cities-content/index';
 import type { CityContent } from '../../src/lib/cities-content/types';
+import { buildCityProfile } from '../../src/lib/content-engine/profile';
+import { courtContextText } from '../../src/lib/content-engine/local-data';
 
 const CITY_HUB_WORD_FLOOR = 500; // hard fail below this many RENDERED words
 const HUB_ADVISORY_MAX = 900; // 500–900 is the intended hub band (advisory only)
@@ -73,13 +75,23 @@ for (let i = 0; i < NUM_HASHES; i++) {
 
 // ---------- field extractors ----------
 // EXACTLY the CityContent fields the city route renders (the published surface).
-function renderedText(c: CityContent): string {
+// Neutral VERIFIED court-context block (PR9) the route injects — modeled here so the gate
+// measures the published surface. Computed once per city via the same resolver the route
+// uses (buildCityProfile().venueCourt), so it appears exactly when/where the page shows it.
+function courtBlockFor(stateSlug: string, citySlug: string): string {
+  const p = buildCityProfile(stateSlug, citySlug);
+  if (!p?.venueCourt) return '';
+  return courtContextText(p.venueCourt, p.name, p.stateName);
+}
+
+function renderedText(c: CityContent, courtBlock = ''): string {
   const parts: string[] = [
     c.heroText ?? '',
     c.truckingIndustry ?? '',
     ...(c.dangerousRoads ?? []).map((r) => `${r.name} ${r.description}`),
     ...(c.commonAccidents ?? []).map((a) => `${a.type} ${a.localFactor}`),
     ...(c.faqs ?? []).map((f) => `${f.question} ${f.answer}`),
+    courtBlock,
   ];
   return parts.join(' \n ');
 }
@@ -203,7 +215,7 @@ async function main() {
   for (const p of params) {
     const c = await getCityContent(p.slug, p.city);
     if (!c) { noContentFile++; continue; }
-    const rendered = renderedText(c);
+    const rendered = renderedText(c, courtBlockFor(p.slug, p.city));
     const renderedNorm = normalize(rendered, c);
     const renderedSh = shingles(renderedNorm);
     const dead = storedDeadText(c);

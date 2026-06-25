@@ -6,8 +6,9 @@
  * AND passes its category cross-check. Missing, GENERAL, NEEDS_SOURCE, or cross-check-
  * failing records resolve to null / []. The page may be less specific, never wrong.
  *
- * The data files (scripts/data/city-{roads,courts,hospitals}.json) ship EMPTY in PR7,
- * so every getter returns null/[] today and the engine output is unchanged. Records are
+ * Data status: city-courts.json holds VERIFIED court records (PR8, rendered as neutral
+ * sourced context in PR9 — see courtContextText below). city-roads.json and
+ * city-hospitals.json remain EMPTY (NEEDS_SOURCE); their getters return []. Records are
  * added only after a human verifies an official source (see docs/PR7-SOURCE-PLAN.md).
  *
  * Validated by scripts/quality/local-data-validate.ts (`npm run audit:localdata`).
@@ -134,6 +135,21 @@ export function getVerifiedTraumaCenters(stateSlug: string, citySlug: string): T
 }
 export function getVerifiedLegalFacts(stateSlug: string): LegalFacts | null {
   return resolveLegal(LEGAL.statuteOfLimitations?.[stateSlug], LEGAL.negligenceRules?.[stateSlug]);
+}
+
+/**
+ * courtContextText — the EXACT neutral, sourced court-context sentence rendered on the
+ * city page (PR9) and modeled by the duplicate gate (PR10). Single source of truth so
+ * the published surface and the similarity gate never drift. Public-record wording only;
+ * not legal advice; no venue/filing/judge/SOL claims. The route renders the court NAME as
+ * a link to sourceUrl but the textual content matches this string.
+ */
+export function courtContextText(vc: VenueCourt, cityName: string, stateName: string): string {
+  const name = vc.displayName ?? vc.trialCourtName;
+  return `Court context: ${cityName} is located in ${vc.county} County, ${stateName}. ` +
+    `The trial court that serves ${vc.county} County is the ${name} — see the official court ` +
+    `website for locations, hours, and filing information. This is general public-record ` +
+    `information, not legal advice.`;
 }
 
 /** Provenance for the ledger: 'VERIFIED' only when a getter would return data. */

@@ -20,6 +20,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { buildCityProfile } from '../../src/lib/content-engine/profile';
 import { composeCityContentHub } from '../../src/lib/content-engine/compose';
+import { courtContextText } from '../../src/lib/content-engine/local-data';
 import { getAllCityParams, getCityContent, getStateName } from '../../src/lib/cities-content/index';
 import type { CityContent } from '../../src/lib/cities-content/types';
 
@@ -48,12 +49,19 @@ const WRITTEN: string[] = existsSync(WRITTEN_MANIFEST) ? JSON.parse(readFileSync
 const PROTECTED = new Set([...PILOTS, ...CONTROLS, ...PRESERVED, ...WRITTEN]);
 
 type Meta = { name: string; slug: string; stateSlug: string; stateName: string };
+// Court-context block the route injects for VERIFIED records — modeled so the gate scores
+// the published surface for both corpus pages and hub candidates (same city => same block).
+function courtBlockFor(stateSlug: string, citySlug: string): string {
+  const p = buildCityProfile(stateSlug, citySlug);
+  return p?.venueCourt ? courtContextText(p.venueCourt, p.name, p.stateName) : '';
+}
 function renderedText(c: CityContent): string {
   return [
     c.heroText ?? '', c.truckingIndustry ?? '',
     ...(c.dangerousRoads ?? []).map((r) => `${r.name} ${r.description}`),
     ...(c.commonAccidents ?? []).map((a) => `${a.type} ${a.localFactor}`),
     ...(c.faqs ?? []).map((f) => `${f.question} ${f.answer}`),
+    courtBlockFor(c.stateSlug, c.slug),
   ].join(' \n ');
 }
 function normalize(text: string, m: Meta): string {

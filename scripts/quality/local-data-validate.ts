@@ -18,7 +18,7 @@ import farsRaw from '../../scripts/city-accident-data.json';
 import {
   resolveCorridors, resolveCourt, resolveTrauma, resolveLegal,
   getVerifiedCorridors, getVerifiedCourt, getVerifiedTraumaCenters, getVerifiedLegalFacts,
-  type Confidence,
+  courtContextText, type Confidence,
 } from '../../src/lib/content-engine/local-data';
 
 const FARS = farsRaw as { states: Record<string, { cities: Array<{ slug: string; countyName?: string }> }> };
@@ -117,6 +117,15 @@ function safetyProof() {
   assert(getVerifiedCourt('texas', 'houston', 'Harris') === null, 'live: empty courts file → null');
   assert(getVerifiedTraumaCenters('texas', 'houston').length === 0, 'live: empty hospitals file → []');
   assert(getVerifiedLegalFacts('florida') === null, 'live: correct-legal-data.json lacks provenance → SOL null (NEEDS_SOURCE)');
+
+  // court-context wording is neutral public-record text, never legal advice (PR9/PR10)
+  const sample = courtContextText(
+    { confidence: 'VERIFIED', county: 'Los Angeles', trialCourtName: 'Superior Court of California, County of Los Angeles', displayName: 'Superior Court of Los Angeles County', courtType: 'Superior Court', sourceName: 's', sourceUrl: 'u', verifiedDate: 'd' },
+    'Los Angeles', 'California');
+  assert(sample.includes('not legal advice'), 'court context carries the not-legal-advice frame');
+  assert(sample.includes('Superior Court of Los Angeles County'), 'court context renders displayName when present');
+  const banned = ['your case', 'will be filed', 'venue', 'judges', 'juries', 'statute of limitations', 'you must file', 'right venue'];
+  for (const b of banned) assert(!sample.toLowerCase().includes(b), `court context omits legal-advice phrase "${b}"`);
 }
 
 function main() {

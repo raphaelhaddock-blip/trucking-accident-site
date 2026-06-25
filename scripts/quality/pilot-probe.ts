@@ -5,14 +5,21 @@
  */
 import { getAllCityParams, getCityContent, getStateName } from '../../src/lib/cities-content/index';
 import type { CityContent } from '../../src/lib/cities-content/types';
+import { buildCityProfile } from '../../src/lib/content-engine/profile';
+import { courtContextText } from '../../src/lib/content-engine/local-data';
 
 const SHINGLE_K = 5;
+function courtBlockFor(stateSlug: string, citySlug: string): string {
+  const p = buildCityProfile(stateSlug, citySlug);
+  return p?.venueCourt ? courtContextText(p.venueCourt, p.name, p.stateName) : '';
+}
 function renderedText(c: CityContent): string {
   return [
     c.heroText ?? '', c.truckingIndustry ?? '',
     ...(c.dangerousRoads ?? []).map((r) => `${r.name} ${r.description}`),
     ...(c.commonAccidents ?? []).map((a) => `${a.type} ${a.localFactor}`),
     ...(c.faqs ?? []).map((f) => `${f.question} ${f.answer}`),
+    courtBlockFor(c.stateSlug, c.slug),
   ].join(' \n ');
 }
 function normalize(text: string, c: CityContent): string {
