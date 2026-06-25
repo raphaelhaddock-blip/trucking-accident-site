@@ -22,7 +22,12 @@ import { join } from 'node:path';
 
 const MARKER = '[NEEDS ENHANCEMENT]';
 const CITY_GLOB = 'src/lib/cities-content';
-const WORD_FLOOR = 2000; // CLAUDE.md city floor
+const WORD_FLOOR = 2000; // legacy CLAUDE.md city floor (deep state/accident pages)
+// Engine-generated local HUBS are intentionally thin (PR4 decision: thin local hubs +
+// deep national pages). They carry this header marker and are held to the HUB floor, not
+// the 2000-word legacy floor — so replacing a fat clone with a real hub is not "damage".
+const HUB_MARKER = 'hub model';
+const HUB_FLOOR = 500;
 
 type Verdict =
   | 'RESTORE_FROM_HEAD' // WT stubbed, HEAD has real content -> restore
@@ -36,6 +41,7 @@ interface Row {
   wtExists: boolean;
   wtWords: number;
   wtMarker: boolean;
+  wtHub: boolean;
   headExists: boolean;
   headWords: number;
   headMarker: boolean;
@@ -77,6 +83,7 @@ const rows: Row[] = files.map((file) => {
 
   const wtMarker = wt.includes(MARKER);
   const headMarker = head.includes(MARKER);
+  const wtHub = wt.includes(HUB_MARKER); // engine-generated local hub
   const wtWords = wordCount(wt);
   const headWords = wordCount(head);
 
@@ -94,12 +101,16 @@ const rows: Row[] = files.map((file) => {
   } else if (!wtMarker && !headMarker && wtWords >= headWords) {
     verdict = 'KEEP_WT';
     note = `WT (${wtWords}w) >= HEAD (${headWords}w), no stub. Genuine enhancement — do not restore.`;
+  } else if (wtHub && !wtMarker && wtWords >= HUB_FLOOR) {
+    // Intentional thin hub replacing a fatter clone — held to the HUB floor, not legacy 2000.
+    verdict = 'KEEP_WT';
+    note = `WT is a local hub (${wtWords}w >= ${HUB_FLOOR} hub floor) replacing a ${headWords}w clone. Intentional — not damage.`;
   } else {
     verdict = 'REVIEW';
     note = `WT (${wtWords}w) shorter than HEAD (${headWords}w) but no stub. Inspect manually.`;
   }
 
-  return { file, wtExists, wtWords, wtMarker, headExists, headWords, headMarker, verdict, note };
+  return { file, wtExists, wtWords, wtMarker, wtHub, headExists, headWords, headMarker, verdict, note };
 });
 
 const byVerdict = rows.reduce<Record<string, Row[]>>((acc, r) => {
@@ -112,9 +123,13 @@ const summary = {
   totalFilesScanned: rows.length,
   wtStubbed: rows.filter((r) => r.wtMarker).length,
   headBroken: rows.filter((r) => r.headMarker).length,
-  belowWordFloor_wt: rows.filter((r) => r.wtWords < WORD_FLOOR).length,
+  hubPages: rows.filter((r) => r.wtHub).length,
+  // legacy-floor shortfall excludes intentional hubs (they use the hub floor)
+  belowWordFloor_wt: rows.filter((r) => !r.wtHub && r.wtWords < WORD_FLOOR).length,
+  hubsBelowHubFloor: rows.filter((r) => r.wtHub && r.wtWords < HUB_FLOOR).length,
   verdictCounts: Object.fromEntries(Object.entries(byVerdict).map(([k, v]) => [k, v.length])),
   wordFloor: WORD_FLOOR,
+  hubFloor: HUB_FLOOR,
 };
 
 const outDir = join('scripts', 'reports');
