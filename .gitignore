@@ -45,3 +45,4 @@ scripts/fars-data/
 # Growth OS — generated reports (recommendation-only outputs, not source)
 scripts/reports/growth-recommendations.json
 scripts/reports/growth-audit.json
+scripts/reports/growth/
