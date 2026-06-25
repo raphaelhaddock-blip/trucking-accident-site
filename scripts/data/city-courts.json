@@ -1,5 +1,165 @@
 {
   "schemaVersion": 1,
   "description": "Verified trial court / venue per city. Keyed courts[stateSlug][citySlug]. Sourced from each state's official judicial-branch directory. A court name renders only when confidence==VERIFIED AND its county matches the FARS countyName for the city. Empty until verified. See docs/PR7-SOURCE-PLAN.md.",
-  "courts": {}
+  "courts": {
+    "california": {
+      "los-angeles": {
+        "confidence": "VERIFIED",
+        "county": "Los Angeles",
+        "trialCourtName": "Superior Court of California, County of Los Angeles",
+        "courtType": "Superior Court",
+        "city": "Los Angeles",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of Los Angeles",
+        "sourceUrl": "https://www.lacourt.org/",
+        "verifiedDate": "2026-06-24",
+        "note": "Operates publicly as the Superior Court of Los Angeles County (lacourt.org); the Judicial Branch lists it as the Superior Court of California, County of Los Angeles."
+      },
+      "long-beach": {
+        "confidence": "VERIFIED",
+        "county": "Los Angeles",
+        "trialCourtName": "Superior Court of California, County of Los Angeles",
+        "courtType": "Superior Court",
+        "city": "Long Beach",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of Los Angeles",
+        "sourceUrl": "https://www.lacourt.org/",
+        "verifiedDate": "2026-06-24",
+        "note": "Operates publicly as the Superior Court of Los Angeles County (lacourt.org); the Judicial Branch lists it as the Superior Court of California, County of Los Angeles."
+      },
+      "glendale": {
+        "confidence": "VERIFIED",
+        "county": "Los Angeles",
+        "trialCourtName": "Superior Court of California, County of Los Angeles",
+        "courtType": "Superior Court",
+        "city": "Glendale",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of Los Angeles",
+        "sourceUrl": "https://www.lacourt.org/",
+        "verifiedDate": "2026-06-24",
+        "note": "Operates publicly as the Superior Court of Los Angeles County (lacourt.org); the Judicial Branch lists it as the Superior Court of California, County of Los Angeles."
+      },
+      "burbank": {
+        "confidence": "VERIFIED",
+        "county": "Los Angeles",
+        "trialCourtName": "Superior Court of California, County of Los Angeles",
+        "courtType": "Superior Court",
+        "city": "Burbank",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of Los Angeles",
+        "sourceUrl": "https://www.lacourt.org/",
+        "verifiedDate": "2026-06-24",
+        "note": "Operates publicly as the Superior Court of Los Angeles County (lacourt.org); the Judicial Branch lists it as the Superior Court of California, County of Los Angeles."
+      },
+      "lancaster": {
+        "confidence": "VERIFIED",
+        "county": "Los Angeles",
+        "trialCourtName": "Superior Court of California, County of Los Angeles",
+        "courtType": "Superior Court",
+        "city": "Lancaster",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of Los Angeles",
+        "sourceUrl": "https://www.lacourt.org/",
+        "verifiedDate": "2026-06-24",
+        "note": "Operates publicly as the Superior Court of Los Angeles County (lacourt.org); the Judicial Branch lists it as the Superior Court of California, County of Los Angeles."
+      },
+      "palmdale": {
+        "confidence": "VERIFIED",
+        "county": "Los Angeles",
+        "trialCourtName": "Superior Court of California, County of Los Angeles",
+        "courtType": "Superior Court",
+        "city": "Palmdale",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of Los Angeles",
+        "sourceUrl": "https://www.lacourt.org/",
+        "verifiedDate": "2026-06-24",
+        "note": "Operates publicly as the Superior Court of Los Angeles County (lacourt.org); the Judicial Branch lists it as the Superior Court of California, County of Los Angeles."
+      },
+      "compton": {
+        "confidence": "VERIFIED",
+        "county": "Los Angeles",
+        "trialCourtName": "Superior Court of California, County of Los Angeles",
+        "courtType": "Superior Court",
+        "city": "Compton",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of Los Angeles",
+        "sourceUrl": "https://www.lacourt.org/",
+        "verifiedDate": "2026-06-24",
+        "note": "Operates publicly as the Superior Court of Los Angeles County (lacourt.org); the Judicial Branch lists it as the Superior Court of California, County of Los Angeles."
+      },
+      "san-diego": {
+        "confidence": "VERIFIED",
+        "county": "San Diego",
+        "trialCourtName": "Superior Court of California, County of San Diego",
+        "courtType": "Superior Court",
+        "city": "San Diego",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of San Diego",
+        "sourceUrl": "https://www.sdcourt.ca.gov/",
+        "verifiedDate": "2026-06-24"
+      },
+      "el-cajon": {
+        "confidence": "VERIFIED",
+        "county": "San Diego",
+        "trialCourtName": "Superior Court of California, County of San Diego",
+        "courtType": "Superior Court",
+        "city": "El Cajon",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of San Diego",
+        "sourceUrl": "https://www.sdcourt.ca.gov/",
+        "verifiedDate": "2026-06-24"
+      },
+      "oceanside": {
+        "confidence": "VERIFIED",
+        "county": "San Diego",
+        "trialCourtName": "Superior Court of California, County of San Diego",
+        "courtType": "Superior Court",
+        "city": "Oceanside",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of San Diego",
+        "sourceUrl": "https://www.sdcourt.ca.gov/",
+        "verifiedDate": "2026-06-24"
+      },
+      "carlsbad": {
+        "confidence": "VERIFIED",
+        "county": "San Diego",
+        "trialCourtName": "Superior Court of California, County of San Diego",
+        "courtType": "Superior Court",
+        "city": "Carlsbad",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of San Diego",
+        "sourceUrl": "https://www.sdcourt.ca.gov/",
+        "verifiedDate": "2026-06-24"
+      },
+      "oakland": {
+        "confidence": "VERIFIED",
+        "county": "Alameda",
+        "trialCourtName": "Superior Court of California, County of Alameda",
+        "courtType": "Superior Court",
+        "city": "Oakland",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of Alameda",
+        "sourceUrl": "https://alameda.courts.ca.gov/",
+        "verifiedDate": "2026-06-24"
+      },
+      "berkeley": {
+        "confidence": "VERIFIED",
+        "county": "Alameda",
+        "trialCourtName": "Superior Court of California, County of Alameda",
+        "courtType": "Superior Court",
+        "city": "Berkeley",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of Alameda",
+        "sourceUrl": "https://alameda.courts.ca.gov/",
+        "verifiedDate": "2026-06-24"
+      },
+      "fremont": {
+        "confidence": "VERIFIED",
+        "county": "Alameda",
+        "trialCourtName": "Superior Court of California, County of Alameda",
+        "courtType": "Superior Court",
+        "city": "Fremont",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of Alameda",
+        "sourceUrl": "https://alameda.courts.ca.gov/",
+        "verifiedDate": "2026-06-24"
+      },
+      "fairfield": {
+        "confidence": "VERIFIED",
+        "county": "Solano",
+        "trialCourtName": "Superior Court of California, County of Solano",
+        "courtType": "Superior Court",
+        "city": "Fairfield",
+        "sourceName": "Judicial Branch of California — Superior Court of California, County of Solano",
+        "sourceUrl": "https://solano.courts.ca.gov/",
+        "verifiedDate": "2026-06-24"
+      }
+    }
+  }
 }
