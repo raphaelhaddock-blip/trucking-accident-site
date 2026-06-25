@@ -45,6 +45,18 @@ const BANNED_REGEX = [
   'local juries?',
   'what evidence resonates',
   'choosing the right venue',
+  // PR11D — jury-verdict / damage-award PREDICTION (claims about how a county's juries decide or
+  // what they award). NOT factual statements like "jury verdicts are public record".
+  'county juries',                       // "Harris County juries", "Dallas County juries"
+  'county jury (verdict|award|pool)',    // "New York County jury verdicts"
+  'juries (understand|are (generally |usually )?familiar|have awarded)', // "juries understand…", "juries have awarded"
+  'historically award',                  // "juries historically award(ing)"
+  '(jury )?verdict trends?',             // "jury verdict trends", "verdict trends"
+  'reputation for [a-z ]{0,30}verdicts?',// "reputation for significant verdicts"
+  'substantial (jury )?awards?',         // "substantial jury awards", "substantial awards"
+  'significant verdicts?',               // "significant verdicts"
+  'awarded (millions|substantial)',      // "have awarded millions/substantial"
+  'damage awards exceed',                // "damage awards exceeding the average"
 ];
 
 // Allowlist: preserved files (HARD-CODED — must not derive from git status, which would
