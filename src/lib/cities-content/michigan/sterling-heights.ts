@@ -85,7 +85,7 @@ Sterling Heights sees truck traffic from Cross-border Canada trade and Agricultu
 
   legalInfo: `Truck accident claims in Sterling Heights are governed by Michigan state law and federal FMCSA regulations. Key legal considerations include:
 
-**Statute of Limitations**: Michigan sets strict deadlines for filing personal injury and wrongful death claims. Missing this deadline bars your claim forever.
+**Statute of Limitations**: Michigan sets strict deadlines for filing personal injury and wrongful death claims. These filing time limits depend on the type of claim and the facts.
 
 **Comparative Negligence**: Michigan's negligence laws determine how fault is allocated and may affect your recovery.
 
@@ -106,7 +106,7 @@ Our Sterling Heights truck accident attorneys understand both Michigan law and f
     },
     {
       question: 'How long do I have to file a truck accident lawsuit in Michigan?',
-      answer: 'Michigan has a statute of limitations for personal injury claims. Missing this deadline means losing your right to compensation. Contact a lawyer promptly to ensure your claim is filed on time.',
+      answer: 'Michigan has a statute of limitations for personal injury claims. These filing time limits depend on the type of claim and the facts. A licensed attorney can confirm the deadlines that apply.',
     },
     {
       question: 'Who can be held liable for a truck accident in Sterling Heights?',

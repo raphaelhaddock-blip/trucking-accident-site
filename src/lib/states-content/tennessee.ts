@@ -23,7 +23,7 @@ export const tennessee: StateContent = {
 
 The Tennessee trucking industry serves critical economic functions. Healthcare, Automotive, Music/Entertainment, Logistics, Manufacturing all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 40, Interstate 65, Interstate 75, Interstate 24 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Tennessee motorists.
 
-Tennessee follows modified comparative negligence with a 50% bar for personal injury cases. You can recover damages if you are 49% or less at fault, but recovery is barred if you are 50% or more at fault. The state has a 1 year statute of limitations for personal injury claims, meaning you must file suit within 1 year of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
+Tennessee follows modified comparative negligence with a 50% bar for personal injury cases. You can recover damages if you are 49% or less at fault, but recovery is barred if you are 50% or more at fault. The state has a 1 year statute of limitations for personal injury claims, meaning you must file suit within 1 year of the accident. These filing time limits depend on the type of claim and the facts.
 
 Weather plays a significant role in Tennessee truck accidents. During March, April, May, November, December, January, February, severe storms and mountain fog creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
 
@@ -89,11 +89,11 @@ Electronic logging device data, driver qualification files, maintenance records,
     personalInjury: '1 Year',
     wrongfulDeath: '1 Year',
     propertyDamage: '3 Years',
-    details: `Tennessee has a 1 year statute of limitations for personal injury claims and 1 year for wrongful death claims. Property damage claims must be filed within 3 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+    details: `Tennessee has a 1 year statute of limitations for personal injury claims and 1 year for wrongful death claims. Property damage claims must be filed within 3 years. These deadlines are strictly enforced—the exact time limit depends on the type of claim and the facts; a licensed attorney can confirm how it applies, regardless of the trucking company's fault.
 
 The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
 
-Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the better the evidence is preserved.
 
 Contact an attorney promptly after any serious Tennessee truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
@@ -128,7 +128,7 @@ A Tennessee-licensed attorney ensures your case proceeds properly through the Te
   faqs: [
     {
       question: 'What is the statute of limitations for truck accident cases in Tennessee?',
-      answer: 'Tennessee has a 1 year statute of limitations for personal injury claims and 1 year for wrongful death claims from truck accidents. This means you must file your lawsuit within 1 year of the accident date for personal injury or 1 year of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 3 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
+      answer: 'Tennessee has a 1 year statute of limitations for personal injury claims and 1 year for wrongful death claims from truck accidents. This means the filing deadline generally falls within 1 year of the accident date for personal injury or 1 year of the death for wrongful death. These filing time limits depend on the type of claim and the facts. Property damage claims have a 3 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
       question: 'Can I still recover damages if I was partially at fault for a Tennessee truck accident?',
@@ -148,7 +148,7 @@ A Tennessee-licensed attorney ensures your case proceeds properly through the Te
     },
     {
       question: 'Can I sue an out-of-state trucking company for a Tennessee accident?',
-      answer: 'Yes. If a truck accident occurs in Tennessee, Tennessee courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Tennessee highways, subjects itself to Tennessee jurisdiction. Your case may be filed in Tennessee state court or in federal court (the Eastern/Middle/Western District of Tennessee). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
+      answer: 'Yes. If a truck accident occurs in Tennessee, Tennessee courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Tennessee highways, subjects itself to Tennessee jurisdiction. A truck claim may be brought in Tennessee state court or in federal court (the Eastern/Middle/Western District of Tennessee). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the court process for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
     },
     {
       question: 'What if the truck driver who caused my accident was an independent contractor?',

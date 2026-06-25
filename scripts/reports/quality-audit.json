@@ -13,12 +13,12 @@
     "routesScanned": 1616,
     "withContentFile": 1613,
     "noContentFile": 3,
-    "renderedCandidatePairs": 753707
+    "renderedCandidatePairs": 752768
   },
   "gate": {
     "placeholders": 0,
     "renderedBelowFloor": 0,
-    "renderedPairsOver30pct": 753658,
+    "renderedPairsOver30pct": 752719,
     "renderedDocsWithDupPartner": 1467,
     "PASS": false
   },

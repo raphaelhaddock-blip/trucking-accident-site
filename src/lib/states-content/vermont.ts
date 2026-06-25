@@ -23,7 +23,7 @@ export const vermont: StateContent = {
 
 The Vermont trucking industry serves critical economic functions. Tourism, Agriculture, Manufacturing, Technology, Healthcare all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 89, Interstate 91, US Route 7, US Route 2 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Vermont motorists.
 
-Vermont follows modified comparative negligence with a 51% bar for personal injury cases. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a 3 years statute of limitations for personal injury claims, meaning you must file suit within 3 years of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
+Vermont follows modified comparative negligence with a 51% bar for personal injury cases. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a 3 years statute of limitations for personal injury claims, meaning you must file suit within 3 years of the accident. These filing time limits depend on the type of claim and the facts.
 
 Weather plays a significant role in Vermont truck accidents. During November, December, January, February, March, April, mountain roads and winter weather creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
 
@@ -89,11 +89,11 @@ Electronic logging device data, driver qualification files, maintenance records,
     personalInjury: '3 Years',
     wrongfulDeath: '2 Years',
     propertyDamage: '3 Years',
-    details: `Vermont has a 3 years statute of limitations for personal injury claims and 2 years for wrongful death claims. Property damage claims must be filed within 3 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+    details: `Vermont has a 3 years statute of limitations for personal injury claims and 2 years for wrongful death claims. Property damage claims must be filed within 3 years. These deadlines are strictly enforced—the exact time limit depends on the type of claim and the facts; a licensed attorney can confirm how it applies, regardless of the trucking company's fault.
 
 The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
 
-Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the better the evidence is preserved.
 
 Contact an attorney promptly after any serious Vermont truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
@@ -128,7 +128,7 @@ A Vermont-licensed attorney ensures your case proceeds properly through the Verm
   faqs: [
     {
       question: 'What is the statute of limitations for truck accident cases in Vermont?',
-      answer: 'Vermont has a 3 years statute of limitations for personal injury claims and 2 years for wrongful death claims from truck accidents. This means you must file your lawsuit within 3 years of the accident date for personal injury or 2 years of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 3 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
+      answer: 'Vermont has a 3 years statute of limitations for personal injury claims and 2 years for wrongful death claims from truck accidents. This means the filing deadline generally falls within 3 years of the accident date for personal injury or 2 years of the death for wrongful death. These filing time limits depend on the type of claim and the facts. Property damage claims have a 3 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
       question: 'Can I still recover damages if I was partially at fault for a Vermont truck accident?',
@@ -148,7 +148,7 @@ A Vermont-licensed attorney ensures your case proceeds properly through the Verm
     },
     {
       question: 'Can I sue an out-of-state trucking company for a Vermont accident?',
-      answer: 'Yes. If a truck accident occurs in Vermont, Vermont courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Vermont highways, subjects itself to Vermont jurisdiction. Your case may be filed in Vermont state court or in federal court (the District of Vermont). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
+      answer: 'Yes. If a truck accident occurs in Vermont, Vermont courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Vermont highways, subjects itself to Vermont jurisdiction. A truck claim may be brought in Vermont state court or in federal court (the District of Vermont). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the court process for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
     },
     {
       question: 'What if the truck driver who caused my accident was an independent contractor?',

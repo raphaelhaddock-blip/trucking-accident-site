@@ -113,7 +113,7 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
 
   truckingIndustry: `Metter's trucking industry serves the area's diverse economic needs. Commercial vehicles operating through Candler County transport goods for agriculture, logistics, manufacturing businesses. Major shipping routes including I-75, I-85, I-20 connect Metter to regional and national markets. Both local delivery operations and long-haul trucking companies operate in the area. The Federal Motor Carrier Safety Administration (FMCSA) regulates these carriers, but violations of Hours of Service rules, maintenance requirements, and driver qualification standards remain common. When trucking companies cut corners to save money, Metter residents pay the price in preventable accidents.`,
 
-  legalInfo: `Truck accident claims in Metter are governed by Georgia state law and federal FMCSA regulations. Cases may be filed in Candler County state courts or the Northern District of Georgia federal court. Our attorneys understand both jurisdictions and can advise on the best venue for your case.`,
+  legalInfo: `Truck accident claims in Metter are governed by Georgia state law and federal FMCSA regulations. Cases may be filed in Candler County state courts or the Northern District of Georgia federal court. Our attorneys understand both jurisdictions and can explain how the court process works.`,
 
   faqs: [
       {
@@ -134,7 +134,7 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       },
       {
           "question": "How long do I have to file a truck accident lawsuit in Georgia?",
-          "answer": "Georgia's statute of limitations determines how long you have to file a truck accident lawsuit. Missing this deadline typically bars your claim forever, regardless of how severe your injuries are. However, you should not wait to consult an attorney. Critical evidence from truck accidents—including ELD data, driver qualification files, and maintenance records—may be legally destroyed after federal retention periods expire. In Metter, local attorneys understand both state deadlines and federal trucking regulations. They can send immediate preservation letters to trucking companies requiring them to retain evidence. The sooner you act after a Metter truck accident, the stronger your case will be."
+          "answer": "Georgia's statute of limitations determines how long you have to file a truck accident lawsuit. These filing time limits depend on the type of claim and the facts. However, you should not wait to consult an attorney. Critical evidence from truck accidents—including ELD data, driver qualification files, and maintenance records—may be legally destroyed after federal retention periods expire. In Metter, local attorneys understand both state deadlines and federal trucking regulations. They can send immediate preservation letters to trucking companies requiring them to retain evidence. The sooner you act after a Metter truck accident, the better the evidence is preserved."
       }
   ],
 

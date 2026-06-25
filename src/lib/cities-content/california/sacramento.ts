@@ -118,7 +118,7 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
 
   truckingIndustry: `Sacramento's trucking industry serves the area's diverse economic needs. Commercial vehicles operating through Sacramento County transport goods for technology, entertainment, agriculture businesses. Major shipping routes including I-5, I-80, US-50, CA-99 connect Sacramento to regional and national markets. Both local delivery operations and long-haul trucking companies operate in the area. The Federal Motor Carrier Safety Administration (FMCSA) regulates these carriers, but violations of Hours of Service rules, maintenance requirements, and driver qualification standards remain common. When trucking companies cut corners to save money, Sacramento residents pay the price in preventable accidents.`,
 
-  legalInfo: `Truck accident claims in Sacramento are governed by California state law and federal FMCSA regulations. Cases may be filed in Sacramento County state courts or the Central District of California federal court. Our attorneys understand both jurisdictions and can advise on the best venue for your case.`,
+  legalInfo: `Truck accident claims in Sacramento are governed by California state law and federal FMCSA regulations. Cases may be filed in Sacramento County state courts or the Central District of California federal court. Our attorneys understand both jurisdictions and can explain how the court process works.`,
 
   faqs: [
       {
@@ -139,7 +139,7 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       },
       {
           "question": "How long do I have to file a truck accident lawsuit in California?",
-          "answer": "California's statute of limitations determines how long you have to file a truck accident lawsuit. Missing this deadline typically bars your claim forever, regardless of how severe your injuries are. However, you should not wait to consult an attorney. Critical evidence from truck accidents—including ELD data, driver qualification files, and maintenance records—may be legally destroyed after federal retention periods expire. In Sacramento, local attorneys understand both state deadlines and federal trucking regulations. They can send immediate preservation letters to trucking companies requiring them to retain evidence. The sooner you act after a Sacramento truck accident, the stronger your case will be."
+          "answer": "California's statute of limitations determines how long you have to file a truck accident lawsuit. These filing time limits depend on the type of claim and the facts. However, you should not wait to consult an attorney. Critical evidence from truck accidents—including ELD data, driver qualification files, and maintenance records—may be legally destroyed after federal retention periods expire. In Sacramento, local attorneys understand both state deadlines and federal trucking regulations. They can send immediate preservation letters to trucking companies requiring them to retain evidence. The sooner you act after a Sacramento truck accident, the better the evidence is preserved."
       },
       {
           "question": "Who can be held liable for a truck accident in Sacramento?",

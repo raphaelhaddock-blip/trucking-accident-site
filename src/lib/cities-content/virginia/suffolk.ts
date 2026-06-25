@@ -85,7 +85,7 @@ Suffolk sees truck traffic from Agriculture and Retail. These industries operate
 
   legalInfo: `Truck accident claims in Suffolk are governed by Virginia state law and federal FMCSA regulations. Key legal considerations include:
 
-**Statute of Limitations**: Virginia sets strict deadlines for filing personal injury and wrongful death claims. Missing this deadline bars your claim forever.
+**Statute of Limitations**: Virginia sets strict deadlines for filing personal injury and wrongful death claims. These filing time limits depend on the type of claim and the facts.
 
 **Comparative Negligence**: Virginia's negligence laws determine how fault is allocated and may affect your recovery.
 
@@ -106,7 +106,7 @@ Our Suffolk truck accident attorneys understand both Virginia law and federal tr
     },
     {
       question: 'How long do I have to file a truck accident lawsuit in Virginia?',
-      answer: 'Virginia has a statute of limitations for personal injury claims. Missing this deadline means losing your right to compensation. Contact a lawyer promptly to ensure your claim is filed on time.',
+      answer: 'Virginia has a statute of limitations for personal injury claims. These filing time limits depend on the type of claim and the facts. A licensed attorney can confirm the deadlines that apply.',
     },
     {
       question: 'Who can be held liable for a truck accident in Suffolk?',

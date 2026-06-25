@@ -23,7 +23,7 @@ export const northCarolina: StateContent = {
 
 The North Carolina trucking industry serves critical economic functions. Banking, Technology, Pharmaceuticals, Agriculture, Manufacturing all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 40, Interstate 85, Interstate 95, Interstate 77 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for North Carolina motorists.
 
-North Carolina follows contributory negligence for personal injury cases. If you are found even 1% at fault, you may be completely barred from recovery under the traditional rule. The state has a 3 years statute of limitations for personal injury claims, meaning you must file suit within 3 years of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
+North Carolina follows contributory negligence for personal injury cases. Some states limit or reduce recovery when the injured person shares fault, and how that applies depends on the facts and the state. The state has a 3 years statute of limitations for personal injury claims, meaning you must file suit within 3 years of the accident. These filing time limits depend on the type of claim and the facts.
 
 Weather plays a significant role in North Carolina truck accidents. During June, July, August, September, October, January, February, hurricanes and mountain weather creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
 
@@ -77,7 +77,7 @@ If you have been injured in a North Carolina truck accident, time is critical. T
 
   negligenceRule: {
     type: 'contributory',
-    description: 'North Carolina follows contributory negligence. If you are found even 1% at fault, you may be completely barred from recovery under the traditional rule.',
+    description: 'North Carolina follows contributory negligence. Some states limit or reduce recovery when the injured person shares fault, and how that applies depends on the facts and the state.',
     details: `Under North Carolina law, your damages are reduced by your percentage of fault. For example, if you suffered $1,000,000 in damages but were 30% at fault, you could recover $700,000. Even at high percentages of fault, you maintain the right to recover reduced damages.
 
 This rule makes establishing the trucking company's greater fault critical in contested cases. Insurance adjusters often try to shift blame to victims to reduce or eliminate their responsibility. They may claim you were speeding, failed to yield, or were distracted—anything to increase your percentage of fault. An experienced North Carolina truck accident lawyer knows how to counter these tactics through thorough investigation and evidence preservation.
@@ -89,11 +89,11 @@ Electronic logging device data, driver qualification files, maintenance records,
     personalInjury: '3 Years',
     wrongfulDeath: '2 Years',
     propertyDamage: '3 Years',
-    details: `North Carolina has a 3 years statute of limitations for personal injury claims and 2 years for wrongful death claims. Property damage claims must be filed within 3 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+    details: `North Carolina has a 3 years statute of limitations for personal injury claims and 2 years for wrongful death claims. Property damage claims must be filed within 3 years. These deadlines are strictly enforced—the exact time limit depends on the type of claim and the facts; a licensed attorney can confirm how it applies, regardless of the trucking company's fault.
 
 The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
 
-Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the better the evidence is preserved.
 
 Contact an attorney promptly after any serious North Carolina truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
@@ -128,11 +128,11 @@ A North Carolina-licensed attorney ensures your case proceeds properly through t
   faqs: [
     {
       question: 'What is the statute of limitations for truck accident cases in North Carolina?',
-      answer: 'North Carolina has a 3 years statute of limitations for personal injury claims and 2 years for wrongful death claims from truck accidents. This means you must file your lawsuit within 3 years of the accident date for personal injury or 2 years of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 3 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
+      answer: 'North Carolina has a 3 years statute of limitations for personal injury claims and 2 years for wrongful death claims from truck accidents. This means the filing deadline generally falls within 3 years of the accident date for personal injury or 2 years of the death for wrongful death. These filing time limits depend on the type of claim and the facts. Property damage claims have a 3 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
       question: 'Can I still recover damages if I was partially at fault for a North Carolina truck accident?',
-      answer: 'North Carolina follows contributory negligence. If you are found even 1% at fault, you may be completely barred from recovery under the traditional rule. For example, if you suffered $1,000,000 in damages but were found 20% at fault, your recovery would be reduced to $800,000. This makes establishing the trucking company\'s primary fault critical in contested cases. Insurance adjusters often try to shift blame to accident victims to reduce or eliminate their responsibility. An experienced North Carolina truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault through evidence including electronic logging device data, driver qualification files, and maintenance records.'
+      answer: 'North Carolina follows contributory negligence. Some states limit or reduce recovery when the injured person shares fault, and how that applies depends on the facts and the state. For example, if you suffered $1,000,000 in damages but were found 20% at fault, your recovery would be reduced to $800,000. This makes establishing the trucking company\'s primary fault critical in contested cases. Insurance adjusters often try to shift blame to accident victims to reduce or eliminate their responsibility. An experienced North Carolina truck accident lawyer knows how to counter these tactics and prove the truck driver and carrier were primarily at fault through evidence including electronic logging device data, driver qualification files, and maintenance records.'
     },
     {
       question: 'What damages can I recover in a North Carolina truck accident case?',
@@ -148,7 +148,7 @@ A North Carolina-licensed attorney ensures your case proceeds properly through t
     },
     {
       question: 'Can I sue an out-of-state trucking company for a North Carolina accident?',
-      answer: 'Yes. If a truck accident occurs in North Carolina, North Carolina courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on North Carolina highways, subjects itself to North Carolina jurisdiction. Your case may be filed in North Carolina state court or in federal court (the Eastern/Middle/Western District of North Carolina). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
+      answer: 'Yes. If a truck accident occurs in North Carolina, North Carolina courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on North Carolina highways, subjects itself to North Carolina jurisdiction. A truck claim may be brought in North Carolina state court or in federal court (the Eastern/Middle/Western District of North Carolina). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the court process for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
     },
     {
       question: 'What if the truck driver who caused my accident was an independent contractor?',

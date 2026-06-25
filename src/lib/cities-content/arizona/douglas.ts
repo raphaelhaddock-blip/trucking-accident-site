@@ -113,7 +113,7 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
 
   truckingIndustry: `Douglas's trucking industry serves the area's diverse economic needs. Commercial vehicles operating through Cochise County transport goods for technology, tourism, healthcare businesses. Major shipping routes including I-10, I-40, I-17 connect Douglas to regional and national markets. Both local delivery operations and long-haul trucking companies operate in the area. The Federal Motor Carrier Safety Administration (FMCSA) regulates these carriers, but violations of Hours of Service rules, maintenance requirements, and driver qualification standards remain common. When trucking companies cut corners to save money, Douglas residents pay the price in preventable accidents.`,
 
-  legalInfo: `Truck accident claims in Douglas are governed by Arizona state law and federal FMCSA regulations. Cases may be filed in Cochise County state courts or the District of Arizona federal court. Our attorneys understand both jurisdictions and can advise on the best venue for your case.`,
+  legalInfo: `Truck accident claims in Douglas are governed by Arizona state law and federal FMCSA regulations. Cases may be filed in Cochise County state courts or the District of Arizona federal court. Our attorneys understand both jurisdictions and can explain how the court process works.`,
 
   faqs: [
       {
@@ -134,7 +134,7 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       },
       {
           "question": "How long do I have to file a truck accident lawsuit in Arizona?",
-          "answer": "Arizona's statute of limitations determines how long you have to file a truck accident lawsuit. Missing this deadline typically bars your claim forever, regardless of how severe your injuries are. However, you should not wait to consult an attorney. Critical evidence from truck accidents—including ELD data, driver qualification files, and maintenance records—may be legally destroyed after federal retention periods expire. In Douglas, local attorneys understand both state deadlines and federal trucking regulations. They can send immediate preservation letters to trucking companies requiring them to retain evidence. The sooner you act after a Douglas truck accident, the stronger your case will be."
+          "answer": "Arizona's statute of limitations determines how long you have to file a truck accident lawsuit. These filing time limits depend on the type of claim and the facts. However, you should not wait to consult an attorney. Critical evidence from truck accidents—including ELD data, driver qualification files, and maintenance records—may be legally destroyed after federal retention periods expire. In Douglas, local attorneys understand both state deadlines and federal trucking regulations. They can send immediate preservation letters to trucking companies requiring them to retain evidence. The sooner you act after a Douglas truck accident, the better the evidence is preserved."
       }
   ],
 

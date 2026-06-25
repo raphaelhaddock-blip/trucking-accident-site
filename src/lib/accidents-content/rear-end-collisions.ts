@@ -214,7 +214,7 @@ Several factors make these crashes particularly devastating:
     },
     {
       question: 'What if I was stopped illegally when the truck hit me?',
-      answer: 'Even if you were in a position you shouldn\'t have been, the truck driver still had a duty to maintain control and avoid collisions. Most states use comparative negligence, meaning any fault on your part would reduce—but not eliminate—your recovery. Only if you were severely at fault in a contributory negligence state might your recovery be completely barred.'
+      answer: 'Even if you were in a position you shouldn\'t have been, the truck driver still had a duty to maintain control and avoid collisions. Most states use comparative negligence, meaning any fault on your part would reduce—but not eliminate—your recovery. Only if you were severely at fault in a contributory negligence state might your recovery be limited or reduced.'
     },
     {
       question: 'How do truck drivers\' cell phone records help my case?',

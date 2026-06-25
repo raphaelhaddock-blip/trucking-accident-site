@@ -85,7 +85,7 @@ Salt Lake City sees truck traffic from Agriculture and Retail. These industries 
 
   legalInfo: `Truck accident claims in Salt Lake City are governed by Utah state law and federal FMCSA regulations. Key legal considerations include:
 
-**Statute of Limitations**: Utah sets strict deadlines for filing personal injury and wrongful death claims. Missing this deadline bars your claim forever.
+**Statute of Limitations**: Utah sets strict deadlines for filing personal injury and wrongful death claims. These filing time limits depend on the type of claim and the facts.
 
 **Comparative Negligence**: Utah's negligence laws determine how fault is allocated and may affect your recovery.
 
@@ -106,7 +106,7 @@ Our Salt Lake City truck accident attorneys understand both Utah law and federal
     },
     {
       question: 'How long do I have to file a truck accident lawsuit in Utah?',
-      answer: 'Utah has a statute of limitations for personal injury claims. Missing this deadline means losing your right to compensation. Contact a lawyer promptly to ensure your claim is filed on time.',
+      answer: 'Utah has a statute of limitations for personal injury claims. These filing time limits depend on the type of claim and the facts. A licensed attorney can confirm the deadlines that apply.',
     },
     {
       question: 'Who can be held liable for a truck accident in Salt Lake City?',
