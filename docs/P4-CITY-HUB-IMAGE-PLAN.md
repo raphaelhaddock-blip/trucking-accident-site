@@ -39,6 +39,8 @@ The generic city-prompt builder was not fit to run as-is:
 
 ### Tier A — generate first (geography-distinct, low look-alike risk)
 
+> ✅ **GENERATED + PASSED 2026-06-25.** All 5 produced (fal Flux Pro v1.1), ~$0.20–0.25, 0 rejected / 0 re-rolls. Each inspected: no people/faces/wreckage/signage/plates/logos/legal-evidence. Side-by-side = 5 distinct scenes + palettes (clears the Tier B gate). Built + wired (manifest + hero + OG verified in built HTML); `audit:legaltone` PASS. Review artifacts: `docs/redesign-assets/after-p4-tierA/` (QA-NOTES.md + contact-sheet.html).
+
 | # | City slug | File basename | Why (commercial + freight) | Visual direction |
 |---|---|---|---|---|
 | 1 | `arizona/phoenix` | `city-arizona-phoenix` | Southwest hub; I-10 desert freight backbone | Desert plain + saguaro, distant low mountains, **no skyline** |
