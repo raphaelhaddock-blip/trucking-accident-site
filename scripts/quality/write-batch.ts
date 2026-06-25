@@ -25,6 +25,8 @@ const PROTECTED = new Set([
   'tennessee/nashville', 'texas/el-paso', 'washington/seattle',
 ]);
 
+const MANIFEST = 'scripts/data/pr-written-manifest.json';
+
 function constName(slug: string): string {
   return slug.toUpperCase().replace(/[^A-Z0-9]/g, '_') + '_CONTENT';
 }
@@ -56,12 +58,15 @@ function main() {
   const limitArg = process.argv.find((x) => x.startsWith('--limit='))?.split('=')[1];
   const limit = limitArg ? Number(limitArg) : Infinity;
   const targets: string[] = JSON.parse(readFileSync(listArg, 'utf8'));
+  const manifest: string[] = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : [];
+  const alreadyWritten = new Set(manifest);
 
   const written: string[] = [];
   const skipped: string[] = [];
   for (const key of targets) {
     if (written.length >= limit) break;
     if (PROTECTED.has(key)) { skipped.push(`${key} (PROTECTED)`); continue; }
+    if (alreadyWritten.has(key)) { skipped.push(`${key} (already written)`); continue; }
     const [state, city] = key.split('/');
     const path = join('src', 'lib', 'cities-content', state, `${city}.ts`);
     if (!existsSync(path)) { skipped.push(`${key} (no existing file)`); continue; } // never create routes
@@ -70,8 +75,13 @@ function main() {
     writeFileSync(path, out);
     written.push(key);
   }
+  // Append newly written pages to the manifest so later tranches exclude them.
+  if (written.length) {
+    const merged = Array.from(new Set([...manifest, ...written]));
+    writeFileSync(MANIFEST, JSON.stringify(merged, null, 2));
+  }
   console.log('=== GATED BATCH WRITE (hub model) ===');
-  console.log(`written: ${written.length}`);
+  console.log(`written: ${written.length}  (manifest now ${manifest.length + written.length})`);
   written.forEach((w) => console.log('  ✓', w));
   if (skipped.length) { console.log('skipped:'); skipped.forEach((s) => console.log('  ✗', s)); }
 }

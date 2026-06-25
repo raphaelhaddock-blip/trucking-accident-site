@@ -17,7 +17,7 @@
  * Usage: npx tsx scripts/quality/batch-preview.ts [--size=50] [--percap=4] [--emit=path.json]
  * No files are written to the site; --emit only writes the chosen target list for the writer.
  */
-import { writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { buildCityProfile } from '../../src/lib/content-engine/profile';
 import { composeCityContentHub } from '../../src/lib/content-engine/compose';
 import { getAllCityParams, getCityContent, getStateName } from '../../src/lib/cities-content/index';
@@ -41,7 +41,11 @@ const PRESERVED = new Set([
   'new-york/oyster-bay', 'north-carolina/charlotte', 'oregon/portland', 'tennessee/memphis',
   'tennessee/nashville', 'texas/el-paso', 'washington/seattle',
 ]);
-const PROTECTED = new Set([...PILOTS, ...CONTROLS, ...PRESERVED]);
+// Already-written hub pages from prior tranches (PR5 + PR6) — exclude so a tranche never
+// re-selects or re-writes a completed page. Maintained by write-batch.ts.
+const WRITTEN_MANIFEST = 'scripts/data/pr-written-manifest.json';
+const WRITTEN: string[] = existsSync(WRITTEN_MANIFEST) ? JSON.parse(readFileSync(WRITTEN_MANIFEST, 'utf8')) : [];
+const PROTECTED = new Set([...PILOTS, ...CONTROLS, ...PRESERVED, ...WRITTEN]);
 
 type Meta = { name: string; slug: string; stateSlug: string; stateName: string };
 function renderedText(c: CityContent): string {

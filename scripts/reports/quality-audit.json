@@ -13,29 +13,29 @@
     "routesScanned": 1616,
     "withContentFile": 1613,
     "noContentFile": 3,
-    "renderedCandidatePairs": 810970
+    "renderedCandidatePairs": 770284
   },
   "gate": {
     "placeholders": 0,
     "renderedBelowFloor": 0,
-    "renderedPairsOver30pct": 810950,
-    "renderedDocsWithDupPartner": 1525,
+    "renderedPairsOver30pct": 770240,
+    "renderedDocsWithDupPartner": 1483,
     "PASS": false
   },
   "advisory": {
-    "renderedInHubBand_500_900": 325,
-    "renderedAbove900": 1288,
-    "duplicateRenderedMetaDescGroups": 6
+    "renderedInHubBand_500_900": 356,
+    "renderedAbove900": 1257,
+    "duplicateRenderedMetaDescGroups": 5
   },
   "dead_nonGating": {
     "note": "these fields are NOT rendered on city pages; sharing them is not a duplicate-content problem",
-    "storedDeadPairsOver30pct": 824186,
-    "storedDeadDocsWithDupPartner": 1525,
-    "duplicateStoredH1Groups": 115,
-    "duplicateStoredTitleGroups": 34,
+    "storedDeadPairsOver30pct": 782853,
+    "storedDeadDocsWithDupPartner": 1483,
+    "duplicateStoredH1Groups": 114,
+    "duplicateStoredTitleGroups": 33,
     "fmcsaIdenticalGroups": {
       "groups": 81,
-      "largest": 30
+      "largest": 29
     }
   },
   "worstRenderedPairs": [
@@ -176,11 +176,6 @@
     },
     {
       "a": "new-jersey/mahwah",
-      "b": "new-jersey/saddle-river",
-      "sim": 1
-    },
-    {
-      "a": "new-jersey/mahwah",
       "b": "new-jersey/east-rutherford",
       "sim": 1
     },
@@ -197,21 +192,6 @@
     {
       "a": "new-jersey/mt-laurel",
       "b": "new-jersey/bordentown",
-      "sim": 1
-    },
-    {
-      "a": "new-jersey/saddle-river",
-      "b": "new-jersey/east-rutherford",
-      "sim": 1
-    },
-    {
-      "a": "new-jersey/saddle-river",
-      "b": "new-jersey/elmwood-park",
-      "sim": 1
-    },
-    {
-      "a": "new-jersey/saddle-river",
-      "b": "new-jersey/rutherford",
       "sim": 1
     },
     {
@@ -237,6 +217,26 @@
     {
       "a": "south-carolina/spartanburg",
       "b": "virginia/fredericksburg",
+      "sim": 1
+    },
+    {
+      "a": "texas/jewett",
+      "b": "texas/buffalo",
+      "sim": 1
+    },
+    {
+      "a": "texas/katy",
+      "b": "texas/missouri-city",
+      "sim": 1
+    },
+    {
+      "a": "texas/princeton",
+      "b": "texas/blue-ridge",
+      "sim": 1
+    },
+    {
+      "a": "texas/honey-grove",
+      "b": "texas/trenton",
       "sim": 1
     }
   ],
@@ -272,16 +272,6 @@
       "sim": 1
     },
     {
-      "a": "alabama/auburn",
-      "b": "alabama/opelika",
-      "sim": 1
-    },
-    {
-      "a": "alabama/auburn",
-      "b": "georgia/leesburg",
-      "sim": 1
-    },
-    {
       "a": "alabama/rainsville",
       "b": "alabama/geraldine",
       "sim": 1
@@ -289,6 +279,16 @@
     {
       "a": "alabama/rainsville",
       "b": "georgia/clarkston",
+      "sim": 1
+    },
+    {
+      "a": "alabama/rainsville",
+      "b": "georgia/decatur",
+      "sim": 1
+    },
+    {
+      "a": "alabama/rainsville",
+      "b": "georgia/lithonia",
       "sim": 1
     }
   ],
@@ -323,14 +323,6 @@
       "sample": [
         "california/westminster",
         "colorado/westminster-co"
-      ]
-    },
-    {
-      "value": "experienced springfield truck accident lawyers. 2 fatal crashes in 2022. free co",
-      "count": 2,
-      "sample": [
-        "illinois/springfield-il",
-        "ohio/springfield-oh"
       ]
     },
     {
