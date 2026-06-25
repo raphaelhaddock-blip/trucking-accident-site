@@ -45,7 +45,7 @@ Current Hours of Service rules require:
 
 Since December 2017, most commercial trucks must be equipped with Electronic Logging Devices (ELDs) that automatically record driving time. These devices make it much harder for drivers and companies to falsify logs, though some still attempt to cheat the system.
 
-When HOS violations contribute to an accident, the evidence is often clear and compelling. ELD data showing the driver exceeded limits, combined with expert testimony about the effects of fatigue, can establish that the trucking company knowingly allowed or encouraged unsafe driving. Courts and juries understand that a driver who has been on the road for 14+ hours is impaired, similar to drunk driving.`,
+When HOS violations contribute to an accident, the evidence is often clear and compelling. ELD data showing the driver exceeded limits, combined with expert testimony about the effects of fatigue, can establish that the trucking company knowingly allowed or encouraged unsafe driving. Research and expert testimony show that a driver who has been on the road for 14+ hours is impaired in ways comparable to drunk driving.`,
       subsections: [
         {
           heading: 'How Carriers Pressure Drivers to Violate HOS',
@@ -204,7 +204,7 @@ CSA data also reveals patterns. A carrier with repeated brake violations across 
     },
     {
       heading: 'Maximizing Compensation Through FMCSA Violation Evidence',
-      content: `Strong FMCSA violation evidence does more than prove liability—it maximizes compensation. When juries understand that a carrier knowingly violated safety rules, they're more likely to award substantial damages.
+      content: `Strong FMCSA violation evidence does more than prove liability—it strengthens the claim for compensation. Evidence that a carrier knowingly violated safety rules supports a claim for substantial damages.
 
 Impact on damages:
 - Full compensation for economic losses becomes more certain when liability is clear
