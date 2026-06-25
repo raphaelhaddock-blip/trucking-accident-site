@@ -1,41 +1,137 @@
-# P4 — City-Hub Image Plan (PLAN ONLY — no generation, no spend)
+# P4 — City-Hub Image Plan (FINAL, approval-ready — PLAN ONLY, no generation, no spend)
 
-Bounded plan for custom city-hub hero/OG images, chosen where a photo adds **real visual distinctiveness + commercial value** over the global fallback. Nothing generated here. Awaiting explicit go.
+Bounded plan for custom city-hub hero/OG images, chosen only where a photo adds **real visual distinctiveness + commercial value** over the state/global fallback. Nothing is generated here. No FAL_KEY is used. Awaiting an explicit "go P4."
 
-## Method (ground-truthed this session)
-- **Enhanced content is NOT a differentiator:** ~1,600 of 1,613 city files already carry `truckingIndustry` prose. So selection is by **commercial value (metro size / freight significance)** + **distinctive visual identity** the prompt can render safely.
-- **Excluded — protected/dirty (do-not-touch content):** tucson, san-francisco, denver, indianapolis, louisville, boston, detroit, las-vegas, albuquerque, brookhaven, buffalo, islip, oyster-bay, charlotte, portland, memphis, nashville, el-paso, seattle. (Image files live in `public/brand/photo/` and don't modify content, but per the rule these stay parked. **Seattle (port+mountains), Denver (Rockies), Detroit (Great Lakes industrial) are visually ideal — revisit after their content files are cleaned.**)
-- **The long tail keeps the global fallback** — a city with no image cleanly falls back to its state image, then `hero-interstate`. No UX gap.
-- All 10 below were verified to exist as pages this session; states are diversified (no more than 1 per state except TX, the #1 truck-fatality market).
+**Verified this session (ground truth, not recall):**
+- Generator: `scripts/generate-brand-images.ts` → `fal-ai/flux-pro/v1.1`, `image_size: landscape_16_9`, `num_images: 1`, `enable_safety_checker: true`. Exact `BASE_PROMPT` + `NEGATIVE` are reused verbatim below.
+- Resolver: `src/lib/brand-images.ts`. A city file `city-{state}-{city}.{ext}` overrides the city page **hero** (`heroPhoto`, used in `src/app/states/[slug]/[city]/page.tsx:281`) **and** the **OG/social image** (`ogImage`, used in that page's `openGraph`/`twitter` at lines 73–90). Fallback chain: `city-{state}-{city}` → `state-{state}` → `hero-interstate`. The long tail keeps that fallback — no UX gap for un-imaged cities.
+- Existing city image coverage: **only `city-texas-houston.jpg`** exists (PR4B). Plus 20 accident headers, 10 state images, and 3 fixed brand scenes. No other city images, no protected-city images on disk.
+- All 10 candidates below exist as real pages (1,613 city files total; each candidate file confirmed present).
 
-## Recommended 10 city hubs (max)
-| # | City slug → file basename | Why (commercial + freight) | Visual language | Prompt direction (append base + negatives) |
+---
+
+## The P3b lesson drives this plan
+P3b (40 remaining state images) was parked because the images were **premium but too similar** — dusk highway after dusk highway. The 5 skyline-led cities here carry that exact risk: "skyline silhouette behind a highway at dusk" repeated five times reads as one image. So the plan does two things the old draft didn't:
+
+1. **The foreground is the differentiator, not the skyline.** Each prompt leads with a signature foreground (a five-level stack, a desert plain, a mountain front, a port, a rail yard, a bridge span). The skyline, where present, is demoted to a distant silhouette.
+2. **Two tiers with a hard gate.** Generate the 5 geography-distinct cities first, review them side by side, and only spend on the 5 skyline cities if Tier A proves the pipeline produces distinguishable images. If Tier A already looks samey, stop before Tier B.
+
+---
+
+## Required code change before any run (no generation in this edit)
+The generic city-prompt builder is not fit to run as-is:
+- It **mis-parses multi-word states**: `city-new-york-new-york-city` titleizes to *"York New York City"* (it only drops the first slug token).
+- It emits **one generic line for every city** ("metro freight artery / beltway … recognizable skyline silhouette") — the look-alike trap.
+
+Fix (code only, still gated, no spend): add a `CITY_SCENE: Record<string,string>` map (the 10 scene lines below) to `scripts/generate-brand-images.ts`, mirroring `ACCIDENT_SCENE`, and branch `city-` basenames to it. File naming is already correct — `--only city-new-york-new-york-city` writes `city-new-york-new-york-city.{ext}`, which the resolver matches.
+
+---
+
+## Final recommended city list (10 max, two tiers)
+
+### Tier A — generate first (geography-distinct, low look-alike risk)
+
+| # | City slug | File basename | Why (commercial + freight) | Visual direction |
 |---|---|---|---|---|
-| 1 | `texas/dallas` → `city-texas-dallas` | Sun Belt mega-market; DFW freight + High Five stack; TX is #1 market | Skyline + stacked interchange | "Dallas skyline silhouette at dusk behind a multi-level highway stack interchange, plains horizon, freight at distance" |
-| 2 | `california/los-angeles` → `city-california-los-angeles` | Largest CA market; Port of LA/Long Beach; I-5/I-110 | Port logistics + interchange | "Sprawling LA freeway interchange at dusk with a container-port silhouette in the far distance, hazy warm light" |
-| 3 | `illinois/chicago` → `city-illinois-chicago` | National rail/freight crossroads; Great Lakes | Great Lakes industrial + skyline | "Chicago skyline silhouette at blue hour beyond an industrial rail/freight corridor and lakefront, cold steel tones" |
-| 4 | `georgia/atlanta` → `city-georgia-atlanta` | Southeast freight nexus (I-285/75/85) | Skyline + perimeter interstate | "Atlanta skyline silhouette at dusk above a busy perimeter-interstate interchange, pine-treed horizon" |
-| 5 | `florida/miami` → `city-florida-miami` | Top-market coastal port; FL high-fatality state | Coastal port + causeway | "Miami coastal causeway and port silhouette at dusk, water reflections, palm horizon, warm amber light" |
-| 6 | `arizona/phoenix` → `city-arizona-phoenix` | Southwest hub; I-10 desert freight | Desert freight route | "Phoenix desert interstate at dusk, saguaro-dotted plain, distant low mountains, dry amber haze" |
-| 7 | `new-york/new-york-city` → `city-new-york-new-york-city` | Largest US market; bridge/tunnel freight | Skyline + bridge approach | "NYC skyline silhouette at dusk seen past a major bridge truck-approach, river foreground, no readable signage" |
-| 8 | `pennsylvania/philadelphia` → `city-pennsylvania-philadelphia` | NE corridor + Delaware River port | NE corridor + port | "Philadelphia skyline silhouette at dusk beyond a Delaware-River port/refinery corridor and interstate" |
-| 9 | `missouri/kansas-city` → `city-missouri-kansas-city` | Geographic freight/distribution + rail hub | Logistics / rail freight | "Kansas City logistics corridor at dusk — rail yards, distribution warehouses, an interstate over rolling plains" |
-| 10 | `utah/salt-lake-city` → `city-utah-salt-lake-city` | I-80/I-15 mountain crossroads | Mountain approach | "Salt Lake City interstate at dusk with the Wasatch mountain front behind, snow-dusted peaks, freight at distance" |
+| 1 | `arizona/phoenix` | `city-arizona-phoenix` | Southwest hub; I-10 desert freight backbone | Desert plain + saguaro, distant low mountains, **no skyline** |
+| 2 | `utah/salt-lake-city` | `city-utah-salt-lake-city` | I-80 × I-15 mountain crossroads, intermountain distribution | Snow-dusted Wasatch front directly behind the valley |
+| 3 | `florida/miami` | `city-florida-miami` | Top coastal port market; FL high-fatality state | Causeway + container-port silhouette over water, palms |
+| 4 | `california/los-angeles` | `city-california-los-angeles` | Largest CA market; Port of LA/Long Beach; I-5/I-110 | Freeway interchange + distant port cranes, hazy amber |
+| 5 | `missouri/kansas-city` | `city-missouri-kansas-city` | Geographic distribution + rail hub | Rail yards + warehouse rows beside an interstate, **no skyline** |
 
-(`texas/houston` already done in PR4B — not regenerated.)
+### Tier B — only if Tier A passes the gate (skyline-led, foreground must carry it)
 
-## Cost / render / safety
-- **Cost:** ~10 × ~$0.05 ≈ **$0.50** (Flux Pro v1.1).
-- **Render target (each):** `/states/{state}/{city}` hero (darkened command overlay) **and** that page's OG/social image; overrides the state fallback for that one city.
-- **Visual language used:** skyline silhouettes (5), port/coastal (LA, Miami, Philadelphia), desert (Phoenix), mountain (Salt Lake City), Great Lakes industrial (Chicago), rail/logistics (Kansas City) — a deliberate spread, not 10 look-alikes.
-- **Compliance (every prompt):** no people, faces, victims, crash wreckage, courtrooms, gavels, readable signs, license plates, brand logos, documents, or fake landmarks. Skylines are **recognizable silhouettes at distance**, not trademarked named buildings in focus; no postcard fakery, no invented local facts. `enable_safety_checker: true`. Each image eyeballed (contact sheet) before wiring.
+| # | City slug | File basename | Why (commercial + freight) | Visual direction (foreground signature) |
+|---|---|---|---|---|
+| 6 | `texas/dallas` | `city-texas-dallas` | Sun Belt mega-market; DFW freight; TX #1 truck-fatality market | **Five-level stack interchange** in front; skyline distant |
+| 7 | `illinois/chicago` | `city-illinois-chicago` | National rail/freight crossroads; Great Lakes | **Lakefront rail/freight corridor**; cold steel palette |
+| 8 | `georgia/atlanta` | `city-georgia-atlanta` | Southeast nexus (I-285/75/85) | **Perimeter interchange through pine treeline**; humid light |
+| 9 | `new-york/new-york-city` | `city-new-york-new-york-city` | Largest US market; bridge/tunnel freight | **Bridge truck-approach span over a river**; skyline beyond |
+| 10 | `pennsylvania/philadelphia` | `city-pennsylvania-philadelphia` | NE corridor + Delaware River port | **River port + refinery corridor**; industrial amber |
 
-## Run command (when approved)
+Diversification: max 1 city per state. TX carries 2 only because Houston is already done (PR4B) and Dallas is the #1 market. (`texas/houston` is NOT regenerated.)
+
+**Excluded — protected/dirty content (do-not-touch), revisit only after their content files are cleaned:** tucson, san-francisco, denver, indianapolis, louisville, boston, detroit, las-vegas, albuquerque, brookhaven, buffalo, islip, oyster-bay, charlotte, portland, memphis, nashville, el-paso, seattle. Note: **Seattle (port + mountains), Denver (Rockies), Detroit (Great Lakes industrial) are visually ideal** and would beat some Tier-B picks — they stay parked purely because their content is protected, not for visual reasons.
+
+---
+
+## Exact proposed image prompts
+Each is `BASE_PROMPT` + the per-city scene line + `NEGATIVE`, exactly as the generator concatenates them.
+
+**BASE_PROMPT** (verbatim):
+> Photorealistic documentary infrastructure image for a premium national trucking accident legal response platform. Cinematic blue-hour/dusk lighting, muted navy/steel/amber color grade, full-frame editorial photography, fine film grain, serious and authoritative.
+
+**NEGATIVE** (verbatim, appended to every prompt):
+> No people, no faces, no crash wreckage, no injured persons, no courtroom, no gavel, no stock-photo handshakes, no readable text, no watermark, no logos, no fake signage, no license plates, no purple or cyan neon.
+
+Per-city scene lines (the `CITY_SCENE` map to add):
+
+1. **Phoenix** — `A wide Sonoran-desert interstate at dusk cutting across a saguaro-dotted plain toward distant low desert mountains, dry amber heat haze, freight trucks small in the distance, no city skyline.`
+2. **Salt Lake City** — `A broad valley interstate at dusk running toward the snow-dusted Wasatch mountain front rising directly behind, cold blue peaks against warm valley light, freight trucks at a distance.`
+3. **Miami** — `A coastal causeway at dusk over calm reflective water with a distant container-port crane silhouette and a palm-lined horizon, warm amber light, no readable signage.`
+4. **Los Angeles** — `A sprawling multi-lane freeway interchange at dusk with distant container-port cranes silhouetted on a hazy horizon, warm smoggy amber light, skyline minimal.`
+5. **Kansas City** — `A ground-level logistics corridor at dusk: rail yards and rows of distribution warehouses beside an interstate over rolling plains, steel-and-amber tones, no prominent skyline.`
+6. **Dallas** — `A multi-level stacked highway interchange (five-level stack) in the foreground at dusk, the city skyline a distant silhouette beyond a flat plains horizon, warm amber light.`
+7. **Chicago** — `An industrial rail and freight corridor along a lakefront at blue hour, the city skyline a cold-steel silhouette in the far distance, gray-blue Great Lakes tones, colder palette.`
+8. **Atlanta** — `A busy multi-lane perimeter-interstate interchange at dusk threading through a dense pine treeline, the city skyline a distant silhouette above the trees, humid warm light.`
+9. **New York City** — `A major bridge truck-approach span in the foreground at dusk crossing a wide river, the distant city skyline a silhouette beyond, steel-blue river reflections, no readable signage.`
+10. **Philadelphia** — `A Delaware-River industrial port and refinery corridor at dusk with an interstate alongside, the city skyline a small distant silhouette, amber industrial glow.`
+
+---
+
+## Render target (each city)
+- File: `public/brand/photo/city-{state}-{city}.{ext}` (extension-agnostic; fal writes `.jpg`).
+- Wires to: that city's page `/states/{state}/{city}` — **hero** (darkened CommandHero overlay) **and** the page's **OG/social image**. Overrides the state fallback for that one city only.
+
+---
+
+## Estimated cost
+- fal Flux Pro v1.1, `landscape_16_9`, 1 image/call. List price ~$0.04–0.05/image (confirm current fal rate at run; never assume).
+- 10 images ≈ **$0.40–0.50**. With a 1-re-roll-per-image contingency, **hard cap ≈ $1.00**. Tier A alone ≈ $0.20–0.25.
+
+---
+
+## Can a city image safely show skyline / port / logistics / corridor?
+Yes, within these limits (already enforced by `NEGATIVE` + scene wording):
+- **Skylines:** allowed only as a **recognizable silhouette at a distance** — never a single trademarked named building in sharp focus, never a postcard fake.
+- **Ports / cranes / refineries:** allowed as **distant unbranded silhouettes** — no company names, no logos, no readable signage.
+- **Logistics / rail / warehouses / corridors:** fine — generic, unbranded infrastructure.
+- **Hard no (in `NEGATIVE`):** people, faces, victims, crash wreckage, courtrooms, gavels, handshakes, readable text, watermarks, logos, fake signage, license plates. No invented local facts; the image is brand atmosphere, not a data claim.
+- One watch item: "refinery/port industrial" scenes can trip the safety checker as hazard imagery — if a clean prompt returns nothing, re-roll once, else cut.
+
+---
+
+## Pass/fail criteria before wiring
+Review all generated images on a single contact sheet, side by side, and against the existing 10 state images.
+
+**PASS (all must hold):**
+- Visually distinguishable from the other 9 cities **and** from the 10 state images at hero scale.
+- Clearly reads as its intended geography signature (desert / mountains / port / rail / stack / bridge).
+- Compliance clean — nothing from the `NEGATIVE` list present.
+- Works as a **darkened** hero: enough contrast that white overlay text stays legible.
+
+**FAIL (any one):**
+- Reads as a generic "dusk highway + skyline" indistinguishable from another city or a state image (the P3b failure).
+- Any compliance violation (readable text, logo, plate, people, wreckage, etc.).
+- Too muddy / low-contrast to carry overlay text.
+
+**Re-roll rule (two-strikes):** a failed image gets **one** re-roll with a sharpened scene line. Fails twice → **cut that city** (it falls back cleanly to its state image). Do not keep re-rolling the same city.
+
+**Tier gate:** generate Tier A (5) → contact-sheet review → proceed to Tier B **only if ≥4/5 Tier A pass and look distinct**. If Tier A images already look similar to each other or to the state images, STOP and rethink before any Tier B spend.
+
+---
+
+## STOP — condition before generation
+Plan only. No images generated, no FAL_KEY read, no `images:generate`, no build-wire, no spend. Nothing committed but this doc.
+
+Generation requires **both**: (1) Raphy's explicit "go P4", and (2) the `CITY_SCENE` code edit landed in `scripts/generate-brand-images.ts`. Even on go: Tier A first, contact-sheet gate, then Tier B.
+
+Run command when (and only when) both conditions are met:
 ```
-npm run images:generate -- --only city-texas-dallas,city-california-los-angeles,city-illinois-chicago,city-georgia-atlanta,city-florida-miami,city-arizona-phoenix,city-new-york-new-york-city,city-pennsylvania-philadelphia,city-missouri-kansas-city,city-utah-salt-lake-city
+# Tier A first
+npm run images:generate -- --only city-arizona-phoenix,city-utah-salt-lake-city,city-florida-miami,city-california-los-angeles,city-missouri-kansas-city
 npm run build   # prebuild wires them; then contact-sheet review + screenshots
+# Tier B only after Tier A passes the gate
+npm run images:generate -- --only city-texas-dallas,city-illinois-chicago,city-georgia-atlanta,city-new-york-new-york-city,city-pennsylvania-philadelphia
+npm run build
 ```
-(Note: the generator currently builds the city prompt generically from the slug — before running, I'll add these 10 per-city scene lines to `scripts/generate-brand-images.ts` so each renders its specific visual language, mirroring the `ACCIDENT_SCENE` map.)
-
-## STOP
-Plan only. **No images generated, no spend, nothing wired. Awaiting go.**
