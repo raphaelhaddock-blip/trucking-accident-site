@@ -135,6 +135,12 @@ Ask the user:
 
 ---
 
+## Growth OS — Taxonomy + Ontology (REQUIRED before content scaling)
+
+Every site we build must have a site-specific **taxonomy** (category system) and **ontology** (relationships between categories) before content is scaled. Hard rule: **new content must fit the taxonomy/ontology before anyone drafts it** — same gate level as `audit:legaltone`.
+
+Full standard: `docs/GROWTH-OS-TAXONOMY-ONTOLOGY.md`. PR12 built the Growth OS brain (`src/lib/growth/`, recommendation-only); taxonomy/ontology is the next foundation and is **not yet implemented** here. Images are brand/UI infrastructure and may proceed; they are NOT content expansion.
+
 ## STANDARD WEBSITE RULES
 
 **See `~/.claude/SITE_RULES.md` for standard operations rules including:**

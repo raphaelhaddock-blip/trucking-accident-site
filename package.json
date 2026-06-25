@@ -4,15 +4,27 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3006",
+    "prebuild": "tsx scripts/gen-image-manifest.ts",
+    "images:generate": "tsx scripts/generate-brand-images.ts",
     "build": "next build",
     "start": "next start -p 3006",
     "lint": "eslint",
     "audit": "npx tsx scripts/run-audit.ts --all",
     "audit:content": "npx tsx scripts/run-audit.ts --content",
-    "audit:technical": "npx tsx scripts/run-audit.ts --technical"
+    "audit:technical": "npx tsx scripts/run-audit.ts --technical",
+    "audit:quality": "npx tsx scripts/quality/duplicate-audit.ts",
+    "audit:damage": "npx tsx scripts/quality/damage-scan.ts",
+    "audit:top20": "npx tsx scripts/quality/build-top20.ts",
+    "audit:localdata": "npx tsx scripts/quality/local-data-validate.ts",
+    "audit:legaltone": "npx tsx scripts/quality/audit-legaltone.ts",
+    "growth:recommend": "npx tsx scripts/growth/recommend.ts",
+    "growth:audit": "npx tsx scripts/growth/audit.ts",
+    "growth:daily": "npx tsx scripts/growth/daily-report.ts",
+    "growth:test": "npx tsx scripts/growth/selftest.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
+    "@fal-ai/client": "^1.10.1",
     "@next/third-parties": "^16.1.1",
     "@sanity/client": "^7.14.0",
     "next": "16.1.1",

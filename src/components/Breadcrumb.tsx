@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ChevronRight } from '@/components/ui/Icon';
 
 interface BreadcrumbItem {
   label: string;
@@ -7,10 +8,12 @@ interface BreadcrumbItem {
 
 interface BreadcrumbProps {
   items: BreadcrumbItem[];
+  /** Color context. Breadcrumbs sit inside the dark CommandHero by default. */
+  tone?: 'dark' | 'light';
 }
 
-export default function Breadcrumb({ items }: BreadcrumbProps) {
-  // Generate JSON-LD BreadcrumbList schema
+export default function Breadcrumb({ items, tone = 'dark' }: BreadcrumbProps) {
+  // Generate JSON-LD BreadcrumbList schema (unchanged — SEO critical)
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -22,40 +25,33 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
     })),
   };
 
+  const dark = tone === 'dark';
+  const linkColor = dark ? 'text-steel-300 hover:text-amber-400' : 'text-ink-muted hover:text-amber-700';
+  const currentColor = dark ? 'text-white' : 'text-ink-strong';
+  const sepColor = dark ? 'text-steel-500' : 'text-ink-muted/50';
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <nav aria-label="Breadcrumb" className="mb-6">
-        <ol className="flex flex-wrap items-center gap-2 text-sm text-gray-600">
+      <nav aria-label="Breadcrumb">
+        <ol className="flex flex-wrap items-center gap-x-1 gap-y-1 text-sm">
           {items.map((item, index) => (
             <li key={index} className="flex items-center">
-              {index > 0 && (
-                <svg
-                  className="w-4 h-4 mx-2 text-gray-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              )}
+              {index > 0 && <ChevronRight className={`mx-1 h-4 w-4 ${sepColor}`} />}
               {item.href ? (
                 <Link
                   href={item.href}
-                  className="hover:text-amber-600 transition-colors"
+                  className={`-mx-1 rounded px-1 py-1 font-medium transition-colors ${linkColor}`}
                 >
                   {item.label}
                 </Link>
               ) : (
-                <span className="text-gray-900 font-medium">{item.label}</span>
+                <span className={`px-1 py-1 font-semibold ${currentColor}`} aria-current="page">
+                  {item.label}
+                </span>
               )}
             </li>
           ))}

@@ -85,7 +85,7 @@ Beaverton sees truck traffic from Agriculture and Retail. These industries opera
 
   legalInfo: `Truck accident claims in Beaverton are governed by Oregon state law and federal FMCSA regulations. Key legal considerations include:
 
-**Statute of Limitations**: Oregon sets strict deadlines for filing personal injury and wrongful death claims. Missing this deadline bars your claim forever.
+**Statute of Limitations**: Oregon sets strict deadlines for filing personal injury and wrongful death claims. These filing time limits depend on the type of claim and the facts.
 
 **Comparative Negligence**: Oregon's negligence laws determine how fault is allocated and may affect your recovery.
 
@@ -106,7 +106,7 @@ Our Beaverton truck accident attorneys understand both Oregon law and federal tr
     },
     {
       question: 'How long do I have to file a truck accident lawsuit in Oregon?',
-      answer: 'Oregon has a statute of limitations for personal injury claims. Missing this deadline means losing your right to compensation. Contact a lawyer promptly to ensure your claim is filed on time.',
+      answer: 'Oregon has a statute of limitations for personal injury claims. These filing time limits depend on the type of claim and the facts. A licensed attorney can confirm the deadlines that apply.',
     },
     {
       question: 'Who can be held liable for a truck accident in Beaverton?',

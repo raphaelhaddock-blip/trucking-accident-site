@@ -1,10 +1,17 @@
 @import "tailwindcss";
 
+/* =====================================================================
+   NATIONAL TRUCK ACCIDENT RESPONSE — design system
+   Premium, urgent, authoritative, data-backed, cinematic.
+   Backward-compatible: legacy navy-* / amber-* tokens preserved so the
+   ~603 existing pages keep rendering while components migrate.
+   ===================================================================== */
+
 :root {
+  /* ---- Legacy tokens (PRESERVED — do not remove, 100+ usages) ---- */
   --background: #ffffff;
   --foreground: #171717;
 
-  /* Navy color palette */
   --navy-50: #f0f4f8;
   --navy-100: #d9e2ec;
   --navy-200: #bcccdc;
@@ -16,19 +23,70 @@
   --navy-800: #243b53;
   --navy-900: #102a43;
 
-  /* Amber accent */
   --amber-400: #fbbf24;
   --amber-500: #f59e0b;
   --amber-600: #d97706;
+
+  /* ---- Ink: cinematic blue-black base for dark command sections ---- */
+  --ink-950: #060b14;
+  --ink-900: #0a1322;
+  --ink-850: #0f1c30;
+  --ink-800: #15273f;
+  --ink-700: #1d3350;
+
+  /* ---- Steel: cool neutrals for text/borders on dark ---- */
+  --steel-100: #e6ecf3;
+  --steel-200: #c8d4e2;
+  --steel-300: #a4b5c9;
+  --steel-400: #7e90a8;
+  --steel-500: #5d6e85;
+
+  /* ---- Paper: warm light surfaces (avoid sterile pure-white) ---- */
+  --paper: #faf8f3;
+  --paper-2: #f1ece2;
+  --paper-3: #e7e0d2;
+  --line: #e2dccd;          /* hairline on light */
+  --line-ink: rgba(180, 200, 225, 0.14); /* hairline on dark */
+
+  /* ---- Accent (amber signage / primary CTA) ---- */
+  --accent-400: #fbbf24;
+  --accent-500: #f5a300;
+  --accent-600: #d98800;
+
+  /* ---- Signal (hazard orange-red — true urgency, used sparingly) ---- */
+  --signal-400: #ef6a45;
+  --signal-500: #d6452a;
+  --signal-600: #b5331c;
+
+  /* ---- Semantic text ---- */
+  --text-strong: #0c1626;
+  --text: #243042;
+  --text-muted: #5a6678;
+  --text-on-ink: #eef3f9;
+  --text-on-ink-muted: #9fb0c6;
+
+  --success-500: #2f8f5b;
+
+  /* ---- Elevation ---- */
+  --shadow-sm: 0 1px 2px rgba(8, 18, 33, 0.06);
+  --shadow-md: 0 6px 20px -6px rgba(8, 18, 33, 0.18);
+  --shadow-lg: 0 24px 60px -18px rgba(8, 18, 33, 0.42);
+
+  /* ---- Rhythm ---- */
+  --container: 80rem;     /* 1280px */
+  --radius: 0.5rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 
-  /* Navy colors */
+  /* Fonts */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, monospace;
+
+  /* Legacy color utilities (bg-navy-900, text-amber-500, …) */
   --color-navy-50: var(--navy-50);
   --color-navy-100: var(--navy-100);
   --color-navy-200: var(--navy-200);
@@ -39,34 +97,294 @@
   --color-navy-700: var(--navy-700);
   --color-navy-800: var(--navy-800);
   --color-navy-900: var(--navy-900);
-
-  /* Amber colors */
   --color-amber-400: var(--amber-400);
   --color-amber-500: var(--amber-500);
   --color-amber-600: var(--amber-600);
+
+  /* New semantic color utilities */
+  --color-ink-950: var(--ink-950);
+  --color-ink-900: var(--ink-900);
+  --color-ink-850: var(--ink-850);
+  --color-ink-800: var(--ink-800);
+  --color-ink-700: var(--ink-700);
+  --color-steel-100: var(--steel-100);
+  --color-steel-200: var(--steel-200);
+  --color-steel-300: var(--steel-300);
+  --color-steel-400: var(--steel-400);
+  --color-steel-500: var(--steel-500);
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-paper-3: var(--paper-3);
+  --color-line: var(--line);
+  --color-accent-400: var(--accent-400);
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
+  --color-signal-400: var(--signal-400);
+  --color-signal-500: var(--signal-500);
+  --color-signal-600: var(--signal-600);
+  --color-ink-strong: var(--text-strong);
+  --color-ink-body: var(--text);
+  --color-ink-muted: var(--text-muted);
+  --color-success-500: var(--success-500);
+
+  /* Fluid display type scale */
+  --text-display-xl: clamp(2.75rem, 1.6rem + 5.1vw, 5rem);
+  --text-display-lg: clamp(2.25rem, 1.5rem + 3.2vw, 3.75rem);
+  --text-display-md: clamp(1.875rem, 1.4rem + 2vw, 2.75rem);
+  --text-display-sm: clamp(1.5rem, 1.25rem + 1.1vw, 2rem);
+
+  --container-page: var(--container);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ---------------------------------------------------------------------
+   Base
+   --------------------------------------------------------------------- */
+/* Base element styles live in @layer base so Tailwind utilities (text-white,
+   text-ink-strong, etc.) always win — otherwise unlayered element selectors
+   override color utilities and white headings go dark-on-dark on ink sections. */
+@layer base {
+  /* next/font exposes --font-inter / --font-newsreader / --font-plex-mono on
+     <body>. @theme inline does NOT emit --font-sans/display/mono as real custom
+     properties, so we define them here (on body, where the next/font vars live)
+     for every `var(--font-*)` usage in base + component classes. */
+  body {
+    --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    --font-display: var(--font-newsreader), Georgia, "Times New Roman", serif;
+    --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, monospace;
+    background: var(--paper);
+    color: var(--text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "ss01", "cv01";
+  }
+
+  /* Editorial serif on primary headings across the whole site. NO color here:
+     headings inherit their context color so `text-white` (dark sections) and
+     `text-ink-strong` (light sections) utilities win cleanly. */
+  h1, h2 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.018em;
+    line-height: 1.08;
+  }
+  h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+  }
+
+  html { scroll-behavior: smooth; }
+  /* Offset anchor jumps for the sticky header */
+  :target { scroll-margin-top: 6rem; }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid var(--accent-500);
+    outline-offset: 2px;
+    border-radius: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+/* Tabular figures everywhere numbers are shown as data */
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* ---------------------------------------------------------------------
+   Component utilities
+   --------------------------------------------------------------------- */
+
+/* Eyebrow / kicker — mono, the "instrument label" of the command center */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-600);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.eyebrow::before {
+  content: "";
+  width: 1.5rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+.eyebrow-on-ink { color: var(--accent-400); }
+
+/* Page container */
+.container-page {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .container-page { padding-inline: 2rem; }
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.975rem;
+  line-height: 1;
+  padding: 0.95rem 1.5rem;
+  border-radius: var(--radius);
+  transition: background-color .18s ease, color .18s ease, transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  white-space: nowrap;
+}
+.btn:active { transform: translateY(1px); }
+
+.btn-primary {
+  background: var(--accent-500);
+  color: #1a1206;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset, var(--shadow-md);
+}
+.btn-primary:hover { background: var(--accent-400); }
+
+.btn-signal {
+  background: var(--signal-500);
+  color: #fff;
+  box-shadow: var(--shadow-md);
+}
+.btn-signal:hover { background: var(--signal-400); }
+
+.btn-ink {
+  background: var(--ink-900);
+  color: var(--text-on-ink);
+}
+.btn-ink:hover { background: var(--ink-800); }
+
+.btn-ghost-ink {
+  border: 1.5px solid rgba(238, 243, 249, 0.4);
+  color: var(--text-on-ink);
+}
+.btn-ghost-ink:hover { background: rgba(238, 243, 249, 0.08); border-color: rgba(238,243,249,0.7); }
+
+.btn-ghost {
+  border: 1.5px solid var(--line);
+  color: var(--text-strong);
+  background: transparent;
+}
+.btn-ghost:hover { border-color: var(--ink-800); }
+
+/* Cards */
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+}
+.card-hover:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--paper-3);
+  transform: translateY(-2px);
 }
 
-/* Focus styles for accessibility */
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--amber-500);
-  outline-offset: 2px;
+/* Hairline rule */
+.rule { height: 1px; background: var(--line); border: 0; }
+.rule-ink { height: 1px; background: var(--line-ink); border: 0; }
+
+/* Stat / instrument panel value */
+.stat-value {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--text-strong);
+}
+.stat-value-ink { color: #fff; }
+.stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.stat-label-ink { color: var(--text-on-ink-muted); }
+
+/* ---------------------------------------------------------------------
+   Brand motifs (honest — pure CSS/SVG, no stock photography)
+   --------------------------------------------------------------------- */
+
+/* Cinematic ink backdrop for hero / dark command sections.
+   Sets a light inherited color so any heading/text inside stays legible even
+   without an explicit text-* utility. */
+.bg-command {
+  color: var(--text-on-ink);
+  background:
+    radial-gradient(120% 100% at 80% -10%, rgba(245, 163, 0, 0.10), transparent 55%),
+    radial-gradient(90% 90% at 0% 0%, rgba(31, 51, 80, 0.55), transparent 60%),
+    linear-gradient(180deg, var(--ink-950) 0%, var(--ink-900) 60%, var(--ink-850) 100%);
+}
+
+/* Lane / roadway perspective lines (subtle, layered over .bg-command) */
+.lane-lines {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 64px,
+    rgba(170, 195, 225, 0.05) 64px,
+    rgba(170, 195, 225, 0.05) 65px
+  );
+}
+
+/* Fine grain to kill flat-gradient "AI glow" */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+/* Hazard tick strip — top accent bar (DOT signage language) */
+.hazard-strip {
+  height: 4px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--accent-500) 0,
+    var(--accent-500) 14px,
+    var(--ink-900) 14px,
+    var(--ink-900) 28px
+  );
+}
+
+/* Left signpost accent for list items / quotes */
+.signpost {
+  border-left: 3px solid var(--accent-500);
+  padding-left: 1rem;
+}
+
+/* Sticky-CTA bottom padding so content is never hidden on mobile */
+@media (max-width: 767px) {
+  body.has-sticky-cta { padding-bottom: 4.5rem; }
+}
+
+/* Long-form legal prose defaults (state/city/accident body copy).
+   Measure capped at ~68ch for scanability — no-op inside narrow grid cells. */
+.prose-legal { color: var(--text); line-height: 1.75; font-size: 1.0625rem; max-width: 68ch; }
+.prose-legal p { margin-bottom: 1.15rem; }
+.prose-legal p:last-child { margin-bottom: 0; }
+.prose-legal strong { color: var(--text-strong); font-weight: 600; }
+.prose-legal a { color: var(--accent-600); text-decoration: underline; text-underline-offset: 2px; }
+/* Lead paragraph — first paragraph of a long section reads as a summary */
+.prose-legal > p:first-of-type { font-size: 1.15rem; color: var(--text-strong); line-height: 1.65; }
+
+/* Reduced motion respect */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }

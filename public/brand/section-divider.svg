@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 48" fill="none" role="img" aria-label="Signage divider with mile-marker ticks">
+  <line x1="0" y1="24" x2="540" y2="24" stroke="#e2dccd" stroke-width="1"/>
+  <line x1="660" y1="24" x2="1200" y2="24" stroke="#e2dccd" stroke-width="1"/>
+  <!-- mile-marker ticks -->
+  <g stroke="#e2dccd" stroke-width="1">
+    <line x1="120" y1="19" x2="120" y2="29"/>
+    <line x1="300" y1="19" x2="300" y2="29"/>
+    <line x1="900" y1="19" x2="900" y2="29"/>
+    <line x1="1080" y1="19" x2="1080" y2="29"/>
+  </g>
+  <!-- centered route marker -->
+  <rect x="576" y="8" width="48" height="32" rx="7" fill="#0a1322"/>
+  <path d="M590 30 L600 18 L610 30" fill="none" stroke="#f5a300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

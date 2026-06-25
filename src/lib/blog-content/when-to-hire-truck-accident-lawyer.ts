@@ -156,14 +156,14 @@ Most importantly, attorneys work on contingency—meaning you pay nothing upfron
     },
     {
       heading: 'Situation 8: You Are Approaching the Statute of Limitations',
-      content: `Every state has a statute of limitations—a deadline by which you must file your lawsuit or lose your right to sue forever. If you're approaching this deadline without having filed, you need an attorney immediately.
+      content: `Every state has a statute of limitations—a filing time limit that depends on the type of claim and the facts. If you're approaching this deadline without having filed, you need an attorney immediately.
 
 Statute of limitations considerations:
 - Deadlines vary by state (typically 1-4 years for personal injury)
 - Wrongful death may have different deadlines
 - Claims against government entities often have shorter notice requirements
 - The clock typically starts from the accident date
-- Missing the deadline by even one day usually bars your claim
+- These time limits depend on the type of claim and the facts
 
 Even if you're not close to the deadline, waiting reduces your case value. Evidence degrades, witnesses forget, and the trucking company has more time to prepare their defense. Cases investigated promptly are stronger than cases where attorneys are playing catch-up years later.
 

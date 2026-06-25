@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="National Truck Accident Response mark">
+  <!-- Route-marker plate (highway-shield language = national authority) -->
+  <rect x="3" y="3" width="42" height="42" rx="11" fill="#0a1322"/>
+  <rect x="3.75" y="3.75" width="40.5" height="40.5" rx="10.25" fill="none" stroke="#7e90a8" stroke-opacity="0.45" stroke-width="1.5"/>
+  <!-- Forward chevron = response / route ahead -->
+  <path d="M13 28.5 L24 16.5 L35 28.5" fill="none" stroke="#f5a300" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Lane / road baseline with center dash -->
+  <path d="M14 35 H21" stroke="#fbbf24" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M27 35 H34" stroke="#fbbf24" stroke-width="2.6" stroke-linecap="round"/>
+</svg>

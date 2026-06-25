@@ -85,7 +85,7 @@ Lawrence sees truck traffic from Agriculture and Retail. These industries operat
 
   legalInfo: `Truck accident claims in Lawrence are governed by Kansas state law and federal FMCSA regulations. Key legal considerations include:
 
-**Statute of Limitations**: Kansas sets strict deadlines for filing personal injury and wrongful death claims. Missing this deadline bars your claim forever.
+**Statute of Limitations**: Kansas sets strict deadlines for filing personal injury and wrongful death claims. These filing time limits depend on the type of claim and the facts.
 
 **Comparative Negligence**: Kansas's negligence laws determine how fault is allocated and may affect your recovery.
 
@@ -106,7 +106,7 @@ Our Lawrence truck accident attorneys understand both Kansas law and federal tru
     },
     {
       question: 'How long do I have to file a truck accident lawsuit in Kansas?',
-      answer: 'Kansas has a statute of limitations for personal injury claims. Missing this deadline means losing your right to compensation. Contact a lawyer promptly to ensure your claim is filed on time.',
+      answer: 'Kansas has a statute of limitations for personal injury claims. These filing time limits depend on the type of claim and the facts. A licensed attorney can confirm the deadlines that apply.',
     },
     {
       question: 'Who can be held liable for a truck accident in Lawrence?',

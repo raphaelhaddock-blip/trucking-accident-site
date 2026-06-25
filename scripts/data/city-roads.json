@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "description": "Verified major freight corridors by city. Keyed roads[stateSlug][citySlug]. Sourced from state DOT / FHWA freight-network data. A corridor may be NAMED as freight infrastructure (neutral role language) only when confidence==VERIFIED; a DANGER claim (dangerous/hotspot/deadliest) additionally requires a sourced crashStat object. Empty until a human verifies a real source per record. See docs/PR7-SOURCE-PLAN.md.",
+  "roads": {}
+}

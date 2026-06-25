@@ -1,0 +1,331 @@
+{
+  "config": {
+    "CITY_HUB_WORD_FLOOR": 500,
+    "HUB_ADVISORY_MAX": 900,
+    "SIM_THRESHOLD": 0.3,
+    "SHINGLE_K": 5,
+    "NUM_HASHES": 64,
+    "LSH_BANDS": 16,
+    "LSH_ROWS": 4,
+    "note": "model-aware: gate measures RENDERED city fields only (heroText, truckingIndustry, dangerousRoads, commonAccidents, faqs). h1/metaTitle/whyDangerous/liability/evidence/fmcsa/legalInfo are NEVER rendered on city pages and do not gate."
+  },
+  "totals": {
+    "routesScanned": 1616,
+    "withContentFile": 1613,
+    "noContentFile": 3,
+    "renderedCandidatePairs": 752768
+  },
+  "gate": {
+    "placeholders": 0,
+    "renderedBelowFloor": 0,
+    "renderedPairsOver30pct": 752719,
+    "renderedDocsWithDupPartner": 1467,
+    "PASS": false
+  },
+  "advisory": {
+    "renderedInHubBand_500_900": 369,
+    "renderedAbove900": 1244,
+    "duplicateRenderedMetaDescGroups": 4
+  },
+  "dead_nonGating": {
+    "note": "these fields are NOT rendered on city pages; sharing them is not a duplicate-content problem",
+    "storedDeadPairsOver30pct": 766251,
+    "storedDeadDocsWithDupPartner": 1467,
+    "duplicateStoredH1Groups": 114,
+    "duplicateStoredTitleGroups": 32,
+    "fmcsaIdenticalGroups": {
+      "groups": 80,
+      "largest": 29
+    }
+  },
+  "worstRenderedPairs": [
+    {
+      "a": "connecticut/middletown",
+      "b": "new-jersey/sayreville",
+      "sim": 1
+    },
+    {
+      "a": "connecticut/plainfield",
+      "b": "connecticut/thompson",
+      "sim": 1
+    },
+    {
+      "a": "florida/titusville",
+      "b": "florida/sharpes",
+      "sim": 1
+    },
+    {
+      "a": "florida/titusville",
+      "b": "florida/cocoa",
+      "sim": 1
+    },
+    {
+      "a": "florida/boca-raton",
+      "b": "florida/delray-beach",
+      "sim": 1
+    },
+    {
+      "a": "florida/weston",
+      "b": "florida/lauderhill",
+      "sim": 1
+    },
+    {
+      "a": "florida/weston",
+      "b": "florida/deerfield-beach",
+      "sim": 1
+    },
+    {
+      "a": "florida/lauderhill",
+      "b": "florida/deerfield-beach",
+      "sim": 1
+    },
+    {
+      "a": "florida/brooksville",
+      "b": "florida/spring-hill",
+      "sim": 1
+    },
+    {
+      "a": "florida/coral-springs",
+      "b": "florida/pompano-beach",
+      "sim": 1
+    },
+    {
+      "a": "florida/sharpes",
+      "b": "florida/cocoa",
+      "sim": 1
+    },
+    {
+      "a": "kentucky/lexington-fayette",
+      "b": "west-virginia/oak-hill",
+      "sim": 1
+    },
+    {
+      "a": "louisiana/not-reported-livingston",
+      "b": "louisiana/port-vincent",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/newton",
+      "b": "massachusetts/medford",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/wrentham",
+      "b": "massachusetts/westwood",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/hopkinton",
+      "b": "massachusetts/tyngsboro",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/hopkinton",
+      "b": "massachusetts/woburn",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/hopkinton",
+      "b": "massachusetts/dracut",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/tyngsboro",
+      "b": "massachusetts/woburn",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/tyngsboro",
+      "b": "massachusetts/dracut",
+      "sim": 1
+    },
+    {
+      "a": "massachusetts/woburn",
+      "b": "massachusetts/dracut",
+      "sim": 1
+    },
+    {
+      "a": "michigan/oxford",
+      "b": "michigan/lathrup-village",
+      "sim": 1
+    },
+    {
+      "a": "minnesota/blaine",
+      "b": "minnesota/coon-rapids",
+      "sim": 1
+    },
+    {
+      "a": "missouri/seymour",
+      "b": "missouri/diggins",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/cinnaminson",
+      "b": "new-jersey/mt-laurel",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/cinnaminson",
+      "b": "new-jersey/bordentown",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/mahwah",
+      "b": "new-jersey/east-rutherford",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/mahwah",
+      "b": "new-jersey/elmwood-park",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/mahwah",
+      "b": "new-jersey/rutherford",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/mt-laurel",
+      "b": "new-jersey/bordentown",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/east-rutherford",
+      "b": "new-jersey/elmwood-park",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/east-rutherford",
+      "b": "new-jersey/rutherford",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/west-deptford",
+      "b": "new-jersey/deptford",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/elmwood-park",
+      "b": "new-jersey/rutherford",
+      "sim": 1
+    },
+    {
+      "a": "south-carolina/spartanburg",
+      "b": "virginia/fredericksburg",
+      "sim": 1
+    },
+    {
+      "a": "texas/jewett",
+      "b": "texas/buffalo",
+      "sim": 1
+    },
+    {
+      "a": "texas/katy",
+      "b": "texas/missouri-city",
+      "sim": 1
+    },
+    {
+      "a": "texas/princeton",
+      "b": "texas/blue-ridge",
+      "sim": 1
+    },
+    {
+      "a": "texas/lancaster",
+      "b": "texas/wilmer",
+      "sim": 1
+    },
+    {
+      "a": "texas/lancaster",
+      "b": "texas/addison",
+      "sim": 1
+    }
+  ],
+  "worstDeadPairs": [
+    {
+      "a": "alabama/gulf-shores",
+      "b": "alabama/foley",
+      "sim": 1
+    },
+    {
+      "a": "alabama/gulf-shores",
+      "b": "georgia/milledgeville",
+      "sim": 1
+    },
+    {
+      "a": "alabama/mobile",
+      "b": "alabama/talladega",
+      "sim": 1
+    },
+    {
+      "a": "alabama/leesburg",
+      "b": "alabama/centre",
+      "sim": 1
+    },
+    {
+      "a": "alabama/leesburg",
+      "b": "georgia/holly-springs",
+      "sim": 1
+    },
+    {
+      "a": "alabama/leesburg",
+      "b": "georgia/canton",
+      "sim": 1
+    },
+    {
+      "a": "alabama/rainsville",
+      "b": "alabama/geraldine",
+      "sim": 1
+    },
+    {
+      "a": "alabama/rainsville",
+      "b": "georgia/clarkston",
+      "sim": 1
+    },
+    {
+      "a": "alabama/rainsville",
+      "b": "georgia/decatur",
+      "sim": 1
+    },
+    {
+      "a": "alabama/rainsville",
+      "b": "georgia/lithonia",
+      "sim": 1
+    }
+  ],
+  "duplicateRenderedMetaDesc": [
+    {
+      "value": "experienced fayetteville truck accident lawyers. 5 fatal crashes in 2022. free c",
+      "count": 2,
+      "sample": [
+        "arkansas/fayetteville-ar",
+        "north-carolina/fayetteville-nc"
+      ]
+    },
+    {
+      "value": "experienced norwalk truck accident lawyers. 1 fatal crashes in 2022. free consul",
+      "count": 2,
+      "sample": [
+        "california/norwalk-ca",
+        "connecticut/norwalk-ct"
+      ]
+    },
+    {
+      "value": "experienced westminster truck accident lawyers. 1 fatal crashes in 2022. free co",
+      "count": 2,
+      "sample": [
+        "california/westminster",
+        "colorado/westminster-co"
+      ]
+    },
+    {
+      "value": "experienced bloomington truck accident lawyers. 2 fatal crashes in 2022. free co",
+      "count": 2,
+      "sample": [
+        "indiana/bloomington-in",
+        "minnesota/bloomington-mn"
+      ]
+    }
+  ],
+  "placeholdersSample": [],
+  "renderedBelowFloorSample": []
+}

@@ -113,7 +113,7 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
 
   truckingIndustry: `Parish's trucking industry serves the area's diverse economic needs. Commercial vehicles operating through Oswego County transport goods for finance, media, healthcare businesses. Major shipping routes including I-87, I-90, I-95 connect Parish to regional and national markets. Both local delivery operations and long-haul trucking companies operate in the area. The Federal Motor Carrier Safety Administration (FMCSA) regulates these carriers, but violations of Hours of Service rules, maintenance requirements, and driver qualification standards remain common. When trucking companies cut corners to save money, Parish residents pay the price in preventable accidents.`,
 
-  legalInfo: `Truck accident claims in Parish are governed by New York state law and federal FMCSA regulations. Cases may be filed in Oswego County state courts or the Southern District of New York federal court. Our attorneys understand both jurisdictions and can advise on the best venue for your case.`,
+  legalInfo: `Truck accident claims in Parish are governed by New York state law and federal FMCSA regulations. Cases may be filed in Oswego County state courts or the Southern District of New York federal court. Our attorneys understand both jurisdictions and can explain how the court process works.`,
 
   faqs: [
       {
@@ -134,7 +134,7 @@ Vehicle maintenance requirements mandate regular inspections and documented repa
       },
       {
           "question": "How long do I have to file a truck accident lawsuit in New York?",
-          "answer": "New York's statute of limitations determines how long you have to file a truck accident lawsuit. Missing this deadline typically bars your claim forever, regardless of how severe your injuries are. However, you should not wait to consult an attorney. Critical evidence from truck accidents—including ELD data, driver qualification files, and maintenance records—may be legally destroyed after federal retention periods expire. In Parish, local attorneys understand both state deadlines and federal trucking regulations. They can send immediate preservation letters to trucking companies requiring them to retain evidence. The sooner you act after a Parish truck accident, the stronger your case will be."
+          "answer": "New York's statute of limitations determines how long you have to file a truck accident lawsuit. These filing time limits depend on the type of claim and the facts. However, you should not wait to consult an attorney. Critical evidence from truck accidents—including ELD data, driver qualification files, and maintenance records—may be legally destroyed after federal retention periods expire. In Parish, local attorneys understand both state deadlines and federal trucking regulations. They can send immediate preservation letters to trucking companies requiring them to retain evidence. The sooner you act after a Parish truck accident, the better the evidence is preserved."
       },
       {
           "question": "Who can be held liable for a truck accident in Parish?",

@@ -8,7 +8,7 @@ import { getAccidentName } from '@/lib/accidents-content';
 const PHONE_NUMBER = '1-800-555-0123';
 
 // Default OG image for blog posts
-const DEFAULT_OG_IMAGE = 'https://cdn.sanity.io/images/54bwni5t/production/8391509ade1b30502407263f03b21aad42eaedcb-1376x768.jpg';
+const DEFAULT_OG_IMAGE = 'https://trucking-accident-site.vercel.app/brand/og-default.png';
 
 export async function generateStaticParams() {
   return BLOG_SLUGS.map((slug) => ({ slug }));

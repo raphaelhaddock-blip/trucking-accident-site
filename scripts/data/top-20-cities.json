@@ -1,0 +1,5615 @@
+{
+  "source": "US Census Bureau 2022 Population Estimates",
+  "topN": 20,
+  "generatedFrom": "scripts/data/city-populations.json",
+  "states": [
+    {
+      "stateSlug": "alabama",
+      "availableInDataset": 14,
+      "requiredCount": 14,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "huntsville",
+          "rank": 1,
+          "population": 222035,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "montgomery",
+          "rank": 2,
+          "population": 201568,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "birmingham",
+          "rank": 3,
+          "population": 196353,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "mobile",
+          "rank": 4,
+          "population": 185205,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "tuscaloosa",
+          "rank": 5,
+          "population": 107217,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "hoover",
+          "rank": 6,
+          "population": 93665,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "auburn",
+          "rank": 7,
+          "population": 76143,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "dothan",
+          "rank": 8,
+          "population": 74283,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "madison",
+          "rank": 9,
+          "population": 63927,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "decatur",
+          "rank": 10,
+          "population": 57938,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "florence",
+          "rank": 11,
+          "population": 41856,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "vestavia-hills",
+          "rank": 12,
+          "population": 39587,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "pelham",
+          "rank": 13,
+          "population": 25396,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "gulf-shores",
+          "rank": 14,
+          "population": 16193,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "alaska",
+      "availableInDataset": 5,
+      "requiredCount": 5,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "anchorage",
+          "rank": 1,
+          "population": 291247,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fairbanks",
+          "rank": 2,
+          "population": 32515,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "juneau",
+          "rank": 3,
+          "population": 31974,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "wasilla",
+          "rank": 4,
+          "population": 15188,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "sitka",
+          "rank": 5,
+          "population": 8458,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "arizona",
+      "availableInDataset": 20,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "phoenix",
+          "rank": 1,
+          "population": 1608139,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "tucson",
+          "rank": 2,
+          "population": 542629,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "mesa",
+          "rank": 3,
+          "population": 504258,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "chandler",
+          "rank": 4,
+          "population": 275987,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "gilbert",
+          "rank": 5,
+          "population": 267918,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "glendale",
+          "rank": 6,
+          "population": 248325,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "scottsdale",
+          "rank": 7,
+          "population": 241361,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "peoria",
+          "rank": 8,
+          "population": 190985,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "tempe",
+          "rank": 9,
+          "population": 180587,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "surprise",
+          "rank": 10,
+          "population": 152737,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "buckeye",
+          "rank": 11,
+          "population": 108612,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "goodyear",
+          "rank": 12,
+          "population": 101883,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "yuma",
+          "rank": 13,
+          "population": 95548,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "avondale",
+          "rank": 14,
+          "population": 91423,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "flagstaff",
+          "rank": 15,
+          "population": 76831,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "queen-creek",
+          "rank": 16,
+          "population": 61606,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "maricopa",
+          "rank": 17,
+          "population": 60984,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "lake-havasu-city",
+          "rank": 18,
+          "population": 58564,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "casa-grande",
+          "rank": 19,
+          "population": 57163,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "san-luis",
+          "rank": 20,
+          "population": 35257,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "arkansas",
+      "availableInDataset": 12,
+      "requiredCount": 12,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "little-rock",
+          "rank": 1,
+          "population": 202591,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fayetteville",
+          "rank": 2,
+          "population": 99793,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "fort-smith",
+          "rank": 3,
+          "population": 89142,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "springdale",
+          "rank": 4,
+          "population": 86657,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "jonesboro",
+          "rank": 5,
+          "population": 78576,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "rogers",
+          "rank": 6,
+          "population": 74103,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "conway",
+          "rank": 7,
+          "population": 67449,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "north-little-rock",
+          "rank": 8,
+          "population": 65903,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bentonville",
+          "rank": 9,
+          "population": 57215,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "pine-bluff",
+          "rank": 10,
+          "population": 40943,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "hot-springs",
+          "rank": 11,
+          "population": 37018,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "texarkana",
+          "rank": 12,
+          "population": 30259,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "california",
+      "availableInDataset": 116,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "los-angeles",
+          "rank": 1,
+          "population": 3898747,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "san-diego",
+          "rank": 2,
+          "population": 1386932,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "san-jose",
+          "rank": 3,
+          "population": 1013240,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "san-francisco",
+          "rank": 4,
+          "population": 873965,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fresno",
+          "rank": 5,
+          "population": 542107,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "sacramento",
+          "rank": 6,
+          "population": 524943,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "long-beach",
+          "rank": 7,
+          "population": 466742,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "oakland",
+          "rank": 8,
+          "population": 433031,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bakersfield",
+          "rank": 9,
+          "population": 403455,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "anaheim",
+          "rank": 10,
+          "population": 350365,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "stockton",
+          "rank": 11,
+          "population": 320804,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "riverside",
+          "rank": 12,
+          "population": 314998,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "santa-ana",
+          "rank": 13,
+          "population": 310227,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "irvine",
+          "rank": 14,
+          "population": 307670,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "chula-vista",
+          "rank": 15,
+          "population": 275487,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fremont",
+          "rank": 16,
+          "population": 230504,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "santa-clarita",
+          "rank": 17,
+          "population": 228673,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "san-bernardino",
+          "rank": 18,
+          "population": 222101,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fontana",
+          "rank": 19,
+          "population": 219481,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "modesto",
+          "rank": 20,
+          "population": 218464,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "colorado",
+      "availableInDataset": 15,
+      "requiredCount": 15,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "denver",
+          "rank": 1,
+          "population": 711463,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "colorado-springs",
+          "rank": 2,
+          "population": 478961,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "aurora",
+          "rank": 3,
+          "population": 386261,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fort-collins",
+          "rank": 4,
+          "population": 169810,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lakewood",
+          "rank": 5,
+          "population": 155984,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "thornton",
+          "rank": 6,
+          "population": 141464,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "arvada",
+          "rank": 7,
+          "population": 124402,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "westminster-co",
+          "rank": 8,
+          "population": 116317,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "pueblo",
+          "rank": 9,
+          "population": 111876,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "greeley",
+          "rank": 10,
+          "population": 108795,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "centennial",
+          "rank": 11,
+          "population": 108418,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "boulder",
+          "rank": 12,
+          "population": 105485,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "longmont",
+          "rank": 13,
+          "population": 98885,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "loveland",
+          "rank": 14,
+          "population": 77446,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "grand-junction",
+          "rank": 15,
+          "population": 65560,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "connecticut",
+      "availableInDataset": 16,
+      "requiredCount": 16,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "bridgeport",
+          "rank": 1,
+          "population": 148654,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "stamford",
+          "rank": 2,
+          "population": 135470,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "new-haven",
+          "rank": 3,
+          "population": 134023,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "hartford",
+          "rank": 4,
+          "population": 121054,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "waterbury",
+          "rank": 5,
+          "population": 114403,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "norwalk",
+          "rank": 6,
+          "population": 91184,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "danbury",
+          "rank": 7,
+          "population": 86518,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "new-britain",
+          "rank": 8,
+          "population": 74135,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "meriden",
+          "rank": 9,
+          "population": 60850,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "bristol",
+          "rank": 10,
+          "population": 60833,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "west-haven",
+          "rank": 11,
+          "population": 55564,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "milford",
+          "rank": 12,
+          "population": 54789,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "middletown",
+          "rank": 13,
+          "population": 47717,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "shelton",
+          "rank": 14,
+          "population": 41692,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "norwich",
+          "rank": 15,
+          "population": 40125,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "torrington",
+          "rank": 16,
+          "population": 35515,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "delaware",
+      "availableInDataset": 3,
+      "requiredCount": 3,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "wilmington-de",
+          "rank": 1,
+          "population": 70898,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "dover",
+          "rank": 2,
+          "population": 39403,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "newark-de",
+          "rank": 3,
+          "population": 33673,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "florida",
+      "availableInDataset": 60,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "jacksonville",
+          "rank": 1,
+          "population": 949611,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "miami",
+          "rank": 2,
+          "population": 442241,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "tampa",
+          "rank": 3,
+          "population": 384959,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "orlando",
+          "rank": 4,
+          "population": 307573,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "st-petersburg",
+          "rank": 5,
+          "population": 258308,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "port-st-lucie",
+          "rank": 6,
+          "population": 231790,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "hialeah",
+          "rank": 7,
+          "population": 223109,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "cape-coral",
+          "rank": 8,
+          "population": 204510,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "tallahassee",
+          "rank": 9,
+          "population": 196169,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fort-lauderdale",
+          "rank": 10,
+          "population": 182760,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "pembroke-pines",
+          "rank": 11,
+          "population": 171178,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "hollywood",
+          "rank": 12,
+          "population": 153627,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "gainesville",
+          "rank": 13,
+          "population": 141085,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "miramar",
+          "rank": 14,
+          "population": 134721,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "coral-springs",
+          "rank": 15,
+          "population": 134394,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "palm-bay",
+          "rank": 16,
+          "population": 124990,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "west-palm-beach",
+          "rank": 17,
+          "population": 117415,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "clearwater",
+          "rank": 18,
+          "population": 117292,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lakeland",
+          "rank": 19,
+          "population": 112641,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "pompano-beach",
+          "rank": 20,
+          "population": 112046,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "georgia",
+      "availableInDataset": 20,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "atlanta",
+          "rank": 1,
+          "population": 498715,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "columbus",
+          "rank": 2,
+          "population": 206922,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "augusta",
+          "rank": 3,
+          "population": 202081,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "macon",
+          "rank": 4,
+          "population": 157346,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "savannah",
+          "rank": 5,
+          "population": 147780,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "athens",
+          "rank": 6,
+          "population": 127315,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "sandy-springs",
+          "rank": 7,
+          "population": 108080,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "south-fulton",
+          "rank": 8,
+          "population": 107436,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "roswell",
+          "rank": 9,
+          "population": 94786,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "johns-creek",
+          "rank": 10,
+          "population": 84551,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "warner-robins",
+          "rank": 11,
+          "population": 80308,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "albany",
+          "rank": 12,
+          "population": 69647,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "alpharetta",
+          "rank": 13,
+          "population": 67213,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "marietta",
+          "rank": 14,
+          "population": 60972,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "smyrna",
+          "rank": 15,
+          "population": 56666,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "valdosta",
+          "rank": 16,
+          "population": 56474,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "brookhaven",
+          "rank": 17,
+          "population": 55540,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "dunwoody",
+          "rank": 18,
+          "population": 51683,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "gainesville-ga",
+          "rank": 19,
+          "population": 44043,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "peachtree-corners",
+          "rank": 20,
+          "population": 43893,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "hawaii",
+      "availableInDataset": 7,
+      "requiredCount": 7,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "honolulu",
+          "rank": 1,
+          "population": 350788,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "east-honolulu",
+          "rank": 2,
+          "population": 47363,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "hilo",
+          "rank": 3,
+          "population": 45703,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "pearl-city",
+          "rank": 4,
+          "population": 45159,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "kailua",
+          "rank": 5,
+          "population": 40514,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "waipahu",
+          "rank": 6,
+          "population": 38216,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "kaneohe",
+          "rank": 7,
+          "population": 34597,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "idaho",
+      "availableInDataset": 8,
+      "requiredCount": 8,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "boise",
+          "rank": 1,
+          "population": 235684,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "meridian",
+          "rank": 2,
+          "population": 127428,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "nampa",
+          "rank": 3,
+          "population": 103854,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "idaho-falls",
+          "rank": 4,
+          "population": 64908,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "caldwell",
+          "rank": 5,
+          "population": 62328,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "pocatello",
+          "rank": 6,
+          "population": 56320,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "coeur-dalene",
+          "rank": 7,
+          "population": 54628,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "twin-falls",
+          "rank": 8,
+          "population": 51807,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "illinois",
+      "availableInDataset": 20,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "chicago",
+          "rank": 1,
+          "population": 2746388,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "aurora",
+          "rank": 2,
+          "population": 180542,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "joliet",
+          "rank": 3,
+          "population": 150362,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "naperville",
+          "rank": 4,
+          "population": 149104,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "rockford",
+          "rank": 5,
+          "population": 148655,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "springfield-il",
+          "rank": 6,
+          "population": 114394,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "elgin",
+          "rank": 7,
+          "population": 114113,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "peoria",
+          "rank": 8,
+          "population": 113150,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "waukegan",
+          "rank": 9,
+          "population": 88826,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "champaign",
+          "rank": 10,
+          "population": 88302,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "cicero",
+          "rank": 11,
+          "population": 83891,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "schaumburg",
+          "rank": 12,
+          "population": 78723,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "evanston",
+          "rank": 13,
+          "population": 78110,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "bloomington-il",
+          "rank": 14,
+          "population": 77714,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "arlington-heights",
+          "rank": 15,
+          "population": 77676,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bolingbrook",
+          "rank": 16,
+          "population": 75448,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "decatur-il",
+          "rank": 17,
+          "population": 70746,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "palatine",
+          "rank": 18,
+          "population": 69350,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "skokie",
+          "rank": 19,
+          "population": 67174,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "des-plaines",
+          "rank": 20,
+          "population": 60675,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "indiana",
+      "availableInDataset": 20,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "indianapolis",
+          "rank": 1,
+          "population": 887642,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fort-wayne",
+          "rank": 2,
+          "population": 263886,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "evansville",
+          "rank": 3,
+          "population": 117298,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "south-bend",
+          "rank": 4,
+          "population": 103453,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "carmel",
+          "rank": 5,
+          "population": 99757,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fishers",
+          "rank": 6,
+          "population": 98977,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bloomington-in",
+          "rank": 7,
+          "population": 79168,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "hammond",
+          "rank": 8,
+          "population": 77879,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lafayette",
+          "rank": 9,
+          "population": 72570,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "gary",
+          "rank": 10,
+          "population": 69739,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "noblesville",
+          "rank": 11,
+          "population": 69604,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "muncie",
+          "rank": 12,
+          "population": 65194,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "greenwood",
+          "rank": 13,
+          "population": 63830,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "terre-haute",
+          "rank": 14,
+          "population": 58389,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "anderson",
+          "rank": 15,
+          "population": 54476,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "elkhart",
+          "rank": 16,
+          "population": 53923,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "westfield",
+          "rank": 17,
+          "population": 52420,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "mishawaka",
+          "rank": 18,
+          "population": 50792,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "columbus-in",
+          "rank": 19,
+          "population": 50474,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "lawrence",
+          "rank": 20,
+          "population": 49447,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "iowa",
+      "availableInDataset": 15,
+      "requiredCount": 15,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "des-moines",
+          "rank": 1,
+          "population": 214133,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "cedar-rapids",
+          "rank": 2,
+          "population": 137710,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "davenport",
+          "rank": 3,
+          "population": 101724,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "sioux-city",
+          "rank": 4,
+          "population": 85791,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "iowa-city",
+          "rank": 5,
+          "population": 74828,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "ankeny",
+          "rank": 6,
+          "population": 71946,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "west-des-moines",
+          "rank": 7,
+          "population": 68723,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "waterloo",
+          "rank": 8,
+          "population": 67314,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "ames",
+          "rank": 9,
+          "population": 66427,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "council-bluffs",
+          "rank": 10,
+          "population": 62877,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "dubuque",
+          "rank": 11,
+          "population": 59667,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "urbandale",
+          "rank": 12,
+          "population": 45580,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "marion",
+          "rank": 13,
+          "population": 42256,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "cedar-falls",
+          "rank": 14,
+          "population": 40713,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "bettendorf",
+          "rank": 15,
+          "population": 39102,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "kansas",
+      "availableInDataset": 14,
+      "requiredCount": 14,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "wichita",
+          "rank": 1,
+          "population": 397532,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "overland-park",
+          "rank": 2,
+          "population": 197238,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "kansas-city-ks",
+          "rank": 3,
+          "population": 156607,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "olathe",
+          "rank": 4,
+          "population": 141290,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "topeka",
+          "rank": 5,
+          "population": 126587,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lawrence",
+          "rank": 6,
+          "population": 94934,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "shawnee",
+          "rank": 7,
+          "population": 67311,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lenexa",
+          "rank": 8,
+          "population": 57434,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "manhattan",
+          "rank": 9,
+          "population": 55045,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "salina",
+          "rank": 10,
+          "population": 46994,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "hutchinson",
+          "rank": 11,
+          "population": 40006,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "leavenworth",
+          "rank": 12,
+          "population": 36210,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "leawood",
+          "rank": 13,
+          "population": 35438,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "garden-city",
+          "rank": 14,
+          "population": 28806,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "kentucky",
+      "availableInDataset": 15,
+      "requiredCount": 15,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "louisville",
+          "rank": 1,
+          "population": 633045,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lexington",
+          "rank": 2,
+          "population": 322570,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bowling-green",
+          "rank": 3,
+          "population": 78557,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "owensboro",
+          "rank": 4,
+          "population": 60183,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "covington",
+          "rank": 5,
+          "population": 40840,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "richmond-ky",
+          "rank": 6,
+          "population": 37665,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "georgetown",
+          "rank": 7,
+          "population": 37385,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "nicholasville",
+          "rank": 8,
+          "population": 34146,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "florence-ky",
+          "rank": 9,
+          "population": 32520,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "elizabethtown",
+          "rank": 10,
+          "population": 32505,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "hopkinsville",
+          "rank": 11,
+          "population": 30089,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "independence",
+          "rank": 12,
+          "population": 29867,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "jeffersontown",
+          "rank": 13,
+          "population": 28912,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "henderson",
+          "rank": 14,
+          "population": 28757,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "frankfort",
+          "rank": 15,
+          "population": 28602,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "louisiana",
+      "availableInDataset": 15,
+      "requiredCount": 15,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "new-orleans",
+          "rank": 1,
+          "population": 383997,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "baton-rouge",
+          "rank": 2,
+          "population": 227470,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "shreveport",
+          "rank": 3,
+          "population": 187593,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "metairie",
+          "rank": 4,
+          "population": 143481,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "lafayette",
+          "rank": 5,
+          "population": 126185,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "lake-charles",
+          "rank": 6,
+          "population": 83776,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bossier-city",
+          "rank": 7,
+          "population": 68159,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "kenner",
+          "rank": 8,
+          "population": 66882,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "monroe",
+          "rank": 9,
+          "population": 47702,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "alexandria",
+          "rank": 10,
+          "population": 46619,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "houma",
+          "rank": 11,
+          "population": 32649,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "new-iberia",
+          "rank": 12,
+          "population": 30617,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "central",
+          "rank": 13,
+          "population": 29195,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "slidell",
+          "rank": 14,
+          "population": 28621,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "sulphur",
+          "rank": 15,
+          "population": 20410,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "maine",
+      "availableInDataset": 8,
+      "requiredCount": 8,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "portland-me",
+          "rank": 1,
+          "population": 68408,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lewiston",
+          "rank": 2,
+          "population": 37121,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "bangor",
+          "rank": 3,
+          "population": 32029,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "south-portland",
+          "rank": 4,
+          "population": 26498,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "auburn-me",
+          "rank": 5,
+          "population": 24061,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "biddeford",
+          "rank": 6,
+          "population": 22516,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "sanford",
+          "rank": 7,
+          "population": 21987,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "saco",
+          "rank": 8,
+          "population": 20381,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "maryland",
+      "availableInDataset": 15,
+      "requiredCount": 15,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "baltimore",
+          "rank": 1,
+          "population": 585708,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "columbia",
+          "rank": 2,
+          "population": 104681,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "germantown",
+          "rank": 3,
+          "population": 91249,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "silver-spring",
+          "rank": 4,
+          "population": 81015,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "frederick",
+          "rank": 5,
+          "population": 78171,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "waldorf",
+          "rank": 6,
+          "population": 77610,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "ellicott-city",
+          "rank": 7,
+          "population": 73272,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "glen-burnie",
+          "rank": 8,
+          "population": 71277,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "gaithersburg",
+          "rank": 9,
+          "population": 69657,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "rockville",
+          "rank": 10,
+          "population": 68401,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bethesda",
+          "rank": 11,
+          "population": 65143,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "dundalk",
+          "rank": 12,
+          "population": 63597,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "bowie",
+          "rank": 13,
+          "population": 58682,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "towson",
+          "rank": 14,
+          "population": 57542,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "aspen-hill",
+          "rank": 15,
+          "population": 53514,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "massachusetts",
+      "availableInDataset": 26,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "boston",
+          "rank": 1,
+          "population": 675647,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "worcester",
+          "rank": 2,
+          "population": 206518,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "springfield-ma",
+          "rank": 3,
+          "population": 155929,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "cambridge",
+          "rank": 4,
+          "population": 118403,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lowell",
+          "rank": 5,
+          "population": 115554,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "brockton",
+          "rank": 6,
+          "population": 105643,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "quincy",
+          "rank": 7,
+          "population": 101636,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lynn",
+          "rank": 8,
+          "population": 101253,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "new-bedford",
+          "rank": 9,
+          "population": 101079,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fall-river",
+          "rank": 10,
+          "population": 94000,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lawrence",
+          "rank": 11,
+          "population": 89143,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "newton",
+          "rank": 12,
+          "population": 88923,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "somerville",
+          "rank": 13,
+          "population": 81045,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "framingham",
+          "rank": 14,
+          "population": 72032,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "haverhill",
+          "rank": 15,
+          "population": 68741,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "malden",
+          "rank": 16,
+          "population": 66263,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "waltham",
+          "rank": 17,
+          "population": 65077,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "plymouth",
+          "rank": 18,
+          "population": 63525,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "brookline",
+          "rank": 19,
+          "population": 63191,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "taunton",
+          "rank": 20,
+          "population": 60416,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "michigan",
+      "availableInDataset": 26,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "detroit",
+          "rank": 1,
+          "population": 639111,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "grand-rapids",
+          "rank": 2,
+          "population": 198917,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "warren",
+          "rank": 3,
+          "population": 139387,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "sterling-heights",
+          "rank": 4,
+          "population": 134346,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "ann-arbor",
+          "rank": 5,
+          "population": 123851,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lansing",
+          "rank": 6,
+          "population": 112644,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "dearborn",
+          "rank": 7,
+          "population": 109976,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "clinton-township",
+          "rank": 8,
+          "population": 99753,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "canton-township",
+          "rank": 9,
+          "population": 98659,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "flint",
+          "rank": 10,
+          "population": 97310,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "livonia",
+          "rank": 11,
+          "population": 95535,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "troy",
+          "rank": 12,
+          "population": 87294,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "westland",
+          "rank": 13,
+          "population": 84094,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "farmington-hills",
+          "rank": 14,
+          "population": 82917,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "shelby-township",
+          "rank": 15,
+          "population": 78927,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "wyoming-mi",
+          "rank": 16,
+          "population": 75987,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "rochester-hills",
+          "rank": 17,
+          "population": 74516,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "kalamazoo",
+          "rank": 18,
+          "population": 73598,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "southfield",
+          "rank": 19,
+          "population": 72507,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "novi",
+          "rank": 20,
+          "population": 66243,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "minnesota",
+      "availableInDataset": 19,
+      "requiredCount": 19,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "minneapolis",
+          "rank": 1,
+          "population": 429606,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "st-paul",
+          "rank": 2,
+          "population": 311527,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "rochester",
+          "rank": 3,
+          "population": 121395,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "duluth",
+          "rank": 4,
+          "population": 93425,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bloomington-mn",
+          "rank": 5,
+          "population": 89987,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "brooklyn-park",
+          "rank": 6,
+          "population": 86478,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "plymouth",
+          "rank": 7,
+          "population": 81026,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "woodbury",
+          "rank": 8,
+          "population": 75102,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lakeville",
+          "rank": 9,
+          "population": 72052,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "maple-grove",
+          "rank": 10,
+          "population": 71711,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "blaine",
+          "rank": 11,
+          "population": 70222,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "st-cloud",
+          "rank": 12,
+          "population": 68881,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "eagan",
+          "rank": 13,
+          "population": 68245,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "coon-rapids",
+          "rank": 14,
+          "population": 64617,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "burnsville",
+          "rank": 15,
+          "population": 64317,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "eden-prairie",
+          "rank": 16,
+          "population": 64198,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "apple-valley",
+          "rank": 17,
+          "population": 55135,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "minnetonka",
+          "rank": 18,
+          "population": 54949,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "edina",
+          "rank": 19,
+          "population": 53494,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "mississippi",
+      "availableInDataset": 12,
+      "requiredCount": 12,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "jackson",
+          "rank": 1,
+          "population": 153701,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "gulfport",
+          "rank": 2,
+          "population": 72676,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "southaven",
+          "rank": 3,
+          "population": 55026,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "olive-branch",
+          "rank": 4,
+          "population": 48997,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "hattiesburg",
+          "rank": 5,
+          "population": 48985,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "biloxi",
+          "rank": 6,
+          "population": 46212,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "tupelo",
+          "rank": 7,
+          "population": 38206,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "meridian",
+          "rank": 8,
+          "population": 34820,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "horn-lake",
+          "rank": 9,
+          "population": 27917,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "greenville",
+          "rank": 10,
+          "population": 27446,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "pearl",
+          "rank": 11,
+          "population": 26927,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "madison",
+          "rank": 12,
+          "population": 26143,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "missouri",
+      "availableInDataset": 24,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "kansas-city-mo",
+          "rank": 1,
+          "population": 508090,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "st-louis",
+          "rank": 2,
+          "population": 301578,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "springfield-mo",
+          "rank": 3,
+          "population": 169176,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "columbia-mo",
+          "rank": 4,
+          "population": 126254,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "independence",
+          "rank": 5,
+          "population": 123011,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lees-summit",
+          "rank": 6,
+          "population": 108510,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "ofallon",
+          "rank": 7,
+          "population": 91316,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "st-joseph",
+          "rank": 8,
+          "population": 72473,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "st-charles",
+          "rank": 9,
+          "population": 71028,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "st-peters",
+          "rank": 10,
+          "population": 59447,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "blue-springs",
+          "rank": 11,
+          "population": 57543,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "joplin",
+          "rank": 12,
+          "population": 51818,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "florissant",
+          "rank": 13,
+          "population": 51466,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "chesterfield",
+          "rank": 14,
+          "population": 49999,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "jefferson-city",
+          "rank": 15,
+          "population": 43169,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "cape-girardeau",
+          "rank": 16,
+          "population": 42259,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "wildwood",
+          "rank": 17,
+          "population": 35517,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "university-city",
+          "rank": 18,
+          "population": 34336,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "liberty",
+          "rank": 19,
+          "population": 31507,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "ballwin",
+          "rank": 20,
+          "population": 30817,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "montana",
+      "availableInDataset": 4,
+      "requiredCount": 4,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "billings",
+          "rank": 1,
+          "population": 117116,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "missoula",
+          "rank": 2,
+          "population": 75516,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "great-falls",
+          "rank": 3,
+          "population": 60506,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bozeman",
+          "rank": 4,
+          "population": 56908,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "nebraska",
+      "availableInDataset": 6,
+      "requiredCount": 6,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "omaha",
+          "rank": 1,
+          "population": 486051,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lincoln",
+          "rank": 2,
+          "population": 291082,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bellevue-ne",
+          "rank": 3,
+          "population": 64176,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "grand-island",
+          "rank": 4,
+          "population": 53131,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "kearney",
+          "rank": 5,
+          "population": 33790,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "fremont-ne",
+          "rank": 6,
+          "population": 26976,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "nevada",
+      "availableInDataset": 5,
+      "requiredCount": 5,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "las-vegas",
+          "rank": 1,
+          "population": 641903,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "henderson",
+          "rank": 2,
+          "population": 320189,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "reno",
+          "rank": 3,
+          "population": 264165,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "north-las-vegas",
+          "rank": 4,
+          "population": 262527,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "sparks",
+          "rank": 5,
+          "population": 108445,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "new-hampshire",
+      "availableInDataset": 11,
+      "requiredCount": 11,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "manchester-nh",
+          "rank": 1,
+          "population": 115644,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "nashua",
+          "rank": 2,
+          "population": 91322,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "concord-nh",
+          "rank": 3,
+          "population": 44503,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "dover-nh",
+          "rank": 4,
+          "population": 32741,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "rochester-nh",
+          "rank": 5,
+          "population": 32492,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "salem-nh",
+          "rank": 6,
+          "population": 30514,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "merrimack",
+          "rank": 7,
+          "population": 26965,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "londonderry",
+          "rank": 8,
+          "population": 26405,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "hudson",
+          "rank": 9,
+          "population": 25892,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bedford",
+          "rank": 10,
+          "population": 23322,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "keene",
+          "rank": 11,
+          "population": 22823,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "new-jersey",
+      "availableInDataset": 50,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "newark",
+          "rank": 1,
+          "population": 311549,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "jersey-city",
+          "rank": 2,
+          "population": 292449,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "paterson",
+          "rank": 3,
+          "population": 159732,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "elizabeth",
+          "rank": 4,
+          "population": 137298,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lakewood",
+          "rank": 5,
+          "population": 135158,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "edison",
+          "rank": 6,
+          "population": 107588,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "woodbridge",
+          "rank": 7,
+          "population": 103639,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "toms-river",
+          "rank": 8,
+          "population": 95438,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "hamilton",
+          "rank": 9,
+          "population": 91271,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "trenton",
+          "rank": 10,
+          "population": 90871,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "clifton",
+          "rank": 11,
+          "population": 90296,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "brick",
+          "rank": 12,
+          "population": 77157,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "cherry-hill",
+          "rank": 13,
+          "population": 74553,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "union-city-nj",
+          "rank": 14,
+          "population": 73081,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "passaic",
+          "rank": 15,
+          "population": 72347,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bayonne",
+          "rank": 16,
+          "population": 71852,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "camden",
+          "rank": 17,
+          "population": 71791,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "old-bridge",
+          "rank": 18,
+          "population": 68739,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "middletown",
+          "rank": 19,
+          "population": 68085,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "east-orange",
+          "rank": 20,
+          "population": 66259,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "new-mexico",
+      "availableInDataset": 16,
+      "requiredCount": 16,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "albuquerque",
+          "rank": 1,
+          "population": 564559,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "las-cruces",
+          "rank": 2,
+          "population": 111385,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "rio-rancho",
+          "rank": 3,
+          "population": 104046,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "santa-fe",
+          "rank": 4,
+          "population": 89117,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "roswell",
+          "rank": 5,
+          "population": 48366,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "farmington",
+          "rank": 6,
+          "population": 45877,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "hobbs",
+          "rank": 7,
+          "population": 40508,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "clovis",
+          "rank": 8,
+          "population": 39389,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "carlsbad",
+          "rank": 9,
+          "population": 32238,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "alamogordo",
+          "rank": 10,
+          "population": 31384,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "gallup",
+          "rank": 11,
+          "population": 21477,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "sunland-park",
+          "rank": 12,
+          "population": 17252,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "los-lunas",
+          "rank": 13,
+          "population": 16965,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "deming",
+          "rank": 14,
+          "population": 14855,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "las-vegas-nm",
+          "rank": 15,
+          "population": 13055,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "portales",
+          "rank": 16,
+          "population": 11887,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "new-york",
+      "availableInDataset": 56,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "new-york",
+          "rank": 1,
+          "population": 8336817,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "brookhaven",
+          "rank": 2,
+          "population": 489594,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "islip",
+          "rank": 3,
+          "population": 339479,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "oyster-bay",
+          "rank": 4,
+          "population": 301798,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "buffalo",
+          "rank": 5,
+          "population": 278349,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "north-hempstead",
+          "rank": 6,
+          "population": 235403,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "babylon",
+          "rank": 7,
+          "population": 221783,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "yonkers",
+          "rank": 8,
+          "population": 211569,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "rochester-ny",
+          "rank": 9,
+          "population": 211328,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "huntington-ny",
+          "rank": 10,
+          "population": 206445,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "syracuse",
+          "rank": 11,
+          "population": 148620,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "ramapo",
+          "rank": 12,
+          "population": 137543,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "amherst",
+          "rank": 13,
+          "population": 129410,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "smithtown",
+          "rank": 14,
+          "population": 117801,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "albany",
+          "rank": 15,
+          "population": 99224,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "greenburgh",
+          "rank": 16,
+          "population": 96322,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "clarkstown",
+          "rank": 17,
+          "population": 89432,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "cheektowaga",
+          "rank": 18,
+          "population": 86932,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "colonie",
+          "rank": 19,
+          "population": 85396,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "new-rochelle",
+          "rank": 20,
+          "population": 79726,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "north-carolina",
+      "availableInDataset": 27,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "charlotte",
+          "rank": 1,
+          "population": 874579,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "raleigh",
+          "rank": 2,
+          "population": 467665,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "greensboro",
+          "rank": 3,
+          "population": 299035,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "durham",
+          "rank": 4,
+          "population": 283506,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "winston-salem",
+          "rank": 5,
+          "population": 249545,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fayetteville",
+          "rank": 6,
+          "population": 208501,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "cary",
+          "rank": 7,
+          "population": 174721,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "wilmington",
+          "rank": 8,
+          "population": 115451,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "high-point",
+          "rank": 9,
+          "population": 114059,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "concord-nc",
+          "rank": 10,
+          "population": 105240,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "asheville",
+          "rank": 11,
+          "population": 94589,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "greenville-nc",
+          "rank": 12,
+          "population": 92156,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "gastonia",
+          "rank": 13,
+          "population": 80411,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "jacksonville-nc",
+          "rank": 14,
+          "population": 73133,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "apex",
+          "rank": 15,
+          "population": 68191,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "huntersville",
+          "rank": 16,
+          "population": 62775,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "chapel-hill",
+          "rank": 17,
+          "population": 61960,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "burlington",
+          "rank": 18,
+          "population": 58368,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "rocky-mount",
+          "rank": 19,
+          "population": 54681,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "kannapolis",
+          "rank": 20,
+          "population": 53099,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "north-dakota",
+      "availableInDataset": 8,
+      "requiredCount": 8,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "fargo",
+          "rank": 1,
+          "population": 125990,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bismarck",
+          "rank": 2,
+          "population": 74018,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "grand-forks",
+          "rank": 3,
+          "population": 59166,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "minot",
+          "rank": 4,
+          "population": 48509,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "west-fargo",
+          "rank": 5,
+          "population": 38626,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "williston",
+          "rank": 6,
+          "population": 29757,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "dickinson",
+          "rank": 7,
+          "population": 25987,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "mandan",
+          "rank": 8,
+          "population": 23127,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "ohio",
+      "availableInDataset": 26,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "columbus-oh",
+          "rank": 1,
+          "population": 905748,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "cleveland",
+          "rank": 2,
+          "population": 372624,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "cincinnati",
+          "rank": 3,
+          "population": 309317,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "toledo",
+          "rank": 4,
+          "population": 270871,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "akron",
+          "rank": 5,
+          "population": 190469,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "dayton",
+          "rank": 6,
+          "population": 137644,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "parma",
+          "rank": 7,
+          "population": 81601,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "canton",
+          "rank": 8,
+          "population": 70458,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lorain",
+          "rank": 9,
+          "population": 65211,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "hamilton-oh",
+          "rank": 10,
+          "population": 63268,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "youngstown",
+          "rank": 11,
+          "population": 60068,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "springfield-oh",
+          "rank": 12,
+          "population": 59573,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "kettering",
+          "rank": 13,
+          "population": 57862,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "elyria",
+          "rank": 14,
+          "population": 54286,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "dublin",
+          "rank": 15,
+          "population": 51245,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "cuyahoga-falls",
+          "rank": 16,
+          "population": 51114,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "lakewood-oh",
+          "rank": 17,
+          "population": 50908,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "newark-oh",
+          "rank": 18,
+          "population": 50488,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "euclid",
+          "rank": 19,
+          "population": 48920,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "middletown-oh",
+          "rank": 20,
+          "population": 48765,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "oklahoma",
+      "availableInDataset": 21,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "oklahoma-city",
+          "rank": 1,
+          "population": 681054,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "tulsa",
+          "rank": 2,
+          "population": 413066,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "norman",
+          "rank": 3,
+          "population": 128026,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "broken-arrow",
+          "rank": 4,
+          "population": 113540,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "edmond",
+          "rank": 5,
+          "population": 94428,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lawton",
+          "rank": 6,
+          "population": 89507,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "moore",
+          "rank": 7,
+          "population": 62793,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "midwest-city",
+          "rank": 8,
+          "population": 58008,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "enid",
+          "rank": 9,
+          "population": 52162,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "stillwater",
+          "rank": 10,
+          "population": 50859,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "owasso",
+          "rank": 11,
+          "population": 39755,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "bartlesville",
+          "rank": 12,
+          "population": 37290,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "muskogee",
+          "rank": 13,
+          "population": 36479,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "shawnee-ok",
+          "rank": 14,
+          "population": 31257,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "bixby",
+          "rank": 15,
+          "population": 29006,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "yukon",
+          "rank": 16,
+          "population": 26884,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "ardmore",
+          "rank": 17,
+          "population": 24698,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "ponca-city",
+          "rank": 18,
+          "population": 24033,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "duncan",
+          "rank": 19,
+          "population": 22442,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "del-city",
+          "rank": 20,
+          "population": 21990,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "oregon",
+      "availableInDataset": 20,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "portland",
+          "rank": 1,
+          "population": 652503,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "eugene",
+          "rank": 2,
+          "population": 176654,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "salem",
+          "rank": 3,
+          "population": 175535,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "gresham",
+          "rank": 4,
+          "population": 114247,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "hillsboro",
+          "rank": 5,
+          "population": 106894,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bend",
+          "rank": 6,
+          "population": 102059,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "beaverton",
+          "rank": 7,
+          "population": 97514,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "medford",
+          "rank": 8,
+          "population": 87395,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "springfield-or",
+          "rank": 9,
+          "population": 62256,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "corvallis",
+          "rank": 10,
+          "population": 59922,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "albany-or",
+          "rank": 11,
+          "population": 56828,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "tigard",
+          "rank": 12,
+          "population": 55767,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "keizer",
+          "rank": 13,
+          "population": 41366,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "lake-oswego",
+          "rank": 14,
+          "population": 40162,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "grants-pass",
+          "rank": 15,
+          "population": 39211,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "oregon-city",
+          "rank": 16,
+          "population": 38203,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "redmond-or",
+          "rank": 17,
+          "population": 35828,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "mcminnville",
+          "rank": 18,
+          "population": 35228,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "tualatin",
+          "rank": 19,
+          "population": 28034,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "west-linn",
+          "rank": 20,
+          "population": 27017,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "pennsylvania",
+      "availableInDataset": 20,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "philadelphia",
+          "rank": 1,
+          "population": 1603797,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "pittsburgh",
+          "rank": 2,
+          "population": 302971,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "allentown",
+          "rank": 3,
+          "population": 126092,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "reading",
+          "rank": 4,
+          "population": 95112,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "erie",
+          "rank": 5,
+          "population": 94831,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "scranton",
+          "rank": 6,
+          "population": 76997,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bethlehem",
+          "rank": 7,
+          "population": 75781,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lancaster",
+          "rank": 8,
+          "population": 64535,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "harrisburg",
+          "rank": 9,
+          "population": 50099,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "york",
+          "rank": 10,
+          "population": 44750,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "wilkes-barre",
+          "rank": 11,
+          "population": 44328,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "altoona",
+          "rank": 12,
+          "population": 44155,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "state-college",
+          "rank": 13,
+          "population": 42034,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "chester",
+          "rank": 14,
+          "population": 33081,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "easton",
+          "rank": 15,
+          "population": 28203,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "williamsport",
+          "rank": 16,
+          "population": 28056,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "hazleton",
+          "rank": 17,
+          "population": 26877,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "lebanon",
+          "rank": 18,
+          "population": 26508,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "mckeesport",
+          "rank": 19,
+          "population": 18842,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "johnstown",
+          "rank": 20,
+          "population": 18411,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "rhode-island",
+      "availableInDataset": 8,
+      "requiredCount": 8,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "providence",
+          "rank": 1,
+          "population": 190934,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "cranston",
+          "rank": 2,
+          "population": 82934,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "warwick",
+          "rank": 3,
+          "population": 82823,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "pawtucket",
+          "rank": 4,
+          "population": 75604,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "east-providence",
+          "rank": 5,
+          "population": 47442,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "woonsocket",
+          "rank": 6,
+          "population": 44328,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "newport",
+          "rank": 7,
+          "population": 25163,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "central-falls",
+          "rank": 8,
+          "population": 22583,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "south-carolina",
+      "availableInDataset": 16,
+      "requiredCount": 16,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "charleston",
+          "rank": 1,
+          "population": 150227,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "columbia",
+          "rank": 2,
+          "population": 136632,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "north-charleston",
+          "rank": 3,
+          "population": 115382,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "mount-pleasant",
+          "rank": 4,
+          "population": 92992,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "rock-hill",
+          "rank": 5,
+          "population": 75048,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "greenville-sc",
+          "rank": 6,
+          "population": 72095,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "summerville",
+          "rank": 7,
+          "population": 53643,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "goose-creek",
+          "rank": 8,
+          "population": 49380,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "sumter",
+          "rank": 9,
+          "population": 44243,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "hilton-head-island",
+          "rank": 10,
+          "population": 41659,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "florence-sc",
+          "rank": 11,
+          "population": 40596,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "spartanburg",
+          "rank": 12,
+          "population": 39251,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "myrtle-beach",
+          "rank": 13,
+          "population": 36502,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "greer",
+          "rank": 14,
+          "population": 35754,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "aiken",
+          "rank": 15,
+          "population": 31950,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "anderson",
+          "rank": 16,
+          "population": 28118,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "south-dakota",
+      "availableInDataset": 8,
+      "requiredCount": 8,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "sioux-falls",
+          "rank": 1,
+          "population": 195850,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "rapid-city",
+          "rank": 2,
+          "population": 79000,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "aberdeen",
+          "rank": 3,
+          "population": 28324,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "brookings",
+          "rank": 4,
+          "population": 24562,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "watertown-sd",
+          "rank": 5,
+          "population": 22655,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "yankton",
+          "rank": 6,
+          "population": 15839,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "mitchell",
+          "rank": 7,
+          "population": 15660,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "huron",
+          "rank": 8,
+          "population": 14019,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "tennessee",
+      "availableInDataset": 31,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "nashville",
+          "rank": 1,
+          "population": 689447,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "memphis",
+          "rank": 2,
+          "population": 633104,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "knoxville",
+          "rank": 3,
+          "population": 190740,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "chattanooga",
+          "rank": 4,
+          "population": 181099,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "clarksville",
+          "rank": 5,
+          "population": 166722,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "murfreesboro",
+          "rank": 6,
+          "population": 156604,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "franklin",
+          "rank": 7,
+          "population": 85210,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "johnson-city",
+          "rank": 8,
+          "population": 71046,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "jackson-tn",
+          "rank": 9,
+          "population": 68205,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "hendersonville",
+          "rank": 10,
+          "population": 63625,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "bartlett",
+          "rank": 11,
+          "population": 58226,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "spring-hill",
+          "rank": 12,
+          "population": 55289,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "kingsport",
+          "rank": 13,
+          "population": 54441,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "smyrna",
+          "rank": 14,
+          "population": 53070,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "collierville",
+          "rank": 15,
+          "population": 52270,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "cleveland-tn",
+          "rank": 16,
+          "population": 47583,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "gallatin",
+          "rank": 17,
+          "population": 46262,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "brentwood",
+          "rank": 18,
+          "population": 45105,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "mount-juliet",
+          "rank": 19,
+          "population": 43310,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "columbia-tn",
+          "rank": 20,
+          "population": 42280,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "texas",
+      "availableInDataset": 136,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "houston",
+          "rank": 1,
+          "population": 2304580,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "san-antonio",
+          "rank": 2,
+          "population": 1434625,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "dallas",
+          "rank": 3,
+          "population": 1304379,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "austin",
+          "rank": 4,
+          "population": 978908,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fort-worth",
+          "rank": 5,
+          "population": 935508,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "el-paso",
+          "rank": 6,
+          "population": 678815,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "arlington",
+          "rank": 7,
+          "population": 394266,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "corpus-christi",
+          "rank": 8,
+          "population": 317863,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "plano",
+          "rank": 9,
+          "population": 285494,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lubbock",
+          "rank": 10,
+          "population": 264669,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "irving",
+          "rank": 11,
+          "population": 256684,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "laredo",
+          "rank": 12,
+          "population": 255205,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "garland",
+          "rank": 13,
+          "population": 239928,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "frisco",
+          "rank": 14,
+          "population": 200490,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "amarillo",
+          "rank": 15,
+          "population": 200393,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "mckinney",
+          "rank": 16,
+          "population": 199177,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "grand-prairie",
+          "rank": 17,
+          "population": 196100,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "brownsville",
+          "rank": 18,
+          "population": 186738,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "killeen",
+          "rank": 19,
+          "population": 153095,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "pasadena-tx",
+          "rank": 20,
+          "population": 151950,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "utah",
+      "availableInDataset": 35,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "salt-lake-city",
+          "rank": 1,
+          "population": 199723,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "west-valley-city",
+          "rank": 2,
+          "population": 140230,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "west-jordan",
+          "rank": 3,
+          "population": 116961,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "provo",
+          "rank": 4,
+          "population": 115162,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "orem",
+          "rank": 5,
+          "population": 97499,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "sandy",
+          "rank": 6,
+          "population": 96901,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "st-george",
+          "rank": 7,
+          "population": 95342,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "ogden",
+          "rank": 8,
+          "population": 87321,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "south-jordan",
+          "rank": 9,
+          "population": 77586,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "layton",
+          "rank": 10,
+          "population": 77402,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lehi",
+          "rank": 11,
+          "population": 75907,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "millcreek",
+          "rank": 12,
+          "population": 62963,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "taylorsville",
+          "rank": 13,
+          "population": 60448,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "herriman",
+          "rank": 14,
+          "population": 60384,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "logan",
+          "rank": 15,
+          "population": 52778,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "draper",
+          "rank": 16,
+          "population": 51017,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "murray",
+          "rank": 17,
+          "population": 50637,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "riverton",
+          "rank": 18,
+          "population": 46623,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "bountiful",
+          "rank": 19,
+          "population": 44877,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "spanish-fork",
+          "rank": 20,
+          "population": 44768,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        }
+      ]
+    },
+    {
+      "stateSlug": "vermont",
+      "availableInDataset": 9,
+      "requiredCount": 9,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "burlington",
+          "rank": 1,
+          "population": 45417,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "south-burlington",
+          "rank": 2,
+          "population": 20292,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "rutland",
+          "rank": 3,
+          "population": 15807,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "essex-junction",
+          "rank": 4,
+          "population": 10761,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "barre",
+          "rank": 5,
+          "population": 8491,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "montpelier",
+          "rank": 6,
+          "population": 8074,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "winooski",
+          "rank": 7,
+          "population": 7997,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "st-albans",
+          "rank": 8,
+          "population": 6877,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "newport",
+          "rank": 9,
+          "population": 4589,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "virginia",
+      "availableInDataset": 21,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "virginia-beach",
+          "rank": 1,
+          "population": 459470,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "chesapeake",
+          "rank": 2,
+          "population": 249422,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "norfolk",
+          "rank": 3,
+          "population": 238005,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "richmond",
+          "rank": 4,
+          "population": 226610,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "newport-news",
+          "rank": 5,
+          "population": 186247,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "alexandria",
+          "rank": 6,
+          "population": 159467,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "hampton",
+          "rank": 7,
+          "population": 137148,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "roanoke",
+          "rank": 8,
+          "population": 100011,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "portsmouth",
+          "rank": 9,
+          "population": 97915,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "suffolk",
+          "rank": 10,
+          "population": 94324,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "lynchburg",
+          "rank": 11,
+          "population": 82168,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "harrisonburg",
+          "rank": 12,
+          "population": 54033,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "leesburg",
+          "rank": 13,
+          "population": 53727,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "charlottesville",
+          "rank": 14,
+          "population": 46553,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "manassas",
+          "rank": 15,
+          "population": 41085,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "danville",
+          "rank": 16,
+          "population": 40044,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "fredericksburg",
+          "rank": 17,
+          "population": 29879,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "winchester",
+          "rank": 18,
+          "population": 28120,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "staunton",
+          "rank": 19,
+          "population": 25750,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "salem-va",
+          "rank": 20,
+          "population": 25301,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "washington",
+      "availableInDataset": 23,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "seattle",
+          "rank": 1,
+          "population": 737015,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "spokane",
+          "rank": 2,
+          "population": 228989,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "tacoma",
+          "rank": 3,
+          "population": 219346,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "vancouver-wa",
+          "rank": 4,
+          "population": 190915,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "bellevue",
+          "rank": 5,
+          "population": 151854,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "kent",
+          "rank": 6,
+          "population": 136588,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "everett",
+          "rank": 7,
+          "population": 110629,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "renton",
+          "rank": 8,
+          "population": 106785,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "spokane-valley",
+          "rank": 9,
+          "population": 102976,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "federal-way",
+          "rank": 10,
+          "population": 101030,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "kirkland",
+          "rank": 11,
+          "population": 93010,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "bellingham",
+          "rank": 12,
+          "population": 91482,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "auburn-wa",
+          "rank": 13,
+          "population": 87856,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "kennewick",
+          "rank": 14,
+          "population": 84347,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "pasco",
+          "rank": 15,
+          "population": 77100,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "redmond",
+          "rank": 16,
+          "population": 74014,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "marysville",
+          "rank": 17,
+          "population": 70714,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "sammamish",
+          "rank": 18,
+          "population": 66606,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "lakewood-wa",
+          "rank": 19,
+          "population": 63612,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "richland",
+          "rank": 20,
+          "population": 60560,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "west-virginia",
+      "availableInDataset": 10,
+      "requiredCount": 10,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "charleston-wv",
+          "rank": 1,
+          "population": 48864,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "huntington",
+          "rank": 2,
+          "population": 45110,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "morgantown",
+          "rank": 3,
+          "population": 30955,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "parkersburg",
+          "rank": 4,
+          "population": 29018,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "wheeling",
+          "rank": 5,
+          "population": 27066,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "weirton",
+          "rank": 6,
+          "population": 18614,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "martinsburg",
+          "rank": 7,
+          "population": 18596,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "fairmont",
+          "rank": 8,
+          "population": 18427,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "beckley",
+          "rank": 9,
+          "population": 17614,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "clarksburg",
+          "rank": 10,
+          "population": 15743,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "wisconsin",
+      "availableInDataset": 20,
+      "requiredCount": 20,
+      "status": "COMPLETE",
+      "cities": [
+        {
+          "slug": "milwaukee",
+          "rank": 1,
+          "population": 577222,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "madison",
+          "rank": 2,
+          "population": 269840,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "green-bay",
+          "rank": 3,
+          "population": 107395,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "kenosha",
+          "rank": 4,
+          "population": 99889,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "racine",
+          "rank": 5,
+          "population": 77816,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "appleton",
+          "rank": 6,
+          "population": 75644,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "waukesha",
+          "rank": 7,
+          "population": 72489,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "eau-claire",
+          "rank": 8,
+          "population": 69421,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "oshkosh",
+          "rank": 9,
+          "population": 66778,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "janesville",
+          "rank": 10,
+          "population": 65615,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "west-allis",
+          "rank": 11,
+          "population": 60697,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "la-crosse",
+          "rank": 12,
+          "population": 52680,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "sheboygan",
+          "rank": 13,
+          "population": 49929,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "wauwatosa",
+          "rank": 14,
+          "population": 48387,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "fond-du-lac",
+          "rank": 15,
+          "population": 44678,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "brookfield",
+          "rank": 16,
+          "population": 41388,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "new-berlin",
+          "rank": 17,
+          "population": 40424,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "wausau",
+          "rank": 18,
+          "population": 39908,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "greenfield",
+          "rank": 19,
+          "population": 37817,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "beloit",
+          "rank": 20,
+          "population": 36804,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    },
+    {
+      "stateSlug": "wyoming",
+      "availableInDataset": 10,
+      "requiredCount": 10,
+      "status": "NEEDS_SOURCING",
+      "cities": [
+        {
+          "slug": "cheyenne",
+          "rank": 1,
+          "population": 65132,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "casper",
+          "rank": 2,
+          "population": 58610,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "laramie",
+          "rank": 3,
+          "population": 32711,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "gillette",
+          "rank": 4,
+          "population": 32649,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": true
+        },
+        {
+          "slug": "rock-springs",
+          "rank": 5,
+          "population": 23319,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "sheridan",
+          "rank": 6,
+          "population": 18437,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "green-river",
+          "rank": 7,
+          "population": 11808,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "evanston",
+          "rank": 8,
+          "population": 11689,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "riverton",
+          "rank": 9,
+          "population": 10970,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        },
+        {
+          "slug": "cody",
+          "rank": 10,
+          "population": 10014,
+          "source": "US Census Bureau 2022 Population Estimates",
+          "hasRoute": false
+        }
+      ]
+    }
+  ]
+}

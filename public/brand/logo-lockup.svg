@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 96" fill="none" role="img" aria-label="Truck Injury Lawyers — National Truck Accident Response">
+  <!-- Mark (light-background lockup; dark text). For dark UI use the React Logo component. -->
+  <g transform="translate(8,16) scale(1.333)">
+    <rect x="3" y="3" width="42" height="42" rx="11" fill="#0a1322"/>
+    <path d="M13 28.5 L24 16.5 L35 28.5" fill="none" stroke="#f5a300" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M14 35 H21" stroke="#fbbf24" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M27 35 H34" stroke="#fbbf24" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="92" y="48" font-family="Newsreader, Georgia, serif" font-size="30" font-weight="600" fill="#0c1626">Truck Injury<tspan fill="#d98800"> Lawyers</tspan></text>
+  <!-- Tagline -->
+  <text x="93" y="70" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="10.5" letter-spacing="3" fill="#5a6678">NATIONAL TRUCK ACCIDENT RESPONSE</text>
+</svg>

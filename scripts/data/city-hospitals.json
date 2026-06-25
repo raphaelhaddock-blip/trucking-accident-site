@@ -1,0 +1,5 @@
+{
+  "schemaVersion": 1,
+  "description": "Verified trauma centers serving each city. Keyed hospitals[stateSlug][citySlug]. Trauma-level designation only, sourced from state DOH trauma registry or ACS/ATS verified-center lists. Renders only when confidence==VERIFIED. No ranking or recommendation. Empty until verified. See docs/PR7-SOURCE-PLAN.md.",
+  "hospitals": {}
+}

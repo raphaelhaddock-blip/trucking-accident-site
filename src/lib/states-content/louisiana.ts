@@ -23,7 +23,7 @@ export const louisiana: StateContent = {
 
 The Louisiana trucking industry serves critical economic functions. Oil and gas, Petrochemicals, Port operations, Tourism, Agriculture all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 10, Interstate 20, Interstate 55, Interstate 49 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Louisiana motorists.
 
-Louisiana follows pure comparative negligence for personal injury cases. You can recover damages even if you are 99% at fault, though your recovery is reduced by your percentage of fault. The state has a 1 year statute of limitations for personal injury claims, meaning you must file suit within 1 year of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
+Louisiana follows pure comparative negligence for personal injury cases. You can recover damages even if you are 99% at fault, though your recovery is reduced by your percentage of fault. The state has a 1 year statute of limitations for personal injury claims, meaning you must file suit within 1 year of the accident. These filing time limits depend on the type of claim and the facts.
 
 Weather plays a significant role in Louisiana truck accidents. During June, July, August, September, October, hurricanes and flooding creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
 
@@ -89,11 +89,11 @@ Electronic logging device data, driver qualification files, maintenance records,
     personalInjury: '1 Year',
     wrongfulDeath: '1 Year',
     propertyDamage: '1 Year',
-    details: `Louisiana has a 1 year statute of limitations for personal injury claims and 1 year for wrongful death claims. Property damage claims must be filed within 1 year. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+    details: `Louisiana has a 1 year statute of limitations for personal injury claims and 1 year for wrongful death claims. Property damage claims must be filed within 1 year. These deadlines are strictly enforced—the exact time limit depends on the type of claim and the facts; a licensed attorney can confirm how it applies, regardless of the trucking company's fault.
 
 The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
 
-Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the better the evidence is preserved.
 
 Contact an attorney promptly after any serious Louisiana truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
@@ -107,7 +107,7 @@ Contact an attorney promptly after any serious Louisiana truck accident to prote
 
   courtInfo: `Truck accident cases in Louisiana may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Louisiana state courts follow state procedural rules and apply Louisiana substantive law. The Eastern/Middle/Western District of Louisiana federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-Louisiana state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
+Louisiana state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Venue is governed by state statute and court procedure based on where the crash occurred and where the parties are located.
 
 Both state and federal courts in Louisiana allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
@@ -115,7 +115,7 @@ Louisiana does not cap economic damages in personal injury cases, allowing full 
 
   lastUpdated: '2026-01-10',
 
-  whyHireLocal: `Louisiana truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Louisiana state law. Local counsel knows the Louisiana court system, local procedures, and the judges who will hear your case. They understand how Louisiana juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
+  whyHireLocal: `Louisiana truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Louisiana state law. Local counsel knows the Louisiana court system, local procedures, and the procedural rules that govern each case. They understand how state law applies to trucking-company negligence and how to preserve and present evidence — driver logs, ELD data, and maintenance records — through proper court procedure.
 
 Louisiana presents unique challenges for truck accident litigation. The state's hurricanes and flooding creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 
@@ -128,7 +128,7 @@ A Louisiana-licensed attorney ensures your case proceeds properly through the Lo
   faqs: [
     {
       question: 'What is the statute of limitations for truck accident cases in Louisiana?',
-      answer: 'Louisiana has a 1 year statute of limitations for personal injury claims and 1 year for wrongful death claims from truck accidents. This means you must file your lawsuit within 1 year of the accident date for personal injury or 1 year of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 1 year deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
+      answer: 'Louisiana has a 1 year statute of limitations for personal injury claims and 1 year for wrongful death claims from truck accidents. This means the filing deadline generally falls within 1 year of the accident date for personal injury or 1 year of the death for wrongful death. These filing time limits depend on the type of claim and the facts. Property damage claims have a 1 year deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
       question: 'Can I still recover damages if I was partially at fault for a Louisiana truck accident?',
@@ -148,7 +148,7 @@ A Louisiana-licensed attorney ensures your case proceeds properly through the Lo
     },
     {
       question: 'Can I sue an out-of-state trucking company for a Louisiana accident?',
-      answer: 'Yes. If a truck accident occurs in Louisiana, Louisiana courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Louisiana highways, subjects itself to Louisiana jurisdiction. Your case may be filed in Louisiana state court or in federal court (the Eastern/Middle/Western District of Louisiana). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
+      answer: 'Yes. If a truck accident occurs in Louisiana, Louisiana courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Louisiana highways, subjects itself to Louisiana jurisdiction. A truck claim may be brought in Louisiana state court or in federal court (the Eastern/Middle/Western District of Louisiana). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the court process for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
     },
     {
       question: 'What if the truck driver who caused my accident was an independent contractor?',

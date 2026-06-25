@@ -23,7 +23,7 @@ export const montana: StateContent = {
 
 The Montana trucking industry serves critical economic functions. Agriculture, Mining, Timber, Tourism, Oil and gas all depend heavily on reliable freight transportation. Major trucking corridors including Interstate 90, Interstate 94, Interstate 15, US Route 2 carry commercial traffic through diverse terrain and weather conditions. Both local delivery operations and long-haul carriers traverse these routes daily, creating ongoing accident risks for Montana motorists.
 
-Montana follows modified comparative negligence with a 51% bar for personal injury cases. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a 3 years statute of limitations for personal injury claims, meaning you must file suit within 3 years of the accident. Missing this deadline typically bars your claim forever, regardless of injury severity.
+Montana follows modified comparative negligence with a 51% bar for personal injury cases. You can recover damages if you are 50% or less at fault, but recovery is barred if you are 51% or more at fault. The state has a 3 years statute of limitations for personal injury claims, meaning you must file suit within 3 years of the accident. These filing time limits depend on the type of claim and the facts.
 
 Weather plays a significant role in Montana truck accidents. During October, November, December, January, February, March, April, mountain passes and extreme weather creates particularly hazardous conditions for commercial vehicles. Large trucks require significantly longer stopping distances than passenger vehicles, and challenging conditions magnify this disadvantage. When trucking companies pressure drivers to maintain schedules despite dangerous conditions, preventable accidents occur.
 
@@ -89,11 +89,11 @@ Electronic logging device data, driver qualification files, maintenance records,
     personalInjury: '3 Years',
     wrongfulDeath: '3 Years',
     propertyDamage: '2 Years',
-    details: `Montana has a 3 years statute of limitations for personal injury claims and 3 years for wrongful death claims. Property damage claims must be filed within 2 years. These deadlines are strictly enforced—missing the deadline by even one day typically bars your claim forever, regardless of how serious your injuries are or how clear the trucking company's fault.
+    details: `Montana has a 3 years statute of limitations for personal injury claims and 3 years for wrongful death claims. Property damage claims must be filed within 2 years. These deadlines are strictly enforced—the exact time limit depends on the type of claim and the facts; a licensed attorney can confirm how it applies, regardless of the trucking company's fault.
 
 The deadline may be extended in limited circumstances, such as when the victim was a minor or legally incapacitated at the time of the accident. However, waiting to file is always risky. Evidence disappears, witnesses move or forget details, and trucking companies may legally destroy records after federal retention periods expire.
 
-Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the stronger your case will be.
+Beyond the legal deadline, practical considerations favor prompt action. Electronic logging device data may be overwritten. Driver employment records become harder to obtain. Witnesses' memories fade. Physical evidence from the scene is cleaned up or altered. The sooner your attorney can investigate and preserve evidence, the better the evidence is preserved.
 
 Contact an attorney promptly after any serious Montana truck accident to protect your rights and ensure critical evidence is preserved before it is lost or destroyed.`
   },
@@ -107,7 +107,7 @@ Contact an attorney promptly after any serious Montana truck accident to protect
 
   courtInfo: `Truck accident cases in Montana may be filed in state courts or federal courts depending on the parties involved and amounts in controversy. Montana state courts follow state procedural rules and apply Montana substantive law. The District of Montana federal court handles cases involving diversity jurisdiction (parties from different states with amounts exceeding $75,000) or federal questions.
 
-Montana state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Choosing the right venue can impact case outcomes based on local jury pools and judicial tendencies.
+Montana state courts offer multiple venues depending on where the accident occurred and where defendants are located. Generally, cases may be filed where the accident occurred, where the defendant resides or has its principal office, or where a substantial part of the events giving rise to the claim occurred. Venue is governed by state statute and court procedure based on where the crash occurred and where the parties are located.
 
 Both state and federal courts in Montana allow broad discovery in trucking cases. This includes depositions of company representatives, production of driver qualification files and safety records, and inspection of vehicles and maintenance facilities. Electronic data from trucks' black boxes and ELD systems can be obtained through proper discovery procedures.
 
@@ -115,7 +115,7 @@ Montana does not cap economic damages in personal injury cases, allowing full re
 
   lastUpdated: '2026-01-10',
 
-  whyHireLocal: `Montana truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Montana state law. Local counsel knows the Montana court system, local procedures, and the judges who will hear your case. They understand how Montana juries evaluate trucking company negligence and what evidence resonates with local fact-finders.
+  whyHireLocal: `Montana truck accident cases require attorneys who understand both federal FMCSA regulations and the nuances of Montana state law. Local counsel knows the Montana court system, local procedures, and the procedural rules that govern each case. They understand how state law applies to trucking-company negligence and how to preserve and present evidence — driver logs, ELD data, and maintenance records — through proper court procedure.
 
 Montana presents unique challenges for truck accident litigation. The state's mountain passes and extreme weather creates specific hazards that experienced local attorneys understand. They know the dangerous corridors, common accident patterns, and the trucking companies that frequently operate in the state.
 
@@ -128,7 +128,7 @@ A Montana-licensed attorney ensures your case proceeds properly through the Mont
   faqs: [
     {
       question: 'What is the statute of limitations for truck accident cases in Montana?',
-      answer: 'Montana has a 3 years statute of limitations for personal injury claims and 3 years for wrongful death claims from truck accidents. This means you must file your lawsuit within 3 years of the accident date for personal injury or 3 years of the death for wrongful death. Missing this deadline typically bars your claim forever, regardless of how serious your injuries are. Property damage claims have a 2 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
+      answer: 'Montana has a 3 years statute of limitations for personal injury claims and 3 years for wrongful death claims from truck accidents. This means the filing deadline generally falls within 3 years of the accident date for personal injury or 3 years of the death for wrongful death. These filing time limits depend on the type of claim and the facts. Property damage claims have a 2 years deadline. It is important to contact an attorney promptly after any serious truck accident to ensure your rights are protected and evidence is preserved.'
     },
     {
       question: 'Can I still recover damages if I was partially at fault for a Montana truck accident?',
@@ -148,7 +148,7 @@ A Montana-licensed attorney ensures your case proceeds properly through the Mont
     },
     {
       question: 'Can I sue an out-of-state trucking company for a Montana accident?',
-      answer: 'Yes. If a truck accident occurs in Montana, Montana courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Montana highways, subjects itself to Montana jurisdiction. Your case may be filed in Montana state court or in federal court (the District of Montana). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the best venue for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
+      answer: 'Yes. If a truck accident occurs in Montana, Montana courts generally have jurisdiction over the case regardless of where the trucking company is headquartered. The company, by operating on Montana highways, subjects itself to Montana jurisdiction. A truck claim may be brought in Montana state court or in federal court (the District of Montana). Federal court may be appropriate when the case involves parties from different states and the amount in controversy exceeds $75,000. Your attorney can advise on the court process for your specific situation based on factors including the defendant\'s location, available evidence, and local court practices.'
     },
     {
       question: 'What if the truck driver who caused my accident was an independent contractor?',
