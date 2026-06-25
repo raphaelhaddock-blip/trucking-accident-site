@@ -2,8 +2,10 @@
 
 Bounded plan to extend the Flux Pro brand-image set beyond the PR4B proof of 6. **Nothing generated here.** Awaiting an explicit go before any batch run. Also gated by the Growth OS taxonomy/ontology requirement ([GROWTH-OS-TAXONOMY-ONTOLOGY.md](GROWTH-OS-TAXONOMY-ONTOLOGY.md)) for *content* — images are brand/UI infrastructure, so they may proceed once approved, but not as content expansion.
 
-## Already done (PR4B — do NOT regenerate)
-`hero-interstate` · `network-corridor` · `evidence-records` · `state-texas` · `city-texas-houston` · `accident-header-jackknife-accidents`
+## Already done (do NOT regenerate)
+- **PR4B (6):** `hero-interstate` · `network-corridor` · `evidence-records` · `state-texas` · `city-texas-houston` · `accident-header-jackknife-accidents`
+- **PR5A (19) — P2 COMPLETE:** all remaining `accident-header-*` (rollover, underride, rear-end, head-on, t-bone, wide-turn, blind-spot, sideswipe, override, brake-failure, tire-blowout, driver-fatigue, distracted-driving, speeding, cargo-spill, hazmat, drunk-driving, runaway-truck, improper-maintenance). All 20 accident types now have headers. Verified compliant via contact sheet; build + legaltone green.
+- **Next:** P3a priority states (9) → P3b remaining states (40) → P4 city hubs. Awaiting approval per tier.
 
 ## How the fallback changes the math
 Because `hero-interstate` already exists as the global fallback, **every page already has a photo hero today.** Specific per-page images are an *upgrade*, not a fix. So we generate by value, and we do **not** need an image for all 1,613 cities — a city with no image cleanly falls back to its state image, then to the global hero.

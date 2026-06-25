@@ -103,3 +103,9 @@ OG-image + phone localization = Raphy-gated follow-ups.
 - Build #7 exit 0, prebuild detected 6, manifest populated. All 6 served 200. Images COMPLIANT (hero-interstate/evidence-records/accident-jackknife viewed: no people/text/wreckage; premium).
 - LEGIBILITY FINDING: text fully legible BUT overlay too dark — desktop photo only reads on right edge, mobile photo nearly hidden. Tuning CommandHero photo layer (opacity 30→~42, gradient lighter on right) to show more photo while keeping text legible. Rebuild + re-shoot home/texas to confirm. If legibility regresses → revert (current is the safe baseline).
 - after-pr4 shots (9): docs/redesign-assets/after-pr4/. Pending overlay tune + audit:legaltone + commit.
+
+## PR5A LOG (P2 accident-header images — 19)
+- Pre-flight: tree clean @6ea1e09, FAL_KEY present (len 69), only jackknife existed. Ground-truthed 20 accident slugs from src/lib/accidents-content.
+- `npm run images:generate --only <19 accident-header>` → 19/19 OK (.jpg 137-216KB), no key in log, no loop. 20 accident-header files total now.
+- COMPLIANCE: built a contact sheet (public/__contact.html via python http) of all 20 → ONE screenshot reviewed. ALL compliant: dusk highway infrastructure, no people/faces/wreckage/readable-text/plates/logos. A few visually similar (acceptable, distinct pages). 0 rejected, 0 regenerated.
+- TODO: rm __contact.html + kill python; build (wire 20); audit:legaltone after build; screenshot 2-3 accident pages desk+mobile; verify no Sanity hero/OG; commit (no .env.local staged). Cost ~$0.95.
