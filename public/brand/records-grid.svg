@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" fill="none" role="img" aria-label="Evidence and records abstraction">
+  <!-- Stacked case-file / ELD-log panels. Abstract motif evoking preserved evidence. -->
+  <rect x="40" y="36" width="380" height="320" rx="10" fill="#0f1c30" fill-opacity="0.55" transform="rotate(-3 230 196)"/>
+  <rect x="70" y="56" width="380" height="320" rx="10" fill="#15273f"/>
+  <rect x="70.75" y="56.75" width="378.5" height="318.5" rx="9.25" stroke="#a4b5c9" stroke-opacity="0.25"/>
+  <!-- Panel header -->
+  <path d="M70 92 H450" stroke="#a4b5c9" stroke-opacity="0.2"/>
+  <circle cx="92" cy="74" r="4" fill="#f5a300"/>
+  <rect x="106" y="70" width="120" height="8" rx="4" fill="#a4b5c9" fill-opacity="0.5"/>
+  <rect x="392" y="69" width="44" height="11" rx="3" fill="#f5a300" fill-opacity="0.22"/>
+  <!-- Log rows: label + value, monospace feel -->
+  <g>
+    <rect x="92" y="116" width="70" height="7" rx="3.5" fill="#a4b5c9" fill-opacity="0.35"/>
+    <rect x="180" y="116" width="240" height="7" rx="3.5" fill="#a4b5c9" fill-opacity="0.2"/>
+    <rect x="92" y="146" width="70" height="7" rx="3.5" fill="#a4b5c9" fill-opacity="0.35"/>
+    <rect x="180" y="146" width="200" height="7" rx="3.5" fill="#a4b5c9" fill-opacity="0.2"/>
+    <!-- Highlighted (key evidence) -->
+    <rect x="84" y="170" width="352" height="22" rx="4" fill="#f5a300" fill-opacity="0.1"/>
+    <rect x="92" y="177" width="70" height="7" rx="3.5" fill="#f5a300" fill-opacity="0.7"/>
+    <rect x="180" y="177" width="150" height="7" rx="3.5" fill="#fbbf24" fill-opacity="0.5"/>
+    <rect x="92" y="208" width="70" height="7" rx="3.5" fill="#a4b5c9" fill-opacity="0.35"/>
+    <rect x="180" y="208" width="220" height="7" rx="3.5" fill="#a4b5c9" fill-opacity="0.2"/>
+    <rect x="92" y="238" width="70" height="7" rx="3.5" fill="#a4b5c9" fill-opacity="0.35"/>
+    <rect x="180" y="238" width="180" height="7" rx="3.5" fill="#a4b5c9" fill-opacity="0.2"/>
+  </g>
+  <!-- Mini data bars (black-box / telematics readout) -->
+  <g fill="#a4b5c9" fill-opacity="0.4">
+    <rect x="92" y="286" width="14" height="44" rx="2"/>
+    <rect x="116" y="300" width="14" height="30" rx="2"/>
+    <rect x="140" y="278" width="14" height="52" rx="2"/>
+  </g>
+  <g fill="#f5a300" fill-opacity="0.85">
+    <rect x="164" y="266" width="14" height="64" rx="2"/>
+  </g>
+  <g fill="#a4b5c9" fill-opacity="0.4">
+    <rect x="188" y="292" width="14" height="38" rx="2"/>
+    <rect x="212" y="308" width="14" height="22" rx="2"/>
+  </g>
+</svg>

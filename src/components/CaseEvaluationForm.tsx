@@ -3,6 +3,7 @@
 import { useActionState } from 'react';
 import { submitContactForm, type FormState } from '@/app/contact/actions';
 import { stateOptions, accidentTypeOptions } from '@/lib/validation/contact-schema';
+import { CheckCircle } from '@/components/ui/Icon';
 
 const initialState: FormState = {
   success: false,
@@ -27,52 +28,42 @@ export default function CaseEvaluationForm({
   const [state, formAction, isPending] = useActionState(submitContactForm, initialState);
 
   const inputClasses = darkMode
-    ? 'w-full rounded-md border-0 bg-navy-700 px-4 py-3 text-white placeholder-gray-400 focus:ring-2 focus:ring-amber-500 focus:outline-none'
-    : 'w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-amber-500 focus:outline-none';
+    ? 'w-full rounded-md border border-ink-700 bg-ink-900 px-4 py-3 text-white placeholder-steel-500 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/40 focus:outline-none'
+    : 'w-full rounded-md border border-line bg-white px-4 py-3 text-ink-strong placeholder-ink-muted/60 focus:border-amber-500 focus:ring-2 focus:ring-amber-500/30 focus:outline-none';
 
   const labelClasses = darkMode
-    ? 'block text-sm font-medium text-gray-300 mb-2'
-    : 'block text-sm font-medium text-gray-700 mb-2';
+    ? 'block text-sm font-medium text-steel-300 mb-2'
+    : 'block text-sm font-medium text-ink-body mb-2';
 
-  const selectClasses = darkMode
-    ? 'w-full rounded-md border-0 bg-navy-700 px-4 py-3 text-white focus:ring-2 focus:ring-amber-500 focus:outline-none'
-    : 'w-full rounded-md border border-gray-300 px-4 py-3 text-gray-900 focus:ring-2 focus:ring-amber-500 focus:outline-none';
+  const selectClasses = inputClasses;
+
+  const cardClasses = darkMode
+    ? 'rounded-2xl border border-ink-700 bg-ink-850 p-6 md:p-7'
+    : 'rounded-2xl border border-line bg-white p-6 md:p-7 shadow-md';
 
   if (state.success) {
     return (
-      <div className={`rounded-xl p-6 ${darkMode ? 'bg-navy-800' : 'bg-white'}`}>
-        <div className={`text-center ${darkMode ? '' : 'border border-green-200 bg-green-50 rounded-lg p-6'}`}>
-          <svg
-            className={`w-16 h-16 mx-auto mb-4 ${darkMode ? 'text-green-500' : 'text-green-600'}`}
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-          <p className={`text-xl font-semibold mb-2 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+      <div className={cardClasses}>
+        <div className={`text-center ${darkMode ? '' : 'rounded-lg border border-green-200 bg-green-50 p-6'}`}>
+          <CheckCircle className={`mx-auto mb-4 h-16 w-16 ${darkMode ? 'text-amber-500' : 'text-green-600'}`} />
+          <p className={`mb-2 text-xl font-semibold ${darkMode ? 'text-white' : 'text-ink-strong'}`}>
             Thank You!
           </p>
-          <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>{state.message}</p>
+          <p className={darkMode ? 'text-steel-300' : 'text-ink-muted'}>{state.message}</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className={`rounded-xl p-6 ${darkMode ? 'bg-navy-800' : 'bg-white shadow-lg'}`}>
+    <div className={cardClasses}>
       {title && (
-        <h3 className={`text-xl font-bold mb-2 ${darkMode ? 'text-white' : 'text-navy-900'}`}>
+        <h3 className={`mb-1.5 text-xl font-bold ${darkMode ? 'text-white' : 'text-ink-strong'}`}>
           {title}
         </h3>
       )}
       {subtitle && (
-        <p className={`text-sm mb-4 ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+        <p className={`mb-5 text-sm ${darkMode ? 'text-steel-400' : 'text-ink-muted'}`}>
           {subtitle}
         </p>
       )}
@@ -81,7 +72,13 @@ export default function CaseEvaluationForm({
         <input type="hidden" name="source" value={source} />
 
         {state.message && !state.success && (
-          <div className="bg-red-900/50 border border-red-500 rounded-lg p-3 text-red-200 text-sm">
+          <div
+            className={`rounded-lg border p-3 text-sm ${
+              darkMode
+                ? 'border-signal-500/50 bg-signal-500/10 text-signal-400'
+                : 'border-red-200 bg-red-50 text-red-700'
+            }`}
+          >
             {state.message}
           </div>
         )}
@@ -141,18 +138,13 @@ export default function CaseEvaluationForm({
         </div>
 
         {/* State & Accident Type - side by side on larger screens when compact */}
-        <div className={compact ? 'grid grid-cols-1 sm:grid-cols-2 gap-3' : 'space-y-4'}>
+        <div className={compact ? 'grid grid-cols-1 gap-3 sm:grid-cols-2' : 'space-y-4'}>
           {/* State */}
           <div>
             <label htmlFor={`state-${source}`} className={labelClasses}>
               State *
             </label>
-            <select
-              id={`state-${source}`}
-              name="state"
-              required
-              className={selectClasses}
-            >
+            <select id={`state-${source}`} name="state" required className={selectClasses}>
               <option value="">Select state...</option>
               {stateOptions.map((option) => (
                 <option key={option.value} value={option.value}>
@@ -170,12 +162,7 @@ export default function CaseEvaluationForm({
             <label htmlFor={`accidentType-${source}`} className={labelClasses}>
               Accident Type *
             </label>
-            <select
-              id={`accidentType-${source}`}
-              name="accidentType"
-              required
-              className={selectClasses}
-            >
+            <select id={`accidentType-${source}`} name="accidentType" required className={selectClasses}>
               <option value="">Select type...</option>
               {accidentTypeOptions.map((option) => (
                 <option key={option.value} value={option.value}>
@@ -211,11 +198,11 @@ export default function CaseEvaluationForm({
         <button
           type="submit"
           disabled={isPending}
-          className="w-full rounded-md bg-amber-500 px-6 py-4 text-lg font-semibold text-navy-900 shadow-lg hover:bg-amber-400 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="btn btn-primary w-full !py-4 !text-base disabled:cursor-not-allowed disabled:opacity-50"
         >
           {isPending ? (
             <span className="flex items-center justify-center">
-              <svg className="animate-spin -ml-1 mr-3 h-5 w-5" fill="none" viewBox="0 0 24 24">
+              <svg className="-ml-1 mr-3 h-5 w-5 animate-spin" fill="none" viewBox="0 0 24 24">
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                 <path
                   className="opacity-75"
@@ -230,7 +217,7 @@ export default function CaseEvaluationForm({
           )}
         </button>
 
-        <p className={`text-xs text-center ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+        <p className={`text-center text-xs ${darkMode ? 'text-steel-500' : 'text-ink-muted'}`}>
           By submitting, you agree to our privacy policy. No fee unless you win.
         </p>
       </form>

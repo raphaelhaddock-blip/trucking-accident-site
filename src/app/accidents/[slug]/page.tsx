@@ -1,12 +1,23 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
 import CaseEvaluationForm from '@/components/CaseEvaluationForm';
+import CommandHero from '@/components/CommandHero';
+import Section from '@/components/ui/Section';
+import {
+  ArrowRight,
+  Phone,
+  CheckCircle,
+  AlertTriangle,
+  Scale,
+  Users,
+  Clock,
+  ShieldCheck,
+  MapPin,
+} from '@/components/ui/Icon';
 import {
   getAccidentContent,
-  getAllAccidentSlugs,
   getAccidentName,
   isValidAccidentSlug,
   ACCIDENT_SLUGS,
@@ -94,8 +105,8 @@ export default async function AccidentPage({
   // Show placeholder if content not yet created
   if (!content) {
     return (
-      <div className="min-h-screen bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 py-16">
+      <Section tone="paper">
+        <div className="mx-auto max-w-3xl">
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
@@ -103,21 +114,19 @@ export default async function AccidentPage({
               { label: getAccidentName(slug) },
             ]}
           />
-          <h1 className="text-4xl font-bold text-navy-900 mb-6">
+          <h1 className="text-[length:var(--text-display-lg)] text-ink-strong">
             {getAccidentName(slug)}
           </h1>
-          <p className="text-gray-600 mb-8">
+          <p className="mt-6 text-lg leading-relaxed text-ink-muted">
             Content for this accident type is coming soon. In the meantime,
             please contact us for a free consultation about your case.
           </p>
-          <a
-            href={`tel:${PHONE_NUMBER}`}
-            className="inline-block bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition"
-          >
+          <a href={`tel:${PHONE_NUMBER}`} className="btn btn-primary mt-8">
+            <Phone className="h-5 w-5" />
             Call {PHONE_NUMBER}
           </a>
         </div>
-      </div>
+      </Section>
     );
   }
 
@@ -147,8 +156,10 @@ export default async function AccidentPage({
     serviceType: `${content.title} Legal Representation`,
   };
 
+  const accidentLabel = content.title.replace(' Accidents', '');
+
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
       {/* Schema Markup */}
       <script
         type="application/ld+json"
@@ -159,27 +170,11 @@ export default async function AccidentPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(legalServiceSchema) }}
       />
 
-      {/* Hero Section */}
-      <section className="relative min-h-[500px] md:min-h-[600px] flex items-center">
-        {/* Background Image */}
-        {ACCIDENT_IMAGES[slug] && (
-          <>
-            <Image
-              src={ACCIDENT_IMAGES[slug].url}
-              alt={ACCIDENT_IMAGES[slug].alt}
-              fill
-              priority
-              className="object-cover"
-              sizes="100vw"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-navy-900/60 via-navy-900/30 to-transparent" />
-          </>
-        )}
-        {!ACCIDENT_IMAGES[slug] && (
-          <div className="absolute inset-0 bg-navy-900" />
-        )}
-
-        <div className="relative z-10 max-w-6xl mx-auto px-4 py-16 text-white">
+      {/* Hero — cinematic command treatment (no Sanity stock photo) */}
+      <CommandHero
+        eyebrow="National Truck Accident Response"
+        title={content.h1}
+        breadcrumb={
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
@@ -187,320 +182,294 @@ export default async function AccidentPage({
               { label: content.title },
             ]}
           />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">{content.h1}</h1>
-          <div className="prose prose-lg prose-invert max-w-2xl">
+        }
+        subtitle={
+          <>
             {content.heroText.split('\n\n').map((paragraph, i) => (
-              <p key={i} className="text-gray-200 leading-relaxed drop-shadow">
+              <p key={i} className={i > 0 ? 'mt-4' : ''}>
                 {paragraph}
               </p>
             ))}
-          </div>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <a
-              href={`tel:${PHONE_NUMBER}`}
-              className="bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition text-center shadow-lg"
-            >
-              Free Case Evaluation: {PHONE_NUMBER}
-            </a>
-            <Link
-              href="/contact"
-              className="bg-white text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-center shadow-lg"
-            >
-              Contact Us Online
-            </Link>
-          </div>
-        </div>
-      </section>
+          </>
+        }
+      >
+        <a href={`tel:${PHONE_NUMBER}`} className="btn btn-primary">
+          Free Case Evaluation: {PHONE_NUMBER}
+          <ArrowRight className="h-5 w-5" />
+        </a>
+        <Link href="/contact" className="btn btn-ghost-ink">
+          <Phone className="h-5 w-5" />
+          Contact Us Online
+        </Link>
+      </CommandHero>
 
-      {/* What It Is Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-6">
-            What Is a {content.title.replace(' Accidents', '')} Accident?
-          </h2>
-          <div className="prose prose-lg max-w-none text-gray-700">
-            {content.whatItIs.split('\n\n').map((paragraph, i) => (
-              <p key={i} className="mb-4 leading-relaxed">
-                {paragraph.startsWith('**') ? (
-                  <span>
-                    <strong>{paragraph.match(/\*\*(.*?)\*\*/)?.[1]}</strong>
-                    {paragraph.replace(/\*\*.*?\*\*:?/, '')}
-                  </span>
-                ) : (
-                  paragraph
-                )}
+      {/* What It Is */}
+      <Section
+        tone="white"
+        eyebrow="Overview"
+        title={`What Is a ${accidentLabel} Accident?`}
+      >
+        <div className="prose-legal max-w-3xl text-lg">
+          {content.whatItIs.split('\n\n').map((paragraph, i) => (
+            <p key={i}>
+              {paragraph.startsWith('**') ? (
+                <span>
+                  <strong>{paragraph.match(/\*\*(.*?)\*\*/)?.[1]}</strong>
+                  {paragraph.replace(/\*\*.*?\*\*:?/, '')}
+                </span>
+              ) : (
+                paragraph
+              )}
+            </p>
+          ))}
+        </div>
+      </Section>
+
+      {/* Causes */}
+      <Section
+        tone="paper"
+        eyebrow="Root Causes"
+        title={`Common Causes of ${content.title}`}
+      >
+        <div className="grid gap-5 md:grid-cols-2">
+          {content.causes.map((cause, index) => (
+            <div key={index} className="card flex flex-col p-6">
+              <div className="h-0.5 w-10 bg-amber-500" />
+              <h3 className="mt-4 text-xl font-bold text-ink-strong">
+                {cause.title}
+              </h3>
+              <p className="mt-2 leading-relaxed text-ink-muted">
+                {cause.description}
               </p>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </Section>
 
-      {/* Causes Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-8">
-            Common Causes of {content.title}
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {content.causes.map((cause, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-xl font-bold text-navy-900 mb-3">
-                  {cause.title}
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  {cause.description}
-                </p>
-              </div>
-            ))}
-          </div>
+      {/* FMCSA Regulations */}
+      <Section
+        tone="white"
+        eyebrow="Federal Leverage"
+        title={<>FMCSA Regulations &amp; {content.title}</>}
+        intro="Federal Motor Carrier Safety Administration (FMCSA) regulations establish safety standards that trucking companies and drivers must follow. Violations of these regulations can establish negligence in your case."
+      >
+        <div className="space-y-5">
+          {content.fmcsaRegulations.map((reg, index) => (
+            <div key={index} className="signpost py-1">
+              <h3 className="text-lg font-bold text-ink-strong">
+                {reg.code}: {reg.title}
+              </h3>
+              <p className="mt-2 text-ink-muted">{reg.description}</p>
+            </div>
+          ))}
         </div>
-      </section>
-
-      {/* FMCSA Regulations Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-4">
-            FMCSA Regulations &amp; {content.title}
-          </h2>
-          <p className="text-gray-600 mb-8">
-            Federal Motor Carrier Safety Administration (FMCSA) regulations
-            establish safety standards that trucking companies and drivers must
-            follow. Violations of these regulations can establish negligence in
-            your case.
-          </p>
-          <div className="space-y-6">
-            {content.fmcsaRegulations.map((reg, index) => (
-              <div
-                key={index}
-                className="border-l-4 border-amber-500 pl-6 py-2"
-              >
-                <h3 className="text-lg font-bold text-navy-900">
-                  {reg.code}: {reg.title}
-                </h3>
-                <p className="text-gray-700 mt-2">{reg.description}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-8">
-            <Link
-              href="/fmcsa-regulations"
-              className="text-amber-600 font-semibold hover:text-amber-700"
-            >
-              Learn more about FMCSA trucking regulations &rarr;
-            </Link>
-          </div>
+        <div className="mt-10">
+          <Link
+            href="/fmcsa-regulations"
+            className="inline-flex items-center gap-2 text-base font-semibold text-amber-600 hover:text-amber-700"
+          >
+            Learn more about FMCSA trucking regulations
+            <ArrowRight className="h-5 w-5" />
+          </Link>
         </div>
-      </section>
+      </Section>
 
-      {/* Injuries Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-8">
-            Common Injuries in {content.title}
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {content.injuries.map((injury, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-lg font-bold text-navy-900 mb-2">
-                  {injury.type}
-                </h3>
-                <p className="text-gray-700 text-sm">{injury.description}</p>
-              </div>
-            ))}
-          </div>
+      {/* Injuries */}
+      <Section
+        tone="paper-2"
+        eyebrow="Medical Impact"
+        title={`Common Injuries in ${content.title}`}
+      >
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {content.injuries.map((injury, index) => (
+            <div key={index} className="card flex flex-col p-6">
+              <AlertTriangle className="h-7 w-7 text-amber-600" />
+              <h3 className="mt-4 text-lg font-bold text-ink-strong">
+                {injury.type}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-ink-muted">
+                {injury.description}
+              </p>
+            </div>
+          ))}
         </div>
-      </section>
+      </Section>
 
-      {/* Liability Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-4">
-            Who Can Be Held Liable?
-          </h2>
-          <p className="text-gray-600 mb-8">
-            Trucking accident cases often involve multiple liable parties. Our
-            attorneys investigate thoroughly to identify everyone who may be
-            responsible for your injuries.
-          </p>
-          <div className="space-y-6">
-            {content.liableParties.map((party, index) => (
-              <div key={index} className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center text-navy-900 font-bold">
-                    {index + 1}
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-navy-900">
-                    {party.party}
-                  </h3>
-                  <p className="text-gray-700 mt-1">{party.description}</p>
+      {/* Liability */}
+      <Section
+        tone="white"
+        eyebrow="Who Pays"
+        title="Who Can Be Held Liable?"
+        intro="Trucking accident cases often involve multiple liable parties. Our attorneys investigate thoroughly to identify everyone who may be responsible for your injuries."
+      >
+        <div className="space-y-5">
+          {content.liableParties.map((party, index) => (
+            <div key={index} className="flex gap-4">
+              <div className="flex-shrink-0">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-ink-900 font-bold tabular text-white">
+                  {index + 1}
                 </div>
               </div>
-            ))}
-          </div>
+              <div>
+                <h3 className="text-lg font-bold text-ink-strong">
+                  {party.party}
+                </h3>
+                <p className="mt-1 text-ink-muted">{party.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </Section>
 
-      {/* Evidence Section */}
-      <section className="py-16 bg-navy-900 text-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4">
-            Critical Evidence We Pursue
-          </h2>
-          <p className="text-gray-300 mb-8">
-            Trucking companies often have rapid response teams that arrive at
-            accident scenes to protect their interests. We act quickly to
-            preserve crucial evidence before it disappears.
-          </p>
-          <ul className="grid md:grid-cols-2 gap-4">
+      {/* Evidence — cinematic dark command section */}
+      <section className="bg-command grain relative isolate overflow-hidden py-16 md:py-24">
+        <div className="container-page">
+          <div className="max-w-3xl">
+            <p className="eyebrow eyebrow-on-ink">Evidence Preservation</p>
+            <h2 className="mt-4 text-[length:var(--text-display-md)] text-white">
+              Critical Evidence We Pursue
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-steel-200">
+              Trucking companies often have rapid response teams that arrive at
+              accident scenes to protect their interests. We act quickly to
+              preserve crucial evidence before it disappears.
+            </p>
+          </div>
+          <ul className="mt-10 grid gap-5 md:grid-cols-2">
             {content.evidence.map((item, index) => (
-              <li key={index} className="flex items-start gap-3">
-                <svg
-                  className="w-6 h-6 text-amber-500 flex-shrink-0 mt-0.5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <span className="text-gray-300">{item}</span>
+              <li
+                key={index}
+                className="flex items-start gap-3 border-t border-ink-700 pt-5"
+              >
+                <CheckCircle className="mt-0.5 h-6 w-6 shrink-0 text-amber-500" />
+                <span className="text-steel-200">{item}</span>
               </li>
             ))}
           </ul>
         </div>
       </section>
 
-      {/* Compensation Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-8">
-            Compensation You May Recover
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {content.compensation.map((item, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0" />
-                <span className="text-gray-700">{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What To Do Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-8">
-            What To Do After a {content.title.replace(' Accidents', '')} Accident
-          </h2>
-          <ol className="space-y-4">
-            {content.whatToDo.map((step, index) => (
-              <li key={index} className="flex gap-4">
-                <span className="flex-shrink-0 w-8 h-8 bg-navy-900 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                  {index + 1}
-                </span>
-                <p className="text-gray-700 pt-1">{step}</p>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-8">
-            Frequently Asked Questions
-          </h2>
-          <div className="space-y-6">
-            {content.faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="border-b border-gray-200 pb-6 last:border-0"
-              >
-                <h3 className="text-lg font-bold text-navy-900 mb-3">
-                  {faq.question}
-                </h3>
-                <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Related Content Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Related Accident Types */}
-            <div>
-              <h2 className="text-2xl font-bold text-navy-900 mb-6">
-                Related Accident Types
-              </h2>
-              <ul className="space-y-3">
-                {content.relatedAccidents.map((relatedSlug) => (
-                  <li key={relatedSlug}>
-                    <Link
-                      href={`/accidents/${relatedSlug}`}
-                      className="text-amber-600 hover:text-amber-700 font-medium"
-                    >
-                      {getAccidentName(relatedSlug)} &rarr;
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+      {/* Compensation */}
+      <Section
+        tone="white"
+        eyebrow="Recovery"
+        title="Compensation You May Recover"
+      >
+        <div className="grid gap-5 md:grid-cols-2">
+          {content.compensation.map((item, index) => (
+            <div
+              key={index}
+              className="flex items-start gap-3 rounded-lg border border-line bg-paper p-4"
+            >
+              <Scale className="mt-0.5 h-5 w-5 shrink-0 text-amber-600" />
+              <span className="text-ink-body">{item}</span>
             </div>
+          ))}
+        </div>
+      </Section>
 
-            {/* Related States */}
-            <div>
-              <h2 className="text-2xl font-bold text-navy-900 mb-6">
-                {content.title} by State
-              </h2>
-              <ul className="space-y-3">
-                {content.relatedStates.map((stateSlug) => (
-                  <li key={stateSlug}>
-                    <Link
-                      href={`/states/${stateSlug}`}
-                      className="text-amber-600 hover:text-amber-700 font-medium capitalize"
-                    >
-                      {stateSlug.replace(/-/g, ' ')} Truck Accidents &rarr;
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+      {/* What To Do */}
+      <Section
+        tone="paper"
+        eyebrow="Action Plan"
+        title={`What To Do After a ${accidentLabel} Accident`}
+      >
+        <ol className="space-y-5">
+          {content.whatToDo.map((step, index) => (
+            <li key={index} className="flex gap-4">
+              <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-amber-500 text-sm font-bold tabular text-ink-900">
+                {index + 1}
+              </span>
+              <p className="pt-1.5 text-ink-body">{step}</p>
+            </li>
+          ))}
+        </ol>
+      </Section>
+
+      {/* FAQ */}
+      <Section
+        tone="white"
+        eyebrow="Questions Answered"
+        title="Frequently Asked Questions"
+      >
+        <div className="mx-auto max-w-3xl divide-y divide-line">
+          {content.faqs.map((faq, index) => (
+            <div key={index} className="py-6 first:pt-0 last:pb-0">
+              <h3 className="text-lg font-bold text-ink-strong">
+                {faq.question}
+              </h3>
+              <p className="mt-3 leading-relaxed text-ink-muted">{faq.answer}</p>
             </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Related Content */}
+      <Section tone="paper-2">
+        <div className="grid gap-12 md:grid-cols-2">
+          {/* Related Accident Types */}
+          <div>
+            <p className="eyebrow">More Collision Types</p>
+            <h2 className="mt-4 text-[length:var(--text-display-sm)] text-ink-strong">
+              Related Accident Types
+            </h2>
+            <ul className="mt-6 space-y-3">
+              {content.relatedAccidents.map((relatedSlug) => (
+                <li key={relatedSlug}>
+                  <Link
+                    href={`/accidents/${relatedSlug}`}
+                    className="group inline-flex items-center gap-1.5 font-medium text-amber-600 hover:text-amber-700"
+                  >
+                    {getAccidentName(relatedSlug)}
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Related States */}
+          <div>
+            <p className="eyebrow">Nationwide Coverage</p>
+            <h2 className="mt-4 text-[length:var(--text-display-sm)] text-ink-strong">
+              {content.title} by State
+            </h2>
+            <ul className="mt-6 space-y-3">
+              {content.relatedStates.map((stateSlug) => (
+                <li key={stateSlug}>
+                  <Link
+                    href={`/states/${stateSlug}`}
+                    className="group inline-flex items-center gap-1.5 font-medium capitalize text-amber-600 hover:text-amber-700"
+                  >
+                    <MapPin className="h-4 w-4" />
+                    {stateSlug.replace(/-/g, ' ')} Truck Accidents
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* Content Freshness & Author Attribution */}
-      <section className="py-8 bg-white border-t border-gray-200">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-sm text-gray-600">
+      <div className="border-t border-line bg-white">
+        <div className="container-page py-8">
+          <div className="flex flex-col items-start gap-4 text-sm text-ink-muted sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-2">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
+              <Users className="h-4 w-4" />
               <span>
                 Written by{' '}
-                <Link href="/about/team" className="text-amber-600 hover:text-amber-700 font-medium">
+                <Link href="/about/team" className="font-medium text-amber-600 hover:text-amber-700">
                   Editorial Team
                 </Link>
               </span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
+              <Clock className="h-4 w-4" />
               <span>
                 Last Updated:{' '}
-                <time dateTime={content.lastUpdated || '2025-01-01'} className="font-medium">
+                <time dateTime={content.lastUpdated || '2025-01-01'} className="font-medium tabular">
                   {new Date(content.lastUpdated || '2025-01-01').toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
@@ -511,51 +480,50 @@ export default async function AccidentPage({
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* CTA Section with Form */}
-      <section className="py-16 bg-navy-900 text-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - CTA text */}
-            <div className="text-center lg:text-left">
-              <h2 className="text-3xl font-bold mb-4">
-                Injured in a {content.title.replace(' Accidents', '')} Accident?
-              </h2>
-              <p className="text-gray-300 mb-6 text-lg">
-                Get the experienced legal representation you deserve. We handle
-                complex trucking accident cases nationwide and fight to hold all
-                responsible parties accountable.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6">
-                <a
-                  href={`tel:${PHONE_NUMBER}`}
-                  className="bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition inline-flex items-center justify-center"
-                >
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                  </svg>
-                  {PHONE_NUMBER}
-                </a>
-              </div>
-              <p className="text-gray-400 text-sm">
-                No Fee Unless You Win | Available 24/7 | Hablamos Espa&ntilde;ol
-              </p>
-            </div>
-
-            {/* Right side - Form */}
-            <div>
-              <CaseEvaluationForm
-                source={`accident-${slug}`}
-                compact={true}
-                darkMode={true}
-                title="Free Case Evaluation"
-                subtitle="Tell us about your accident and we'll contact you within 24 hours."
-              />
-            </div>
+      <section className="bg-ink-900 py-16 md:py-24">
+        <div className="container-page grid gap-12 lg:grid-cols-2 lg:items-center">
+          {/* Left side - CTA text */}
+          <div>
+            <p className="eyebrow eyebrow-on-ink">Free Case Review</p>
+            <h2 className="mt-4 text-[length:var(--text-display-md)] text-white">
+              Injured in a {accidentLabel} Accident?
+            </h2>
+            <p className="mt-5 text-lg leading-relaxed text-steel-200">
+              Get the experienced legal representation you deserve. We handle
+              complex trucking accident cases nationwide and fight to hold all
+              responsible parties accountable.
+            </p>
+            <ul className="mt-8 space-y-3">
+              {[
+                'No Fee Unless You Win',
+                'Available 24/7',
+                'Hablamos Español',
+              ].map((point) => (
+                <li key={point} className="flex items-center gap-3 text-steel-200">
+                  <ShieldCheck className="h-5 w-5 shrink-0 text-amber-500" />
+                  {point}
+                </li>
+              ))}
+            </ul>
+            <a href={`tel:${PHONE_NUMBER}`} className="btn btn-primary mt-9">
+              <Phone className="h-5 w-5" />
+              {PHONE_NUMBER}
+            </a>
           </div>
+
+          {/* Right side - Form */}
+          <CaseEvaluationForm
+            source={`accident-${slug}`}
+            compact={true}
+            darkMode={true}
+            title="Free Case Evaluation"
+            subtitle="Tell us about your accident and we'll contact you within 24 hours."
+          />
         </div>
       </section>
-    </div>
+    </>
   );
 }

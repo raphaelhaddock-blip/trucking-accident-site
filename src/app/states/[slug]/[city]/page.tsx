@@ -1,8 +1,20 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 import Breadcrumb from '@/components/Breadcrumb';
+import CommandHero from '@/components/CommandHero';
+import Section from '@/components/ui/Section';
+import {
+  ArrowRight,
+  Phone,
+  ShieldCheck,
+  Scale,
+  Document,
+  AlertTriangle,
+  Clock,
+  MapPin,
+  Users,
+} from '@/components/ui/Icon';
 import { STATE_IMAGES } from '@/lib/states-content/images';
 import {
   getCityData,
@@ -255,7 +267,7 @@ export default async function CityPage({
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
       {/* Schema Markup */}
       <script
         type="application/ld+json"
@@ -270,27 +282,12 @@ export default async function CityPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Hero Section with Image */}
-      <section className="relative min-h-[400px] md:min-h-[500px] flex items-center">
-        {/* Background Image */}
-        {heroImage && (
-          <>
-            <Image
-              src={heroImage.url}
-              alt={heroImage.alt}
-              fill
-              priority
-              className="object-cover"
-              sizes="100vw"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-navy-900/70 via-navy-900/40 to-transparent" />
-          </>
-        )}
-        {!heroImage && (
-          <div className="absolute inset-0 bg-navy-900" />
-        )}
-
-        <div className="relative z-10 max-w-6xl mx-auto px-4 py-16 text-white">
+      {/* Hero — cinematic command treatment (Sanity stock hero dropped) */}
+      <CommandHero
+        size="lg"
+        eyebrow={`${stateName} Truck Accident Response`}
+        title={`${cityData.name} Truck Accident Lawyers`}
+        breadcrumb={
           <Breadcrumb
             items={[
               { label: 'Home', href: '/' },
@@ -299,430 +296,405 @@ export default async function CityPage({
               { label: cityData.name },
             ]}
           />
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg">
-            {cityData.name} Truck Accident Lawyers
-          </h1>
-          <p className="text-xl text-gray-200 mb-8 max-w-3xl drop-shadow">
-            {cityContent?.heroText || `Experienced 18-wheeler accident attorneys serving ${cityData.name}, ${stateName}. With ${truckFatalities.toLocaleString()} fatal truck crashes recorded in ${cityData.dataYear}, our team fights for maximum compensation for accident victims.`}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href={`tel:${PHONE_NUMBER}`}
-              className="bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition text-center shadow-lg"
-            >
-              Free Case Evaluation: {PHONE_NUMBER}
-            </a>
-            <Link
-              href="/contact"
-              className="bg-white text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition text-center shadow-lg"
-            >
-              Contact Us Online
-            </Link>
-          </div>
-        </div>
-      </section>
+        }
+        subtitle={
+          cityContent?.heroText ||
+          `Experienced 18-wheeler accident attorneys serving ${cityData.name}, ${stateName}. With ${truckFatalities.toLocaleString()} fatal truck crashes recorded in ${cityData.dataYear}, our team fights for maximum compensation for accident victims.`
+        }
+        stats={[
+          { value: String(truckFatalities), label: `Fatal Truck Crashes (${cityData.dataYear})` },
+          { value: population.toLocaleString(), label: 'City Population' },
+          { value: '24/7', label: 'Available for Calls' },
+          { value: '$0', label: 'Upfront Cost' },
+        ]}
+      >
+        <a href={`tel:${PHONE_NUMBER}`} className="btn btn-primary">
+          <Phone className="h-5 w-5" />
+          Free Case Evaluation: {PHONE_NUMBER}
+        </a>
+        <Link href="/contact" className="btn btn-ghost-ink">
+          Contact Us Online
+          <ArrowRight className="h-5 w-5" />
+        </Link>
+      </CommandHero>
 
-      {/* Statistics Section */}
-      <section className="py-12 bg-white border-b">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-amber-500 mb-2">
-                {truckFatalities}
-              </div>
-              <div className="text-gray-600 text-sm">Fatal Truck Crashes ({cityData.dataYear})</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-amber-500 mb-2">
-                {population.toLocaleString()}
-              </div>
-              <div className="text-gray-600 text-sm">City Population</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-amber-500 mb-2">
-                24/7
-              </div>
-              <div className="text-gray-600 text-sm">Available for Calls</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-amber-500 mb-2">
-                $0
-              </div>
-              <div className="text-gray-600 text-sm">Upfront Cost</div>
-            </div>
-          </div>
-          <p className="text-center text-gray-500 text-sm mt-4">
+      {/* Source attribution for the hero stats (FARS) */}
+      <div className="border-b border-line bg-white">
+        <div className="container-page py-4">
+          <p className="text-sm text-ink-muted">
             Source:{' '}
             <a
               href={cityData.sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-amber-600 hover:text-amber-700"
+              className="font-medium text-amber-600 hover:text-amber-700"
             >
               NHTSA FARS Database
             </a>
           </p>
         </div>
-      </section>
+      </div>
 
-      {/* Truck Accidents in City Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-6">
-            Truck Accidents in {cityData.name}, {stateName}
-          </h2>
-          <div className="prose prose-lg max-w-none text-gray-700">
-            <p>
-              {cityData.name} is one of {stateName}&apos;s largest cities with a population of{' '}
-              {population.toLocaleString()} residents. The city&apos;s location along major
-              trucking corridors makes it a high-traffic area for commercial vehicles, including
-              18-wheelers, semi-trucks, and other large trucks.
-            </p>
-            <p>
-              According to the National Highway Traffic Safety Administration (NHTSA) Fatality Analysis
-              Reporting System (FARS), {cityData.name} and its surrounding area recorded{' '}
-              <strong>{truckFatalities} fatal truck crashes</strong> in {cityData.dataYear}.
-              These accidents resulted in devastating injuries and wrongful deaths that forever changed
-              families throughout the {cityData.name} metropolitan area.
-            </p>
-            {cityContent?.truckingIndustry && (
-              <div dangerouslySetInnerHTML={{ __html: cityContent.truckingIndustry.replace(/\n\n/g, '</p><p>').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>') }} />
-            )}
-            {!cityContent?.truckingIndustry && (
-              <p>
-                If you or a loved one was injured in a truck accident in {cityData.name}, understanding
-                your legal rights is critical. Trucking companies and their insurers have teams of lawyers
-                working to minimize their liability. You deserve experienced legal representation that
-                knows how to investigate these complex cases and fight for maximum compensation.
-              </p>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* Dangerous Roads Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-8">
-            Dangerous Trucking Routes in {cityData.name}
-          </h2>
-          <p className="text-gray-600 mb-8">
-            Major highways and interstates passing through {cityData.name} see heavy commercial truck
-            traffic. These corridors are common sites for serious truck accidents:
+      {/* Truck Accidents in City */}
+      <Section
+        tone="white"
+        eyebrow="Local Overview"
+        title={`Truck Accidents in ${cityData.name}, ${stateName}`}
+      >
+        <div className="prose-legal max-w-3xl text-lg">
+          <p>
+            {cityData.name} is one of {stateName}&apos;s largest cities with a population of{' '}
+            {population.toLocaleString()} residents. The city&apos;s location along major
+            trucking corridors makes it a high-traffic area for commercial vehicles, including
+            18-wheelers, semi-trucks, and other large trucks.
           </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {cityContent?.dangerousRoads ? (
-              // Use detailed road info from city content
-              cityContent.dangerousRoads.map((road, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                  <div className="text-2xl font-bold text-navy-900 mb-2">{road.name}</div>
-                  <p className="text-gray-600">
-                    {road.description}
-                    {road.milesInCity && ` Approximately ${road.milesInCity} miles within city limits.`}
-                  </p>
-                </div>
-              ))
-            ) : (
-              // Fallback to basic road names
-              cityData.dangerousRoads.map((road, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                  <div className="text-2xl font-bold text-navy-900 mb-2">{road}</div>
-                  <p className="text-gray-600">
-                    Major trucking corridor passing through {cityData.name}. High volume of
-                    commercial traffic increases accident risk.
-                  </p>
-                </div>
-              ))
-            )}
-          </div>
+          <p>
+            According to the National Highway Traffic Safety Administration (NHTSA) Fatality Analysis
+            Reporting System (FARS), {cityData.name} and its surrounding area recorded{' '}
+            <strong>{truckFatalities} fatal truck crashes</strong> in {cityData.dataYear}.
+            These accidents resulted in devastating injuries and wrongful deaths that forever changed
+            families throughout the {cityData.name} metropolitan area.
+          </p>
+          {cityContent?.truckingIndustry && (
+            <div dangerouslySetInnerHTML={{ __html: cityContent.truckingIndustry.replace(/\n\n/g, '</p><p>').replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>') }} />
+          )}
+          {!cityContent?.truckingIndustry && (
+            <p>
+              If you or a loved one was injured in a truck accident in {cityData.name}, understanding
+              your legal rights is critical. Trucking companies and their insurers have teams of lawyers
+              working to minimize their liability. You deserve experienced legal representation that
+              knows how to investigate these complex cases and fight for maximum compensation.
+            </p>
+          )}
         </div>
-      </section>
+      </Section>
 
-      {/* Common Causes Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-8">
-            Common Causes of Truck Accidents in {cityData.name}
-          </h2>
-          {cityContent?.commonAccidents && cityContent.commonAccidents.length > 0 ? (
-            // Use regional accident data with unique percentages
-            <div className="grid md:grid-cols-2 gap-6">
-              {cityContent.commonAccidents.map((accident, index) => {
-                const slug = mechanismSlug(accident.type);
-                return (
-                  <div key={index} className="bg-gray-50 rounded-lg p-6">
-                    <div className="flex justify-between items-start mb-3">
-                      <h3 className="text-xl font-bold text-navy-900">
-                        {slug ? (
-                          <Link href={`/accidents/${slug}`} className="hover:text-amber-600 transition">
-                            {accident.type}
-                          </Link>
-                        ) : (
-                          accident.type
-                        )}
-                      </h3>
-                      {accident.percentage && (
-                        <span className="bg-amber-100 text-amber-800 text-sm font-medium px-3 py-1 rounded-full">
-                          {accident.percentage}
-                        </span>
+      {/* Dangerous Roads */}
+      <Section
+        tone="paper"
+        eyebrow="High-Risk Corridors"
+        title={`Dangerous Trucking Routes in ${cityData.name}`}
+        intro={`Major highways and interstates passing through ${cityData.name} see heavy commercial truck traffic. These corridors are common sites for serious truck accidents:`}
+      >
+        <div className="grid gap-5 md:grid-cols-3">
+          {cityContent?.dangerousRoads ? (
+            // Use detailed road info from city content
+            cityContent.dangerousRoads.map((road, index) => (
+              <div key={index} className="card flex flex-col p-6">
+                <MapPin className="h-7 w-7 text-amber-600" />
+                <h3 className="mt-4 text-xl font-bold text-ink-strong">{road.name}</h3>
+                <p className="mt-2 text-ink-muted">
+                  {road.description}
+                  {road.milesInCity && ` Approximately ${road.milesInCity} miles within city limits.`}
+                </p>
+              </div>
+            ))
+          ) : (
+            // Fallback to basic road names
+            cityData.dangerousRoads.map((road, index) => (
+              <div key={index} className="card flex flex-col p-6">
+                <MapPin className="h-7 w-7 text-amber-600" />
+                <h3 className="mt-4 text-xl font-bold text-ink-strong">{road}</h3>
+                <p className="mt-2 text-ink-muted">
+                  Major trucking corridor passing through {cityData.name}. High volume of
+                  commercial traffic increases accident risk.
+                </p>
+              </div>
+            ))
+          )}
+        </div>
+      </Section>
+
+      {/* Common Causes */}
+      <Section
+        tone="white"
+        eyebrow="Crash Mechanisms"
+        title={`Common Causes of Truck Accidents in ${cityData.name}`}
+      >
+        {cityContent?.commonAccidents && cityContent.commonAccidents.length > 0 ? (
+          // Use regional accident data with unique percentages
+          <div className="grid gap-5 md:grid-cols-2">
+            {cityContent.commonAccidents.map((accident, index) => {
+              const slug = mechanismSlug(accident.type);
+              return (
+                <div key={index} className="card flex flex-col p-6">
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="text-xl font-bold text-ink-strong">
+                      {slug ? (
+                        <Link href={`/accidents/${slug}`} className="hover:text-amber-600">
+                          {accident.type}
+                        </Link>
+                      ) : (
+                        accident.type
                       )}
-                    </div>
-                    <p className="text-gray-700">{accident.localFactor}</p>
-                    {slug && (
-                      <Link
-                        href={`/accidents/${slug}`}
-                        className="inline-block mt-3 text-sm font-semibold text-amber-600 hover:text-amber-700"
-                      >
-                        How these cases are built &rarr;
-                      </Link>
+                    </h3>
+                    {accident.percentage && (
+                      <span className="tabular shrink-0 rounded-full border border-amber-500/40 bg-amber-500/10 px-3 py-1 text-sm font-semibold text-amber-700">
+                        {accident.percentage}
+                      </span>
                     )}
                   </div>
-                );
-              })}
+                  <p className="mt-3 text-ink-muted">{accident.localFactor}</p>
+                  {slug && (
+                    <Link
+                      href={`/accidents/${slug}`}
+                      className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-amber-600 hover:text-amber-700"
+                    >
+                      How these cases are built
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          // Fallback to generic content
+          <div className="grid gap-5 md:grid-cols-2">
+            <div className="card flex flex-col p-6">
+              <AlertTriangle className="h-7 w-7 text-amber-600" />
+              <h3 className="mt-4 text-xl font-bold text-ink-strong">Driver Fatigue</h3>
+              <p className="mt-2 text-ink-muted">
+                Despite federal hours-of-service regulations, many truck drivers exceed legal driving
+                limits to meet delivery deadlines. Fatigued driving is a leading cause of truck
+                accidents in {cityData.name}.
+              </p>
             </div>
-          ) : (
-            // Fallback to generic content
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-navy-900 mb-3">Driver Fatigue</h3>
-                <p className="text-gray-700">
-                  Despite federal hours-of-service regulations, many truck drivers exceed legal driving
-                  limits to meet delivery deadlines. Fatigued driving is a leading cause of truck
-                  accidents in {cityData.name}.
-                </p>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-navy-900 mb-3">Distracted Driving</h3>
-                <p className="text-gray-700">
-                  Cell phone use, GPS devices, and other distractions cause truck drivers to lose
-                  focus on the road. At 65 mph, looking away for just 5 seconds means traveling
-                  the length of a football field blind.
-                </p>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-navy-900 mb-3">Improper Maintenance</h3>
-                <p className="text-gray-700">
-                  Trucking companies sometimes cut corners on maintenance to save money. Brake
-                  failures, tire blowouts, and other mechanical issues cause catastrophic accidents.
-                </p>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="text-xl font-bold text-navy-900 mb-3">Overloaded Cargo</h3>
-                <p className="text-gray-700">
-                  Improperly loaded or overweight trucks are harder to control and take longer to
-                  stop. Shifted cargo can cause rollovers and jackknife accidents.
-                </p>
-              </div>
+            <div className="card flex flex-col p-6">
+              <AlertTriangle className="h-7 w-7 text-amber-600" />
+              <h3 className="mt-4 text-xl font-bold text-ink-strong">Distracted Driving</h3>
+              <p className="mt-2 text-ink-muted">
+                Cell phone use, GPS devices, and other distractions cause truck drivers to lose
+                focus on the road. At 65 mph, looking away for just 5 seconds means traveling
+                the length of a football field blind.
+              </p>
             </div>
-          )}
-        </div>
-      </section>
+            <div className="card flex flex-col p-6">
+              <AlertTriangle className="h-7 w-7 text-amber-600" />
+              <h3 className="mt-4 text-xl font-bold text-ink-strong">Improper Maintenance</h3>
+              <p className="mt-2 text-ink-muted">
+                Trucking companies sometimes cut corners on maintenance to save money. Brake
+                failures, tire blowouts, and other mechanical issues cause catastrophic accidents.
+              </p>
+            </div>
+            <div className="card flex flex-col p-6">
+              <AlertTriangle className="h-7 w-7 text-amber-600" />
+              <h3 className="mt-4 text-xl font-bold text-ink-strong">Overloaded Cargo</h3>
+              <p className="mt-2 text-ink-muted">
+                Improperly loaded or overweight trucks are harder to control and take longer to
+                stop. Shifted cargo can cause rollovers and jackknife accidents.
+              </p>
+            </div>
+          </div>
+        )}
+      </Section>
 
-      {/* National Resources Section — deep-link the local hub to the federal substance */}
-      <section className="py-16 bg-gray-50 border-t">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-4">
-            How a {cityData.name} Truck Accident Case Works
-          </h2>
-          <p className="text-gray-700 mb-8">
-            Truck claims turn on federal rules and physical evidence that are the same whether the
-            crash happened in {cityData.name} or anywhere else. These national guides go deep on the
-            parts that decide a case — what to preserve, who can be held liable, and how value is built.
-          </p>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {mechanismLinks.length > 0 && mechanismLinks.map(([mSlug, mType]) => (
-              <Link
-                key={mSlug}
-                href={`/accidents/${mSlug}`}
-                className="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition border-l-4 border-amber-500"
-              >
-                <span className="font-bold text-navy-900">{mType} crashes</span>
-                <span className="block text-sm text-gray-600 mt-1">
+      {/* National Resources — deep-link the local hub to the federal substance */}
+      <Section
+        tone="paper-2"
+        eyebrow="Federal Substance"
+        title={`How a ${cityData.name} Truck Accident Case Works`}
+        intro={`Truck claims turn on federal rules and physical evidence that are the same whether the crash happened in ${cityData.name} or anywhere else. These national guides go deep on the parts that decide a case — what to preserve, who can be held liable, and how value is built.`}
+      >
+        <div className="grid gap-5 sm:grid-cols-2">
+          {mechanismLinks.length > 0 && mechanismLinks.map(([mSlug, mType]) => (
+            <Link
+              key={mSlug}
+              href={`/accidents/${mSlug}`}
+              className="card card-hover group flex items-start justify-between gap-4 p-6"
+            >
+              <span>
+                <span className="block font-bold text-ink-strong">{mType} crashes</span>
+                <span className="mt-1 block text-sm text-ink-muted">
                   How they happen, the evidence trail, and who is liable.
                 </span>
-              </Link>
-            ))}
-            <Link
-              href="/fmcsa-regulations"
-              className="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition border-l-4 border-navy-900"
-            >
-              <span className="font-bold text-navy-900">FMCSA Trucking Regulations</span>
-              <span className="block text-sm text-gray-600 mt-1">
+              </span>
+              <ArrowRight className="mt-1 h-5 w-5 shrink-0 text-amber-600 transition-transform group-hover:translate-x-1" />
+            </Link>
+          ))}
+          <Link
+            href="/fmcsa-regulations"
+            className="card card-hover group flex items-start justify-between gap-4 p-6"
+          >
+            <span>
+              <span className="block font-bold text-ink-strong">FMCSA Trucking Regulations</span>
+              <span className="mt-1 block text-sm text-ink-muted">
                 The federal rules — hours of service, maintenance, driver files — that often decide fault.
               </span>
-            </Link>
-            <Link
-              href="/accidents"
-              className="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition border-l-4 border-navy-900"
-            >
-              <span className="font-bold text-navy-900">All Truck Accident Types</span>
-              <span className="block text-sm text-gray-600 mt-1">
+            </span>
+            <ArrowRight className="mt-1 h-5 w-5 shrink-0 text-amber-600 transition-transform group-hover:translate-x-1" />
+          </Link>
+          <Link
+            href="/accidents"
+            className="card card-hover group flex items-start justify-between gap-4 p-6"
+          >
+            <span>
+              <span className="block font-bold text-ink-strong">All Truck Accident Types</span>
+              <span className="mt-1 block text-sm text-ink-muted">
                 Evidence preservation, liable parties, and compensation factors, by crash type.
               </span>
-            </Link>
-          </div>
-          {venueCourt && (
-            <div className="text-sm text-gray-600 mt-8 border-t pt-4">
-              <strong className="text-navy-900">Court context:</strong> {cityData.name} is located in{' '}
-              {venueCourt.county} County, {stateName}. The trial court that serves {venueCourt.county} County
-              is the{' '}
-              <a
-                href={venueCourt.sourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-amber-600 hover:text-amber-700"
-              >
-                {venueCourt.displayName ?? venueCourt.trialCourtName}
-              </a>
-              {' '}— see the official court website for locations, hours, and filing information. This is
-              general public-record information, not legal advice.
-            </div>
-          )}
-          {isHub && (
-            <p className="text-sm text-gray-500 mt-8 border-t pt-4">
-              <strong>About this page:</strong> the local figures above come from NHTSA&apos;s FARS
-              fatality records. We do not list specific {cityData.name} roads{venueCourt ? '' : ', courts,'} or
-              carriers unless we can source them, so state-law deadlines and local specifics should be
-              confirmed with a licensed {stateName} attorney.
-            </p>
-          )}
+            </span>
+            <ArrowRight className="mt-1 h-5 w-5 shrink-0 text-amber-600 transition-transform group-hover:translate-x-1" />
+          </Link>
         </div>
-      </section>
+        {venueCourt && (
+          <div className="mt-8 max-w-3xl border-t border-line pt-4 text-sm text-ink-muted">
+            <strong className="text-ink-strong">Court context:</strong> {cityData.name} is located in{' '}
+            {venueCourt.county} County, {stateName}. The trial court that serves {venueCourt.county} County
+            is the{' '}
+            <a
+              href={venueCourt.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-600 hover:text-amber-700"
+            >
+              {venueCourt.displayName ?? venueCourt.trialCourtName}
+            </a>
+            {' '}— see the official court website for locations, hours, and filing information. This is
+            general public-record information, not legal advice.
+          </div>
+        )}
+        {isHub && (
+          <p className="mt-8 max-w-3xl border-t border-line pt-4 text-sm text-ink-muted/80">
+            <strong>About this page:</strong> the local figures above come from NHTSA&apos;s FARS
+            fatality records. We do not list specific {cityData.name} roads{venueCourt ? '' : ', courts,'} or
+            carriers unless we can source them, so state-law deadlines and local specifics should be
+            confirmed with a licensed {stateName} attorney.
+          </p>
+        )}
+      </Section>
 
-      {/* Why Hire Local Section */}
-      <section className="py-16 bg-navy-900 text-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6">
+      {/* Why Hire Local — cinematic dark command section */}
+      <section className="bg-command grain relative isolate overflow-hidden py-16 md:py-24">
+        <div className="container-page max-w-4xl">
+          <p className="eyebrow eyebrow-on-ink">The Local Advantage</p>
+          <h2 className="mt-4 text-[length:var(--text-display-md)] text-white">
             Why Hire a {cityData.name} Truck Accident Lawyer?
           </h2>
-          <div className="prose prose-lg prose-invert max-w-none">
-            <p className="text-gray-300">
-              Truck accident cases are significantly more complex than typical car accident claims.
-              A {cityData.name} truck accident lawyer brings critical advantages:
-            </p>
-            <ul className="text-gray-300 space-y-3 mt-6">
-              <li>
-                <strong className="text-white">Preserving the evidence</strong> -
+          <p className="mt-5 text-lg leading-relaxed text-steel-200">
+            Truck accident cases are significantly more complex than typical car accident claims.
+            A {cityData.name} truck accident lawyer brings critical advantages:
+          </p>
+          <ul className="mt-8 space-y-5">
+            <li className="flex items-start gap-3">
+              <ShieldCheck className="mt-0.5 h-6 w-6 shrink-0 text-amber-500" />
+              <span className="text-steel-200">
+                <strong className="font-semibold text-white">Preserving the evidence</strong> —
                 Organizing the trucking company&apos;s records, the driver&apos;s logs, and the
                 federal compliance trail that a routine car case never involves.
-              </li>
-              <li>
-                <strong className="text-white">Tracking the deadlines</strong> -
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <Clock className="mt-0.5 h-6 w-6 shrink-0 text-amber-500" />
+              <span className="text-steel-200">
+                <strong className="font-semibold text-white">Tracking the deadlines</strong> —
                 Keeping the filing deadline and the evidence-preservation steps on schedule,
                 so nothing critical lapses while you recover.
-              </li>
-              <li>
-                <strong className="text-white">Quick accident scene investigation</strong> -
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <Document className="mt-0.5 h-6 w-6 shrink-0 text-amber-500" />
+              <span className="text-steel-200">
+                <strong className="font-semibold text-white">Quick accident scene investigation</strong> —
                 Preserving evidence before trucking companies can alter or destroy it.
-              </li>
-              <li>
-                <strong className="text-white">Network of local experts</strong> -
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <Users className="mt-0.5 h-6 w-6 shrink-0 text-amber-500" />
+              <span className="text-steel-200">
+                <strong className="font-semibold text-white">Network of local experts</strong> —
                 Access to accident reconstructionists, medical experts, and economists in {stateName}.
-              </li>
-              <li>
-                <strong className="text-white">No fee unless you win</strong> -
+              </span>
+            </li>
+            <li className="flex items-start gap-3">
+              <Scale className="mt-0.5 h-6 w-6 shrink-0 text-amber-500" />
+              <span className="text-steel-200">
+                <strong className="font-semibold text-white">No fee unless you win</strong> —
                 Contingency fee arrangements mean you pay nothing upfront.
-              </li>
-            </ul>
-          </div>
+              </span>
+            </li>
+          </ul>
         </div>
       </section>
 
       {/* Link to State Page */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-6">
-            {stateName} Truck Accident Laws
-          </h2>
-          <p className="text-gray-700 mb-6">
-            Truck accident claims in {cityData.name} are governed by {stateName} state law, including
-            statute of limitations deadlines, comparative negligence rules, and damage caps. Our
-            comprehensive {stateName} truck accident guide covers everything you need to know.
-          </p>
-          <Link
-            href={`/states/${slug}`}
-            className="inline-block bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition"
-          >
-            View {stateName} Truck Accident Laws &rarr;
-          </Link>
-        </div>
-      </section>
+      <Section
+        tone="white"
+        eyebrow="State Law"
+        title={`${stateName} Truck Accident Laws`}
+        intro={`Truck accident claims in ${cityData.name} are governed by ${stateName} state law, including statute of limitations deadlines, comparative negligence rules, and damage caps. Our state truck accident guide covers what you need to know.`}
+      >
+        <Link href={`/states/${slug}`} className="btn btn-primary">
+          View {stateName} Truck Accident Laws
+          <ArrowRight className="h-5 w-5" />
+        </Link>
+      </Section>
 
-      {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-navy-900 mb-8">
-            {cityData.name} Truck Accident FAQs
-          </h2>
-          <div className="space-y-6">
-            {cityFaqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-amber-500"
+      {/* FAQ */}
+      <Section
+        tone="paper"
+        eyebrow="Common Questions"
+        title={`${cityData.name} Truck Accident FAQs`}
+      >
+        <div className="mx-auto max-w-3xl space-y-4">
+          {cityFaqs.map((faq, index) => (
+            <div key={index} className="card signpost p-6">
+              <h3 className="text-lg font-bold text-ink-strong">{faq.question}</h3>
+              <p className="mt-3 leading-relaxed text-ink-muted">{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Other Cities */}
+      {otherCities.length > 0 && (
+        <Section
+          tone="white"
+          eyebrow="Nearby Coverage"
+          title={`Truck Accident Lawyers in Other ${stateName} Cities`}
+        >
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
+            {otherCities.map((otherCity) => (
+              <Link
+                key={otherCity.slug}
+                href={`/states/${slug}/${otherCity.slug}`}
+                className="group flex flex-col rounded-lg border border-line bg-paper p-4 text-center transition-colors hover:border-ink-800 hover:bg-white"
               >
-                <h3 className="text-lg font-bold text-navy-900 mb-3">
-                  {faq.question}
-                </h3>
-                <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
-              </div>
+                <span className="font-medium text-ink-strong group-hover:text-amber-700">{otherCity.name}</span>
+                <span className="tabular mt-1 text-sm text-ink-muted">
+                  {otherCity.truckFatalities} fatal crashes
+                </span>
+              </Link>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Other Cities Section */}
-      {otherCities.length > 0 && (
-        <section className="py-16 bg-white">
-          <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-2xl font-bold text-navy-900 mb-6">
-              Truck Accident Lawyers in Other {stateName} Cities
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {otherCities.map((otherCity) => (
-                <Link
-                  key={otherCity.slug}
-                  href={`/states/${slug}/${otherCity.slug}`}
-                  className="bg-white px-4 py-3 rounded-lg shadow-sm hover:shadow-md transition text-center"
-                >
-                  <span className="text-amber-600 font-medium">{otherCity.name}</span>
-                  <span className="text-gray-500 text-sm block">
-                    {otherCity.truckFatalities} fatal crashes
-                  </span>
-                </Link>
-              ))}
-            </div>
-            <div className="text-center mt-6">
-              <Link
-                href={`/states/${slug}`}
-                className="text-amber-600 font-semibold hover:text-amber-700"
-              >
-                View all {stateName} cities &rarr;
-              </Link>
-            </div>
+          <div className="mt-8 text-center">
+            <Link
+              href={`/states/${slug}`}
+              className="inline-flex items-center gap-2 text-base font-semibold text-amber-600 hover:text-amber-700"
+            >
+              View all {stateName} cities
+              <ArrowRight className="h-5 w-5" />
+            </Link>
           </div>
-        </section>
+        </Section>
       )}
 
       {/* Content Freshness */}
-      <section className="py-8 bg-white border-t border-gray-200">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-sm text-gray-600">
+      <div className="border-t border-line bg-white">
+        <div className="container-page py-8">
+          <div className="flex flex-col items-start justify-between gap-4 text-sm text-ink-muted sm:flex-row sm:items-center">
             <div className="flex items-center gap-2">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
+              <Users className="h-4 w-4" />
               <span>
                 Written by{' '}
-                <Link href="/about/team" className="text-amber-600 hover:text-amber-700 font-medium">
+                <Link href="/about/team" className="font-medium text-amber-600 hover:text-amber-700">
                   Editorial Team
                 </Link>
               </span>
             </div>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
+                <Clock className="h-4 w-4" />
                 <span>
                   Last Updated:{' '}
                   <time dateTime={new Date().toISOString().split('T')[0]} className="font-medium">
@@ -734,7 +706,7 @@ export default async function CityPage({
                   </time>
                 </span>
               </div>
-              <span className="text-gray-400">|</span>
+              <span className="text-line">|</span>
               <a
                 href={cityData.sourceUrl}
                 target="_blank"
@@ -746,38 +718,34 @@ export default async function CityPage({
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-navy-900 text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+      {/* CTA — cinematic dark command close */}
+      <section className="bg-command grain relative isolate overflow-hidden py-16 md:py-24">
+        <div className="container-page max-w-3xl text-center">
+          <h2 className="text-[length:var(--text-display-md)] text-white">
             Injured in a {cityData.name} Truck Accident?
           </h2>
-          <p className="text-gray-300 mb-8 text-lg">
+          <p className="mt-5 text-lg leading-relaxed text-steel-200">
             Get experienced legal representation that knows how to preserve the trucking
             company&apos;s records, meet the deadlines, and hold carriers accountable under the
             federal safety rules. We fight to hold trucking companies accountable.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`tel:${PHONE_NUMBER}`}
-              className="bg-amber-500 text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-amber-400 transition"
-            >
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <a href={`tel:${PHONE_NUMBER}`} className="btn btn-primary">
+              <Phone className="h-5 w-5" />
               Call Now: {PHONE_NUMBER}
             </a>
-            <Link
-              href="/contact"
-              className="bg-white text-navy-900 font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition"
-            >
+            <Link href="/contact" className="btn btn-ghost-ink">
               Free Case Evaluation
+              <ArrowRight className="h-5 w-5" />
             </Link>
           </div>
-          <p className="text-gray-400 mt-6 text-sm">
+          <p className="mt-6 text-sm text-steel-400">
             No Fee Unless You Win | Available 24/7 | Hablamos Espa&ntilde;ol
           </p>
         </div>
       </section>
-    </div>
+    </>
   );
 }
