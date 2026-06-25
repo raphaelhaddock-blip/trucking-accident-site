@@ -13,37 +13,32 @@
     "routesScanned": 1616,
     "withContentFile": 1613,
     "noContentFile": 3,
-    "renderedCandidatePairs": 868650
+    "renderedCandidatePairs": 810970
   },
   "gate": {
     "placeholders": 0,
     "renderedBelowFloor": 0,
-    "renderedPairsOver30pct": 868649,
-    "renderedDocsWithDupPartner": 1575,
+    "renderedPairsOver30pct": 810950,
+    "renderedDocsWithDupPartner": 1525,
     "PASS": false
   },
   "advisory": {
-    "renderedInHubBand_500_900": 278,
-    "renderedAbove900": 1335,
+    "renderedInHubBand_500_900": 325,
+    "renderedAbove900": 1288,
     "duplicateRenderedMetaDescGroups": 6
   },
   "dead_nonGating": {
     "note": "these fields are NOT rendered on city pages; sharing them is not a duplicate-content problem",
-    "storedDeadPairsOver30pct": 885109,
-    "storedDeadDocsWithDupPartner": 1575,
-    "duplicateStoredH1Groups": 121,
-    "duplicateStoredTitleGroups": 35,
+    "storedDeadPairsOver30pct": 824186,
+    "storedDeadDocsWithDupPartner": 1525,
+    "duplicateStoredH1Groups": 115,
+    "duplicateStoredTitleGroups": 34,
     "fmcsaIdenticalGroups": {
-      "groups": 85,
+      "groups": 81,
       "largest": 30
     }
   },
   "worstRenderedPairs": [
-    {
-      "a": "alabama/montgomery",
-      "b": "virginia/richmond",
-      "sim": 1
-    },
     {
       "a": "connecticut/middletown",
       "b": "new-jersey/sayreville",
@@ -51,16 +46,6 @@
     },
     {
       "a": "connecticut/plainfield",
-      "b": "connecticut/killingly-center",
-      "sim": 1
-    },
-    {
-      "a": "connecticut/plainfield",
-      "b": "connecticut/thompson",
-      "sim": 1
-    },
-    {
-      "a": "connecticut/killingly-center",
       "b": "connecticut/thompson",
       "sim": 1
     },
@@ -238,29 +223,24 @@
       "a": "new-jersey/east-rutherford",
       "b": "new-jersey/rutherford",
       "sim": 1
+    },
+    {
+      "a": "new-jersey/west-deptford",
+      "b": "new-jersey/deptford",
+      "sim": 1
+    },
+    {
+      "a": "new-jersey/elmwood-park",
+      "b": "new-jersey/rutherford",
+      "sim": 1
+    },
+    {
+      "a": "south-carolina/spartanburg",
+      "b": "virginia/fredericksburg",
+      "sim": 1
     }
   ],
   "worstDeadPairs": [
-    {
-      "a": "alabama/montgomery",
-      "b": "alabama/mobile",
-      "sim": 1
-    },
-    {
-      "a": "alabama/montgomery",
-      "b": "alabama/talladega",
-      "sim": 1
-    },
-    {
-      "a": "alabama/birmingham",
-      "b": "alabama/leeds",
-      "sim": 1
-    },
-    {
-      "a": "alabama/decatur",
-      "b": "alabama/hartselle",
-      "sim": 1
-    },
     {
       "a": "alabama/gulf-shores",
       "b": "alabama/foley",
@@ -289,6 +269,26 @@
     {
       "a": "alabama/leesburg",
       "b": "georgia/canton",
+      "sim": 1
+    },
+    {
+      "a": "alabama/auburn",
+      "b": "alabama/opelika",
+      "sim": 1
+    },
+    {
+      "a": "alabama/auburn",
+      "b": "georgia/leesburg",
+      "sim": 1
+    },
+    {
+      "a": "alabama/rainsville",
+      "b": "alabama/geraldine",
+      "sim": 1
+    },
+    {
+      "a": "alabama/rainsville",
+      "b": "georgia/clarkston",
       "sim": 1
     }
   ],

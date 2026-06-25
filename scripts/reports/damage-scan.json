@@ -1,26 +1,148 @@
 {
   "summary": {
     "scannedAt_note": "timestamp omitted (deterministic output)",
-    "totalFilesScanned": 25,
+    "totalFilesScanned": 69,
     "wtStubbed": 0,
     "headBroken": 0,
-    "belowWordFloor_wt": 6,
+    "belowWordFloor_wt": 50,
     "verdictCounts": {
-      "KEEP_WT": 25
+      "REVIEW": 50,
+      "KEEP_WT": 19
     },
     "wordFloor": 2000
   },
   "rows": [
     {
-      "file": "src/lib/cities-content/arizona/mesa.ts",
+      "file": "src/lib/cities-content/alabama/birmingham.ts",
       "wtExists": true,
-      "wtWords": 771,
+      "wtWords": 823,
       "wtMarker": false,
       "headExists": true,
-      "headWords": 691,
+      "headWords": 2149,
       "headMarker": false,
-      "verdict": "KEEP_WT",
-      "note": "WT (771w) >= HEAD (691w), no stub. Genuine enhancement — do not restore."
+      "verdict": "REVIEW",
+      "note": "WT (823w) shorter than HEAD (2149w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/alabama/decatur.ts",
+      "wtExists": true,
+      "wtWords": 803,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2022,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (803w) shorter than HEAD (2022w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/alabama/huntsville.ts",
+      "wtExists": true,
+      "wtWords": 788,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2164,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (788w) shorter than HEAD (2164w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/alabama/montgomery.ts",
+      "wtExists": true,
+      "wtWords": 809,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2164,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (809w) shorter than HEAD (2164w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/alaska/anchorage.ts",
+      "wtExists": true,
+      "wtWords": 772,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 1947,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (772w) shorter than HEAD (1947w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/alaska/palmer.ts",
+      "wtExists": true,
+      "wtWords": 782,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 1938,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (782w) shorter than HEAD (1938w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/alaska/tonsina.ts",
+      "wtExists": true,
+      "wtWords": 798,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2066,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (798w) shorter than HEAD (2066w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/alaska/willow.ts",
+      "wtExists": true,
+      "wtWords": 804,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 1937,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (804w) shorter than HEAD (1937w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/arizona/buckeye.ts",
+      "wtExists": true,
+      "wtWords": 782,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2150,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (782w) shorter than HEAD (2150w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/arizona/flagstaff.ts",
+      "wtExists": true,
+      "wtWords": 812,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2151,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (812w) shorter than HEAD (2151w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/arizona/sedona.ts",
+      "wtExists": true,
+      "wtWords": 795,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2018,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (795w) shorter than HEAD (2018w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/arizona/tempe.ts",
+      "wtExists": true,
+      "wtWords": 790,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2150,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (790w) shorter than HEAD (2150w) but no stub. Inspect manually."
     },
     {
       "file": "src/lib/cities-content/arizona/tucson.ts",
@@ -34,37 +156,92 @@
       "note": "WT (3943w) >= HEAD (2183w), no stub. Genuine enhancement — do not restore."
     },
     {
-      "file": "src/lib/cities-content/arkansas/benton.ts",
+      "file": "src/lib/cities-content/arkansas/bentonville.ts",
       "wtExists": true,
-      "wtWords": 794,
+      "wtWords": 799,
       "wtMarker": false,
       "headExists": true,
-      "headWords": 702,
+      "headWords": 2021,
       "headMarker": false,
-      "verdict": "KEEP_WT",
-      "note": "WT (794w) >= HEAD (702w), no stub. Genuine enhancement — do not restore."
+      "verdict": "REVIEW",
+      "note": "WT (799w) shorter than HEAD (2021w) but no stub. Inspect manually."
     },
     {
-      "file": "src/lib/cities-content/arkansas/bryant.ts",
+      "file": "src/lib/cities-content/arkansas/conway.ts",
       "wtExists": true,
-      "wtWords": 745,
+      "wtWords": 793,
       "wtMarker": false,
       "headExists": true,
-      "headWords": 704,
+      "headWords": 2022,
       "headMarker": false,
-      "verdict": "KEEP_WT",
-      "note": "WT (745w) >= HEAD (704w), no stub. Genuine enhancement — do not restore."
+      "verdict": "REVIEW",
+      "note": "WT (793w) shorter than HEAD (2022w) but no stub. Inspect manually."
     },
     {
-      "file": "src/lib/cities-content/california/fresno.ts",
+      "file": "src/lib/cities-content/arkansas/hot-springs.ts",
       "wtExists": true,
-      "wtWords": 760,
+      "wtWords": 816,
       "wtMarker": false,
       "headExists": true,
-      "headWords": 689,
+      "headWords": 2199,
       "headMarker": false,
-      "verdict": "KEEP_WT",
-      "note": "WT (760w) >= HEAD (689w), no stub. Genuine enhancement — do not restore."
+      "verdict": "REVIEW",
+      "note": "WT (816w) shorter than HEAD (2199w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/arkansas/paragould.ts",
+      "wtExists": true,
+      "wtWords": 782,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2144,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (782w) shorter than HEAD (2144w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/california/bakersfield.ts",
+      "wtExists": true,
+      "wtWords": 780,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2166,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (780w) shorter than HEAD (2166w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/california/beaumont.ts",
+      "wtExists": true,
+      "wtWords": 793,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2019,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (793w) shorter than HEAD (2019w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/california/modesto.ts",
+      "wtExists": true,
+      "wtWords": 790,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2038,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (790w) shorter than HEAD (2038w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/california/san-bernardino.ts",
+      "wtExists": true,
+      "wtWords": 834,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2094,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (834w) shorter than HEAD (2094w) but no stub. Inspect manually."
     },
     {
       "file": "src/lib/cities-content/california/san-francisco.ts",
@@ -78,6 +255,17 @@
       "note": "WT (3888w) >= HEAD (2275w), no stub. Genuine enhancement — do not restore."
     },
     {
+      "file": "src/lib/cities-content/colorado/dacono.ts",
+      "wtExists": true,
+      "wtWords": 794,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2148,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (794w) shorter than HEAD (2148w) but no stub. Inspect manually."
+    },
+    {
       "file": "src/lib/cities-content/colorado/denver.ts",
       "wtExists": true,
       "wtWords": 4492,
@@ -89,15 +277,268 @@
       "note": "WT (4492w) >= HEAD (2214w), no stub. Genuine enhancement — do not restore."
     },
     {
-      "file": "src/lib/cities-content/connecticut/haddam.ts",
+      "file": "src/lib/cities-content/colorado/idaho-springs.ts",
+      "wtExists": true,
+      "wtWords": 820,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2208,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (820w) shorter than HEAD (2208w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/colorado/thornton.ts",
+      "wtExists": true,
+      "wtWords": 777,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2023,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (777w) shorter than HEAD (2023w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/colorado/westminster.ts",
+      "wtExists": true,
+      "wtWords": 800,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2147,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (800w) shorter than HEAD (2147w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/connecticut/killingly-center.ts",
+      "wtExists": true,
+      "wtWords": 818,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2216,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (818w) shorter than HEAD (2216w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/connecticut/madison.ts",
+      "wtExists": true,
+      "wtWords": 818,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2049,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (818w) shorter than HEAD (2049w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/connecticut/stamford.ts",
+      "wtExists": true,
+      "wtWords": 806,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2043,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (806w) shorter than HEAD (2043w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/connecticut/waterbury.ts",
+      "wtExists": true,
+      "wtWords": 831,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2052,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (831w) shorter than HEAD (2052w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/florida/clermont.ts",
       "wtExists": true,
       "wtWords": 779,
       "wtMarker": false,
       "headExists": true,
-      "headWords": 722,
+      "headWords": 2039,
       "headMarker": false,
-      "verdict": "KEEP_WT",
-      "note": "WT (779w) >= HEAD (722w), no stub. Genuine enhancement — do not restore."
+      "verdict": "REVIEW",
+      "note": "WT (779w) shorter than HEAD (2039w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/florida/daytona-beach.ts",
+      "wtExists": true,
+      "wtWords": 842,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2085,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (842w) shorter than HEAD (2085w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/florida/orlando.ts",
+      "wtExists": true,
+      "wtWords": 802,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2073,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (802w) shorter than HEAD (2073w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/florida/tallahassee.ts",
+      "wtExists": true,
+      "wtWords": 798,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2038,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (798w) shorter than HEAD (2038w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/georgia/douglasville.ts",
+      "wtExists": true,
+      "wtWords": 787,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2017,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (787w) shorter than HEAD (2017w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/georgia/greensboro.ts",
+      "wtExists": true,
+      "wtWords": 803,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2017,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (803w) shorter than HEAD (2017w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/georgia/sandy-springs.ts",
+      "wtExists": true,
+      "wtWords": 818,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2067,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (818w) shorter than HEAD (2067w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/georgia/tucker.ts",
+      "wtExists": true,
+      "wtWords": 796,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2145,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (796w) shorter than HEAD (2145w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/hawaii/hilo.ts",
+      "wtExists": true,
+      "wtWords": 794,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2071,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (794w) shorter than HEAD (2071w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/idaho/meridian.ts",
+      "wtExists": true,
+      "wtWords": 752,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 835,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (752w) shorter than HEAD (835w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/idaho/mountain-home.ts",
+      "wtExists": true,
+      "wtWords": 795,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2066,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (795w) shorter than HEAD (2066w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/idaho/pocatello.ts",
+      "wtExists": true,
+      "wtWords": 770,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 835,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (770w) shorter than HEAD (835w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/illinois/batavia.ts",
+      "wtExists": true,
+      "wtWords": 802,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2157,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (802w) shorter than HEAD (2157w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/illinois/bridgeview.ts",
+      "wtExists": true,
+      "wtWords": 808,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2157,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (808w) shorter than HEAD (2157w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/illinois/lombard.ts",
+      "wtExists": true,
+      "wtWords": 787,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2158,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (787w) shorter than HEAD (2158w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/illinois/northlake.ts",
+      "wtExists": true,
+      "wtWords": 813,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2157,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (813w) shorter than HEAD (2157w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/indiana/greenfield.ts",
+      "wtExists": true,
+      "wtWords": 780,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2029,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (780w) shorter than HEAD (2029w) but no stub. Inspect manually."
     },
     {
       "file": "src/lib/cities-content/indiana/indianapolis.ts",
@@ -109,6 +550,61 @@
       "headMarker": false,
       "verdict": "KEEP_WT",
       "note": "WT (4179w) >= HEAD (2127w), no stub. Genuine enhancement — do not restore."
+    },
+    {
+      "file": "src/lib/cities-content/indiana/new-trenton.ts",
+      "wtExists": true,
+      "wtWords": 819,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2076,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (819w) shorter than HEAD (2076w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/indiana/south-bend.ts",
+      "wtExists": true,
+      "wtWords": 817,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2089,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (817w) shorter than HEAD (2089w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/indiana/terre-haute.ts",
+      "wtExists": true,
+      "wtWords": 834,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2081,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (834w) shorter than HEAD (2081w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/iowa/des-moines.ts",
+      "wtExists": true,
+      "wtWords": 787,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 862,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (787w) shorter than HEAD (862w) but no stub. Inspect manually."
+    },
+    {
+      "file": "src/lib/cities-content/iowa/durant.ts",
+      "wtExists": true,
+      "wtWords": 775,
+      "wtMarker": false,
+      "headExists": true,
+      "headWords": 2029,
+      "headMarker": false,
+      "verdict": "REVIEW",
+      "note": "WT (775w) shorter than HEAD (2029w) but no stub. Inspect manually."
     },
     {
       "file": "src/lib/cities-content/kentucky/louisville.ts",
@@ -263,17 +759,6 @@
       "headMarker": false,
       "verdict": "KEEP_WT",
       "note": "WT (3930w) >= HEAD (2153w), no stub. Genuine enhancement — do not restore."
-    },
-    {
-      "file": "src/lib/cities-content/vermont/burlington.ts",
-      "wtExists": true,
-      "wtWords": 762,
-      "wtMarker": false,
-      "headExists": true,
-      "headWords": 703,
-      "headMarker": false,
-      "verdict": "KEEP_WT",
-      "note": "WT (762w) >= HEAD (703w), no stub. Genuine enhancement — do not restore."
     },
     {
       "file": "src/lib/cities-content/washington/seattle.ts",
