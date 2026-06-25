@@ -18,12 +18,20 @@ P3b (40 remaining state images) was parked because the images were **premium but
 
 ---
 
-## Required code change before any run (no generation in this edit)
-The generic city-prompt builder is not fit to run as-is:
-- It **mis-parses multi-word states**: `city-new-york-new-york-city` titleizes to *"York New York City"* (it only drops the first slug token).
-- It emits **one generic line for every city** ("metro freight artery / beltway … recognizable skyline silhouette") — the look-alike trap.
+## Required code change before any run — ✅ DONE 2026-06-25 (prep fix, no generation)
+The generic city-prompt builder was not fit to run as-is:
+- It **mis-parsed multi-word states**: `city-new-york-new-york-city` titleized to *"York New York City"* (it only dropped the first slug token).
+- It emitted **one generic line for every city** ("metro freight artery / beltway … recognizable skyline silhouette") — the look-alike trap.
 
-Fix (code only, still gated, no spend): add a `CITY_SCENE: Record<string,string>` map (the 10 scene lines below) to `scripts/generate-brand-images.ts`, mirroring `ACCIDENT_SCENE`, and branch `city-` basenames to it. File naming is already correct — `--only city-new-york-new-york-city` writes `city-new-york-new-york-city.{ext}`, which the resolver matches.
+**Fix landed** in `scripts/generate-brand-images.ts` (code only, no spend, model/settings/negative unchanged):
+- Added `CITY_SCENE: Record<string,string>` — explicit per-basename scene for all 10 approved cities, taken from this doc. The `city-` branch now uses `CITY_SCENE[basename]` first; only unknown city slugs fall through to the old generic parse. No slug parsing for P4 cities.
+- Added a **dry-run/list mode** (`--dry-run` / `--print`, honoring `--only`) that prints the exact final prompt and exits **before** any `FAL_KEY` read or fal.ai call.
+
+**Verified this session** (`npm run images:generate -- --dry-run --only <all 10>`, run with `FAL_KEY` unset):
+- No "York New York City" artifact — NYC prompt is the explicit bridge-approach scene.
+- 10/10 scene lines distinct; full safety negative on all 10.
+- No banned element requested — every "signage" mention is "no readable signage" / "no fake signage".
+- No API call, no files written (photo dir unchanged: Houston is still the only `city-*` image).
 
 ---
 
@@ -124,9 +132,14 @@ Review all generated images on a single contact sheet, side by side, and against
 ## STOP — condition before generation
 Plan only. No images generated, no FAL_KEY read, no `images:generate`, no build-wire, no spend. Nothing committed but this doc.
 
-Generation requires **both**: (1) Raphy's explicit "go P4", and (2) the `CITY_SCENE` code edit landed in `scripts/generate-brand-images.ts`. Even on go: Tier A first, contact-sheet gate, then Tier B.
+Generation prerequisites: (1) ✅ `CITY_SCENE` code edit landed + dry-run verified (done 2026-06-25); (2) ⏳ Raphy's explicit "go P4" — still required. Even on go: Tier A first, contact-sheet gate, then Tier B.
 
-Run command when (and only when) both conditions are met:
+Dry-run (safe, no spend) to re-inspect prompts any time:
+```
+npm run images:generate -- --dry-run --only city-arizona-phoenix,city-utah-salt-lake-city,city-florida-miami,city-california-los-angeles,city-missouri-kansas-city,city-texas-dallas,city-illinois-chicago,city-georgia-atlanta,city-new-york-new-york-city,city-pennsylvania-philadelphia
+```
+
+Run command when (and only when) "go P4" is given:
 ```
 # Tier A first
 npm run images:generate -- --only city-arizona-phoenix,city-utah-salt-lake-city,city-florida-miami,city-california-los-angeles,city-missouri-kansas-city

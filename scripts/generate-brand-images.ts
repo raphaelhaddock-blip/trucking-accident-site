@@ -67,6 +67,35 @@ const FIXED_SCENE: Record<string, string> = {
     'Overhead low-key still-life on a dark steel surface: a black electronic logging device, a tire-tread depth gauge, a coiled measuring tape, blank unmarked clipboards — dramatic side light, amber rim light.',
 };
 
+// Per-city scene overrides for the approved P4 city hubs (docs/P4-CITY-HUB-IMAGE-PLAN.md).
+// EXPLICIT by full basename — never derived from slug parsing, which mangles multi-word
+// states/cities (e.g. `city-new-york-new-york-city` titleized to "York New York City").
+// Each line leads with a distinct FOREGROUND signature so the 10 don't read as look-alikes.
+const CITY_SCENE: Record<string, string> = {
+  // Tier A — geography-distinct
+  'city-arizona-phoenix':
+    'A wide Sonoran-desert interstate at dusk cutting across a saguaro-dotted plain toward distant low desert mountains, dry amber heat haze, freight trucks small in the distance, no city skyline.',
+  'city-utah-salt-lake-city':
+    'A broad valley interstate at dusk running toward the snow-dusted Wasatch mountain front rising directly behind, cold blue peaks against warm valley light, freight trucks at a distance.',
+  'city-florida-miami':
+    'A coastal causeway at dusk over calm reflective water with a distant container-port crane silhouette and a palm-lined horizon, warm amber light, no readable signage.',
+  'city-california-los-angeles':
+    'A sprawling multi-lane freeway interchange at dusk with distant container-port cranes silhouetted on a hazy horizon, warm smoggy amber light, skyline minimal.',
+  'city-missouri-kansas-city':
+    'A ground-level logistics corridor at dusk: rail yards and rows of distribution warehouses beside an interstate over rolling plains, steel-and-amber tones, no prominent skyline.',
+  // Tier B — skyline-led, foreground carries the distinction
+  'city-texas-dallas':
+    'A multi-level stacked highway interchange (five-level stack) in the foreground at dusk, the city skyline a distant silhouette beyond a flat plains horizon, warm amber light.',
+  'city-illinois-chicago':
+    'An industrial rail and freight corridor along a lakefront at blue hour, the city skyline a cold-steel silhouette in the far distance, gray-blue Great Lakes tones, colder palette.',
+  'city-georgia-atlanta':
+    'A busy multi-lane perimeter-interstate interchange at dusk threading through a dense pine treeline, the city skyline a distant silhouette above the trees, humid warm light.',
+  'city-new-york-new-york-city':
+    'A major bridge truck-approach span in the foreground at dusk crossing a wide river, the distant city skyline a silhouette beyond, steel-blue river reflections, no readable signage.',
+  'city-pennsylvania-philadelphia':
+    'A Delaware-River industrial port and refinery corridor at dusk with an interstate alongside, the city skyline a small distant silhouette, amber industrial glow.',
+};
+
 const titleize = (slug: string) =>
   slug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
@@ -80,6 +109,8 @@ function promptFor(basename: string): string {
   } else if (basename.startsWith('state-')) {
     const st = titleize(basename.replace('state-', ''));
     scene = `A signature interstate or freight corridor of ${st} at golden hour, wide cinematic landscape, freight trucks at a distance.`;
+  } else if (CITY_SCENE[basename]) {
+    scene = CITY_SCENE[basename]; // approved P4 city — explicit, no slug parsing
   } else if (basename.startsWith('city-')) {
     const rest = basename.replace('city-', '').split('-');
     const city = titleize(rest.slice(1).join('-'));
@@ -118,14 +149,18 @@ function extFromContentType(ct: string | null): string {
 
 async function main() {
   const args = process.argv.slice(2);
-  if (args.includes('--list')) {
-    console.log('Catalog (basename → prompt):');
-    [...DEFAULT_SET].forEach((b) => console.log(`\n• ${b}\n  ${promptFor(b)}`));
-    return;
-  }
-
   const onlyIdx = args.indexOf('--only');
   const targets = onlyIdx >= 0 && args[onlyIdx + 1] ? args[onlyIdx + 1].split(',').map((s) => s.trim()) : DEFAULT_SET;
+
+  // Dry run: print the exact final prompt(s) and exit BEFORE any key load or fal call.
+  // `--list` shows the default catalog; `--dry-run`/`--print` respects `--only`.
+  if (args.includes('--list') || args.includes('--dry-run') || args.includes('--print')) {
+    const toShow = args.includes('--list') && onlyIdx < 0 ? DEFAULT_SET : targets;
+    console.log('DRY RUN — no fal.ai call, no FAL_KEY read, no images written. (basename → final prompt)');
+    toShow.forEach((b) => console.log(`\n• ${b}\n  ${promptFor(b)}`));
+    console.log(`\n[dry-run] ${toShow.length} prompt(s) printed. No API call made, nothing generated.`);
+    return;
+  }
 
   const FAL_KEY = loadFalKey();
   if (!FAL_KEY) {
