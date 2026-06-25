@@ -85,7 +85,7 @@ All generated with the same compliance negative (no people/faces/wreckage/text/p
 | **Live vs local** | Live = original/pre-redesign. Redesign = local-only, never deployed (no `.vercel` link in the worktree). |
 
 ## 7. Remaining blockers before deploy
-0. **Real phone number (ACTIVE BLOCKER, 2026-06-25)** — preview uses placeholder `1-800-555-0123` in 14 file-level consts + 26 display lines across 17 files. Needs Raphy's real intake number before production; fix is a 2-string replace (see [PREVIEW-QA-2026-06-25.md](PREVIEW-QA-2026-06-25.md)). No number will be invented.
+0. **Real phone number (PRE-PRODUCTION GATE)** — placeholder `1-800-555-0123` in 14 consts + 26 display lines across 17 files. **Raphy elected 2026-06-25 to keep the placeholder for this review round** (preview is SSO-gated, not public). HARD gate before any production merge: supply the real number → centralize into `src/lib/site.ts` → replace → build/audit → push → re-verify. No number invented. (see [PREVIEW-QA-2026-06-25.md](PREVIEW-QA-2026-06-25.md))
 1. **Human visual review** — ✅ desktop done on the preview 2026-06-25 (7 pages clean, 0 broken images, 0 overflow). Mobile *pixel* pass still owed (blocked in-tool; see QA doc) — a 60-sec human/device-mode check.
 2. **Vercel project/domain sanity check** — ✅ CONFIRMED: `trucking-accident-site` is git-connected to this repo, production branch = `main`; the preview deployed there, not `-814t`.
 3. **Legal-tone / Fable review if required** — `audit:legaltone` is green. This is a public marketing site (no tenant/authz/PHI/crypto/migration/money), so a Fable safety verdict isn't strictly triggered; a human content/tone pass on the new hero copy is the real gate.

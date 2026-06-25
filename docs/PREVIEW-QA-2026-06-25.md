@@ -17,7 +17,7 @@ Live QA of the Vercel preview for PR #1, via a logged-in Vercel browser session 
 | 4 | SEO/technical | ✅ see table below |
 | 3 | Visual (desktop, 7 pages) | ✅ 0 broken images, 0 horizontal overflow, footer + breadcrumbs present, heroes render + legible |
 | 2 | Mobile pixel | ⛔ BLOCKED (reason below); responsive layer DOM-verified |
-| 1 | Contact placeholders | ⛔ BLOCKED on real phone number (scope below) |
+| 1 | Contact placeholders | ⏸ Phone deferred by Raphy 2026-06-25 — placeholder kept for this review round; HARD pre-production gate (scope below) |
 
 ## WS4 — SEO/technical (per page, from rendered preview HTML)
 All 7 sampled pages: `robots: index, follow`; canonical absolute → `trucking-accident-site.vercel.app`; **0 `cdn.sanity.io` refs** (no Sanity hero/OG fallback); title 40–52 chars; meta description 122–155 chars.
@@ -55,4 +55,4 @@ Placeholder phone `1-800-555-0123` / display `(800) 555-0123` appears as:
 4. Merge PR #1 → `main` (this triggers the **production** deploy). Separate explicit go.
 
 ## Stop conditions hit this pass
-- **Need real phone number** (WS1) — surfaced to Raphy.
+- **Need real phone number** (WS1) — surfaced; Raphy elected 2026-06-25 to keep the placeholder for this review round. Hard pre-production gate; no number invented.
