@@ -15,6 +15,7 @@ import {
   isValidCity,
 } from '@/lib/cities-content';
 import type { CityContent } from '@/lib/cities-content';
+import { buildCityProfile } from '@/lib/content-engine/profile';
 
 // Generate static params for all cities
 export async function generateStaticParams() {
@@ -142,6 +143,11 @@ export default async function CityPage({
         .filter((pair): pair is [string, string] => pair[0] !== null)
     ).entries()
   ).slice(0, 6);
+
+  // VERIFIED court context (PR8/PR9). buildCityProfile resolves venueCourt only when a
+  // city-courts.json record is confidence==VERIFIED AND its county matches FARS. Empty
+  // for every city without a verified record; never rendered otherwise.
+  const venueCourt = buildCityProfile(slug, city)?.venueCourt ?? null;
 
   // Use population from city content (which has real data) or fallback
   const population = cityContent?.population || cityData.population;
@@ -555,12 +561,29 @@ export default async function CityPage({
               </span>
             </Link>
           </div>
+          {venueCourt && (
+            <div className="text-sm text-gray-600 mt-8 border-t pt-4">
+              <strong className="text-navy-900">Court context:</strong> {cityData.name} is located in{' '}
+              {venueCourt.county} County, {stateName}. The trial court that serves {venueCourt.county} County
+              is the{' '}
+              <a
+                href={venueCourt.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-600 hover:text-amber-700"
+              >
+                {venueCourt.displayName ?? venueCourt.trialCourtName}
+              </a>
+              {' '}— see the official court website for locations, hours, and filing information. This is
+              general public-record information, not legal advice.
+            </div>
+          )}
           {isHub && (
             <p className="text-sm text-gray-500 mt-8 border-t pt-4">
               <strong>About this page:</strong> the local figures above come from NHTSA&apos;s FARS
-              fatality records. We do not list specific {cityData.name} roads, courts, or carriers
-              unless we can source them, so state-law deadlines and local specifics should be confirmed
-              with a licensed {stateName} attorney.
+              fatality records. We do not list specific {cityData.name} roads{venueCourt ? '' : ', courts,'} or
+              carriers unless we can source them, so state-law deadlines and local specifics should be
+              confirmed with a licensed {stateName} attorney.
             </p>
           )}
         </div>

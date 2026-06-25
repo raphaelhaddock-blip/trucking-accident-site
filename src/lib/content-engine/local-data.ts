@@ -42,7 +42,8 @@ export interface Corridor extends ProvenanceMeta {
 }
 export interface VenueCourt extends ProvenanceMeta {
   county: string;
-  trialCourtName: string;
+  trialCourtName: string;     // canonical / Judicial-Branch legal name
+  displayName?: string;       // official public-facing name when it differs (e.g. LA)
   courtType: string;
 }
 export interface TraumaCenter extends ProvenanceMeta {
